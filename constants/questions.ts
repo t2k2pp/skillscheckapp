@@ -412,4 +412,216 @@ export const QUESTIONS: QuizQuestion[] = [
     correctAnswerIndex: 0,
     explanation: 'コルーチンは、関数の実行を中断・再開できる仕組みを提供します。これにより、コールバックや `std::future` の連鎖を必要とした複雑な非同期コードを、あたかも直線的に実行されるかのように簡潔に記述することができます。'
   },
+
+  // Claude追加設問 - 基礎レベル
+  {
+    id: 51,
+    level: QuestionLevel.Beginner,
+    text: '配列名を関数の引数として渡した場合、どのように扱われますか？',
+    options: ['配列全体のコピーが渡される', '配列の先頭要素へのポインタが渡される', '配列のサイズ情報も一緒に渡される', 'コンパイルエラーになる'],
+    correctAnswerIndex: 1,
+    explanation: 'C++では配列名は配列の先頭要素へのポインタに自動変換されます（配列のdecay）。そのため、関数内では元の配列のサイズ情報は失われます。'
+  },
+  {
+    id: 52,
+    level: QuestionLevel.Beginner,
+    text: '以下のうち、関数オーバーロードの判断基準として**使用されない**ものはどれですか？',
+    options: ['引数の型', '引数の個数', '戻り値の型', 'const修飾子の有無'],
+    correctAnswerIndex: 2,
+    explanation: 'C++では戻り値の型だけが異なる関数はオーバーロードできません。引数の型、個数、const修飾子などで区別されます。'
+  },
+  {
+    id: 53,
+    level: QuestionLevel.Beginner,
+    text: '`operator+` を定義する際、一般的に推奨される実装方法はどれですか？',
+    options: ['メンバ関数として定義し、左オペランドを変更する', 'メンバ関数として定義し、新しいオブジェクトを返す', '非メンバ関数として定義し、新しいオブジェクトを返す', 'static関数として定義する'],
+    correctAnswerIndex: 2,
+    explanation: '`operator+` は通常、非メンバ関数として定義し、両オペランドを変更せずに新しいオブジェクトを返すのが一般的です。これにより `a + b` と `1.0 + a`（型変換を伴う）の両方が可能になります。'
+  },
+  {
+    id: 54,
+    level: QuestionLevel.Beginner,
+    text: '`#ifndef`/`#define`/`#endif` に代わる、より簡潔なインクルードガードの方法はどれですか？',
+    options: ['`#once`', '`#pragma once`', '`#include_once`', '`#guard`'],
+    correctAnswerIndex: 1,
+    explanation: '`#pragma once` はコンパイラ依存ですが、多くの現代的なコンパイラでサポートされており、伝統的なインクルードガードより簡潔で間違いが少ないです。'
+  },
+
+  // Gemini追加設問 - 基礎レベル
+  {
+    id: 55,
+    level: QuestionLevel.Beginner,
+    text: '範囲ベースforループで `std::vector<std::string>` の各要素を変更せずに処理する場合、最も適切な型指定はどれですか？',
+    options: ['for (auto item : vec)', 'for (auto& item : vec)', 'for (const auto& item : vec)', 'for (const auto item : vec)'],
+    correctAnswerIndex: 2,
+    explanation: 'const auto& を使うことで、不要なコピーを防ぎつつ、要素の変更を防げます。autoのみだとコピーが発生し、auto&だと変更可能になってしまいます。'
+  },
+  {
+    id: 56,
+    level: QuestionLevel.Beginner,
+    text: 'ヘッダーファイル(.h)に書くべき内容として最も適切なものはどれですか？',
+    options: ['関数の実装コード', 'クラスの宣言と関数のプロトタイプ', 'グローバル変数の定義', 'staticな実装の詳細'],
+    correctAnswerIndex: 1,
+    explanation: 'ヘッダーファイルには宣言（declaration）を書き、実装（definition）は.cppファイルに書きます。これにより、複数のファイルから同じ宣言を参照でき、リンク時の重複定義エラーを防げます。'
+  },
+
+  // Claude追加設問 - 中級レベル
+  {
+    id: 57,
+    level: QuestionLevel.Intermediate,
+    text: '仮想関数を持つクラスで、派生クラスのオブジェクトを基底クラスのポインタで削除する際に重要なのは何ですか？',
+    options: ['仮想コンストラクタ', '仮想デストラクタ', '純粋仮想関数', '仮想継承'],
+    correctAnswerIndex: 1,
+    explanation: '基底クラスのデストラクタが仮想でないと、派生クラスのデストラクタが呼ばれずリソースリークの原因となります。'
+  },
+  {
+    id: 58,
+    level: QuestionLevel.Intermediate,
+    text: '`class Derived : private Base` で継承した場合、Baseのpublicメンバは Derivedクラス内でどのようにアクセスできますか？',
+    options: ['publicとしてアクセス可能', 'protectedとしてアクセス可能', 'privateとしてアクセス可能', 'アクセス不可'],
+    correctAnswerIndex: 2,
+    explanation: 'private継承では、基底クラスのpublic/protectedメンバは派生クラス内でprivateとしてアクセスできますが、派生クラスの外部からはアクセスできません。'
+  },
+  {
+    id: 59,
+    level: QuestionLevel.Intermediate,
+    text: 'メンバ初期化リストを**必ず**使用しなければならない場合はどれですか？',
+    options: ['intメンバの初期化', 'constメンバの初期化', 'staticメンバの初期化', 'pointerメンバの初期化'],
+    correctAnswerIndex: 1,
+    explanation: 'constメンバ、参照メンバ、デフォルトコンストラクタを持たないクラスのメンバは、メンバ初期化リストでの初期化が必須です。'
+  },
+  {
+    id: 60,
+    level: QuestionLevel.Intermediate,
+    text: '以下のコードで出力される結果はどれですか？\n```cpp\nclass Base {\npublic:\n    virtual void print() { cout << "Base"; }\n};\nclass Derived : public Base {\npublic:\n    void print() override { cout << "Derived"; }\n};\nBase* ptr = new Derived();\nptr->print();\n```',
+    options: ['Base', 'Derived', 'コンパイルエラー', '未定義動作'],
+    correctAnswerIndex: 1,
+    explanation: 'virtual関数では実行時に実際のオブジェクトの型に基づいて適切な関数が呼ばれます（動的束縛）。'
+  },
+  {
+    id: 61,
+    level: QuestionLevel.Intermediate,
+    text: '静的メンバ関数について正しいのはどれですか？',
+    options: ['thisポインタを使用できる', '非静的メンバ変数にアクセスできる', 'クラスのインスタンスなしで呼び出せる', 'virtual宣言できる'],
+    correctAnswerIndex: 2,
+    explanation: '静的メンバ関数は特定のインスタンスに属さないため、クラス名を使って直接呼び出すことができます。thisポインタや非静的メンバには直接アクセスできません。'
+  },
+
+  // Gemini追加設問 - 中級レベル  
+  {
+    id: 62,
+    level: QuestionLevel.Intermediate,
+    text: 'C++17で導入された `std::string_view` の主な利点は何ですか？',
+    options: ['文字列を変更可能にする', '文字列の所有権を管理する', '文字列のコピーを避けて読み取り専用アクセスを提供する', '文字列の動的メモリ確保を自動化する'],
+    correctAnswerIndex: 2,
+    explanation: 'std::string_viewは文字列データのビュー（参照）を提供し、コピーを行わずに読み取り専用アクセスが可能です。関数引数でstd::stringの代わりに使うことで、パフォーマンスを向上できます。'
+  },
+  {
+    id: 63,
+    level: QuestionLevel.Intermediate,
+    text: '`std::vector<std::pair<int, std::string>>` に要素を追加する際、最も効率的な方法はどれですか？',
+    options: ['vec.push_back(std::pair<int, std::string>(1, "hello"));', 'vec.push_back({1, "hello"});', 'vec.emplace_back(1, "hello");', 'vec.insert(vec.end(), {1, "hello"});'],
+    correctAnswerIndex: 2,
+    explanation: 'emplace_backは引数を直接コンストラクタに転送し、コンテナ内で直接オブジェクトを構築します。push_backは一時オブジェクトを作成してからムーブするため、emplace_backの方が効率的です。'
+  },
+  {
+    id: 64,
+    level: QuestionLevel.Intermediate,
+    text: '`std::vector<int> v{10};` と `std::vector<int> v(10);` の違いは何ですか？',
+    options: ['両方とも同じ結果になる', '前者は要素10を1つ持つベクタ、後者は要素0を10個持つベクタ', '前者は要素0を10個持つベクタ、後者は要素10を1つ持つベクタ', '前者はコンパイルエラーになる'],
+    correctAnswerIndex: 1,
+    explanation: '波括弧{}は初期化リスト構築を行い、丸括弧()は通常のコンストラクタ呼び出しです。v{10}は値10を持つ要素1個、v(10)はデフォルト値0を持つ要素10個のベクタになります。'
+  },
+  {
+    id: 65,
+    level: QuestionLevel.Intermediate,
+    text: '仮想関数をオーバーライドする際に `override` キーワードを使用する主な理由は何ですか？',
+    options: ['パフォーマンスを向上させるため', 'メモリ使用量を削減するため', 'オーバーライドのつもりが新しい関数を定義してしまうミスを防ぐため', 'アクセス指定子を変更するため'],
+    correctAnswerIndex: 2,
+    explanation: 'overrideキーワードにより、コンパイラが基底クラスの仮想関数を正しくオーバーライドしているかチェックします。シグネチャの違いなどでオーバーライドに失敗していた場合、コンパイルエラーで教えてくれます。'
+  },
+
+  // Claude追加設問 - 上級レベル
+  {
+    id: 66,
+    level: QuestionLevel.Advanced,
+    text: '仮想関数を持つクラスのオブジェクトが通常含むものはどれですか？',
+    options: ['仮想関数テーブル（vtable）', 'vtableへのポインタ（vptr）', '仮想関数のコード', '基底クラスのコピー'],
+    correctAnswerIndex: 1,
+    explanation: '仮想関数を持つクラスのオブジェクトは、vtableへのポインタ（vptr）を含みます。vtable自体はクラスごとに1つ存在します。'
+  },
+  {
+    id: 67,
+    level: QuestionLevel.Advanced,
+    text: '以下のような関数テンプレートの完全特殊化の正しい記法はどれですか？\n```cpp\ntemplate<typename T>\nvoid func(T value) { /* 汎用版 */ }\n```',
+    options: ['`template<> void func<int>(int value) { /* int特殊版 */ }`', '`template<int> void func(int value) { /* int特殊版 */ }`', '`void func<int>(int value) { /* int特殊版 */ }`', '`specialized void func(int value) { /* int特殊版 */ }`'],
+    correctAnswerIndex: 0,
+    explanation: '完全特殊化では `template<>` を使用し、特殊化する型を明示します。'
+  },
+  {
+    id: 68,
+    level: QuestionLevel.Advanced,
+    text: '`constexpr`関数について正しいのはどれですか？',
+    options: ['常にコンパイル時に評価される', 'コンパイル時定数の引数が与えられた場合のみ、コンパイル時に評価される可能性がある', '実行時にのみ評価される', 'インライン関数と同じ動作をする'],
+    correctAnswerIndex: 1,
+    explanation: '`constexpr`関数は、コンパイル時定数の引数が渡された場合にコンパイル時評価が可能ですが、実行時の値が渡された場合は通常の関数として実行時に実行されます。'
+  },
+  {
+    id: 69,
+    level: QuestionLevel.Advanced,
+    text: 'SFINAE (Substitution Failure Is Not An Error) の主な用途は何ですか？',
+    options: ['コンパイル時にエラーを強制的に発生させる', 'テンプレートの置換失敗を利用してオーバーロード解決を制御する', '実行時の型情報を取得する', 'メモリ確保の失敗を処理する'],
+    correctAnswerIndex: 1,
+    explanation: 'SFINAEは、テンプレート引数の置換が失敗してもエラーにならず、単にそのオーバーロード候補から除外される仕組みです。これを利用して型特性に応じたテンプレート制御が可能になります。'
+  },
+  {
+    id: 70,
+    level: QuestionLevel.Advanced,
+    text: '以下の構造体のサイズ（64bit環境、通常のアライメント）はおそらく何バイトですか？\n```cpp\nstruct MyStruct {\n    char a;     // 1 byte\n    int b;      // 4 bytes\n    char c;     // 1 byte\n};\n```',
+    options: ['6 bytes', '8 bytes', '12 bytes', '16 bytes'],
+    correctAnswerIndex: 2,
+    explanation: 'メンバのアライメント要求により、char aの後に3バイトのパディング、char cの後に3バイトのパディングが挿入され、合計12バイトになることが多いです。'
+  },
+  {
+    id: 71,
+    level: QuestionLevel.Advanced,
+    text: '強い例外安全性（Strong Exception Safety）の保証とは何ですか？',
+    options: ['例外が発生しないことを保証する', '例外が発生してもプログラムが異常終了しない', '例外が発生してもオブジェクトの状態が操作前と同じに保たれる', '例外が発生してもメモリリークが発生しない'],
+    correctAnswerIndex: 2,
+    explanation: '強い例外安全性では、操作が失敗（例外発生）した場合、オブジェクトの状態が操作開始前と同じ状態に戻ることが保証されます。'
+  },
+
+  // Gemini追加設問 - 上級レベル
+  {
+    id: 72,
+    level: QuestionLevel.Advanced,
+    text: '複数スレッドから共有リソースを安全にアクセスするための `std::lock_guard` の正しい使用方法はどれですか？',
+    options: ['std::lock_guard<std::mutex> lock(mutex); の後でmutex.lock();', 'std::lock_guard<std::mutex> lock(mutex); だけで自動的にロック・アンロック', 'mutex.lock(); std::lock_guard<std::mutex> lock(mutex);', 'std::lock_guard<std::mutex> lock; lock.acquire(mutex);'],
+    correctAnswerIndex: 1,
+    explanation: 'std::lock_guardはRAII原則に従い、コンストラクタでmutexをロックし、デストラクタでアンロックします。スコープを抜ける際に自動的にアンロックされるため、例外安全です。'
+  },
+  {
+    id: 73,
+    level: QuestionLevel.Advanced,
+    text: '`std::atomic<int>` 変数に対する最もストリクト（厳格）なメモリオーダーはどれですか？',
+    options: ['std::memory_order_relaxed', 'std::memory_order_acquire', 'std::memory_order_seq_cst', 'std::memory_order_consume'],
+    correctAnswerIndex: 2,
+    explanation: 'std::memory_order_seq_cst（sequential consistency）は最も厳格なメモリオーダーで、全スレッド間で一貫した順序を保証します。デフォルトでもあり、パフォーマンスより正確性を重視する場合に使用します。'
+  },
+  {
+    id: 74,
+    level: QuestionLevel.Advanced,
+    text: 'テンプレート関数で引数を別の関数に「完全転送」するための正しいコードはどれですか？',
+    options: ['other_func(args);', 'other_func(std::move(args));', 'other_func(std::forward<Args>(args));', 'other_func(std::forward<Args>(args)...);'],
+    correctAnswerIndex: 3,
+    explanation: '可変長テンプレートでの完全転送では、std::forward<Args>(args)...の形式を使用します。これにより引数の値カテゴリ（左辺値/右辺値）を保持したまま転送できます。'
+  },
+  {
+    id: 75,
+    level: QuestionLevel.Advanced,
+    text: 'ファイルハンドルを安全に管理するRAIIクラスの基本構造として最も適切なものはどれですか？',
+    options: ['コンストラクタでファイルを開き、明示的なclose()メソッドで閉じる', 'コンストラクタでファイルを開き、デストラクタで閉じ、コピーを禁止する', 'コンストラクタでファイルを開き、デストラクタで閉じ、コピー可能にする', 'ファイルを開くopenメソッドと閉じるcloseメソッドを提供する'],
+    correctAnswerIndex: 1,
+    explanation: 'RAIIでは、リソースの確保を初期化時、解放をデストラクタで行います。ファイルハンドルのような排他的リソースはコピーを禁止し、必要に応じてムーブセマンティクスを実装します。'
+  },
 ];
