@@ -18,3 +18,19 @@ export interface UserAnswer {
   answerIndex: number;
   timeTaken: number; // in milliseconds
 }
+
+export enum QuizPattern {
+  BeginnerOnly = 'beginner_only',
+  IntermediateOnly = 'intermediate_only', 
+  AdvancedOnly = 'advanced_only',
+  Balanced50 = 'balanced_50',
+  AllQuestions = 'all_questions'
+}
+
+export interface QuizPatternInfo {
+  id: QuizPattern;
+  name: string;
+  description: string;
+  estimatedTime: string;
+  questionCount: number;
+}

@@ -1,24 +1,15 @@
 
 import React, { useState, useCallback } from 'react';
-import { QuizQuestion, UserAnswer } from './types';
+import { QuizQuestion, UserAnswer, QuizPattern } from './types';
 import { QUESTIONS } from './constants/questions';
+import { getQuestionsByPattern, shuffleQuestionOptions } from './utils/quizPatterns';
 import WelcomeScreen from './components/WelcomeScreen';
+import PatternSelectionScreen from './components/PatternSelectionScreen';
 import QuestionCard from './components/QuestionCard';
 import ResultsScreen from './components/ResultsScreen';
 
-// Fisher-Yates (aka Knuth) Shuffle
-function shuffleArray<T>(array: T[]): T[] {
-  const newArray = [...array];
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-  }
-  return newArray;
-}
-
-
 const App: React.FC = () => {
-  const [quizState, setQuizState] = useState<'welcome' | 'active' | 'finished'>('welcome');
+  const [quizState, setQuizState] = useState<'welcome' | 'pattern_selection' | 'active' | 'finished'>('welcome');
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
@@ -26,26 +17,16 @@ const App: React.FC = () => {
   const [questionStartTime, setQuestionStartTime] = useState<number>(0);
   const [totalTime, setTotalTime] = useState<number>(0);
 
-  const prepareQuizQuestions = useCallback(() => {
-    // 1. Shuffle the order of questions
-    const shuffledQuestions = shuffleArray(QUESTIONS);
+  const prepareQuizQuestions = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions) => {
+    // 1. Get questions based on selected pattern
+    const selectedQuestions = getQuestionsByPattern(pattern);
 
     // 2. For each question, shuffle the order of its options
-    return shuffledQuestions.map(question => {
-      const correctAnswerText = question.options[question.correctAnswerIndex];
-      const shuffledOptions = shuffleArray(question.options);
-      const newCorrectAnswerIndex = shuffledOptions.indexOf(correctAnswerText);
-      
-      return {
-        ...question,
-        options: shuffledOptions,
-        correctAnswerIndex: newCorrectAnswerIndex,
-      };
-    });
+    return selectedQuestions.map(shuffleQuestionOptions);
   }, []);
 
-  const startQuiz = useCallback(() => {
-    setQuestions(prepareQuizQuestions());
+  const startQuiz = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions) => {
+    setQuestions(prepareQuizQuestions(pattern));
     setCurrentQuestionIndex(0);
     setUserAnswers([]);
     setQuizState('active');
@@ -53,6 +34,18 @@ const App: React.FC = () => {
     setStartTime(now);
     setQuestionStartTime(now);
   }, [prepareQuizQuestions]);
+
+  const showPatternSelection = useCallback(() => {
+    setQuizState('pattern_selection');
+  }, []);
+
+  const handlePatternSelect = useCallback((pattern: QuizPattern) => {
+    startQuiz(pattern);
+  }, [startQuiz]);
+
+  const backToWelcome = useCallback(() => {
+    setQuizState('welcome');
+  }, []);
   
   const handleAnswer = useCallback((answerIndex: number) => {
     const now = Date.now();
@@ -78,6 +71,13 @@ const App: React.FC = () => {
 
   const renderContent = () => {
     switch (quizState) {
+      case 'pattern_selection':
+        return (
+          <PatternSelectionScreen
+            onPatternSelect={handlePatternSelect}
+            onBack={backToWelcome}
+          />
+        );
       case 'active':
         return (
           <QuestionCard
@@ -98,7 +98,7 @@ const App: React.FC = () => {
         );
       case 'welcome':
       default:
-        return <WelcomeScreen onStart={startQuiz} />;
+        return <WelcomeScreen onStart={() => startQuiz()} onPatternSelect={showPatternSelection} />;
     }
   };
 
