@@ -33,7 +33,7 @@ export const QUESTIONS: QuizQuestion[] = [
     text: 'キーと値のペアを格納し、キーに基づいて高速な検索を可能にするSTLコンテナはどれですか？',
     options: ['std::vector', 'std::list', 'std::map', 'std::set'],
     correctAnswerIndex: 2,
-    explanation: '`std::map`は、キーと値のペアを関連付けて格納する連想コンテナです。内部的には通常、赤黒木で実装されており、キーによる高速な検索、挿入、削除が可能です。'
+    explanation: '`std::map`は、キーと値のペアを関連付けて格納する連想コンテナです。内部的には平衡二分探索木で実装されており、キーによる高速な検索、挿入、削除が可能です。'
   },
   {
     id: 13,
@@ -81,7 +81,7 @@ export const QUESTIONS: QuizQuestion[] = [
     text: '`struct` と `class` の主な違いは何ですか？',
     options: ['`struct` はメンバ関数を持てない', '`class` のデフォルトのアクセス指定子は `private`、`struct` は `public`', '`struct` は継承できない', '`class` はテンプレートにできない'],
     correctAnswerIndex: 1,
-    explanation: '`struct` と `class` の機能的な違いはほとんどありませんが、デフォルトのアクセス指定子が異なります。`class` は `private`、`struct` は `public` です。慣習的に、単純なデータ集合には `struct` が使われます。'
+    explanation: '`struct` と `class` の機能的な違いはほとんどありませんが、デフォルトのアクセス指定子が異なります。`class` は `private`、`struct` は `public` です。どちらも同等の機能を持ちます。'
   },
   {
     id: 27,
@@ -111,7 +111,7 @@ export const QUESTIONS: QuizQuestion[] = [
     id: 30,
     level: QuestionLevel.Beginner,
     text: '関数の引数で `const std::string& name` のように `const` と参照 `&` を使う利点は何ですか？',
-    options: ['関数内で引数を変更できる', '文字列のコピーを避け、かつ関数内で値を変更しないことを保証する', '常にスタックメモリを使用するようになる', '引数がnullでないことを保証する'],
+    options: ['関数内で引数を変更できる', '文字列のコピーを避け、かつ関数内で値を変更しないことを保証する', '常にスタックメモリを使用するようになる', '参照の初期化が必要になる'],
     correctAnswerIndex: 1,
     explanation: '参照 `&` を使うことで、`std::string` のような大きなオブジェクトの不要なコピーを防ぎ、パフォーマンスを向上させます。`const` を付けることで、関数内でその引数が変更されないことをコンパイラに伝え、安全性を高めます。'
   },
@@ -182,9 +182,9 @@ export const QUESTIONS: QuizQuestion[] = [
     id: 18,
     level: QuestionLevel.Intermediate,
     text: '`std::unique_ptr` と `std::shared_ptr` の最も大きな違いは何ですか？',
-    options: ['`unique_ptr` はスタックにしか割り当てられない', '`shared_ptr` は所有権を共有できるが、`unique_ptr` は排他的な所有権を持つ', '`unique_ptr` はより多くのメモリを消費する', '`shared_ptr` は配列を管理できない'],
+    options: ['`unique_ptr` はスタックにしか割り当てられない', '`shared_ptr` は所有権を共有できるが、`unique_ptr` は排他的な所有権を持つ', '`unique_ptr` はより多くのメモリを消費する', '`unique_ptr` は配列を管理できない'],
     correctAnswerIndex: 1,
-    explanation: '`unique_ptr` はリソースの排他的な所有権を保証し、コピーできません（ムーブは可能）。一方、`shared_ptr` は参照カウントを使用して、複数のポインタが同じリソースの所有権を共有できるようにします。',
+    explanation: '`unique_ptr` はリソースの排他的な所有権を保証し、コピーできません（ムーブは可能）。一方、`shared_ptr` は参照カウントを使用して、複数のポインタが同じリソースの所有権を共有できるようにします。どちらも配列を管理できます。',
   },
   {
     id: 19,
@@ -262,9 +262,9 @@ export const QUESTIONS: QuizQuestion[] = [
     id: 40,
     level: QuestionLevel.Intermediate,
     text: '関数から複数の値を返すための、C++17で推奨される現代的な方法の一つはどれですか？',
-    options: ['ポインタ引数を使用する', '`std::pair` や `std::tuple` を使用する', '構造体を定義して返す', 'BとCの両方（構造化束縛と組み合わせる）'],
+    options: ['ポインタ引数を使用する', '`std::pair` や `std::tuple` を使用する', '構造体を定義して返す', 'BとCの両方'],
     correctAnswerIndex: 3,
-    explanation: '`std::pair`、`std::tuple`、あるいは専用の構造体を返すのが一般的な方法です。C++17の構造化束縛 (`auto [a, b] = func();`) を使うことで、これらの戻り値を非常に簡潔に受け取ることができます。'
+    explanation: '`std::pair`、`std::tuple`、あるいは専用の構造体を返すのが一般的な方法です。どちらも型安全で明確な意味を持つ複数の値を返すことができます。'
   },
   {
     id: 49,
@@ -351,10 +351,10 @@ export const QUESTIONS: QuizQuestion[] = [
   {
     id: 42,
     level: QuestionLevel.Advanced,
-    text: 'テンプレート引数の値や型を推論させつつ、その引数が左辺値か右辺値かの情報を保持するテンプレートパラメータの形式はどれですか？',
+    text: 'テンプレート引数の推論において、引数が左辺値か右辺値かの情報を保持するテンプレートパラメータの形式はどれですか？',
     options: ['`T&&`', '`const T&`', '`T*`', '`auto`'],
     correctAnswerIndex: 0,
-    explanation: '`T&&` は転送参照（またはユニバーサル参照）と呼ばれ、テンプレートの型推論と組み合わせることで、引数が左辺値か右辺値かを保持します。これは完全転送（Perfect Forwarding）を実現するために不可欠です。'
+    explanation: '`T&&` は転送参照（forwarding reference、従来はユニバーサル参照とも呼ばれた）と呼ばれ、テンプレートの型推論コンテキストでのみ、引数が左辺値か右辺値かの情報を保持します。これは完全転送（Perfect Forwarding）を実現するために不可欠です。'
   },
   {
     id: 43,
@@ -378,7 +378,7 @@ export const QUESTIONS: QuizQuestion[] = [
     text: 'CRTP (Curiously Recurring Template Pattern) は、どのような目的で一般的に使用されますか？',
     options: ['実行時ポリモーフィズムを実現するため', 'コンパイル時ポリモーフィズム（静的ポリモーフィズム）を実現するため', 'メモリ使用量を削減するため', '複数スレッド間の同期を取るため'],
     correctAnswerIndex: 1,
-    explanation: 'CRTPは、基底クラスが派生クラスをテンプレート引数として受け取るデザインパターンです。これにより、仮想関数を使わずに静的な（コンパイル時の）多態性を実現でき、パフォーマンス上のオーバーヘッドを回避できます。'
+    explanation: 'CRTPは、基底クラスが派生クラスをテンプレート引数として受け取るデザインパターンです。これにより、仮想関数を使わずに静的な（コンパイル時の）多態性を実現できます。'
   },
   {
     id: 46,
