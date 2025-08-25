@@ -6,6 +6,8 @@
 
 This contains everything you need to run your app locally.
 
+View Github Page: https://t2k2pp.github.io/codingskillscheckcpp/
+
 View your app in AI Studio: https://ai.studio/apps/drive/1ngeDSiUko_VdgzC0X7SVit8ndpwsqEyk
 
 ## Run Locally
