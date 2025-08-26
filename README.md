@@ -1,21 +1,43 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# C++ コーディングスキルチェック
 
-# Run and deploy your AI Studio app
+C++のプログラミングスキルを効率的に測定できるWebアプリケーションです。基礎から上級まで幅広いレベルの問題を収録し、実践的なスキル評価を提供します。
 
-This contains everything you need to run your app locally.
+## アプリ概要
 
-View Github Page: https://t2k2pp.github.io/codingskillscheckcpp/
+- **問題数**: 75問（基礎・中級・上級レベル）
+- **出題範囲**: STLコンテナ、オブジェクト指向、テンプレート、モダンC++機能など
+- **特徴**: 
+  - レベル別の出題選択が可能
+  - 選択肢のランダム表示でより公正な評価
+  - 詳細な解説付きで学習効果も期待できる
+  - レスポンシブデザインでスマートフォンにも対応
 
-View your app in AI Studio: https://ai.studio/apps/drive/1ngeDSiUko_VdgzC0X7SVit8ndpwsqEyk
+## デモサイト
 
-## Run Locally
+https://t2k2pp.github.io/codingskillscheckcpp/
 
-**Prerequisites:**  Node.js
+## ローカル実行
 
+**前提条件**: Node.js
 
-1. Install dependencies:
-   `npm install`
-2. Run the app:
-   `npm run dev`
+1. 依存関係をインストール:
+   ```bash
+   npm install
+   ```
+
+2. アプリを起動:
+   ```bash
+   npm run dev
+   ```
+
+## 改訂履歴
+
+### Version 1.1 (2025-01-26)
+- **修正**: 選択肢の順序依存問題を解決
+  - 問題14, 7, 40で「AとBの両方」等の表記を具体的な内容に修正
+  - 選択肢シャッフル機能に対応し、より公正な出題を実現
+
+### Version 1.0 (2025-01-25)
+- 初回リリース
+- 75問のC++スキルテスト問題を収録
+- レベル別出題機能の実装
