@@ -116,6 +116,7 @@ const App: React.FC = () => {
           <PatternSelectionScreen
             onPatternSelect={handlePatternSelect}
             onBack={backToWelcome}
+            questionSet={currentQuestionSet}
           />
         );
       case 'active':

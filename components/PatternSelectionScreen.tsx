@@ -1,13 +1,38 @@
 import React from 'react';
 import { QuizPattern } from '../types';
 import { QUIZ_PATTERNS } from '../utils/quizPatterns';
+import { QuestionSet } from '../types/questionSet';
 
 interface PatternSelectionScreenProps {
   onPatternSelect: (pattern: QuizPattern) => void;
   onBack: () => void;
+  questionSet: QuestionSet | null;
 }
 
-const PatternSelectionScreen: React.FC<PatternSelectionScreenProps> = ({ onPatternSelect, onBack }) => {
+const PatternSelectionScreen: React.FC<PatternSelectionScreenProps> = ({ onPatternSelect, onBack, questionSet }) => {
+  // 問題集に応じた動的なパターン説明を生成
+  const getPatternDescription = (pattern: QuizPattern): string => {
+    if (!questionSet) return '';
+    
+    const title = questionSet.title;
+    const categories = questionSet.categories;
+    
+    switch (pattern) {
+      case QuizPattern.BeginnerOnly:
+        return `${title}の基本的な概念と${categories[0] || '基礎'}レベルの問題`;
+      case QuizPattern.IntermediateOnly:
+        return `${title}の${categories[1] || '中級'}レベルの実践的な問題`;
+      case QuizPattern.AdvancedOnly:
+        return `${title}の${categories[2] || '上級'}レベルの高度な問題`;
+      case QuizPattern.Balanced50:
+        return `各レベルから均等に選出した50問（${categories.join('、')}）`;
+      case QuizPattern.AllQuestions:
+        return `すべての問題に挑戦（${categories.join('、')}すべて）`;
+      default:
+        return '';
+    }
+  };
+
   return (
     <div className="bg-white dark:bg-gray-800 shadow-2xl rounded-xl p-8 transition-all duration-500">
       <div className="text-center mb-8">
@@ -43,7 +68,7 @@ const PatternSelectionScreen: React.FC<PatternSelectionScreenProps> = ({ onPatte
               </div>
             </div>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              {pattern.description}
+              {getPatternDescription(pattern.id) || pattern.description}
             </p>
           </div>
         ))}
