@@ -1,7 +1,19 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-01-28",
+  "lastUpdated": "2025-08-29",
   "questionSets": [
+    {
+      "id": "g-kentei",
+      "title": "G検定 総合対策",
+      "description": "JDLA G検定のシラバスを網羅した総合問題集です。AIの基礎から機械学習、ディープラーニング、法律・倫理まで、実践的な知識の定着を目指します。",
+      "version": "1.0.0",
+      "author": "Gemini",
+      "categories": ["AI基礎", "機械学習", "ディープラーニング", "法律・倫理"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "g-kentei-logo.png",
+      "color": "#202124"
+    },
     {
       "id": "docker",
       "title": "Docker スキルチェッカー",
