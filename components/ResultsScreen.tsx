@@ -1,6 +1,7 @@
 
 import React, { useMemo } from 'react';
 import { QuizQuestion, UserAnswer } from '../types';
+import { QuestionSet } from '../types/questionSet';
 
 interface ResultsScreenProps {
   userAnswers: UserAnswer[];
@@ -8,6 +9,7 @@ interface ResultsScreenProps {
   onRestart: () => void;
   onBackToBooks: () => void;
   totalTime: number;
+  questionSet?: QuestionSet | null;
 }
 
 const CheckIcon = () => (
@@ -32,7 +34,7 @@ const formatTime = (milliseconds: number) => {
     return `${seconds}秒`;
 };
 
-const ResultsScreen: React.FC<ResultsScreenProps> = ({ userAnswers, questions, onRestart, onBackToBooks, totalTime }) => {
+const ResultsScreen: React.FC<ResultsScreenProps> = ({ userAnswers, questions, onRestart, onBackToBooks, totalTime, questionSet }) => {
   const { score, percentage, answeredQuestions, isPartialResult } = useMemo(() => {
     const answeredQuestions = userAnswers.length;
     const totalQuestions = questions.length;
@@ -48,10 +50,12 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({ userAnswers, questions, o
   }, [userAnswers, questions]);
 
   const getFeedback = () => {
+    const subjectName = questionSet?.title?.replace(/\s*(スキルチェッカー|総合対策|コーディングスキルテスト)\s*/, '') || '選択した分野';
+    
     if (percentage === 100) {
       return {
         title: '完璧です！',
-        message: '素晴らしい結果です。あなたはC++の専門家レベルの知識を持っています。'
+        message: `素晴らしい結果です。あなたは${subjectName}の専門家レベルの知識を持っています。`
       };
     }
     if (percentage >= 80) {

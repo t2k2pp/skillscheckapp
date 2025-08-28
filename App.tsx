@@ -137,6 +137,7 @@ const App: React.FC = () => {
             onRestart={restartQuiz}
             onBackToBooks={backToBookSelection}
             totalTime={totalTime}
+            questionSet={currentQuestionSet}
           />
         );
       case 'welcome':

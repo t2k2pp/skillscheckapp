@@ -29,10 +29,10 @@ const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
       )}
 
       <h1 className="text-4xl font-extrabold text-primary dark:text-accent mb-4">
-        {bookTitle || 'Docker スキルチェッカー'}
+        {bookTitle || 'スキルチェッカー'}
       </h1>
       <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
-        あなたの{bookTitle ? bookTitle.replace(' スキルチェッカー', '') : 'Docker'}スキルを試してみましょう。
+        あなたの{bookTitle ? bookTitle.replace(/\s*(スキルチェッカー|総合対策|コーディングスキルテスト)\s*/, '') : '選択した分野の'}スキルを試してみましょう。
         <br />
         基礎から応用まで、幅広い知識が問われます。
       </p>
