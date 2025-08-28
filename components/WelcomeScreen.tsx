@@ -4,18 +4,37 @@ import React from 'react';
 interface WelcomeScreenProps {
   onStart: () => void;
   onPatternSelect: () => void;
+  onBackToBooks?: () => void;
+  bookTitle?: string;
 }
 
-const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, onPatternSelect }) => {
+const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ 
+  onStart, 
+  onPatternSelect, 
+  onBackToBooks, 
+  bookTitle 
+}) => {
   return (
     <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl text-center transform transition-all hover:scale-105 duration-300 ease-in-out">
+      {/* Back to books button */}
+      {onBackToBooks && (
+        <div className="flex justify-start mb-4">
+          <button
+            onClick={onBackToBooks}
+            className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-accent transition-colors"
+          >
+            ← 書籍選択に戻る
+          </button>
+        </div>
+      )}
+
       <h1 className="text-4xl font-extrabold text-primary dark:text-accent mb-4">
-        C++ コーディングスキルテスト
+        {bookTitle || 'Docker スキルチェッカー'}
       </h1>
       <p className="text-gray-600 dark:text-gray-300 mb-8 text-lg">
-        あなたのC++スキルを試してみましょう。
+        あなたの{bookTitle ? bookTitle.replace(' スキルチェッカー', '') : 'Docker'}スキルを試してみましょう。
         <br />
-        基礎から応用まで、幅広い知識が問われます（全75問）。
+        基礎から応用まで、幅広い知識が問われます。
       </p>
       
       <div className="space-y-4">

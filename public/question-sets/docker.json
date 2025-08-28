@@ -1,0 +1,614 @@
+{
+  "id": "docker",
+  "title": "Docker スキルチェッカー",
+  "description": "Dockerのスキルを効率的に測定できる問題集です。基礎から上級まで幅広いレベルの問題を収録し、実践的なスキル評価を提供します。",
+  "version": "1.0.0",
+  "author": "Docker Learning Team",
+  "categories": ["基礎", "中級", "上級"],
+  "totalQuestions": 75,
+  "estimatedTime": "60-75分",
+  "coverImage": "docker-logo.png",
+  "color": "#2496ED",
+  "questions": [
+    {
+      "id": 1,
+      "level": "beginner",
+      "text": "Dockerコンテナの基となるテンプレートを何と呼びますか？",
+      "options": ["テンプレート", "スナップショット", "イメージ", "ボリューム"],
+      "correctAnswerIndex": 2,
+      "explanation": "Dockerイメージは、コンテナを作成するためのテンプレートです。アプリケーションとその依存関係が含まれている読み取り専用のテンプレートです。"
+    },
+    {
+      "id": 2,
+      "level": "beginner",
+      "text": "Dockerコンテナを作成・起動するコマンドはどれですか？",
+      "options": ["docker start", "docker create", "docker run", "docker launch"],
+      "correctAnswerIndex": 2,
+      "explanation": "`docker run` コマンドは、イメージからコンテナを作成し、そのコンテナを起動します。`docker create`はコンテナを作成のみ行い、`docker start`は作成済みのコンテナを起動します。"
+    },
+    {
+      "id": 3,
+      "level": "beginner",
+      "text": "実行中のDockerコンテナ一覧を表示するコマンドはどれですか？",
+      "options": ["docker list", "docker show", "docker ps", "docker containers"],
+      "correctAnswerIndex": 2,
+      "explanation": "`docker ps` コマンドは実行中のコンテナ一覧を表示します。`docker ps -a` を使うと停止中のコンテナも含めて表示されます。"
+    },
+    {
+      "id": 4,
+      "level": "beginner",
+      "text": "Dockerfileでベースイメージを指定するために使用されるディレクティブはどれですか？",
+      "options": ["BASE", "IMAGE", "FROM", "PARENT"],
+      "correctAnswerIndex": 2,
+      "explanation": "`FROM` ディレクティブは、Dockerfileで新しいイメージのベースとなるイメージを指定します。例：`FROM ubuntu:20.04`"
+    },
+    {
+      "id": 5,
+      "level": "intermediate",
+      "text": "Dockerfileで作業ディレクトリを設定するディレクティブはどれですか？",
+      "options": ["WORKDIR", "SETDIR", "CHDIR", "DIR"],
+      "correctAnswerIndex": 0,
+      "explanation": "`WORKDIR` ディレクティブは、Dockerfileの後続のRUN、CMD、ENTRYPOINT、COPY、ADDディレクティブの作業ディレクトリを設定します。"
+    },
+    {
+      "id": 6,
+      "level": "intermediate",
+      "text": "Dockerfileでファイルやディレクトリをコンテナにコピーするディレクティブはどれですか？",
+      "options": ["COPY", "MOVE", "ADD", "COPY と ADD の両方"],
+      "correctAnswerIndex": 3,
+      "explanation": "`COPY` と `ADD` の両方でファイルをコンテナにコピーできます。`COPY` はシンプルなファイルコピー、`ADD` はURL取得やtar展開機能も持ちます。"
+    },
+    {
+      "id": 7,
+      "level": "intermediate",
+      "text": "Dockerコンテナが停止した後も自動的に再起動する設定はどれですか？",
+      "options": ["--restart always", "--auto-restart", "--keep-alive", "--persist"],
+      "correctAnswerIndex": 0,
+      "explanation": "`--restart always` オプションを使用すると、コンテナが停止した場合やDocker デーモンが再起動した場合でも、コンテナが自動的に再起動されます。"
+    },
+    {
+      "id": 8,
+      "level": "intermediate",
+      "text": "Dockerネットワークで異なるネットワーク間のコンテナ同士が通信するために必要なことは何ですか？",
+      "options": ["ポートマッピング", "ブリッジネットワークの接続", "コンテナを複数のネットワークに接続", "hostネットワークの使用"],
+      "correctAnswerIndex": 2,
+      "explanation": "デフォルトでは異なるネットワークのコンテナ同士は通信できません。通信するには、コンテナを複数のネットワークに接続するか、同じネットワークに配置する必要があります。"
+    },
+    {
+      "id": 9,
+      "level": "advanced",
+      "text": "KubernetesでDockerコンテナをオーケストレーションする際の最小デプロイメント単位は何ですか？",
+      "options": ["Container", "Pod", "Service", "Deployment"],
+      "correctAnswerIndex": 1,
+      "explanation": "KubernetesでのPodは最小のデプロイメント単位で、一つまたは複数のコンテナを包含します。Pod内のコンテナは同じネットワークとストレージを共有します。"
+    },
+    {
+      "id": 10,
+      "level": "advanced",
+      "text": "Dockerコンテナのセキュリティを向上させるためのLinuxセキュリティ機能はどれですか？",
+      "options": ["AppArmor/SELinux", "seccomp", "capabilities", "すべての選択肢"],
+      "correctAnswerIndex": 3,
+      "explanation": "Dockerは複数のLinuxセキュリティ機能を組み合わせて使用します：AppArmor/SELinux（アクセス制御）、seccomp（システムコール制限）、capabilities（特権の細かい制御）です。"
+    },
+    {
+      "id": 11,
+      "level": "advanced",
+      "text": "Docker BuildKitが提供する高級機能はどれですか？",
+      "options": ["マルチステージビルド", "ビルドキャッシュ", "秘密情報管理", "すべての機能"],
+      "correctAnswerIndex": 3,
+      "explanation": "Docker BuildKitは次世代のビルドエンジンで、マルチステージビルド、ビルドキャッシュ、秘密情報管理、並列ビルドなどの高級機能を提供します。"
+    },
+    {
+      "id": 12,
+      "level": "advanced",
+      "text": "Dockerコンテナのリソース使用量を監視するためのコマンドはどれですか？",
+      "options": ["docker monitor", "docker stats", "docker usage", "docker resources"],
+      "correctAnswerIndex": 1,
+      "explanation": "`docker stats` コマンドはコンテナのCPU、メモリ、ネットワークI/O、ブロックI/Oの使用量をリアルタイムで表示します。`--no-stream` オプションで一度だけの情報を取得できます。"
+    },
+    {
+      "id": 13,
+      "level": "beginner",
+      "text": "Dockerコンテナを停止するコマンドはどれですか？",
+      "options": ["docker pause", "docker halt", "docker stop", "docker kill"],
+      "correctAnswerIndex": 2,
+      "explanation": "`docker stop` コマンドは実行中のコンテナを正常に停止します。`docker kill` は強制終了、`docker pause` は一時停止を行います。"
+    },
+    {
+      "id": 14,
+      "level": "beginner",
+      "text": "Dockerイメージを削除するコマンドはどれですか？",
+      "options": ["docker delete", "docker remove", "docker rmi", "docker rm"],
+      "correctAnswerIndex": 2,
+      "explanation": "`docker rmi` コマンドはイメージを削除します（remove imageの略）。`docker rm` はコンテナを削除するコマンドです。"
+    },
+    {
+      "id": 15,
+      "level": "beginner",
+      "text": "Dockerコンテナ内でコマンドを実行するために使用されるコマンドはどれですか？",
+      "options": ["docker run", "docker exec", "docker enter", "docker command"],
+      "correctAnswerIndex": 1,
+      "explanation": "`docker exec` コマンドは、既に実行中のコンテナ内でコマンドを実行します。例：`docker exec -it container_name bash`"
+    },
+    {
+      "id": 16,
+      "level": "beginner",
+      "text": "Dockerイメージからコンテナを作成する際、コンテナに名前を付けるオプションはどれですか？",
+      "options": ["--name", "--title", "--label", "--id"],
+      "correctAnswerIndex": 0,
+      "explanation": "`--name` オプションを使ってコンテナに名前を付けることができます。例：`docker run --name mycontainer ubuntu`"
+    },
+    {
+      "id": 17,
+      "level": "intermediate",
+      "text": "Dockerコンテナのリソース使用量（CPU、メモリ）を制限するオプションはどれですか？",
+      "options": ["--limit", "--resource", "--cpus と --memory", "--constraint"],
+      "correctAnswerIndex": 2,
+      "explanation": "`--cpus` オプションでCPU使用量を、`--memory` オプションでメモリ使用量を制限できます。例：`docker run --cpus=\"1.5\" --memory=\"512m\" myapp`"
+    },
+    {
+      "id": 18,
+      "level": "intermediate",
+      "text": "Dockerボリュームとバインドマウントの主な違いは何ですか？",
+      "options": ["ボリュームはDockerが管理、バインドマウントはホストのパスを直接指定", "ボリュームは読み取り専用、バインドマウントは書き込み可能", "ボリュームは永続的、バインドマウントは一時的", "機能的な違いはない"],
+      "correctAnswerIndex": 0,
+      "explanation": "DockerボリュームはDockerが管理するストレージで`docker volume create`で作成します。バインドマウントはホストファイルシステムの特定パスを直接コンテナにマウントします。"
+    },
+    {
+      "id": 19,
+      "level": "intermediate",
+      "text": "Dockerfileでコンテナ実行時のデフォルトコマンドを指定するディレクティブはどれですか？",
+      "options": ["CMD", "ENTRYPOINT", "RUN", "CMD と ENTRYPOINT の両方"],
+      "correctAnswerIndex": 3,
+      "explanation": "`CMD` はデフォルトコマンドを指定し、`docker run` で上書きできます。`ENTRYPOINT` は必ず実行されるコマンドで、`CMD` はそのパラメータとして使えます。"
+    },
+    {
+      "id": 20,
+      "level": "intermediate",
+      "text": "Dockerイメージのレイヤー構造について正しいのはどれですか？",
+      "options": ["レイヤーは読み書き可能", "レイヤーは読み取り専用", "各レイヤーは独立している", "レイヤーはイメージごとに作り直される"],
+      "correctAnswerIndex": 1,
+      "explanation": "Dockerイメージのレイヤーは読み取り専用で、変更不可です。コンテナ実行時には書き込み可能なコンテナレイヤーが最上位に追加されます。"
+    },
+    {
+      "id": 21,
+      "level": "advanced",
+      "text": "Dockerコンテナのファイルシステムで使用されるUnionFSシステムの特徴は何ですか？",
+      "options": ["ファイルの圧縮", "レイヤーを重ねて一つのファイルシステムとして表示", "ファイルの暗号化", "ネットワークファイルシステム"],
+      "correctAnswerIndex": 1,
+      "explanation": "UnionFS（Union File System）は、複数のディレクトリを重ねて一つのディレクトリとして表示する技術です。Dockerはこれを使ってイメージのレイヤーを重ねています。"
+    },
+    {
+      "id": 22,
+      "level": "advanced",
+      "text": "Dockerコンテナで使用されるデフォルトのcgroupバージョンとその特徴は何ですか？",
+      "options": ["cgroup v1 - 階層構造", "cgroup v2 - 統一階層", "両方を混合使用", "システム依存"],
+      "correctAnswerIndex": 3,
+      "explanation": "Dockerが使用するcgroupバージョンはホストOSに依存します。新しいカーネルではcgroup v2がデフォルトで、統一階層でリソース管理が簡素化されていますが、古いシステムではcgroup v1が使用されます。"
+    },
+    {
+      "id": 23,
+      "level": "advanced",
+      "text": "Dockerコンテナのネットワーク名前空間分離の仕組みは何ですか？",
+      "options": ["virtual network interface", "Linux network namespaces", "bridge network", "overlay network"],
+      "correctAnswerIndex": 1,
+      "explanation": "DockerはLinux network namespacesを使用してコンテナごとに独立したネットワークスタックを提供します。これにより各コンテナは独自のネットワークインターフェース、ルーティングテーブル、IPアドレスを持ちます。"
+    },
+    {
+      "id": 24,
+      "level": "advanced",
+      "text": "Dockerコンテナのシステムコール制限機能であるseccompプロファイルの目的は何ですか？",
+      "options": ["ファイルアクセスの制限", "システムコールの制限", "ネットワークアクセスの制限", "メモリ使用量の制限"],
+      "correctAnswerIndex": 1,
+      "explanation": "seccomp (secure computing mode) プロファイルは、コンテナが実行できるシステムコールを制限するためのセキュリティ機能です。これにより、コンテナの攻撃面を減らしセキュリティを向上させます。"
+    },
+    {
+      "id": 25,
+      "level": "beginner",
+      "text": "Dockerコンテナとホスト間でファイルをコピーするコマンドはどれですか？",
+      "options": ["docker copy", "docker move", "docker cp", "docker transfer"],
+      "correctAnswerIndex": 2,
+      "explanation": "`docker cp` コマンドはコンテナとホスト間でファイルやディレクトリをコピーします。例：`docker cp container:/path/to/file /host/path/`"
+    },
+    {
+      "id": 26,
+      "level": "beginner",
+      "text": "Dockerイメージの一覧を表示するコマンドはどれですか？",
+      "options": ["docker list", "docker images", "docker show", "docker ls"],
+      "correctAnswerIndex": 1,
+      "explanation": "`docker images` コマンドはローカルにDockerイメージの一覧を表示します。`docker image ls` でも同じ結果が得られます。"
+    },
+    {
+      "id": 27,
+      "level": "beginner",
+      "text": "Dockerコンテナをバックグラウンドで実行するためのオプションはどれですか？",
+      "options": ["-b", "-d", "--background", "--daemon"],
+      "correctAnswerIndex": 1,
+      "explanation": "`-d` オプション（または `--detach`）はコンテナをバックグラウンドで実行します。例：`docker run -d nginx`"
+    },
+    {
+      "id": 28,
+      "level": "beginner",
+      "text": "Dockerコンテナのログを表示するコマンドはどれですか？",
+      "options": ["docker log", "docker logs", "docker show-logs", "docker output"],
+      "correctAnswerIndex": 1,
+      "explanation": "`docker logs` コマンドは指定したコンテナのログを表示します。`-f` オプションでログをリアルタイムで追跡できます。"
+    },
+    {
+      "id": 29,
+      "level": "beginner",
+      "text": "Dockerコンテナのポートをホストのポートにマッピングするためのオプションはどれですか？",
+      "options": ["-p", "--port", "-m", "--map"],
+      "correctAnswerIndex": 0,
+      "explanation": "`-p` オプション（または `--publish`）はホストのポートをコンテナのポートにマッピングします。例：`docker run -p 8080:80 nginx`"
+    },
+    {
+      "id": 30,
+      "level": "beginner",
+      "text": "Dockerコンテナの環境変数を設定するためのオプションはどれですか？",
+      "options": ["-e", "--env", "-v", "--var"],
+      "correctAnswerIndex": 0,
+      "explanation": "`-e` オプション（または `--env`）はコンテナの環境変数を設定します。例：`docker run -e DB_HOST=localhost myapp`"
+    },
+    {
+      "id": 31,
+      "level": "beginner",
+      "text": "Dockerfileでコマンドを実行するためのディレクティブはどれですか？",
+      "options": ["EXEC", "RUN", "CMD", "COMMAND"],
+      "correctAnswerIndex": 1,
+      "explanation": "`RUN` ディレクティブはDockerfileのビルド時にコマンドを実行し、結果をイメージのレイヤーにコミットします。`CMD` はコンテナ実行時のデフォルトコマンドです。"
+    },
+    {
+      "id": 32,
+      "level": "beginner",
+      "text": "Dockerボリュームをコンテナにマウントするためのオプションはどれですか？",
+      "options": ["-v", "--volume", "-m", "--mount"],
+      "correctAnswerIndex": 0,
+      "explanation": "`-v` オプション（または `--volume`）はホストのディレクトリやボリュームをコンテナにマウントします。例：`docker run -v /host/path:/container/path myapp`"
+    },
+    {
+      "id": 33,
+      "level": "intermediate",
+      "text": "Docker Composeでコンテナ関の依存関係を定義するキーはどれですか？",
+      "options": ["depends_on", "requires", "needs", "after"],
+      "correctAnswerIndex": 0,
+      "explanation": "`depends_on` キーを使用してコンテナの起動順序を制御できます。ただし、これはコンテナの起動順序のみを制御し、アプリケーションの準備完了を待つわけではありません。"
+    },
+    {
+      "id": 34,
+      "level": "intermediate",
+      "text": "Dockerコンテナ内からホストのDockerデーモンにアクセスするためにマウントするファイルは何ですか？",
+      "options": ["/var/run/docker.sock", "/usr/bin/docker", "/etc/docker/daemon.json", "/var/lib/docker"],
+      "correctAnswerIndex": 0,
+      "explanation": "`/var/run/docker.sock` はDockerデーモンのUNIXソケットで、これをコンテナにマウントすることでコンテナ内からDockerコマンドを実行できます。ただしセキュリティリスクがあるため注意が必要です。"
+    },
+    {
+      "id": 35,
+      "level": "intermediate",
+      "text": "Dockerfileで環境変数を設定するディレクティブはどれですか？",
+      "options": ["ENV", "SET", "EXPORT", "VAR"],
+      "correctAnswerIndex": 0,
+      "explanation": "`ENV` ディレクティブはイメージ内で環境変数を設定します。設定した環境変数はビルド中とコンテナ実行時の両方で使用できます。例：`ENV PATH=/app:$PATH`"
+    },
+    {
+      "id": 36,
+      "level": "intermediate",
+      "text": "Dockerネットワークでコンテナがホストのネットワークスタックを直接使用するモードはどれですか？",
+      "options": ["bridge", "host", "none", "overlay"],
+      "correctAnswerIndex": 1,
+      "explanation": "`host` ネットワークモードでは、コンテナがホストのネットワークスタックを直接使用し、ネットワークの分離がなくなります。パフォーマンスは向上しますが、セキュリティが低下します。"
+    },
+    {
+      "id": 37,
+      "level": "intermediate",
+      "text": "Dockerイメージのサイズを最小化するためのベストプラクティスはどれですか？",
+      "options": ["ベースイメージにalpineを使用", "マルチステージビルドを使用", "RUNコマンドを結合", "すべての手法を組み合わせて使用"],
+      "correctAnswerIndex": 3,
+      "explanation": "Dockerイメージのサイズ最小化には、alpineベースイメージ、マルチステージビルド、RUNコマンドの結合、.dockerignoreの使用など、複数の手法を組み合わせることが最も効果的です。"
+    },
+    {
+      "id": 38,
+      "level": "intermediate",
+      "text": "Dockerコンテナのヘルスチェックを設定するDockerfileディレクティブはどれですか？",
+      "options": ["HEALTHCHECK", "CHECK", "HEALTH", "MONITOR"],
+      "correctAnswerIndex": 0,
+      "explanation": "`HEALTHCHECK` ディレクティブはコンテナのヘルスチェックを定義します。例：`HEALTHCHECK CMD curl -f http://localhost/ || exit 1` これによりコンテナの正常性を監視できます。"
+    },
+    {
+      "id": 39,
+      "level": "intermediate",
+      "text": "Dockerコンテナのセキュリティを向上させるためのベストプラクティスはどれですか？",
+      "options": ["rootユーザーで実行する", "非特権ユーザーで実行する", "すべてのポートを開放する", "ホストのファイルシステムを直接マウントする"],
+      "correctAnswerIndex": 1,
+      "explanation": "Dockerコンテナのセキュリティ向上のためには、非特権ユーザーでアプリケーションを実行し、必要なポートのみを開放し、最小限の権限で実行することが重要です。"
+    },
+    {
+      "id": 40,
+      "level": "intermediate",
+      "text": "Docker Swarmでサービスのレプリカ数を設定するコマンドはどれですか？",
+      "options": ["docker service create --replicas", "docker swarm replicas", "docker scale --replicas", "docker service scale"],
+      "correctAnswerIndex": 3,
+      "explanation": "`docker service scale` コマンドでサービスのレプリカ数を変更できます。例：`docker service scale web=5` サービス作成時は`docker service create --replicas`を使用します。"
+    },
+    {
+      "id": 41,
+      "level": "advanced",
+      "text": "Dockerコンテナのセキュリティコンテキストとして使用されるSELinuxのMCS（Multi-Category Security）ラベルの目的は何ですか？",
+      "options": ["ユーザー認証", "コンテナ間の分離", "ネットワーク制御", "リソース制限"],
+      "correctAnswerIndex": 1,
+      "explanation": "SELinuxのMCSラベルは、コンテナ間の分離を強化するために使用されます。各コンテナに異なるMCSラベルを割り当て、コンテナ間の不正アクセスを防ぎます。"
+    },
+    {
+      "id": 42,
+      "level": "advanced",
+      "text": "Dockerコンテナのプロセス間通信で使用されるIPC namespaceの機能は何ですか？",
+      "options": ["ファイルシステムの分離", "プロセスIDの分離", "共有メモリやセマフォ等のIPCリソースの分離", "ユーザーIDの分離"],
+      "correctAnswerIndex": 2,
+      "explanation": "IPC namespaceは、System V IPC（共有メモリ、セマフォ、メッセージキュー）やPOSIXメッセージキュー、名前付きセマフォなどのIPCリソースをコンテナ間で分離します。"
+    },
+    {
+      "id": 43,
+      "level": "advanced",
+      "text": "Dockerコンテナのメモリ管理で使用されるOOM Killerの動作を制御するパラメータはどれですか？",
+      "options": ["--memory-limit", "--oom-kill-disable", "--memory-swap", "--oom-score-adj"],
+      "correctAnswerIndex": 3,
+      "explanation": "`--oom-score-adj` パラメータでOOM Killerがコンテナプロセスを殺す優先度を調整できます。-1000（殺されにくい）から1000（殺されやすい）まで設定できます。"
+    },
+    {
+      "id": 44,
+      "level": "advanced",
+      "text": "Dockerコンテナのシステムコールを監視・ログ出力するためのツールはどれですか？",
+      "options": ["strace", "auditd", "sysdig", "すべてのツール"],
+      "correctAnswerIndex": 3,
+      "explanation": "コンテナのシステムコール監視には複数のツールが使用できます：strace（特定プロセスのシステムコール監視）、auditd（システム監査）、sysdig（システムレベルの可視化）などです。"
+    },
+    {
+      "id": 45,
+      "level": "advanced",
+      "text": "DockerコンテナのInitプロセス問題を解決する`--init`オプションの機能は何ですか？",
+      "options": ["コンテナのヘルスチェック", "ゾンビプロセスの処理とシグナルの適切な処理", "セキュリティコンテキストの設定", "リソース制限の適用"],
+      "correctAnswerIndex": 1,
+      "explanation": "`--init` オプションは、コンテナ内でtiniやdocker-initなどの軽量initシステムをPID 1で実行し、ゾンビプロセスの清理やシグナルの適切な伝播を行います。"
+    },
+    {
+      "id": 46,
+      "level": "advanced",
+      "text": "Dockerコンテナのセキュリティを強化するUser Namespaceの仕組みは何ですか？",
+      "options": ["ファイルアクセスの制限", "コンテナ内rootをホストの非特権ユーザーにマッピング", "ネットワークアクセスの制限", "プロセス数の制限"],
+      "correctAnswerIndex": 1,
+      "explanation": "User Namespaceは、コンテナ内のUID/GIDをホストの別のUID/GIDにマッピングします。これによりコンテナ内でroot権限を持つプロセスも、ホスト上では非特権ユーザーとして実行されます。"
+    },
+    {
+      "id": 47,
+      "level": "advanced",
+      "text": "Dockerコンテナのイメージスキャンと脆弱性検知のためのツールはどれですか？",
+      "options": ["Docker Scout", "Trivy", "Clair", "すべてのツール"],
+      "correctAnswerIndex": 3,
+      "explanation": "Dockerイメージの脆弱性検知には複数のツールが利用できます：Docker Scout（Docker公式）、Trivy（Aqua Security）、Clair（CoreOS/Red Hat）などで、それぞれ特徴と強みがあります。"
+    },
+    {
+      "id": 48,
+      "level": "advanced",
+      "text": "Dockerコンテナのランタイムセキュリティを強化するGVisorやKata Containersのアプローチは何ですか？",
+      "options": ["コンテナをVMで完全に分離", "サンドボック化や軽量VMによる分離", "コンテナの暗号化", "ネットワークの完全分離"],
+      "correctAnswerIndex": 1,
+      "explanation": "GVisorはユーザースペースカーネルでサンドボック化、Kata Containersは軽量VMでコンテナを実行します。どちらも伝統的なコンテナよりも強い分離を提供します。"
+    },
+    {
+      "id": 49,
+      "level": "intermediate",
+      "text": "Docker Composeでサービスのスケールを指定するキーはどれですか？",
+      "options": ["scale", "replicas", "instances", "deploy.replicas"],
+      "correctAnswerIndex": 3,
+      "explanation": "Docker Compose v3以降では、`deploy.replicas` キーでサービスのレプリカ数を指定します。Swarmモードでのみ有効で、スタンドアロンのDocker Composeでは無視されます。"
+    },
+    {
+      "id": 50,
+      "level": "advanced",
+      "text": "Dockerコンテナのパフォーマンスチューニングで重要なカーネルパラメータはどれですか？",
+      "options": ["vm.swappiness", "net.core.somaxconn", "fs.file-max", "すべて重要"],
+      "correctAnswerIndex": 3,
+      "explanation": "Dockerコンテナのパフォーマンスに影響するカーネルパラメータは多数あります：vm.swappiness（スワップの使用度）、net.core.somaxconn（ソケットキューサイズ）、fs.file-max（ファイルディスクリプタ数）などです。"
+    },
+    {
+      "id": 51,
+      "level": "beginner",
+      "text": "Dockerコンテナのディスク使用量を確認するコマンドはどれですか？",
+      "options": ["docker size", "docker system df", "docker usage", "docker disk"],
+      "correctAnswerIndex": 1,
+      "explanation": "`docker system df` コマンドはDockerが使用するディスク容量の詳細情報を表示します。イメージ、コンテナ、ローカルボリューム、ビルドキャッシュの使用量を確認できます。"
+    },
+    {
+      "id": 52,
+      "level": "beginner",
+      "text": "Dockerコンテナのタイムゾーンをホストと同期させる方法はどれですか？",
+      "options": ["-v /etc/timezone:/etc/timezone:ro", "-e TZ=Asia/Tokyo", "-v /etc/localtime:/etc/localtime:ro", "すべての方法が有効"],
+      "correctAnswerIndex": 3,
+      "explanation": "タイムゾーン同期には複数の方法があります：/etc/timezoneや/etc/localtimeのマウント、TZ環境変数の設定です。用途やOSによって適切な方法を選びます。"
+    },
+    {
+      "id": 53,
+      "level": "beginner",
+      "text": "Dockerイメージのタグを削除するコマンドはどれですか？",
+      "options": ["docker rmi", "docker tag --remove", "docker untag", "docker image rm"],
+      "correctAnswerIndex": 0,
+      "explanation": "`docker rmi` コマンドでイメージのタグやイメージ自体を削除できます。`docker image rm` も同様の機能を持ちますが、`docker rmi` がより一般的です。"
+    },
+    {
+      "id": 54,
+      "level": "intermediate",
+      "text": "Docker Composeでコンテナの起動順序を制御するためのオプションはどれですか？",
+      "options": ["depends_on", "wait_for", "startup_order", "sequence"],
+      "correctAnswerIndex": 0,
+      "explanation": "`depends_on` キーでサービスの依存関係と起動順序を制御できます。ただし、これはコンテナの起動順序のみを制御し、アプリケーションの準備完了を待たないことに注意が必要です。"
+    },
+    {
+      "id": 55,
+      "level": "intermediate",
+      "text": "Dockerコンテナでのシグナル処理で重要なSIGTERMとSIGKILLの違いは何ですか？",
+      "options": ["SIGTERMは即座終了、SIGKILLは遅延終了", "SIGTERMは正常終了、SIGKILLは強制終了", "機能的な違いはない", "SIGTERMはユーザー用、SIGKILLはシステム用"],
+      "correctAnswerIndex": 1,
+      "explanation": "SIGTERMはプロセスに正常終了を促し、クリーンアップの機会を与えます。SIGKILLはプロセスを即座に強制終了させ、プロセスはこのシグナルをキャッチや無視することができません。"
+    },
+    {
+      "id": 56,
+      "level": "intermediate",
+      "text": "Dockerコンテナのシステムリソースをクリーンアップするコマンドはどれですか？",
+      "options": ["docker cleanup", "docker system prune", "docker clean", "docker gc"],
+      "correctAnswerIndex": 1,
+      "explanation": "`docker system prune` コマンドは使用されていないコンテナ、ネットワーク、イメージ、ビルドキャッシュを一括で削除します。`-a` オプションでより徹底的にクリーンアップできます。"
+    },
+    {
+      "id": 57,
+      "level": "intermediate",
+      "text": "Dockerコンテナのメモリ使用量を制限し、スワップも制限するオプション組み合わせはどれですか？",
+      "options": ["--memory のみ", "--memory と --memory-swap", "--memory-limit", "--mem と --swap"],
+      "correctAnswerIndex": 1,
+      "explanation": "`--memory` でメモリ使用量を制限し、`--memory-swap` でメモリ+スワップの合計を制限できます。例：`--memory=1g --memory-swap=2g` でメモリ1GB、スワップ1GBに制限されます。"
+    },
+    {
+      "id": 58,
+      "level": "intermediate",
+      "text": "Dockerfileでマルチステージビルドを行う際のステージ指定方法はどれですか？",
+      "options": ["FROM image AS stage", "STAGE stage FROM image", "SET STAGE stage", "FROM image NAME stage"],
+      "correctAnswerIndex": 0,
+      "explanation": "`FROM image AS stage_name` の構文でステージに名前を付け、後のステージで `COPY --from=stage_name` などで参照できます。これによりイメージサイズの最適化が可能です。"
+    },
+    {
+      "id": 59,
+      "level": "intermediate",
+      "text": "Dockerコンテナ内のアプリケーションが正常に動作していることを確認するコマンドはどれですか？",
+      "options": ["docker health", "docker status", "docker logs", "docker inspect"],
+      "correctAnswerIndex": 2,
+      "explanation": "`docker logs` コマンドでコンテナ内のアプリケーションのログを確認できます。`docker inspect` ではコンテナの詳細情報を、`docker ps` では実行状態を確認できます。"
+    },
+    {
+      "id": 60,
+      "level": "intermediate",
+      "text": "Docker Composeでサービスを再作成せずに設定変更を反映させるコマンドはどれですか？",
+      "options": ["docker-compose restart", "docker-compose reload", "docker-compose refresh", "docker-compose up --force-recreate"],
+      "correctAnswerIndex": 0,
+      "explanation": "`docker-compose restart` は既存のコンテナを停止・再起動します。設定変更を完全に反映するには `docker-compose up --force-recreate` が確実ですが、単純な再起動では `restart` を使用します。"
+    },
+    {
+      "id": 61,
+      "level": "intermediate",
+      "text": "DockerイメージをDocker Hubにプッシュする前に必要なコマンドはどれですか？",
+      "options": ["docker login", "docker auth", "docker signin", "docker connect"],
+      "correctAnswerIndex": 0,
+      "explanation": "`docker login` コマンドでDocker Hubやプライベートレジストリに認証を行う必要があります。認証後、`docker push` でイメージをプッシュできます。"
+    },
+    {
+      "id": 62,
+      "level": "intermediate",
+      "text": "Dockerコンテナの実行中プロセスを確認するために使用できるコマンドはどれですか？",
+      "options": ["docker ps", "docker exec ps aux", "docker top", "すべてのコマンド"],
+      "correctAnswerIndex": 3,
+      "explanation": "`docker ps` で実行中コンテナの一覧、`docker exec container_name ps aux` でコンテナ内のプロセス、`docker top container_name` で指定コンテナのプロセスを確認できます。"
+    },
+    {
+      "id": 63,
+      "level": "intermediate",
+      "text": "Docker Composeでサービス間の通信に使用されるデフォルトのネットワーク名はどのような形式ですか？",
+      "options": ["docker_default", "compose_default", "プロジェクト名_default", "app_network"],
+      "correctAnswerIndex": 2,
+      "explanation": "Docker Composeはデフォルトで「プロジェクト名_default」の形式でネットワークを作成します。プロジェクト名はディレクトリ名またはproject-nameで指定した名前が使用されます。"
+    },
+    {
+      "id": 64,
+      "level": "intermediate",
+      "text": "Dockerコンテナのストレージドライバとして一般的に使用されるものはどれですか？",
+      "options": ["overlay2", "aufs", "devicemapper", "overlay2とaufs"],
+      "correctAnswerIndex": 0,
+      "explanation": "現在の主流は「overlay2」で、高いパフォーマンスと安定性を提供します。「aufs」は古い形式ですが一部のシステムで使用されています。`docker info` でストレージドライバを確認できます。"
+    },
+    {
+      "id": 65,
+      "level": "advanced",
+      "text": "Dockerコンテナのセキュリティ強化のためのReadOnly Root Filesystemを設定するオプションはどれですか？",
+      "options": ["--read-only", "--readonly-root", "--ro-root", "--immutable"],
+      "correctAnswerIndex": 0,
+      "explanation": "`--read-only` オプションでコンテナのルートファイルシステムを読み取り専用にできます。アプリケーションが書き込みを必要とする場合は、tmpfsボリュームを併用します。"
+    },
+    {
+      "id": 66,
+      "level": "advanced",
+      "text": "DockerコンテナのLinux Capabilitiesを制限するためのオプションはどれですか？",
+      "options": ["--cap-add/--cap-drop", "--security-opt", "--privileged", "--user"],
+      "correctAnswerIndex": 0,
+      "explanation": "`--cap-add` で能力を追加、`--cap-drop` で能力を削除できます。`--cap-drop ALL` で全能力を削除後、必要なものだけを `--cap-add` で追加することでセキュリティを向上できます。"
+    },
+    {
+      "id": 67,
+      "level": "advanced",
+      "text": "Docker Swarmでサービスのローディングバランサーとして使用されるデフォルトのモードはどれですか？",
+      "options": ["round-robin", "least-connections", "ip-hash", "vip"],
+      "correctAnswerIndex": 3,
+      "explanation": "Docker SwarmはデフォルトでVIP (Virtual IP)モードを使用し、各サービスに仮想IPを割り当ててコンテナ間のロードバランシングを行います。"
+    },
+    {
+      "id": 68,
+      "level": "advanced",
+      "text": "DockerコンテナのPID namespaceをホストと共有するオプションはどれですか？",
+      "options": ["--pid=host", "--share-pid", "--host-pid", "--pid-mode=host"],
+      "correctAnswerIndex": 0,
+      "explanation": "`--pid=host` オプションでコンテナがホストのPID namespaceを共有し、ホストのプロセスをコンテナ内から参照できます。デバッグやモニタリングツールで使用されます。"
+    },
+    {
+      "id": 69,
+      "level": "advanced",
+      "text": "Dockerコンテナのセキュリティプロファイルを適用するためのAppArmor設定オプションはどれですか？",
+      "options": ["--security-opt apparmor=profile_name", "--apparmor=profile_name", "--security apparmor:profile_name", "--profile apparmor:profile_name"],
+      "correctAnswerIndex": 0,
+      "explanation": "`--security-opt apparmor=profile_name` でAppArmorプロファイルを指定できます。`unconfined` で無効化、カスタムプロファイル名で特定のプロファイルを適用できます。"
+    },
+    {
+      "id": 70,
+      "level": "advanced",
+      "text": "Dockerコンテナで最小権限の原則を実現するためのベストプラクティスはどれですか？",
+      "options": ["常にrootユーザーで実行", "非特権ユーザーで実行し、必要最小限の権限のみ付与", "すべてのLinux capabilitiesを有効化", "--privilegedオプションを使用"],
+      "correctAnswerIndex": 1,
+      "explanation": "セキュリティのために非特権ユーザーでアプリケーションを実行し、コンテナには必要最小限の権限のみを付与することが推奨されます。"
+    },
+    {
+      "id": 71,
+      "level": "advanced",
+      "text": "Dockerコンテナでcgroup v2を使用することの主なメリットは何ですか？",
+      "options": ["リソース制限の統一管理と性能向上", "メモリ使用量の減少", "ネットワーク速度の向上", "ファイルシステムの最適化"],
+      "correctAnswerIndex": 0,
+      "explanation": "cgroup v2は統一階層でリソース管理を簡素化し、より効率的なリソース制限とメモリ管理を提供します。また、新しい機能や改善されたパフォーマンスも提供します。"
+    },
+    {
+      "id": 72,
+      "level": "advanced",
+      "text": "Docker BuildKitの秘密情報管理機能でビルド時に秘密情報を使用する方法はどれですか？",
+      "options": ["ENVで秘密情報を設定", "RUN --mount=type=secretでマウント", "COPYで秘密情報ファイルをコピー", "ARGで秘密情報を渡す"],
+      "correctAnswerIndex": 1,
+      "explanation": "BuildKitの `RUN --mount=type=secret` 機能で秘密情報を一時的にマウントし、ビルド後にイメージから除去されるため、安全に秘密情報を扱えます。"
+    },
+    {
+      "id": 73,
+      "level": "advanced",
+      "text": "DockerコンテナのマルチアーキテクチャイメージをビルドするためのBuildKit機能はどれですか？",
+      "options": ["docker buildx", "docker multi-arch", "docker platform", "docker cross-build"],
+      "correctAnswerIndex": 0,
+      "explanation": "`docker buildx` はBuildKitベースのビルダーで、`--platform` オプションで複数のアーキテクチャをターゲットにしたイメージをビルドできます。例：`docker buildx build --platform linux/amd64,linux/arm64`"
+    },
+    {
+      "id": 74,
+      "level": "advanced",
+      "text": "DockerコンテナのFileSystemをメモリ上にマウントして高速化するための方法はどれですか？",
+      "options": ["--tmpfs /path", "--mount type=tmpfs", "--memory-fs /path", "tmpfsボリュームの作成"],
+      "correctAnswerIndex": 1,
+      "explanation": "`--mount type=tmpfs,destination=/path` でtmpfsファイルシステムをマウントでき、メモリ上に一時ファイルシステムを作成して高速なI/Oを実現できます。"
+    },
+    {
+      "id": 75,
+      "level": "advanced",
+      "text": "Dockerコンテナでカーネルモジュールをロードするための権限が必要な場合のオプションはどれですか？",
+      "options": ["--privileged", "--cap-add SYS_MODULE", "--device /dev/kmod", "--kernel-module"],
+      "correctAnswerIndex": 1,
+      "explanation": "`--cap-add SYS_MODULE` でカーネルモジュールのロード/アンロード権限を付与できます。`--privileged` でも可能ですが、より多くの権限を付与してしまうため、最小権限の原則では `SYS_MODULE` のみを追加することが推奨されます。"
+    }
+  ]
+}

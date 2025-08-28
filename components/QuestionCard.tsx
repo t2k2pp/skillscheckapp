@@ -7,6 +7,7 @@ interface QuestionCardProps {
   questionNumber: number;
   totalQuestions: number;
   onAnswer: (answerIndex: number) => void;
+  onEarlyFinish: () => void;
 }
 
 const getLevelColor = (level: QuestionLevel) => {
@@ -23,7 +24,7 @@ const getLevelColor = (level: QuestionLevel) => {
 };
 
 
-const QuestionCard: React.FC<QuestionCardProps> = ({ question, questionNumber, totalQuestions, onAnswer }) => {
+const QuestionCard: React.FC<QuestionCardProps> = ({ question, questionNumber, totalQuestions, onAnswer, onEarlyFinish }) => {
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
 
@@ -90,7 +91,20 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, questionNumber, t
         ))}
       </div>
       
-      <div className="mt-8 text-center">
+      <div className="mt-8 text-center space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+        <button
+          onClick={() => {
+            // 回答が選択されている場合は、その回答を含めて終了
+            if (selectedOption !== null) {
+              onAnswer(selectedOption);
+            } else {
+              onEarlyFinish();
+            }
+          }}
+          className="w-full sm:w-auto bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform hover:translate-y-1 duration-300 ease-in-out"
+        >
+          📊 途中で終了
+        </button>
         <button
           onClick={handleSubmit}
           disabled={selectedOption === null || isAnswered}

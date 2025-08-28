@@ -3,13 +3,18 @@ import React, { useState, useCallback } from 'react';
 import { QuizQuestion, UserAnswer, QuizPattern } from './types';
 import { QUESTIONS } from './constants/questions';
 import { getQuestionsByPattern, shuffleQuestionOptions } from './utils/quizPatterns';
+import { QuestionLoader } from './utils/questionLoader';
+import { QuestionSet } from './types/questionSet';
+import BookSelectionScreen from './components/BookSelectionScreen';
 import WelcomeScreen from './components/WelcomeScreen';
 import PatternSelectionScreen from './components/PatternSelectionScreen';
 import QuestionCard from './components/QuestionCard';
 import ResultsScreen from './components/ResultsScreen';
 
 const App: React.FC = () => {
-  const [quizState, setQuizState] = useState<'welcome' | 'pattern_selection' | 'active' | 'finished'>('welcome');
+  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'pattern_selection' | 'active' | 'finished'>('book_selection');
+  const [selectedBook, setSelectedBook] = useState<string | null>(null);
+  const [currentQuestionSet, setCurrentQuestionSet] = useState<QuestionSet | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
@@ -17,23 +22,42 @@ const App: React.FC = () => {
   const [questionStartTime, setQuestionStartTime] = useState<number>(0);
   const [totalTime, setTotalTime] = useState<number>(0);
 
-  const prepareQuizQuestions = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions) => {
-    // 1. Get questions based on selected pattern
-    const selectedQuestions = getQuestionsByPattern(pattern);
+  // Book selection handler
+  const handleBookSelect = useCallback(async (bookId: string) => {
+    try {
+      const questionSet = await QuestionLoader.loadQuestionSet(bookId);
+      setSelectedBook(bookId);
+      setCurrentQuestionSet(questionSet);
+      setQuizState('welcome');
+    } catch (error) {
+      console.error('Failed to load question set:', error);
+      // Handle error - could show error message
+    }
+  }, []);
 
-    // 2. For each question, shuffle the order of its options
-    return selectedQuestions.map(shuffleQuestionOptions);
+  const prepareQuizQuestions = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions, questionSet?: QuestionSet) => {
+    // Use current question set or fallback to legacy questions
+    if (questionSet) {
+      // Convert JSON questions to QuizQuestion format
+      const quizQuestions = QuestionLoader.convertToQuizQuestions(questionSet.questions);
+      // For now, return all questions - pattern filtering can be implemented later
+      return quizQuestions.map(shuffleQuestionOptions);
+    } else {
+      // Fallback to legacy questions
+      const selectedQuestions = getQuestionsByPattern(pattern);
+      return selectedQuestions.map(shuffleQuestionOptions);
+    }
   }, []);
 
   const startQuiz = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions) => {
-    setQuestions(prepareQuizQuestions(pattern));
+    setQuestions(prepareQuizQuestions(pattern, currentQuestionSet || undefined));
     setCurrentQuestionIndex(0);
     setUserAnswers([]);
     setQuizState('active');
     const now = Date.now();
     setStartTime(now);
     setQuestionStartTime(now);
-  }, [prepareQuizQuestions]);
+  }, [prepareQuizQuestions, currentQuestionSet]);
 
   const showPatternSelection = useCallback(() => {
     setQuizState('pattern_selection');
@@ -45,6 +69,12 @@ const App: React.FC = () => {
 
   const backToWelcome = useCallback(() => {
     setQuizState('welcome');
+  }, []);
+
+  const backToBookSelection = useCallback(() => {
+    setQuizState('book_selection');
+    setSelectedBook(null);
+    setCurrentQuestionSet(null);
   }, []);
   
   const handleAnswer = useCallback((answerIndex: number) => {
@@ -65,12 +95,22 @@ const App: React.FC = () => {
     }
   }, [userAnswers, currentQuestionIndex, questions.length, questionStartTime, startTime]);
 
+  const handleEarlyFinish = useCallback(() => {
+    const now = Date.now();
+    setQuizState('finished');
+    if (startTime) {
+      setTotalTime(now - startTime);
+    }
+  }, [startTime]);
+
   const restartQuiz = useCallback(() => {
     setQuizState('welcome');
   }, []);
 
   const renderContent = () => {
     switch (quizState) {
+      case 'book_selection':
+        return <BookSelectionScreen onSelectBook={handleBookSelect} />;
       case 'pattern_selection':
         return (
           <PatternSelectionScreen
@@ -85,6 +125,7 @@ const App: React.FC = () => {
             questionNumber={currentQuestionIndex + 1}
             totalQuestions={questions.length}
             onAnswer={handleAnswer}
+            onEarlyFinish={handleEarlyFinish}
           />
         );
       case 'finished':
@@ -93,12 +134,20 @@ const App: React.FC = () => {
             userAnswers={userAnswers}
             questions={questions}
             onRestart={restartQuiz}
+            onBackToBooks={backToBookSelection}
             totalTime={totalTime}
           />
         );
       case 'welcome':
       default:
-        return <WelcomeScreen onStart={() => startQuiz()} onPatternSelect={showPatternSelection} />;
+        return (
+          <WelcomeScreen 
+            onStart={() => startQuiz()} 
+            onPatternSelect={showPatternSelection}
+            onBackToBooks={backToBookSelection}
+            bookTitle={currentQuestionSet?.title || 'Unknown Book'}
+          />
+        );
     }
   };
 

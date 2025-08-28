@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-28",
+  "questionSets": [
+    {
+      "id": "docker",
+      "title": "Docker スキルチェッカー",
+      "description": "Dockerのスキルを効率的に測定できる問題集です。基礎から上級まで幅広いレベルの問題を収録し、実践的なスキル評価を提供します。",
+      "version": "1.0.0",
+      "author": "Docker Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "docker-logo.png",
+      "color": "#2496ED"
+    },
+    {
+      "id": "cpp",
+      "title": "C++ コーディングスキルテスト",
+      "description": "C++の基礎から上級まで、幅広いスキルレベルに対応した問題集です。STL、オブジェクト指向、テンプレート、メモリ管理など、実践的な知識を測定します。",
+      "version": "1.0.0",
+      "author": "C++ Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "cpp-logo.png",
+      "color": "#00599C"
+    }
+  ]
+}

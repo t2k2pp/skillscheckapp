@@ -6,21 +6,21 @@ export const QUIZ_PATTERNS: QuizPatternInfo[] = [
   {
     id: QuizPattern.BeginnerOnly,
     name: '基礎レベルのみ',
-    description: 'C++の基本的な概念と構文に関する問題',
+    description: 'Dockerの基本的なコマンドと概念に関する問題',
     estimatedTime: '15-20分',
     questionCount: getQuestionCountByLevel(QuestionLevel.Beginner)
   },
   {
     id: QuizPattern.IntermediateOnly,
     name: '中級レベルのみ',
-    description: 'オブジェクト指向プログラミングとSTLに関する問題',
+    description: 'Dockerfile、ボリューム、ネットワークに関する問題',
     estimatedTime: '20-25分',
     questionCount: getQuestionCountByLevel(QuestionLevel.Intermediate)
   },
   {
     id: QuizPattern.AdvancedOnly,
     name: '上級レベルのみ',
-    description: 'テンプレート、並行処理、パフォーマンス最適化に関する問題',
+    description: 'Docker Compose、セキュリティ、ベストプラクティスに関する問題',
     estimatedTime: '25-30分',
     questionCount: getQuestionCountByLevel(QuestionLevel.Advanced)
   },

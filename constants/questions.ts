@@ -6,622 +6,611 @@ export const QUESTIONS: QuizQuestion[] = [
   {
     id: 1,
     level: QuestionLevel.Beginner,
-    text: '`std::vector` の末尾に要素を追加するためのメンバ関数はどれですか？',
-    options: ['add_element', 'push_front', 'append', 'push_back'],
-    correctAnswerIndex: 3,
-    explanation: '`std::vector` の末尾に要素を追加するには `push_back()` を使用します。これにより、コンテナのサイズが動的に拡張されます。',
+    text: 'Dockerコンテナの基となるテンプレートを何と呼びますか？',
+    options: ['テンプレート', 'スナップショット', 'イメージ', 'ボリューム'],
+    correctAnswerIndex: 2,
+    explanation: 'Dockerイメージは、コンテナを作成するためのテンプレートです。アプリケーションとその依存関係が含まれている読み取り専用のテンプレートです。',
   },
   {
     id: 2,
     level: QuestionLevel.Beginner,
-    text: 'C++において、オブジェクトの初期化時に呼び出される特殊なメンバ関数は何ですか？',
-    options: ['デストラクタ', 'コンストラクタ', 'イニシャライザ', 'セッター'],
-    correctAnswerIndex: 1,
-    explanation: 'コンストラクタは、クラスのオブジェクトが作成される際に自動的に呼び出され、メンバ変数の初期化などを行います。',
+    text: 'Dockerコンテナを作成・起動するコマンドはどれですか？',
+    options: ['docker start', 'docker create', 'docker run', 'docker launch'],
+    correctAnswerIndex: 2,
+    explanation: '`docker run` コマンドは、イメージからコンテナを作成し、そのコンテナを起動します。`docker create`はコンテナを作成のみ行い、`docker start`は作成済みのコンテナを起動します。',
   },
   {
     id: 3,
     level: QuestionLevel.Beginner,
-    text: '例外が発生する可能性のあるコードブロックを囲むために使用されるキーワードはどれですか？',
-    options: ['catch', 'throw', 'try', 'finally'],
+    text: '実行中のDockerコンテナ一覧を表示するコマンドはどれですか？',
+    options: ['docker list', 'docker show', 'docker ps', 'docker containers'],
     correctAnswerIndex: 2,
-    explanation: '`try` ブロックは例外が発生する可能性のあるコードを囲みます。`catch` ブロックは発生した例外を捕捉して処理します。',
+    explanation: '`docker ps` コマンドは実行中のコンテナ一覧を表示します。`docker ps -a` を使うと停止中のコンテナも含めて表示されます。',
   },
   {
     id: 4,
     level: QuestionLevel.Beginner,
-    text: 'キーと値のペアを格納し、キーに基づいて高速な検索を可能にするSTLコンテナはどれですか？',
-    options: ['std::vector', 'std::list', 'std::map', 'std::set'],
+    text: 'Dockerfileでベースイメージを指定するために使用されるディレクティブはどれですか？',
+    options: ['BASE', 'IMAGE', 'FROM', 'PARENT'],
     correctAnswerIndex: 2,
-    explanation: '`std::map`は、キーと値のペアを関連付けて格納する連想コンテナです。内部的には平衡二分探索木で実装されており、キーによる高速な検索、挿入、削除が可能です。'
+    explanation: '`FROM` ディレクティブは、Dockerfileで新しいイメージのベースとなるイメージを指定します。例：`FROM ubuntu:20.04`',
   },
   {
     id: 13,
     level: QuestionLevel.Beginner,
-    text: 'ポインタと参照の主な違いは何ですか？',
-    options: ['参照は再代入可能だが、ポインタは不可能', 'ポインタはNULLを持つことができるが、参照は通常できない', 'ポインタはアドレスを格納しない', '参照は常にヒープメモリを指す'],
-    correctAnswerIndex: 1,
-    explanation: 'ポインタはNULLを指すことができ、指すアドレスを後から変更できます。一方、参照は一度初期化されると、別のエンティティを指すように変更することはできず、NULLになることもありません。',
+    text: 'Dockerコンテナを停止するコマンドはどれですか？',
+    options: ['docker pause', 'docker halt', 'docker stop', 'docker kill'],
+    correctAnswerIndex: 2,
+    explanation: '`docker stop` コマンドは実行中のコンテナを正常に停止します。`docker kill` は強制終了、`docker pause` は一時停止を行います。',
   },
   {
     id: 14,
     level: QuestionLevel.Beginner,
-    text: '`std::string`オブジェクト `s1` と `s2` を連結する正しい方法はどれですか？',
-    options: ['s1.concat(s2)', 's1.append(s2)', 's1 + s2', 's1.append(s2) と s1 + s2 の両方'],
-    correctAnswerIndex: 3,
-    explanation: '`std::string`は `+` 演算子による連結と `append()` メンバ関数の両方をサポートしています。どちらも文字列を連結するために使用できます。',
+    text: 'Dockerイメージを削除するコマンドはどれですか？',
+    options: ['docker delete', 'docker remove', 'docker rmi', 'docker rm'],
+    correctAnswerIndex: 2,
+    explanation: '`docker rmi` コマンドはイメージを削除します（remove imageの略）。`docker rm` はコンテナを削除するコマンドです。',
   },
   {
     id: 15,
     level: QuestionLevel.Beginner,
-    text: 'クラスのメンバに対する `private` アクセス指定子の意味は何ですか？',
-    options: ['そのクラスのオブジェクトからのみアクセス可能', 'そのクラスのメンバ関数からのみアクセス可能', '派生クラスからのみアクセス可能', 'どこからでもアクセス可能'],
+    text: 'Dockerコンテナ内でコマンドを実行するために使用されるコマンドはどれですか？',
+    options: ['docker run', 'docker exec', 'docker enter', 'docker command'],
     correctAnswerIndex: 1,
-    explanation: '`private` メンバは、そのクラス自身のメンバ関数（およびフレンド）からのみアクセスできます。外部や派生クラスからの直接アクセスは許可されません。',
+    explanation: '`docker exec` コマンドは、既に実行中のコンテナ内でコマンドを実行します。例：`docker exec -it container_name bash`',
   },
   {
     id: 16,
     level: QuestionLevel.Beginner,
-    text: '`std::set` コンテナの最も重要な特性は何ですか？',
-    options: ['要素を挿入順に保持する', '重複したキーを許可する', '全ての要素がユニークであり、ソートされている', 'キーと値のペアを格納する'],
-    correctAnswerIndex: 2,
-    explanation: '`std::set` はユニークな要素を格納する連想コンテナであり、要素は自動的にソートされた順序で保持されます。重複した要素を格納することはできません。',
+    text: 'Dockerイメージからコンテナを作成する際、コンテナに名前を付けるオプションはどれですか？',
+    options: ['--name', '--title', '--label', '--id'],
+    correctAnswerIndex: 0,
+    explanation: '`--name` オプションを使ってコンテナに名前を付けることができます。例：`docker run --name mycontainer ubuntu`',
   },
   {
     id: 25,
     level: QuestionLevel.Beginner,
-    text: 'C++11で導入された、nullポインタを表すためのキーワードはどれですか？',
-    options: ['NULL', '0', 'nullptr', 'void*'],
+    text: 'Dockerコンテナとホスト間でファイルをコピーするコマンドはどれですか？',
+    options: ['docker copy', 'docker move', 'docker cp', 'docker transfer'],
     correctAnswerIndex: 2,
-    explanation: '`nullptr` は型安全なnullポインタ定数です。`NULL` や `0` と異なり、整数型と曖昧に解釈されることがないため、オーバーロード解決などで問題を起こしにくくなります。'
+    explanation: '`docker cp` コマンドはコンテナとホスト間でファイルやディレクトリをコピーします。例：`docker cp container:/path/to/file /host/path/`'
   },
   {
     id: 26,
     level: QuestionLevel.Beginner,
-    text: '`struct` と `class` の主な違いは何ですか？',
-    options: ['`struct` はメンバ関数を持てない', '`class` のデフォルトのアクセス指定子は `private`、`struct` は `public`', '`struct` は継承できない', '`class` はテンプレートにできない'],
+    text: 'Dockerイメージの一覧を表示するコマンドはどれですか？',
+    options: ['docker list', 'docker images', 'docker show', 'docker ls'],
     correctAnswerIndex: 1,
-    explanation: '`struct` と `class` の機能的な違いはほとんどありませんが、デフォルトのアクセス指定子が異なります。`class` は `private`、`struct` は `public` です。どちらも同等の機能を持ちます。'
+    explanation: '`docker images` コマンドはローカルにDockerイメージの一覧を表示します。`docker image ls` でも同じ結果が得られます。'
   },
   {
     id: 27,
     level: QuestionLevel.Beginner,
-    text: 'コンテナの全ての要素に対して繰り返し処理を行う、C++11で導入された構文はどれですか？',
-    options: ['`for_each(v.begin(), v.end(), ...)`', '`for (int i=0; i<v.size(); ++i)`', '範囲ベース for ループ (`for (auto& item : v)`)', '`while` ループ'],
-    correctAnswerIndex: 2,
-    explanation: '範囲ベース for ループは、コンテナの各要素に対して簡潔に繰り返し処理を記述するための構文です。コードが読みやすくなり、イテレータを直接操作する際のミスを防ぎます。'
+    text: 'Dockerコンテナをバックグラウンドで実行するためのオプションはどれですか？',
+    options: ['-b', '-d', '--background', '--daemon'],
+    correctAnswerIndex: 1,
+    explanation: '`-d` オプション（または `--detach`）はコンテナをバックグラウンドで実行します。例：`docker run -d nginx`'
   },
   {
     id: 28,
     level: QuestionLevel.Beginner,
-    text: '`new` で確保したメモリを解放するために使用する演算子はどれですか？',
-    options: ['`free`', '`release`', '`delete`', '`destroy`'],
-    correctAnswerIndex: 2,
-    explanation: '`new` で確保した単一オブジェクトは `delete` で、`new[]` で確保した配列は `delete[]` で解放する必要があります。メモリリークを防ぐための基本です。'
+    text: 'Dockerコンテナのログを表示するコマンドはどれですか？',
+    options: ['docker log', 'docker logs', 'docker show-logs', 'docker output'],
+    correctAnswerIndex: 1,
+    explanation: '`docker logs` コマンドは指定したコンテナのログを表示します。`-f` オプションでログをリアルタイムで追跡できます。'
   },
   {
     id: 29,
     level: QuestionLevel.Beginner,
-    text: 'ヘッダーファイルでインクルードガード（`#ifndef`, `#define`, `#endif`）を使用する主な理由は何ですか？',
-    options: ['コンパイル時間を短縮するため', '特定のOSでのみコードをコンパイルするため', '同じヘッダーファイルが複数回インクルードされるのを防ぐため', 'デバッグ情報を追加するため'],
-    correctAnswerIndex: 2,
-    explanation: 'インクルードガードは、同じヘッダーファイルが1つの翻訳単位内で複数回インクルードされ、クラスや関数の多重定義エラーが発生するのを防ぐために使用されます。'
+    text: 'Dockerコンテナのポートをホストのポートにマッピングするためのオプションはどれですか？',
+    options: ['-p', '--port', '-m', '--map'],
+    correctAnswerIndex: 0,
+    explanation: '`-p` オプション（または `--publish`）はホストのポートをコンテナのポートにマッピングします。例：`docker run -p 8080:80 nginx`'
   },
   {
     id: 30,
     level: QuestionLevel.Beginner,
-    text: '関数の引数で `const std::string& name` のように `const` と参照 `&` を使う利点は何ですか？',
-    options: ['関数内で引数を変更できる', '文字列のコピーを避け、かつ関数内で値を変更しないことを保証する', '常にスタックメモリを使用するようになる', '参照の初期化が必要になる'],
-    correctAnswerIndex: 1,
-    explanation: '参照 `&` を使うことで、`std::string` のような大きなオブジェクトの不要なコピーを防ぎ、パフォーマンスを向上させます。`const` を付けることで、関数内でその引数が変更されないことをコンパイラに伝え、安全性を高めます。'
+    text: 'Dockerコンテナの環境変数を設定するためのオプションはどれですか？',
+    options: ['-e', '--env', '-v', '--var'],
+    correctAnswerIndex: 0,
+    explanation: '`-e` オプション（または `--env`）はコンテナの環境変数を設定します。例：`docker run -e DB_HOST=localhost myapp`'
   },
   {
     id: 31,
     level: QuestionLevel.Beginner,
-    text: '`std::vector` の現在の要素数を得る関数と、確保されているメモリ容量を得る関数の組み合わせはどれですか？',
-    options: ['`count()` と `storage()`', '`length()` と `memory()`', '`size()` と `capacity()`', '`elements()` と `allocated()`'],
-    correctAnswerIndex: 2,
-    explanation: '`size()` はベクタに実際に格納されている要素の数を返します。`capacity()` は、再確保（リロケーション）なしでベクタが保持できる要素の数を返します。`capacity()` >= `size()` は常に真です。'
+    text: 'Dockerfileでコマンドを実行するためのディレクティブはどれですか？',
+    options: ['EXEC', 'RUN', 'CMD', 'COMMAND'],
+    correctAnswerIndex: 1,
+    explanation: '`RUN` ディレクティブはDockerfileのビルド時にコマンドを実行し、結果をイメージのレイヤーにコミットします。`CMD` はコンテナ実行時のデフォルトコマンドです。'
   },
   {
     id: 32,
     level: QuestionLevel.Beginner,
-    text: 'オブジェクトの生存期間が終了するときに自動的に呼び出される特殊なメンバ関数は何ですか？',
-    options: ['ファイナライザ', 'コンストラクタ', 'クローザー', 'デストラクタ'],
-    correctAnswerIndex: 3,
-    explanation: 'デストラクタは、オブジェクトがスコープを抜ける、`delete` されるなどのタイミングで呼び出され、オブジェクトが確保したリソース（メモリ、ファイルハンドルなど）を解放する役割を担います。'
+    text: 'Dockerボリュームをコンテナにマウントするためのオプションはどれですか？',
+    options: ['-v', '--volume', '-m', '--mount'],
+    correctAnswerIndex: 0,
+    explanation: '`-v` オプション（または `--volume`）はホストのディレクトリやボリュームをコンテナにマウントします。例：`docker run -v /host/path:/container/path myapp`'
   },
 
   // 中級レベル (17-34)
   {
     id: 5,
     level: QuestionLevel.Intermediate,
-    text: 'RAII (Resource Acquisition Is Initialization) 原則を最も体現しているC++の機能はどれですか？',
-    options: ['スマートポインタ', '仮想関数', 'ラムダ式', 'テンプレート'],
+    text: 'Dockerfileで作業ディレクトリを設定するディレクティブはどれですか？',
+    options: ['WORKDIR', 'SETDIR', 'CHDIR', 'DIR'],
     correctAnswerIndex: 0,
-    explanation: 'スマートポインタ（`std::unique_ptr`, `std::shared_ptr`）は、オブジェクトの生存期間を管理し、スコープを抜ける際に自動的にリソースを解放するため、RAIIの最も代表的な例です。',
+    explanation: '`WORKDIR` ディレクティブは、Dockerfileの後続のRUN、CMD、ENTRYPOINT、COPY、ADDディレクティブの作業ディレクトリを設定します。',
   },
   {
     id: 6,
     level: QuestionLevel.Intermediate,
-    text: '任意の型に対して動作する関数を定義するために使用されるC++の機能は何ですか？',
-    options: ['ポリモーフィズム', '関数オーバーロード', '関数テンプレート', '仮想関数'],
-    correctAnswerIndex: 2,
-    explanation: '関数テンプレートを使用すると、具体的な型をパラメータ化して、様々な型に対して同じ操作を行う汎用的な関数を定義できます。',
+    text: 'Dockerfileでファイルやディレクトリをコンテナにコピーするディレクティブはどれですか？',
+    options: ['COPY', 'MOVE', 'ADD', 'COPY と ADD の両方'],
+    correctAnswerIndex: 3,
+    explanation: '`COPY` と `ADD` の両方でファイルをコンテナにコピーできます。`COPY` はシンプルなファイルコピー、`ADD` はURL取得やtar展開機能も持ちます。',
   },
   {
     id: 7,
     level: QuestionLevel.Intermediate,
-    text: '`std::sort` を使用して `std::vector<int>` を降順にソートするための正しい方法はどれですか？',
-    options: [
-      'std::sort(vec.begin(), vec.end(), std::greater<int>());',
-      'std::sort(vec.begin(), vec.end(), "desc");',
-      'std::sort(vec.rbegin(), vec.rend());',
-      'std::greater<int>() と リバースイテレータの両方',
-    ],
-    correctAnswerIndex: 3,
-    explanation: '`std::sort` に比較関数オブジェクト `std::greater<int>()` を渡す方法と、リバースイテレータ `rbegin()` と `rend()` を使用する方法のどちらでも降順ソートが可能です。',
+    text: 'Dockerコンテナが停止した後も自動的に再起動する設定はどれですか？',
+    options: ['--restart always', '--auto-restart', '--keep-alive', '--persist'],
+    correctAnswerIndex: 0,
+    explanation: '`--restart always` オプションを使用すると、コンテナが停止した場合やDocker デーモンが再起動した場合でも、コンテナが自動的に再起動されます。',
   },
   {
     id: 8,
     level: QuestionLevel.Intermediate,
-    text: 'ファイルからの読み込みとファイルへの書き込みの両方を行うために使用される `fstream` のクラスはどれですか？',
-    options: ['std::ifstream', 'std::ofstream', 'std::fstream', 'std::stringstream'],
+    text: 'Dockerネットワークで異なるネットワーク間のコンテナ同士が通信するために必要なことは何ですか？',
+    options: ['ポートマッピング', 'ブリッジネットワークの接続', 'コンテナを複数のネットワークに接続', 'hostネットワークの使用'],
     correctAnswerIndex: 2,
-    explanation: '`std::ifstream` はファイル入力、`std::ofstream` はファイル出力に特化しています。`std::fstream` は入力と出力の両方の操作をサポートします。'
+    explanation: 'デフォルトでは異なるネットワークのコンテナ同士は通信できません。通信するには、コンテナを複数のネットワークに接続するか、同じネットワークに配置する必要があります。',
   },
   {
     id: 17,
     level: QuestionLevel.Intermediate,
-    text: '`std::vector<int> v` 内で特定の値 `x` を探すために推奨されるSTLアルゴリズムはどれですか？',
-    options: ['std::search', 'std::find', 'std::lookup', 'std::query'],
-    correctAnswerIndex: 1,
-    explanation: '`std::find` は、指定された範囲内で特定の値を持つ最初の要素を検索し、その要素を指すイテレータを返します。見つからない場合は、範囲の終端イテレータを返します。',
+    text: 'Dockerコンテナのリソース使用量（CPU、メモリ）を制限するオプションはどれですか？',
+    options: ['--limit', '--resource', '--cpus と --memory', '--constraint'],
+    correctAnswerIndex: 2,
+    explanation: '`--cpus` オプションでCPU使用量を、`--memory` オプションでメモリ使用量を制限できます。例：`docker run --cpus="1.5" --memory="512m" myapp`',
   },
   {
     id: 18,
     level: QuestionLevel.Intermediate,
-    text: '`std::unique_ptr` と `std::shared_ptr` の最も大きな違いは何ですか？',
-    options: ['`unique_ptr` はスタックにしか割り当てられない', '`shared_ptr` は所有権を共有できるが、`unique_ptr` は排他的な所有権を持つ', '`unique_ptr` はより多くのメモリを消費する', '`unique_ptr` は配列を管理できない'],
-    correctAnswerIndex: 1,
-    explanation: '`unique_ptr` はリソースの排他的な所有権を保証し、コピーできません（ムーブは可能）。一方、`shared_ptr` は参照カウントを使用して、複数のポインタが同じリソースの所有権を共有できるようにします。どちらも配列を管理できます。',
+    text: 'Dockerボリュームとバインドマウントの主な違いは何ですか？',
+    options: ['ボリュームはDockerが管理、バインドマウントはホストのパスを直接指定', 'ボリュームは読み取り専用、バインドマウントは書き込み可能', 'ボリュームは永続的、バインドマウントは一時的', '機能的な違いはない'],
+    correctAnswerIndex: 0,
+    explanation: 'DockerボリュームはDockerが管理するストレージで`docker volume create`で作成します。バインドマウントはホストファイルシステムの特定パスを直接コンテナにマウントします。',
   },
   {
     id: 19,
     level: QuestionLevel.Intermediate,
-    text: '`template <typename T> class Box { ... };` のように定義されたクラステンプレートを、`int` 型でインスタンス化する正しい構文はどれですか？',
-    options: ['Box<int> b;', 'Box b<int>;', 'int Box b;', 'Box(int) b;'],
-    correctAnswerIndex: 0,
-    explanation: 'クラステンプレートを特定の型でインスタンス化するには、クラス名の後に山括弧 `<>` を使用して型引数を指定します。例: `Box<int> myIntBox;`',
+    text: 'Dockerfileでコンテナ実行時のデフォルトコマンドを指定するディレクティブはどれですか？',
+    options: ['CMD', 'ENTRYPOINT', 'RUN', 'CMD と ENTRYPOINT の両方'],
+    correctAnswerIndex: 3,
+    explanation: '`CMD` はデフォルトコマンドを指定し、`docker run` で上書きできます。`ENTRYPOINT` は必ず実行されるコマンドで、`CMD` はそのパラメータとして使えます。',
   },
   {
     id: 20,
     level: QuestionLevel.Intermediate,
-    text: 'クラスのメンバ関数が `const` として宣言されている場合、それは何を意味しますか？',
-    options: ['その関数は静的メンバである', 'その関数は値を返すことができない', 'その関数はクラスの非静的メンバ変数を変更しない', 'その関数は仮想関数である'],
-    correctAnswerIndex: 2,
-    explanation: '`const` メンバ関数は、その関数内でオブジェクトのメンバ変数を変更しないことをコンパイラに約束します。これにより、`const` オブジェクトに対してこの関数を呼び出すことが可能になります。',
+    text: 'Dockerイメージのレイヤー構造について正しいのはどれですか？',
+    options: ['レイヤーは読み書き可能', 'レイヤーは読み取り専用', '各レイヤーは独立している', 'レイヤーはイメージごとに作り直される'],
+    correctAnswerIndex: 1,
+    explanation: 'Dockerイメージのレイヤーは読み取り専用で、変更不可です。コンテナ実行時には書き込み可能なコンテナレイヤーが最上位に追加されます。',
   },
   {
     id: 33,
     level: QuestionLevel.Intermediate,
-    text: '基底クラスのポインタや参照を通じて派生クラスのオブジェクトを安全に削除するために必要なものは何ですか？',
-    options: ['純粋仮想関数', '仮想コンストラクタ', '`protected` なデストラクタ', '仮想デストラクタ'],
-    correctAnswerIndex: 3,
-    explanation: '基底クラスのデストラクタが `virtual` でないと、基底クラスのポインタを通じて派生クラスのオブジェクトを `delete` した際に派生クラスのデストラクタが呼ばれず、リソースリークの原因となります。'
+    text: 'Docker Composeでコンテナ関の依存関係を定義するキーはどれですか？',
+    options: ['depends_on', 'requires', 'needs', 'after'],
+    correctAnswerIndex: 0,
+    explanation: '`depends_on` キーを使用してコンテナの起動順序を制御できます。ただし、これはコンテナの起動順序のみを制御し、アプリケーションの準備完了を待つわけではありません。'
   },
   {
     id: 34,
     level: QuestionLevel.Intermediate,
-    text: '`std::move` の主な目的は何ですか？',
-    options: ['オブジェクトを別のメモリ位置に移動させる', 'オブジェクトを右辺値にキャストする', 'オブジェクトのコピーを作成する', 'オブジェクトの所有権を放棄する'],
-    correctAnswerIndex: 1,
-    explanation: '`std::move` は実際には何も移動させません。左辺値を右辺値参照にキャストするだけです。これにより、ムーブコンストラクタやムーブ代入演算子がオーバーロード解決で選択され、効率的なリソースの移動が可能になります。'
+    text: 'Dockerコンテナ内からホストのDockerデーモンにアクセスするためにマウントするファイルは何ですか？',
+    options: ['/var/run/docker.sock', '/usr/bin/docker', '/etc/docker/daemon.json', '/var/lib/docker'],
+    correctAnswerIndex: 0,
+    explanation: '`/var/run/docker.sock` はDockerデーモンのUNIXソケットで、これをコンテナにマウントすることでコンテナ内からDockerコマンドを実行できます。ただしセキュリティリスクがあるため注意が必要です。'
   },
   {
     id: 35,
     level: QuestionLevel.Intermediate,
-    text: 'ラムダ式 `[=](){ ... }` の `[=]` は何を意味しますか？',
-    options: ['外部の変数を参照でキャプチャする', '外部の変数を値でキャプチャする', 'キャプチャを行わない', '`this` ポインタのみをキャプチャする'],
-    correctAnswerIndex: 1,
-    explanation: '`[=]` はデフォルトキャプチャモードで、ラムダ式が定義されたスコープ内の全ての自動変数を値で（コピーして）キャプチャすることを示します。'
+    text: 'Dockerfileで環境変数を設定するディレクティブはどれですか？',
+    options: ['ENV', 'SET', 'EXPORT', 'VAR'],
+    correctAnswerIndex: 0,
+    explanation: '`ENV` ディレクティブはイメージ内で環境変数を設定します。設定した環境変数はビルド中とコンテナ実行時の両方で使用できます。例：`ENV PATH=/app:$PATH`'
   },
   {
     id: 36,
     level: QuestionLevel.Intermediate,
-    text: 'クラスの特定のインスタンスに属さず、クラス全体で共有されるメンバ変数やメンバ関数を宣言するキーワードはどれですか？',
-    options: ['`global`', '`shared`', '`static`', '`common`'],
-    correctAnswerIndex: 2,
-    explanation: '`static` メンバ変数はクラスの全てのインスタンスで共有されます。`static` メンバ関数は特定のインスタンスを必要とせず、クラス名を使って直接呼び出すことができます。'
+    text: 'Dockerネットワークでコンテナがホストのネットワークスタックを直接使用するモードはどれですか？',
+    options: ['bridge', 'host', 'none', 'overlay'],
+    correctAnswerIndex: 1,
+    explanation: '`host` ネットワークモードでは、コンテナがホストのネットワークスタックを直接使用し、ネットワークの分離がなくなります。パフォーマンスは向上しますが、セキュリティが低下します。'
   },
   {
     id: 37,
     level: QuestionLevel.Intermediate,
-    text: '`std::vector` の全要素を2倍にする処理を `std::transform` で記述する際の正しいラムダ式はどれですか？',
-    options: ['`(int x){ x * 2; }`', '`(int x) -> { return x * 2; }`', '`(int x){ return x * 2; }`', '`[](int& x){ x = x * 2; }`'],
-    correctAnswerIndex: 2,
-    explanation: '`std::transform` は、入力範囲の各要素に関数を適用し、その結果を出力範囲に書き込みます。この場合、各要素 `x` を受け取り、`x * 2` を返すラムダ式が適切です。'
+    text: 'Dockerイメージのサイズを最小化するためのベストプラクティスはどれですか？',
+    options: ['ベースイメージにalpineを使用', 'マルチステージビルドを使用', 'RUNコマンドを結合', 'すべての手法を組み合わせて使用'],
+    correctAnswerIndex: 3,
+    explanation: 'Dockerイメージのサイズ最小化には、alpineベースイメージ、マルチステージビルド、RUNコマンドの結合、.dockerignoreの使用など、複数の手法を組み合わせることが最も効果的です。'
   },
   {
     id: 38,
     level: QuestionLevel.Intermediate,
-    text: 'コンストラクタに `explicit` キーワードを付ける主な理由は何ですか？',
-    options: ['コンストラクタのインライン化を防ぐため', '暗黙的な型変換を防ぐため', '仮想関数テーブルから除外するため', 'コピーコンストラクタの自動生成を抑制するため'],
-    correctAnswerIndex: 1,
-    explanation: '`explicit` は、引数が1つのコンストラクタが意図しない暗黙の型変換に使われるのを防ぎます。例えば `MyClass obj = 10;` のようなコードがコンパイルエラーになります。'
+    text: 'Dockerコンテナのヘルスチェックを設定するDockerfileディレクティブはどれですか？',
+    options: ['HEALTHCHECK', 'CHECK', 'HEALTH', 'MONITOR'],
+    correctAnswerIndex: 0,
+    explanation: '`HEALTHCHECK` ディレクティブはコンテナのヘルスチェックを定義します。例：`HEALTHCHECK CMD curl -f http://localhost/ || exit 1` これによりコンテナの正常性を監視できます。'
   },
   {
     id: 39,
     level: QuestionLevel.Intermediate,
-    text: 'C++17で導入された `std::optional` はどのような状況で使用するのが最も適切ですか？',
-    options: ['値が存在しない可能性がある場合', '複数の型のうちのいずれかの値を保持する場合', '動的に確保されたオブジェクトを管理する場合', '文字列を効率的に操作する場合'],
-    correctAnswerIndex: 0,
-    explanation: '`std::optional<T>` は、`T` 型の値を持つか、値を持たない（空である）状態を表現するための型です。マジックナンバー（-1など）やnullポインタを使わずに、値の有無を安全に表現できます。'
+    text: 'Dockerコンテナのセキュリティを向上させるためのベストプラクティスはどれですか？',
+    options: ['rootユーザーで実行する', '非特権ユーザーで実行する', 'すべてのポートを開放する', 'ホストのファイルシステムを直接マウントする'],
+    correctAnswerIndex: 1,
+    explanation: 'Dockerコンテナのセキュリティ向上のためには、非特権ユーザーでアプリケーションを実行し、必要なポートのみを開放し、最小限の権限で実行することが重要です。'
   },
   {
     id: 40,
     level: QuestionLevel.Intermediate,
-    text: '関数から複数の値を返すための、C++17で推奨される現代的な方法の一つはどれですか？',
-    options: ['ポインタ引数を使用する', '`std::pair` や `std::tuple` を使用する', '構造体を定義して返す', 'std::pair/tuple と 構造体定義の両方'],
+    text: 'Docker Swarmでサービスのレプリカ数を設定するコマンドはどれですか？',
+    options: ['docker service create --replicas', 'docker swarm replicas', 'docker scale --replicas', 'docker service scale'],
     correctAnswerIndex: 3,
-    explanation: '`std::pair`、`std::tuple`、あるいは専用の構造体を返すのが一般的な方法です。どちらも型安全で明確な意味を持つ複数の値を返すことができます。'
+    explanation: '`docker service scale` コマンドでサービスのレプリカ数を変更できます。例：`docker service scale web=5` サービス作成時は`docker service create --replicas`を使用します。'
   },
   {
     id: 49,
     level: QuestionLevel.Intermediate,
-    text: 'C++17で導入された `std::variant` の主な用途は何ですか？',
-    options: ['値が存在しない可能性を表現する', '複数の型のうち、いずれか一つの値をその時点でもつことを型安全に表現する', '任意の型の値を保持するが、型情報は実行時に確認する', 'キーと値のペアを格納する'],
-    correctAnswerIndex: 1,
-    explanation: '`std::variant<T, U, ...>` は、列挙された型のうち、いずれか一つの値を保持できる和集合型です。`union`と異なり型安全であり、`std::visit` を使って保持している値の型に応じた処理を記述できます。'
+    text: 'Docker Composeでサービスのスケールを指定するキーはどれですか？',
+    options: ['scale', 'replicas', 'instances', 'deploy.replicas'],
+    correctAnswerIndex: 3,
+    explanation: 'Docker Compose v3以降では、`deploy.replicas` キーでサービスのレプリカ数を指定します。Swarmモードでのみ有効で、スタンドアロンのDocker Composeでは無視されます。'
   },
 
   // 上級レベル (35-50)
   {
     id: 9,
     level: QuestionLevel.Advanced,
-    text: 'オブジェクトの生成プロセスをカプセル化し、クライアントコードから具象クラスを分離するデザインパターンはどれですか？',
-    options: ['Observer パターン', 'Singleton パターン', 'Factory パターン', 'Strategy パターン'],
-    correctAnswerIndex: 2,
-    explanation: 'Factory パターンは、オブジェクト生成のロジックを専用のファクトリクラスやメソッドに委譲することで、クライアントが具象クラスに直接依存することなくオブジェクトを生成できるようにするデザインパターンです。',
+    text: 'KubernetesでDockerコンテナをオーケストレーションする際の最小デプロイメント単位は何ですか？',
+    options: ['Container', 'Pod', 'Service', 'Deployment'],
+    correctAnswerIndex: 1,
+    explanation: 'KubernetesでのPodは最小のデプロイメント単位で、一つまたは複数のコンテナを包含します。Pod内のコンテナは同じネットワークとストレージを共有します。',
   },
   {
     id: 10,
     level: QuestionLevel.Advanced,
-    text: '複数のスレッドから共有リソースへの同時アクセスを防ぎ、競合状態を回避するために使用される同期プリミティブはどれですか？',
-    options: ['std::thread', 'std::async', 'std::mutex', 'std::future'],
-    correctAnswerIndex: 2,
-    explanation: '`std::mutex`（ミューテックス）は、クリティカルセクションへのアクセスを一度に一つのスレッドに制限するためのロック機構を提供します。',
+    text: 'Dockerコンテナのセキュリティを向上させるためのLinuxセキュリティ機能はどれですか？',
+    options: ['AppArmor/SELinux', 'seccomp', 'capabilities', 'すべての選択肢'],
+    correctAnswerIndex: 3,
+    explanation: 'Dockerは複数のLinuxセキュリティ機能を組み合わせて使用します：AppArmor/SELinux（アクセス制御）、seccomp（システムコール制限）、capabilities（特権の細かい制御）です。',
   },
   {
     id: 11,
     level: QuestionLevel.Advanced,
-    text: '右辺値参照 (`&&`) を活用して、不要なオブジェクトのコピーを避け、リソースの所有権を効率的に移動させるC++の機能は何ですか？',
-    options: ['完全転送 (Perfect Forwarding)', 'ムーブセマンティクス (Move Semantics)', 'コピーコンストラクタ', '参照渡し'],
-    correctAnswerIndex: 1,
-    explanation: 'ムーブセマンティクスは、一時オブジェクトなどの右辺値からリソース（メモリなど）を「盗む」ことで、高コストなコピー処理を回避し、パフォーマンスを向上させる仕組みです。`std::move`がこのために使われます。',
+    text: 'Docker BuildKitが提供する高級機能はどれですか？',
+    options: ['マルチステージビルド', 'ビルドキャッシュ', '秘密情報管理', 'すべての機能'],
+    correctAnswerIndex: 3,
+    explanation: 'Docker BuildKitは次世代のビルドエンジンで、マルチステージビルド、ビルドキャッシュ、秘密情報管理、並列ビルドなどの高級機能を提供します。',
   },
   {
     id: 12,
     level: QuestionLevel.Advanced,
-    text: 'C++20で導入され、テンプレートパラメータに対する制約を簡潔に記述できるようにする機能はどれですか？',
-    options: ['SFINAE', 'Concepts', 'Modules', 'Coroutines'],
+    text: 'Dockerコンテナのリソース使用量を監視するためのコマンドはどれですか？',
+    options: ['docker monitor', 'docker stats', 'docker usage', 'docker resources'],
     correctAnswerIndex: 1,
-    explanation: 'Concepts（コンセプト）は、テンプレートの型パラメータが満たすべき要件（特定のメンバ関数を持つ、特定の演算が可能など）を定義する機能です。これにより、コンパイルエラーが分かりやすくなり、コードの可読性が向上します。',
+    explanation: '`docker stats` コマンドはコンテナのCPU、メモリ、ネットワークI/O、ブロックI/Oの使用量をリアルタイムで表示します。`--no-stream` オプションで一度だけの情報を取得できます。',
   },
   {
     id: 21,
     level: QuestionLevel.Advanced,
-    text: '`std::thread` を使用して新しいスレッドを開始する際の一般的な方法はどれですか？',
-    options: ['`std::thread t; t.start(my_function);`', '`std::thread t(my_function);`', '`std::thread::create(my_function);`', '`new std::thread(my_function);`'],
+    text: 'Dockerコンテナのファイルシステムで使用されるUnionFSシステムの特徴は何ですか？',
+    options: ['ファイルの圧縮', 'レイヤーを重ねて一つのファイルシステムとして表示', 'ファイルの暗号化', 'ネットワークファイルシステム'],
     correctAnswerIndex: 1,
-    explanation: '`std::thread` のコンストラクタに、新しいスレッドで実行したい関数（または呼び出し可能なオブジェクト）を渡すことでスレッドが生成され、実行が開始されます。',
+    explanation: 'UnionFS（Union File System）は、複数のディレクトリを重ねて一つのディレクトリとして表示する技術です。Dockerはこれを使ってイメージのレイヤーを重ねています。',
   },
   {
     id: 22,
     level: QuestionLevel.Advanced,
-    text: 'Observer パターンの主な目的は何ですか？',
-    options: ['オブジェクトの生成ロジックをカプセル化する', 'アルゴリズムのファミリーを定義し、交換可能にする', 'オブジェクトの状態が変化したときに、依存する全てのオブジェクトに自動的に通知して更新する', 'あるクラスのインターフェースを、クライアントが期待する別のインターフェースに変換する'],
-    correctAnswerIndex: 2,
-    explanation: 'Observer パターンは、1対多の依存関係を定義します。あるオブジェクト（Subject）の状態が変化すると、それに依存する全てのオブジェクト（Observer）が通知を受け、自動的に更新されます。',
+    text: 'Dockerコンテナで使用されるデフォルトのcgroupバージョンとその特徴は何ですか？',
+    options: ['cgroup v1 - 階層構造', 'cgroup v2 - 統一階層', '両方を混合使用', 'システム依存'],
+    correctAnswerIndex: 3,
+    explanation: 'Dockerが使用するcgroupバージョンはホストOSに依存します。新しいカーネルではcgroup v2がデフォルトで、統一階層でリソース管理が簡素化されていますが、古いシステムではcgroup v1が使用されます。',
   },
   {
     id: 23,
     level: QuestionLevel.Advanced,
-    text: 'SFINAE ("Substitution Failure Is Not An Error") は、主にどのような目的で使用されますか？',
-    options: ['実行時エラーを処理するため', 'テンプレートのオーバーロード解決中に、特定の条件を満たさないテンプレートを候補から除外するため', 'コードの実行速度を最適化するため', 'メモリリークを検出するため'],
+    text: 'Dockerコンテナのネットワーク名前空間分離の仕組みは何ですか？',
+    options: ['virtual network interface', 'Linux network namespaces', 'bridge network', 'overlay network'],
     correctAnswerIndex: 1,
-    explanation: 'SFINAEは、テンプレートのインスタンス化プロセスにおけるコンパイル時のメカニズムです。置換が失敗した場合、それはコンパイルエラーではなく、単にそのオーバーロード候補が適用できないと見なされるだけです。これにより、特定の型特性に基づいてテンプレートの特殊化を制御できます。',
+    explanation: 'DockerはLinux network namespacesを使用してコンテナごとに独立したネットワークスタックを提供します。これにより各コンテナは独自のネットワークインターフェース、ルーティングテーブル、IPアドレスを持ちます。',
   },
   {
     id: 24,
     level: QuestionLevel.Advanced,
-    text: 'コンパイラが特定の状況でオブジェクトのコピーやムーブを省略する最適化を何と呼びますか？',
-    options: ['インライン展開 (Inlining)', 'ループ展開 (Loop Unrolling)', 'コピー省略 (Copy Elision)', '遅延評価 (Lazy Evaluation)'],
-    correctAnswerIndex: 2,
-    explanation: 'コピー省略（特に名前付き戻り値の最適化、NRVO）は、関数からオブジェクトを返す際に、余分なコピーやムーブのコンストラクタ呼び出しをコンパイラが省略する最適化です。これにより、パフォーマンスが大幅に向上することがあります。',
+    text: 'Dockerコンテナのシステムコール制限機能であるseccompプロファイルの目的は何ですか？',
+    options: ['ファイルアクセスの制限', 'システムコールの制限', 'ネットワークアクセスの制限', 'メモリ使用量の制限'],
+    correctAnswerIndex: 1,
+    explanation: 'seccomp (secure computing mode) プロファイルは、コンテナが実行できるシステムコールを制限するためのセキュリティ機能です。これにより、コンテナの攻撃面を減らしセキュリティを向上させます。',
   },
   {
     id: 41,
     level: QuestionLevel.Advanced,
-    text: '`constexpr` と `const` の主な違いは何ですか？',
-    options: ['`constexpr` は変数にのみ使用でき、`const` は関数にも使用できる', '`const` は実行時に値が決定されるが、`constexpr` はコンパイル時に値が決定される必要がある', '`constexpr` はポインタの値を変更できないが、`const` はできる', '違いはない、`constexpr` は `const` の別名である'],
+    text: 'Dockerコンテナのセキュリティコンテキストとして使用されるSELinuxのMCS（Multi-Category Security）ラベルの目的は何ですか？',
+    options: ['ユーザー認証', 'コンテナ間の分離', 'ネットワーク制御', 'リソース制限'],
     correctAnswerIndex: 1,
-    explanation: '`const` は変数が初期化後に変更されないことを意味します（実行時定数）。一方、`constexpr` はその値がコンパイル時に評価可能であることを示します（コンパイル時定数）。これにより、配列のサイズ指定や非型テンプレート引数など、コンパイル時定数が必要な場面で使用できます。'
+    explanation: 'SELinuxのMCSラベルは、コンテナ間の分離を強化するために使用されます。各コンテナに異なるMCSラベルを割り当て、コンテナ間の不正アクセスを防ぎます。'
   },
   {
     id: 42,
     level: QuestionLevel.Advanced,
-    text: 'テンプレート引数の推論において、引数が左辺値か右辺値かの情報を保持するテンプレートパラメータの形式はどれですか？',
-    options: ['`T&&`', '`const T&`', '`T*`', '`auto`'],
-    correctAnswerIndex: 0,
-    explanation: '`T&&` は転送参照（forwarding reference、従来はユニバーサル参照とも呼ばれた）と呼ばれ、テンプレートの型推論コンテキストでのみ、引数が左辺値か右辺値かの情報を保持します。これは完全転送（Perfect Forwarding）を実現するために不可欠です。'
+    text: 'Dockerコンテナのプロセス間通信で使用されるIPC namespaceの機能は何ですか？',
+    options: ['ファイルシステムの分離', 'プロセスIDの分離', '共有メモリやセマフォ等のIPCリソースの分離', 'ユーザーIDの分離'],
+    correctAnswerIndex: 2,
+    explanation: 'IPC namespaceは、System V IPC（共有メモリ、セマフォ、メッセージキュー）やPOSIXメッセージキュー、名前付きセマフォなどのIPCリソースをコンテナ間で分離します。'
   },
   {
     id: 43,
     level: QuestionLevel.Advanced,
-    text: '`std::async` を使って非同期タスクを実行し、その結果を後で受け取るために使用するクラスはどれですか？',
-    options: ['`std::promise`', '`std::thread`', '`std::packaged_task`', '`std::future`'],
+    text: 'Dockerコンテナのメモリ管理で使用されるOOM Killerの動作を制御するパラメータはどれですか？',
+    options: ['--memory-limit', '--oom-kill-disable', '--memory-swap', '--oom-score-adj'],
     correctAnswerIndex: 3,
-    explanation: '`std::async` は `std::future` オブジェクトを返します。この `future` を通じて、非同期に実行されているタスクの完了を待ち、その結果（戻り値や例外）を取得することができます。'
+    explanation: '`--oom-score-adj` パラメータでOOM Killerがコンテナプロセスを殺す優先度を調整できます。-1000（殺されにくい）から1000（殺されやすい）まで設定できます。'
   },
   {
     id: 44,
     level: QuestionLevel.Advanced,
-    text: 'スレッドセーフな方法で変数の読み書きを行うための、C++11の標準ライブラリコンポーネントはどれですか？',
-    options: ['`volatile`', '`std::mutex`', '`std::atomic`', '`thread_local`'],
-    correctAnswerIndex: 2,
-    explanation: '`std::atomic` は、アトミックな（不可分な）操作を保証する型を提供します。これにより、単純なインクリメントや代入などの操作で `std::mutex` を使ったロックが不要になり、パフォーマンスが向上する場合があります。'
+    text: 'Dockerコンテナのシステムコールを監視・ログ出力するためのツールはどれですか？',
+    options: ['strace', 'auditd', 'sysdig', 'すべてのツール'],
+    correctAnswerIndex: 3,
+    explanation: 'コンテナのシステムコール監視には複数のツールが使用できます：strace（特定プロセスのシステムコール監視）、auditd（システム監査）、sysdig（システムレベルの可視化）などです。'
   },
   {
     id: 45,
     level: QuestionLevel.Advanced,
-    text: 'CRTP (Curiously Recurring Template Pattern) は、どのような目的で一般的に使用されますか？',
-    options: ['実行時ポリモーフィズムを実現するため', 'コンパイル時ポリモーフィズム（静的ポリモーフィズム）を実現するため', 'メモリ使用量を削減するため', '複数スレッド間の同期を取るため'],
+    text: 'DockerコンテナのInitプロセス問題を解決する`--init`オプションの機能は何ですか？',
+    options: ['コンテナのヘルスチェック', 'ゾンビプロセスの処理とシグナルの適切な処理', 'セキュリティコンテキストの設定', 'リソース制限の適用'],
     correctAnswerIndex: 1,
-    explanation: 'CRTPは、基底クラスが派生クラスをテンプレート引数として受け取るデザインパターンです。これにより、仮想関数を使わずに静的な（コンパイル時の）多態性を実現できます。'
+    explanation: '`--init` オプションは、コンテナ内でtiniやdocker-initなどの軽量initシステムをPID 1で実行し、ゾンビプロセスの清理やシグナルの適切な伝播を行います。'
   },
   {
     id: 46,
     level: QuestionLevel.Advanced,
-    text: 'RAII原則と例外安全性を組み合わせる上で、最も重要な考え方はどれですか？',
-    options: ['全ての関数で `noexcept` を指定する', 'リソース管理をオブジェクトのライフタイムに結びつける', '例外が発生したら即座に `std::terminate` を呼び出す', '`try-catch` ブロックをネストさせる'],
+    text: 'Dockerコンテナのセキュリティを強化するUser Namespaceの仕組みは何ですか？',
+    options: ['ファイルアクセスの制限', 'コンテナ内rootをホストの非特権ユーザーにマッピング', 'ネットワークアクセスの制限', 'プロセス数の制限'],
     correctAnswerIndex: 1,
-    explanation: 'RAIIは、リソースの確保をオブジェクトの初期化時に、解放をデストラクタで行う原則です。関数内で例外がスローされても、スタック上のオブジェクトのデストラクタは自動的に呼び出されるため、リソースリークを防ぎ、例外安全なコードを記述する上で非常に重要です。'
+    explanation: 'User Namespaceは、コンテナ内のUID/GIDをホストの別のUID/GIDにマッピングします。これによりコンテナ内でroot権限を持つプロセスも、ホスト上では非特権ユーザーとして実行されます。'
   },
   {
     id: 47,
     level: QuestionLevel.Advanced,
-    text: 'アルゴリズムのファミリーを定義し、それぞれをカプセル化して、動的に交換可能にするデザインパターンはどれですか？',
-    options: ['Strategy パターン', 'Factory パターン', 'Singleton パターン', 'Adapter パターン'],
-    correctAnswerIndex: 0,
-    explanation: 'Strategy パターンは、異なるアルゴリズムを個別のクラスとして実装し、クライアントが実行時に使用するアルゴリズムを選択できるようにするものです。これにより、アルゴリズムの追加や変更が容易になります。'
+    text: 'Dockerコンテナのイメージスキャンと脆弱性検知のためのツールはどれですか？',
+    options: ['Docker Scout', 'Trivy', 'Clair', 'すべてのツール'],
+    correctAnswerIndex: 3,
+    explanation: 'Dockerイメージの脆弱性検知には複数のツールが利用できます：Docker Scout（Docker公式）、Trivy（Aqua Security）、Clair（CoreOS/Red Hat）などで、それぞれ特徴と強みがあります。'
   },
   {
     id: 48,
     level: QuestionLevel.Advanced,
-    text: 'C++20のRangesライブラリがもたらす主な利点は何ですか？',
-    options: ['コンパイル時間の劇的な短縮', '`begin` と `end` のペアの代わりに単一の範囲オブジェクトを扱えること', '実行可能ファイルのサイズ削減', '全てのSTLコンテナを置き換えること'],
+    text: 'Dockerコンテナのランタイムセキュリティを強化するGVisorやKata Containersのアプローチは何ですか？',
+    options: ['コンテナをVMで完全に分離', 'サンドボック化や軽量VMによる分離', 'コンテナの暗号化', 'ネットワークの完全分離'],
     correctAnswerIndex: 1,
-    explanation: 'Rangesライブラリは、イテレータのペア (`begin`, `end`) を抽象化し、単一の「範囲」オブジェクトとして扱えるようにします。これにより、パイプライン演算子 `|` を使ってアルゴリズムを連結でき、コードの可読性と構成可能性が大幅に向上します。'
+    explanation: 'GVisorはユーザースペースカーネルでサンドボック化、Kata Containersは軽量VMでコンテナを実行します。どちらも伝統的なコンテナよりも強い分離を提供します。'
   },
   {
     id: 50,
     level: QuestionLevel.Advanced,
-    text: 'C++20で導入されたコルーチン (`co_await`, `co_yield`, `co_return`) の主な目的は何ですか？',
-    options: ['非同期処理やジェネレータを、同期処理のような見た目で記述できるようにするため', 'コンパイル時間を短縮するための新しいメカニズム', '例外処理をより効率的に行うため', 'スレッド間の通信を型安全に行うため'],
-    correctAnswerIndex: 0,
-    explanation: 'コルーチンは、関数の実行を中断・再開できる仕組みを提供します。これにより、コールバックや `std::future` の連鎖を必要とした複雑な非同期コードを、あたかも直線的に実行されるかのように簡潔に記述することができます。'
+    text: 'Dockerコンテナのパフォーマンスチューニングで重要なカーネルパラメータはどれですか？',
+    options: ['vm.swappiness', 'net.core.somaxconn', 'fs.file-max', 'すべて重要'],
+    correctAnswerIndex: 3,
+    explanation: 'Dockerコンテナのパフォーマンスに影響するカーネルパラメータは多数あります：vm.swappiness（スワップの使用度）、net.core.somaxconn（ソケットキューサイズ）、fs.file-max（ファイルディスクリプタ数）などです。'
   },
 
-  // Claude追加設問 - 基礎レベル
+  // 追加のDocker質問 (51-75)
   {
     id: 51,
     level: QuestionLevel.Beginner,
-    text: '配列名を関数の引数として渡した場合、どのように扱われますか？',
-    options: ['配列全体のコピーが渡される', '配列の先頭要素へのポインタが渡される', '配列のサイズ情報も一緒に渡される', 'コンパイルエラーになる'],
+    text: 'Dockerコンテナのディスク使用量を確認するコマンドはどれですか？',
+    options: ['docker size', 'docker system df', 'docker usage', 'docker disk'],
     correctAnswerIndex: 1,
-    explanation: 'C++では配列名は配列の先頭要素へのポインタに自動変換されます（配列のdecay）。そのため、関数内では元の配列のサイズ情報は失われます。'
+    explanation: '`docker system df` コマンドはDockerが使用するディスク容量の詳細情報を表示します。イメージ、コンテナ、ローカルボリューム、ビルドキャッシュの使用量を確認できます。'
   },
   {
+
     id: 52,
     level: QuestionLevel.Beginner,
-    text: '以下のうち、関数オーバーロードの判断基準として**使用されない**ものはどれですか？',
-    options: ['引数の型', '引数の個数', '戻り値の型', 'const修飾子の有無'],
-    correctAnswerIndex: 2,
-    explanation: 'C++では戻り値の型だけが異なる関数はオーバーロードできません。引数の型、個数、const修飾子などで区別されます。'
+    text: 'Dockerコンテナのタイムゾーンをホストと同期させる方法はどれですか？',
+    options: ['-v /etc/timezone:/etc/timezone:ro', '-e TZ=Asia/Tokyo', '-v /etc/localtime:/etc/localtime:ro', 'すべての方法が有効'],
+    correctAnswerIndex: 3,
+    explanation: 'タイムゾーン同期には複数の方法があります：/etc/timezoneや/etc/localtimeのマウント、TZ環境変数の設定です。用途やOSによって適切な方法を選びます。'
   },
   {
     id: 53,
     level: QuestionLevel.Beginner,
-    text: '`operator+` を定義する際、一般的に推奨される実装方法はどれですか？',
-    options: ['メンバ関数として定義し、左オペランドを変更する', 'メンバ関数として定義し、新しいオブジェクトを返す', '非メンバ関数として定義し、新しいオブジェクトを返す', 'static関数として定義する'],
-    correctAnswerIndex: 2,
-    explanation: '`operator+` は通常、非メンバ関数として定義し、両オペランドを変更せずに新しいオブジェクトを返すのが一般的です。これにより `a + b` と `1.0 + a`（型変換を伴う）の両方が可能になります。'
+    text: 'Dockerイメージのタグを削除するコマンドはどれですか？',
+    options: ['docker rmi', 'docker tag --remove', 'docker untag', 'docker image rm'],
+    correctAnswerIndex: 0,
+    explanation: '`docker rmi` コマンドでイメージのタグやイメージ自体を削除できます。`docker image rm` も同様の機能を持ちますが、`docker rmi` がより一般的です。'
   },
   {
     id: 54,
-    level: QuestionLevel.Beginner,
-    text: '`#ifndef`/`#define`/`#endif` に代わる、より簡潔なインクルードガードの方法はどれですか？',
-    options: ['`#once`', '`#pragma once`', '`#include_once`', '`#guard`'],
-    correctAnswerIndex: 1,
-    explanation: '`#pragma once` はコンパイラ依存ですが、多くの現代的なコンパイラでサポートされており、伝統的なインクルードガードより簡潔で間違いが少ないです。'
+    level: QuestionLevel.Intermediate,
+    text: 'Docker Composeでコンテナの起動順序を制御するためのオプションはどれですか？',
+    options: ['depends_on', 'wait_for', 'startup_order', 'sequence'],
+    correctAnswerIndex: 0,
+    explanation: '`depends_on` キーでサービスの依存関係と起動順序を制御できます。ただし、これはコンテナの起動順序のみを制御し、アプリケーションの準備完了を待たないことに注意が必要です。'
   },
-
-  // Gemini追加設問 - 基礎レベル
   {
     id: 55,
-    level: QuestionLevel.Beginner,
-    text: '範囲ベースforループで `std::vector<std::string>` の各要素を変更せずに処理する場合、最も適切な型指定はどれですか？',
-    options: ['for (auto item : vec)', 'for (auto& item : vec)', 'for (const auto& item : vec)', 'for (const auto item : vec)'],
-    correctAnswerIndex: 2,
-    explanation: 'const auto& を使うことで、不要なコピーを防ぎつつ、要素の変更を防げます。autoのみだとコピーが発生し、auto&だと変更可能になってしまいます。'
+    level: QuestionLevel.Intermediate,
+    text: 'Dockerコンテナでのシグナル処理で重要なSIGTERMとSIGKILLの違いは何ですか？',
+    options: ['SIGTERMは即座終了、SIGKILLは遅延終了', 'SIGTERMは正常終了、SIGKILLは強制終了', '機能的な違いはない', 'SIGTERMはユーザー用、SIGKILLはシステム用'],
+    correctAnswerIndex: 1,
+    explanation: 'SIGTERMはプロセスに正常終了を促し、クリーンアップの機会を与えます。SIGKILLはプロセスを即座に強制終了させ、プロセスはこのシグナルをキャッチや無視することができません。'
   },
   {
     id: 56,
-    level: QuestionLevel.Beginner,
-    text: 'ヘッダーファイル(.h)に書くべき内容として最も適切なものはどれですか？',
-    options: ['関数の実装コード', 'クラスの宣言と関数のプロトタイプ', 'グローバル変数の定義', 'staticな実装の詳細'],
+    level: QuestionLevel.Intermediate,
+    text: 'Dockerコンテナのシステムリソースをクリーンアップするコマンドはどれですか？',
+    options: ['docker cleanup', 'docker system prune', 'docker clean', 'docker gc'],
     correctAnswerIndex: 1,
-    explanation: 'ヘッダーファイルには宣言（declaration）を書き、実装（definition）は.cppファイルに書きます。これにより、複数のファイルから同じ宣言を参照でき、リンク時の重複定義エラーを防げます。'
+    explanation: '`docker system prune` コマンドは使用されていないコンテナ、ネットワーク、イメージ、ビルドキャッシュを一括で削除します。`-a` オプションでより徹底的にクリーンアップできます。'
   },
-
-  // Claude追加設問 - 中級レベル
   {
     id: 57,
     level: QuestionLevel.Intermediate,
-    text: '仮想関数を持つクラスで、派生クラスのオブジェクトを基底クラスのポインタで削除する際に重要なのは何ですか？',
-    options: ['仮想コンストラクタ', '仮想デストラクタ', '純粋仮想関数', '仮想継承'],
+    text: 'Dockerコンテナのメモリ使用量を制限し、スワップも制限するオプション組み合わせはどれですか？',
+    options: ['--memory のみ', '--memory と --memory-swap', '--memory-limit', '--mem と --swap'],
     correctAnswerIndex: 1,
-    explanation: '基底クラスのデストラクタが仮想でないと、派生クラスのデストラクタが呼ばれずリソースリークの原因となります。'
+    explanation: '`--memory` でメモリ使用量を制限し、`--memory-swap` でメモリ+スワップの合計を制限できます。例：`--memory=1g --memory-swap=2g` でメモリ1GB、スワップ1GBに制限されます。'
   },
   {
     id: 58,
     level: QuestionLevel.Intermediate,
-    text: '`class Derived : private Base` で継承した場合、Baseのpublicメンバは Derivedクラス内でどのようにアクセスできますか？',
-    options: ['publicとしてアクセス可能', 'protectedとしてアクセス可能', 'privateとしてアクセス可能', 'アクセス不可'],
-    correctAnswerIndex: 2,
-    explanation: 'private継承では、基底クラスのpublic/protectedメンバは派生クラス内でprivateとしてアクセスできますが、派生クラスの外部からはアクセスできません。'
+    text: 'Dockerfileでマルチステージビルドを行う際のステージ指定方法はどれですか？',
+    options: ['FROM image AS stage', 'STAGE stage FROM image', 'SET STAGE stage', 'FROM image NAME stage'],
+    correctAnswerIndex: 0,
+    explanation: '`FROM image AS stage_name` の構文でステージに名前を付け、後のステージで `COPY --from=stage_name` などで参照できます。これによりイメージサイズの最適化が可能です。'
   },
   {
     id: 59,
     level: QuestionLevel.Intermediate,
-    text: 'メンバ初期化リストを**必ず**使用しなければならない場合はどれですか？',
-    options: ['intメンバの初期化', 'constメンバの初期化', 'staticメンバの初期化', 'pointerメンバの初期化'],
-    correctAnswerIndex: 1,
-    explanation: 'constメンバ、参照メンバ、デフォルトコンストラクタを持たないクラスのメンバは、メンバ初期化リストでの初期化が必須です。'
+    text: 'Dockerコンテナ内のアプリケーションが正常に動作していることを確認するコマンドはどれですか？',
+    options: ['docker health', 'docker status', 'docker logs', 'docker inspect'],
+    correctAnswerIndex: 2,
+    explanation: '`docker logs` コマンドでコンテナ内のアプリケーションのログを確認できます。`docker inspect` ではコンテナの詳細情報を、`docker ps` では実行状態を確認できます。'
   },
   {
     id: 60,
     level: QuestionLevel.Intermediate,
-    text: '以下のコードで出力される結果はどれですか？\n```cpp\nclass Base {\npublic:\n    virtual void print() { cout << "Base"; }\n};\nclass Derived : public Base {\npublic:\n    void print() override { cout << "Derived"; }\n};\nBase* ptr = new Derived();\nptr->print();\n```',
-    options: ['Base', 'Derived', 'コンパイルエラー', '未定義動作'],
-    correctAnswerIndex: 1,
-    explanation: 'virtual関数では実行時に実際のオブジェクトの型に基づいて適切な関数が呼ばれます（動的束縛）。'
+    text: 'Docker Composeでサービスを再作成せずに設定変更を反映させるコマンドはどれですか？',
+    options: ['docker-compose restart', 'docker-compose reload', 'docker-compose refresh', 'docker-compose up --force-recreate'],
+    correctAnswerIndex: 0,
+    explanation: '`docker-compose restart` は既存のコンテナを停止・再起動します。設定変更を完全に反映するには `docker-compose up --force-recreate` が確実ですが、単純な再起動では `restart` を使用します。'
   },
   {
     id: 61,
     level: QuestionLevel.Intermediate,
-    text: '静的メンバ関数について正しいのはどれですか？',
-    options: ['thisポインタを使用できる', '非静的メンバ変数にアクセスできる', 'クラスのインスタンスなしで呼び出せる', 'virtual宣言できる'],
-    correctAnswerIndex: 2,
-    explanation: '静的メンバ関数は特定のインスタンスに属さないため、クラス名を使って直接呼び出すことができます。thisポインタや非静的メンバには直接アクセスできません。'
+    text: 'DockerイメージをDocker Hubにプッシュする前に必要なコマンドはどれですか？',
+    options: ['docker login', 'docker auth', 'docker signin', 'docker connect'],
+    correctAnswerIndex: 0,
+    explanation: '`docker login` コマンドでDocker Hubやプライベートレジストリに認証を行う必要があります。認証後、`docker push` でイメージをプッシュできます。'
   },
 
-  // Gemini追加設問 - 中級レベル  
   {
     id: 62,
     level: QuestionLevel.Intermediate,
-    text: 'C++17で導入された `std::string_view` の主な利点は何ですか？',
-    options: ['文字列を変更可能にする', '文字列の所有権を管理する', '文字列のコピーを避けて読み取り専用アクセスを提供する', '文字列の動的メモリ確保を自動化する'],
-    correctAnswerIndex: 2,
-    explanation: 'std::string_viewは文字列データのビュー（参照）を提供し、コピーを行わずに読み取り専用アクセスが可能です。関数引数でstd::stringの代わりに使うことで、パフォーマンスを向上できます。'
+    text: 'Dockerコンテナの実行中プロセスを確認するために使用できるコマンドはどれですか？',
+    options: ['docker ps', 'docker exec ps aux', 'docker top', 'すべてのコマンド'],
+    correctAnswerIndex: 3,
+    explanation: '`docker ps` で実行中コンテナの一覧、`docker exec container_name ps aux` でコンテナ内のプロセス、`docker top container_name` で指定コンテナのプロセスを確認できます。'
   },
   {
     id: 63,
     level: QuestionLevel.Intermediate,
-    text: '`std::vector<std::pair<int, std::string>>` に要素を追加する際、最も効率的な方法はどれですか？',
-    options: ['vec.push_back(std::pair<int, std::string>(1, "hello"));', 'vec.push_back({1, "hello"});', 'vec.emplace_back(1, "hello");', 'vec.insert(vec.end(), {1, "hello"});'],
+    text: 'Docker Composeでサービス間の通信に使用されるデフォルトのネットワーク名はどのような形式ですか？',
+    options: ['docker_default', 'compose_default', 'プロジェクト名_default', 'app_network'],
     correctAnswerIndex: 2,
-    explanation: 'emplace_backは引数を直接コンストラクタに転送し、コンテナ内で直接オブジェクトを構築します。push_backは一時オブジェクトを作成してからムーブするため、emplace_backの方が効率的です。'
+    explanation: 'Docker Composeはデフォルトで「プロジェクト名_default」の形式でネットワークを作成します。プロジェクト名はディレクトリ名またはproject-nameで指定した名前が使用されます。'
   },
   {
     id: 64,
     level: QuestionLevel.Intermediate,
-    text: '`std::vector<int> v{10};` と `std::vector<int> v(10);` の違いは何ですか？',
-    options: ['両方とも同じ結果になる', '前者は要素10を1つ持つベクタ、後者は要素0を10個持つベクタ', '前者は要素0を10個持つベクタ、後者は要素10を1つ持つベクタ', '前者はコンパイルエラーになる'],
-    correctAnswerIndex: 1,
-    explanation: '波括弧{}は初期化リスト構築を行い、丸括弧()は通常のコンストラクタ呼び出しです。v{10}は値10を持つ要素1個、v(10)はデフォルト値0を持つ要素10個のベクタになります。'
+    text: 'Dockerコンテナのストレージドライバとして一般的に使用されるものはどれですか？',
+    options: ['overlay2', 'aufs', 'devicemapper', 'overlay2とaufs'],
+    correctAnswerIndex: 0,
+    explanation: '現在の主流は「overlay2」で、高いパフォーマンスと安定性を提供します。「aufs」は古い形式ですが一部のシステムで使用されています。`docker info` でストレージドライバを確認できます。'
   },
   {
     id: 65,
-    level: QuestionLevel.Intermediate,
-    text: '仮想関数をオーバーライドする際に `override` キーワードを使用する主な理由は何ですか？',
-    options: ['パフォーマンスを向上させるため', 'メモリ使用量を削減するため', 'オーバーライドのつもりが新しい関数を定義してしまうミスを防ぐため', 'アクセス指定子を変更するため'],
-    correctAnswerIndex: 2,
-    explanation: 'overrideキーワードにより、コンパイラが基底クラスの仮想関数を正しくオーバーライドしているかチェックします。シグネチャの違いなどでオーバーライドに失敗していた場合、コンパイルエラーで教えてくれます。'
+    level: QuestionLevel.Advanced,
+    text: 'Dockerコンテナのセキュリティ強化のためのReadOnly Root Filesystemを設定するオプションはどれですか？',
+    options: ['--read-only', '--readonly-root', '--ro-root', '--immutable'],
+    correctAnswerIndex: 0,
+    explanation: '`--read-only` オプションでコンテナのルートファイルシステムを読み取り専用にできます。アプリケーションが書き込みを必要とする場合は、tmpfsボリュームを併用します。'
   },
 
-  // Claude追加設問 - 上級レベル
   {
     id: 66,
     level: QuestionLevel.Advanced,
-    text: '仮想関数を持つクラスのオブジェクトが通常含むものはどれですか？',
-    options: ['仮想関数テーブル（vtable）', 'vtableへのポインタ（vptr）', '仮想関数のコード', '基底クラスのコピー'],
-    correctAnswerIndex: 1,
-    explanation: '仮想関数を持つクラスのオブジェクトは、vtableへのポインタ（vptr）を含みます。vtable自体はクラスごとに1つ存在します。'
+    text: 'DockerコンテナのLinux Capabilitiesを制限するためのオプションはどれですか？',
+    options: ['--cap-add/--cap-drop', '--security-opt', '--privileged', '--user'],
+    correctAnswerIndex: 0,
+    explanation: '`--cap-add` で能力を追加、`--cap-drop` で能力を削除できます。`--cap-drop ALL` で全能力を削除後、必要なものだけを `--cap-add` で追加することでセキュリティを向上できます。'
   },
   {
     id: 67,
     level: QuestionLevel.Advanced,
-    text: '以下のような関数テンプレートの完全特殊化の正しい記法はどれですか？\n```cpp\ntemplate<typename T>\nvoid func(T value) { /* 汎用版 */ }\n```',
-    options: ['`template<> void func<int>(int value) { /* int特殊版 */ }`', '`template<int> void func(int value) { /* int特殊版 */ }`', '`void func<int>(int value) { /* int特殊版 */ }`', '`specialized void func(int value) { /* int特殊版 */ }`'],
-    correctAnswerIndex: 0,
-    explanation: '完全特殊化では `template<>` を使用し、特殊化する型を明示します。'
+    text: 'Docker Swarmでサービスのローディングバランサーとして使用されるデフォルトのモードはどれですか？',
+    options: ['round-robin', 'least-connections', 'ip-hash', 'vip'],
+    correctAnswerIndex: 3,
+    explanation: 'Docker SwarmはデフォルトでVIP (Virtual IP)モードを使用し、各サービスに仮想IPを割り当ててコンテナ間のロードバランシングを行います。'
   },
   {
     id: 68,
     level: QuestionLevel.Advanced,
-    text: '`constexpr`関数について正しいのはどれですか？',
-    options: ['常にコンパイル時に評価される', 'コンパイル時定数の引数が与えられた場合のみ、コンパイル時に評価される可能性がある', '実行時にのみ評価される', 'インライン関数と同じ動作をする'],
-    correctAnswerIndex: 1,
-    explanation: '`constexpr`関数は、コンパイル時定数の引数が渡された場合にコンパイル時評価が可能ですが、実行時の値が渡された場合は通常の関数として実行時に実行されます。'
+    text: 'DockerコンテナのPID namespaceをホストと共有するオプションはどれですか？',
+    options: ['--pid=host', '--share-pid', '--host-pid', '--pid-mode=host'],
+    correctAnswerIndex: 0,
+    explanation: '`--pid=host` オプションでコンテナがホストのPID namespaceを共有し、ホストのプロセスをコンテナ内から参照できます。デバッグやモニタリングツールで使用されます。'
   },
   {
     id: 69,
     level: QuestionLevel.Advanced,
-    text: 'SFINAE (Substitution Failure Is Not An Error) の主な用途は何ですか？',
-    options: ['コンパイル時にエラーを強制的に発生させる', 'テンプレートの置換失敗を利用してオーバーロード解決を制御する', '実行時の型情報を取得する', 'メモリ確保の失敗を処理する'],
-    correctAnswerIndex: 1,
-    explanation: 'SFINAEは、テンプレート引数の置換が失敗してもエラーにならず、単にそのオーバーロード候補から除外される仕組みです。これを利用して型特性に応じたテンプレート制御が可能になります。'
+    text: 'Dockerコンテナのセキュリティプロファイルを適用するためのAppArmor設定オプションはどれですか？',
+    options: ['--security-opt apparmor=profile_name', '--apparmor=profile_name', '--security apparmor:profile_name', '--profile apparmor:profile_name'],
+    correctAnswerIndex: 0,
+    explanation: '`--security-opt apparmor=profile_name` でAppArmorプロファイルを指定できます。`unconfined` で無効化、カスタムプロファイル名で特定のプロファイルを適用できます。'
   },
   {
     id: 70,
     level: QuestionLevel.Advanced,
-    text: '以下の構造体のサイズ（64bit環境、通常のアライメント）はおそらく何バイトですか？\n```cpp\nstruct MyStruct {\n    char a;     // 1 byte\n    int b;      // 4 bytes\n    char c;     // 1 byte\n};\n```',
-    options: ['6 bytes', '8 bytes', '12 bytes', '16 bytes'],
-    correctAnswerIndex: 2,
-    explanation: 'メンバのアライメント要求により、char aの後に3バイトのパディング、char cの後に3バイトのパディングが挿入され、合計12バイトになることが多いです。'
+    text: 'Dockerコンテナで最小権限の原則を実現するためのベストプラクティスはどれですか？',
+    options: ['常にrootユーザーで実行', '非特権ユーザーで実行し、必要最小限の権限のみ付与', 'すべてのLinux capabilitiesを有効化', '--privilegedオプションを使用'],
+    correctAnswerIndex: 1,
+    explanation: 'セキュリティのために非特権ユーザーでアプリケーションを実行し、コンテナには必要最小限の権限のみを付与することが推奨されます。'
   },
   {
     id: 71,
     level: QuestionLevel.Advanced,
-    text: '強い例外安全性（Strong Exception Safety）の保証とは何ですか？',
-    options: ['例外が発生しないことを保証する', '例外が発生してもプログラムが異常終了しない', '例外が発生してもオブジェクトの状態が操作前と同じに保たれる', '例外が発生してもメモリリークが発生しない'],
-    correctAnswerIndex: 2,
-    explanation: '強い例外安全性では、操作が失敗（例外発生）した場合、オブジェクトの状態が操作開始前と同じ状態に戻ることが保証されます。'
+    text: 'Dockerコンテナでcgroup v2を使用することの主なメリットは何ですか？',
+    options: ['リソース制限の統一管理と性能向上', 'メモリ使用量の減少', 'ネットワーク速度の向上', 'ファイルシステムの最適化'],
+    correctAnswerIndex: 0,
+    explanation: 'cgroup v2は統一階層でリソース管理を簡素化し、より効率的なリソース制限とメモリ管理を提供します。また、新しい機能や改善されたパフォーマンスも提供します。'
   },
 
-  // Gemini追加設問 - 上級レベル
   {
     id: 72,
     level: QuestionLevel.Advanced,
-    text: '複数スレッドから共有リソースを安全にアクセスするための `std::lock_guard` の正しい使用方法はどれですか？',
-    options: ['std::lock_guard<std::mutex> lock(mutex); の後でmutex.lock();', 'std::lock_guard<std::mutex> lock(mutex); だけで自動的にロック・アンロック', 'mutex.lock(); std::lock_guard<std::mutex> lock(mutex);', 'std::lock_guard<std::mutex> lock; lock.acquire(mutex);'],
+    text: 'Docker BuildKitの秘密情報管理機能でビルド時に秘密情報を使用する方法はどれですか？',
+    options: ['ENVで秘密情報を設定', 'RUN --mount=type=secretでマウント', 'COPYで秘密情報ファイルをコピー', 'ARGで秘密情報を渡す'],
     correctAnswerIndex: 1,
-    explanation: 'std::lock_guardはRAII原則に従い、コンストラクタでmutexをロックし、デストラクタでアンロックします。スコープを抜ける際に自動的にアンロックされるため、例外安全です。'
+    explanation: 'BuildKitの `RUN --mount=type=secret` 機能で秘密情報を一時的にマウントし、ビルド後にイメージから除去されるため、安全に秘密情報を扱えます。'
   },
   {
     id: 73,
     level: QuestionLevel.Advanced,
-    text: '`std::atomic<int>` 変数に対する最もストリクト（厳格）なメモリオーダーはどれですか？',
-    options: ['std::memory_order_relaxed', 'std::memory_order_acquire', 'std::memory_order_seq_cst', 'std::memory_order_consume'],
-    correctAnswerIndex: 2,
-    explanation: 'std::memory_order_seq_cst（sequential consistency）は最も厳格なメモリオーダーで、全スレッド間で一貫した順序を保証します。デフォルトでもあり、パフォーマンスより正確性を重視する場合に使用します。'
+    text: 'DockerコンテナのマルチアーキテクチャイメージをビルドするためのBuildKit機能はどれですか？',
+    options: ['docker buildx', 'docker multi-arch', 'docker platform', 'docker cross-build'],
+    correctAnswerIndex: 0,
+    explanation: '`docker buildx` はBuildKitベースのビルダーで、`--platform` オプションで複数のアーキテクチャをターゲットにしたイメージをビルドできます。例：`docker buildx build --platform linux/amd64,linux/arm64`'
   },
   {
     id: 74,
     level: QuestionLevel.Advanced,
-    text: 'テンプレート関数で引数を別の関数に「完全転送」するための正しいコードはどれですか？',
-    options: ['other_func(args);', 'other_func(std::move(args));', 'other_func(std::forward<Args>(args));', 'other_func(std::forward<Args>(args)...);'],
-    correctAnswerIndex: 3,
-    explanation: '可変長テンプレートでの完全転送では、std::forward<Args>(args)...の形式を使用します。これにより引数の値カテゴリ（左辺値/右辺値）を保持したまま転送できます。'
+    text: 'DockerコンテナのFileSystemをメモリ上にマウントして高速化するための方法はどれですか？',
+    options: ['--tmpfs /path', '--mount type=tmpfs', '--memory-fs /path', 'tmpfsボリュームの作成'],
+    correctAnswerIndex: 1,
+    explanation: '`--mount type=tmpfs,destination=/path` でtmpfsファイルシステムをマウントでき、メモリ上に一時ファイルシステムを作成して高速なI/Oを実現できます。'
   },
   {
     id: 75,
     level: QuestionLevel.Advanced,
-    text: 'ファイルハンドルを安全に管理するRAIIクラスの基本構造として最も適切なものはどれですか？',
-    options: ['コンストラクタでファイルを開き、明示的なclose()メソッドで閉じる', 'コンストラクタでファイルを開き、デストラクタで閉じ、コピーを禁止する', 'コンストラクタでファイルを開き、デストラクタで閉じ、コピー可能にする', 'ファイルを開くopenメソッドと閉じるcloseメソッドを提供する'],
+    text: 'Dockerコンテナでカーネルモジュールをロードするための権限が必要な場合のオプションはどれですか？',
+    options: ['--privileged', '--cap-add SYS_MODULE', '--device /dev/kmod', '--kernel-module'],
     correctAnswerIndex: 1,
-    explanation: 'RAIIでは、リソースの確保を初期化時、解放をデストラクタで行います。ファイルハンドルのような排他的リソースはコピーを禁止し、必要に応じてムーブセマンティクスを実装します。'
+    explanation: '`--cap-add SYS_MODULE` でカーネルモジュールのロード/アンロード権限を付与できます。`--privileged` でも可能ですが、より多くの権限を付与してしまうため、最小権限の原則では `SYS_MODULE` のみを追加することが推奨されます。'
   },
 ];

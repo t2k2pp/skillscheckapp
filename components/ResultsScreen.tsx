@@ -6,6 +6,7 @@ interface ResultsScreenProps {
   userAnswers: UserAnswer[];
   questions: QuizQuestion[];
   onRestart: () => void;
+  onBackToBooks: () => void;
   totalTime: number;
 }
 
@@ -31,12 +32,18 @@ const formatTime = (milliseconds: number) => {
     return `${seconds}秒`;
 };
 
-const ResultsScreen: React.FC<ResultsScreenProps> = ({ userAnswers, questions, onRestart, totalTime }) => {
-  const { score, percentage } = useMemo(() => {
+const ResultsScreen: React.FC<ResultsScreenProps> = ({ userAnswers, questions, onRestart, onBackToBooks, totalTime }) => {
+  const { score, percentage, answeredQuestions, isPartialResult } = useMemo(() => {
+    const answeredQuestions = userAnswers.length;
+    const totalQuestions = questions.length;
     const correctAnswers = userAnswers.filter((userAnswer, index) => userAnswer.answerIndex === questions[index].correctAnswerIndex).length;
+    const isPartialResult = answeredQuestions < totalQuestions;
+    
     return {
       score: correctAnswers,
-      percentage: (correctAnswers / questions.length) * 100
+      percentage: answeredQuestions > 0 ? (correctAnswers / answeredQuestions) * 100 : 0,
+      answeredQuestions,
+      isPartialResult
     };
   }, [userAnswers, questions]);
 
@@ -70,12 +77,19 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({ userAnswers, questions, o
   return (
     <div className="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-xl shadow-2xl w-full animate-fade-in">
       <div className="text-center">
-        <h1 className="text-3xl font-extrabold text-primary dark:text-accent mb-2">テスト結果</h1>
+        <h1 className="text-3xl font-extrabold text-primary dark:text-accent mb-2">
+          {isPartialResult ? '途中結果' : 'テスト結果'}
+        </h1>
         <p className="text-5xl font-bold my-4 text-gray-800 dark:text-gray-100">
-          {score} / {questions.length}
+          {score} / {answeredQuestions}
         </p>
-         <p className="text-lg text-gray-500 dark:text-gray-400 mb-4">
-              合計時間: {formatTime(totalTime)}
+        {isPartialResult && (
+          <p className="text-sm text-orange-600 dark:text-orange-400 mb-2">
+            全{questions.length}問中{answeredQuestions}問まで回答
+          </p>
+        )}
+        <p className="text-lg text-gray-500 dark:text-gray-400 mb-4">
+          合計時間: {formatTime(totalTime)}
         </p>
         <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-4 mb-4">
             <div className="bg-gradient-to-r from-secondary to-primary dark:from-accent dark:to-yellow-500 h-4 rounded-full" style={{ width: `${percentage}%` }}></div>
@@ -87,8 +101,9 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({ userAnswers, questions, o
       <div className="my-6">
         <h3 className="text-xl font-bold mb-4 text-center text-gray-800 dark:text-gray-100">解答一覧</h3>
         <div className="space-y-4 max-h-96 overflow-y-auto pr-2">
-            {questions.map((question, index) => {
+            {questions.slice(0, answeredQuestions).map((question, index) => {
               const userAnswer = userAnswers[index];
+              if (!userAnswer) return null;
               const isCorrect = userAnswer.answerIndex === question.correctAnswerIndex;
               return (
                 <div key={question.id} className="p-4 border rounded-lg bg-gray-50 dark:bg-gray-700/50 border-gray-200 dark:border-gray-600">
@@ -112,7 +127,13 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({ userAnswers, questions, o
         </div>
       </div>
       
-      <div className="mt-8 text-center">
+      <div className="mt-8 text-center space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
+        <button
+          onClick={onBackToBooks}
+          className="w-full sm:w-auto bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-transform hover:translate-y-1 duration-300 ease-in-out"
+        >
+          📚 他の問題集を選ぶ
+        </button>
         <button
           onClick={onRestart}
           className="w-full sm:w-auto bg-primary hover:bg-secondary text-white font-bold py-3 px-12 rounded-full shadow-lg transform transition-transform hover:translate-y-1 duration-300 ease-in-out"
