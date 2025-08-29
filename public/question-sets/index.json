@@ -143,7 +143,7 @@
       "categories": ["基礎", "中級", "上級"],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
-      "coverImage": "powerapps-logo.png",
+      "coverImage": "powerapps-database-logo.png",
       "color": "#0F6CBD"
     },
     {
@@ -155,7 +155,7 @@
       "categories": ["基礎", "中級", "上級"],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
-      "coverImage": "powerapps-logo.png",
+      "coverImage": "powerapps-sql-logo.png",
       "color": "#E81123"
     },
     {
