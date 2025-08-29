@@ -1,0 +1,986 @@
+{
+  "id": "sql",
+  "title": "SQLスキルテスト",
+  "description": "標準SQLの基礎から上級まで、実務で必要なスキルを測定します。SELECT文、結合、集約、サブクエリ、ビュー、ストアドプロシージャまで幅広くカバーします。",
+  "version": "1.0.0",
+  "author": "SQL Learning Team",
+  "categories": ["基礎", "中級", "上級"],
+  "color": "#336791",
+  "questions": [
+    {
+      "id": 1,
+      "level": "基礎",
+      "text": "SQLの正式名称として正しいものはどれですか？",
+      "options": [
+        "Standard Query Language",
+        "Structured Query Language",
+        "Simple Query Language",
+        "System Query Language"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SQLはStructured Query Language（構造化照会言語）の略称です。リレーショナルデータベースでデータを操作するための標準的な言語です。"
+    },
+    {
+      "id": 2,
+      "level": "基礎",
+      "text": "データを取得するSQLコマンドはどれですか？",
+      "options": [
+        "GET",
+        "FETCH",
+        "SELECT",
+        "RETRIEVE"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "SELECTは、データベースからデータを取得するための基本的なSQLコマンドです。WHERE句で条件を指定してデータを絞り込むことができます。"
+    },
+    {
+      "id": 3,
+      "level": "基礎",
+      "text": "新しいレコードを挿入するSQLコマンドはどれですか？",
+      "options": [
+        "ADD",
+        "INSERT",
+        "CREATE",
+        "NEW"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "INSERTは、テーブルに新しいレコードを挿入するためのSQLコマンドです。INSERT INTO table_name (column1, column2) VALUES (value1, value2)の形式で使用します。"
+    },
+    {
+      "id": 4,
+      "level": "基礎",
+      "text": "既存のレコードを更新するSQLコマンドはどれですか？",
+      "options": [
+        "CHANGE",
+        "MODIFY",
+        "UPDATE",
+        "ALTER"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "UPDATEは、既存のレコードの値を変更するためのSQLコマンドです。SET句で変更する値を指定し、WHERE句で更新対象を限定します。"
+    },
+    {
+      "id": 5,
+      "level": "基礎",
+      "text": "レコードを削除するSQLコマンドはどれですか？",
+      "options": [
+        "REMOVE",
+        "DROP",
+        "DELETE",
+        "ERASE"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "DELETEは、テーブルからレコードを削除するためのSQLコマンドです。WHERE句で削除対象を指定しない場合、全レコードが削除されるため注意が必要です。"
+    },
+    {
+      "id": 6,
+      "level": "基礎",
+      "text": "テーブルからすべての列を選択する場合のSELECT文はどれですか？",
+      "options": [
+        "SELECT ALL FROM table_name",
+        "SELECT * FROM table_name",
+        "SELECT EVERYTHING FROM table_name",
+        "SELECT COLUMNS FROM table_name"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "アスタリスク（*）は、テーブルのすべての列を選択する際に使用するワイルドカードです。SELECT * FROM table_nameでテーブルの全データを取得できます。"
+    },
+    {
+      "id": 7,
+      "level": "基礎",
+      "text": "条件を指定してデータを絞り込む句はどれですか？",
+      "options": [
+        "FILTER",
+        "WHERE",
+        "CONDITION",
+        "IF"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "WHERE句は、SELECT、UPDATE、DELETEなどの文で条件を指定してデータを絞り込むために使用します。"
+    },
+    {
+      "id": 8,
+      "level": "基礎",
+      "text": "取得結果を並び替える句はどれですか？",
+      "options": [
+        "SORT BY",
+        "ORDER BY",
+        "ARRANGE BY",
+        "SEQUENCE BY"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ORDER BY句は、取得結果を指定した列の値に基づいて並び替えるために使用します。ASC（昇順）またはDESC（降順）を指定できます。"
+    },
+    {
+      "id": 9,
+      "level": "基礎",
+      "text": "NULL値を判定する正しい条件式はどれですか？",
+      "options": [
+        "column = NULL",
+        "column == NULL",
+        "column IS NULL",
+        "column NULL"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "NULL値の判定には IS NULL演算子を使用します。等号（=）ではNULL値を正しく判定できません。NOT NULL値を判定する場合はIS NOT NULLを使用します。"
+    },
+    {
+      "id": 10,
+      "level": "基礎",
+      "text": "パターンマッチングを行う演算子はどれですか？",
+      "options": [
+        "MATCH",
+        "LIKE",
+        "SIMILAR",
+        "PATTERN"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "LIKE演算子は、ワイルドカード（%、_）を使用してパターンマッチングを行います。%は任意の文字列、_は任意の1文字を表します。"
+    },
+    {
+      "id": 11,
+      "level": "基礎",
+      "text": "複数の値のいずれかに一致するかを判定する演算子はどれですか？",
+      "options": [
+        "IN",
+        "ANY",
+        "SOME",
+        "MATCH"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "IN演算子は、指定したリストの中のいずれかの値に一致するかを判定します。例：WHERE status IN ('Active', 'Pending', 'Complete')"
+    },
+    {
+      "id": 12,
+      "level": "基礎",
+      "text": "範囲条件を指定する演算子はどれですか？",
+      "options": [
+        "RANGE",
+        "BETWEEN",
+        "FROM TO",
+        "WITHIN"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "BETWEEN演算子は、指定した範囲内の値を検索する場合に使用します。例：WHERE age BETWEEN 20 AND 30（20以上30以下）"
+    },
+    {
+      "id": 13,
+      "level": "基礎",
+      "text": "重複を除去して取得する場合に使用するキーワードはどれですか？",
+      "options": [
+        "UNIQUE",
+        "DISTINCT",
+        "SINGLE",
+        "REMOVE_DUPLICATES"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "DISTINCTキーワードは、SELECT文で重複する行を除去して結果を取得する場合に使用します。SELECT DISTINCT column FROM table_nameの形式で使用します。"
+    },
+    {
+      "id": 14,
+      "level": "基礎",
+      "text": "取得する行数を制限するキーワード（標準SQL）はどれですか？",
+      "options": [
+        "TOP",
+        "LIMIT",
+        "FETCH FIRST",
+        "MAX_ROWS"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "標準SQLでは FETCH FIRST n ROWS ONLYが正式な構文です。ただし、多くのDBMSでは独自の構文（LIMIT、TOPなど）も提供しています。"
+    },
+    {
+      "id": 15,
+      "level": "基礎",
+      "text": "文字列を結合する標準SQL関数はどれですか？",
+      "options": [
+        "CONCAT",
+        "JOIN",
+        "MERGE",
+        "COMBINE"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "CONCAT関数は、複数の文字列を結合するための標準SQL関数です。例：CONCAT('Hello', ' ', 'World') → 'Hello World'"
+    },
+    {
+      "id": 16,
+      "level": "基礎",
+      "text": "文字列の長さを取得する標準SQL関数はどれですか？",
+      "options": [
+        "LENGTH",
+        "LEN",
+        "SIZE",
+        "COUNT_CHARS"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "LENGTH関数（またはCHAR_LENGTH）は、文字列の文字数を返す標準SQL関数です。例：LENGTH('Hello') → 5"
+    },
+    {
+      "id": 17,
+      "level": "基礎",
+      "text": "文字列の一部を抽出する標準SQL関数はどれですか？",
+      "options": [
+        "SUBSTR",
+        "SUBSTRING",
+        "MID",
+        "EXTRACT"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SUBSTRING関数は、文字列の指定した位置から指定した長さの部分文字列を抽出します。例：SUBSTRING('Hello World', 1, 5) → 'Hello'"
+    },
+    {
+      "id": 18,
+      "level": "基礎",
+      "text": "現在の日付を取得する標準SQL関数はどれですか？",
+      "options": [
+        "TODAY()",
+        "NOW()",
+        "CURRENT_DATE",
+        "GETDATE()"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "CURRENT_DATEは、現在の日付を取得する標準SQL関数です。CURRENT_TIMEやCURRENT_TIMESTAMPも標準関数として利用できます。"
+    },
+    {
+      "id": 19,
+      "level": "基礎",
+      "text": "数値を四捨五入する標準SQL関数はどれですか？",
+      "options": [
+        "ROUND",
+        "CEILING",
+        "FLOOR",
+        "TRUNCATE"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ROUND関数は、数値を指定した桁数で四捨五入します。例：ROUND(3.14159, 2) → 3.14"
+    },
+    {
+      "id": 20,
+      "level": "基礎",
+      "text": "条件によって値を分岐させるSQL式はどれですか？",
+      "options": [
+        "IF...THEN...ELSE",
+        "CASE WHEN...THEN...ELSE",
+        "SWITCH...CASE",
+        "CONDITION...VALUE"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "CASE式は、条件に応じて異なる値を返す標準SQLの条件分岐式です。CASE WHEN condition THEN value ELSE default_value ENDの形式で使用します。"
+    },
+    {
+      "id": 21,
+      "level": "中級",
+      "text": "内部結合を表すキーワードはどれですか？",
+      "options": [
+        "INNER JOIN",
+        "INSIDE JOIN",
+        "INTERNAL JOIN",
+        "IN JOIN"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "INNER JOINは内部結合を表し、両方のテーブルに一致するレコードのみを結果に含めます。単にJOINと書いた場合もINNER JOINとして扱われます。"
+    },
+    {
+      "id": 22,
+      "level": "中級",
+      "text": "左外部結合を表すキーワードはどれですか？",
+      "options": [
+        "LEFT JOIN",
+        "LEFT OUTER JOIN",
+        "LEFT EXTERNAL JOIN",
+        "LEFT SIDE JOIN"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "LEFT OUTER JOINは左外部結合を表し、左側テーブルのすべてのレコードと、右側テーブルの一致するレコードを結果に含めます。LEFT JOINとも書けます。"
+    },
+    {
+      "id": 23,
+      "level": "中級",
+      "text": "右外部結合を表すキーワードはどれですか？",
+      "options": [
+        "RIGHT JOIN",
+        "RIGHT OUTER JOIN",
+        "RIGHT EXTERNAL JOIN",
+        "RIGHT SIDE JOIN"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "RIGHT OUTER JOINは右外部結合を表し、右側テーブルのすべてのレコードと、左側テーブルの一致するレコードを結果に含めます。RIGHT JOINとも書けます。"
+    },
+    {
+      "id": 24,
+      "level": "中級",
+      "text": "完全外部結合を表すキーワードはどれですか？",
+      "options": [
+        "FULL JOIN",
+        "FULL OUTER JOIN",
+        "COMPLETE JOIN",
+        "ALL JOIN"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "FULL OUTER JOINは完全外部結合を表し、両方のテーブルのすべてのレコードを結果に含めます。一致しない場合はNULL値が設定されます。"
+    },
+    {
+      "id": 25,
+      "level": "中級",
+      "text": "自己結合とは何ですか？",
+      "options": [
+        "同じテーブル同士を結合すること",
+        "主キーと外部キーを結合すること",
+        "インデックス同士を結合すること",
+        "ビュー同士を結合すること"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "自己結合（Self Join）は、同じテーブルを異なる別名（エイリアス）を付けて結合することです。階層データや従業員と上司の関係などを表現する際に使用されます。"
+    },
+    {
+      "id": 26,
+      "level": "中級",
+      "text": "データをグループ化する句はどれですか？",
+      "options": [
+        "GROUP BY",
+        "CLUSTER BY",
+        "COLLECT BY",
+        "GATHER BY"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "GROUP BY句は、指定した列の値でレコードをグループ化し、各グループに対して集約関数を適用する場合に使用します。"
+    },
+    {
+      "id": 27,
+      "level": "中級",
+      "text": "グループ化されたデータに対して条件を指定する句はどれですか？",
+      "options": [
+        "WHERE",
+        "HAVING",
+        "GROUP_WHERE",
+        "FILTER"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "HAVING句は、GROUP BYでグループ化された結果に対して条件を指定します。WHEREはグループ化前の個別レコードに対する条件です。"
+    },
+    {
+      "id": 28,
+      "level": "中級",
+      "text": "レコード数をカウントする集約関数はどれですか？",
+      "options": [
+        "COUNT",
+        "NUMBER",
+        "TOTAL",
+        "SUM"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "COUNT関数はレコード数をカウントする集約関数です。COUNT(*)で全レコード数、COUNT(column)で指定列の非NULL値の数を取得できます。"
+    },
+    {
+      "id": 29,
+      "level": "中級",
+      "text": "数値の合計を計算する集約関数はどれですか？",
+      "options": [
+        "TOTAL",
+        "SUM",
+        "ADD",
+        "PLUS"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SUM関数は、指定した列の数値の合計を計算する集約関数です。NULL値は計算から除外されます。"
+    },
+    {
+      "id": 30,
+      "level": "中級",
+      "text": "数値の平均を計算する集約関数はどれですか？",
+      "options": [
+        "MEAN",
+        "AVERAGE",
+        "AVG",
+        "MEDIAN"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "AVG関数は、指定した列の数値の平均値を計算する集約関数です。NULL値は計算から除外されます。"
+    },
+    {
+      "id": 31,
+      "level": "中級",
+      "text": "最大値を取得する集約関数はどれですか？",
+      "options": [
+        "MAX",
+        "MAXIMUM",
+        "TOP",
+        "HIGHEST"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "MAX関数は、指定した列の最大値を取得する集約関数です。数値だけでなく、文字列や日付にも使用できます。"
+    },
+    {
+      "id": 32,
+      "level": "中級",
+      "text": "最小値を取得する集約関数はどれですか？",
+      "options": [
+        "MIN",
+        "MINIMUM",
+        "BOTTOM",
+        "LOWEST"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "MIN関数は、指定した列の最小値を取得する集約関数です。数値だけでなく、文字列や日付にも使用できます。"
+    },
+    {
+      "id": 33,
+      "level": "中級",
+      "text": "サブクエリとは何ですか？",
+      "options": [
+        "メインクエリの中に含まれる別のクエリ",
+        "複数のテーブルを結合するクエリ",
+        "データを更新するクエリ",
+        "インデックスを作成するクエリ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "サブクエリ（副問い合わせ）は、別のSQL文の中に埋め込まれたSELECT文です。WHERE句、FROM句、SELECT句などで使用できます。"
+    },
+    {
+      "id": 34,
+      "level": "中級",
+      "text": "相関サブクエリの特徴として正しいものはどれですか？",
+      "options": [
+        "外側のクエリとは独立して実行される",
+        "外側のクエリの各行に対して実行される",
+        "一度だけ実行される",
+        "結果をキャッシュする"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "相関サブクエリは、外側のクエリの各行に対してサブクエリが実行されます。外側のクエリの列を参照するため、外側のクエリに依存します。"
+    },
+    {
+      "id": 35,
+      "level": "中級",
+      "text": "EXISTS演算子の用途として正しいものはどれですか？",
+      "options": [
+        "値の存在を確認する",
+        "サブクエリが結果を返すかどうかを判定する",
+        "NULL値を判定する",
+        "重複を検出する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "EXISTS演算子は、サブクエリが1行以上の結果を返すかどうかを判定します。結果が存在すればTRUE、存在しなければFALSEを返します。"
+    },
+    {
+      "id": 36,
+      "level": "中級",
+      "text": "IN演算子とEXISTS演算子の主な違いとして正しいものはどれですか？",
+      "options": [
+        "INは値を比較、EXISTSは行の存在を確認",
+        "INは高速、EXISTSは低速",
+        "INは標準SQL、EXISTSは拡張SQL",
+        "本質的な違いはない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "IN演算子は具体的な値の一致を確認するのに対し、EXISTS演算子は行の存在のみを確認します。NULL値の扱いや性能特性が異なります。"
+    },
+    {
+      "id": 37,
+      "level": "中級",
+      "text": "UNIONの特徴として正しいものはどれですか？",
+      "options": [
+        "重複行を含める",
+        "重複行を自動的に除去する",
+        "結合条件が必要",
+        "異なる列数でも結合可能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "UNIONは複数のSELECT文の結果を縦に結合し、重複行を自動的に除去します。重複を含める場合はUNION ALLを使用します。"
+    },
+    {
+      "id": 38,
+      "level": "中級",
+      "text": "UNION ALLの特徴として正しいものはどれですか？",
+      "options": [
+        "重複行を除去する",
+        "重複行を含める",
+        "自動的にソートされる",
+        "異なるデータ型でも結合可能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "UNION ALLは複数のSELECT文の結果を縦に結合し、重複行も含めて全ての行を返します。UNIONより高速です。"
+    },
+    {
+      "id": 39,
+      "level": "中級",
+      "text": "INTERSECTの機能として正しいものはどれですか？",
+      "options": [
+        "2つの結果セットの和集合を返す",
+        "2つの結果セットの積集合を返す",
+        "2つの結果セットの差集合を返す",
+        "2つの結果セットを結合する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "INTERSECTは2つのSELECT文の結果の積集合（両方に存在する行のみ）を返します。重複行は自動的に除去されます。"
+    },
+    {
+      "id": 40,
+      "level": "中級",
+      "text": "EXCEPTの機能として正しいものはどれですか？",
+      "options": [
+        "2つの結果セットの和集合を返す",
+        "2つの結果セットの積集合を返す",
+        "2つの結果セットの差集合を返す",
+        "例外処理を行う"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "EXCEPT（またはMINUS）は最初のSELECT文の結果から2番目のSELECT文の結果を除いた差集合を返します。"
+    },
+    {
+      "id": 41,
+      "level": "上級",
+      "text": "ウィンドウ関数の特徴として正しいものはどれですか？",
+      "options": [
+        "結果の行数を減らす",
+        "各行に対して集約値を計算できる",
+        "データを物理的にソートする",
+        "テーブル構造を変更する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ウィンドウ関数は、各行に対してウィンドウ（行のセット）を定義し、そのウィンドウ内で集約計算や順位付けを行います。GROUP BYと違い、元の行数は維持されます。"
+    },
+    {
+      "id": 42,
+      "level": "上級",
+      "text": "ROW_NUMBER()関数の用途として正しいものはどれですか？",
+      "options": [
+        "行の個数をカウントする",
+        "各行に連続する行番号を割り当てる",
+        "行を削除する",
+        "行をソートする"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ROW_NUMBER()は、指定した順序で各行に連続する一意の行番号を割り当てるウィンドウ関数です。OVER句でパーティションと順序を指定します。"
+    },
+    {
+      "id": 43,
+      "level": "上級",
+      "text": "RANK()関数の特徴として正しいものはどれですか？",
+      "options": [
+        "常に連続する番号を割り当てる",
+        "同じ値には同じ順位を割り当て、次の順位をスキップする",
+        "同じ値には異なる順位を割り当てる",
+        "順位を割り当てない"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "RANK()は、同じ値には同じ順位を割り当て、次の順位をスキップします。例：1位が2人いる場合、次は3位になります。"
+    },
+    {
+      "id": 44,
+      "level": "上級",
+      "text": "DENSE_RANK()とRANK()の違いとして正しいものはどれですか？",
+      "options": [
+        "DENSE_RANKは順位をスキップしない",
+        "RANKは順位をスキップしない",
+        "両方とも同じ動作",
+        "DENSE_RANKは同じ値に異なる順位を付ける"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "DENSE_RANK()は同じ値に同じ順位を付けますが、次の順位をスキップしません。例：1位が2人いても、次は2位になります。"
+    },
+    {
+      "id": 45,
+      "level": "上級",
+      "text": "LAG()関数の用途として正しいものはどれですか？",
+      "options": [
+        "現在の行の次の行の値を取得する",
+        "現在の行の前の行の値を取得する",
+        "最初の行の値を取得する",
+        "最後の行の値を取得する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "LAG()関数は、現在の行から指定した行数だけ前の行の値を取得するウィンドウ関数です。前年同月比較などでよく使用されます。"
+    },
+    {
+      "id": 46,
+      "level": "上級",
+      "text": "LEAD()関数の用途として正しいものはどれですか？",
+      "options": [
+        "現在の行の次の行の値を取得する",
+        "現在の行の前の行の値を取得する",
+        "グループの最初の値を取得する",
+        "グループの最後の値を取得する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "LEAD()関数は、現在の行から指定した行数だけ後の行の値を取得するウィンドウ関数です。LAG()の逆の動作をします。"
+    },
+    {
+      "id": 47,
+      "level": "上級",
+      "text": "FIRST_VALUE()関数の用途として正しいものはどれですか？",
+      "options": [
+        "パーティション内の最初の行の値を取得する",
+        "パーティション内の最後の行の値を取得する",
+        "最小値を取得する",
+        "最大値を取得する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "FIRST_VALUE()は、ウィンドウフレーム内の最初の行の値を取得するウィンドウ関数です。ORDER BYで指定した順序での最初の値を返します。"
+    },
+    {
+      "id": 48,
+      "level": "上級",
+      "text": "LAST_VALUE()関数を正しく使用するために必要な指定はどれですか？",
+      "options": [
+        "PARTITION BYのみ",
+        "ORDER BYのみ",
+        "適切なフレーム指定（ROWS/RANGE）",
+        "何も指定しない"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "LAST_VALUE()は、デフォルトのフレームが現在行までのため、期待する結果を得るにはROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWINGなどの適切なフレーム指定が必要です。"
+    },
+    {
+      "id": 49,
+      "level": "上級",
+      "text": "CTEの正式名称として正しいものはどれですか？",
+      "options": [
+        "Complex Table Expression",
+        "Common Table Expression",
+        "Conditional Table Expression",
+        "Computed Table Expression"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "CTE（Common Table Expression）は、WITH句を使用して定義する一時的な名前付きの結果セットです。複雑なクエリの可読性向上に役立ちます。"
+    },
+    {
+      "id": 50,
+      "level": "上級",
+      "text": "再帰CTEの用途として適切でないものはどれですか？",
+      "options": [
+        "階層データの処理",
+        "連続する数値の生成",
+        "グラフの走査",
+        "単純な集計処理"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "再帰CTEは階層構造やグラフ構造のデータ処理に適しています。単純な集計処理には通常の集約関数を使用する方が効率的です。"
+    },
+    {
+      "id": 51,
+      "level": "上級",
+      "text": "PIVOTの機能として正しいものはどれですか？",
+      "options": [
+        "行を列に変換する",
+        "列を行に変換する",
+        "テーブルを結合する",
+        "データを集約する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PIVOT操作は、行データを列データに変換します。例えば、月別の売上データを横並びの表にする際に使用します。"
+    },
+    {
+      "id": 52,
+      "level": "上級",
+      "text": "UNPIVOTの機能として正しいものはどれですか？",
+      "options": [
+        "行を列に変換する",
+        "列を行に変換する",
+        "データを複製する",
+        "データを削除する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "UNPIVOT操作は、列データを行データに変換します。PIVOTの逆操作で、正規化されたデータ構造に変換する際に使用します。"
+    },
+    {
+      "id": 53,
+      "level": "上級",
+      "text": "MERGE文（UPSERT）の特徴として正しいものはどれですか？",
+      "options": [
+        "挿入のみ実行する",
+        "更新のみ実行する",
+        "削除のみ実行する",
+        "条件に応じて挿入、更新、削除を実行する"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "MERGE文は、条件に応じて単一の文で挿入（INSERT）、更新（UPDATE）、削除（DELETE）を実行できる文です。データの同期処理でよく使用されます。"
+    },
+    {
+      "id": 54,
+      "level": "上級",
+      "text": "パーティション化の主な利点として正しくないものはどれですか？",
+      "options": [
+        "クエリ性能の向上",
+        "保守性の向上",
+        "データ整合性の保証",
+        "並列処理の効率化"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "パーティション化は性能向上、保守性向上、並列処理効率化をもたらしますが、データ整合性の保証は制約やトランザクション管理の役割です。"
+    },
+    {
+      "id": 55,
+      "level": "上級",
+      "text": "水平パーティション化の方法として適切でないものはどれですか？",
+      "options": [
+        "範囲パーティション",
+        "ハッシュパーティション",
+        "リストパーティション",
+        "列パーティション"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "列パーティションは垂直パーティション化の概念です。水平パーティション化には範囲、ハッシュ、リストなどの方法があります。"
+    },
+    {
+      "id": 56,
+      "level": "上級",
+      "text": "インデックススキャンとテーブルスキャンの使い分けとして正しいものはどれですか？",
+      "options": [
+        "常にインデックススキャンが高速",
+        "データ量と選択性に応じて最適な方法が変わる",
+        "常にテーブルスキャンが高速",
+        "実行時間に差はない"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "データ量、選択性、クエリの条件などに応じて最適なアクセス方法が変わります。少量データや低選択性の場合、テーブルスキャンが効率的な場合もあります。"
+    },
+    {
+      "id": 57,
+      "level": "上級",
+      "text": "カーディナリティの意味として正しいものはどれですか？",
+      "options": [
+        "データの正確性",
+        "データの一意性の度合い",
+        "データのサイズ",
+        "データの更新頻度"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "カーディナリティは、カラムの一意性の度合いを表します。高カーディナリティは多くの一意値を持ち、低カーディナリティは重複が多い状態を指します。"
+    },
+    {
+      "id": 58,
+      "level": "上級",
+      "text": "実行計画の最適化において考慮すべき要素として最も重要でないものはどれですか？",
+      "options": [
+        "統計情報の精度",
+        "インデックスの有無",
+        "結合順序",
+        "テーブル名の長さ"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "テーブル名の長さは実行計画にほとんど影響しません。統計情報、インデックス、結合順序、データ量などが重要な要素です。"
+    },
+    {
+      "id": 59,
+      "level": "上級",
+      "text": "SQLの実行順序として正しいものはどれですか？",
+      "options": [
+        "SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY",
+        "FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY",
+        "WHERE → FROM → SELECT → GROUP BY → HAVING → ORDER BY",
+        "FROM → SELECT → WHERE → GROUP BY → HAVING → ORDER BY"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SQLの論理的な実行順序は、FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMITです。この順序を理解することで、クエリの動作を正確に把握できます。"
+    },
+    {
+      "id": 60,
+      "level": "上級",
+      "text": "結合アルゴリズムの種類として適切でないものはどれですか？",
+      "options": [
+        "Nested Loop Join",
+        "Hash Join",
+        "Sort Merge Join",
+        "Pivot Join"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Pivot Joinは存在しません。主要な結合アルゴリズムには、Nested Loop Join、Hash Join、Sort Merge Joinがあります。"
+    },
+    {
+      "id": 61,
+      "level": "上級",
+      "text": "ハッシュ結合が効果的な状況として正しいものはどれですか？",
+      "options": [
+        "両方のテーブルが小さい場合",
+        "一方のテーブルが小さく、他方が大きい場合",
+        "両方のテーブルが非常に大きい場合",
+        "結合キーが文字列の場合"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ハッシュ結合は、小さいテーブルでハッシュテーブルを作成し、大きいテーブルをスキャンして結合する手法で、サイズが大きく異なるテーブル同士の結合に効果的です。"
+    },
+    {
+      "id": 62,
+      "level": "上級",
+      "text": "クエリヒントの使用について正しい考え方はどれですか？",
+      "options": [
+        "常に使用すべき",
+        "オプティマイザを信頼し、特別な場合のみ使用",
+        "使用すべきではない",
+        "すべてのクエリに必須"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "クエリヒントは、オプティマイザが適切な実行計画を選択できない特別な状況でのみ使用すべきです。通常はオプティマイザに任せる方が適切です。"
+    },
+    {
+      "id": 63,
+      "level": "上級",
+      "text": "デッドロック検出と対処について正しいものはどれですか？",
+      "options": [
+        "デッドロックは発生させない",
+        "発生を検出し、適切にロールバック処理を行う",
+        "デッドロック発生時はシステムを停止する",
+        "デッドロックは無視する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "デッドロックは避けられない場合があるため、データベースシステムによる自動検出と、アプリケーションでの適切なロールバック・再試行処理が重要です。"
+    },
+    {
+      "id": 64,
+      "level": "上級",
+      "text": "読み取り専用クエリに対する最適化手法として適切でないものはどれですか？",
+      "options": [
+        "適切なインデックスの作成",
+        "カバリングインデックスの使用",
+        "マテリアライズドビューの活用",
+        "行レベルロックの強化"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "読み取り専用クエリでは行レベルロックの強化は不要です。インデックス最適化、カバリングインデックス、マテリアライズドビューなどが効果的です。"
+    },
+    {
+      "id": 65,
+      "level": "上級",
+      "text": "バルクインサートの最適化手法として適切でないものはどれですか？",
+      "options": [
+        "バッチサイズの調整",
+        "インデックスの一時無効化",
+        "トランザクションサイズの最適化",
+        "すべての制約の強化"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "バルクインサート時は、必要最小限の制約チェックに留め、一時的にインデックスを無効化するなどの最適化を行います。すべての制約を強化すると性能が低下します。"
+    },
+    {
+      "id": 66,
+      "level": "上級",
+      "text": "SQLインジェクション対策として最も効果的なものはどれですか？",
+      "options": [
+        "入力値の文字制限",
+        "エスケープ処理",
+        "パラメータ化クエリ（プリペアドステートメント）",
+        "権限制限"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "パラメータ化クエリ（プリペアドステートメント）は、SQLとデータを明確に分離するため、SQLインジェクション攻撃に対して最も効果的な対策です。"
+    },
+    {
+      "id": 67,
+      "level": "上級",
+      "text": "データベースの正規化と非正規化の使い分けとして正しいものはどれですか？",
+      "options": [
+        "常に正規化すべき",
+        "常に非正規化すべき",
+        "用途に応じて適切に選択する",
+        "どちらでも性能は同じ"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "正規化はデータ整合性を重視するOLTPシステムに、非正規化は読み取り性能を重視するOLAPシステムに適しています。用途に応じた選択が重要です。"
+    },
+    {
+      "id": 68,
+      "level": "上級",
+      "text": "分析関数とウィンドウ関数の関係として正しいものはどれですか？",
+      "options": [
+        "分析関数がウィンドウ関数を含む概念",
+        "ウィンドウ関数が分析関数を含む概念",
+        "完全に別の概念",
+        "同じ概念"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "分析関数とウィンドウ関数は基本的に同じ概念を指します。OVER句を使用して行のウィンドウを定義し、そのウィンドウ内で計算を行う関数群です。"
+    },
+    {
+      "id": 69,
+      "level": "上級",
+      "text": "SQL標準の発展において、新しい機能が追加される主な理由はどれですか？",
+      "options": [
+        "技術者の趣味",
+        "ビジネス要件の複雑化と分析ニーズの高まり",
+        "データベースベンダーの要望",
+        "プログラミング言語の進歩"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SQL標準の発展は、複雑化するビジネス要件、高度な分析ニーズ、ビッグデータ処理、リアルタイム分析などの実際のユーザー要求に応えるために進んでいます。"
+    },
+    {
+      "id": 70,
+      "level": "上級",
+      "text": "NoSQLデータベースとSQLデータベースの選択基準として最も適切なものはどれですか？",
+      "options": [
+        "NoSQLは常に高速",
+        "SQLは常に安全",
+        "データ構造と要件に応じた適切な選択",
+        "流行に応じて選択"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "データ構造（構造化/非構造化）、スケーラビリティ要件、整合性要件、クエリの複雑性、開発・運用コストなどを総合的に評価して選択することが重要です。"
+    },
+    {
+      "id": 71,
+      "level": "上級",
+      "text": "OLTP（Online Transaction Processing）環境でのSQL最適化として最も重要なものはどれですか？",
+      "options": [
+        "複雑な分析クエリの高速化",
+        "短時間で完了する取引処理の最適化",
+        "大量データの一括処理",
+        "履歴データの圧縮"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "OLTPでは、短時間で完了する取引処理（INSERT、UPDATE、DELETE、単純なSELECT）の高速化と高い同時実行性の確保が最も重要です。"
+    },
+    {
+      "id": 72,
+      "level": "上級",
+      "text": "OLAP（Online Analytical Processing）環境でのSQL最適化として最も重要なものはどれですか？",
+      "options": [
+        "単純な取引処理の高速化",
+        "複雑な分析クエリと大量データ処理の最適化",
+        "リアルタイム更新処理",
+        "ユーザー認証の強化"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "OLAPでは、複雑な集計クエリ、多次元分析、大量データの処理、履歴データの分析などの最適化が重要です。"
+    },
+    {
+      "id": 73,
+      "level": "上級",
+      "text": "クラウドデータベースにおけるSQL使用の特徴として正しいものはどれですか？",
+      "options": [
+        "オンプレミスと全く同じ使用方法",
+        "スケーラビリティとコスト効率を考慮した設計が重要",
+        "SQLは使用できない",
+        "パフォーマンスは考慮不要"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "クラウド環境では、自動スケーリング、従量課金、分散処理、マネージドサービスの活用など、クラウド固有の特性を活かした設計と運用が重要です。"
+    },
+    {
+      "id": 74,
+      "level": "上級",
+      "text": "SQLの将来の発展方向として予想される最も重要な要素はどれですか？",
+      "options": [
+        "構文の簡素化のみ",
+        "AI/ML統合とリアルタイム分析機能の強化",
+        "後方互換性の廃止",
+        "特定ベンダー依存の強化"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SQLの将来は、機械学習統合、リアルタイムストリーミング、グラフ処理、時系列データ、JSON/XML処理などの現代的なデータ処理要件に対応する方向に発展しています。"
+    },
+    {
+      "id": 75,
+      "level": "上級",
+      "text": "SQLを効果的に学習・習得するために最も重要なことはどれですか？",
+      "options": [
+        "すべての構文を暗記する",
+        "実際のデータと業務要件に基づいた実践的な練習",
+        "最新の機能のみ学習する",
+        "理論学習のみに集中する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SQLは実用的な言語であり、実際のデータセットと現実的な業務要件に基づいて、基礎から応用まで段階的に実践練習することが最も効果的な学習方法です。"
+    }
+  ]
+}

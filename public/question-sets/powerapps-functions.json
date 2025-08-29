@@ -1,0 +1,986 @@
+{
+  "id": "powerapps-functions",
+  "title": "PowerApps関数スキルテスト",
+  "description": "PowerApps関数の基礎から最新機能まで、実務で必要なスキルを測定します。基本関数から高度な数式、コレクション操作、動的データ処理まで幅広くカバーします。",
+  "version": "1.0.0",
+  "author": "PowerApps Learning Team",
+  "categories": ["基礎", "中級", "上級"],
+  "color": "#742774",
+  "questions": [
+    {
+      "id": 1,
+      "level": "基礎",
+      "text": "PowerAppsでテキストを連結する基本的な関数はどれですか？",
+      "options": [
+        "Concat()",
+        "Concatenate()",
+        "&演算子",
+        "すべて正解"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "PowerAppsでは、Concat()、Concatenate()、&演算子のすべてでテキストを連結できます。用途に応じて使い分けることが重要です。"
+    },
+    {
+      "id": 2,
+      "level": "基礎",
+      "text": "PowerAppsでIF関数を使用する正しい構文はどれですか？",
+      "options": [
+        "If(条件, 真の値, 偽の値)",
+        "IF(条件, 真の値, 偽の値)",
+        "if(条件, 真の値, 偽の値)",
+        "If(条件; 真の値; 偽の値)"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsのIF関数は「If(条件, 真の値, 偽の値)」の形式で記述します。PowerAppsでは大文字小文字を区別し、区切り文字にはカンマを使用します。"
+    },
+    {
+      "id": 3,
+      "level": "基礎",
+      "text": "PowerAppsで現在の日付を取得する関数はどれですか？",
+      "options": [
+        "Now()",
+        "Today()",
+        "GetDate()",
+        "CurrentDate()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Today()関数は現在の日付のみを返します。Now()関数は現在の日付と時刻の両方を返します。"
+    },
+    {
+      "id": 4,
+      "level": "基礎",
+      "text": "PowerAppsでコレクションを作成する関数はどれですか？",
+      "options": [
+        "CreateCollection()",
+        "Collect()",
+        "NewCollection()",
+        "AddCollection()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Collect()関数はコレクションを作成および更新するために使用されます。既存のコレクションに新しいレコードを追加することも可能です。"
+    },
+    {
+      "id": 5,
+      "level": "基礎",
+      "text": "PowerAppsでテキストの長さを取得する関数はどれですか？",
+      "options": [
+        "Length()",
+        "Len()",
+        "Count()",
+        "Size()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Len()関数は文字列の文字数を返します。Length()は存在せず、Count()は配列やコレクションの要素数を返します。"
+    },
+    {
+      "id": 6,
+      "level": "基礎",
+      "text": "PowerAppsで数値を文字列に変換する関数はどれですか？",
+      "options": [
+        "ToString()",
+        "Text()",
+        "String()",
+        "Convert()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Text()関数は数値や日付を指定した書式の文字列に変換します。書式設定オプションも豊富に用意されています。"
+    },
+    {
+      "id": 7,
+      "level": "基礎",
+      "text": "PowerAppsで文字列を数値に変換する関数はどれですか？",
+      "options": [
+        "ToNumber()",
+        "Value()",
+        "Number()",
+        "Parse()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Value()関数は文字列を数値に変換します。変換できない文字列の場合はBlank()が返されます。"
+    },
+    {
+      "id": 8,
+      "level": "基礎",
+      "text": "PowerAppsで空白値をチェックする関数はどれですか？",
+      "options": [
+        "IsEmpty()",
+        "IsBlank()",
+        "IsNull()",
+        "IsVoid()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "IsBlank()関数は値が空白かどうかをチェックします。PowerAppsでは空白値を表現するためにBlank()関数を使用します。"
+    },
+    {
+      "id": 9,
+      "level": "基礎",
+      "text": "PowerAppsでランダムな数値を生成する関数はどれですか？",
+      "options": [
+        "Random()",
+        "Rand()",
+        "RandBetween()",
+        "Generate()"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Random()関数は0から1未満のランダムな数値を生成します。RandBetween()関数は指定した範囲内のランダムな整数を生成します。"
+    },
+    {
+      "id": 10,
+      "level": "基礎",
+      "text": "PowerAppsで絶対値を取得する関数はどれですか？",
+      "options": [
+        "Absolute()",
+        "Abs()",
+        "AbsoluteValue()",
+        "Positive()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Abs()関数は数値の絶対値を返します。負の数も正の数として扱いたい場合に使用します。"
+    },
+    {
+      "id": 11,
+      "level": "基礎",
+      "text": "PowerAppsで四捨五入を行う関数はどれですか？",
+      "options": [
+        "Round()",
+        "RoundUp()",
+        "RoundDown()",
+        "すべて正解"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Round()は四捨五入、RoundUp()は切り上げ、RoundDown()は切り捨てを行います。第2引数で桁数を指定できます。"
+    },
+    {
+      "id": 12,
+      "level": "基礎",
+      "text": "PowerAppsで文字列から一部を抽出する関数はどれですか？",
+      "options": [
+        "Substring()",
+        "Mid()",
+        "Extract()",
+        "Slice()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Mid()関数は文字列の指定した位置から指定した文字数を抽出します。Mid(文字列, 開始位置, 文字数)の形式で使用します。"
+    },
+    {
+      "id": 13,
+      "level": "基礎",
+      "text": "PowerAppsで文字列を大文字に変換する関数はどれですか？",
+      "options": [
+        "ToUpper()",
+        "Upper()",
+        "UpperCase()",
+        "Capitalize()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Upper()関数は文字列をすべて大文字に変換します。Lower()関数は小文字に、Proper()関数は各単語の先頭文字のみ大文字に変換します。"
+    },
+    {
+      "id": 14,
+      "level": "基礎",
+      "text": "PowerAppsで文字列の先頭と末尾の空白を削除する関数はどれですか？",
+      "options": [
+        "Strip()",
+        "Trim()",
+        "Clean()",
+        "RemoveSpaces()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Trim()関数は文字列の先頭と末尾の余分な空白文字を削除します。文字列の中間にある空白は削除されません。"
+    },
+    {
+      "id": 15,
+      "level": "基礎",
+      "text": "PowerAppsで最大値を求める関数はどれですか？",
+      "options": [
+        "Maximum()",
+        "Max()",
+        "Largest()",
+        "Greatest()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Max()関数は指定した値の中から最大値を返します。Min()関数は最小値を返します。"
+    },
+    {
+      "id": 16,
+      "level": "基礎",
+      "text": "PowerAppsで平均値を求める関数はどれですか？",
+      "options": [
+        "Avg()",
+        "Average()",
+        "Mean()",
+        "Arithmetic()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Average()関数は指定した値の平均値を計算します。空白値は計算から除外されます。"
+    },
+    {
+      "id": 17,
+      "level": "基礎",
+      "text": "PowerAppsで平方根を求める関数はどれですか？",
+      "options": [
+        "SquareRoot()",
+        "Sqrt()",
+        "Root()",
+        "Square()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Sqrt()関数は数値の平方根を計算します。負の数を指定するとエラーが発生します。"
+    },
+    {
+      "id": 18,
+      "level": "基礎",
+      "text": "PowerAppsでべき乗を計算する関数はどれですか？",
+      "options": [
+        "Pow()",
+        "Power()",
+        "Exponent()",
+        "^演算子"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Power()関数は底数を指数乗したり、^演算子を使用してべき乗を計算できます。Power(底数, 指数)の形式で使用します。"
+    },
+    {
+      "id": 19,
+      "level": "基礎",
+      "text": "PowerAppsで論理値を反転させる関数はどれですか？",
+      "options": [
+        "Not()",
+        "Invert()",
+        "Opposite()",
+        "Reverse()"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Not()関数は論理値を反転させます。Not(true)はfalseを、Not(false)はtrueを返します。"
+    },
+    {
+      "id": 20,
+      "level": "基礎",
+      "text": "PowerAppsで複数の条件すべてが真かをチェックする関数はどれですか？",
+      "options": [
+        "And()",
+        "All()",
+        "Every()",
+        "&演算子"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "And()関数はすべての条件が真の場合にのみtrueを返します。Or()関数はいずれかの条件が真の場合にtrueを返します。"
+    },
+    {
+      "id": 21,
+      "level": "中級",
+      "text": "Switch関数の正しい使用方法はどれですか？",
+      "options": [
+        "Switch(式, 値1, 結果1, 値2, 結果2, デフォルト値)",
+        "Switch(式, 値1:結果1, 値2:結果2, デフォルト値)",
+        "Switch(式) { 値1 -> 結果1; 値2 -> 結果2 }",
+        "Switch(式, [値1, 結果1], [値2, 結果2], デフォルト値)"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Switch関数は「Switch(式, 値1, 結果1, 値2, 結果2, ..., デフォルト値)」の形式で使用します。最後のデフォルト値は省略可能です。"
+    },
+    {
+      "id": 22,
+      "level": "中級",
+      "text": "Filter関数で複数の条件を指定する正しい方法はどれですか？",
+      "options": [
+        "Filter(データソース, 条件1 && 条件2)",
+        "Filter(データソース, 条件1 And 条件2)",
+        "Filter(データソース, 条件1, 条件2)",
+        "Filter(データソース, And(条件1, 条件2))"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Filter関数でAND条件を指定する場合は「And」演算子を使用します。PowerAppsでは「&&」ではなく「And」を使用します。"
+    },
+    {
+      "id": 23,
+      "level": "中級",
+      "text": "Sort関数でコレクションを降順にソートする正しい記述はどれですか？",
+      "options": [
+        "Sort(コレクション, 列名, SortOrder.Descending)",
+        "Sort(コレクション, 列名, Descending)",
+        "Sort(コレクション, 列名, \"desc\")",
+        "Sort(コレクション, 列名, false)"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Sort関数で降順にソートするには「SortOrder.Descending」を指定します。昇順の場合は「SortOrder.Ascending」または省略します。"
+    },
+    {
+      "id": 24,
+      "level": "中級",
+      "text": "LookUp関数の正しい構文はどれですか？",
+      "options": [
+        "LookUp(データソース, 条件, 結果列)",
+        "LookUp(データソース, 結果列, 条件)",
+        "LookUp(条件, データソース, 結果列)",
+        "LookUp(結果列, データソース, 条件)"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "LookUp関数は「LookUp(データソース, 条件, 結果列)」の形式で使用します。条件に一致する最初のレコードから指定した列の値を返します。"
+    },
+    {
+      "id": 25,
+      "level": "中級",
+      "text": "CountIf関数とCountA関数の違いとして正しいものはどれですか？",
+      "options": [
+        "CountIf関数は条件付きカウント、CountA関数は空白以外をカウント",
+        "CountIf関数は数値のみ、CountA関数は文字列のみをカウント",
+        "CountIf関数とCountA関数に機能的な違いはない",
+        "CountIf関数は合計、CountA関数は個数を返す"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "CountIf関数は指定した条件に一致するレコード数をカウントし、CountA関数は空白以外のレコード数をカウントします。"
+    },
+    {
+      "id": 26,
+      "level": "中級",
+      "text": "ForAll関数の主な用途として正しいものはどれですか？",
+      "options": [
+        "すべてのレコードに同じ処理を適用する",
+        "条件に一致するレコードを検索する",
+        "レコードを並び替える",
+        "レコードを削除する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ForAll関数はコレクションの各レコードに対して同じ式を実行し、結果を新しいコレクションとして返します。"
+    },
+    {
+      "id": 27,
+      "level": "中級",
+      "text": "Patch関数の主な機能として正しいものはどれですか？",
+      "options": [
+        "データソースのレコードを作成、更新、削除する",
+        "データソースをバックアップする",
+        "データソースの整合性をチェックする",
+        "データソースを同期する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Patch関数はデータソースに対してレコードの作成、更新、削除を行います。非常に強力で柔軟なデータ操作関数です。"
+    },
+    {
+      "id": 28,
+      "level": "中級",
+      "text": "AddColumns関数の機能として正しいものはどれですか？",
+      "options": [
+        "既存のコレクションに新しい列を追加する",
+        "コレクションに新しいレコードを追加する",
+        "コレクションから列を削除する",
+        "コレクションの列名を変更する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "AddColumns関数は既存のテーブルやコレクションに計算列を追加した新しいテーブルを作成します。元のデータは変更されません。"
+    },
+    {
+      "id": 29,
+      "level": "中級",
+      "text": "DropColumns関数の機能として正しいものはどれですか？",
+      "options": [
+        "指定した列を除外した新しいテーブルを作成する",
+        "テーブルから列を完全に削除する",
+        "列のデータを空白にする",
+        "列を非表示にする"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "DropColumns関数は指定した列を除外した新しいテーブルを作成します。元のテーブルは変更されません。"
+    },
+    {
+      "id": 30,
+      "level": "中級",
+      "text": "ShowColumns関数の機能として正しいものはどれですか？",
+      "options": [
+        "指定した列のみを含む新しいテーブルを作成する",
+        "指定した列を表示可能にする",
+        "指定した列をハイライトする",
+        "指定した列の詳細情報を表示する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ShowColumns関数は指定した列のみを含む新しいテーブルを作成します。DropColumnsの逆の動作をします。"
+    },
+    {
+      "id": 31,
+      "level": "中級",
+      "text": "RenameColumns関数の機能として正しいものはどれですか？",
+      "options": [
+        "列名を変更した新しいテーブルを作成する",
+        "既存のテーブルの列名を直接変更する",
+        "列の表示名を変更する",
+        "列のデータ型を変更する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "RenameColumns関数は指定した列の名前を変更した新しいテーブルを作成します。元のテーブルは変更されません。"
+    },
+    {
+      "id": 32,
+      "level": "中級",
+      "text": "Distinct関数の機能として正しいものはどれですか？",
+      "options": [
+        "指定した列の重複を除いた一意の値を返す",
+        "テーブル全体から重複レコードを削除する",
+        "指定した値が存在するかチェックする",
+        "データの差異を計算する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Distinct関数は指定した列から重複を除いた一意の値のリストを返します。データの重複排除に使用します。"
+    },
+    {
+      "id": 33,
+      "level": "中級",
+      "text": "GroupBy関数の機能として正しいものはどれですか？",
+      "options": [
+        "指定した列でデータをグループ化し、集計する",
+        "データを視覚的にグループ表示する",
+        "関連するデータを結合する",
+        "データベースのグループ機能を実行する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "GroupBy関数は指定した列でデータをグループ化し、各グループに対して集計処理を行います。"
+    },
+    {
+      "id": 34,
+      "level": "中級",
+      "text": "Ungroup関数の機能として正しいものはどれですか？",
+      "options": [
+        "グループ化されたデータを展開してフラット化する",
+        "グループ設定を削除する",
+        "グループの関連付けを解除する",
+        "グループ表示を無効にする"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Ungroup関数はGroupBy関数などで作成されたネストした構造を展開し、フラットなテーブルに変換します。"
+    },
+    {
+      "id": 35,
+      "level": "中級",
+      "text": "Sum関数をコレクションに適用する正しい記述はどれですか？",
+      "options": [
+        "Sum(コレクション.列名)",
+        "Sum(コレクション, 列名)",
+        "Sum(コレクション!列名)",
+        "Sum(コレクション->列名)"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "コレクションの特定の列の合計を計算するには「Sum(コレクション.列名)」の形式を使用します。ドット記法でプロパティにアクセスします。"
+    },
+    {
+      "id": 36,
+      "level": "中級",
+      "text": "IsEmpty関数の機能として正しいものはどれですか？",
+      "options": [
+        "テーブルやコレクションが空かどうかをチェックする",
+        "文字列が空白かどうかをチェックする",
+        "数値が0かどうかをチェックする",
+        "すべての値が空かどうかをチェックする"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "IsEmpty関数はテーブルやコレクションにレコードが含まれていない場合にtrueを返します。文字列の空白チェックにはIsBlank関数を使用します。"
+    },
+    {
+      "id": 37,
+      "level": "中級",
+      "text": "First関数とLast関数について正しい説明はどれですか？",
+      "options": [
+        "First関数は最初のレコード、Last関数は最後のレコードを取得する",
+        "First関数は初期値、Last関数は最終値を設定する",
+        "First関数は先頭文字、Last関数は末尾文字を取得する",
+        "First関数とLast関数は日付専用の関数である"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "First関数はテーブルの最初のレコードを、Last関数は最後のレコードを取得します。並び順は元のデータまたはSort関数の結果に依存します。"
+    },
+    {
+      "id": 38,
+      "level": "中級",
+      "text": "With関数の主な用途として正しいものはどれですか？",
+      "options": [
+        "複雑な式で同じ値を複数回参照する際の最適化",
+        "複数のデータソースを結合する",
+        "条件分岐を簡潔に記述する",
+        "ループ処理を実行する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "With関数は複雑な計算結果を変数として定義し、式内で再利用することでパフォーマンスと可読性を向上させます。"
+    },
+    {
+      "id": 39,
+      "level": "中級",
+      "text": "Table関数の機能として正しいものはどれですか？",
+      "options": [
+        "インラインでテーブルを作成する",
+        "既存のテーブルをコピーする",
+        "テーブルの構造を定義する",
+        "テーブルを表示する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Table関数は式内で直接テーブルデータを定義します。Table({列1: 値1, 列2: 値2}, {列1: 値3, 列2: 値4})のように使用します。"
+    },
+    {
+      "id": 40,
+      "level": "中級",
+      "text": "Record関数の機能として正しいものはどれですか？",
+      "options": [
+        "単一のレコード（行）を作成する",
+        "データの変更履歴を記録する",
+        "レコードを保存する",
+        "レコード数をカウントする"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Record関数は単一のレコードを作成します。{列1: 値1, 列2: 値2}の形式でレコードを定義できます。"
+    },
+    {
+      "id": 41,
+      "level": "上級",
+      "text": "ParseJSON関数の機能として正しいものはどれですか？",
+      "options": [
+        "JSON文字列をPowerAppsで使用可能なオブジェクトに変換する",
+        "PowerAppsオブジェクトをJSONに変換する",
+        "JSONファイルを読み込む",
+        "JSONの妥当性をチェックする"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ParseJSON関数はJSON形式の文字列をPowerAppsで操作可能なレコードやテーブル形式に変換します。"
+    },
+    {
+      "id": 42,
+      "level": "上級",
+      "text": "JSON関数の機能として正しいものはどれですか？",
+      "options": [
+        "PowerAppsオブジェクトをJSON文字列に変換する",
+        "JSONファイルを作成する",
+        "JSON形式でデータを表示する",
+        "JSONデータを検証する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "JSON関数はPowerAppsのレコードやテーブルをJSON形式の文字列に変換します。外部システムとの連携で使用されます。"
+    },
+    {
+      "id": 43,
+      "level": "上級",
+      "text": "Sequence関数の機能として正しいものはどれですか？",
+      "options": [
+        "連続した数値のテーブルを生成する",
+        "データの順序を管理する",
+        "シーケンシャルファイルを作成する",
+        "処理の手順を定義する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Sequence関数は指定した数の連続した数値を含むテーブルを生成します。Sequence(5)は1から5までの数値テーブルを作成します。"
+    },
+    {
+      "id": 44,
+      "level": "上級",
+      "text": "Set関数とUpdateContext関数の違いとして正しいものはどれですか？",
+      "options": [
+        "Set関数はグローバル変数、UpdateContext関数はローカル変数を作成する",
+        "Set関数は数値用、UpdateContext関数は文字列用",
+        "Set関数は永続的、UpdateContext関数は一時的",
+        "Set関数とUpdateContext関数に違いはない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Set関数はアプリ全体で使用できるグローバル変数を作成し、UpdateContext関数は特定の画面内でのみ使用できるローカル変数を作成します。"
+    },
+    {
+      "id": 45,
+      "level": "上級",
+      "text": "Navigate関数で画面に値を渡す正しい方法はどれですか？",
+      "options": [
+        "Navigate(画面, ScreenTransition.None, {変数名: 値})",
+        "Navigate(画面, {変数名: 値}, ScreenTransition.None)",
+        "Navigate(画面, ScreenTransition.None) With {変数名: 値}",
+        "Navigate(画面, Set(変数名, 値))"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Navigate関数の第3引数でレコード形式の値を渡すことができます。渡された値は遷移先画面でコンテキスト変数として利用できます。"
+    },
+    {
+      "id": 46,
+      "level": "上級",
+      "text": "Concurrent関数の主な用途として正しいものはどれですか？",
+      "options": [
+        "複数の処理を並列実行してパフォーマンスを向上させる",
+        "複数のユーザーの同時アクセスを制御する",
+        "データの整合性を保つ",
+        "複数のデータソースを同期する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Concurrent関数は複数の関数を並列実行することで、処理時間を短縮できます。独立した複数のデータ取得などで有効です。"
+    },
+    {
+      "id": 47,
+      "level": "上級",
+      "text": "Error関数の主な機能として正しいものはどれですか？",
+      "options": [
+        "意図的にエラーを発生させる",
+        "エラー情報を取得する",
+        "エラーを修正する",
+        "エラーログを出力する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Error関数は指定したメッセージでエラーを意図的に発生させます。バリデーションやエラーハンドリングで使用されます。"
+    },
+    {
+      "id": 48,
+      "level": "上級",
+      "text": "IfError関数の機能として正しいものはどれですか？",
+      "options": [
+        "エラーが発生した場合に代替の処理を実行する",
+        "エラーの種類を判定する",
+        "エラーを予防する",
+        "エラーを無視する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "IfError関数は第1引数の式でエラーが発生した場合に、第2引数の代替処理を実行します。堅牢なアプリケーション作成に重要です。"
+    },
+    {
+      "id": 49,
+      "level": "上級",
+      "text": "IsError関数の機能として正しいものはどれですか？",
+      "options": [
+        "指定した値がエラーかどうかを判定する",
+        "エラーを検索する",
+        "エラーの詳細を取得する",
+        "エラーを分類する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "IsError関数は指定した値がエラーの場合にtrueを返します。エラーハンドリングの条件分岐で使用されます。"
+    },
+    {
+      "id": 50,
+      "level": "上級",
+      "text": "Trace関数の主な用途として正しいものはどれですか？",
+      "options": [
+        "デバッグ情報をApp Insightsに送信する",
+        "実行時間を計測する",
+        "実行パスを記録する",
+        "変数の値を表示する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Trace関数はカスタムテレメトリデータをAzure Application Insightsに送信します。アプリの監視と分析に使用されます。"
+    },
+    {
+      "id": 51,
+      "level": "上級",
+      "text": "SaveData関数とLoadData関数について正しい説明はどれですか？",
+      "options": [
+        "デバイスのローカルストレージにデータを保存・読み込みする",
+        "クラウドストレージにデータを保存・読み込みする",
+        "データベースにデータを保存・読み込みする",
+        "メモリにデータを保存・読み込みする"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SaveData関数とLoadData関数はデバイスのローカルストレージにデータを保存・読み込みします。オフライン機能の実装で使用されます。"
+    },
+    {
+      "id": 52,
+      "level": "上級",
+      "text": "Launch関数の機能として正しいものはどれですか？",
+      "options": [
+        "外部のアプリケーションやWebサイトを起動する",
+        "新しいPowerAppsアプリを起動する",
+        "PowerAppの起動処理を実行する",
+        "バックグラウンド処理を起動する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Launch関数は指定したURLを使用して外部アプリケーションやWebサイトを起動します。メールアプリや電話アプリの起動などで使用されます。"
+    },
+    {
+      "id": 53,
+      "level": "上級",
+      "text": "Param関数の機能として正しいものはどれですか？",
+      "options": [
+        "URLパラメーターから値を取得する",
+        "関数にパラメーターを渡す",
+        "設定パラメーターを読み込む",
+        "システムパラメーターを取得する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Param関数はアプリが起動時に受け取ったURLパラメーターの値を取得します。外部システムからのパラメーター付きリンクで使用されます。"
+    },
+    {
+      "id": 54,
+      "level": "上級",
+      "text": "GUID関数の機能として正しいものはどれですか？",
+      "options": [
+        "一意のグローバル識別子を生成する",
+        "ユーザーIDを取得する",
+        "グループIDを生成する",
+        "セッションIDを取得する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "GUID関数は一意のグローバル識別子（GUID）を生成します。レコードの一意キーとして使用されることが多いです。"
+    },
+    {
+      "id": 55,
+      "level": "上級",
+      "text": "HashTags関数の機能として正しいものはどれですか？",
+      "options": [
+        "文字列からハッシュタグを抽出する",
+        "ハッシュ値を計算する",
+        "タグを生成する",
+        "文字列をハッシュ化する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "HashTags関数は指定したテキストから#で始まるハッシュタグを抽出し、テーブル形式で返します。"
+    },
+    {
+      "id": 56,
+      "level": "上級",
+      "text": "PlainText関数の機能として正しいものはどれですか？",
+      "options": [
+        "HTML形式のテキストからプレーンテキストを抽出する",
+        "文字列を平文に変換する",
+        "書式設定を削除する",
+        "特殊文字を除去する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PlainText関数はHTML形式のテキストからHTMLタグを削除し、プレーンテキストを抽出します。"
+    },
+    {
+      "id": 57,
+      "level": "上級",
+      "text": "EncodeUrl関数の機能として正しいものはどれですか？",
+      "options": [
+        "文字列をURL用にエンコードする",
+        "URLを暗号化する",
+        "URLを短縮する",
+        "URLの妥当性をチェックする"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "EncodeUrl関数は文字列をURLの一部として安全に使用できるようにエンコードします。特殊文字をパーセントエンコーディングします。"
+    },
+    {
+      "id": 58,
+      "level": "上級",
+      "text": "Clock関数について正しい説明はどれですか？",
+      "options": [
+        "PowerAppsでは利用できない（Excelのみ）",
+        "現在の時刻を取得する",
+        "タイマー機能を提供する",
+        "時刻の書式を設定する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Clock関数はPowerAppsでは利用できません。PowerAppsでは現在時刻の取得にNow()関数を使用します。"
+    },
+    {
+      "id": 59,
+      "level": "上級",
+      "text": "DateAdd関数で月を追加する場合の正しい単位指定はどれですか？",
+      "options": [
+        "DateTimeUnit.Months",
+        "\"months\"",
+        "DateUnit.Month",
+        "TimeUnit.Months"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "DateAdd関数で月を追加する場合は「DateTimeUnit.Months」を指定します。他にもDays、Years、Hours、Minutesなどが利用可能です。"
+    },
+    {
+      "id": 60,
+      "level": "上級",
+      "text": "DateDiff関数で2つの日付間の日数を計算する正しい記述はどれですか？",
+      "options": [
+        "DateDiff(開始日, 終了日, DateTimeUnit.Days)",
+        "DateDiff(開始日, 終了日, \"days\")",
+        "DateDiff(終了日, 開始日, Days)",
+        "DateDiff(開始日, 終了日, Day)"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "DateDiff関数は「DateDiff(開始日, 終了日, DateTimeUnit.Days)」の形式で日数の差を計算します。"
+    },
+    {
+      "id": 61,
+      "level": "上級",
+      "text": "StartsWith関数とEndsWith関数について正しい説明はどれですか？",
+      "options": [
+        "StartsWith関数は文字列の開始を、EndsWith関数は文字列の終了をチェックする",
+        "StartsWith関数は処理開始、EndsWith関数は処理終了を制御する",
+        "StartsWith関数は配列の最初、EndsWith関数は配列の最後を取得する",
+        "StartsWith関数とEndsWith関数は日付専用の関数である"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "StartsWith関数は文字列が指定した文字列で開始するかをチェックし、EndsWith関数は指定した文字列で終了するかをチェックします。"
+    },
+    {
+      "id": 62,
+      "level": "上級",
+      "text": "Match関数とMatchAll関数の違いとして正しいものはどれですか？",
+      "options": [
+        "Match関数は最初の一致のみ、MatchAll関数はすべての一致を返す",
+        "Match関数は完全一致、MatchAll関数は部分一致を検索する",
+        "Match関数は文字列用、MatchAll関数は数値用",
+        "Match関数とMatchAll関数に機能的な違いはない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Match関数は正規表現に一致する最初の結果のみを返し、MatchAll関数はすべての一致結果をテーブル形式で返します。"
+    },
+    {
+      "id": 63,
+      "level": "上級",
+      "text": "IsMatch関数の機能として正しいものはどれですか？",
+      "options": [
+        "文字列が正規表現パターンに一致するかをチェックする",
+        "2つの値が等しいかをチェックする",
+        "データの整合性をチェックする",
+        "パターンを検索する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "IsMatch関数は指定した文字列が正規表現パターンに一致する場合にtrueを返します。入力値の妥当性チェックで使用されます。"
+    },
+    {
+      "id": 64,
+      "level": "上級",
+      "text": "Substitute関数で大文字小文字を区別せずに置換する方法はどれですか？",
+      "options": [
+        "MatchOptions.IgnoreCase オプションを使用する",
+        "Upper関数を併用する",
+        "CaseIgnore パラメータを使用する",
+        "PowerAppsでは大文字小文字を区別しない置換はできない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Substitute関数の第4引数に「MatchOptions.IgnoreCase」を指定することで、大文字小文字を区別せずに置換できます。"
+    },
+    {
+      "id": 65,
+      "level": "上級",
+      "text": "Relate関数とUnrelate関数について正しい説明はどれですか？",
+      "options": [
+        "多対多のリレーションシップでレコード間の関連付けを管理する",
+        "データベースのリレーションシップを定義する",
+        "親子関係のデータを管理する",
+        "データの関連性を分析する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Relate関数は多対多リレーションシップでレコードを関連付け、Unrelate関数は関連付けを解除します。Common Data Service（現在のDataverse）で使用されます。"
+    },
+    {
+      "id": 66,
+      "level": "上級",
+      "text": "Refresh関数の機能として正しいものはどれですか？",
+      "options": [
+        "データソースを再読み込みして最新データを取得する",
+        "画面表示を更新する",
+        "アプリを再起動する",
+        "キャッシュをクリアする"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Refresh関数は指定したデータソースを再読み込みし、最新のデータを取得します。他のユーザーによる変更を反映させる際に使用します。"
+    },
+    {
+      "id": 67,
+      "level": "上級",
+      "text": "Revert関数の機能として正しいものはどれですか？",
+      "options": [
+        "データソースの変更を元に戻す",
+        "アプリの状態を前の状態に戻す",
+        "削除したレコードを復元する",
+        "バージョンを以前のものに戻す"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Revert関数はデータソースに対する未保存の変更を取り消し、元の状態に戻します。編集フォームでの変更取り消しなどで使用されます。"
+    },
+    {
+      "id": 68,
+      "level": "上級",
+      "text": "RequestHide関数とRequestShow関数の機能として正しいものはどれですか？",
+      "options": [
+        "画面の表示状態を制御する要求を送信する",
+        "データの表示・非表示を制御する",
+        "UIコントロールの表示・非表示を制御する",
+        "アプリの表示・非表示を制御する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "RequestHide関数とRequestShow関数は、埋め込まれたPowerAppsアプリの表示状態を制御する要求をホストアプリケーションに送信します。"
+    },
+    {
+      "id": 69,
+      "level": "上級",
+      "text": "Coalesce関数の機能として正しいものはどれですか？",
+      "options": [
+        "複数の値から最初の空白でない値を返す",
+        "複数の値を結合する",
+        "値を合体させる",
+        "複数の値の共通部分を返す"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Coalesce関数は引数として与えられた複数の値の中から、最初に見つかった空白でない値を返します。デフォルト値の設定に便利です。"
+    },
+    {
+      "id": 70,
+      "level": "上級",
+      "text": "IsBlankOrError関数の機能として正しいものはどれですか？",
+      "options": [
+        "値が空白またはエラーの場合にtrueを返す",
+        "空白とエラーを区別して判定する",
+        "エラーを空白に変換する",
+        "空白をエラーに変換する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "IsBlankOrError関数は値が空白またはエラーの場合にtrueを返します。IsBlank関数とIsError関数を組み合わせた機能を提供します。"
+    },
+    {
+      "id": 71,
+      "level": "上級",
+      "text": "Notify関数の通知タイプとして正しいものはどれですか？",
+      "options": [
+        "NotificationType.Success、Information、Warning、Error",
+        "AlertType.Info、Success、Warning、Danger",
+        "MessageType.Normal、Important、Critical、Fatal",
+        "NotifyLevel.Low、Medium、High、Critical"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Notify関数では通知タイプとしてNotificationType.Success、Information、Warning、Errorが使用できます。それぞれ異なる色とアイコンで表示されます。"
+    },
+    {
+      "id": 72,
+      "level": "上級",
+      "text": "複数の条件を効率的に評価するのに最適な関数の組み合わせはどれですか？",
+      "options": [
+        "Switch関数とIsBlank関数の組み合わせ",
+        "複数のIf関数のネスト",
+        "And関数とOr関数の複合",
+        "ForAll関数での条件評価"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Switch関数は多分岐処理に最適化されており、IsBlank関数と組み合わせることで、効率的で読みやすい条件分岐を作成できます。"
+    },
+    {
+      "id": 73,
+      "level": "上級",
+      "text": "大量データを効率的に処理するための推奨される方法はどれですか？",
+      "options": [
+        "Concurrent関数で並列処理とWith関数でのキャッシュ活用",
+        "ForAll関数での逐次処理",
+        "Filter関数での全件検索",
+        "コレクションでの全データ保持"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "大量データの処理では、Concurrent関数による並列処理とWith関数による計算結果のキャッシュを活用することで、パフォーマンスを大幅に改善できます。"
+    },
+    {
+      "id": 74,
+      "level": "上級",
+      "text": "PowerAppsの関数実行でデリゲーション警告が出た場合の対処法として最も適切なものはどれですか？",
+      "options": [
+        "Filter条件を調整してサーバー側で処理される形に変更する",
+        "警告を無視して実行する",
+        "すべてのデータをコレクションに読み込む",
+        "別の関数に置き換える"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "デリゲーション警告が出た場合は、Filter条件をデータソースでサポートされる形に調整し、サーバー側で処理できるようにすることが最適な対処法です。"
+    },
+    {
+      "id": 75,
+      "level": "上級",
+      "text": "PowerAppsアプリの関数使用における最重要なベストプラクティスはどれですか？",
+      "options": [
+        "デリゲーション可能な関数を優先し、With関数で計算を最適化する",
+        "すべての処理をコレクションで行う",
+        "複雑な関数を避けて基本関数のみ使用する",
+        "関数の戻り値を常に変数に保存する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsでは、大量データを効率的に処理するためにデリゲーション可能な関数を優先的に使用し、With関数で複雑な計算を最適化することが最も重要なベストプラクティスです。"
+    }
+  ]
+}

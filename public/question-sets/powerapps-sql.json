@@ -1,0 +1,986 @@
+{
+  "id": "powerapps-sql",
+  "title": "PowerApps SQLスキルテスト",
+  "description": "PowerAppsでのSQL Server連携から高度なデータベース設計まで、実務で必要なスキルを測定します。T-SQL、ストアドプロシージャ、パフォーマンス最適化、セキュリティまで幅広くカバーします。",
+  "version": "1.0.0",
+  "author": "PowerApps SQL Team",
+  "categories": ["基礎", "中級", "上級"],
+  "color": "#E81123",
+  "questions": [
+    {
+      "id": 1,
+      "level": "基礎",
+      "text": "PowerAppsでSQL Serverに接続するために必要なコンポーネントはどれですか？",
+      "options": [
+        "SQL Server コネクタのみ",
+        "オンプレミスデータゲートウェイ",
+        "直接インターネット接続",
+        "VPN接続のみ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "オンプレミスのSQL Serverに接続するには、オンプレミスデータゲートウェイが必要です。これによりセキュアな接続とデータアクセスが可能になります。"
+    },
+    {
+      "id": 2,
+      "level": "基礎",
+      "text": "SQL Serverでレコードを取得する基本的なT-SQL文はどれですか？",
+      "options": [
+        "GET * FROM table_name",
+        "SELECT * FROM table_name",
+        "FETCH * FROM table_name",
+        "RETRIEVE * FROM table_name"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SELECTステートメントは、SQL Serverからデータを取得する基本的なT-SQL文です。WHERE句で条件指定、ORDER BYで並び替えが可能です。"
+    },
+    {
+      "id": 3,
+      "level": "基礎",
+      "text": "SQL Serverで新しいレコードを挿入するT-SQL文はどれですか？",
+      "options": [
+        "INSERT INTO table_name VALUES (...)",
+        "ADD TO table_name VALUES (...)",
+        "CREATE RECORD table_name VALUES (...)",
+        "NEW INTO table_name VALUES (...)"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "INSERT INTOステートメントは、SQL Serverのテーブルに新しいレコードを挿入するためのT-SQL文です。列名を明示的に指定することも可能です。"
+    },
+    {
+      "id": 4,
+      "level": "基礎",
+      "text": "SQL Serverでレコードを更新するT-SQL文はどれですか？",
+      "options": [
+        "MODIFY table_name SET column = value",
+        "CHANGE table_name SET column = value",
+        "UPDATE table_name SET column = value",
+        "ALTER table_name SET column = value"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "UPDATEステートメントは、既存レコードの値を変更するT-SQL文です。WHERE句で更新対象を限定することが重要です。"
+    },
+    {
+      "id": 5,
+      "level": "基礎",
+      "text": "SQL Serverでレコードを削除するT-SQL文はどれですか？",
+      "options": [
+        "REMOVE FROM table_name",
+        "DROP FROM table_name",
+        "DELETE FROM table_name",
+        "CLEAR FROM table_name"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "DELETE FROMステートメントは、テーブルからレコードを削除するT-SQL文です。WHERE句なしで実行すると全レコードが削除されるため注意が必要です。"
+    },
+    {
+      "id": 6,
+      "level": "基礎",
+      "text": "PowerAppsでSQL Serverのテーブルをデータソースとして使用する場合の制限として正しいものはどれですか？",
+      "options": [
+        "主キーが必要",
+        "最大100行まで",
+        "文字列データのみ対応",
+        "制限なし"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsでSQL Serverのテーブルを使用するには、主キー（Primary Key）が定義されている必要があります。これにより一意のレコード識別が可能になります。"
+    },
+    {
+      "id": 7,
+      "level": "基礎",
+      "text": "SQL Serverで条件を指定してデータを取得する場合に使用する句はどれですか？",
+      "options": [
+        "CONDITION句",
+        "FILTER句",
+        "WHERE句",
+        "IF句"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "WHERE句は、SQL Serverで特定の条件に一致するレコードのみを取得するために使用します。AND、ORで複数条件を組み合わせることも可能です。"
+    },
+    {
+      "id": 8,
+      "level": "基礎",
+      "text": "SQL Serverでデータを並び替える場合に使用する句はどれですか？",
+      "options": [
+        "SORT BY",
+        "ORDER BY",
+        "ARRANGE BY",
+        "SEQUENCE BY"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ORDER BY句は、取得結果を指定した列で並び替えるために使用します。ASC（昇順）またはDESC（降順）を指定できます。"
+    },
+    {
+      "id": 9,
+      "level": "基礎",
+      "text": "SQL Serverで取得件数を制限する場合に使用するキーワードはどれですか？",
+      "options": [
+        "LIMIT",
+        "TOP",
+        "MAX",
+        "FIRST"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "TOPキーワードは、SQL Serverでクエリ結果の行数を制限するために使用します。SELECT TOP 10 * FROM table_nameのように使用します。"
+    },
+    {
+      "id": 10,
+      "level": "基礎",
+      "text": "SQL Serverで2つのテーブルを結合する基本的な方法はどれですか？",
+      "options": [
+        "LINK",
+        "CONNECT",
+        "JOIN",
+        "MERGE"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "JOINは、複数のテーブルを関連する列で結合するために使用します。INNER JOIN、LEFT JOIN、RIGHT JOINなど複数の種類があります。"
+    },
+    {
+      "id": 11,
+      "level": "基礎",
+      "text": "SQL Serverで集計関数として使用できるものはどれですか？",
+      "options": [
+        "COUNT、SUM、AVGのみ",
+        "COUNT、SUM、AVG、MIN、MAX",
+        "SUMのみ",
+        "COUNT、AVGのみ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SQL Serverでは、COUNT（件数）、SUM（合計）、AVG（平均）、MIN（最小値）、MAX（最大値）などの基本的な集計関数が提供されています。"
+    },
+    {
+      "id": 12,
+      "level": "基礎",
+      "text": "SQL Serverで重複を除去してデータを取得するキーワードはどれですか？",
+      "options": [
+        "UNIQUE",
+        "DISTINCT",
+        "SINGLE",
+        "EXCLUSIVE"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "DISTINCTキーワードは、SELECT文で重複する行を除去して一意な値のみを取得する場合に使用します。"
+    },
+    {
+      "id": 13,
+      "level": "基礎",
+      "text": "SQL Serverでグループ化を行う場合に使用する句はどれですか？",
+      "options": [
+        "GROUP BY",
+        "CLUSTER BY",
+        "COLLECT BY",
+        "GATHER BY"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "GROUP BY句は、指定した列の値でレコードをグループ化し、各グループに対して集計関数を適用する場合に使用します。"
+    },
+    {
+      "id": 14,
+      "level": "基礎",
+      "text": "SQL Serverで部分一致検索を行う場合に使用する演算子はどれですか？",
+      "options": [
+        "LIKE",
+        "MATCH",
+        "CONTAINS",
+        "SIMILAR"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "LIKE演算子は、ワイルドカード（%、_）を使用してパターンマッチングを行う場合に使用します。例：WHERE name LIKE '%田%'"
+    },
+    {
+      "id": 15,
+      "level": "基礎",
+      "text": "SQL Serverで日付データを扱う場合の基本的なデータ型はどれですか？",
+      "options": [
+        "DATE、TIME、DATETIME",
+        "STRING",
+        "NUMBER",
+        "CALENDAR"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SQL Serverでは、DATE（日付のみ）、TIME（時刻のみ）、DATETIME（日付と時刻）、DATETIME2（より高精度）などの日付時刻データ型が提供されています。"
+    },
+    {
+      "id": 16,
+      "level": "基礎",
+      "text": "PowerAppsでSQL Serverのストアドプロシージャを呼び出す方法はどれですか？",
+      "options": [
+        "自動的に関数として利用可能",
+        "カスタムコネクタまたはPower Automate経由",
+        "直接呼び出し可能",
+        "PowerAppsでは呼び出し不可能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "PowerAppsからストアドプロシージャを呼び出すには、カスタムコネクタを作成するか、Power Automateのフローを経由して実行する必要があります。"
+    },
+    {
+      "id": 17,
+      "level": "基礎",
+      "text": "SQL Serverでテーブル構造を確認するシステムビューはどれですか？",
+      "options": [
+        "INFORMATION_SCHEMA.COLUMNS",
+        "SYS.TABLES",
+        "SCHEMA.INFO",
+        "TABLE.STRUCTURE"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "INFORMATION_SCHEMA.COLUMNSビューは、データベース内のテーブルの列情報を確認するためのシステムビューです。列名、データ型、NULL許可などが取得できます。"
+    },
+    {
+      "id": 18,
+      "level": "基礎",
+      "text": "SQL ServerでNULL値をチェックする正しい方法はどれですか？",
+      "options": [
+        "column = NULL",
+        "column == NULL",
+        "column IS NULL",
+        "column EQUALS NULL"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "SQL ServerでNULL値を判定するには、IS NULL演算子を使用します。等号（=）ではNULL値を正しく比較できません。"
+    },
+    {
+      "id": 19,
+      "level": "基礎",
+      "text": "SQL Serverで複数の値に一致するレコードを検索する演算子はどれですか？",
+      "options": [
+        "IN",
+        "MULTIPLE",
+        "ANY",
+        "SOME"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "IN演算子は、指定したリストの中のいずれかの値に一致するレコードを検索する場合に使用します。例：WHERE status IN ('Active', 'Pending')"
+    },
+    {
+      "id": 20,
+      "level": "基礎",
+      "text": "PowerAppsでSQL Serverのデータを表示する際のセキュリティ考慮事項として正しいものはどれですか？",
+      "options": [
+        "すべてのユーザーに同じデータを表示",
+        "ユーザーの権限に応じたデータフィルタリングが重要",
+        "パスワードのみで十分",
+        "セキュリティは不要"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "PowerAppsでSQL Serverのデータを扱う際は、ユーザーの役割や権限に応じて適切にデータをフィルタリングし、不要な情報へのアクセスを制限することが重要です。"
+    },
+    {
+      "id": 21,
+      "level": "中級",
+      "text": "SQL ServerでPowerAppsの大量データ処理を最適化する方法として最も効果的なものはどれですか？",
+      "options": [
+        "インデックスの適切な設計と統計情報の更新",
+        "すべての列にインデックス作成",
+        "メモリを増やすのみ",
+        "CPUを増強するのみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "パフォーマンス最適化では、よく使用されるWHERE句やJOINの条件列に適切なインデックスを作成し、統計情報を最新に保つことが最も効果的です。"
+    },
+    {
+      "id": 22,
+      "level": "中級",
+      "text": "PowerAppsからSQL Serverへの接続でデリゲーションを活用する場合の制約として正しいものはどれですか？",
+      "options": [
+        "複雑な関数や演算子は制限される",
+        "すべての関数が使用可能",
+        "データ量に制限なし",
+        "制約は存在しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsのデリゲーション機能では、SQL Server側で処理可能な関数や演算子に制限があります。複雑な計算や特殊関数はサーバー側で実行できない場合があります。"
+    },
+    {
+      "id": 23,
+      "level": "中級",
+      "text": "SQL Serverで外部キー制約を設定する目的として正しいものはどれですか？",
+      "options": [
+        "データの整合性を保持し、参照関係を維持",
+        "処理速度の向上",
+        "ストレージ容量の削減",
+        "セキュリティの強化"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "外部キー制約は、テーブル間の参照整合性を維持し、存在しない親レコードを参照する子レコードの作成を防ぐためのデータベース制約です。"
+    },
+    {
+      "id": 24,
+      "level": "中級",
+      "text": "SQL Serverでトランザクションを管理する基本的なコマンドの組み合わせはどれですか？",
+      "options": [
+        "BEGIN TRANSACTION、COMMIT、ROLLBACK",
+        "START、FINISH、CANCEL",
+        "OPEN、CLOSE、ABORT",
+        "INIT、SAVE、UNDO"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "トランザクション管理では、BEGIN TRANSACTIONで開始し、成功時にCOMMIT、エラー時にROLLBACKを実行してデータの一貫性を保持します。"
+    },
+    {
+      "id": 25,
+      "level": "中級",
+      "text": "SQL Serverでビューを作成する利点として最も重要なものはどれですか？",
+      "options": [
+        "複雑なクエリの簡略化と再利用、セキュリティ制御",
+        "ストレージ容量の削減",
+        "処理速度の向上",
+        "データの複製作成"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ビューは複雑な結合や集計を簡略化し、必要な列のみを表示してセキュリティを制御し、よく使用するクエリを再利用可能にする仮想テーブルです。"
+    },
+    {
+      "id": 26,
+      "level": "中級",
+      "text": "SQL Serverでストアドプロシージャのパラメータに関する正しい説明はどれですか？",
+      "options": [
+        "入力、出力、入出力パラメータが使用可能",
+        "入力パラメータのみ使用可能",
+        "パラメータは使用不可能",
+        "文字列パラメータのみ使用可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ストアドプロシージャでは、@param（入力）、@param OUTPUT（出力）、@param = value OUTPUT（入出力）のパラメータ形式が使用できます。"
+    },
+    {
+      "id": 27,
+      "level": "中級",
+      "text": "PowerAppsでSQL Serverの一対多リレーションシップを効率的に扱う方法はどれですか？",
+      "options": [
+        "適切なJOINを使用し、必要なデータのみ取得",
+        "すべてのテーブルのデータを個別に取得",
+        "デリゲーションを使用しない",
+        "コレクションにすべてキャッシュ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "一対多関係では、LEFT JOINやINNER JOINを適切に使用し、ShowColumns()で必要な列のみを取得することで効率的なデータアクセスが可能です。"
+    },
+    {
+      "id": 28,
+      "level": "中級",
+      "text": "SQL ServerでCTE（Common Table Expression）を使用する利点はどれですか？",
+      "options": [
+        "複雑なクエリの可読性向上と再帰処理の実現",
+        "処理速度の大幅向上",
+        "メモリ使用量の削減",
+        "セキュリティの強化"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "CTEはWITH句を使用して一時的な結果セットを定義し、複雑なクエリを読みやすくし、再帰的な処理（階層データの取得など）を可能にします。"
+    },
+    {
+      "id": 29,
+      "level": "中級",
+      "text": "SQL Serverでパフォーマンス問題の原因を特定する場合に確認すべき項目として最も重要なものはどれですか？",
+      "options": [
+        "実行プラン、待機統計、インデックス使用状況",
+        "CPU使用率のみ",
+        "メモリ使用量のみ",
+        "ディスク容量のみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "パフォーマンス問題の診断では、実行プランでクエリの処理方法を確認し、待機統計でボトルネックを特定し、インデックスの使用状況を分析することが重要です。"
+    },
+    {
+      "id": 30,
+      "level": "中級",
+      "text": "PowerAppsでSQL Serverのデータの並行更新を制御する方法として推奨されるものはどれですか？",
+      "options": [
+        "楽観的ロック（タイムスタンプ列使用）",
+        "悲観的ロック（テーブルロック）",
+        "ファイルロック",
+        "並行制御は不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsでは、rowversion（timestamp）列を使用した楽観的ロックにより、更新競合を検出し、適切なエラーハンドリングを実装することが推奨されます。"
+    },
+    {
+      "id": 31,
+      "level": "中級",
+      "text": "SQL Serverで条件分岐を実装する場合に使用するT-SQL構文はどれですか？",
+      "options": [
+        "CASE WHEN ... THEN ... ELSE ... END",
+        "IF ... THEN ... ELSE",
+        "SWITCH ... CASE",
+        "CONDITION ... WHEN"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "T-SQLでは、SELECT文内での条件分岐にCASE式を使用します。複数条件はWHEN句で指定し、該当しない場合はELSE句で処理します。"
+    },
+    {
+      "id": 32,
+      "level": "中級",
+      "text": "SQL Serverでテンポラリテーブルを作成する場合の正しい構文はどれですか？",
+      "options": [
+        "CREATE TABLE #temp_table",
+        "CREATE TEMPORARY TABLE temp_table",
+        "CREATE TEMP TABLE temp_table",
+        "TEMPORARY TABLE temp_table"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SQL Serverでは、#（ローカル）または##（グローバル）プレフィックスを使用してテンポラリテーブルを作成します。セッション終了時に自動削除されます。"
+    },
+    {
+      "id": 33,
+      "level": "中級",
+      "text": "PowerAppsでSQL Serverからの大量データ取得を最適化する戦略として正しいものはどれですか？",
+      "options": [
+        "ページング処理とフィルタリング条件の適切な実装",
+        "すべてのデータを一度に取得",
+        "キャッシュのみ使用",
+        "データ量を考慮しない設計"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "大量データの効率的な取得には、OFFSET-FETCHやROW_NUMBER()を使用したページング、適切なWHERE句でのフィルタリングが重要です。"
+    },
+    {
+      "id": 34,
+      "level": "中級",
+      "text": "SQL Serverでユーザー定義関数（UDF）を作成する利点として正しいものはどれですか？",
+      "options": [
+        "複雑なロジックの再利用と計算処理の集中化",
+        "処理速度の大幅向上",
+        "セキュリティの向上",
+        "メモリ使用量の削減"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "UDFは複雑な計算処理やビジネスロジックをデータベース内で再利用可能にし、アプリケーション間での一貫性を保てます。スカラー値またはテーブル値を返せます。"
+    },
+    {
+      "id": 35,
+      "level": "中級",
+      "text": "SQL Serverでトリガーを使用する場合の適切な用途はどれですか？",
+      "options": [
+        "データ整合性の保持と監査ログの自動記録",
+        "複雑なビジネスロジック処理",
+        "ユーザーインターフェース制御",
+        "レポート生成"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "トリガーはデータの変更に応じて自動実行され、参照整合性の保持、監査ログの記録、派生データの更新などに適しています。複雑なロジックは避けるべきです。"
+    },
+    {
+      "id": 36,
+      "level": "中級",
+      "text": "PowerAppsでSQL Serverのフルテキスト検索を実装する場合の推奨方法はどれですか？",
+      "options": [
+        "カスタムコネクタまたはビューでCONTAINS関数を使用",
+        "PowerApps内でテキスト検索",
+        "LIKE演算子のみ使用",
+        "フルテキスト検索は実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SQL Serverのフルテキスト検索機能（CONTAINS、FREETEXT）を活用するには、フルテキストインデックスを作成し、カスタムコネクタやビューを経由してPowerAppsから利用します。"
+    },
+    {
+      "id": 37,
+      "level": "中級",
+      "text": "SQL ServerでXML型データを扱う場合の基本的な操作方法はどれですか？",
+      "options": [
+        "XQuery、nodes()、value()メソッドを使用",
+        "文字列として処理",
+        "JSON形式に変換",
+        "XML型は使用不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SQL ServerのXML型では、XQueryでクエリ実行、nodes()メソッドでノード分割、value()メソッドでスカラー値取得が可能です。"
+    },
+    {
+      "id": 38,
+      "level": "中級",
+      "text": "PowerAppsでSQL Serverのデータ変更を他のユーザーにリアルタイム通知する方法として最適なものはどれですか？",
+      "options": [
+        "SQL Server Service BrokerとPower Automateの連携",
+        "定期的なデータ確認",
+        "手動での通知",
+        "リアルタイム通知は実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "リアルタイム通知には、SQL Server Service BrokerやChange Data Capture（CDC）でデータ変更を検知し、Power Automateで通知を送信する構成が効果的です。"
+    },
+    {
+      "id": 39,
+      "level": "中級",
+      "text": "SQL ServerでJSON型データを扱う場合の主要な関数はどれですか？",
+      "options": [
+        "JSON_VALUE、JSON_QUERY、OPENJSON",
+        "JSON_PARSE、JSON_FORMAT",
+        "JSON_GET、JSON_SET",
+        "JSON関数は使用不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SQL Server 2016以降では、JSON_VALUE（値取得）、JSON_QUERY（オブジェクト取得）、OPENJSON（テーブル形式変換）などのJSON関数が利用可能です。"
+    },
+    {
+      "id": 40,
+      "level": "中級",
+      "text": "PowerAppsでSQL Serverのデータ暗号化を実装する場合の推奨手法はどれですか？",
+      "options": [
+        "TDE（Transparent Data Encryption）と列レベル暗号化の組み合わせ",
+        "アプリケーションレベル暗号化のみ",
+        "パスワード保護のみ",
+        "暗号化は不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "包括的なデータ保護には、TDEでデータベース全体の保存時暗号化、列レベル暗号化で機密フィールドの保護、SSL/TLSで転送時暗号化を実装します。"
+    },
+    {
+      "id": 41,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのパーティション分割テーブルを効率的に活用する設計として最適なものはどれですか？",
+      "options": [
+        "パーティション除去（Partition Elimination）を活用したクエリ設計",
+        "全パーティションを毎回検索",
+        "パーティション情報を無視した設計",
+        "パーティション分割は使用しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "パーティション分割テーブルでは、パーティション関数の条件をWHERE句に含めることで、不要なパーティションを除外（パーティション除去）し、大幅な性能向上を実現できます。"
+    },
+    {
+      "id": 42,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けの高度なセキュリティを実装する包括的な手法はどれですか？",
+      "options": [
+        "Row Level Security、Column Level Security、Dynamic Data Maskingの統合",
+        "基本認証のみ",
+        "IPアドレス制限のみ",
+        "パスワード強度のみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "企業レベルのセキュリティでは、行レベルセキュリティでユーザー別データアクセス制御、列レベルセキュリティで機密情報保護、動的データマスキングで表示制御を統合実装します。"
+    },
+    {
+      "id": 43,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのクラスター化インデックスとノンクラスター化インデックスを適切に設計する指針として正しいものはどれですか？",
+      "options": [
+        "クエリパターン、データ更新頻度、カーディナリティを総合分析",
+        "すべての列にインデックス作成",
+        "主キーのみインデックス",
+        "インデックスは作成しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "最適なインデックス設計では、PowerAppsからのクエリパターンを分析し、WHERE句の条件、JOIN条件、ORDER BY句、データの更新頻度、カーディナリティ（一意性）を考慮した戦略的設計が必要です。"
+    },
+    {
+      "id": 44,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けのCQRS（コマンドクエリ責任分離）パターンを実装する最適なアーキテクチャはどれですか？",
+      "options": [
+        "書き込み用正規化テーブルと読み取り用非正規化ビューの分離",
+        "単一テーブルでの統合管理",
+        "すべて正規化テーブルで処理",
+        "CQRS パターンは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "CQRSでは、更新処理用の正規化テーブルと、PowerAppsの表示用に最適化された非正規化ビュー、場合によっては物理的な読み取り専用テーブルを分離設計します。"
+    },
+    {
+      "id": 45,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのマテリアライズドビュー（インデックス付きビュー）を活用する場合の設計原則として正しいものはどれですか？",
+      "options": [
+        "集約データの事前計算とリアルタイムパフォーマンス向上",
+        "すべてのビューにインデックス作成",
+        "更新頻度の高いデータで使用",
+        "インデックス付きビューは使用しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "インデックス付きビューは、複雑な集約クエリの結果を物理的に保存し、PowerAppsでの参照性能を大幅に向上させます。更新頻度の低いマスターデータが適用対象です。"
+    },
+    {
+      "id": 46,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けのマルチテナント アーキテクチャを実装する最も拡張性の高い設計パターンはどれですか？",
+      "options": [
+        "スキーマレベル分離とリソースガバナンスの組み合わせ",
+        "データベースレベル分離のみ",
+        "テーブルレベル分離のみ",
+        "マルチテナントは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "拡張性の高いマルチテナント設計では、スキーマレベルでのテナント分離、Resource Governor でのリソース制御、パーティション分割でのパフォーマンス最適化を組み合わせます。"
+    },
+    {
+      "id": 47,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのテンポラルテーブル（システムバージョンテーブル）を活用する利点として最も重要なものはどれですか？",
+      "options": [
+        "データの変更履歴自動管理と任意時点でのデータ復元",
+        "処理速度の向上",
+        "ストレージ容量の削減",
+        "セキュリティの強化"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "テンポラルテーブルは、すべてのデータ変更を自動的に履歴テーブルに保存し、FOR SYSTEM_TIME句で任意の時点のデータ状態を取得できる強力な機能です。"
+    },
+    {
+      "id": 48,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けの高可用性を実現するアーキテクチャとして最も適切なものはどれですか？",
+      "options": [
+        "Always On可用性グループとReadable Secondaryの構成",
+        "単一サーバー構成",
+        "ミラーリングのみ",
+        "バックアップのみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Always On可用性グループは、複数のレプリカでの高可用性、読み取り専用セカンダリでの負荷分散、自動フェイルオーバーを提供し、PowerAppsの継続的な稼働を保証します。"
+    },
+    {
+      "id": 49,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverの複雑なストアドプロシージャを効率的に実行する最適化手法として正しいものはどれですか？",
+      "options": [
+        "SET NOCOUNT ON、適切なプランキャッシュ、パラメータスニッフィング対策",
+        "全データをメモリにロード",
+        "CPU数を増加",
+        "最適化は不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ストアドプロシージャの最適化では、SET NOCOUNT ONで行数カウントを無効化、統計情報の更新、OPTION (RECOMPILE)でパラメータスニッフィング対策を実装します。"
+    },
+    {
+      "id": 50,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けのデータ圧縮を実装する場合の戦略として最適なものはどれですか？",
+      "options": [
+        "ROW圧縮とPAGE圧縮の適切な選択とパーティション別適用",
+        "すべてのテーブルで同じ圧縮",
+        "圧縮は使用しない",
+        "ファイル圧縮のみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "データ圧縮では、データの特性とアクセスパターンに応じて、ROW圧縮（高い更新頻度）、PAGE圧縮（低い更新頻度、高い圧縮率）を選択し、パーティション単位で最適化します。"
+    },
+    {
+      "id": 51,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのメモリ最適化テーブル（In-Memory OLTP）を活用する場合の設計考慮事項として正しいものはどれですか？",
+      "options": [
+        "ハイブリッド構成での適切な用途選択とトランザクション設計",
+        "すべてのテーブルをメモリ最適化",
+        "従来のテーブルは使用しない",
+        "メモリ最適化は使用しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "In-Memory OLTPは、高頻度な更新処理や読み取り処理に適しており、従来のテーブルとのハイブリッド構成、適切なトランザクション分離レベルの設計が重要です。"
+    },
+    {
+      "id": 52,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けの分散クエリを最適化する高度な手法として最適なものはどれですか？",
+      "options": [
+        "リンクサーバー最適化とOpenRowset使用パターンの適切な選択",
+        "すべてデータをコピーして処理",
+        "分散クエリは使用しない",
+        "単一サーバーで処理"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "分散環境では、リンクサーバーの適切な構成、OpenRowsetの効率的な使用、PassThrough クエリでの処理最適化が重要です。"
+    },
+    {
+      "id": 53,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのフルテキストインデックスを高度に活用する実装として最適なものはどれですか？",
+      "options": [
+        "カスタムワードブリーカー、シノニムファイル、重み付けスコアリング",
+        "基本的な全文検索のみ",
+        "LIKE検索のみ使用",
+        "フルテキスト検索は使用しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "高度なフルテキスト検索では、業務固有のワードブリーカー、関連語句のシノニムファイル、CONTAINSTABLE での重み付けスコアリング、近接検索を活用します。"
+    },
+    {
+      "id": 54,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けのクエリストア（Query Store）を活用したパフォーマンス管理として最適なものはどれですか？",
+      "options": [
+        "クエリプランの自動回帰検出と最適プランの強制適用",
+        "すべてのクエリを監視対象外",
+        "手動でのパフォーマンス確認のみ",
+        "クエリストアは使用しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Query Storeは、クエリの実行統計を自動収集し、パフォーマンスの回帰を検出、過去の最適なプランを強制適用することで、安定したパフォーマンスを実現します。"
+    },
+    {
+      "id": 55,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのデータディザスタリカバリを実装する包括的な戦略として最適なものはどれですか？",
+      "options": [
+        "Log Shipping、ミラーリング、Always On の階層的冗長化",
+        "単純なバックアップのみ",
+        "レプリケーションのみ",
+        "災害復旧は実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "包括的なDR戦略では、ローカルのLog Shipping、リモートのAlways On可用性グループ、地理的に分散したバックアップストレージを階層化し、RPO/RTOを保証します。"
+    },
+    {
+      "id": 56,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けのリアルタイムデータウェアハウスを構築する場合のETL/ELT最適化手法として最適なものはどれですか？",
+      "options": [
+        "CDC、SSIS、Columnstore Index、パーティション並列処理の統合",
+        "手動でのデータ移行のみ",
+        "バッチ処理のみ",
+        "リアルタイム処理は実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "リアルタイムDWHでは、Change Data Capture（CDC）でリアルタイム変更検知、SSISで高速ETL、Columnstore Indexで分析クエリ高速化、パーティション並列処理を統合します。"
+    },
+    {
+      "id": 57,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのマシンラーニングサービス（SQL Server ML Services）を統合する高度な実装として最適なものはどれですか？",
+      "options": [
+        "sp_execute_external_scriptとストアドプロシージャでのML統合",
+        "外部MLサービスのみ使用",
+        "PowerAppsでのML実装のみ",
+        "機械学習は実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SQL Server ML Servicesでは、sp_execute_external_scriptストアドプロシージャでR/Pythonスクリプトを実行し、データベース内でのリアルタイム予測分析をPowerAppsに提供できます。"
+    },
+    {
+      "id": 58,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けの動的SQLインジェクション対策として最も包括的なものはどれですか？",
+      "options": [
+        "パラメータ化クエリ、権限最小化、入力検証、監査ログの統合実装",
+        "基本的な入力チェックのみ",
+        "ストアドプロシージャのみ使用",
+        "セキュリティ対策は不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SQLインジェクション対策では、sp_executesqlでのパラメータ化、最小権限の原則、QUOTENAME関数での識別子エスケープ、SQL Server Auditでの包括的監査を実装します。"
+    },
+    {
+      "id": 59,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのグローバル分散データベースを実装する場合のレプリケーション戦略として最適なものはどれですか？",
+      "options": [
+        "地理的分散レプリケーションと読み書き分離パターンの組み合わせ",
+        "単一データセンターでの処理",
+        "手動でのデータ同期",
+        "分散データベースは実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "グローバル分散では、地理的に近いリードレプリカでの読み取り最適化、マージレプリケーションでの多方向同期、競合解決ストラテジーの実装が効果的です。"
+    },
+    {
+      "id": 60,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けの極限パフォーマンス最適化を実現する統合アプローチとして最適なものはどれですか？",
+      "options": [
+        "インデックス、統計、クエリプラン、ハードウェア最適化の統合戦略",
+        "CPU性能向上のみ",
+        "メモリ増設のみ",
+        "最適化は不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "極限最適化では、カラムナーインデックス、リアルタイム統計更新、強制プランガイド、NVMe SSD、インメモリ技術を統合した包括的なアプローチが必要です。"
+    },
+    {
+      "id": 61,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのマイクロサービスアーキテクチャを実装する場合のデータベース設計パターンとして最適なものはどれですか？",
+      "options": [
+        "Database per Service、CQRS、Event Sourcingの統合パターン",
+        "単一データベースでの統合管理",
+        "従来のモノリシック設計",
+        "マイクロサービスは実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "マイクロサービスでは、サービス別データベース分離、読み書き分離（CQRS）、イベントソーシングでの状態管理、サガパターンでの分散トランザクションを統合します。"
+    },
+    {
+      "id": 62,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けのゼロダウンタイム デプロイメントを実現する高度なDBOps戦略として最適なものはどれですか？",
+      "options": [
+        "ブルーグリーンデプロイメント、カナリアリリース、ロールバック戦略の統合",
+        "手動でのデプロイメント",
+        "システム停止を伴う更新",
+        "自動デプロイメントは実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ゼロダウンタイムでは、Always On可用性グループでのブルーグリーン切り替え、段階的カナリアリリース、自動ロールバック、データベーススキーマバージョニングを統合します。"
+    },
+    {
+      "id": 63,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのクラウドハイブリッド環境を最適化する統合戦略として最適なものはどれですか？",
+      "options": [
+        "Azure Arc、Stretch Database、ハイブリッド接続の最適構成",
+        "完全オンプレミス構成",
+        "完全クラウド構成",
+        "ハイブリッドは実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ハイブリッド最適化では、Azure Arc for SQL Serverでの統合管理、Stretch Databaseでの透過的データ階層化、ExpressRouteでの高速接続を統合します。"
+    },
+    {
+      "id": 64,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けのAI/機械学習統合データパイプラインを構築する最適なアーキテクチャはどれですか？",
+      "options": [
+        "Azure ML、SQL ML Services、Power BI、PowerAppsの統合パイプライン",
+        "PowerAppsのみでML実装",
+        "外部AIサービスのみ使用",
+        "AI/ML統合は実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "AI統合パイプラインでは、SQL Server ML ServicesでリアルタイムML、Azure MLでモデル管理、Power BIで分析可視化、PowerAppsでユーザーインターフェースを連携します。"
+    },
+    {
+      "id": 65,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverの次世代データプラットフォーム（Data Lakehouse）を実装する場合の統合戦略として最適なものはどれですか？",
+      "options": [
+        "Delta Lake、Azure Synapse、PolyBase、PowerAppsの統合アーキテクチャ",
+        "従来のリレーショナルデータベースのみ",
+        "単純なファイルストレージ",
+        "Data Lakehouseは実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Data Lakehouseでは、構造化・非構造化データの統合、Delta Lakeでの信頼性、Azure Synapseでの分析処理、PolyBaseでの外部データ統合をPowerAppsに提供します。"
+    },
+    {
+      "id": 66,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けの量子準拠暗号化と将来のセキュリティ対策を実装する場合の戦略として最適なものはどれですか？",
+      "options": [
+        "Always Encrypted、TDE v2、暗号化アルゴリズムアジリティの実装",
+        "基本的なパスワード認証のみ",
+        "現在の暗号化技術のみ",
+        "将来対策は不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "将来のセキュリティでは、Always Encrypted v2でのエンクレーブ対応、TDE拡張、暗号化アルゴリズムの容易な切り替え機能、量子コンピューティング耐性の実装が必要です。"
+    },
+    {
+      "id": 67,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverの自律的データベース管理（Autonomous Database）機能を最大限活用する実装として最適なものはどれですか？",
+      "options": [
+        "Query Store、Automatic Tuning、Intelligent Insights、機械学習予測の統合",
+        "手動チューニングのみ",
+        "基本的な監視のみ",
+        "自動化は実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "自律データベースでは、Query Storeでの自動最適化、Automatic Tuningでのインデックス推奨、Intelligent Insightsでの異常検知、予測メンテナンスを統合します。"
+    },
+    {
+      "id": 68,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けのデータメッシュアーキテクチャを実装する場合の設計原則として最適なものはどれですか？",
+      "options": [
+        "ドメイン指向設計、データ製品思考、分散データ所有権、自動化ガバナンス",
+        "中央集権的データ管理",
+        "単一データベース構成",
+        "従来のアーキテクチャ踏襲"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "データメッシュでは、業務ドメイン別のデータ所有権、データを製品として管理、連合ガバナンス、セルフサーブデータプラットフォームをPowerAppsエコシステムで実現します。"
+    },
+    {
+      "id": 69,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverの極限スケーラビリティを実現するマルチクラウド戦略として最適なものはどれですか？",
+      "options": [
+        "地理的分散、エッジコンピューティング、CDN統合、動的負荷分散",
+        "単一クラウドでの処理",
+        "オンプレミスのみの処理",
+        "スケーラビリティは考慮しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "極限スケーラビリティでは、複数クラウドでの地理的分散、エッジデータベース、グローバルCDN、インテリジェント負荷分散をPowerAppsアプリケーションで統合します。"
+    },
+    {
+      "id": 70,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けの持続可能なIT（Green IT）を実現するデータベース最適化戦略として最適なものはどれですか？",
+      "options": [
+        "エネルギー効率最適化、カーボンフットプリント削減、リソース効率化",
+        "性能向上のみ追求",
+        "コスト削減のみ追求",
+        "持続可能性は考慮しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "持続可能なITでは、データ階層化による効率的ストレージ利用、クエリ最適化によるCPU使用量削減、クラウドリージョン選択による再生可能エネルギー利用を実装します。"
+    },
+    {
+      "id": 71,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverのリアルタイム分析（Real-time Analytics）を実現する最適なアーキテクチャ パターンはどれですか？",
+      "options": [
+        "Columnstore Index、In-Memory OLTP、Stream Analytics、PowerBIの統合",
+        "従来のOLTP処理のみ",
+        "バッチ処理のみ",
+        "リアルタイム分析は実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "リアルタイム分析では、Columnstore Indexでの高速集計、In-Memory OLTPでの高頻度更新、Azure Stream Analyticsでのストリーム処理、Power BIでの可視化を統合します。"
+    },
+    {
+      "id": 72,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けのDevOps/DataOpsを完全自動化する統合パイプラインとして最適なものはどれですか？",
+      "options": [
+        "Azure DevOps、dacpac、SqlPackage、自動テスト、品質ゲートの統合",
+        "手動デプロイメントのみ",
+        "基本的なバックアップのみ",
+        "自動化は実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "完全自動化では、Azure DevOpsでのCI/CD、dacpacでのスキーマ管理、tSQLtでの自動テスト、SonarQubeでの品質評価、自動ロールバックを統合します。"
+    },
+    {
+      "id": 73,
+      "level": "上級",
+      "text": "PowerAppsでSQL Serverの観測可能性（Observability）を最大化する包括的監視戦略として最適なものはどれですか？",
+      "options": [
+        "メトリクス、ログ、トレース、アラート、自動修復の統合実装",
+        "基本的なログ確認のみ",
+        "パフォーマンスカウンターのみ",
+        "監視は最小限"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "完全な観測可能性では、Azure Monitorでのメトリクス収集、Log Analyticsでの詳細分析、Application Insightsでのトレース、自動アラートと修復アクションを統合します。"
+    },
+    {
+      "id": 74,
+      "level": "上級",
+      "text": "SQL ServerでPowerApps向けの次世代データガバナンスを実現する統合プラットフォームとして最適なものはどれですか？",
+      "options": [
+        "Microsoft Purview、データリネージ追跡、自動分類、コンプライアンス監視",
+        "手動でのデータ管理",
+        "基本的なアクセス制御のみ",
+        "ガバナンスは実装しない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "次世代ガバナンスでは、Microsoft Purviewでのデータ資産管理、自動データ分類、リネージュ追跡、GDPR/CCPA自動コンプライアンス、データ品質監視を統合します。"
+    },
+    {
+      "id": 75,
+      "level": "上級",
+      "text": "PowerAppsとSQL Serverの統合における最も重要な成功要因はどれですか？",
+      "options": [
+        "ビジネス価値、技術的卓越性、運用効率性、将来拡張性のバランス",
+        "技術的完璧性のみ追求",
+        "コスト最小化のみ追求",
+        "最新技術の導入のみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "真の成功は、明確なビジネス価値の実現、技術的な卓越性、運用の効率性、将来の変化への適応性をバランスよく実現し、持続可能で進化し続けるシステムを構築することにあります。"
+    }
+  ]
+}

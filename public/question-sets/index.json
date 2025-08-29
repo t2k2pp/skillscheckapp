@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastUpdated": "2025-08-29",
+  "lastUpdated": "2024-12-19",
   "questionSets": [
     {
       "id": "nodejs",
@@ -121,6 +121,90 @@
       "estimatedTime": "60-75分",
       "coverImage": "excel-logo.png",
       "color": "#217346"
+    },
+    {
+      "id": "powerapps-functions",
+      "title": "PowerApps 関数スキルテスト",
+      "description": "PowerAppsでの関数活用から最新機能まで、実務で必要なスキルを測定します。基本関数からコレクション操作、エラーハンドリング、パフォーマンス最適化まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "PowerApps Functions Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "powerapps-logo.png",
+      "color": "#742774"
+    },
+    {
+      "id": "powerapps-database",
+      "title": "PowerApps データベーススキルテスト",
+      "description": "PowerAppsでのデータベース操作から最新機能まで、実務で必要なスキルを測定します。Dataverse、SharePoint、SQL Server、各種コネクタとの連携まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "PowerApps Database Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "powerapps-logo.png",
+      "color": "#0F6CBD"
+    },
+    {
+      "id": "powerapps-sql",
+      "title": "PowerApps SQLスキルテスト",
+      "description": "PowerAppsでのSQL Server連携から高度なデータベース設計まで、実務で必要なスキルを測定します。T-SQL、ストアドプロシージャ、パフォーマンス最適化、セキュリティまで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "PowerApps SQL Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "powerapps-logo.png",
+      "color": "#E81123"
+    },
+    {
+      "id": "database",
+      "title": "データベーススキルテスト",
+      "description": "データベースの基礎から上級まで、実務で必要な知識を測定します。正規化、ER図、トランザクション、インデックス、設計原則まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "Database Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "database-logo.png",
+      "color": "#FF6B35"
+    },
+    {
+      "id": "sql",
+      "title": "SQLスキルテスト",
+      "description": "標準SQLの基礎から上級まで、実務で必要なスキルを測定します。SELECT文、結合、集約、サブクエリ、ビュー、ストアドプロシージャまで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "SQL Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "sql-logo.png",
+      "color": "#336791"
+    },
+    {
+      "id": "capm",
+      "title": "CAPM試験対策スキルテスト",
+      "description": "CAPM（Certified Associate in Project Management）試験対策の問題集です。プロジェクト管理の基礎知識、用語、プロセス、計算式など暗記系の問題を重点的にカバーします。",
+      "version": "1.0.0",
+      "author": "CAPM Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "capm-logo.png",
+      "color": "#1F4E79"
+    },
+    {
+      "id": "pmp",
+      "title": "PMP試験対策スキルテスト",
+      "description": "PMP（Project Management Professional）試験対策の問題集です。上級レベルのプロジェクト管理知識、プロセス統合、高度な計算問題、実践的なシナリオなど暗記系の問題を重点的にカバーします。",
+      "version": "1.0.0",
+      "author": "PMP Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "pmp-logo.png",
+      "color": "#8B0000"
     }
   ]
 }

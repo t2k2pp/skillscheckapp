@@ -1,0 +1,986 @@
+{
+  "id": "powerapps-database",
+  "title": "PowerApps データベーススキルテスト",
+  "description": "PowerAppsでのデータベース操作から最新機能まで、実務で必要なスキルを測定します。Dataverse、SharePoint、SQL Server、各種コネクタとの連携まで幅広くカバーします。",
+  "version": "1.0.0",
+  "author": "PowerApps Database Team",
+  "categories": ["基礎", "中級", "上級"],
+  "color": "#0F6CBD",
+  "questions": [
+    {
+      "id": 1,
+      "level": "基礎",
+      "text": "PowerAppsでデータソースとして使用できるものはどれですか？",
+      "options": [
+        "SharePointリストのみ",
+        "Dataverseのみ",
+        "SharePoint、Dataverse、Excel、SQL Server、その他多数",
+        "Microsoftサービスのみ"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "PowerAppsは300以上のコネクタを提供し、Microsoft内外の様々なデータソースと接続できます。SharePoint、Dataverse、Excel、SQL Server、Salesforce、Twitter、Google Sheetsなど多岐にわたります。"
+    },
+    {
+      "id": 2,
+      "level": "基礎",
+      "text": "Dataverse（旧Common Data Service）の特徴として正しいものはどれですか？",
+      "options": [
+        "データのみを格納するデータベース",
+        "セキュリティ、ビジネスロジック、ワークフローを含むクラウドデータプラットフォーム",
+        "Excelファイルの拡張版",
+        "SharePointリストの改良版"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Dataverseは単なるデータベースではなく、セキュリティモデル、ビジネスルール、ワークフロー、監査機能などを統合したクラウドデータプラットフォームです。"
+    },
+    {
+      "id": 3,
+      "level": "基礎",
+      "text": "PowerAppsでデータを表示するための基本的なコントロールはどれですか？",
+      "options": [
+        "Data table",
+        "Gallery",
+        "List box",
+        "すべて正解"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "PowerAppsでは、Gallery、Data table、List box、Combo box、Dropdown、そして単純なLabelやText inputまで、様々なコントロールでデータを表示できます。"
+    },
+    {
+      "id": 4,
+      "level": "基礎",
+      "text": "PowerAppsでレコードを作成する際に使用する基本的な関数はどれですか？",
+      "options": [
+        "Create()",
+        "Insert()",
+        "Patch()",
+        "Add()"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Patch()関数は、レコードの作成、更新、削除を行う汎用的な関数です。新規レコード作成時は、レコードIDを省略してPatch関数を使用します。"
+    },
+    {
+      "id": 5,
+      "level": "基礎",
+      "text": "PowerAppsでレコードを削除する関数はどれですか？",
+      "options": [
+        "Delete()",
+        "Remove()",
+        "Drop()",
+        "Clear()"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Remove()関数は指定したレコードをデータソースから削除します。RemoveIf()関数を使用すると、条件に一致するレコードを一括削除できます。"
+    },
+    {
+      "id": 6,
+      "level": "基礎",
+      "text": "SharePointリストを基にしたフォームで、新しいアイテムを作成する時の基本的な手順として正しいものはどれですか？",
+      "options": [
+        "Form control のMode を 'New'に設定する",
+        "NewForm()関数を実行する",
+        "Form control のDefaultMode を 'Create'に設定する",
+        "すべて必要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SharePointリストベースのフォームで新規アイテムを作成するには、FormコントロールのModeプロパティを'FormMode.New'に設定するのが基本です。"
+    },
+    {
+      "id": 7,
+      "level": "基礎",
+      "text": "PowerAppsでデータの検索・フィルタリングに使用する基本的な関数はどれですか？",
+      "options": [
+        "Search()",
+        "Filter()",
+        "Find()",
+        "SearchとFilter両方"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Search()関数はテキストベースの検索に、Filter()関数は条件ベースのフィルタリングに使用します。多くの場合、両方を組み合わせて使用します。"
+    },
+    {
+      "id": 8,
+      "level": "基礎",
+      "text": "PowerAppsで一対多のリレーションシップを表現する場合、子テーブル側に必要なものはどれですか？",
+      "options": [
+        "親テーブルの主キー",
+        "外部キー（Lookup列）",
+        "リレーション定義",
+        "インデックス"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "一対多のリレーションシップでは、子テーブル（多側）に親テーブルを参照する外部キー（Lookup列）が必要です。Dataverseではこれが自動的に関係性として管理されます。"
+    },
+    {
+      "id": 9,
+      "level": "基礎",
+      "text": "PowerAppsでデータの並び替えを行う関数はどれですか？",
+      "options": [
+        "Sort()",
+        "SortByColumns()",
+        "OrderBy()",
+        "SortとSortByColumns両方"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Sort()関数は単一列での並び替えに、SortByColumns()関数は複数列での並び替えに使用します。どちらも昇順・降順を指定できます。"
+    },
+    {
+      "id": 10,
+      "level": "基礎",
+      "text": "PowerAppsアプリでオフライン機能を実装する場合、主に使用するデータ保存方法はどれですか？",
+      "options": [
+        "SaveData()関数とコレクション",
+        "SharePointリスト",
+        "Dataverse",
+        "SQL Server"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "オフライン機能では、コレクションにデータを保存し、SaveData()関数でデバイスのローカルストレージに保存します。オンライン復帰時にサーバーと同期します。"
+    },
+    {
+      "id": 11,
+      "level": "基礎",
+      "text": "PowerAppsでデータソースの変更を即座に反映させる関数はどれですか？",
+      "options": [
+        "Refresh()",
+        "Reload()",
+        "Update()",
+        "Sync()"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Refresh()関数は指定したデータソースを再読み込みし、他のユーザーや外部システムによる変更を即座に反映させます。"
+    },
+    {
+      "id": 12,
+      "level": "基礎",
+      "text": "PowerAppsでデータ入力の妥当性をチェックする基本的な方法はどれですか？",
+      "options": [
+        "Validate()関数",
+        "コントロールのValidプロパティ",
+        "ビジネスルール",
+        "すべて正解"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "PowerAppsでは、コントロールのValidプロパティ、Dataverseのビジネスルール、カスタム検証ロジックなど、複数の方法でデータの妥当性をチェックできます。"
+    },
+    {
+      "id": 13,
+      "level": "基礎",
+      "text": "PowerAppsで日付データを扱う際の注意点として正しいものはどれですか？",
+      "options": [
+        "タイムゾーンを考慮する必要がある",
+        "文字列として保存すべき",
+        "UTCでのみ管理すべき",
+        "日付は数値として扱う"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsでは日付はユーザーのタイムゾーンで表示されますが、保存時はUTCに変換されます。タイムゾーンを正しく理解して設計することが重要です。"
+    },
+    {
+      "id": 14,
+      "level": "基礎",
+      "text": "PowerAppsで数値データに対する集計を行う基本的な関数はどれですか？",
+      "options": [
+        "Sum()のみ",
+        "Sum()、Average()、Count()、Max()、Min()",
+        "Aggregate()関数のみ",
+        "SQL関数を直接使用"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "PowerAppsでは、Sum()、Average()、Count()、Max()、Min()など、基本的な集計関数が用意されています。これらはコレクションやデータソースに対して使用できます。"
+    },
+    {
+      "id": 15,
+      "level": "基礎",
+      "text": "PowerAppsでテキストデータの部分一致検索を行う場合の関数はどれですか？",
+      "options": [
+        "Search()関数",
+        "Filter()関数とIn演算子",
+        "StartsWith()関数",
+        "すべて使用可能"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "部分一致検索には、Search()関数、Filter()関数とIn演算子の組み合わせ、StartsWith()やEndsWith()関数など、複数の方法が使用できます。"
+    },
+    {
+      "id": 16,
+      "level": "基礎",
+      "text": "PowerAppsでユーザー情報を取得する関数はどれですか？",
+      "options": [
+        "User()関数",
+        "GetUser()関数",
+        "CurrentUser()関数",
+        "UserInfo()関数"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "User()関数は現在のユーザーの情報（Email、FullName、Imageなど）を取得できます。セキュリティやパーソナライゼーション機能で重要です。"
+    },
+    {
+      "id": 17,
+      "level": "基礎",
+      "text": "PowerAppsでファイルのアップロードに使用するコントロールはどれですか？",
+      "options": [
+        "File upload control",
+        "Add picture control",
+        "Attachment control",
+        "すべて正解"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "PowerAppsでは、Add picture control（画像用）、Attachment control（汎用ファイル用）、さらにPen input control（手書き用）など、用途に応じたファイルアップロード機能を提供しています。"
+    },
+    {
+      "id": 18,
+      "level": "基礎",
+      "text": "PowerAppsでドロップダウンリストの選択肢を動的に変更する方法として正しいものはどれですか？",
+      "options": [
+        "Itemsプロパティにデータソースまたは数式を設定",
+        "固定値のみ設定可能",
+        "コード生成が必要",
+        "外部ファイルから読み込み"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "DropdownやCombo boxのItemsプロパティにデータソースや動的な数式を設定することで、リアルタイムで選択肢を変更できます。"
+    },
+    {
+      "id": 19,
+      "level": "基礎",
+      "text": "PowerAppsでマスター・ディテール形式の画面を作成する基本的な方法はどれですか？",
+      "options": [
+        "Galleryで一覧表示し、Formで詳細表示",
+        "複数のGalleryを使用",
+        "Tableコントロールのみ使用",
+        "カスタムコントロールが必要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "マスター・ディテール形式では、通常Galleryコントロールで一覧（マスター）を表示し、選択されたアイテムの詳細をFormコントロールで表示します。"
+    },
+    {
+      "id": 20,
+      "level": "基礎",
+      "text": "PowerAppsでデータの重複を除去する方法として正しいものはどれですか？",
+      "options": [
+        "Distinct()関数を使用",
+        "Unique()関数を使用",
+        "Filter()関数で条件指定",
+        "GroupBy()関数を使用"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Distinct()関数は指定した列の重複を除去した値のリストを返します。データの一意化や選択肢の生成によく使用されます。"
+    },
+    {
+      "id": 21,
+      "level": "中級",
+      "text": "Dataverseでビジネスルールを設定する利点として正しいものはどれですか？",
+      "options": [
+        "PowerApps、Flow、他のアプリで共通のロジックが適用される",
+        "PowerAppsでのみ動作する",
+        "処理速度が向上する",
+        "コードを書く必要がない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Dataverseのビジネスルールはデータレイヤーで適用されるため、PowerApps、Power Automate、Power BI、その他のアプリケーションすべてで共通のロジックが適用されます。"
+    },
+    {
+      "id": 22,
+      "level": "中級",
+      "text": "PowerAppsでN+1クエリ問題を回避するための推奨される方法はどれですか？",
+      "options": [
+        "デリゲーション可能な関数を使用し、必要なデータを一括取得",
+        "ForAll関数で逐次処理",
+        "個別にLookUp関数を実行",
+        "コレクションで全データをキャッシュ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "N+1クエリ問題を回避するには、Filter()やLookUp()などデリゲーション可能な関数を使用し、サーバー側で効率的にデータを処理します。ForAllによる個別取得は避けるべきです。"
+    },
+    {
+      "id": 23,
+      "level": "中級",
+      "text": "PowerAppsのデリゲーションについて正しい説明はどれですか？",
+      "options": [
+        "すべての処理をクライアント側で実行する機能",
+        "データソース側で処理を実行し、必要な結果のみを取得する機能",
+        "他のユーザーに処理を委任する機能",
+        "バックグラウンドで処理を実行する機能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "デリゲーションは、フィルタリングや並び替えなどの処理をデータソース側（SQL Server、SharePointなど）で実行し、結果のみをPowerAppsが受け取る仕組みです。大量データ処理の性能向上に不可欠です。"
+    },
+    {
+      "id": 24,
+      "level": "中級",
+      "text": "PowerAppsで複数のデータソースからデータを結合する方法として最適なものはどれですか？",
+      "options": [
+        "AddColumns()とLookUp()の組み合わせ",
+        "ForAll()で個別に取得",
+        "手動でのデータマージ",
+        "複数のGalleryを並べる"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "AddColumns()関数とLookUp()関数を組み合わせることで、効率的に複数のデータソースからのデータを結合できます。SQLのJOIN操作に相当します。"
+    },
+    {
+      "id": 25,
+      "level": "中級",
+      "text": "PowerAppsでトランザクション処理を実装する場合の推奨される方法はどれですか？",
+      "options": [
+        "Patch()関数で一括更新",
+        "個別のSubmitForm()を連続実行",
+        "Power Automateと連携",
+        "データベースストアドプロシージャを呼び出し"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsでは、Patch()関数を使用して複数のレコードを一括で作成・更新することで、トランザクション的な処理を実装できます。失敗時は全体がロールバックされます。"
+    },
+    {
+      "id": 26,
+      "level": "中級",
+      "text": "PowerAppsでデータの楽観的ロック（Optimistic Locking）を実装する方法はどれですか？",
+      "options": [
+        "バージョン列を使用してPatch()時にチェック",
+        "Lock()関数を使用",
+        "セマフォを実装",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "楽観的ロックは、レコードにバージョン番号や最終更新日時列を設け、更新時に予期した値かをチェックすることで実装できます。同時編集時の競合を検出できます。"
+    },
+    {
+      "id": 27,
+      "level": "中級",
+      "text": "SharePointリストをデータソースとして使用する際の制限として正しいものはどれですか？",
+      "options": [
+        "リストビューしきい値（5000アイテム）",
+        "最大100アイテム",
+        "最大10000アイテム",
+        "制限なし"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SharePointリストには「リストビューしきい値」があり、デフォルトで5000アイテムまでしか一度に処理できません。大量データを扱う場合は適切なフィルタリングが必要です。"
+    },
+    {
+      "id": 28,
+      "level": "中級",
+      "text": "PowerAppsでカスケードドロップダウン（連動するドロップダウン）を実装する方法はどれですか？",
+      "options": [
+        "上位ドロップダウンの選択値を基に下位のItemsプロパティをFilter",
+        "すべての組み合わせを事前定義",
+        "JavaScriptで実装",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "カスケードドロップダウンは、上位ドロップダウンの選択値を参照して、下位ドロップダウンのItemsプロパティでFilter()関数を使用することで実装できます。"
+    },
+    {
+      "id": 29,
+      "level": "中級",
+      "text": "PowerAppsでデータの部分更新（一部フィールドのみ更新）を行う場合の最適な関数はどれですか？",
+      "options": [
+        "Patch()関数",
+        "Update()関数",
+        "Modify()関数",
+        "SubmitForm()関数"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Patch()関数は指定したフィールドのみを更新でき、他のフィールドは元の値を保持します。効率的な部分更新が可能です。"
+    },
+    {
+      "id": 30,
+      "level": "中級",
+      "text": "PowerAppsでデータの一括削除を実装する効率的な方法はどれですか？",
+      "options": [
+        "RemoveIf()関数を使用",
+        "ForAll()とRemove()の組み合わせ",
+        "Filter()で対象を絞ってから個別削除",
+        "Clear()関数を使用"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "RemoveIf()関数は条件に一致するレコードを一括で削除できる効率的な関数です。ForAll()による個別削除よりもパフォーマンスが優れています。"
+    },
+    {
+      "id": 31,
+      "level": "中級",
+      "text": "PowerAppsでChoiceフィールド（選択肢フィールド）を扱う際の正しい方法はどれですか？",
+      "options": [
+        "Choicesプロパティを使用してオプションを取得",
+        "文字列として直接比較",
+        "数値インデックスで比較",
+        "カスタム変換が必要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Dataverseの選択肢フィールドは、Choices()関数やフィールド名.Choicesプロパティを使用して選択肢を取得し、適切に処理する必要があります。"
+    },
+    {
+      "id": 32,
+      "level": "中級",
+      "text": "PowerAppsでデータの変更履歴を追跡する方法として推奨されるものはどれですか？",
+      "options": [
+        "Dataverseの監査機能を有効化",
+        "手動でログテーブルを作成",
+        "SharePointの版管理機能",
+        "Power Automateでログ記録"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Dataverseには組み込みの監査機能があり、テーブルレベルで有効化することで、データの変更履歴を自動的に追跡できます。"
+    },
+    {
+      "id": 33,
+      "level": "中級",
+      "text": "PowerAppsでマルチテナント対応を実装する場合の設計考慮事項として正しいものはどれですか？",
+      "options": [
+        "テナント識別子をすべてのテーブルに追加し、フィルタリング",
+        "テナントごとに別々のアプリを作成",
+        "SharePointサイトで分離",
+        "ユーザー権限のみで制御"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "マルチテナント対応では、すべてのテーブルにテナント識別子（Tenant ID）を追加し、データアクセス時に常にそのテナントのデータのみをフィルタリングする設計が基本です。"
+    },
+    {
+      "id": 34,
+      "level": "中級",
+      "text": "PowerAppsでパフォーマンスを最適化するためのベストプラクティスとして正しいものはどれですか？",
+      "options": [
+        "必要最小限のデータのみ取得し、デリゲーション可能な関数を使用",
+        "すべてのデータをコレクションにキャッシュ",
+        "できるだけ多くのデータを事前読み込み",
+        "ForAll関数を多用する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "パフォーマンス最適化の基本は、必要最小限のデータのみを取得し、Filter()やSort()などデリゲーション可能な関数を使用してサーバー側で処理することです。"
+    },
+    {
+      "id": 35,
+      "level": "中級",
+      "text": "PowerAppsでSQL Serverに接続する際のセキュリティ設定として推奨されるものはどれですか？",
+      "options": [
+        "オンプレミスデータゲートウェイ経由でSSL暗号化",
+        "インターネット直接接続",
+        "VPN接続のみ",
+        "IPアドレス制限のみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "オンプレミスのSQL Serverには、オンプレミスデータゲートウェイを経由してSSL暗号化接続することが推奨されます。これにより安全な通信が確保されます。"
+    },
+    {
+      "id": 36,
+      "level": "中級",
+      "text": "PowerAppsでExcelファイルをデータソースとして使用する際の制限として正しいものはどれですか？",
+      "options": [
+        "読み取り専用で、テーブル形式である必要がある",
+        "読み書き可能だが、同時編集不可",
+        "完全に読み書き可能",
+        "PowerAppsでは使用不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ExcelファイルをPowerAppsで使用する場合、基本的には読み取り専用となり、データはテーブル形式で定義されている必要があります。"
+    },
+    {
+      "id": 37,
+      "level": "中級",
+      "text": "PowerAppsでリアルタイムデータ更新を実装する方法として最適なものはどれですか？",
+      "options": [
+        "Timer()コントロールでRefresh()を定期実行",
+        "WebSocketを直接使用",
+        "SignalRを実装",
+        "Power Automateとの連携"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsでリアルタイム更新を実現するには、Timer()コントロールを使用してRefresh()関数を定期的に実行する方法が一般的です。"
+    },
+    {
+      "id": 38,
+      "level": "中級",
+      "text": "PowerAppsでデータの暗号化を実装する場合の考慮事項として正しいものはどれですか？",
+      "options": [
+        "機密データはDataverseの暗号化機能を使用",
+        "PowerApps内でカスタム暗号化を実装",
+        "すべてのデータを自動暗号化",
+        "暗号化は実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "機密データの暗号化には、Dataverseが提供する組み込みの暗号化機能（フィールドレベル暗号化）を使用することが推奨されます。"
+    },
+    {
+      "id": 39,
+      "level": "中級",
+      "text": "PowerAppsでデータの圧縮を実装して転送量を削減する方法はどれですか？",
+      "options": [
+        "必要な列のみ選択し、適切なフィルタリングを実装",
+        "Zip圧縮を実装",
+        "画像データの品質を下げる",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "データ転送量削減の最も効果的な方法は、ShowColumns()で必要な列のみを選択し、Filter()で必要なレコードのみを取得することです。"
+    },
+    {
+      "id": 40,
+      "level": "中級",
+      "text": "PowerAppsで複雑な計算ロジックを実装する場合の推奨される方法はどれですか？",
+      "options": [
+        "カスタムコネクタまたはPower Automateで処理",
+        "PowerApps内でForAll関数を多用",
+        "クライアント側JavaScriptで実装",
+        "すべてDataverseの数式列で実装"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "複雑な計算ロジックは、カスタムコネクタやPower Automateに委ねることで、PowerAppsの性能を維持しながら高度な処理を実現できます。"
+    },
+    {
+      "id": 41,
+      "level": "上級",
+      "text": "PowerAppsでDataverseの代替キー（Alternate Key）を使用する利点として正しいものはどれですか？",
+      "options": [
+        "GUIDではなく意味のある値でレコードを一意識別できる",
+        "処理速度が向上する",
+        "セキュリティが強化される",
+        "ストレージ容量が削減される"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "代替キーを使用することで、GUIDの代わりに業務上意味のある値（顧客コード、社員番号など）でレコードを一意識別し、外部システムとの統合が容易になります。"
+    },
+    {
+      "id": 42,
+      "level": "上級",
+      "text": "PowerAppsでDataverseのサーバー側プラグインと連携する方法はどれですか？",
+      "options": [
+        "データ操作時に自動的にプラグインが実行される",
+        "明示的にプラグインを呼び出す必要がある",
+        "PowerAppsからは呼び出し不可能",
+        "特別なAPIを使用する必要がある"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Dataverseのサーバー側プラグインは、PowerAppsからのデータ操作（作成、更新、削除）時に設定されたイベントに応じて自動的に実行されます。"
+    },
+    {
+      "id": 43,
+      "level": "上級",
+      "text": "PowerAppsでデータの仮想テーブル（Virtual Table）を使用する場合の特徴として正しいものはどれですか？",
+      "options": [
+        "外部データソースのデータをDataverseテーブルとして扱える",
+        "より高速でデータアクセスできる",
+        "データを複製してパフォーマンスを向上させる",
+        "仮想的なテスト環境を提供する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "仮想テーブルは、外部システム（SQL Server、SharePointなど）のデータを物理的にコピーせずに、Dataverseテーブルとして扱える機能です。"
+    },
+    {
+      "id": 44,
+      "level": "上級",
+      "text": "PowerAppsでデータのバージョニング（版管理）を実装する高度な方法はどれですか？",
+      "options": [
+        "メインテーブルと履歴テーブルに分けて管理",
+        "単一テーブルでステータス管理",
+        "SharePointの版管理機能を使用",
+        "Dataverseの監査機能のみ使用"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "高度なバージョニングでは、現在データを保持するメインテーブルと、すべての変更履歴を保持する履歴テーブルに分けて管理し、必要に応じて任意の時点のデータを復元できるよう設計します。"
+    },
+    {
+      "id": 45,
+      "level": "上級",
+      "text": "PowerAppsでマルチレベル承認ワークフローを実装する場合の設計パターンとして最適なものはどれですか？",
+      "options": [
+        "承認ステップをテーブル化し、Power Automateと連携",
+        "PowerApps内でステータス管理のみ",
+        "SharePointの承認ワークフローを使用",
+        "手動での承認管理"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "複雑な承認ワークフローでは、承認ステップをテーブルとして設計し、Power Automateのワークフロー機能と連携することで、柔軟で拡張性のあるシステムを構築できます。"
+    },
+    {
+      "id": 46,
+      "level": "上級",
+      "text": "PowerAppsでデータの整合性制約を実装する包括的な方法はどれですか？",
+      "options": [
+        "Dataverseのビジネスルール、プラグイン、アプリケーションロジックの組み合わせ",
+        "アプリケーションロジックのみ",
+        "データベース制約のみ",
+        "手動チェックのみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "データの整合性を包括的に保つには、Dataverseのビジネスルール（宣言的制約）、サーバー側プラグイン（複雑なロジック）、PowerAppsのアプリケーションロジック（UI制御）を適切に組み合わせます。"
+    },
+    {
+      "id": 47,
+      "level": "上級",
+      "text": "PowerAppsでデータのソフト削除（論理削除）を実装する設計パターンはどれですか？",
+      "options": [
+        "IsDeletedフラグとフィルタービューを使用",
+        "物理削除のみ実行",
+        "別テーブルに移動",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ソフト削除の実装では、IsDeletedやDeletedDateなどのフラグ列を追加し、データ取得時に削除されていないレコードのみをフィルタリングするビューを作成します。"
+    },
+    {
+      "id": 48,
+      "level": "上級",
+      "text": "PowerAppsでデータの並行制御を実装する高度な方法として正しいものはどれですか？",
+      "options": [
+        "ETags（Entity Tags）を使用した楽観的ロック",
+        "悲観的ロック機能",
+        "セマフォによる制御",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Dataverseでは、ETags（Entity Tags）を使用した楽観的ロックが実装されており、Patch()関数でレコード更新時に競合検出と適切な処理が可能です。"
+    },
+    {
+      "id": 49,
+      "level": "上級",
+      "text": "PowerAppsでデータのキャッシュ戦略として最も効果的なものはどれですか？",
+      "options": [
+        "よく使用されるマスターデータをコレクションにキャッシュし、適切なタイミングで更新",
+        "すべてのデータをキャッシュ",
+        "キャッシュは使用しない",
+        "ブラウザキャッシュのみ使用"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "効果的なキャッシュ戦略では、変更頻度の低いマスターデータ（部署一覧、商品カテゴリなど）をコレクションにキャッシュし、アプリ起動時や定期的に更新します。"
+    },
+    {
+      "id": 50,
+      "level": "上級",
+      "text": "PowerAppsでデータのパーティショニング（分割）を実装する設計考慮事項として正しいものはどれですか？",
+      "options": [
+        "日付や地域などの基準でテーブルを分割し、適切なフィルタリングを実装",
+        "ランダムにデータを分割",
+        "ユーザーごとにテーブルを作成",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "大量データを効率的に処理するため、日付（年度別）、地域、部署などの論理的な基準でテーブルを分割し、アプリケーション側で適切なパーティションにアクセスする設計を行います。"
+    },
+    {
+      "id": 51,
+      "level": "上級",
+      "text": "PowerAppsでデータの国際化（多言語対応）を実装する高度な方法はどれですか？",
+      "options": [
+        "翻訳テーブルとユーザー言語設定を組み合わせた動的表示",
+        "アプリを言語別に複製",
+        "固定の多言語ラベル",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "高度な国際化では、翻訳データを管理するテーブルを作成し、User().Language等のユーザー言語設定と組み合わせて、動的に表示言語を切り替える仕組みを構築します。"
+    },
+    {
+      "id": 52,
+      "level": "上級",
+      "text": "PowerAppsでデータのレプリケーション（複製）を実装する場合の考慮事項として正しいものはどれですか？",
+      "options": [
+        "マスターデータの同期タイミングと競合解決戦略を定義",
+        "すべてのデータを常時同期",
+        "手動での同期のみ",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "データレプリケーションでは、どのデータをいつ同期するか、競合が発生した場合の解決戦略（最終更新優先、業務ルール優先など）を事前に定義することが重要です。"
+    },
+    {
+      "id": 53,
+      "level": "上級",
+      "text": "PowerAppsでデータのアーカイブ（古いデータの保管）を実装する効率的な方法はどれですか？",
+      "options": [
+        "アーカイブテーブルへの自動移行とPower Automateでの定期処理",
+        "手動でのデータ移行",
+        "すべてのデータを保持",
+        "定期的な物理削除"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "効率的なアーカイブでは、アーカイブ用テーブルを用意し、Power Automateの定期ワークフローで古いデータを自動的に移行します。必要に応じて参照可能な状態を保持します。"
+    },
+    {
+      "id": 54,
+      "level": "上級",
+      "text": "PowerAppsでデータのサニタイゼーション（入力値の無害化）を実装する包括的な方法はどれですか？",
+      "options": [
+        "入力時バリデーション、保存前処理、表示時エスケープの組み合わせ",
+        "入力時のみチェック",
+        "表示時のみエスケープ",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "セキュリティを確保するため、入力時のバリデーション、データ保存前の処理、表示時のHTMLエスケープを組み合わせた多層防御の実装が重要です。"
+    },
+    {
+      "id": 55,
+      "level": "上級",
+      "text": "PowerAppsでデータベースの接続プールを最適化する方法として正しいものはどれですか？",
+      "options": [
+        "接続の再利用と適切な接続解放をPowerApps側で意識した設計",
+        "接続数を無制限に設定",
+        "常に新しい接続を作成",
+        "PowerAppsでは制御不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsはコネクタを介してデータベースに接続するため、同じ画面内での繰り返しアクセスを最小化し、適切なデータ取得パターンを設計することで接続効率を最適化できます。"
+    },
+    {
+      "id": 56,
+      "level": "上級",
+      "text": "PowerAppsでデータの正規化と非正規化のバランスを取る設計原則として正しいものはどれですか？",
+      "options": [
+        "参照頻度が高いデータは適度に非正規化し、更新データは正規化を保持",
+        "すべてのデータを正規化",
+        "すべてのデータを非正規化",
+        "設計は考慮不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsでは読み取り性能と開発効率を考慮し、参照頻度の高いマスターデータは適度に非正規化（冗長化）し、トランザクションデータは正規化を保持するバランスが重要です。"
+    },
+    {
+      "id": 57,
+      "level": "上級",
+      "text": "PowerAppsでデータのETL処理（抽出・変換・読み込み）を実装する最適な方法はどれですか？",
+      "options": [
+        "Power Automate、Azure Data Factory、PowerAppsの役割分担",
+        "PowerAppsですべて処理",
+        "手動でのデータ移行",
+        "外部ツールのみ使用"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "効率的なETL処理では、Power Automateで定期処理、Azure Data Factoryで大量データ変換、PowerAppsでユーザー操作という役割分担が最適です。"
+    },
+    {
+      "id": 58,
+      "level": "上級",
+      "text": "PowerAppsでデータのCQRS（コマンドクエリ責任分離）パターンを実装する方法はどれですか？",
+      "options": [
+        "更新用と参照用でデータソースまたはビューを分離",
+        "単一のデータソースで統一",
+        "コマンドとクエリを同じ画面で実装",
+        "PowerAppsでは実装不可能"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "CQRSパターンでは、データ更新用と参照用でデータソースを分離し、それぞれのパフォーマンス要件に最適化した設計を行います。"
+    },
+    {
+      "id": 59,
+      "level": "上級",
+      "text": "PowerAppsでデータの暗号化をエンドツーエンドで実装する包括的な戦略はどれですか？",
+      "options": [
+        "転送時暗号化（TLS）、保存時暗号化（Dataverse）、フィールドレベル暗号化の組み合わせ",
+        "転送時暗号化のみ",
+        "保存時暗号化のみ",
+        "フィールドレベル暗号化のみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "包括的なデータ保護では、通信時のTLS暗号化、Dataverseの保存時暗号化、機密フィールドのフィールドレベル暗号化を組み合わせた多層防御を実装します。"
+    },
+    {
+      "id": 60,
+      "level": "上級",
+      "text": "PowerAppsでマイクロサービスアーキテクチャのデータ統合を実装する場合の推奨パターンはどれですか？",
+      "options": [
+        "カスタムコネクタとAPI Management、イベント駆動アーキテクチャの組み合わせ",
+        "直接データベース接続",
+        "ファイルベースの統合",
+        "PowerAppsのみで統合"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "マイクロサービス環境では、カスタムコネクタでAPI統合し、API Managementでセキュリティと制御を実装、イベント駆動でリアルタイム連携を実現する設計が最適です。"
+    },
+    {
+      "id": 61,
+      "level": "上級",
+      "text": "PowerAppsでデータの分散トランザクションを実装する場合の制約と対処方法として正しいものはどれですか？",
+      "options": [
+        "PowerAppsは分散トランザクション非対応のため、Saga パターンまたは補償トランザクションを実装",
+        "2フェーズコミットを実装",
+        "すべてを単一トランザクションで処理",
+        "トランザクションは実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "PowerAppsでは分散トランザクションがサポートされていないため、Sagaパターンや補償トランザクション（失敗時の巻き戻し処理）を設計・実装する必要があります。"
+    },
+    {
+      "id": 62,
+      "level": "上級",
+      "text": "PowerAppsでビッグデータを効率的に処理するためのアーキテクチャパターンとして最適なものはどれですか？",
+      "options": [
+        "Azure Synapse Analytics、Power BI、PowerAppsの連携アーキテクチャ",
+        "PowerAppsですべて処理",
+        "SharePointリストで大量データ管理",
+        "Excelファイルで処理"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ビッグデータ処理では、Azure Synapse Analyticsでデータ処理・分析、Power BIで可視化、PowerAppsで操作インターフェースという役割分担のアーキテクチャが最適です。"
+    },
+    {
+      "id": 63,
+      "level": "上級",
+      "text": "PowerAppsでデータのリネージ（系譜）を追跡する実装方法として最適なものはどれですか？",
+      "options": [
+        "監査ログとメタデータテーブルでデータの変更履歴と影響範囲を管理",
+        "手動でのドキュメント管理",
+        "PowerAppsの標準機能のみ使用",
+        "追跡は実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "データリネージ追跡では、Dataverseの監査機能とカスタムメタデータテーブルを組み合わせ、データの変更履歴、依存関係、影響範囲を体系的に管理する実装が効果的です。"
+    },
+    {
+      "id": 64,
+      "level": "上級",
+      "text": "PowerAppsでデータプライバシー規制（GDPR等）に対応するための技術実装として最も包括的なものはどれですか？",
+      "options": [
+        "データ分類、アクセス制御、削除権実装、監査ログ、暗号化の統合実装",
+        "暗号化のみ実装",
+        "アクセス制御のみ実装",
+        "削除機能のみ実装"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "GDPR等への対応では、個人データの分類とタグ付け、きめ細かいアクセス制御、削除権（忘れられる権利）の実装、包括的な監査ログ、エンドツーエンド暗号化を統合した包括的な実装が必要です。"
+    },
+    {
+      "id": 65,
+      "level": "上級",
+      "text": "PowerAppsでゼロトラストセキュリティモデルをデータアクセスに実装する方法として最適なものはどれですか？",
+      "options": [
+        "条件付きアクセス、MFA、継続的認証、最小権限アクセスの組み合わせ",
+        "基本認証のみ",
+        "IPアドレス制限のみ",
+        "パスワード認証のみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ゼロトラストモデルでは、Azure ADの条件付きアクセス、多要素認証（MFA）、デバイス準拠性チェック、データアクセスでの最小権限原則を組み合わせた実装が必要です。"
+    },
+    {
+      "id": 66,
+      "level": "上級",
+      "text": "PowerAppsでデータの災害復旧（DR）を実装する包括的な戦略として最適なものはどれですか？",
+      "options": [
+        "Dataverseバックアップ、地理的冗長化、RPO/RTO要件に基づく復旧計画",
+        "手動バックアップのみ",
+        "クラウドの標準機能のみ",
+        "災害復旧は実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "包括的DR戦略では、Dataverseの自動バックアップ、地理的に分散した冗長化、業務要件に基づくRPO（目標復旧時点）/RTO（目標復旧時間）の設定と定期的な復旧テストが必要です。"
+    },
+    {
+      "id": 67,
+      "level": "上級",
+      "text": "PowerAppsでデータの品質管理を自動化する実装として最も効果的なものはどれですか？",
+      "options": [
+        "データプロファイリング、品質ルール、自動クレンジング、アラート機能の統合",
+        "手動チェックのみ",
+        "入力時バリデーションのみ",
+        "定期レポートのみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "自動化されたデータ品質管理では、Power Automateでのデータプロファイリング、Dataverseビジネスルールでの品質チェック、自動クレンジング処理、品質劣化時のアラート通知を統合します。"
+    },
+    {
+      "id": 68,
+      "level": "上級",
+      "text": "PowerAppsでデータのマスキング（機密情報の隠蔽）を実装する高度な方法はどれですか？",
+      "options": [
+        "ロールベースの動的マスキングとフィールドレベルセキュリティの組み合わせ",
+        "固定の部分非表示",
+        "すべてのデータを非表示",
+        "マスキングは実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "高度なデータマスキングでは、ユーザーロールに基づく動的マスキング、Dataverseのフィールドレベルセキュリティ、カスタム表示ロジックを組み合わせて実装します。"
+    },
+    {
+      "id": 69,
+      "level": "上級",
+      "text": "PowerAppsでデータドリブン意思決定を支援する高度な分析機能を実装する方法として最適なものはどれですか？",
+      "options": [
+        "Power BI Embedded、AI Builder、カスタム分析の統合実装",
+        "基本的な集計のみ",
+        "Power BIのみ使用",
+        "分析機能は実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "データドリブン意思決定支援では、PowerAppsにPower BI Embeddedでリアルタイム分析を組み込み、AI Builderで予測分析を実装、カスタムロジックで業務固有の分析を提供する統合アプローチが最適です。"
+    },
+    {
+      "id": 70,
+      "level": "上級",
+      "text": "PowerAppsで次世代のデータアーキテクチャ（Data Mesh、Data Fabric等）を実装する場合の考慮事項として最も重要なものはどれですか？",
+      "options": [
+        "ドメイン駆動設計、データ製品思考、分散データ所有権の実装",
+        "中央集権的なデータ管理",
+        "単一データソースの維持",
+        "従来のアーキテクチャの踏襲"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Data Meshアーキテクチャでは、業務ドメインごとのデータ所有権、データを製品として扱う思考、分散しながらも標準化された データ管理の実装が重要になります。"
+    },
+    {
+      "id": 71,
+      "level": "上級",
+      "text": "PowerAppsでMLOps（機械学習運用）とデータパイプラインを統合する実装として最適なものはどれですか？",
+      "options": [
+        "Azure ML、AI Builder、Power Automate、PowerAppsの連携パイプライン",
+        "PowerAppsのみで機械学習実装",
+        "外部MLサービスのみ使用",
+        "機械学習は実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "MLOpsとの統合では、Azure MLでモデル開発・訓練、AI Builderで業務アプリケーション向けML機能、Power Automateで自動化パイプライン、PowerAppsでユーザーインターフェースという連携が効果的です。"
+    },
+    {
+      "id": 72,
+      "level": "上級",
+      "text": "PowerAppsでリアルタイムデータストリーミングとイベント駆動アーキテクチャを実装する最適な方法はどれですか？",
+      "options": [
+        "Azure Event Hubs、Service Bus、Logic Apps、PowerAppsの統合アーキテクチャ",
+        "PowerAppsのタイマー機能のみ",
+        "データベース polling のみ",
+        "リアルタイム処理は実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "リアルタイムストリーミングでは、Azure Event Hubsでイベント取り込み、Service Busでメッセージング、Logic AppsまたはPower Automateで処理、PowerAppsでリアルタイム表示という統合アーキテクチャが最適です。"
+    },
+    {
+      "id": 73,
+      "level": "上級",
+      "text": "PowerAppsでデータのテスト駆動開発（TDD）を実装する場合の推奨アプローチはどれですか？",
+      "options": [
+        "テストデータセット、自動化テスト、継続的インテグレーションの統合",
+        "手動テストのみ",
+        "本番データでのテスト",
+        "テストは実装不要"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "データのTDDでは、代表的なテストデータセットの準備、Power Automateでの自動テスト実行、Azure DevOpsでのCI/CDパイプライン、テスト結果の自動化された検証を統合します。"
+    },
+    {
+      "id": 74,
+      "level": "上級",
+      "text": "PowerAppsでクラウドネイティブデータアーキテクチャを最大限活用する設計原則として最も重要なものはどれですか？",
+      "options": [
+        "スケーラビリティ、復元性、観測可能性、セキュリティを統合した設計",
+        "オンプレミス思考の踏襲",
+        "単一障害点の許容",
+        "固定リソースでの設計"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "クラウドネイティブ設計では、自動スケーリング、障害に対する復元性、包括的な監視・ログ、ゼロトラストセキュリティを統合し、クラウドの利点を最大限活用する設計原則が重要です。"
+    },
+    {
+      "id": 75,
+      "level": "上級",
+      "text": "PowerAppsのデータアーキテクチャ設計における最も重要な成功要因はどれですか？",
+      "options": [
+        "ビジネス要件、技術制約、将来拡張性のバランスを取った現実的な設計",
+        "最新技術の追求のみ",
+        "コスト最小化のみ",
+        "技術的完璧性の追求のみ"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "成功するPowerAppsデータアーキテクチャは、現在のビジネス要件を満たしつつ、技術的制約を理解し、将来の成長と変化に対応できる拡張性を備えた現実的でバランスの取れた設計が最も重要です。"
+    }
+  ]
+}
