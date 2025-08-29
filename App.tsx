@@ -40,11 +40,13 @@ const App: React.FC = () => {
     if (questionSet) {
       // Convert JSON questions to QuizQuestion format
       const quizQuestions = QuestionLoader.convertToQuizQuestions(questionSet.questions);
-      // For now, return all questions - pattern filtering can be implemented later
-      return quizQuestions.map(shuffleQuestionOptions);
+      // Apply pattern filtering
+      const selectedQuestions = getQuestionsByPattern(pattern, quizQuestions);
+      return selectedQuestions.map(shuffleQuestionOptions);
     } else {
-      // Fallback to legacy questions
-      const selectedQuestions = getQuestionsByPattern(pattern);
+      // Fallback to legacy questions (this should not happen in new version)
+      const quizQuestions = QuestionLoader.convertToQuizQuestions([]);
+      const selectedQuestions = getQuestionsByPattern(pattern, quizQuestions);
       return selectedQuestions.map(shuffleQuestionOptions);
     }
   }, []);
@@ -111,14 +113,17 @@ const App: React.FC = () => {
     switch (quizState) {
       case 'book_selection':
         return <BookSelectionScreen onSelectBook={handleBookSelect} />;
-      case 'pattern_selection':
+      case 'pattern_selection': {
+        const quizQuestions = currentQuestionSet ? QuestionLoader.convertToQuizQuestions(currentQuestionSet.questions) : [];
         return (
           <PatternSelectionScreen
             onPatternSelect={handlePatternSelect}
             onBack={backToWelcome}
             questionSet={currentQuestionSet}
+            questions={quizQuestions}
           />
         );
+      }
       case 'active':
         return (
           <QuestionCard

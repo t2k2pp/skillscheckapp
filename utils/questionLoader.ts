@@ -29,10 +29,13 @@ export class QuestionLoader {
 
   private static convertLevel(level: string): QuestionLevel {
     switch (level) {
+      case '基礎':
       case 'beginner':
         return QuestionLevel.Beginner;
+      case '中級':
       case 'intermediate':
         return QuestionLevel.Intermediate;
+      case '上級':
       case 'advanced':
         return QuestionLevel.Advanced;
       default:

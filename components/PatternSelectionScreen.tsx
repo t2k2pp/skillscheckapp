@@ -1,15 +1,23 @@
-import React from 'react';
-import { QuizPattern } from '../types';
-import { QUIZ_PATTERNS } from '../utils/quizPatterns';
+import React, { useMemo } from 'react';
+import { QuizPattern, QuizQuestion } from '../types';
+import { createQuizPatterns } from '../utils/quizPatterns';
 import { QuestionSet } from '../types/questionSet';
+import { QuestionLoader } from '../utils/questionLoader';
 
 interface PatternSelectionScreenProps {
   onPatternSelect: (pattern: QuizPattern) => void;
   onBack: () => void;
   questionSet: QuestionSet | null;
+  questions?: QuizQuestion[];
 }
 
-const PatternSelectionScreen: React.FC<PatternSelectionScreenProps> = ({ onPatternSelect, onBack, questionSet }) => {
+const PatternSelectionScreen: React.FC<PatternSelectionScreenProps> = ({ onPatternSelect, onBack, questionSet, questions = [] }) => {
+  // 動的にクイズパターンを生成
+  const quizPatterns = useMemo(() => {
+    if (questions.length === 0) return [];
+    return createQuizPatterns(questions);
+  }, [questions]);
+
   // 問題集に応じた動的なパターン説明を生成
   const getPatternDescription = (pattern: QuizPattern): string => {
     if (!questionSet) return '';
@@ -45,7 +53,7 @@ const PatternSelectionScreen: React.FC<PatternSelectionScreenProps> = ({ onPatte
       </div>
 
       <div className="space-y-4 mb-8">
-        {QUIZ_PATTERNS.map((pattern) => (
+        {quizPatterns.map((pattern) => (
           <div
             key={pattern.id}
             onClick={() => onPatternSelect(pattern.id)}
