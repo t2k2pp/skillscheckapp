@@ -18,6 +18,30 @@ export class TextToSpeech {
   private supported: boolean = false;
   private currentUtterance: SpeechSynthesisUtterance | null = null;
 
+  /**
+   * 読み上げに適さない記号や文字を除去・置換してテキストを整形する
+   */
+  private cleanTextForSpeech(text: string): string {
+    return text
+      // バッククォートを除去
+      .replace(/`/g, '')
+      // 複数の記号を読みやすい形に置換
+      .replace(/\-\-/g, 'から')
+      .replace(/\-\>/g, 'から')
+      .replace(/\<\-/g, 'から')
+      .replace(/=\>/g, 'となる')
+      .replace(/\!\=/g, '不等')
+      .replace(/\=\=/g, '等しい')
+      .replace(/\<\=/g, '以下')
+      .replace(/\>\=/g, '以上')
+      // HTMLタグを除去
+      .replace(/<[^>]*>/g, '')
+      // 複数のスペースを1つに
+      .replace(/\s+/g, ' ')
+      // 行頭・行末のスペースを除去
+      .trim();
+  }
+
   private constructor() {
     this.initializeSpeech();
   }
@@ -88,7 +112,9 @@ export class TextToSpeech {
       // 現在の読み上げを停止
       this.stop();
 
-      const utterance = new SpeechSynthesisUtterance(text);
+      // テキストをクリーンアップしてから読み上げ用のUtteranceを作成
+      const cleanedText = this.cleanTextForSpeech(text);
+      const utterance = new SpeechSynthesisUtterance(cleanedText);
       this.currentUtterance = utterance;
 
       // 音声設定
