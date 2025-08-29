@@ -109,6 +109,18 @@
       "estimatedTime": "60-75分",
       "coverImage": "vite-logo.png",
       "color": "#646CFF"
+    },
+    {
+      "id": "excel",
+      "title": "Excel関数スキルテスト",
+      "description": "Excel関数の基礎から最新機能まで、実務で必要なスキルを測定します。基本関数から動的配列、XLOOKUP、LAMBDA関数まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "Excel Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "excel-logo.png",
+      "color": "#217346"
     }
   ]
 }
