@@ -1,0 +1,614 @@
+{
+  "id": "react",
+  "title": "React フロントエンドスキルテスト",
+  "description": "Reactの基礎から上級まで、モダンフロントエンド開発で必要なスキルを測定します。コンポーネント、Hooks、状態管理、パフォーマンス最適化まで幅広くカバーします。",
+  "version": "1.0.0",
+  "author": "React Learning Team",
+  "categories": ["基礎", "中級", "上級"],
+  "totalQuestions": 75,
+  "estimatedTime": "60-75分",
+  "coverImage": "react-logo.png",
+  "color": "#61DAFB",
+  "questions": [
+    {
+      "id": 1,
+      "level": "beginner",
+      "text": "Reactとは何ですか？",
+      "options": ["ユーザーインターフェース構築のためのJavaScriptライブラリ", "サーバーサイドフレームワーク", "データベース", "プログラミング言語"],
+      "correctAnswerIndex": 0,
+      "explanation": "ReactはFacebook（Meta）が開発したユーザーインターフェース構築のためのJavaScriptライブラリです。コンポーネントベースの宣言的なUIを作成できます。"
+    },
+    {
+      "id": 2,
+      "level": "beginner",
+      "text": "Reactでコンポーネントを定義する方法として正しくないものはどれですか？",
+      "options": ["class Component extends React.Component", "function Component()", "const Component = () => {}", "template Component"],
+      "correctAnswerIndex": 3,
+      "explanation": "Reactコンポーネントは関数コンポーネント（`function`または`arrow function`）またはクラスコンポーネント（`class`）で定義します。`template`は使用しません。"
+    },
+    {
+      "id": 3,
+      "level": "beginner",
+      "text": "JSXとは何ですか？",
+      "options": ["JavaScriptの拡張構文", "新しいプログラミング言語", "CSSフレームワーク", "データベース言語"],
+      "correctAnswerIndex": 0,
+      "explanation": "JSX（JavaScript XML）は、JavaScriptコード内でHTML風の構文を書けるReactの拡張構文です。コンポーネントを宣言的に記述できます。"
+    },
+    {
+      "id": 4,
+      "level": "beginner",
+      "text": "Reactで要素のリストをレンダリングする際に必要な属性はどれですか？",
+      "options": ["key", "id", "index", "list"],
+      "correctAnswerIndex": 0,
+      "explanation": "`key`属性は、Reactが要素リストの変更を効率的に検出するために必要です。各要素に一意のkeyを設定します。"
+    },
+    {
+      "id": 5,
+      "level": "beginner",
+      "text": "Reactで親コンポーネントから子コンポーネントにデータを渡す方法はどれですか？",
+      "options": ["props", "state", "context", "refs"],
+      "correctAnswerIndex": 0,
+      "explanation": "propsは親コンポーネントから子コンポーネントにデータを渡すためのメカニズムです。読み取り専用で、子コンポーネントは直接変更できません。"
+    },
+    {
+      "id": 6,
+      "level": "beginner",
+      "text": "関数コンポーネントで状態を管理するために使用するHookはどれですか？",
+      "options": ["useState", "useEffect", "useContext", "useReducer"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useState`は関数コンポーネントで状態を管理するための基本的なHookです。状態値と更新関数のペアを返します。"
+    },
+    {
+      "id": 7,
+      "level": "beginner",
+      "text": "Reactでイベントハンドラーを設定する正しい方法はどれですか？",
+      "options": ["onClick={handleClick}", "onclick=\"handleClick()\"", "onClick=\"handleClick\"", "onClickHandler={handleClick}"],
+      "correctAnswerIndex": 0,
+      "explanation": "ReactではキャメルケースのイベントプロパティとJavaScript関数を使用します。`onClick={handleClick}`のように記述します。"
+    },
+    {
+      "id": 8,
+      "level": "beginner",
+      "text": "useEffectフックの主な用途は何ですか？",
+      "options": ["副作用の処理", "状態の更新", "プロパティの受け渡し", "コンポーネントの作成"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useEffect`は副作用（API呼び出し、DOM操作、購読の設定など）を処理するためのHookです。コンポーネントのライフサイクルに対応します。"
+    },
+    {
+      "id": 9,
+      "level": "beginner",
+      "text": "Reactで条件付きレンダリングを行う方法として正しくないものはどれですか？",
+      "options": ["{condition && <Component />}", "{condition ? <A /> : <B />}", "if(condition) return <Component />", "{if(condition) <Component />}"],
+      "correctAnswerIndex": 3,
+      "explanation": "JSX内では`if`文は使用できません。論理演算子`&&`、三項演算子`? :`、またはJavaScriptブロック外での`if`文を使用します。"
+    },
+    {
+      "id": 10,
+      "level": "beginner",
+      "text": "Reactコンポーネントから別のコンポーネントを参照するために使用するHookはどれですか？",
+      "options": ["useRef", "useState", "useEffect", "useCallback"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useRef`は、DOM要素や他のコンポーネントへの参照を作成するためのHookです。refオブジェクトを返します。"
+    },
+    {
+      "id": 11,
+      "level": "beginner",
+      "text": "Reactで配列をレンダリングする際の基本的なパターンはどれですか？",
+      "options": ["{items.map(item => <Item key={item.id} />)}", "{items.forEach(item => <Item />)}", "{for(item of items) <Item />}", "{items.render(item => <Item />)}"],
+      "correctAnswerIndex": 0,
+      "explanation": "`map()`メソッドを使用して配列の各要素をJSX要素に変換します。必ず一意の`key`属性を設定します。"
+    },
+    {
+      "id": 12,
+      "level": "beginner",
+      "text": "Reactでフォームの入力値を制御する方法はどれですか？",
+      "options": ["value属性とonChangeハンドラーを使用", "defaultValue属性のみ使用", "ref属性で直接アクセス", "HTML標準のフォーム処理"],
+      "correctAnswerIndex": 0,
+      "explanation": "制御されたコンポーネントでは、`value`属性で現在の値を設定し、`onChange`ハンドラーで状態を更新します。"
+    },
+    {
+      "id": 13,
+      "level": "beginner",
+      "text": "Reactでコンポーネントが最初にマウントされた時のみ実行したい処理はどのように書きますか？",
+      "options": ["useEffect(() => {}, [])", "useEffect(() => {})", "useState(() => {})", "useMount(() => {})"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useEffect`の第2引数に空の依存配列`[]`を渡すと、コンポーネントのマウント時にのみ実行されます。"
+    },
+    {
+      "id": 14,
+      "level": "beginner",
+      "text": "ReactでJSX内にJavaScriptの式を埋め込む方法はどれですか？",
+      "options": ["{expression}", "{{expression}}", "$(expression)", "[expression]"],
+      "correctAnswerIndex": 0,
+      "explanation": "JSX内でJavaScriptの式を評価するには、単一の波括弧`{}`で囲みます。"
+    },
+    {
+      "id": 15,
+      "level": "beginner",
+      "text": "Reactでクラスコンポーネントの状態を初期化する方法はどれですか？",
+      "options": ["constructor内でthis.state = {}", "this.state = {}をrender内で", "useState()を使用", "setStateを直接呼び出し"],
+      "correctAnswerIndex": 0,
+      "explanation": "クラスコンポーネントでは、constructor内で`this.state`を設定して初期状態を定義します。"
+    },
+    {
+      "id": 16,
+      "level": "beginner",
+      "text": "Reactでスタイルを適用する方法として正しくないものはどれですか？",
+      "options": ["className=\"my-class\"", "style={{color: 'red'}}", "class=\"my-class\"", "CSS-in-JSライブラリの使用"],
+      "correctAnswerIndex": 2,
+      "explanation": "ReactではHTML属性`class`ではなく`className`を使用します。`class`はJavaScriptの予約語のためです。"
+    },
+    {
+      "id": 17,
+      "level": "beginner",
+      "text": "Reactで複数の要素を返す際にFragmentを使用する理由は何ですか？",
+      "options": ["不要なDOM要素を避けるため", "パフォーマンスを向上させるため", "スタイルを適用するため", "イベント処理のため"],
+      "correctAnswerIndex": 0,
+      "explanation": "React.FragmentまたはFragment（<></>）を使用すると、余分なDOM要素（divなど）を作成せずに複数の要素をグループ化できます。"
+    },
+    {
+      "id": 18,
+      "level": "beginner",
+      "text": "Reactでプロパティのデフォルト値を設定する方法はどれですか？",
+      "options": ["defaultProps", "defaultValues", "initialProps", "props.default"],
+      "correctAnswerIndex": 0,
+      "explanation": "`defaultProps`を使用してコンポーネントのプロパティにデフォルト値を設定できます。ES6の関数では引数のデフォルト値も使用可能です。"
+    },
+    {
+      "id": 19,
+      "level": "beginner",
+      "text": "Reactでコンポーネントを別のファイルから使用するために必要な構文はどれですか？",
+      "options": ["export default Component", "module.exports = Component", "export Component", "return Component"],
+      "correctAnswerIndex": 0,
+      "explanation": "`export default`を使用してコンポーネントをデフォルトエクスポートし、他のファイルで`import`して使用します。"
+    },
+    {
+      "id": 20,
+      "level": "beginner",
+      "text": "Reactアプリケーションを作成するための公式ツールはどれですか？",
+      "options": ["Create React App", "React CLI", "React Generator", "React Starter"],
+      "correctAnswerIndex": 0,
+      "explanation": "Create React App（CRA）は、Reactアプリケーションの開発環境を素早く構築するための公式ツールです。"
+    },
+    {
+      "id": 21,
+      "level": "beginner",
+      "text": "ReactでDOMにアプリケーションをレンダリングする際に使用する関数はどれですか？",
+      "options": ["ReactDOM.render()", "React.render()", "ReactDOM.mount()", "React.mount()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`ReactDOM.render()`（React 18では`createRoot().render()`）を使用してReactコンポーネントをDOM要素にレンダリングします。"
+    },
+    {
+      "id": 22,
+      "level": "beginner",
+      "text": "Reactで子コンポーネントから親コンポーネントにデータを渡す方法はどれですか？",
+      "options": ["コールバック関数をpropsで渡す", "stateを直接変更する", "global変数を使用する", "context APIのみ使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "親から子にコールバック関数をpropsとして渡し、子コンポーネントでそれを呼び出すことでデータを上位に送信できます。"
+    },
+    {
+      "id": 23,
+      "level": "beginner",
+      "text": "Reactでエラー境界（Error Boundary）を実装するために必要なメソッドはどれですか？",
+      "options": ["componentDidCatch", "errorHandler", "onError", "catchError"],
+      "correctAnswerIndex": 0,
+      "explanation": "`componentDidCatch`と`getDerivedStateFromError`を実装することで、子コンポーネントのJavaScriptエラーをキャッチできます。"
+    },
+    {
+      "id": 24,
+      "level": "beginner",
+      "text": "Reactで使用されるVirtual DOMの利点は何ですか？",
+      "options": ["DOM操作のパフォーマンス向上", "メモリ使用量の削減", "コードの簡潔性", "セキュリティの向上"],
+      "correctAnswerIndex": 0,
+      "explanation": "Virtual DOMは実際のDOM操作を最適化し、必要最小限の更新のみを行うことでパフォーマンスを向上させます。"
+    },
+    {
+      "id": 25,
+      "level": "beginner",
+      "text": "Reactでコンポーネントの再レンダリングが発生するタイミングはいつですか？",
+      "options": ["propsやstateが変更された時", "DOMが変更された時", "ユーザーがクリックした時", "setInterval実行時"],
+      "correctAnswerIndex": 0,
+      "explanation": "Reactコンポーネントは、propsまたはstateが変更された時に自動的に再レンダリングされます。"
+    },
+    {
+      "id": 26,
+      "level": "intermediate",
+      "text": "React Contextを使用する主な目的は何ですか？",
+      "options": ["プロップドリリングを避けるため", "パフォーマンスを向上させるため", "エラーハンドリングのため", "ルーティング機能のため"],
+      "correctAnswerIndex": 0,
+      "explanation": "React Contextは、コンポーネントツリー全体でデータを共有し、深くネストしたコンポーネント間でのpropsの受け渡し（プロップドリリング）を避けるために使用されます。"
+    },
+    {
+      "id": 27,
+      "level": "intermediate",
+      "text": "useReducerフックを使用する利点は何ですか？",
+      "options": ["複雑な状態ロジックを管理できる", "レンダリング回数を減らせる", "メモリ使用量が少ない", "型安全性が向上する"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useReducer`は、複数の状態変数や複雑な状態更新ロジックを持つ場合に、より予測可能で管理しやすい状態管理を提供します。"
+    },
+    {
+      "id": 28,
+      "level": "intermediate",
+      "text": "React.memoの目的は何ですか？",
+      "options": ["コンポーネントの不必要な再レンダリングを防ぐ", "メモリ使用量を削減する", "ロード時間を短縮する", "エラーを防ぐ"],
+      "correctAnswerIndex": 0,
+      "explanation": "`React.memo`は高次コンポーネントで、propsが変更されていない場合にコンポーネントの再レンダリングをスキップします。"
+    },
+    {
+      "id": 29,
+      "level": "intermediate",
+      "text": "useCallbackフックの主な用途は何ですか？",
+      "options": ["関数をメモ化してパフォーマンス最適化", "非同期処理の制御", "状態の更新", "エラーハンドリング"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useCallback`は関数をメモ化し、依存配列が変更されない限り同じ関数インスタンスを返すため、子コンポーネントの不要な再レンダリングを防げます。"
+    },
+    {
+      "id": 30,
+      "level": "intermediate",
+      "text": "useMemoフックの主な用途は何ですか？",
+      "options": ["計算結果をメモ化してパフォーマンス最適化", "状態管理", "副作用処理", "イベント処理"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useMemo`は重い計算結果をメモ化し、依存配列が変更されない限り同じ値を返すため、不要な計算を避けられます。"
+    },
+    {
+      "id": 31,
+      "level": "intermediate",
+      "text": "React Routerでプログラマティックナビゲーションを行う方法はどれですか？",
+      "options": ["useNavigateフック", "window.location", "Router.push()", "navigateTo()"],
+      "correctAnswerIndex": 0,
+      "explanation": "React Router v6では`useNavigate`フック（以前のバージョンでは`useHistory`）を使用してプログラムからナビゲーションを制御できます。"
+    },
+    {
+      "id": 32,
+      "level": "intermediate",
+      "text": "React Routerでルートパラメータを取得する方法はどれですか？",
+      "options": ["useParamsフック", "this.props.params", "Router.params", "getParams()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useParams`フックを使用してURL内のパラメータ（例：`/user/:id`の`:id`部分）を取得できます。"
+    },
+    {
+      "id": 33,
+      "level": "intermediate",
+      "text": "Reactで高次コンポーネント（HOC）の目的は何ですか？",
+      "options": ["コンポーネントの機能を拡張・再利用する", "パフォーマンスを向上させる", "エラーを防ぐ", "スタイルを適用する"],
+      "correctAnswerIndex": 0,
+      "explanation": "高次コンポーネント（Higher-Order Component）は、コンポーネントを引数として受け取り、拡張された新しいコンポーネントを返すパターンです。機能の再利用と抽象化に使用されます。"
+    },
+    {
+      "id": 34,
+      "level": "intermediate",
+      "text": "React Hooksのルールとして正しくないものはどれですか？",
+      "options": ["条件分岐内でHooksを呼び出してよい", "関数コンポーネントまたはカスタムフック内でのみ使用", "Hooksの呼び出し順序は一定に保つ", "ループ内でHooksを呼び出してはいけない"],
+      "correctAnswerIndex": 0,
+      "explanation": "Hooksは条件分岐、ループ、ネストした関数内で呼び出してはいけません。常に同じ順序で呼び出される必要があります。"
+    },
+    {
+      "id": 35,
+      "level": "intermediate",
+      "text": "Reactでレンダープロップパターンの目的は何ですか？",
+      "options": ["コンポーネント間でロジックを共有する", "スタイルを共有する", "イベントを共有する", "データを保存する"],
+      "correctAnswerIndex": 0,
+      "explanation": "レンダープロップは、関数をpropとして受け取り、その関数が何をレンダリングするかを決定するパターンです。コンポーネント間でロジックを共有するために使用されます。"
+    },
+    {
+      "id": 36,
+      "level": "intermediate",
+      "text": "Reactでポータル（Portal）を使用する目的は何ですか？",
+      "options": ["親コンポーネントのDOM階層外にレンダリングする", "パフォーマンスを向上させる", "状態を管理する", "ルーティングを行う"],
+      "correctAnswerIndex": 0,
+      "explanation": "`ReactDOM.createPortal()`を使用すると、コンポーネントを親のDOM階層外（例：モーダル、ツールチップ）にレンダリングできます。"
+    },
+    {
+      "id": 37,
+      "level": "intermediate",
+      "text": "Reactで遅延ローディング（Lazy Loading）を実装する方法はどれですか？",
+      "options": ["React.lazy()とSuspense", "import()のみ", "useEffect()を使用", "setTimeout()を使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "`React.lazy()`でコンポーネントを遅延インポートし、`Suspense`コンポーネントでローディング状態を管理します。"
+    },
+    {
+      "id": 38,
+      "level": "intermediate",
+      "text": "ReactでSuspenseコンポーネントの主な用途は何ですか？",
+      "options": ["非同期コンポーネントのローディング状態管理", "エラーハンドリング", "状態管理", "ルーティング"],
+      "correctAnswerIndex": 0,
+      "explanation": "`Suspense`は、遅延ローディングコンポーネントやデータフェッチのローディング状態を宣言的に管理するために使用されます。"
+    },
+    {
+      "id": 39,
+      "level": "intermediate",
+      "text": "Reactで制御されていないコンポーネント（Uncontrolled Component）とは何ですか？",
+      "options": ["refを使用してDOM要素に直接アクセスするコンポーネント", "propsを受け取らないコンポーネント", "stateを持たないコンポーネント", "エラーが発生するコンポーネント"],
+      "correctAnswerIndex": 0,
+      "explanation": "制御されていないコンポーネントは、Reactのstateではなくrefを使用してフォーム要素のDOM値に直接アクセスします。"
+    },
+    {
+      "id": 40,
+      "level": "intermediate",
+      "text": "ReactでカスタムHookを作成する際のルールはどれですか？",
+      "options": ["関数名は'use'で始める", "classを使用する", "export defaultを使用する", "asyncを使用する"],
+      "correctAnswerIndex": 0,
+      "explanation": "カスタムHookは関数名が'use'で始まり、他のHookを呼び出すことができる特別な関数です。"
+    },
+    {
+      "id": 41,
+      "level": "intermediate",
+      "text": "Reactでイベント処理におけるSyntheticEventの特徴は何ですか？",
+      "options": ["ブラウザ間の互換性を提供", "パフォーマンスが向上する", "メモリ使用量が少ない", "セキュリティが向上する"],
+      "correctAnswerIndex": 0,
+      "explanation": "SyntheticEventは、Reactが提供するブラウザ横断的なイベントオブジェクトで、異なるブラウザ間での一貫した動作を保証します。"
+    },
+    {
+      "id": 42,
+      "level": "intermediate",
+      "text": "ReactでStrict Modeの目的は何ですか？",
+      "options": ["開発時の潜在的問題を検出する", "パフォーマンスを向上させる", "プロダクションビルドを最適化", "エラーを自動修正する"],
+      "correctAnswerIndex": 0,
+      "explanation": "`React.StrictMode`は開発モードでのみ動作し、非推奨のAPI使用や潜在的な問題を検出するためのツールです。"
+    },
+    {
+      "id": 43,
+      "level": "intermediate",
+      "text": "Reactで状態更新が非同期的に実行される理由は何ですか？",
+      "options": ["パフォーマンス最適化のため", "メモリ節約のため", "エラー防止のため", "セキュリティのため"],
+      "correctAnswerIndex": 0,
+      "explanation": "ReactはバッチングというプロセスでsetState呼び出しをグループ化し、不要な再レンダリングを避けてパフォーマンスを最適化します。"
+    },
+    {
+      "id": 44,
+      "level": "intermediate",
+      "text": "ReactでforwardRefの目的は何ですか？",
+      "options": ["親コンポーネントから子コンポーネントのrefにアクセス", "propsを転送する", "stateを転送する", "イベントを転送する"],
+      "correctAnswerIndex": 0,
+      "explanation": "`forwardRef`を使用すると、親コンポーネントが子コンポーネント内のDOM要素やコンポーネントインスタンスに直接アクセスできます。"
+    },
+    {
+      "id": 45,
+      "level": "intermediate",
+      "text": "Reactでコンポーネントの表示名を設定する方法はどれですか？",
+      "options": ["displayName プロパティ", "name プロパティ", "title プロパティ", "label プロパティ"],
+      "correctAnswerIndex": 0,
+      "explanation": "`displayName`プロパティを設定すると、React DevToolsでコンポーネントの識別が容易になります。"
+    },
+    {
+      "id": 46,
+      "level": "intermediate",
+      "text": "ReactでPropTypesの目的は何ですか？",
+      "options": ["プロパティの型チェック", "パフォーマンス向上", "メモリ管理", "セキュリティ"],
+      "correctAnswerIndex": 0,
+      "explanation": "PropTypesは、コンポーネントが受け取るpropsの型を検証し、開発時に型の不整合を検出するためのライブラリです。"
+    },
+    {
+      "id": 47,
+      "level": "intermediate",
+      "text": "ReactでuseImperativeHandleフックの用途は何ですか？",
+      "options": ["親コンポーネントに公開するインスタンス値をカスタマイズ", "状態管理", "副作用処理", "メモ化"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useImperativeHandle`は`forwardRef`と組み合わせて使用し、親コンポーネントに公開するインスタンス値をカスタマイズします。"
+    },
+    {
+      "id": 48,
+      "level": "intermediate",
+      "text": "Reactで並行機能（Concurrent Features）の利点は何ですか？",
+      "options": ["UIの応答性向上", "メモリ使用量削減", "バンドルサイズ削減", "セキュリティ向上"],
+      "correctAnswerIndex": 0,
+      "explanation": "並行機能は、重い処理中でもUIの応答性を保ち、ユーザーインタラクションに優先順位を付けて処理できます。"
+    },
+    {
+      "id": 49,
+      "level": "intermediate",
+      "text": "ReactでuseTransitionフックの目的は何ですか？",
+      "options": ["状態更新の優先度を下げる", "アニメーション効果", "ページ遷移", "データ変換"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useTransition`は状態更新を非緊急として扱い、より重要な更新（ユーザー入力など）を優先させるために使用されます。"
+    },
+    {
+      "id": 50,
+      "level": "intermediate",
+      "text": "ReactでuseDeferredValueフックの用途は何ですか？",
+      "options": ["値の更新を遅延させてパフォーマンス向上", "非同期処理", "メモリ管理", "エラーハンドリング"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useDeferredValue`は値の更新を遅延させ、より緊急な更新を優先することでUIの応答性を向上させます。"
+    },
+    {
+      "id": 51,
+      "level": "advanced",
+      "text": "ReactでuseLayoutEffectとuseEffectの主な違いは何ですか？",
+      "options": ["実行タイミング（同期 vs 非同期）", "パフォーマンス", "メモリ使用量", "対応ブラウザ"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useLayoutEffect`は DOM 変更後、ブラウザのペイント前に同期的に実行されます。`useEffect`は非同期的に実行されます。"
+    },
+    {
+      "id": 52,
+      "level": "advanced",
+      "text": "ReactでFiberアーキテクチャの主な利点は何ですか？",
+      "options": ["作業を中断・再開できる", "メモリ使用量削減", "バンドルサイズ削減", "セキュリティ向上"],
+      "correctAnswerIndex": 0,
+      "explanation": "Fiberは再構築されたReactのコア部分で、レンダリング作業を小さな単位に分割し、優先度に基づいて中断・再開できます。"
+    },
+    {
+      "id": 53,
+      "level": "advanced",
+      "text": "ReactでReconciliation（差分検出）アルゴリズムの時間計算量は何ですか？",
+      "options": ["O(n)", "O(n²)", "O(n³)", "O(log n)"],
+      "correctAnswerIndex": 0,
+      "explanation": "ReactのReconciliationアルゴリズムは O(n) の線形時間で動作するよう最適化されており、従来の O(n³) から大幅に改善されています。"
+    },
+    {
+      "id": 54,
+      "level": "advanced",
+      "text": "React Server Componentsの主な利点は何ですか？",
+      "options": ["サーバーサイドでコンポーネントをレンダリング", "クライアントサイドパフォーマンス向上", "メモリ使用量削減", "セキュリティ向上"],
+      "correctAnswerIndex": 0,
+      "explanation": "React Server Componentsはサーバーで実行され、結果のみがクライアントに送信されるため、バンドルサイズの削減と初期ロード時間の短縮が可能です。"
+    },
+    {
+      "id": 55,
+      "level": "advanced",
+      "text": "Reactでメモリリークを防ぐベストプラクティスはどれですか？",
+      "options": ["useEffectのクリーンアップ関数を適切に実装", "useState の初期値を null に設定", "props の検証を行う", "key 属性を設定する"],
+      "correctAnswerIndex": 0,
+      "explanation": "useEffectでイベントリスナーやタイマーを設定した場合、クリーンアップ関数でそれらを適切に解除することでメモリリークを防げます。"
+    },
+    {
+      "id": 56,
+      "level": "advanced",
+      "text": "ReactでCode Splittingを実装する際の推奨アプローチはどれですか？",
+      "options": ["ルートレベルでの分割", "すべてのコンポーネントを分割", "外部ライブラリのみ分割", "状態管理部分のみ分割"],
+      "correctAnswerIndex": 0,
+      "explanation": "ルートレベル（ページコンポーネント単位）での分割が最も効果的で、ユーザーが実際に必要とするコードのみを読み込めます。"
+    },
+    {
+      "id": 57,
+      "level": "advanced",
+      "text": "ReactでTime Slicingの目的は何ですか？",
+      "options": ["レンダリング作業を小さな単位に分割", "アニメーション処理", "データ取得の最適化", "エラーハンドリング"],
+      "correctAnswerIndex": 0,
+      "explanation": "Time Slicingは重いレンダリング作業を小さな「タイムスライス」に分割し、ブラウザが他のタスク（ユーザー入力など）を処理できる時間を確保します。"
+    },
+    {
+      "id": 58,
+      "level": "advanced",
+      "text": "ReactでProfiling APIの用途は何ですか？",
+      "options": ["コンポーネントのパフォーマンス測定", "エラーの追跡", "ネットワーク監視", "メモリ使用量監視"],
+      "correctAnswerIndex": 0,
+      "explanation": "Profiling APIは、コンポーネントのレンダリング時間やre-render回数を測定し、パフォーマンスのボトルネックを特定するために使用されます。"
+    },
+    {
+      "id": 59,
+      "level": "advanced",
+      "text": "ReactでHydrateの概念は何を指しますか？",
+      "options": ["サーバーレンダリングされたHTMLにJavaScript機能を追加", "コンポーネントの再レンダリング", "状態の復元", "DOM の更新"],
+      "correctAnswerIndex": 0,
+      "explanation": "Hydrateは、サーバーサイドレンダリング（SSR）で生成されたHTMLに対して、クライアントサイドでイベントハンドラーや状態を「水和」（追加）するプロセスです。"
+    },
+    {
+      "id": 60,
+      "level": "advanced",
+      "text": "ReactでBatch Updatesの仕組みについて正しいものはどれですか？",
+      "options": ["複数のsetStateを一度にまとめて処理", "データベースへの一括更新", "ファイルの一括読み込み", "画像の一括処理"],
+      "correctAnswerIndex": 0,
+      "explanation": "Reactは同一イベントハンドラー内で複数の setState 呼び出しをバッチング（まとめて処理）し、再レンダリングの回数を最小化します。"
+    },
+    {
+      "id": 61,
+      "level": "advanced",
+      "text": "ReactでConcurrent Modeにおける優先度の概念について正しいものはどれですか？",
+      "options": ["ユーザー入力が最高優先度", "すべて同じ優先度", "古い更新が高優先度", "ランダムに決定"],
+      "correctAnswerIndex": 0,
+      "explanation": "Concurrent Modeでは、ユーザー入力（クリック、タイピングなど）が最高優先度を持ち、他の更新よりも優先的に処理されます。"
+    },
+    {
+      "id": 62,
+      "level": "advanced",
+      "text": "Reactでパフォーマンス最適化の際、避けるべきアンチパターンはどれですか？",
+      "options": ["インラインオブジェクトの props への渡し", "key属性の使用", "useCallback の使用", "React.memo の使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "インラインオブジェクト（`style={{color: 'red'}}`など）をpropsに渡すと、レンダリング毎に新しいオブジェクトが作成され、不要な再レンダリングの原因になります。"
+    },
+    {
+      "id": 63,
+      "level": "advanced",
+      "text": "ReactでSuspense for Data Fetchingの利点は何ですか？",
+      "options": ["宣言的なデータ取得とローディング管理", "データ取得速度向上", "メモリ使用量削減", "セキュリティ向上"],
+      "correctAnswerIndex": 0,
+      "explanation": "Suspense for Data Fetchingにより、データ取得の状態管理を宣言的に行え、ローディング状態の管理が簡素化されます。"
+    },
+    {
+      "id": 64,
+      "level": "advanced",
+      "text": "ReactでError Boundaryがキャッチできないエラーはどれですか？",
+      "options": ["イベントハンドラ内のエラー", "レンダリング中のエラー", "ライフサイクルメソッド内のエラー", "子コンポーネントのエラー"],
+      "correctAnswerIndex": 0,
+      "explanation": "Error Boundaryは、イベントハンドラ、非同期コード、サーバーサイドレンダリング中のエラーはキャッチできません。"
+    },
+    {
+      "id": 65,
+      "level": "advanced",
+      "text": "ReactでuseDebugValueフックの用途は何ですか？",
+      "options": ["React DevToolsでカスタムフックのデバッグ情報表示", "エラーログ出力", "パフォーマンス測定", "状態の検証"],
+      "correctAnswerIndex": 0,
+      "explanation": "`useDebugValue`は、React DevToolsでカスタムフックのデバッグに役立つ情報を表示するためのフックです。"
+    },
+    {
+      "id": 66,
+      "level": "advanced",
+      "text": "ReactでStrictEffectsの動作について正しいものはどれですか？",
+      "options": ["useEffectを二重実行してバグを検出", "useEffectの実行を禁止", "useEffectの実行を遅延", "useEffectを高速化"],
+      "correctAnswerIndex": 0,
+      "explanation": "StrictMode内では、useEffectが意図的に二重実行されることで、適切なクリーンアップが実装されているかを検証します。"
+    },
+    {
+      "id": 67,
+      "level": "advanced",
+      "text": "ReactでRender-as-You-Fetch パターンの利点は何ですか？",
+      "options": ["データ取得とレンダリングの並列化", "メモリ使用量削減", "セキュリティ向上", "コードサイズ削減"],
+      "correctAnswerIndex": 0,
+      "explanation": "Render-as-You-Fetchは、コンポーネントのレンダリングを開始すると同時にデータの取得も始めることで、全体的な読み込み時間を短縮します。"
+    },
+    {
+      "id": 68,
+      "level": "advanced",
+      "text": "ReactでTree Shakingを最大化するためのベストプラクティスはどれですか？",
+      "options": ["ESモジュールを使用し、名前付きエクスポートを活用", "CommonJSを使用", "全てdefault exportで統一", "大きなライブラリを一括インポート"],
+      "correctAnswerIndex": 0,
+      "explanation": "ESモジュールの名前付きエクスポートを使用することで、バンドラーが不要なコードを効率的に除去（Tree Shaking）できます。"
+    },
+    {
+      "id": 69,
+      "level": "advanced",
+      "text": "ReactでmicroFrontend アーキテクチャを実装する際の主な課題は何ですか？",
+      "options": ["状態管理の複雑化", "パフォーマンス向上", "開発速度向上", "保守性向上"],
+      "correctAnswerIndex": 0,
+      "explanation": "microFrontendでは、複数のReactアプリケーション間での状態管理、ルーティング、スタイルの分離が主な技術的課題となります。"
+    },
+    {
+      "id": 70,
+      "level": "advanced",
+      "text": "ReactでWebAssembly（WASM）を統合する際の利点は何ですか？",
+      "options": ["計算集約的処理の高速化", "バンドルサイズ削減", "開発体験向上", "デバッグ容易性"],
+      "correctAnswerIndex": 0,
+      "explanation": "WebAssemblyをReactアプリケーションに統合することで、画像処理、暗号化、数値計算などの重い処理を高速化できます。"
+    },
+    {
+      "id": 71,
+      "level": "advanced",
+      "text": "ReactでAutomaticRuntime JSX Transformの利点は何ですか？",
+      "options": ["React のインポートが不要になる", "パフォーマンス向上", "バンドルサイズ増大", "デバッグ機能追加"],
+      "correctAnswerIndex": 0,
+      "explanation": "新しいJSX Transformにより、JSXを使用するファイルで`import React from 'react'`を記述する必要がなくなりました。"
+    },
+    {
+      "id": 72,
+      "level": "advanced",
+      "text": "ReactでStartTransitionの実装における注意点は何ですか？",
+      "options": ["緊急でない更新にのみ使用する", "すべての更新に使用する", "非同期処理でのみ使用", "エラー処理でのみ使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "`startTransition`は、検索結果の表示など緊急でない更新にのみ使用し、ユーザー入力の即座な反映には使用しません。"
+    },
+    {
+      "id": 73,
+      "level": "advanced",
+      "text": "ReactでOffscreen Componentの概念は何を目的としていますか？",
+      "options": ["非表示コンポーネントの状態保持", "パフォーマンス向上", "メモリ削減", "エラー防止"],
+      "correctAnswerIndex": 0,
+      "explanation": "Offscreen Componentは、タブ切り替えなどで一時的に非表示になったコンポーネントの状態を保持しながら、レンダリング処理を最適化します。"
+    },
+    {
+      "id": 74,
+      "level": "advanced",
+      "text": "ReactでSuspense Boundaryの配置戦略として推奨されるのはどれですか？",
+      "options": ["適切な粒度でユーザー体験を考慮した配置", "すべてのコンポーネントに配置", "ルートレベルにのみ配置", "データ取得コンポーネントにのみ配置"],
+      "correctAnswerIndex": 0,
+      "explanation": "Suspense Boundaryは、ローディング状態がユーザーに与える影響を考慮し、適切な粒度で戦略的に配置する必要があります。"
+    },
+    {
+      "id": 75,
+      "level": "advanced",
+      "text": "ReactでDouble Bufferingの概念が適用される場面はどれですか？",
+      "options": ["画面遷移時のちらつき防止", "メモリ使用量削減", "処理速度向上", "エラー回復"],
+      "correctAnswerIndex": 0,
+      "explanation": "Reactでは内部的にDouble Bufferingのような仕組みを使用して、画面更新時のちらつきを防ぎ、スムーズなユーザーインターフェースを実現しています。"
+    }
+  ]
+}

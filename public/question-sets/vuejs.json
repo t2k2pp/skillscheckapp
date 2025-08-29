@@ -1,0 +1,614 @@
+{
+  "id": "vuejs",
+  "title": "Vue.js フロントエンドスキルテスト",
+  "description": "Vue.jsの基礎から上級まで、プログレッシブフレームワークとしての特徴を活かした開発スキルを測定します。コンポーネント、リアクティブシステム、Composition API まで幅広くカバーします。",
+  "version": "1.0.0",
+  "author": "Vue.js Learning Team",
+  "categories": ["基礎", "中級", "上級"],
+  "totalQuestions": 75,
+  "estimatedTime": "60-75分",
+  "coverImage": "vue-logo.png",
+  "color": "#4FC08D",
+  "questions": [
+    {
+      "id": 1,
+      "level": "beginner",
+      "text": "Vue.jsとは何ですか？",
+      "options": ["プログレッシブJavaScriptフレームワーク", "サーバーサイドフレームワーク", "データベース", "プログラミング言語"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue.jsは、ユーザーインターフェース構築のためのプログレッシブJavaScriptフレームワークです。段階的に導入でき、学習コストが低いことが特徴です。"
+    },
+    {
+      "id": 2,
+      "level": "beginner",
+      "text": "Vue.jsでHTMLテンプレート内に値を表示するための記法はどれですか？",
+      "options": ["{{ }}", "<%= %>", "${ }", "{ }"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue.jsでは、マスタッシュ記法 `{{ }}` を使用してデータをHTMLテンプレートに展開します。"
+    },
+    {
+      "id": 3,
+      "level": "beginner",
+      "text": "Vue.jsでHTML属性にデータをバインドする際に使用するディレクティブはどれですか？",
+      "options": ["v-bind", "v-model", "v-show", "v-if"],
+      "correctAnswerIndex": 0,
+      "explanation": "`v-bind`ディレクティブ（または省略記法`:`）を使用してHTML属性にVueのデータをバインドします。"
+    },
+    {
+      "id": 4,
+      "level": "beginner",
+      "text": "Vue.jsで双方向データバインディングを実現するディレクティブはどれですか？",
+      "options": ["v-model", "v-bind", "v-sync", "v-data"],
+      "correctAnswerIndex": 0,
+      "explanation": "`v-model`はフォーム要素とデータを双方向にバインドするディレクティブです。ユーザー入力が自動的にデータに反映されます。"
+    },
+    {
+      "id": 5,
+      "level": "beginner",
+      "text": "Vue.jsで条件付きレンダリングを行うディレクティブはどれですか？",
+      "options": ["v-if", "v-show", "v-display", "v-render"],
+      "correctAnswerIndex": 0,
+      "explanation": "`v-if`は条件に基づいて要素を条件付きでレンダリングします。`v-show`は表示/非表示を切り替えますが、DOMには要素が存在します。"
+    },
+    {
+      "id": 6,
+      "level": "beginner",
+      "text": "Vue.jsでリストレンダリングを行うディレクティブはどれですか？",
+      "options": ["v-for", "v-repeat", "v-loop", "v-list"],
+      "correctAnswerIndex": 0,
+      "explanation": "`v-for`は配列やオブジェクトに基づいて要素のリストをレンダリングします。"
+    },
+    {
+      "id": 7,
+      "level": "beginner",
+      "text": "Vue.jsでイベントリスナーを追加するディレクティブはどれですか？",
+      "options": ["v-on", "v-event", "v-listener", "v-click"],
+      "correctAnswerIndex": 0,
+      "explanation": "`v-on`ディレクティブ（または省略記法`@`）を使用してイベントリスナーを要素に追加します。"
+    },
+    {
+      "id": 8,
+      "level": "beginner",
+      "text": "Vue.jsでコンポーネントのデータを定義する際に使用するオプションはどれですか？",
+      "options": ["data", "props", "methods", "computed"],
+      "correctAnswerIndex": 0,
+      "explanation": "`data`オプションはコンポーネントのリアクティブなデータを定義します。関数として定義し、オブジェクトを返す必要があります。"
+    },
+    {
+      "id": 9,
+      "level": "beginner",
+      "text": "Vue.jsでメソッドを定義する際に使用するオプションはどれですか？",
+      "options": ["methods", "functions", "actions", "handlers"],
+      "correctAnswerIndex": 0,
+      "explanation": "`methods`オプションにコンポーネントで使用するメソッドを定義します。イベントハンドラーなどで使用されます。"
+    },
+    {
+      "id": 10,
+      "level": "beginner",
+      "text": "Vue.jsで計算プロパティを定義する際に使用するオプションはどれですか？",
+      "options": ["computed", "calculated", "derived", "dynamic"],
+      "correctAnswerIndex": 0,
+      "explanation": "`computed`プロパティは依存するデータに基づいて動的に計算される値を定義します。キャッシュ機能があります。"
+    },
+    {
+      "id": 11,
+      "level": "beginner",
+      "text": "Vue.jsでデータの変化を監視する際に使用するオプションはどれですか？",
+      "options": ["watch", "observe", "monitor", "track"],
+      "correctAnswerIndex": 0,
+      "explanation": "`watch`オプションは特定のデータの変化を監視し、変化時にコールバック関数を実行します。"
+    },
+    {
+      "id": 12,
+      "level": "beginner",
+      "text": "Vue.jsで親コンポーネントから子コンポーネントにデータを渡す方法はどれですか？",
+      "options": ["props", "data", "emit", "slot"],
+      "correctAnswerIndex": 0,
+      "explanation": "`props`を使用して親コンポーネントから子コンポーネントにデータを渡します。子コンポーネント側で受け取るプロパティを定義します。"
+    },
+    {
+      "id": 13,
+      "level": "beginner",
+      "text": "Vue.jsで子コンポーネントから親コンポーネントにイベントを送信する方法はどれですか？",
+      "options": ["$emit", "$send", "$notify", "$dispatch"],
+      "correctAnswerIndex": 0,
+      "explanation": "`$emit`メソッドを使用して子コンポーネントから親コンポーネントにカスタムイベントを送信できます。"
+    },
+    {
+      "id": 14,
+      "level": "beginner",
+      "text": "Vue.jsでコンポーネントのライフサイクルフックの中で、DOMにアクセスできるものはどれですか？",
+      "options": ["mounted", "created", "beforeCreate", "beforeMount"],
+      "correctAnswerIndex": 0,
+      "explanation": "`mounted`フックは、コンポーネントがDOMにマウントされた後に呼び出されるため、DOM要素にアクセスできます。"
+    },
+    {
+      "id": 15,
+      "level": "beginner",
+      "text": "Vue.jsでDOM要素への参照を取得する方法はどれですか？",
+      "options": ["$refs", "$el", "$dom", "$element"],
+      "correctAnswerIndex": 0,
+      "explanation": "`ref`属性を要素に設定し、`$refs`でその要素にアクセスできます。"
+    },
+    {
+      "id": 16,
+      "level": "beginner",
+      "text": "Vue.jsでコンポーネントを別のファイルで定義し、使用するために必要な処理はどれですか？",
+      "options": ["export/import", "require/module", "include/define", "load/use"],
+      "correctAnswerIndex": 0,
+      "explanation": "ES6モジュール構文の`export`でコンポーネントをエクスポートし、`import`で他のファイルからインポートします。"
+    },
+    {
+      "id": 17,
+      "level": "beginner",
+      "text": "Vue.jsでグローバルにコンポーネントを登録する方法はどれですか？",
+      "options": ["Vue.component()", "Vue.register()", "Vue.global()", "Vue.define()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`Vue.component(name, options)`でコンポーネントをグローバル登録し、アプリケーション全体で使用できます。"
+    },
+    {
+      "id": 18,
+      "level": "beginner",
+      "text": "Vue.jsでスタイルをコンポーネントにスコープする方法はどれですか？",
+      "options": ["<style scoped>", "<style local>", "<style component>", "<style isolated>"],
+      "correctAnswerIndex": 0,
+      "explanation": "`<style scoped>`を使用すると、CSSスタイルが現在のコンポーネントにのみ適用されます。"
+    },
+    {
+      "id": 19,
+      "level": "beginner",
+      "text": "Vue.jsで動的にクラス名を適用する方法として正しいものはどれですか？",
+      "options": [":class=\"{active: isActive}\"", "class=\"{active: isActive}\"", "v-class=\"{active: isActive}\"", "dynamic-class=\"{active: isActive}\""],
+      "correctAnswerIndex": 0,
+      "explanation": "`v-bind:class`（省略記法`:`）を使用してオブジェクト記法や配列記法で動的にクラスを適用できます。"
+    },
+    {
+      "id": 20,
+      "level": "beginner",
+      "text": "Vue.jsでインラインスタイルを動的に適用する方法はどれですか？",
+      "options": [":style=\"{color: textColor}\"", "style=\"{color: textColor}\"", "v-style=\"{color: textColor}\"", "dynamic-style=\"{color: textColor}\""],
+      "correctAnswerIndex": 0,
+      "explanation": "`v-bind:style`を使用してオブジェクト形式でインラインスタイルを動的に適用できます。"
+    },
+    {
+      "id": 21,
+      "level": "beginner",
+      "text": "Vue.jsで要素の表示/非表示を切り替えるディレクティブはどれですか？",
+      "options": ["v-show", "v-if", "v-display", "v-visible"],
+      "correctAnswerIndex": 0,
+      "explanation": "`v-show`はCSS の`display`プロパティを使って要素の表示/非表示を切り替えます。要素は常にDOMに存在します。"
+    },
+    {
+      "id": 22,
+      "level": "beginner",
+      "text": "Vue.jsでv-forを使用する際に必ず設定すべき属性はどれですか？",
+      "options": ["key", "id", "index", "unique"],
+      "correctAnswerIndex": 0,
+      "explanation": "`key`属性は、Vueが効率的にリストの変更を追跡するために必要です。一意の値を設定する必要があります。"
+    },
+    {
+      "id": 23,
+      "level": "beginner",
+      "text": "Vue.jsで単一ファイルコンポーネント（SFC）のファイル拡張子はどれですか？",
+      "options": [".vue", ".sfc", ".component", ".vc"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue.jsの単一ファイルコンポーネントは`.vue`拡張子を使用し、template、script、styleを1つのファイルにまとめます。"
+    },
+    {
+      "id": 24,
+      "level": "beginner",
+      "text": "Vue CLIでVueプロジェクトを作成するコマンドはどれですか？",
+      "options": ["vue create", "vue new", "vue init", "vue generate"],
+      "correctAnswerIndex": 0,
+      "explanation": "`vue create project-name`コマンドでVue CLIを使用してプロジェクトを作成できます。"
+    },
+    {
+      "id": 25,
+      "level": "beginner",
+      "text": "Vue.jsでコンポーネント間で状態を共有する最も基本的な方法はどれですか？",
+      "options": ["親子間でprops/emitを使用", "グローバル変数", "localStorage", "外部ライブラリ"],
+      "correctAnswerIndex": 0,
+      "explanation": "最も基本的な状態共有は、親コンポーネントでstateを管理し、propsで子に渡し、$emitで親に変更を通知する方法です。"
+    },
+    {
+      "id": 26,
+      "level": "intermediate",
+      "text": "Vue.js 3のComposition APIで状態を定義する関数はどれですか？",
+      "options": ["ref", "reactive", "computed", "watch"],
+      "correctAnswerIndex": 0,
+      "explanation": "`ref()`はプリミティブ値をリアクティブにします。`reactive()`はオブジェクトをリアクティブにします。どちらも状態定義に使用されます。"
+    },
+    {
+      "id": 27,
+      "level": "intermediate",
+      "text": "Vue.js 3のComposition APIでライフサイクルフックを使用する方法はどれですか？",
+      "options": ["onMounted, onUpdated などの関数", "mounted, updated などのオプション", "lifecycle オブジェクト", "hooks 配列"],
+      "correctAnswerIndex": 0,
+      "explanation": "Composition APIでは`onMounted()`, `onUpdated()`などの関数をインポートして使用します。"
+    },
+    {
+      "id": 28,
+      "level": "intermediate",
+      "text": "Vue.js 3で複数のコンポーネント間で状態を共有するために推奨される方法はどれですか？",
+      "options": ["provide/inject", "グローバル変数", "localStorage", "EventBus"],
+      "correctAnswerIndex": 0,
+      "explanation": "`provide/inject`は依存性注入パターンで、祖先コンポーネントから子孫コンポーネントに直接データを渡せます。"
+    },
+    {
+      "id": 29,
+      "level": "intermediate",
+      "text": "Vue Routerでプログラマティックナビゲーションを行う方法はどれですか？",
+      "options": ["$router.push()", "$route.push()", "router.navigate()", "this.navigate()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`$router.push()`でプログラムからルートを変更できます。`$route`は現在のルート情報を含むオブジェクトです。"
+    },
+    {
+      "id": 30,
+      "level": "intermediate",
+      "text": "Vue Routerでルートパラメータを取得する方法はどれですか？",
+      "options": ["$route.params", "$router.params", "$route.query", "$router.query"],
+      "correctAnswerIndex": 0,
+      "explanation": "`$route.params`でルートパラメータ（例：`/user/:id`の`:id`）を取得できます。`$route.query`はクエリパラメータです。"
+    },
+    {
+      "id": 31,
+      "level": "intermediate",
+      "text": "Vuexで状態を変更する正しい方法はどれですか？",
+      "options": ["mutation経由", "直接変更", "action経由", "getter経由"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vuexでは状態の変更はmutationを通してのみ行います。これにより状態変更を追跡・デバッグしやすくなります。"
+    },
+    {
+      "id": 32,
+      "level": "intermediate",
+      "text": "Vuexで非同期処理を扱う際に使用するものはどれですか？",
+      "options": ["action", "mutation", "getter", "state"],
+      "correctAnswerIndex": 0,
+      "explanation": "actionは非同期処理を含むことができ、複数のmutationをコミットしたり、他のactionを呼び出したりできます。"
+    },
+    {
+      "id": 33,
+      "level": "intermediate",
+      "text": "Vue.jsでカスタムディレクティブを定義する方法はどれですか？",
+      "options": ["Vue.directive()", "Vue.custom()", "Vue.define()", "Vue.register()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`Vue.directive(name, definition)`でカスタムディレクティブを定義できます。DOM操作の抽象化に使用されます。"
+    },
+    {
+      "id": 34,
+      "level": "intermediate",
+      "text": "Vue.jsでスロット（slot）の主な用途は何ですか？",
+      "options": ["コンテンツ配信", "状態管理", "ルーティング", "データバインディング"],
+      "correctAnswerIndex": 0,
+      "explanation": "スロットは親コンポーネントから子コンポーネントにHTMLコンテンツを渡すためのメカニズムです。"
+    },
+    {
+      "id": 35,
+      "level": "intermediate",
+      "text": "Vue.jsで名前付きスロットを定義する方法はどれですか？",
+      "options": ["<slot name=\"header\">", "<slot id=\"header\">", "<slot type=\"header\">", "<slot class=\"header\">"],
+      "correctAnswerIndex": 0,
+      "explanation": "`name`属性を使用してスロットに名前を付け、`v-slot:name`または`#name`で使用します。"
+    },
+    {
+      "id": 36,
+      "level": "intermediate",
+      "text": "Vue.jsでスコープ付きスロットの用途は何ですか？",
+      "options": ["子コンポーネントのデータを親に渡す", "スタイルを適用する", "イベントを処理する", "ルーティングを制御する"],
+      "correctAnswerIndex": 0,
+      "explanation": "スコープ付きスロットは、子コンポーネントから親コンポーネントにデータを渡し、親でレンダリング内容を決定できます。"
+    },
+    {
+      "id": 37,
+      "level": "intermediate",
+      "text": "Vue.jsでmixinを使用する目的は何ですか？",
+      "options": ["コンポーネント間でオプションを共有", "状態を管理", "ルーティングを制御", "スタイルを適用"],
+      "correctAnswerIndex": 0,
+      "explanation": "mixinは複数のコンポーネント間で共通のオプション（data、methods、computedなど）を共有するメカニズムです。"
+    },
+    {
+      "id": 38,
+      "level": "intermediate",
+      "text": "Vue.jsでフィルターを定義する方法はどれですか？",
+      "options": ["filters オプション", "methods オプション", "computed オプション", "watch オプション"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue 2では`filters`オプションでフィルターを定義し、テンプレートでパイプ記号 `|` で使用できます。Vue 3では削除されました。"
+    },
+    {
+      "id": 39,
+      "level": "intermediate",
+      "text": "Vue.js 3でTeleportコンポーネントの目的は何ですか？",
+      "options": ["DOM要素を別の場所にレンダリング", "コンポーネント間通信", "状態管理", "ルーティング"],
+      "correctAnswerIndex": 0,
+      "explanation": "Teleportは、コンポーネントの一部を別のDOM要素（通常は親コンポーネントの外）にレンダリングします。モーダルなどに使用されます。"
+    },
+    {
+      "id": 40,
+      "level": "intermediate",
+      "text": "Vue.js 3でFragmentの利点は何ですか？",
+      "options": ["複数のルート要素を持てる", "パフォーマンス向上", "メモリ使用量削減", "セキュリティ向上"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue 3では複数のルート要素を持つコンポーネントを作成でき、不要なラッパー要素を削除できます。"
+    },
+    {
+      "id": 41,
+      "level": "intermediate",
+      "text": "Vue.jsで動的コンポーネントを使用する方法はどれですか？",
+      "options": ["<component :is=\"componentName\">", "<dynamic :component=\"componentName\">", "<switch :to=\"componentName\">", "<render :component=\"componentName\">"],
+      "correctAnswerIndex": 0,
+      "explanation": "`<component>`要素と`:is`属性を使用して、動的にコンポーネントを切り替えられます。"
+    },
+    {
+      "id": 42,
+      "level": "intermediate",
+      "text": "Vue.jsでコンポーネントの状態を保持しながら切り替える方法はどれですか？",
+      "options": ["<keep-alive>", "<preserve>", "<cache>", "<maintain>"],
+      "correctAnswerIndex": 0,
+      "explanation": "`<keep-alive>`でコンポーネントをラップすると、コンポーネントの切り替え時に状態とDOMを保持できます。"
+    },
+    {
+      "id": 43,
+      "level": "intermediate",
+      "text": "Vue.jsで非同期コンポーネントを定義する方法はどれですか？",
+      "options": ["() => import('./Component.vue')", "async Component()", "Promise.resolve(Component)", "Vue.asyncComponent()"],
+      "correctAnswerIndex": 0,
+      "explanation": "動的インポート `() => import()` を使用して非同期コンポーネントを定義し、コード分割が可能になります。"
+    },
+    {
+      "id": 44,
+      "level": "intermediate",
+      "text": "Vue.jsでイベント修飾子（.prevent）の目的は何ですか？",
+      "options": ["デフォルト動作を防ぐ", "イベントバブリングを停止", "イベント伝播を停止", "イベントを遅延"],
+      "correctAnswerIndex": 0,
+      "explanation": "`.prevent`修飾子は`event.preventDefault()`を自動的に呼び出し、デフォルト動作（フォーム送信など）を防ぎます。"
+    },
+    {
+      "id": 45,
+      "level": "intermediate",
+      "text": "Vue.jsでキー修飾子の使用例として正しいものはどれですか？",
+      "options": ["@keyup.enter", "@key.enter", "@keyboard.enter", "@input.enter"],
+      "correctAnswerIndex": 0,
+      "explanation": "`@keyup.enter`のようにキーイベントに修飾子を付けることで、特定のキーでのみイベントを実行できます。"
+    },
+    {
+      "id": 46,
+      "level": "intermediate",
+      "text": "Vue.js 3のComposition APIで依存配列を持つwatchの正しい構文はどれですか？",
+      "options": ["watch(source, callback, options)", "watch(callback, dependencies)", "watchEffect(callback)", "observer(source, callback)"],
+      "correctAnswerIndex": 0,
+      "explanation": "Composition APIの`watch()`は監視対象、コールバック、オプションを引数として取ります。"
+    },
+    {
+      "id": 47,
+      "level": "intermediate",
+      "text": "Vue.jsでprop validation における型チェックの書き方はどれですか？",
+      "options": ["props: { name: String }", "props: { name: 'string' }", "props: { name: typeof String }", "props: { name: {string} }"],
+      "correctAnswerIndex": 0,
+      "explanation": "プロパティの型は`String`、`Number`、`Boolean`などのコンストラクタ関数で指定します。"
+    },
+    {
+      "id": 48,
+      "level": "intermediate",
+      "text": "Vue.jsでwatcherの即座実行を設定する方法はどれですか？",
+      "options": ["{ immediate: true }", "{ now: true }", "{ instant: true }", "{ direct: true }"],
+      "correctAnswerIndex": 0,
+      "explanation": "watch オプションに`{ immediate: true }`を設定すると、コンポーネント作成時にwatcherが即座に実行されます。"
+    },
+    {
+      "id": 49,
+      "level": "intermediate",
+      "text": "Vue.jsで深いオブジェクトの変化を監視する方法はどれですか？",
+      "options": ["{ deep: true }", "{ nested: true }", "{ recursive: true }", "{ complete: true }"],
+      "correctAnswerIndex": 0,
+      "explanation": "watch オプションに`{ deep: true }`を設定すると、ネストしたオブジェクトのプロパティ変化も監視できます。"
+    },
+    {
+      "id": 50,
+      "level": "intermediate",
+      "text": "Vue.jsでコンポーネントの通信パターンでないものはどれですか？",
+      "options": ["direct mutation", "props down", "events up", "provide/inject"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue.jsでは直接的な状態変更（direct mutation）は推奨されません。propsとevents、またはprovide/injectを使用します。"
+    },
+    {
+      "id": 51,
+      "level": "advanced",
+      "text": "Vue.js 3のProxyベースのリアクティブシステムの利点は何ですか？",
+      "options": ["配列の変更メソッドも追跡可能", "パフォーマンス向上", "メモリ使用量削減", "型安全性向上"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue 3のProxyベースシステムは、配列のインデックス操作や動的プロパティの追加・削除も自動的に追跡できます。"
+    },
+    {
+      "id": 52,
+      "level": "advanced",
+      "text": "Vue.js 3でカスタムレンダラーを作成する主な用途は何ですか？",
+      "options": ["非DOM環境でのレンダリング", "パフォーマンス最適化", "コンポーネント分離", "状態管理"],
+      "correctAnswerIndex": 0,
+      "explanation": "カスタムレンダラーは、Web以外の環境（モバイル、デスクトップ、WebGL）でVueのリアクティブシステムを活用できます。"
+    },
+    {
+      "id": 53,
+      "level": "advanced",
+      "text": "Vue.js 3のTree-shakingの利点は何ですか？",
+      "options": ["未使用コードの除去", "実行速度向上", "メモリ使用量削減", "デバッグ容易性"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue 3はESモジュール形式で設計され、バンドラーが使用されていない機能を自動的に除去（Tree-shaking）できます。"
+    },
+    {
+      "id": 54,
+      "level": "advanced",
+      "text": "Vue.js 3のSuspenseコンポーネントの主な用途は何ですか？",
+      "options": ["非同期コンポーネントのローディング状態管理", "エラーハンドリング", "ルート遷移", "状態管理"],
+      "correctAnswerIndex": 0,
+      "explanation": "Suspenseは非同期コンポーネントや非同期setup()の読み込み中にフォールバックコンテンツを表示します。"
+    },
+    {
+      "id": 55,
+      "level": "advanced",
+      "text": "Vue.jsでコンパイル時最適化の例として正しくないものはどれですか？",
+      "options": ["動的プロパティの実行時解決", "静的ホイスティング", "パッチフラグ", "ブロックツリー"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue 3は静的ホイスティング、パッチフラグ、ブロックツリーによりコンパイル時最適化を行いますが、動的プロパティは実行時に解決されます。"
+    },
+    {
+      "id": 56,
+      "level": "advanced",
+      "text": "Vue.jsのSSR（サーバーサイドレンダリング）で hydration とは何ですか？",
+      "options": ["静的HTMLにJavaScript機能を追加", "サーバーでのHTML生成", "SEO最適化", "初期データの取得"],
+      "correctAnswerIndex": 0,
+      "explanation": "Hydrationは、サーバーでレンダリングされた静的HTMLに、クライアントサイドでVueの機能（イベントリスナー、リアクティブシステムなど）を追加するプロセスです。"
+    },
+    {
+      "id": 57,
+      "level": "advanced",
+      "text": "Vue.jsでメモリリークを避けるベストプラクティスはどれですか？",
+      "options": ["beforeDestroy/beforeUnmountでクリーンアップ", "データを null に設定", "コンポーネントを小さくする", "computedを多用する"],
+      "correctAnswerIndex": 0,
+      "explanation": "コンポーネント破棄時にイベントリスナー、タイマー、購読などを適切にクリーンアップすることでメモリリークを防げます。"
+    },
+    {
+      "id": 58,
+      "level": "advanced",
+      "text": "Vue.js 3のComposition APIで effectScope の目的は何ですか？",
+      "options": ["副作用の自動クリーンアップ", "パフォーマンス測定", "エラーハンドリング", "状態の永続化"],
+      "correctAnswerIndex": 0,
+      "explanation": "`effectScope`は関連する副作用（computed、watch等）をグループ化し、一括でクリーンアップできます。"
+    },
+    {
+      "id": 59,
+      "level": "advanced",
+      "text": "Vue.jsでコンポーネント設計のComposition vs Inheritance の原則について正しいものはどれですか？",
+      "options": ["Compositionを優先し、mixinは避ける", "Inheritanceを優先する", "どちらも同等に使用", "場面によって使い分ける"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue 3では、mixinの代わりにComposition APIやComposablesを使用してコンポーネントの機能を組み合わせることが推奨されます。"
+    },
+    {
+      "id": 60,
+      "level": "advanced",
+      "text": "Vue.jsでリアクティブシステムのパフォーマンス最適化として正しくないものはどれですか？",
+      "options": ["深いオブジェクトを常にリアクティブにする", "shallowRef/shallowReactiveの活用", "不要なwatcherを避ける", "computed の適切な使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "深いオブジェクトを不必要にリアクティブにするとパフォーマンスが低下します。必要に応じてshallowRef/shallowReactiveを使用します。"
+    },
+    {
+      "id": 61,
+      "level": "advanced",
+      "text": "Vue.js 3でv-modelのカスタマイズにおける新しい方式は何ですか？",
+      "options": ["update:modelValueイベント", "input イベント", "change イベント", "sync イベント"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue 3では`update:modelValue`イベントがv-modelの標準となり、複数のv-modelも`update:propName`で対応できます。"
+    },
+    {
+      "id": 62,
+      "level": "advanced",
+      "text": "Vue.jsでWebComponentsとの相互運用性において重要な設定はどれですか？",
+      "options": ["compilerOptions.isCustomElement", "components.custom", "app.config.customElements", "Vue.config.custom"],
+      "correctAnswerIndex": 0,
+      "explanation": "`compilerOptions.isCustomElement`を設定することで、VueがWebComponentsを適切に認識し、Vueコンポーネントと区別できます。"
+    },
+    {
+      "id": 63,
+      "level": "advanced",
+      "text": "Vue.jsでTypeScriptとの統合における型推論の改善方法はどれですか？",
+      "options": ["Composition APIの使用", "Options APIのみ使用", "PropTypeの使用", "JavaScript の使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "Composition APIはTypeScriptとの相性が良く、より良い型推論とIntelliSenseサポートを提供します。"
+    },
+    {
+      "id": 64,
+      "level": "advanced",
+      "text": "Vue.jsでBundle分析とパフォーマンス最適化のツールとして適切でないものはどれですか？",
+      "options": ["Vue DevTools のみ", "webpack-bundle-analyzer", "Vue DevTools Performance", "Lighthouse"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue DevToolsは有用ですが、包括的な分析には webpack-bundle-analyzer、Lighthouse などの追加ツールが必要です。"
+    },
+    {
+      "id": 65,
+      "level": "advanced",
+      "text": "Vue.jsでPWA（Progressive Web App）を実装する際の重要な考慮事項はどれですか？",
+      "options": ["Service Worker との統合", "コンポーネント分割", "状態管理", "ルーティング"],
+      "correctAnswerIndex": 0,
+      "explanation": "PWAではService Workerによるキャッシング戦略とオフライン対応が重要で、Vueアプリケーションとの適切な統合が必要です。"
+    },
+    {
+      "id": 66,
+      "level": "advanced",
+      "text": "Vue.jsでマイクロフロントエンド アーキテクチャを実装する際の課題はどれですか？",
+      "options": ["Vue インスタンスの分離と通信", "パフォーマンス向上", "開発速度向上", "保守性向上"],
+      "correctAnswerIndex": 0,
+      "explanation": "マイクロフロントエンドでは、独立したVueアプリケーション間での適切な分離と必要に応じた通信が技術的課題となります。"
+    },
+    {
+      "id": 67,
+      "level": "advanced",
+      "text": "Vue.js 3の<script setup>構文の利点として正しくないものはどれですか？",
+      "options": ["ランタイムパフォーマンスの向上", "簡潔な記法", "より良いTypeScript推論", "自動的なコンポーネント登録"],
+      "correctAnswerIndex": 0,
+      "explanation": "`<script setup>`は主にDX（開発体験）の向上に焦点を当てており、ランタイムパフォーマンスには大きな影響はありません。"
+    },
+    {
+      "id": 68,
+      "level": "advanced",
+      "text": "Vue.jsでCode Splittingの戦略として推奨されるのはどれですか？",
+      "options": ["ルートベースとコンポーネントベースの組み合わせ", "すべてのコンポーネントを分割", "ライブラリのみ分割", "分割しない"],
+      "correctAnswerIndex": 0,
+      "explanation": "効果的なCode Splittingは、主要なルートレベルで分割し、必要に応じて大きなコンポーネントも分割する戦略が推奨されます。"
+    },
+    {
+      "id": 69,
+      "level": "advanced",
+      "text": "Vue.jsでメタフレームワーク（Nuxt.js）を使用する主な利点はどれですか？",
+      "options": ["SSR/SSG の簡易実装", "バンドルサイズ削減", "開発速度向上のみ", "Vue バージョン管理"],
+      "correctAnswerIndex": 0,
+      "explanation": "Nuxt.jsなどのメタフレームワークは、SSR、SSG、ルーティング、最適化などの複雑な設定を抽象化し、簡単に実装できます。"
+    },
+    {
+      "id": 70,
+      "level": "advanced",
+      "text": "Vue.js 3でPatch Flag最適化の仕組みについて正しいものはどれですか？",
+      "options": ["動的な要素のみ更新", "すべて更新", "静的要素のみ更新", "ランダム更新"],
+      "correctAnswerIndex": 0,
+      "explanation": "Patch Flagは要素の動的な部分にマークを付け、再レンダリング時に変更が必要な部分のみを効率的に更新します。"
+    },
+    {
+      "id": 71,
+      "level": "advanced",
+      "text": "Vue.jsでE2Eテストのベストプラクティスとして適切でないものはどれですか？",
+      "options": ["すべてのコンポーネントを個別テスト", "ユーザージャーニーテスト", "クリティカルパステスト", "回帰テスト"],
+      "correctAnswerIndex": 0,
+      "explanation": "E2Eテストではユーザーの実際の利用シナリオに焦点を当て、個別コンポーネントの詳細テストはUnit/Integrationテストで行います。"
+    },
+    {
+      "id": 72,
+      "level": "advanced",
+      "text": "Vue.jsでConcurrent Featuresに相当する概念はどれですか？",
+      "options": ["Vue 3には直接的な実装はない", "async/await", "Suspense", "Teleport"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vue 3にはReactのConcurrent Modeのような包括的な機能はありませんが、SuspenseやTeleportなど部分的な機能があります。"
+    },
+    {
+      "id": 73,
+      "level": "advanced",
+      "text": "Vue.jsでモジュール連邦（Module Federation）を実装する際の考慮事項はどれですか？",
+      "options": ["Vueバージョンとプラグインの互換性", "パフォーマンス向上のみ", "開発体験のみ", "コストのみ"],
+      "correctAnswerIndex": 0,
+      "explanation": "Module Federationでは、異なるアプリケーション間でのVueバージョン、プラグイン、依存関係の互換性確保が重要です。"
+    },
+    {
+      "id": 74,
+      "level": "advanced",
+      "text": "Vue.jsでWebWorkerとの統合における主な用途はどれですか？",
+      "options": ["CPU集約的処理の並列化", "UI描画の高速化", "メモリ管理", "ファイルI/O"],
+      "correctAnswerIndex": 0,
+      "explanation": "WebWorkerは画像処理、データ変換、計算処理などCPU集約的なタスクをメインスレッドから分離して実行するために使用されます。"
+    },
+    {
+      "id": 75,
+      "level": "advanced",
+      "text": "Vue.js 3でProxy対応ブラウザでない場合のフォールバック戦略はどれですか？",
+      "options": ["@vue/compat での段階的移行", "Vue 2の継続使用", "別フレームワークへの移行", "機能制限での対応"],
+      "correctAnswerIndex": 0,
+      "explanation": "@vue/compatはVue 2との互換性を保ちながらVue 3への移行を支援し、古いブラウザでの段階的な移行が可能です。"
+    }
+  ]
+}

@@ -1,0 +1,614 @@
+{
+  "id": "vite",
+  "title": "Vite ビルドツールスキルテスト",
+  "description": "Viteの基礎から上級まで、高速な開発体験とモダンなビルドシステムのスキルを測定します。Dev Server、HMR、プラグインシステム、最適化まで幅広くカバーします。",
+  "version": "1.0.0",
+  "author": "Vite Learning Team",
+  "categories": ["基礎", "中級", "上級"],
+  "totalQuestions": 75,
+  "estimatedTime": "60-75分",
+  "coverImage": "vite-logo.png",
+  "color": "#646CFF",
+  "questions": [
+    {
+      "id": 1,
+      "level": "beginner",
+      "text": "Viteとは何ですか？",
+      "options": ["高速なフロントエンドビルドツール", "JavaScriptフレームワーク", "データベース", "サーバーフレームワーク"],
+      "correctAnswerIndex": 0,
+      "explanation": "Viteは、Evan You（Vue.jsの作者）によって開発された高速なフロントエンドビルドツールです。開発時はESMを活用し、本番時はRollupでバンドルします。"
+    },
+    {
+      "id": 2,
+      "level": "beginner",
+      "text": "ViteでプロジェクトをVanilla JSテンプレートで作成するコマンドはどれですか？",
+      "options": ["npm create vite@latest", "vite new", "vite create", "npm init vite"],
+      "correctAnswerIndex": 0,
+      "explanation": "`npm create vite@latest` または `yarn create vite` でViteプロジェクトを作成できます。テンプレート選択画面でVanilla JSを選択できます。"
+    },
+    {
+      "id": 3,
+      "level": "beginner",
+      "text": "Viteの開発サーバーを起動するコマンドはどれですか？",
+      "options": ["npm run dev", "npm start", "vite start", "npm run serve"],
+      "correctAnswerIndex": 0,
+      "explanation": "`npm run dev` または `vite` コマンドで開発サーバーが起動します。デフォルトでポート3000で起動し、高速なHMR（Hot Module Replacement）をサポートします。"
+    },
+    {
+      "id": 4,
+      "level": "beginner",
+      "text": "Viteで本番用ビルドを生成するコマンドはどれですか？",
+      "options": ["npm run build", "npm run prod", "vite compile", "npm run bundle"],
+      "correctAnswerIndex": 0,
+      "explanation": "`npm run build` または `vite build` で本番用の最適化されたビルドを生成します。内部的にRollupを使用します。"
+    },
+    {
+      "id": 5,
+      "level": "beginner",
+      "text": "Viteのホットリロード機能の名前は何ですか？",
+      "options": ["HMR (Hot Module Replacement)", "HRR (Hot Refresh Reload)", "LR (Live Reload)", "AR (Auto Refresh)"],
+      "correctAnswerIndex": 0,
+      "explanation": "ViteはHMR（Hot Module Replacement）をサポートしており、ファイル変更時にページ全体をリロードせずに変更部分のみを更新します。"
+    },
+    {
+      "id": 6,
+      "level": "beginner",
+      "text": "Viteがデフォルトでサポートしているモジュールシステムはどれですか？",
+      "options": ["ESM (ES Modules)", "CommonJS", "AMD", "UMD"],
+      "correctAnswerIndex": 0,
+      "explanation": "ViteはESM（ES Modules）をネイティブサポートしており、開発時には`import/export`を直接ブラウザで実行します。"
+    },
+    {
+      "id": 7,
+      "level": "beginner",
+      "text": "Viteの設定ファイル名はデフォルトで何ですか？",
+      "options": ["vite.config.js", "vite.json", "config.vite.js", "vite-config.js"],
+      "correctAnswerIndex": 0,
+      "explanation": "`vite.config.js`（またはTypeScriptの場合は`vite.config.ts`）がViteの設定ファイルです。"
+    },
+    {
+      "id": 8,
+      "level": "beginner",
+      "text": "Viteで環境変数を定義する際のファイル名はどれですか？",
+      "options": [".env", ".environment", ".config", ".vars"],
+      "correctAnswerIndex": 0,
+      "explanation": "`.env`、`.env.local`、`.env.development`、`.env.production`などのファイルで環境変数を定義できます。"
+    },
+    {
+      "id": 9,
+      "level": "beginner",
+      "text": "Viteで静的アセット（画像、フォントなど）を配置するデフォルトディレクトリはどれですか？",
+      "options": ["public", "assets", "static", "resources"],
+      "correctAnswerIndex": 0,
+      "explanation": "`public`ディレクトリに配置されたファイルは、ビルド時にそのままdistディレクトリにコピーされます。"
+    },
+    {
+      "id": 10,
+      "level": "beginner",
+      "text": "Viteで本番ビルドの出力ディレクトリのデフォルト名は何ですか？",
+      "options": ["dist", "build", "out", "bundle"],
+      "correctAnswerIndex": 0,
+      "explanation": "`dist`ディレクトリにビルド成果物が出力されます。設定で変更することも可能です。"
+    },
+    {
+      "id": 11,
+      "level": "beginner",
+      "text": "ViteでTypeScriptをサポートするために必要な追加設定は何ですか？",
+      "options": ["特に必要なし（標準サポート）", "TypeScript プラグインのインストール", "webpack.config.js の設定", "babel.config.js の設定"],
+      "correctAnswerIndex": 0,
+      "explanation": "ViteはTypeScriptを標準でサポートしており、.tsファイルをそのまま処理できます。tsconfig.jsonがあれば自動的に認識されます。"
+    },
+    {
+      "id": 12,
+      "level": "beginner",
+      "text": "ViteでCSSファイルをインポートする方法はどれですか？",
+      "options": ["import './style.css'", "require('./style.css')", "@import './style.css'", "include('./style.css')"],
+      "correctAnswerIndex": 0,
+      "explanation": "ES ModulesのimportシンタックスでCSSファイルを直接インポートできます。Viteが自動的に処理します。"
+    },
+    {
+      "id": 13,
+      "level": "beginner",
+      "text": "Viteで画像ファイルをJavaScriptでインポートした場合、何が返されますか？",
+      "options": ["画像のURL", "画像のBinaryData", "Imageオブジェクト", "Base64文字列"],
+      "correctAnswerIndex": 0,
+      "explanation": "画像をインポートすると、最適化されたファイルのURLが返されます。小さい画像の場合は自動的にBase64にインライン化される場合もあります。"
+    },
+    {
+      "id": 14,
+      "level": "beginner",
+      "text": "ViteでJSON ファイルをインポートする方法はどれですか？",
+      "options": ["import data from './data.json'", "const data = require('./data.json')", "fetch('./data.json')", "XMLHttpRequest で読み込み"],
+      "correctAnswerIndex": 0,
+      "explanation": "JSONファイルはESMのimportで直接インポートでき、オブジェクトとして利用できます。"
+    },
+    {
+      "id": 15,
+      "level": "beginner",
+      "text": "ViteでSassを使用するために必要なことは何ですか？",
+      "options": ["sass パッケージのインストール", "Sass プラグインの設定", "webpack.config.js の設定", "特別な設定は不要"],
+      "correctAnswerIndex": 0,
+      "explanation": "`sass`（または`node-sass`）をインストールするだけで、.scssファイルを直接インポートできます。"
+    },
+    {
+      "id": 16,
+      "level": "beginner",
+      "text": "ViteでVueコンポーネントをサポートするために必要なプラグインはどれですか？",
+      "options": ["@vitejs/plugin-vue", "@vitejs/plugin-react", "@vitejs/plugin-svelte", "vue-loader"],
+      "correctAnswerIndex": 0,
+      "explanation": "`@vitejs/plugin-vue`をインストールし、vite.config.jsで設定することでVue SFC（Single File Components）をサポートできます。"
+    },
+    {
+      "id": 17,
+      "level": "beginner",
+      "text": "ViteでReactをサポートするために必要なプラグインはどれですか？",
+      "options": ["@vitejs/plugin-react", "@vitejs/plugin-vue", "@vitejs/plugin-svelte", "babel-loader"],
+      "correctAnswerIndex": 0,
+      "explanation": "`@vitejs/plugin-react`をインストールして設定することで、JSXとReactの機能をサポートできます。"
+    },
+    {
+      "id": 18,
+      "level": "beginner",
+      "text": "Viteの開発サーバーのデフォルトポートは何番ですか？",
+      "options": ["5173", "3000", "8080", "4000"],
+      "correctAnswerIndex": 0,
+      "explanation": "Vite 3.0以降、デフォルトポートは5173です。ポートが使用中の場合は自動的に次の利用可能なポートが使用されます。"
+    },
+    {
+      "id": 19,
+      "level": "beginner",
+      "text": "ViteでPostCSSを使用する方法はどれですか？",
+      "options": ["postcss.config.js を作成", "Vite設定で postcss プラグイン追加", "package.json で設定", "CSS ファイル内で設定"],
+      "correctAnswerIndex": 0,
+      "explanation": "`postcss.config.js`を作成してPostCSSプラグインを設定することで、Viteが自動的にPostCSSを適用します。"
+    },
+    {
+      "id": 20,
+      "level": "beginner",
+      "text": "ViteでWeb Workersを使用する方法はどれですか？",
+      "options": ["new Worker('./worker.js?worker')", "new Worker('./worker.js')", "importWorker('./worker.js')", "require('./worker.js')"],
+      "correctAnswerIndex": 0,
+      "explanation": "`?worker`クエリパラメータを付けることで、Viteが自動的にWeb Workerとして処理します。"
+    },
+    {
+      "id": 21,
+      "level": "beginner",
+      "text": "Viteでビルドされたファイルをプレビューするコマンドはどれですか？",
+      "options": ["npm run preview", "npm run serve", "vite serve", "npm run start"],
+      "correctAnswerIndex": 0,
+      "explanation": "`npm run preview` または `vite preview` で、ビルドされたファイルをローカルサーバーでプレビューできます。"
+    },
+    {
+      "id": 22,
+      "level": "beginner",
+      "text": "Viteで環境変数をクライアントサイドで使用するための接頭辞は何ですか？",
+      "options": ["VITE_", "CLIENT_", "PUBLIC_", "FRONT_"],
+      "correctAnswerIndex": 0,
+      "explanation": "`VITE_`プレフィックスが付いた環境変数のみが、クライアントサイドコードで`import.meta.env.VITE_*`としてアクセスできます。"
+    },
+    {
+      "id": 23,
+      "level": "beginner",
+      "text": "Viteで動的インポートを使用する構文はどれですか？",
+      "options": ["import('./module.js')", "require('./module.js')", "loadModule('./module.js')", "importDynamic('./module.js')"],
+      "correctAnswerIndex": 0,
+      "explanation": "標準のES Modules動的インポート`import()`をそのまま使用でき、Viteが自動的にコード分割を適用します。"
+    },
+    {
+      "id": 24,
+      "level": "beginner",
+      "text": "ViteでCSSモジュールを使用するためのファイル名規則はどれですか？",
+      "options": ["*.module.css", "*.css.module", "*.modular.css", "*.scoped.css"],
+      "correctAnswerIndex": 0,
+      "explanation": "`.module.css`拡張子を使用することで、Viteが自動的にCSSモジュールとして処理し、ローカルスコープ化されたクラス名を生成します。"
+    },
+    {
+      "id": 25,
+      "level": "beginner",
+      "text": "Viteで開発時に使用される内部的なバンドラーは何ですか？",
+      "options": ["ESMネイティブ（バンドルなし）", "Rollup", "webpack", "Parcel"],
+      "correctAnswerIndex": 0,
+      "explanation": "開発時はバンドルを行わず、ESMをネイティブでブラウザに送信します。これにより高速な起動と更新を実現します。"
+    },
+    {
+      "id": 26,
+      "level": "intermediate",
+      "text": "Viteで本番ビルド時に使用されるバンドラーは何ですか？",
+      "options": ["Rollup", "webpack", "Parcel", "ESBuild"],
+      "correctAnswerIndex": 0,
+      "explanation": "本番ビルド時はRollupを使用してバンドルします。RollupはTree-shakingや最適化に優れています。"
+    },
+    {
+      "id": 27,
+      "level": "intermediate",
+      "text": "ViteでコードトランスパイルやCSSプリプロセッサーに使用される高速ツールは何ですか？",
+      "options": ["ESBuild", "Babel", "SWC", "TSC"],
+      "correctAnswerIndex": 0,
+      "explanation": "ViteはESBuildを使用してTypeScriptやJSXの高速なトランスパイルを行います。Babelよりも大幅に高速です。"
+    },
+    {
+      "id": 28,
+      "level": "intermediate",
+      "text": "ViteでVue.jsプロジェクトを作成する際の正しいコマンドはどれですか？",
+      "options": ["npm create vite@latest my-app --template vue", "vue create my-app", "npm init vue my-app", "vite create vue my-app"],
+      "correctAnswerIndex": 0,
+      "explanation": "`--template vue`オプションでVue.jsテンプレートを指定できます。TypeScript版は`--template vue-ts`です。"
+    },
+    {
+      "id": 29,
+      "level": "intermediate",
+      "text": "Viteでベースパス（公開パス）を設定する設定項目は何ですか？",
+      "options": ["base", "publicPath", "basePath", "root"],
+      "correctAnswerIndex": 0,
+      "explanation": "`base`オプションでアプリケーションのベースパスを設定できます。サブディレクトリでのデプロイに使用されます。"
+    },
+    {
+      "id": 30,
+      "level": "intermediate",
+      "text": "Viteでプロキシ設定を行う際の設定項目は何ですか？",
+      "options": ["server.proxy", "proxy", "devServer.proxy", "dev.proxy"],
+      "correctAnswerIndex": 0,
+      "explanation": "`server.proxy`設定でAPI リクエストを別のサーバーにプロキシできます。開発時のCORSエラー回避に使用されます。"
+    },
+    {
+      "id": 31,
+      "level": "intermediate",
+      "text": "ViteでHTTPS開発サーバーを有効にする方法はどれですか？",
+      "options": ["server.https: true", "https: true", "ssl: true", "secure: true"],
+      "correctAnswerIndex": 0,
+      "explanation": "`server.https: true`でHTTPS開発サーバーを有効にできます。カスタム証明書も指定可能です。"
+    },
+    {
+      "id": 32,
+      "level": "intermediate",
+      "text": "Viteでカスタムプラグインを作成する際の基本構造はどれですか？",
+      "options": ["関数が設定オブジェクトを返す", "クラスを継承", "インターフェースを実装", "デコレータを使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "Viteプラグインは、name、configResolved、buildStart等のフックを含む設定オブジェクトを返す関数として作成されます。"
+    },
+    {
+      "id": 33,
+      "level": "intermediate",
+      "text": "ViteでRollupプラグインを使用する方法はどれですか？",
+      "options": ["そのまま plugins 配列に追加", "Viteプラグインでラップ", "専用の設定項目で指定", "使用不可"],
+      "correctAnswerIndex": 0,
+      "explanation": "多くのRollupプラグインはViteでそのまま使用できます。pluginsに配列に直接追加するだけです。"
+    },
+    {
+      "id": 34,
+      "level": "intermediate",
+      "text": "ViteでChunk分割戦略を設定する項目はどれですか？",
+      "options": ["build.rollupOptions.output.manualChunks", "build.chunks", "output.chunking", "split.chunks"],
+      "correctAnswerIndex": 0,
+      "explanation": "`build.rollupOptions.output.manualChunks`でカスタムチャンク分割戦略を設定できます。"
+    },
+    {
+      "id": 35,
+      "level": "intermediate",
+      "text": "ViteでBundle Analyzerを使用してバンドル内容を分析する方法はどれですか？",
+      "options": ["rollup-plugin-visualizer プラグイン", "built-in analyzer", "vite analyze コマンド", "webpack-bundle-analyzer"],
+      "correctAnswerIndex": 0,
+      "explanation": "`rollup-plugin-visualizer`を使用してバンドルサイズと構成を視覚化できます。"
+    },
+    {
+      "id": 36,
+      "level": "intermediate",
+      "text": "ViteでLegacy Browser（IE11など）サポートを追加するプラグインはどれですか？",
+      "options": ["@vitejs/plugin-legacy", "@vitejs/plugin-polyfill", "@vitejs/plugin-compat", "babel-plugin-legacy"],
+      "correctAnswerIndex": 0,
+      "explanation": "`@vitejs/plugin-legacy`は古いブラウザ向けにポリフィルとトランスパイルを提供します。"
+    },
+    {
+      "id": 37,
+      "level": "intermediate",
+      "text": "ViteでPWAサポートを追加するプラグインはどれですか？",
+      "options": ["vite-plugin-pwa", "@vitejs/plugin-pwa", "vite-pwa-plugin", "rollup-plugin-pwa"],
+      "correctAnswerIndex": 0,
+      "explanation": "`vite-plugin-pwa`はWorkboxベースのService Workerとマニフェストファイル生成を提供します。"
+    },
+    {
+      "id": 38,
+      "level": "intermediate",
+      "text": "Viteでファイル監視（watch）から除外する設定項目は何ですか？",
+      "options": ["server.watch.ignored", "watch.exclude", "ignore.files", "excluded.watch"],
+      "correctAnswerIndex": 0,
+      "explanation": "`server.watch.ignored`で特定のファイルやディレクトリを監視対象から除外できます。"
+    },
+    {
+      "id": 39,
+      "level": "intermediate",
+      "text": "ViteでESLint統合を行う一般的な方法はどれですか？",
+      "options": ["vite-plugin-eslint", "内蔵ESLint", "eslint-loader", "eslint.config.js"],
+      "correctAnswerIndex": 0,
+      "explanation": "`vite-plugin-eslint`を使用して開発時にESLintエラーを表示できます。"
+    },
+    {
+      "id": 40,
+      "level": "intermediate",
+      "text": "Viteでビルド時の静的アセット処理をカスタマイズする設定項目はどれですか？",
+      "options": ["build.assetsInlineLimit", "assets.inlineLimit", "inline.assetLimit", "static.inlineLimit"],
+      "correctAnswerIndex": 0,
+      "explanation": "`build.assetsInlineLimit`で指定サイズ以下のアセットをbase64でインライン化するかを制御できます。"
+    },
+    {
+      "id": 41,
+      "level": "intermediate",
+      "text": "ViteでSSR（Server-Side Rendering）を実装する際の主要なAPIは何ですか？",
+      "options": ["vite/ssr-dev-server", "vite/ssr", "vite/server-render", "vite/node-server"],
+      "correctAnswerIndex": 0,
+      "explanation": "ViteのSSR APIを使用してサーバーサイドレンダリングを実装できます。フレームワークに依存しない柔軟なSSRが可能です。"
+    },
+    {
+      "id": 42,
+      "level": "intermediate",
+      "text": "Viteでミドルウェアを追加する方法はどれですか？",
+      "options": ["configureServer フック", "middleware オプション", "server.middleware", "use() メソッド"],
+      "correctAnswerIndex": 0,
+      "explanation": "プラグインの`configureServer`フックでConnect/Expressスタイルのミドルウェアを追加できます。"
+    },
+    {
+      "id": 43,
+      "level": "intermediate",
+      "text": "ViteでWebAssembly（WASM）ファイルを使用する方法はどれですか？",
+      "options": ["URL付きimportまたはfetch", "direct import", "require()", "特別な設定が必要"],
+      "correctAnswerIndex": 0,
+      "explanation": "WASM ファイルは`?url`付きでインポートしてfetchするか、直接fetchでURLを使用して読み込みます。"
+    },
+    {
+      "id": 44,
+      "level": "intermediate",
+      "text": "Viteで複数のエントリーポイントを設定する方法はどれですか？",
+      "options": ["build.rollupOptions.input", "entry.multiple", "inputs.multi", "build.entries"],
+      "correctAnswerIndex": 0,
+      "explanation": "`build.rollupOptions.input`にオブジェクトまたは配列でエントリーポイントを指定できます。"
+    },
+    {
+      "id": 45,
+      "level": "intermediate",
+      "text": "ViteでCSS Code Splittingを無効にする設定はどれですか？",
+      "options": ["build.cssCodeSplit: false", "css.codeSplit: false", "build.splitCss: false", "splitCss: false"],
+      "correctAnswerIndex": 0,
+      "explanation": "`build.cssCodeSplit: false`でCSSのコード分割を無効にし、すべてのCSSを1つのファイルにまとめます。"
+    },
+    {
+      "id": 46,
+      "level": "intermediate",
+      "text": "ViteでTypeScript の型チェックを実行する推奨方法はどれですか？",
+      "options": ["tsc --noEmit を別途実行", "内蔵TypeScript チェッカー", "@vitejs/plugin-typescript", "typescript.check: true"],
+      "correctAnswerIndex": 0,
+      "explanation": "Viteは型チェックを行わないため、`tsc --noEmit`を別途実行するか、専用プラグインを使用します。"
+    },
+    {
+      "id": 47,
+      "level": "intermediate",
+      "text": "Viteでライブラリモードでビルドする際の設定項目はどれですか？",
+      "options": ["build.lib", "mode: 'library'", "library: true", "build.mode: 'lib'"],
+      "correctAnswerIndex": 0,
+      "explanation": "`build.lib`設定でライブラリビルドモードを有効にし、複数の形式（UMD、ES、CJS）で出力できます。"
+    },
+    {
+      "id": 48,
+      "level": "intermediate",
+      "text": "Viteで外部依存関係をバンドルから除外する設定はどれですか？",
+      "options": ["build.rollupOptions.external", "external", "exclude", "build.external"],
+      "correctAnswerIndex": 0,
+      "explanation": "`build.rollupOptions.external`で特定の依存関係をバンドルから除外できます。ライブラリビルド時によく使用されます。"
+    },
+    {
+      "id": 49,
+      "level": "intermediate",
+      "text": "Viteで環境別の設定を行う方法はどれですか？",
+      "options": ["defineConfig関数の引数で環境を判定", "複数の設定ファイル", "条件付きexport", "すべて有効"],
+      "correctAnswerIndex": 3,
+      "explanation": "`defineConfig`関数、`vite.config.{mode}.js`ファイル、条件付きexportなど、複数の方法で環境別設定が可能です。"
+    },
+    {
+      "id": 50,
+      "level": "intermediate",
+      "text": "ViteでNode.js APIを使用してプログラマティックにビルドする方法はどれですか？",
+      "options": ["import { build } from 'vite'", "vite.build() API", "createBuilder() API", "ViteBuilder クラス"],
+      "correctAnswerIndex": 0,
+      "explanation": "`import { build } from 'vite'`でプログラムからビルドを実行できます。CIやカスタムビルドスクリプトで使用されます。"
+    },
+    {
+      "id": 51,
+      "level": "advanced",
+      "text": "Viteでプラグインの実行順序を制御する方法はどれですか？",
+      "options": ["enforce オプション", "priority オプション", "order オプション", "sequence オプション"],
+      "correctAnswerIndex": 0,
+      "explanation": "プラグインオブジェクトの`enforce: 'pre'`または`enforce: 'post'`で実行順序を制御できます。"
+    },
+    {
+      "id": 52,
+      "level": "advanced",
+      "text": "Viteで条件付きコンパイルを実装する最適な方法はどれですか？",
+      "options": ["define設定とimport.meta.env", "preprocessor", "conditional imports", "compiler flags"],
+      "correctAnswerIndex": 0,
+      "explanation": "`define`設定で定数を定義し、`import.meta.env`と組み合わせて条件付きコンパイルを実現できます。"
+    },
+    {
+      "id": 53,
+      "level": "advanced",
+      "text": "ViteでMicrofrontendアーキテクチャを実装する際の推奨アプローチはどれですか？",
+      "options": ["Module Federation plugin", "複数のViteビルド", "Dynamic imports", "すべて有効"],
+      "correctAnswerIndex": 3,
+      "explanation": "Module Federationプラグイン、複数ビルドの組み合わせ、Dynamic importsなど、複数のアプローチを組み合わせて実装できます。"
+    },
+    {
+      "id": 54,
+      "level": "advanced",
+      "text": "Viteでカスタムファイル形式（.custom拡張子）をサポートする方法はどれですか？",
+      "options": ["カスタムプラグインで transform フック実装", "loader設定", "resolver設定", "handler設定"],
+      "correctAnswerIndex": 0,
+      "explanation": "プラグインの`load`や`transform`フックを実装してカスタムファイル形式をサポートできます。"
+    },
+    {
+      "id": 55,
+      "level": "advanced",
+      "text": "Viteでビルドパフォーマンスを最適化する方法として適切でないものはどれですか？",
+      "options": ["すべての依存関係をpre-bundle", "適切なchunk分割", "tree-shakingの活用", "未使用コードの除去"],
+      "correctAnswerIndex": 0,
+      "explanation": "すべてをpre-bundleすると逆効果の場合があります。必要なもののみpre-bundleし、適切な分割戦略を採用することが重要です。"
+    },
+    {
+      "id": 56,
+      "level": "advanced",
+      "text": "ViteでWorkerとの通信を最適化するベストプラクティスはどれですか？",
+      "options": ["Shared Array Bufferとstructured clone", "JSON.stringify/parse", "eval関数", "global変数"],
+      "correctAnswerIndex": 0,
+      "explanation": "Shared Array BufferやStructured Clone Algorithmを活用することで、Workerとのデータ転送を効率化できます。"
+    },
+    {
+      "id": 57,
+      "level": "advanced",
+      "text": "ViteでSSR時のハイドレーション不整合を避ける方法はどれですか？",
+      "options": ["クライアント専用コードの適切な分離", "SSRをすべて無効化", "ライブラリを使用しない", "静的サイトのみ使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "`import.meta.env.SSR`でサーバー/クライアントコードを分離し、動的コンテンツは適切にマークすることが重要です。"
+    },
+    {
+      "id": 58,
+      "level": "advanced",
+      "text": "ViteでバンドルサイズをCDN最適化するStrategy として適切でないものはどれですか？",
+      "options": ["すべての依存関係をCDNから読み込み", "大きなライブラリのCDN利用", "バンドルとCDNの適切な組み合わせ", "critical pathの優先読み込み"],
+      "correctAnswerIndex": 0,
+      "explanation": "すべてをCDNにすると逆にパフォーマンスが悪化する場合があります。適切な組み合わせとcritical pathの最適化が重要です。"
+    },
+    {
+      "id": 59,
+      "level": "advanced",
+      "text": "Viteでプラグイン間のデータ共有を行う方法はどれですか？",
+      "options": ["this.addWatchFile()とmeta情報", "global変数", "ファイルシステム", "environment変数"],
+      "correctAnswerIndex": 0,
+      "explanation": "プラグインコンテキストのAPIや`this.emitFile()`、`this.addWatchFile()`などを使用して適切にデータ共有を行います。"
+    },
+    {
+      "id": 60,
+      "level": "advanced",
+      "text": "ViteでHMR（Hot Module Replacement）のカスタム処理を実装する方法はどれですか？",
+      "options": ["import.meta.hot API", "module.hot API", "webpack HMR API", "HMR.accept()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`import.meta.hot.accept()`や`import.meta.hot.decline()`でカスタムHMR処理を実装できます。"
+    },
+    {
+      "id": 61,
+      "level": "advanced",
+      "text": "Viteでメタフレームワーク（SvelteKit、Nuxtなど）統合時の注意点はどれですか？",
+      "options": ["フレームワーク固有のプラグインとの競合回避", "ビルド速度の向上のみ", "設定の簡素化のみ", "依存関係の削減のみ"],
+      "correctAnswerIndex": 0,
+      "explanation": "メタフレームワークは独自のVite設定やプラグインを持つため、カスタムプラグインや設定での競合を避ける必要があります。"
+    },
+    {
+      "id": 62,
+      "level": "advanced",
+      "text": "ViteでWebSocketを使用したリアルタイム通信を実装する際の考慮事項はどれですか？",
+      "options": ["開発サーバーとの競合回避", "パフォーマンス向上", "セキュリティ強化", "メモリ使用量削減"],
+      "correctAnswerIndex": 0,
+      "explanation": "Viteの開発サーバーはHMR用にWebSocketを使用するため、アプリケーション独自のWebSocketとのポート競合や設定競合を避ける必要があります。"
+    },
+    {
+      "id": 63,
+      "level": "advanced",
+      "text": "ViteでDocker環境での開発時の最適化として重要なのはどれですか？",
+      "options": ["ホスト設定と適切なボリュームマウント", "イメージサイズ削減のみ", "ネットワーク最適化のみ", "CPU使用率削減のみ"],
+      "correctAnswerIndex": 0,
+      "explanation": "`server.host: '0.0.0.0'`設定と、node_modulesの適切なボリューム戦略、ファイル監視の最適化が重要です。"
+    },
+    {
+      "id": 64,
+      "level": "advanced",
+      "text": "ViteでMonorepo環境での最適化戦略として適切でないものはどれですか？",
+      "options": ["各パッケージでVite設定を完全に独立化", "共通設定の抽象化", "依存関係の効率的共有", "ビルドキャッシュの活用"],
+      "correctAnswerIndex": 0,
+      "explanation": "完全独立化は効率性を損ないます。共通設定の抽象化と、パッケージ間の依存関係効率化、ビルドキャッシュ活用が重要です。"
+    },
+    {
+      "id": 65,
+      "level": "advanced",
+      "text": "ViteでCritical CSS最適化を実装する方法はどれですか？",
+      "options": ["critters pluginまたはカスタムプラグイン", "内蔵Critical CSS", "CSS-in-JS のみ", "インライン CSS のみ"],
+      "correctAnswerIndex": 0,
+      "explanation": "crittersプラグインや独自のプラグインでファーストビューに必要なCSSを抽出し、インライン化することで初期表示を最適化できます。"
+    },
+    {
+      "id": 66,
+      "level": "advanced",
+      "text": "Viteでセキュリティベストプラクティスとして適切でないものはどれですか？",
+      "options": ["すべての環境変数をクライアントに公開", "VITE_接頭辞での環境変数管理", "CSP設定の適用", "依存関係の定期更新"],
+      "correctAnswerIndex": 0,
+      "explanation": "環境変数は必要なもののみVITE_接頭辞で公開し、機密情報は含めません。CSPやセキュリティヘッダーの適切な設定が重要です。"
+    },
+    {
+      "id": 67,
+      "level": "advanced",
+      "text": "ViteでA/Bテスト機能を実装する際の効率的なアプローチはどれですか？",
+      "options": ["動的インポートとfeature flag", "静的ビルドの複数生成", "サーバーサイドでのみ実装", "CDNでの振り分け"],
+      "correctAnswerIndex": 0,
+      "explanation": "動的インポートとfeature flagを組み合わせることで、必要な機能のみをロードし、効率的なA/Bテストが実装できます。"
+    },
+    {
+      "id": 68,
+      "level": "advanced",
+      "text": "ViteでWebAssemblyの最適化として効果的でないものはどれですか？",
+      "options": ["すべてのロジックをWASMに移行", "計算集約処理のWASM化", "適切な JavaScript-WASM データ交換", "WASM モジュールのレイジーロード"],
+      "correctAnswerIndex": 0,
+      "explanation": "WASMはすべてに適用するものではありません。計算集約的処理に限定し、JavaScript との効率的なデータ交換とレイジーロードが重要です。"
+    },
+    {
+      "id": 69,
+      "level": "advanced",
+      "text": "ViteでOffline-first PWAを実装する際の戦略として適切なものはどれですか？",
+      "options": ["Service Worker + Cache-first strategy", "Application Cacheのみ", "Local Storage のみ", "Session Storage のみ"],
+      "correctAnswerIndex": 0,
+      "explanation": "Service WorkerとCache-first戦略を組み合わせ、vite-plugin-pwaで適切なキャッシング戦略を実装することが重要です。"
+    },
+    {
+      "id": 70,
+      "level": "advanced",
+      "text": "ViteでEdge Computing環境への最適化として重要でないものはどれですか？",
+      "options": ["大容量バンドルの生成", "軽量なバンドル生成", "Tree-shakingの活用", "適切なpolyfill選択"],
+      "correctAnswerIndex": 0,
+      "explanation": "Edge環境では軽量性が重要です。Tree-shaking、適切なpolyfill選択、必要最小限のバンドル生成が重要です。"
+    },
+    {
+      "id": 71,
+      "level": "advanced",
+      "text": "ViteでGraphQL統合の最適化戦略として効果的なものはどれですか？",
+      "options": ["GraphQL Code GenerationとFragment colocation", "REST APIのみ使用", "GraphQL の無効化", "すべてのクエリを1つに統合"],
+      "correctAnswerIndex": 0,
+      "explanation": "GraphQL Code Generationで型安全性を確保し、Fragment colocationでクエリとコンポーネントを近接配置することで保守性を向上できます。"
+    },
+    {
+      "id": 72,
+      "level": "advanced",
+      "text": "Viteで国際化（i18n）の最適化として効率的でないものはどれですか？",
+      "options": ["すべての言語リソースを事前ロード", "言語リソースの動的ロード", "Tree-shakingによる未使用翻訳除去", "locale別コード分割"],
+      "correctAnswerIndex": 0,
+      "explanation": "すべての言語を事前ロードするとバンドルサイズが大きくなります。必要な言語のみ動的ロードし、適切にコード分割することが重要です。"
+    },
+    {
+      "id": 73,
+      "level": "advanced",
+      "text": "ViteでNative Mobile App統合時の考慮事項として重要でないものはどれですか？",
+      "options": ["Webサイトと同じバンドル設定", "Capacitor/Cordova最適化", "ネイティブブリッジの効率化", "オフライン対応"],
+      "correctAnswerIndex": 0,
+      "explanation": "モバイルアプリではWeb用とは異なる最適化が必要です。ネイティブブリッジ、オフライン対応、プラットフォーム固有の最適化が重要です。"
+    },
+    {
+      "id": 74,
+      "level": "advanced",
+      "text": "ViteでCI/CD最適化において効果的でないものはどれですか？",
+      "options": ["毎回フルビルド実行", "ビルドキャッシュの活用", "並列ビルドの実装", "増分ビルドの活用"],
+      "correctAnswerIndex": 0,
+      "explanation": "毎回フルビルドは非効率です。ビルドキャッシュ、並列処理、増分ビルド、依存関係キャッシングを活用してCI/CDを最適化します。"
+    },
+    {
+      "id": 75,
+      "level": "advanced",
+      "text": "ViteでWebXR/VR対応アプリを開発する際の特別な考慮事項はどれですか？",
+      "options": ["高フレームレートとレスポンス性の最適化", "バンドルサイズのみ", "SEO最適化のみ", "アクセシビリティのみ"],
+      "correctAnswerIndex": 0,
+      "explanation": "WebXR/VRでは60fps以上のフレームレート維持が重要で、バンドル最適化、エフィシェントなアセットローディング、レスポンス性の確保が必要です。"
+    }
+  ]
+}

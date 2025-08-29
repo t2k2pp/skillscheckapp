@@ -73,6 +73,42 @@
       "estimatedTime": "60-75分",
       "coverImage": "cpp-logo.png",
       "color": "#00599C"
+    },
+    {
+      "id": "react",
+      "title": "React フロントエンドスキルテスト",
+      "description": "Reactの基礎から上級まで、モダンなフロントエンド開発で必要なスキルを測定します。Hooks、Context、パフォーマンス最適化、テスト手法まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "React Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "react-logo.png",
+      "color": "#61DAFB"
+    },
+    {
+      "id": "vuejs",
+      "title": "Vue.js フロントエンドスキルテスト",
+      "description": "Vue.jsの基礎から上級まで、コンポーネントベース開発で必要なスキルを測定します。Options API、Composition API、Vue Router、状態管理まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "Vue.js Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "vuejs-logo.png",
+      "color": "#4FC08D"
+    },
+    {
+      "id": "vite",
+      "title": "Vite ビルドツールスキルテスト",
+      "description": "Viteの基礎から上級まで、モダンなフロントエンド開発環境で必要なスキルを測定します。開発サーバー、HMR、プラグイン、最適化まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "Vite Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "vite-logo.png",
+      "color": "#646CFF"
     }
   ]
 }
