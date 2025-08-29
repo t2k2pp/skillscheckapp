@@ -41,6 +41,17 @@ const OneByOneQuestionCard: React.FC<OneByOneQuestionCardProps> = ({
 
   return (
     <div className="bg-white dark:bg-gray-800 shadow-2xl rounded-xl p-8 transition-all duration-500">
+      {/* Back button - 左上に配置 */}
+      <div className="mb-6">
+        <button
+          onClick={onBack}
+          className="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white font-semibold 
+                     rounded-lg transition-colors duration-200 transform hover:scale-105"
+        >
+          ← 戻る
+        </button>
+      </div>
+
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <div className="text-sm text-gray-600 dark:text-gray-400">
@@ -131,17 +142,9 @@ const OneByOneQuestionCard: React.FC<OneByOneQuestionCardProps> = ({
         </div>
       )}
 
-      {/* Action Buttons */}
-      <div className="flex justify-between items-center">
-        <button
-          onClick={onBack}
-          className="px-6 py-3 bg-gray-500 hover:bg-gray-600 text-white font-semibold 
-                     rounded-lg transition-colors duration-200 transform hover:scale-105"
-        >
-          ← モード選択に戻る
-        </button>
-
-        {showResult && (
+      {/* Next Button */}
+      {showResult && (
+        <div className="flex justify-end">
           <button
             onClick={handleNextQuestion}
             className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold 
@@ -149,8 +152,8 @@ const OneByOneQuestionCard: React.FC<OneByOneQuestionCardProps> = ({
           >
             {questionNumber < totalQuestions ? '次の問題へ →' : '完了'}
           </button>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

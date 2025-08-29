@@ -43,6 +43,17 @@ const PatternSelectionScreen: React.FC<PatternSelectionScreenProps> = ({ onPatte
 
   return (
     <div className="bg-white dark:bg-gray-800 shadow-2xl rounded-xl p-8 transition-all duration-500">
+      {/* Back button - 左上に配置 */}
+      <div className="mb-6">
+        <button
+          onClick={onBack}
+          className="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white font-semibold 
+                     rounded-lg transition-colors duration-200 transform hover:scale-105"
+        >
+          ← 戻る
+        </button>
+      </div>
+
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
           出題パターンを選択
@@ -82,17 +93,9 @@ const PatternSelectionScreen: React.FC<PatternSelectionScreenProps> = ({ onPatte
         ))}
       </div>
 
-      <div className="flex justify-between">
-        <button
-          onClick={onBack}
-          className="px-6 py-3 bg-gray-500 hover:bg-gray-600 text-white font-semibold 
-                     rounded-lg transition-colors duration-200 transform hover:scale-105"
-        >
-          ← 戻る
-        </button>
-        
-        <div className="text-sm text-gray-500 dark:text-gray-400 flex items-center">
-          💡 推奨: 初めての方は「基礎レベルのみ」から始めることをお勧めします
+      <div className="text-center">
+        <div className="text-sm text-gray-500 dark:text-gray-400 bg-green-50 dark:bg-green-900 p-4 rounded-lg">
+          💡 <strong>推奨:</strong> 初めての方は「基礎レベルのみ」から始めることをお勧めします
         </div>
       </div>
     </div>

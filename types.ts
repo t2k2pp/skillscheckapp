@@ -35,11 +35,24 @@ export interface QuizPatternInfo {
   questionCount: number;
 }
 
-// 新しいクイズモード
+// 新しいクイズモード（後方互換性のため保持）
 export enum QuizMode {
   Standard = 'standard',        // 従来の連続問題モード
   OneByOne = 'one_by_one',     // 1問1答モード（解説付き）
   Dictionary = 'dictionary'     // 一覧辞書モード
+}
+
+// 学習カテゴリ
+export enum LearningCategory {
+  Quiz = 'quiz',
+  Dictionary = 'dictionary'
+}
+
+// クイズモードの詳細タイプ  
+export enum QuizModeType {
+  OneByOne = 'one_by_one',
+  Standard = 'standard',
+  AllQuestions = 'all_questions'
 }
 
 // モード情報

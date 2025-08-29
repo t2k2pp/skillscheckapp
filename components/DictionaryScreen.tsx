@@ -40,6 +40,17 @@ const DictionaryScreen: React.FC<DictionaryScreenProps> = ({
 
   return (
     <div className="bg-white dark:bg-gray-800 shadow-2xl rounded-xl p-8 transition-all duration-500">
+      {/* Back button - 左上に配置 */}
+      <div className="mb-6">
+        <button
+          onClick={onBack}
+          className="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white font-semibold 
+                     rounded-lg transition-colors duration-200 transform hover:scale-105"
+        >
+          ← 戻る
+        </button>
+      </div>
+
       {/* Header */}
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
@@ -102,17 +113,9 @@ const DictionaryScreen: React.FC<DictionaryScreenProps> = ({
         </div>
       </div>
 
-      {/* Back Button */}
-      <div className="flex justify-between items-center">
-        <button
-          onClick={onBack}
-          className="px-6 py-3 bg-gray-500 hover:bg-gray-600 text-white font-semibold 
-                     rounded-lg transition-colors duration-200 transform hover:scale-105"
-        >
-          ← モード選択に戻る
-        </button>
-        
-        <div className="text-sm text-gray-500 dark:text-gray-400">
+      {/* Tip */}
+      <div className="text-center">
+        <div className="text-sm text-gray-500 dark:text-gray-400 bg-blue-50 dark:bg-blue-900 p-4 rounded-lg">
           💡 気になる問題をクリックして詳細を確認してください
         </div>
       </div>

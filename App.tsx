@@ -1,13 +1,14 @@
 
 import React, { useState, useCallback } from 'react';
-import { QuizQuestion, UserAnswer, QuizPattern, QuizMode } from './types';
+import { QuizQuestion, UserAnswer, QuizPattern, QuizMode, LearningCategory, QuizModeType } from './types';
 import { QUESTIONS } from './constants/questions';
 import { getQuestionsByPattern, shuffleQuestionOptions } from './utils/quizPatterns';
 import { QuestionLoader } from './utils/questionLoader';
 import { QuestionSet } from './types/questionSet';
 import BookSelectionScreen from './components/BookSelectionScreen';
 import WelcomeScreen from './components/WelcomeScreen';
-import ModeSelectionScreen from './components/ModeSelectionScreen';
+import LearningCategoryScreen from './components/LearningCategoryScreen';
+import QuizModeSelectionScreen from './components/QuizModeSelectionScreen';
 import PatternSelectionScreen from './components/PatternSelectionScreen';
 import QuestionCard from './components/QuestionCard';
 import OneByOneQuestionCard from './components/OneByOneQuestionCard';
@@ -16,10 +17,11 @@ import DictionaryDetailCard from './components/DictionaryDetailCard';
 import ResultsScreen from './components/ResultsScreen';
 
 const App: React.FC = () => {
-  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'mode_selection' | 'pattern_selection' | 'active' | 'one_by_one_active' | 'dictionary_list' | 'dictionary_detail' | 'finished'>('book_selection');
+  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'category_selection' | 'quiz_mode_selection' | 'pattern_selection' | 'active' | 'one_by_one_active' | 'dictionary_list' | 'dictionary_detail' | 'finished'>('book_selection');
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [currentQuestionSet, setCurrentQuestionSet] = useState<QuestionSet | null>(null);
-  const [selectedMode, setSelectedMode] = useState<QuizMode>(QuizMode.Standard);
+  const [selectedCategory, setSelectedCategory] = useState<LearningCategory | null>(null);
+  const [selectedQuizMode, setSelectedQuizMode] = useState<QuizModeType | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
@@ -40,19 +42,25 @@ const App: React.FC = () => {
     }
   }, []);
 
-  const prepareQuizQuestions = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions, questionSet?: QuestionSet, mode: QuizMode = QuizMode.Standard) => {
-    // Use current question set or fallback to legacy questions
+  const prepareQuizQuestions = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions, questionSet?: QuestionSet, quizModeType?: QuizModeType) => {
+    // Use current question set or fallback to empty array
     if (questionSet) {
       // Convert JSON questions to QuizQuestion format
       const quizQuestions = QuestionLoader.convertToQuizQuestions(questionSet.questions);
       
-      // Apply pattern filtering for Standard mode, all questions for other modes
+      // Apply pattern filtering based on mode
       let selectedQuestions: QuizQuestion[];
-      if (mode === QuizMode.Standard) {
+      
+      if (quizModeType === QuizModeType.AllQuestions) {
+        // All questions mode: use all questions, shuffle everything
+        selectedQuestions = getQuestionsByPattern(QuizPattern.AllQuestions, quizQuestions);
+        return selectedQuestions.map(shuffleQuestionOptions);
+      } else if (quizModeType === QuizModeType.OneByOne) {
+        // OneByOne mode: apply pattern filtering, shuffle everything
         selectedQuestions = getQuestionsByPattern(pattern, quizQuestions);
         return selectedQuestions.map(shuffleQuestionOptions);
-      } else if (mode === QuizMode.OneByOne) {
-        // Shuffle questions but keep options shuffled per question
+      } else if (quizModeType === QuizModeType.Standard) {
+        // Standard mode: apply pattern filtering, shuffle everything
         selectedQuestions = getQuestionsByPattern(pattern, quizQuestions);
         return selectedQuestions.map(shuffleQuestionOptions);
       } else {
@@ -65,59 +73,92 @@ const App: React.FC = () => {
     }
   }, []);
 
-  const startQuiz = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions) => {
-    setQuestions(prepareQuizQuestions(pattern, currentQuestionSet || undefined, selectedMode));
-    setCurrentQuestionIndex(0);
-    setUserAnswers([]);
-    
-    if (selectedMode === QuizMode.Standard) {
-      setQuizState('active');
-      const now = Date.now();
-      setStartTime(now);
-      setQuestionStartTime(now);
-    } else if (selectedMode === QuizMode.OneByOne) {
-      setQuizState('one_by_one_active');
-    } else {
-      setQuizState('dictionary_list');
-    }
-  }, [prepareQuizQuestions, currentQuestionSet, selectedMode]);
+  // Navigation handlers
+  const showCategorySelection = useCallback(() => {
+    setQuizState('category_selection');
+  }, []);
 
-  const showModeSelection = useCallback(() => {
-    setQuizState('mode_selection');
+  const showQuizModeSelection = useCallback(() => {
+    setQuizState('quiz_mode_selection');
   }, []);
 
   const showPatternSelection = useCallback(() => {
     setQuizState('pattern_selection');
   }, []);
 
-  const handleModeSelect = useCallback((mode: QuizMode) => {
-    setSelectedMode(mode);
-    if (mode === QuizMode.Dictionary) {
-      // Dictionary mode doesn't need pattern selection
-      startQuiz(QuizPattern.AllQuestions);
-    } else {
-      // Standard and OneByOne modes need pattern selection
-      showPatternSelection();
-    }
-  }, [startQuiz, showPatternSelection]);
-
-  const handlePatternSelect = useCallback((pattern: QuizPattern) => {
-    startQuiz(pattern);
-  }, [startQuiz]);
-
   const backToWelcome = useCallback(() => {
     setQuizState('welcome');
   }, []);
 
-  const backToModeSelection = useCallback(() => {
-    setQuizState('mode_selection');
+  const backToCategorySelection = useCallback(() => {
+    setQuizState('category_selection');
+  }, []);
+
+  const backToQuizModeSelection = useCallback(() => {
+    setQuizState('quiz_mode_selection');
   }, []);
 
   const backToBookSelection = useCallback(() => {
     setQuizState('book_selection');
     setSelectedBook(null);
     setCurrentQuestionSet(null);
+    setSelectedCategory(null);
+    setSelectedQuizMode(null);
   }, []);
+
+  // Category selection handler
+  const handleCategorySelect = useCallback((category: LearningCategory) => {
+    setSelectedCategory(category);
+    if (category === LearningCategory.Dictionary) {
+      // Dictionary mode: prepare questions and go directly to dictionary list
+      const dictionaryQuestions = prepareQuizQuestions(QuizPattern.AllQuestions, currentQuestionSet || undefined);
+      setQuestions(dictionaryQuestions);
+      setCurrentQuestionIndex(0);
+      setQuizState('dictionary_list');
+    } else {
+      // Quiz mode: show quiz mode selection
+      showQuizModeSelection();
+    }
+  }, [prepareQuizQuestions, currentQuestionSet, showQuizModeSelection]);
+
+  // Quiz mode selection handler
+  const handleQuizModeSelect = useCallback((quizMode: QuizModeType) => {
+    setSelectedQuizMode(quizMode);
+    
+    if (quizMode === QuizModeType.AllQuestions) {
+      // All questions mode: start immediately without pattern selection
+      const allQuestions = prepareQuizQuestions(QuizPattern.AllQuestions, currentQuestionSet || undefined, quizMode);
+      setQuestions(allQuestions);
+      setCurrentQuestionIndex(0);
+      setUserAnswers([]);
+      setQuizState('active');
+      const now = Date.now();
+      setStartTime(now);
+      setQuestionStartTime(now);
+    } else {
+      // OneByOne and Standard modes need pattern selection
+      showPatternSelection();
+    }
+  }, [prepareQuizQuestions, currentQuestionSet, showPatternSelection]);
+
+  // Pattern selection handler
+  const handlePatternSelect = useCallback((pattern: QuizPattern) => {
+    if (!selectedQuizMode) return;
+    
+    const questions = prepareQuizQuestions(pattern, currentQuestionSet || undefined, selectedQuizMode);
+    setQuestions(questions);
+    setCurrentQuestionIndex(0);
+    setUserAnswers([]);
+    
+    if (selectedQuizMode === QuizModeType.Standard) {
+      setQuizState('active');
+      const now = Date.now();
+      setStartTime(now);
+      setQuestionStartTime(now);
+    } else if (selectedQuizMode === QuizModeType.OneByOne) {
+      setQuizState('one_by_one_active');
+    }
+  }, [selectedQuizMode, prepareQuizQuestions, currentQuestionSet]);
 
   // New handlers for OneByOne mode
   const handleOneByOneNext = useCallback(() => {
@@ -127,7 +168,7 @@ const App: React.FC = () => {
   }, [currentQuestionIndex, questions.length]);
 
   const handleOneByOneFinish = useCallback(() => {
-    setQuizState('welcome');
+    setQuizState('category_selection');
   }, []);
 
   // New handlers for Dictionary mode
@@ -186,20 +227,31 @@ const App: React.FC = () => {
     switch (quizState) {
       case 'book_selection':
         return <BookSelectionScreen onSelectBook={handleBookSelect} />;
-      case 'mode_selection':
+      case 'category_selection':
         return (
-          <ModeSelectionScreen
-            onModeSelect={handleModeSelect}
+          <LearningCategoryScreen
+            onCategorySelect={handleCategorySelect}
             onBack={backToWelcome}
             questionSet={currentQuestionSet}
           />
         );
+      case 'quiz_mode_selection': {
+        const quizQuestions = currentQuestionSet ? QuestionLoader.convertToQuizQuestions(currentQuestionSet.questions) : [];
+        return (
+          <QuizModeSelectionScreen
+            onModeSelect={handleQuizModeSelect}
+            onBack={backToCategorySelection}
+            questionSet={currentQuestionSet}
+            questions={quizQuestions}
+          />
+        );
+      }
       case 'pattern_selection': {
         const quizQuestions = currentQuestionSet ? QuestionLoader.convertToQuizQuestions(currentQuestionSet.questions) : [];
         return (
           <PatternSelectionScreen
             onPatternSelect={handlePatternSelect}
-            onBack={backToModeSelection}
+            onBack={backToQuizModeSelection}
             questionSet={currentQuestionSet}
             questions={quizQuestions}
           />
@@ -213,7 +265,7 @@ const App: React.FC = () => {
             totalQuestions={questions.length}
             onNext={handleOneByOneNext}
             onFinish={handleOneByOneFinish}
-            onBack={backToModeSelection}
+            onBack={backToCategorySelection}
           />
         );
       case 'dictionary_list':
@@ -222,7 +274,7 @@ const App: React.FC = () => {
             questions={questions}
             questionSet={currentQuestionSet}
             onQuestionSelect={handleDictionaryQuestionSelect}
-            onBack={backToModeSelection}
+            onBack={backToCategorySelection}
           />
         );
       case 'dictionary_detail':
@@ -263,8 +315,8 @@ const App: React.FC = () => {
       default:
         return (
           <WelcomeScreen 
-            onStart={showModeSelection}
-            onPatternSelect={showModeSelection}
+            onStart={showCategorySelection}
+            onPatternSelect={showCategorySelection}
             onBackToBooks={backToBookSelection}
             bookTitle={currentQuestionSet?.title || 'Unknown Book'}
           />

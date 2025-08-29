@@ -38,6 +38,17 @@ const DictionaryDetailCard: React.FC<DictionaryDetailCardProps> = ({
 
   return (
     <div className="bg-white dark:bg-gray-800 shadow-2xl rounded-xl p-8 transition-all duration-500">
+      {/* Back button - 左上に配置 */}
+      <div className="mb-6">
+        <button
+          onClick={onBack}
+          className="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white font-semibold 
+                     rounded-lg transition-colors duration-200 transform hover:scale-105"
+        >
+          ← 一覧に戻る
+        </button>
+      </div>
+
       {/* Header */}
       <div className="flex justify-between items-center mb-6">
         <div className="text-sm text-gray-600 dark:text-gray-400">
@@ -108,38 +119,28 @@ const DictionaryDetailCard: React.FC<DictionaryDetailCardProps> = ({
       </div>
 
       {/* Navigation */}
-      <div className="flex justify-between items-center">
+      <div className="flex justify-center space-x-4">
         <button
-          onClick={onBack}
-          className="px-6 py-3 bg-gray-500 hover:bg-gray-600 text-white font-semibold 
-                     rounded-lg transition-colors duration-200 transform hover:scale-105"
+          onClick={onPrevious}
+          disabled={!hasPrevious}
+          className={`px-6 py-3 font-semibold rounded-lg transition-colors duration-200 
+                     ${hasPrevious 
+                       ? 'bg-blue-600 hover:bg-blue-700 text-white transform hover:scale-105' 
+                       : 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'}`}
         >
-          ← 一覧に戻る
+          ← 前へ
         </button>
-
-        <div className="flex space-x-2">
-          <button
-            onClick={onPrevious}
-            disabled={!hasPrevious}
-            className={`px-4 py-2 font-semibold rounded-lg transition-colors duration-200 
-                       ${hasPrevious 
-                         ? 'bg-blue-600 hover:bg-blue-700 text-white transform hover:scale-105' 
-                         : 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'}`}
-          >
-            ← 前へ
-          </button>
-          
-          <button
-            onClick={onNext}
-            disabled={!hasNext}
-            className={`px-4 py-2 font-semibold rounded-lg transition-colors duration-200 
-                       ${hasNext 
-                         ? 'bg-blue-600 hover:bg-blue-700 text-white transform hover:scale-105' 
-                         : 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'}`}
-          >
-            次へ →
-          </button>
-        </div>
+        
+        <button
+          onClick={onNext}
+          disabled={!hasNext}
+          className={`px-6 py-3 font-semibold rounded-lg transition-colors duration-200 
+                     ${hasNext 
+                       ? 'bg-blue-600 hover:bg-blue-700 text-white transform hover:scale-105' 
+                       : 'bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed'}`}
+        >
+          次へ →
+        </button>
       </div>
     </div>
   );
