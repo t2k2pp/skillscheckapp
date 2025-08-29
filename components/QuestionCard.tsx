@@ -93,6 +93,13 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, questionNumber, t
       
       <div className="mt-8 text-center space-y-4 sm:space-y-0 sm:space-x-4 sm:flex sm:justify-center">
         <button
+          onClick={handleSubmit}
+          disabled={selectedOption === null || isAnswered}
+          className="w-full sm:w-auto bg-primary hover:bg-secondary disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-bold py-3 px-12 rounded-full shadow-lg transform transition-transform hover:translate-y-1 duration-300 ease-in-out"
+        >
+          {questionNumber === totalQuestions ? '結果を見る' : '次の問題へ'}
+        </button>
+        <button
           onClick={() => {
             // 回答が選択されている場合は、その回答を含めて終了
             if (selectedOption !== null) {
@@ -104,13 +111,6 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, questionNumber, t
           className="w-full sm:w-auto bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition-transform hover:translate-y-1 duration-300 ease-in-out"
         >
           📊 途中で終了
-        </button>
-        <button
-          onClick={handleSubmit}
-          disabled={selectedOption === null || isAnswered}
-          className="w-full sm:w-auto bg-primary hover:bg-secondary disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-bold py-3 px-12 rounded-full shadow-lg transform transition-transform hover:translate-y-1 duration-300 ease-in-out"
-        >
-          {questionNumber === totalQuestions ? '結果を見る' : '次の問題へ'}
         </button>
       </div>
     </div>
