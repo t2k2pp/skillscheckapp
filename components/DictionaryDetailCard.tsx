@@ -71,38 +71,21 @@ const DictionaryDetailCard: React.FC<DictionaryDetailCardProps> = ({
         </div>
       </div>
 
-      {/* Options */}
+      {/* Correct Answer */}
       <div className="mb-8">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
-          📋 選択肢
+          ✅ 正解
         </h3>
-        <div className="space-y-3">
-          {question.options.map((option, index) => (
-            <div
-              key={index}
-              className={`p-4 rounded-lg border-2 ${
-                index === question.correctAnswerIndex
-                  ? 'bg-green-100 dark:bg-green-900 border-green-500'
-                  : 'bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600'
-              }`}
-            >
-              <div className="flex items-center">
-                <span className="w-8 h-8 rounded-full bg-gray-200 dark:bg-gray-600 flex items-center justify-center mr-3 text-sm font-semibold">
-                  {String.fromCharCode(65 + index)}
-                </span>
-                <span className={`${
-                  index === question.correctAnswerIndex
-                    ? 'text-green-800 dark:text-green-200 font-semibold'
-                    : 'text-gray-800 dark:text-white'
-                }`}>
-                  {option}
-                </span>
-                {index === question.correctAnswerIndex && (
-                  <span className="ml-auto text-green-600 text-xl">✓</span>
-                )}
-              </div>
-            </div>
-          ))}
+        <div className="p-4 rounded-lg border-2 bg-green-100 dark:bg-green-900 border-green-500">
+          <div className="flex items-center">
+            <span className="w-8 h-8 rounded-full bg-green-200 dark:bg-green-600 flex items-center justify-center mr-3 text-sm font-semibold text-green-800 dark:text-green-200">
+              {String.fromCharCode(65 + question.correctAnswerIndex)}
+            </span>
+            <span className="text-green-800 dark:text-green-200 font-semibold">
+              {question.options[question.correctAnswerIndex]}
+            </span>
+            <span className="ml-auto text-green-600 text-xl">✓</span>
+          </div>
         </div>
       </div>
 
