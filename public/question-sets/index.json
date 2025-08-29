@@ -3,6 +3,18 @@
   "lastUpdated": "2025-08-29",
   "questionSets": [
     {
+      "id": "nodejs",
+      "title": "Node.js バックエンドスキルテスト",
+      "description": "Node.jsの基礎から上級まで、サーバーサイド開発で必要なスキルを測定します。Express.js、データベース、非同期処理、パフォーマンス最適化まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "Node.js Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "nodejs-logo.png",
+      "color": "#339933"
+    },
+    {
       "id": "python",
       "title": "Python プログラミングスキルテスト",
       "description": "Pythonの基礎から上級まで、実務で必要なプログラミングスキルを測定します。基本文法からライブラリ活用、オブジェクト指向まで幅広くカバーします。",

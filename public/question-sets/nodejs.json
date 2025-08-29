@@ -1,0 +1,614 @@
+{
+  "id": "nodejs",
+  "title": "Node.js バックエンドスキルテスト",
+  "description": "Node.jsの基礎から上級まで、サーバーサイド開発で必要なスキルを測定します。Express.js、データベース、非同期処理、パフォーマンス最適化まで幅広くカバーします。",
+  "version": "1.0.0",
+  "author": "Node.js Learning Team",
+  "categories": ["基礎", "中級", "上級"],
+  "totalQuestions": 75,
+  "estimatedTime": "60-75分",
+  "coverImage": "nodejs-logo.png",
+  "color": "#339933",
+  "questions": [
+    {
+      "id": 1,
+      "level": "beginner",
+      "text": "Node.jsとは何ですか？",
+      "options": ["サーバーサイドJavaScript実行環境", "JavaScriptフレームワーク", "データベース", "プログラミング言語"],
+      "correctAnswerIndex": 0,
+      "explanation": "Node.jsは、V8 JavaScriptエンジンをベースとしたサーバーサイドJavaScriptの実行環境です。ブラウザ外でJavaScriptを実行できます。"
+    },
+    {
+      "id": 2,
+      "level": "beginner",
+      "text": "Node.jsでモジュールを読み込むために使用する関数はどれですか？",
+      "options": ["require()", "import()", "include()", "load()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`require()`関数はCommonJSモジュールシステムでモジュールを読み込むために使用されます。例：`const fs = require('fs')`"
+    },
+    {
+      "id": 3,
+      "level": "beginner",
+      "text": "Node.jsでモジュールを外部に公開するために使用するオブジェクトはどれですか？",
+      "options": ["module.exports", "exports.module", "export.module", "module.export"],
+      "correctAnswerIndex": 0,
+      "explanation": "`module.exports`は、モジュールから外部に公開する関数やオブジェクトを指定します。`exports`も使用できますが、`module.exports`がより確実です。"
+    },
+    {
+      "id": 4,
+      "level": "beginner",
+      "text": "npmとは何の略ですか？",
+      "options": ["Node Package Manager", "Network Package Manager", "New Package Manager", "Node Program Manager"],
+      "correctAnswerIndex": 0,
+      "explanation": "npmはNode Package Managerの略で、Node.jsのパッケージ管理システムです。ライブラリの インストール、更新、削除を行います。"
+    },
+    {
+      "id": 5,
+      "level": "beginner",
+      "text": "npmでパッケージをインストールするコマンドはどれですか？",
+      "options": ["npm install", "npm add", "npm get", "npm download"],
+      "correctAnswerIndex": 0,
+      "explanation": "`npm install package-name`でパッケージをインストールします。`npm i`と省略することもできます。"
+    },
+    {
+      "id": 6,
+      "level": "beginner",
+      "text": "package.jsonファイルの主な役割は何ですか？",
+      "options": ["プロジェクトの依存関係と設定を管理", "ソースコードを保存", "データベース設定", "ログファイル"],
+      "correctAnswerIndex": 0,
+      "explanation": "package.jsonは、プロジェクトのメタデータ、依存関係、スクリプト、設定などを管理するファイルです。"
+    },
+    {
+      "id": 7,
+      "level": "beginner",
+      "text": "Node.jsで基本的なHTTPサーバーを作成するために使用するモジュールはどれですか？",
+      "options": ["http", "server", "web", "express"],
+      "correctAnswerIndex": 0,
+      "explanation": "`http`モジュールはNode.jsの標準モジュールで、基本的なHTTPサーバーやクライアントを作成できます。"
+    },
+    {
+      "id": 8,
+      "level": "beginner",
+      "text": "Node.jsでファイルシステムを操作するために使用する標準モジュールはどれですか？",
+      "options": ["fs", "file", "filesystem", "io"],
+      "correctAnswerIndex": 0,
+      "explanation": "`fs`（File System）モジュールは、ファイルの読み書き、ディレクトリ操作などのファイルシステム操作を提供します。"
+    },
+    {
+      "id": 9,
+      "level": "beginner",
+      "text": "Node.jsでファイルを非同期で読み込むメソッドはどれですか？",
+      "options": ["fs.readFile()", "fs.read()", "fs.readFileSync()", "fs.loadFile()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`fs.readFile()`は、ファイルを非同期で読み込みます。コールバック関数で結果を受け取ります。"
+    },
+    {
+      "id": 10,
+      "level": "beginner",
+      "text": "Node.jsでパス操作を行うために使用する標準モジュールはどれですか？",
+      "options": ["path", "pathname", "directory", "folder"],
+      "correctAnswerIndex": 0,
+      "explanation": "`path`モジュールは、ファイルパスやディレクトリパスの操作、結合、解析などの機能を提供します。"
+    },
+    {
+      "id": 11,
+      "level": "beginner",
+      "text": "Node.jsでコマンドライン引数を取得するために使用するプロパティはどれですか？",
+      "options": ["process.argv", "process.args", "process.arguments", "process.params"],
+      "correctAnswerIndex": 0,
+      "explanation": "`process.argv`は、コマンドライン引数を配列として提供します。最初の2つの要素はNode.jsの実行パスとスクリプトパスです。"
+    },
+    {
+      "id": 12,
+      "level": "beginner",
+      "text": "Node.jsで環境変数を取得するために使用するプロパティはどれですか？",
+      "options": ["process.env", "process.environment", "process.vars", "process.config"],
+      "correctAnswerIndex": 0,
+      "explanation": "`process.env`は、環境変数にアクセスするオブジェクトです。例：`process.env.NODE_ENV`"
+    },
+    {
+      "id": 13,
+      "level": "beginner",
+      "text": "Node.jsで現在の作業ディレクトリを取得するメソッドはどれですか？",
+      "options": ["process.cwd()", "process.pwd()", "process.dir()", "process.path()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`process.cwd()`は、現在の作業ディレクトリ（Current Working Directory）のパスを返します。"
+    },
+    {
+      "id": 14,
+      "level": "beginner",
+      "text": "Node.jsでプロセスを終了させるメソッドはどれですか？",
+      "options": ["process.exit()", "process.quit()", "process.stop()", "process.end()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`process.exit()`は、Node.jsプロセスを終了させます。終了コードを指定できます（デフォルトは0）。"
+    },
+    {
+      "id": 15,
+      "level": "beginner",
+      "text": "Node.jsで非同期処理の結果を扱うために使用される従来の方式は何ですか？",
+      "options": ["コールバック関数", "Promise", "async/await", "同期処理"],
+      "correctAnswerIndex": 0,
+      "explanation": "Node.jsの初期からコールバック関数が非同期処理の結果を扱う主要な方式でした。エラーファーストコールバックパターンが一般的です。"
+    },
+    {
+      "id": 16,
+      "level": "beginner",
+      "text": "Node.jsでタイマー処理を行う関数として正しいものはどれですか？",
+      "options": ["setTimeout()", "timer()", "delay()", "wait()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`setTimeout()`は、指定した時間後に関数を実行します。`setInterval()`は定期実行に使用されます。"
+    },
+    {
+      "id": 17,
+      "level": "beginner",
+      "text": "Node.jsでJSONデータを解析するために使用するメソッドはどれですか？",
+      "options": ["JSON.parse()", "JSON.decode()", "JSON.read()", "JSON.load()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`JSON.parse()`は、JSON文字列をJavaScriptオブジェクトに変換します。逆は`JSON.stringify()`です。"
+    },
+    {
+      "id": 18,
+      "level": "beginner",
+      "text": "Node.jsでURLを解析するために使用する標準モジュールはどれですか？",
+      "options": ["url", "uri", "link", "address"],
+      "correctAnswerIndex": 0,
+      "explanation": "`url`モジュールは、URLの解析、構築、検証などの機能を提供します。`url.parse()`や`url.format()`などが使用できます。"
+    },
+    {
+      "id": 19,
+      "level": "beginner",
+      "text": "Node.jsでクエリ文字列を解析するために使用する標準モジュールはどれですか？",
+      "options": ["querystring", "query", "params", "search"],
+      "correctAnswerIndex": 0,
+      "explanation": "`querystring`モジュールは、URLのクエリ文字列を解析してオブジェクトに変換したり、その逆を行います。"
+    },
+    {
+      "id": 20,
+      "level": "beginner",
+      "text": "Node.jsでBase64エンコードを行うために使用するオブジェクトはどれですか？",
+      "options": ["Buffer", "Encoder", "Base64", "Crypto"],
+      "correctAnswerIndex": 0,
+      "explanation": "`Buffer`オブジェクトは、バイナリデータを扱い、Base64エンコード/デコードも可能です。`buffer.toString('base64')`で変換できます。"
+    },
+    {
+      "id": 21,
+      "level": "beginner",
+      "text": "Node.jsで標準出力に文字列を表示する関数はどれですか？",
+      "options": ["console.log()", "print()", "output()", "display()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`console.log()`は、標準出力に文字列を表示します。デバッグやログ出力によく使用されます。"
+    },
+    {
+      "id": 21,
+      "level": "beginner",
+      "text": "Node.jsでエラー情報をコンソールに出力する関数はどれですか？",
+      "options": ["console.error()", "console.log()", "error()", "console.warn()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`console.error()`は、エラー情報を標準エラー出力（stderr）に表示します。通常のログとは区別されます。"
+    },
+    {
+      "id": 23,
+      "level": "beginner",
+      "text": "Node.jsでオペレーティングシステム情報を取得する標準モジュールはどれですか？",
+      "options": ["os", "system", "platform", "info"],
+      "correctAnswerIndex": 0,
+      "explanation": "`os`モジュールは、オペレーティングシステムに関する情報（CPU、メモリ、プラットフォームなど）を提供します。"
+    },
+    {
+      "id": 24,
+      "level": "beginner",
+      "text": "Node.jsでHTTPリクエストを送信するために使用する標準モジュールはどれですか？",
+      "options": ["http", "request", "fetch", "ajax"],
+      "correctAnswerIndex": 0,
+      "explanation": "`http`モジュールは、HTTPリクエストの送信とレスポンスの受信の両方をサポートします。`http.request()`でリクエストを作成できます。"
+    },
+    {
+      "id": 25,
+      "level": "beginner",
+      "text": "Node.jsでイベント駆動アーキテクチャを実現するために中心となる概念は何ですか？",
+      "options": ["Event Loop", "Thread Pool", "Process Queue", "Task Manager"],
+      "correctAnswerIndex": 0,
+      "explanation": "Event Loopは、Node.jsの非同期処理の中核となる仕組みで、イベントとコールバックを効率的に管理します。"
+    },
+    {
+      "id": 26,
+      "level": "intermediate",
+      "text": "Express.jsでルートハンドラを定義する基本的な方法はどれですか？",
+      "options": ["app.get('/path', handler)", "app.route('/path', handler)", "app.handle('/path', handler)", "app.listen('/path', handler)"],
+      "correctAnswerIndex": 0,
+      "explanation": "`app.get()`、`app.post()`などのメソッドでHTTPメソッドに対応するルートハンドラを定義します。"
+    },
+    {
+      "id": 27,
+      "level": "intermediate",
+      "text": "Express.jsでミドルウェアを適用するメソッドはどれですか？",
+      "options": ["app.use()", "app.middleware()", "app.apply()", "app.plugin()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`app.use()`は、すべてのルートまたは特定のパスにミドルウェア関数を適用します。"
+    },
+    {
+      "id": 28,
+      "level": "intermediate",
+      "text": "Express.jsでリクエストボディをパースするためのミドルウェアはどれですか？",
+      "options": ["express.json()", "bodyParser.json()", "express.parse()", "express.body()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`express.json()`は、JSONペイロードを含むリクエストボディをパースします。Express 4.16以降では内蔵されています。"
+    },
+    {
+      "id": 29,
+      "level": "intermediate",
+      "text": "Express.jsでルートパラメータを取得する方法はどれですか？",
+      "options": ["req.params", "req.query", "req.body", "req.headers"],
+      "correctAnswerIndex": 0,
+      "explanation": "`req.params`は、ルート定義の`:param`部分の値を取得します。例：`/user/:id`の`:id`部分"
+    },
+    {
+      "id": 30,
+      "level": "intermediate",
+      "text": "Express.jsでクエリパラメータを取得する方法はどれですか？",
+      "options": ["req.query", "req.params", "req.search", "req.querystring"],
+      "correctAnswerIndex": 0,
+      "explanation": "`req.query`は、URLのクエリ文字列（?key=value）をオブジェクトとして提供します。"
+    },
+    {
+      "id": 31,
+      "level": "intermediate",
+      "text": "Express.jsでHTTPレスポンスを送信するメソッドはどれですか？",
+      "options": ["res.send()", "res.write()", "res.output()", "res.return()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`res.send()`は、レスポンスボディを設定して送信します。文字列、オブジェクト、配列などを送信できます。"
+    },
+    {
+      "id": 32,
+      "level": "intermediate",
+      "text": "Express.jsでJSONレスポンスを送信するメソッドはどれですか？",
+      "options": ["res.json()", "res.sendJSON()", "res.jsonify()", "res.toJSON()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`res.json()`は、オブジェクトをJSON文字列に変換してContent-Typeを設定して送信します。"
+    },
+    {
+      "id": 33,
+      "level": "intermediate",
+      "text": "Express.jsでHTTPステータスコードを設定するメソッドはどれですか？",
+      "options": ["res.status()", "res.code()", "res.statusCode()", "res.setStatus()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`res.status(code)`は、HTTPステータスコードを設定します。例：`res.status(404).send('Not Found')`"
+    },
+    {
+      "id": 34,
+      "level": "intermediate",
+      "text": "Express.jsでリダイレクトを行うメソッドはどれですか？",
+      "options": ["res.redirect()", "res.forward()", "res.goto()", "res.move()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`res.redirect()`は、指定したURLにHTTPリダイレクトレスポンスを送信します。"
+    },
+    {
+      "id": 35,
+      "level": "intermediate",
+      "text": "Express.jsでエラーハンドリングミドルウェアの正しいシグネチャはどれですか？",
+      "options": ["(err, req, res, next)", "(req, res, next, err)", "(err, res, req, next)", "(req, res, err, next)"],
+      "correctAnswerIndex": 0,
+      "explanation": "エラーハンドリングミドルウェアは、第1引数にerrorオブジェクトを受け取る4つのパラメータを持つ必要があります。"
+    },
+    {
+      "id": 36,
+      "level": "intermediate",
+      "text": "Express.jsでstaticファイルを配信するミドルウェアはどれですか？",
+      "options": ["express.static()", "express.files()", "express.assets()", "express.public()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`express.static()`は、指定したディレクトリから静的ファイル（HTML、CSS、JS、画像など）を配信します。"
+    },
+    {
+      "id": 37,
+      "level": "intermediate",
+      "text": "Node.jsでPromiseを使用する利点は何ですか？",
+      "options": ["コールバック地獄を避けられる", "処理が高速になる", "メモリ使用量が少なくなる", "エラーが発生しにくくなる"],
+      "correctAnswerIndex": 0,
+      "explanation": "Promiseは、ネストしたコールバック関数（コールバック地獄）を避け、より読みやすい非同期コードを書けます。"
+    },
+    {
+      "id": 38,
+      "level": "intermediate",
+      "text": "Node.jsでasync/await構文を使用する利点は何ですか？",
+      "options": ["同期コードのような書き方で非同期処理ができる", "処理速度が向上する", "メモリ効率が良くなる", "エラーが自動的に処理される"],
+      "correctAnswerIndex": 0,
+      "explanation": "async/awaitは、非同期処理を同期コードのような直感的な書き方で記述でき、可読性が大幅に向上します。"
+    },
+    {
+      "id": 39,
+      "level": "intermediate",
+      "text": "Node.jsでMongoDBに接続するための人気のあるライブラリはどれですか？",
+      "options": ["mongoose", "mongodb", "mongo", "mongoclient"],
+      "correctAnswerIndex": 0,
+      "explanation": "Mongooseは、MongoDBのためのオブジェクトモデリングライブラリで、スキーマベースのソリューションを提供します。"
+    },
+    {
+      "id": 40,
+      "level": "intermediate",
+      "text": "Express.jsでファイルアップロードを処理するためのミドルウェアとして人気なものはどれですか？",
+      "options": ["multer", "upload", "fileupload", "formidable"],
+      "correctAnswerIndex": 0,
+      "explanation": "multerは、マルチパートフォームデータ（ファイルアップロード）を処理するExpress.js用のミドルウェアです。"
+    },
+    {
+      "id": 41,
+      "level": "intermediate",
+      "text": "Node.jsでCORSを有効にするために使用されるHTTPヘッダーはどれですか？",
+      "options": ["Access-Control-Allow-Origin", "Cross-Origin-Resource-Sharing", "Allow-Cross-Origin", "CORS-Allow-Origin"],
+      "correctAnswerIndex": 0,
+      "explanation": "`Access-Control-Allow-Origin`ヘッダーは、どのオリジンからのリクエストを許可するかを指定します。"
+    },
+    {
+      "id": 42,
+      "level": "intermediate",
+      "text": "Express.jsでセッション管理を行うためのミドルウェアはどれですか？",
+      "options": ["express-session", "session", "express-sessions", "cookie-session"],
+      "correctAnswerIndex": 0,
+      "explanation": "`express-session`は、Express.jsでサーバーサイドセッション管理を提供するミドルウェアです。"
+    },
+    {
+      "id": 43,
+      "level": "intermediate",
+      "text": "Node.jsでパスワードをハッシュ化するための人気ライブラリはどれですか？",
+      "options": ["bcrypt", "hash", "crypto", "password"],
+      "correctAnswerIndex": 0,
+      "explanation": "bcryptは、ソルト付きでパスワードを安全にハッシュ化するライブラリで、レインボーテーブル攻撃を防げます。"
+    },
+    {
+      "id": 44,
+      "level": "intermediate",
+      "text": "Node.jsで環境変数を管理するための人気ライブラリはどれですか？",
+      "options": ["dotenv", "env", "config", "environment"],
+      "correctAnswerIndex": 0,
+      "explanation": "dotenvは、.envファイルから環境変数を読み込んでprocess.envに設定するライブラリです。"
+    },
+    {
+      "id": 45,
+      "level": "intermediate",
+      "text": "Node.jsでHTTPリクエストを送信するための人気サードパーティライブラリはどれですか？",
+      "options": ["axios", "fetch", "request", "http-client"],
+      "correctAnswerIndex": 0,
+      "explanation": "axiosは、Promise ベースのHTTPクライアントライブラリで、リクエスト/レスポンスのインターセプトなどの機能を提供します。"
+    },
+    {
+      "id": 46,
+      "level": "intermediate",
+      "text": "Express.jsでRouterを使用する利点は何ですか？",
+      "options": ["ルートを モジュラーに管理できる", "処理速度が向上する", "メモリ使用量が減る", "セキュリティが向上する"],
+      "correctAnswerIndex": 0,
+      "explanation": "`express.Router()`は、ルート処理をモジュール化し、アプリケーションの構造をより整理できます。"
+    },
+    {
+      "id": 47,
+      "level": "intermediate",
+      "text": "Node.jsでリアルタイム通信を実現するライブラリとして人気なものはどれですか？",
+      "options": ["Socket.IO", "WebSocket", "Real-time", "Socket"],
+      "correctAnswerIndex": 0,
+      "explanation": "Socket.IOは、WebSocketをベースとしたリアルタイム双方向通信ライブラリで、フォールバック機能も提供します。"
+    },
+    {
+      "id": 48,
+      "level": "intermediate",
+      "text": "Node.jsでMySQLデータベースに接続するための人気ライブラリはどれですか？",
+      "options": ["mysql2", "mysql", "database", "sql"],
+      "correctAnswerIndex": 0,
+      "explanation": "mysql2は、Node.js用の高速なMySQL クライアントで、Promiseサポートとプリペアドステートメント機能があります。"
+    },
+    {
+      "id": 49,
+      "level": "intermediate",
+      "text": "Express.jsでテンプレートエンジンとして人気なものはどれですか？",
+      "options": ["EJS", "Mustache", "Handlebars", "すべて人気"],
+      "correctAnswerIndex": 3,
+      "explanation": "EJS、Handlebars、Pugなど、複数のテンプレートエンジンがExpress.jsで人気があります。プロジェクトの要件に応じて選択します。"
+    },
+    {
+      "id": 50,
+      "level": "intermediate",
+      "text": "Node.jsでログ出力を管理するための人気ライブラリはどれですか？",
+      "options": ["winston", "log4js", "bunyan", "すべて人気"],
+      "correctAnswerIndex": 3,
+      "explanation": "winston、log4js、bunyanなどが人気のログライブラリで、レベル分け、ファイル出力、フォーマットなどの機能を提供します。"
+    },
+    {
+      "id": 51,
+      "level": "advanced",
+      "text": "Node.jsでイベントエミッターを作成するために継承すべきクラスはどれですか？",
+      "options": ["EventEmitter", "Events", "Emitter", "Publisher"],
+      "correctAnswerIndex": 0,
+      "explanation": "`EventEmitter`クラスを継承することで、カスタムオブジェクトがイベントを発行・監視できるようになります。"
+    },
+    {
+      "id": 52,
+      "level": "advanced",
+      "text": "Node.jsでストリームを作成する際の基底クラスとして正しくないものはどれですか？",
+      "options": ["Stream", "Readable", "Writable", "Transform"],
+      "correctAnswerIndex": 0,
+      "explanation": "`Readable`、`Writable`、`Duplex`、`Transform`がストリームの基底クラスです。`Stream`は抽象的な概念です。"
+    },
+    {
+      "id": 53,
+      "level": "advanced",
+      "text": "Node.jsでクラスター機能を使用するモジュールはどれですか？",
+      "options": ["cluster", "worker", "process", "thread"],
+      "correctAnswerIndex": 0,
+      "explanation": "`cluster`モジュールは、マルチプロセスでアプリケーションを実行し、CPUのマルチコアを活用できます。"
+    },
+    {
+      "id": 54,
+      "level": "advanced",
+      "text": "Node.jsで子プロセスを作成するモジュールはどれですか？",
+      "options": ["child_process", "process", "spawn", "fork"],
+      "correctAnswerIndex": 0,
+      "explanation": "`child_process`モジュールは、子プロセスを作成・制御するための機能（spawn、exec、forkなど）を提供します。"
+    },
+    {
+      "id": 55,
+      "level": "advanced",
+      "text": "Node.jsでメモリ使用量を監視するために使用するプロパティはどれですか？",
+      "options": ["process.memoryUsage()", "process.memory()", "memory.usage()", "os.memory()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`process.memoryUsage()`は、現在のNode.jsプロセスのメモリ使用量（rss、heapUsed、heapTotal等）を返します。"
+    },
+    {
+      "id": 56,
+      "level": "advanced",
+      "text": "Node.jsでCPU使用量を測定するために使用するメソッドはどれですか？",
+      "options": ["process.cpuUsage()", "process.cpu()", "os.cpuUsage()", "cpu.usage()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`process.cpuUsage()`は、現在のプロセスのユーザーCPU時間とシステムCPU時間をマイクロ秒で返します。"
+    },
+    {
+      "id": 57,
+      "level": "advanced",
+      "text": "Node.jsでワーカースレッドを使用するモジュールはどれですか？",
+      "options": ["worker_threads", "threads", "workers", "thread"],
+      "correctAnswerIndex": 0,
+      "explanation": "`worker_threads`モジュールは、CPUバウンドなタスクを並列処理するためのワーカースレッドを提供します。"
+    },
+    {
+      "id": 58,
+      "level": "advanced",
+      "text": "Node.jsでHTTPSサーバーを作成するモジュールはどれですか？",
+      "options": ["https", "ssl", "tls", "secure"],
+      "correctAnswerIndex": 0,
+      "explanation": "`https`モジュールは、SSL/TLS証明書を使用してHTTPSサーバーを作成する機能を提供します。"
+    },
+    {
+      "id": 59,
+      "level": "advanced",
+      "text": "Node.jsで暗号化機能を提供する標準モジュールはどれですか？",
+      "options": ["crypto", "encryption", "cipher", "security"],
+      "correctAnswerIndex": 0,
+      "explanation": "`crypto`モジュールは、ハッシュ化、暗号化、復号化、デジタル署名などの暗号化機能を提供します。"
+    },
+    {
+      "id": 60,
+      "level": "advanced",
+      "text": "Node.jsでJWT（JSON Web Token）を扱うための人気ライブラリはどれですか？",
+      "options": ["jsonwebtoken", "jwt", "token", "webtoken"],
+      "correctAnswerIndex": 0,
+      "explanation": "`jsonwebtoken`は、JWTの生成、検証、デコードを行うためのライブラリです。認証システムでよく使用されます。"
+    },
+    {
+      "id": 61,
+      "level": "advanced",
+      "text": "Node.jsでアプリケーションのパフォーマンスをプロファイリングする方法として正しいものはどれですか？",
+      "options": ["--inspect フラグでChrome DevToolsを使用", "--profile フラグを使用", "--perf フラグを使用", "--benchmark フラグを使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "`node --inspect app.js`でChrome DevToolsのプロファイラーを使用してパフォーマンス分析ができます。"
+    },
+    {
+      "id": 62,
+      "level": "advanced",
+      "text": "Node.jsでテストフレームワークとして人気なものはどれですか？",
+      "options": ["Jest", "Mocha", "Jasmine", "すべて人気"],
+      "correctAnswerIndex": 3,
+      "explanation": "Jest、Mocha、Jasmine等が人気のテストフレームワークです。プロジェクトの要件や好みに応じて選択します。"
+    },
+    {
+      "id": 63,
+      "level": "advanced",
+      "text": "Node.jsでAPIドキュメントを自動生成するツールとして人気なものはどれですか？",
+      "options": ["Swagger", "JSDoc", "API Blueprint", "すべて人気"],
+      "correctAnswerIndex": 3,
+      "explanation": "Swagger/OpenAPI、JSDoc、API Blueprint等が人気のAPIドキュメント生成ツールです。"
+    },
+    {
+      "id": 64,
+      "level": "advanced",
+      "text": "Node.jsでプロセス間通信（IPC）を行う方法はどれですか？",
+      "options": ["process.send()", "ipc.send()", "communicate()", "message.send()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`process.send()`は、親プロセスと子プロセス間でメッセージを送信するために使用されます。"
+    },
+    {
+      "id": 65,
+      "level": "advanced",
+      "text": "Node.jsでガベージコレクションを手動で実行する方法はどれですか？",
+      "options": ["global.gc()（--expose-gcフラグ必要）", "process.gc()", "memory.gc()", "v8.gc()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`--expose-gc`フラグでNode.jsを起動すると、`global.gc()`でガベージコレクションを手動実行できます。"
+    },
+    {
+      "id": 66,
+      "level": "advanced",
+      "text": "Node.jsでV8エンジンの統計情報を取得するモジュールはどれですか？",
+      "options": ["v8", "engine", "stats", "performance"],
+      "correctAnswerIndex": 0,
+      "explanation": "`v8`モジュールは、V8 JavaScriptエンジンのヒープ統計、バージョン情報などを提供します。"
+    },
+    {
+      "id": 67,
+      "level": "advanced",
+      "text": "Node.jsでアプリケーションを本番環境に最適化するNODE_ENV環境変数の推奨値はどれですか？",
+      "options": ["production", "prod", "live", "release"],
+      "correctAnswerIndex": 0,
+      "explanation": "`NODE_ENV=production`は、多くのライブラリが本番最適化を有効にするための標準的な環境変数値です。"
+    },
+    {
+      "id": 68,
+      "level": "advanced",
+      "text": "Node.jsでプロセスマネージャーとして人気なものはどれですか？",
+      "options": ["PM2", "Forever", "Nodemon", "すべて人気"],
+      "correctAnswerIndex": 3,
+      "explanation": "PM2、Forever、Nodemon等がプロセス管理に人気です。PM2は本番環境、Nodemonは開発環境でよく使用されます。"
+    },
+    {
+      "id": 69,
+      "level": "advanced",
+      "text": "Node.jsでコードの静的解析を行うツールとして人気なものはどれですか？",
+      "options": ["ESLint", "JSHint", "JSLint", "すべて人気"],
+      "correctAnswerIndex": 3,
+      "explanation": "ESLint、JSHint、JSLint等がJavaScriptの静的解析ツールとして人気です。ESLintが最も広く使用されています。"
+    },
+    {
+      "id": 70,
+      "level": "advanced",
+      "text": "Node.jsでマイクロサービスアーキテクチャを実装する際の通信方式として適切でないものはどれですか？",
+      "options": ["直接的なファイルシステム共有", "HTTP REST API", "メッセージキュー", "gRPC"],
+      "correctAnswerIndex": 0,
+      "explanation": "マイクロサービス間の直接的なファイルシステム共有は、サービスの独立性を損なうため適切ではありません。"
+    },
+    {
+      "id": 71,
+      "level": "advanced",
+      "text": "Node.jsでDocker化する際のベストプラクティスはどれですか？",
+      "options": [".dockerignoreファイルの使用", "rootユーザーでの実行", "全ファイルのコピー", "大きなベースイメージの使用"],
+      "correctAnswerIndex": 0,
+      "explanation": ".dockerignoreファイルを使用して不要なファイルを除外し、イメージサイズを最適化することが重要です。"
+    },
+    {
+      "id": 72,
+      "level": "advanced",
+      "text": "Node.jsでリクエストレート制限を実装するミドルウェアはどれですか？",
+      "options": ["express-rate-limit", "rate-limiter", "limit-requests", "throttle"],
+      "correctAnswerIndex": 0,
+      "explanation": "`express-rate-limit`は、Express.js用のレート制限ミドルウェアで、DDoS攻撃やAPI乱用を防げます。"
+    },
+    {
+      "id": 73,
+      "level": "advanced",
+      "text": "Node.jsでORM（Object-Relational Mapping）として人気なものはどれですか？",
+      "options": ["Sequelize", "TypeORM", "Prisma", "すべて人気"],
+      "correctAnswerIndex": 3,
+      "explanation": "Sequelize、TypeORM、Prisma等が人気のORMで、それぞれ異なる特徴と利点を持ちます。"
+    },
+    {
+      "id": 74,
+      "level": "advanced",
+      "text": "Node.jsでGraphQLを実装するための人気ライブラリはどれですか？",
+      "options": ["apollo-server-express", "graphql", "express-graphql", "すべて人気"],
+      "correctAnswerIndex": 3,
+      "explanation": "Apollo Server、GraphQL.js、express-graphql等がGraphQL実装に人気のライブラリです。"
+    },
+    {
+      "id": 75,
+      "level": "advanced",
+      "text": "Node.jsでアプリケーションの監視・メトリクス収集を行うツールとして人気なものはどれですか？",
+      "options": ["New Relic", "Datadog", "Prometheus", "すべて人気"],
+      "correctAnswerIndex": 3,
+      "explanation": "New Relic、Datadog、Prometheus等が監視・メトリクス収集に人気のツールです。要件に応じて選択します。"
+    }
+  ]
+}
