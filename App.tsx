@@ -35,7 +35,7 @@ const App: React.FC = () => {
       const questionSet = await QuestionLoader.loadQuestionSet(bookId);
       setSelectedBook(bookId);
       setCurrentQuestionSet(questionSet);
-      setQuizState('welcome');
+      setQuizState('category_selection');
     } catch (error) {
       console.error('Failed to load question set:', error);
       // Handle error - could show error message
@@ -87,7 +87,7 @@ const App: React.FC = () => {
   }, []);
 
   const backToWelcome = useCallback(() => {
-    setQuizState('welcome');
+    setQuizState('category_selection');
   }, []);
 
   const backToCategorySelection = useCallback(() => {
@@ -220,7 +220,7 @@ const App: React.FC = () => {
   }, [startTime]);
 
   const restartQuiz = useCallback(() => {
-    setQuizState('welcome');
+    setQuizState('category_selection');
   }, []);
 
   const renderContent = () => {
@@ -231,7 +231,7 @@ const App: React.FC = () => {
         return (
           <LearningCategoryScreen
             onCategorySelect={handleCategorySelect}
-            onBack={backToWelcome}
+            onBack={backToBookSelection}
             questionSet={currentQuestionSet}
           />
         );
@@ -312,15 +312,16 @@ const App: React.FC = () => {
           />
         );
       case 'welcome':
-      default:
+        // Legacy welcome screen - redirect to category selection
         return (
-          <WelcomeScreen 
-            onStart={showCategorySelection}
-            onPatternSelect={showCategorySelection}
-            onBackToBooks={backToBookSelection}
-            bookTitle={currentQuestionSet?.title || 'Unknown Book'}
+          <LearningCategoryScreen
+            onCategorySelect={handleCategorySelect}
+            onBack={backToBookSelection}
+            questionSet={currentQuestionSet}
           />
         );
+      default:
+        return <BookSelectionScreen onSelectBook={handleBookSelect} />;
     }
   };
 

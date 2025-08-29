@@ -54,12 +54,15 @@ const LearningCategoryScreen: React.FC<LearningCategoryScreenProps> = ({
 
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
-          学習方法を選択
+        <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">
+          {questionSet?.title || '問題集'}
         </h1>
-        <p className="text-gray-600 dark:text-gray-300">
-          {questionSet?.title} をどのように学習しますか？
+        <p className="text-gray-600 dark:text-gray-300 mb-4">
+          {questionSet?.description || 'あなたのスキルを試してみましょう。基礎から応用まで、幅広い知識が問われます。'}
         </p>
+        <h2 className="text-2xl font-semibold text-gray-800 dark:text-white">
+          学習方法を選択
+        </h2>
       </div>
 
       {/* Category Selection */}
