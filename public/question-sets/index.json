@@ -3,6 +3,18 @@
   "lastUpdated": "2025-08-29",
   "questionSets": [
     {
+      "id": "git-github",
+      "title": "Git/GitHub スキルチェッカー",
+      "description": "Git/GitHubの基礎から上級まで、実務で必要なバージョン管理スキルを測定します。基本コマンドからチーム開発のベストプラクティスまで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "Git Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "git-logo.png",
+      "color": "#F05032"
+    },
+    {
       "id": "g-kentei",
       "title": "G検定 総合対策",
       "description": "JDLA G検定のシラバスを網羅した総合問題集です。AIの基礎から機械学習、ディープラーニング、法律・倫理まで、実践的な知識の定着を目指します。",
