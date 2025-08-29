@@ -1,5 +1,5 @@
 {
-  "name": "C++ コーディングスキルテスト",
-  "description": "C++のコーディングスキルを測定するための4択式クイズアプリケーションです。基礎から上級レベルまでの問題を解き、スコアとフィードバックを得ることができます。",
+  "name": "マルチスキルチェッカー ライブラリ",
+  "description": "複数の技術分野に対応したオンラインスキルチェックアプリケーションです。Node.js、Python、Git/GitHub、AI、Docker、C++、React、Vue.js、Vite、Excel、PowerApps、データベース、SQL、プロジェクト管理など幅広い分野のスキルを測定できます。",
   "requestFramePermissions": []
 }
