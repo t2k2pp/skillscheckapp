@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { QuizQuestion } from '../types';
+import SpeechButton from './SpeechButton';
 
 interface OneByOneQuestionCardProps {
   question: QuizQuestion;
@@ -72,9 +73,16 @@ const OneByOneQuestionCard: React.FC<OneByOneQuestionCardProps> = ({
 
       {/* Question */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold text-gray-800 dark:text-white leading-relaxed">
-          {question.text}
-        </h2>
+        <div className="flex items-start gap-3">
+          <SpeechButton 
+            text={question.text}
+            size="md"
+            ariaLabel="問題文を読み上げ"
+          />
+          <h2 className="text-xl font-semibold text-gray-800 dark:text-white leading-relaxed flex-1">
+            {question.text}
+          </h2>
+        </div>
       </div>
 
       {/* Options */}
@@ -134,7 +142,14 @@ const OneByOneQuestionCard: React.FC<OneByOneQuestionCardProps> = ({
 
           {/* Explanation */}
           <div className="bg-blue-50 dark:bg-blue-900 p-4 rounded-lg">
-            <h3 className="font-semibold text-blue-800 dark:text-blue-200 mb-2">📖 解説</h3>
+            <div className="flex items-center gap-3 mb-2">
+              <h3 className="font-semibold text-blue-800 dark:text-blue-200">📖 解説</h3>
+              <SpeechButton 
+                text={question.explanation}
+                size="sm"
+                ariaLabel="解説を読み上げ"
+              />
+            </div>
             <p className="text-blue-700 dark:text-blue-300 leading-relaxed">
               {question.explanation}
             </p>

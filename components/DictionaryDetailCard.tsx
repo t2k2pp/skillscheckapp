@@ -1,5 +1,6 @@
 import React from 'react';
 import { QuizQuestion } from '../types';
+import SpeechButton from './SpeechButton';
 
 interface DictionaryDetailCardProps {
   question: QuizQuestion;
@@ -61,9 +62,16 @@ const DictionaryDetailCard: React.FC<DictionaryDetailCardProps> = ({
 
       {/* Question */}
       <div className="mb-8">
-        <h2 className="text-xl font-semibold text-gray-800 dark:text-white leading-relaxed mb-6">
-          📝 問題
-        </h2>
+        <div className="flex items-center gap-3 mb-6">
+          <h2 className="text-xl font-semibold text-gray-800 dark:text-white leading-relaxed">
+            📝 問題
+          </h2>
+          <SpeechButton 
+            text={question.text}
+            size="md"
+            ariaLabel="問題文を読み上げ"
+          />
+        </div>
         <div className="bg-blue-50 dark:bg-blue-900 p-6 rounded-lg mb-6">
           <p className="text-blue-900 dark:text-blue-100 text-lg leading-relaxed">
             {question.text}
@@ -91,9 +99,16 @@ const DictionaryDetailCard: React.FC<DictionaryDetailCardProps> = ({
 
       {/* Explanation */}
       <div className="mb-8">
-        <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">
-          💡 解説
-        </h3>
+        <div className="flex items-center gap-3 mb-4">
+          <h3 className="text-lg font-semibold text-gray-800 dark:text-white">
+            💡 解説
+          </h3>
+          <SpeechButton 
+            text={question.explanation}
+            size="md"
+            ariaLabel="解説を読み上げ"
+          />
+        </div>
         <div className="bg-yellow-50 dark:bg-yellow-900 p-6 rounded-lg">
           <p className="text-yellow-900 dark:text-yellow-100 leading-relaxed">
             {question.explanation}

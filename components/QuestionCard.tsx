@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { QuizQuestion, QuestionLevel } from '../types';
+import SpeechButton from './SpeechButton';
 
 interface QuestionCardProps {
   question: QuizQuestion;
@@ -75,7 +76,14 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, questionNumber, t
           問題 {questionNumber} / {totalQuestions}
         </span>
       </div>
-      <p className="text-xl sm:text-2xl font-bold mb-6 text-gray-800 dark:text-gray-100">{question.text}</p>
+      <div className="flex items-start gap-3 mb-6">
+        <SpeechButton 
+          text={question.text}
+          size="md"
+          ariaLabel="問題文を読み上げ"
+        />
+        <p className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 flex-1">{question.text}</p>
+      </div>
       
       <div className="flex flex-col items-center">
         {question.options.map((option, index) => (
