@@ -15,7 +15,7 @@ export class TextToSpeech {
   private static instance: TextToSpeech | null = null;
   private synth: SpeechSynthesis | null = null;
   private voices: SpeechSynthesisVoice[] = [];
-  private isSupported: boolean = false;
+  private supported: boolean = false;
   private currentUtterance: SpeechSynthesisUtterance | null = null;
 
   private constructor() {
@@ -32,7 +32,7 @@ export class TextToSpeech {
   private initializeSpeech(): void {
     if ('speechSynthesis' in window) {
       this.synth = window.speechSynthesis;
-      this.isSupported = true;
+      this.supported = true;
       this.loadVoices();
       
       // voices が非同期で読み込まれる場合に対応
@@ -80,7 +80,7 @@ export class TextToSpeech {
 
   public speak(text: string, options: SpeechOptions = {}): Promise<void> {
     return new Promise((resolve, reject) => {
-      if (!this.isSupported || !this.synth) {
+      if (!this.supported || !this.synth) {
         reject(new Error('Speech synthesis not supported'));
         return;
       }
@@ -119,20 +119,20 @@ export class TextToSpeech {
   }
 
   public stop(): void {
-    if (this.synth && this.isSupported) {
+    if (this.synth && this.supported) {
       this.synth.cancel();
       this.currentUtterance = null;
     }
   }
 
   public pause(): void {
-    if (this.synth && this.isSupported && this.synth.speaking) {
+    if (this.synth && this.supported && this.synth.speaking) {
       this.synth.pause();
     }
   }
 
   public resume(): void {
-    if (this.synth && this.isSupported && this.synth.paused) {
+    if (this.synth && this.supported && this.synth.paused) {
       this.synth.resume();
     }
   }
@@ -146,7 +146,7 @@ export class TextToSpeech {
   }
 
   public isSupported(): boolean {
-    return this.isSupported;
+    return this.supported;
   }
 
   public getAvailableVoices(): SpeechSynthesisVoice[] {
