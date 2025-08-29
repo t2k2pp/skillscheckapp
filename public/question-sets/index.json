@@ -3,6 +3,18 @@
   "lastUpdated": "2025-08-29",
   "questionSets": [
     {
+      "id": "python",
+      "title": "Python プログラミングスキルテスト",
+      "description": "Pythonの基礎から上級まで、実務で必要なプログラミングスキルを測定します。基本文法からライブラリ活用、オブジェクト指向まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "Python Learning Team",
+      "categories": ["基礎", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "python-logo.png",
+      "color": "#3776AB"
+    },
+    {
       "id": "git-github",
       "title": "Git/GitHub スキルチェッカー",
       "description": "Git/GitHubの基礎から上級まで、実務で必要なバージョン管理スキルを測定します。基本コマンドからチーム開発のベストプラクティスまで幅広くカバーします。",

@@ -1,0 +1,614 @@
+{
+  "id": "python",
+  "title": "Python プログラミングスキルテスト",
+  "description": "Pythonの基礎から上級まで、実務で必要なプログラミングスキルを測定します。基本文法からライブラリ活用、オブジェクト指向まで幅広くカバーします。",
+  "version": "1.0.0",
+  "author": "Python Learning Team",
+  "categories": ["基礎", "中級", "上級"],
+  "totalQuestions": 75,
+  "estimatedTime": "60-75分",
+  "coverImage": "python-logo.png",
+  "color": "#3776AB",
+  "questions": [
+    {
+      "id": 1,
+      "level": "beginner",
+      "text": "Pythonで文字列を画面に出力するために使用する関数はどれですか？",
+      "options": ["print()", "output()", "display()", "show()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`print()`関数は、指定された値を標準出力（通常は画面）に表示します。Python 3では括弧が必要です。"
+    },
+    {
+      "id": 2,
+      "level": "beginner",
+      "text": "Pythonでコメントを書く際に使用する記号はどれですか？",
+      "options": ["#", "//", "/**/", "--"],
+      "correctAnswerIndex": 0,
+      "explanation": "Pythonでは`#`記号を使って一行コメントを書きます。`#`以降その行の最後までがコメントとして扱われます。"
+    },
+    {
+      "id": 3,
+      "level": "beginner",
+      "text": "Pythonで変数に整数値10を代入する正しい構文はどれですか？",
+      "options": ["x = 10", "int x = 10", "x := 10", "var x = 10"],
+      "correctAnswerIndex": 0,
+      "explanation": "Pythonでは変数の型宣言は不要で、`x = 10`のように直接値を代入できます。Pythonが自動的に型を推論します。"
+    },
+    {
+      "id": 4,
+      "level": "beginner",
+      "text": "Pythonで文字列を定義する際に使用できる引用符として正しくないものはどれですか？",
+      "options": ["'文字列'", "\"文字列\"", "```文字列```", "\"\"\"文字列\"\"\""],
+      "correctAnswerIndex": 2,
+      "explanation": "Pythonでは単一引用符`'`、二重引用符`\"`、三重引用符`\"\"\"`または`'''`が使用できます。`````は使用できません。"
+    },
+    {
+      "id": 5,
+      "level": "beginner",
+      "text": "Pythonで数値の型を確認するために使用する関数はどれですか？",
+      "options": ["type()", "typeof()", "gettype()", "datatype()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`type()`関数は、引数として渡されたオブジェクトの型を返します。例：`type(10)`は`<class 'int'>`を返します。"
+    },
+    {
+      "id": 6,
+      "level": "beginner",
+      "text": "Pythonで条件分岐を行う際に使用するキーワードはどれですか？",
+      "options": ["if", "when", "case", "condition"],
+      "correctAnswerIndex": 0,
+      "explanation": "`if`キーワードは条件分岐の開始に使用されます。`if 条件:`の形式で、条件が真の場合に続くブロックが実行されます。"
+    },
+    {
+      "id": 7,
+      "level": "beginner",
+      "text": "Pythonでリストを作成する正しい構文はどれですか？",
+      "options": ["[1, 2, 3]", "{1, 2, 3}", "(1, 2, 3)", "<1, 2, 3>"],
+      "correctAnswerIndex": 0,
+      "explanation": "Pythonでリストは角括弧`[]`を使って作成します。`[1, 2, 3]`は3つの要素を持つリストです。"
+    },
+    {
+      "id": 8,
+      "level": "beginner",
+      "text": "Pythonで繰り返し処理を行うためのキーワードはどれですか？",
+      "options": ["for", "foreach", "repeat", "loop"],
+      "correctAnswerIndex": 0,
+      "explanation": "`for`キーワードは繰り返し処理に使用されます。`for 変数 in イテラブル:`の形式で、各要素に対して処理を実行します。"
+    },
+    {
+      "id": 9,
+      "level": "beginner",
+      "text": "Pythonで辞書（dictionary）を作成する正しい構文はどれですか？",
+      "options": ["{\"key\": \"value\"}", "[\"key\": \"value\"]", "(\"key\": \"value\")", "<\"key\": \"value\">"],
+      "correctAnswerIndex": 0,
+      "explanation": "辞書は波括弧`{}`を使い、`{\"key\": \"value\"}`の形式でキーと値のペアを定義します。"
+    },
+    {
+      "id": 10,
+      "level": "beginner",
+      "text": "Pythonで関数を定義する際に使用するキーワードはどれですか？",
+      "options": ["def", "function", "func", "define"],
+      "correctAnswerIndex": 0,
+      "explanation": "`def`キーワードは関数を定義する際に使用されます。`def 関数名(引数):`の形式で定義します。"
+    },
+    {
+      "id": 11,
+      "level": "beginner",
+      "text": "Pythonで文字列の長さを取得する関数はどれですか？",
+      "options": ["len()", "length()", "size()", "count()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`len()`関数は、文字列、リスト、辞書などのオブジェクトの長さ（要素数）を返します。"
+    },
+    {
+      "id": 12,
+      "level": "beginner",
+      "text": "Pythonで2つの数値を足し算する演算子はどれですか？",
+      "options": ["+", "add", "plus", "sum"],
+      "correctAnswerIndex": 0,
+      "explanation": "`+`演算子は数値の加算に使用されます。文字列の連結にも使用できます。"
+    },
+    {
+      "id": 13,
+      "level": "beginner",
+      "text": "Pythonでユーザーからの入力を受け取る関数はどれですか？",
+      "options": ["input()", "read()", "get()", "scan()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`input()`関数は、ユーザーからキーボード入力を受け取り、文字列として返します。"
+    },
+    {
+      "id": 14,
+      "level": "beginner",
+      "text": "Pythonで数値を文字列に変換する関数はどれですか？",
+      "options": ["str()", "string()", "tostring()", "convert()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`str()`関数は、数値やその他のオブジェクトを文字列に変換します。例：`str(123)`は`'123'`を返します。"
+    },
+    {
+      "id": 15,
+      "level": "beginner",
+      "text": "Pythonでブール値（真偽値）を表すキーワードはどれですか？",
+      "options": ["True, False", "true, false", "TRUE, FALSE", "1, 0"],
+      "correctAnswerIndex": 0,
+      "explanation": "Pythonでは`True`と`False`（先頭が大文字）がブール値のリテラルです。"
+    },
+    {
+      "id": 16,
+      "level": "beginner",
+      "text": "Pythonでリストに要素を追加するメソッドはどれですか？",
+      "options": ["append()", "add()", "insert()", "push()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`append()`メソッドは、リストの末尾に要素を追加します。例：`my_list.append(4)`"
+    },
+    {
+      "id": 17,
+      "level": "beginner",
+      "text": "Pythonで文字列を小文字に変換するメソッドはどれですか？",
+      "options": ["lower()", "lowercase()", "tolower()", "downcase()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`lower()`メソッドは、文字列のすべての文字を小文字に変換します。例：`'HELLO'.lower()`は`'hello'`を返します。"
+    },
+    {
+      "id": 18,
+      "level": "beginner",
+      "text": "Pythonで範囲を生成する関数はどれですか？",
+      "options": ["range()", "sequence()", "numbers()", "generate()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`range()`関数は数値の範囲を生成します。`range(5)`は0から4までの数値を生成します。"
+    },
+    {
+      "id": 19,
+      "level": "beginner",
+      "text": "Pythonでelse文と組み合わせて使用できる条件分岐のキーワードはどれですか？",
+      "options": ["elif", "elseif", "else if", "otherwise"],
+      "correctAnswerIndex": 0,
+      "explanation": "`elif`は「else if」の省略形で、複数の条件を順次チェックする際に使用されます。"
+    },
+    {
+      "id": 20,
+      "level": "beginner",
+      "text": "Pythonでタプル（tuple）を作成する正しい構文はどれですか？",
+      "options": ["(1, 2, 3)", "[1, 2, 3]", "{1, 2, 3}", "<1, 2, 3>"],
+      "correctAnswerIndex": 0,
+      "explanation": "タプルは丸括弧`()`を使って作成します。タプルは不変（immutable）なデータ構造です。"
+    },
+    {
+      "id": 21,
+      "level": "beginner",
+      "text": "Pythonで論理演算子「かつ」を表すキーワードはどれですか？",
+      "options": ["and", "&&", "&", "AND"],
+      "correctAnswerIndex": 0,
+      "explanation": "`and`は論理積演算子で、両方の条件が真の場合に真を返します。"
+    },
+    {
+      "id": 22,
+      "level": "beginner",
+      "text": "Pythonで論理演算子「または」を表すキーワードはどれですか？",
+      "options": ["or", "||", "|", "OR"],
+      "correctAnswerIndex": 0,
+      "explanation": "`or`は論理和演算子で、どちらかの条件が真の場合に真を返します。"
+    },
+    {
+      "id": 23,
+      "level": "beginner",
+      "text": "Pythonで文字列をリストに分割するメソッドはどれですか？",
+      "options": ["split()", "divide()", "separate()", "break()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`split()`メソッドは、指定した区切り文字で文字列を分割してリストを返します。デフォルトでは空白で分割します。"
+    },
+    {
+      "id": 24,
+      "level": "beginner",
+      "text": "Pythonで浮動小数点数を整数に変換する関数はどれですか？",
+      "options": ["int()", "integer()", "toint()", "convert()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`int()`関数は、浮動小数点数や文字列を整数に変換します。小数部は切り捨てられます。"
+    },
+    {
+      "id": 25,
+      "level": "beginner",
+      "text": "Pythonでwhileループを終了させるキーワードはどれですか？",
+      "options": ["break", "exit", "stop", "end"],
+      "correctAnswerIndex": 0,
+      "explanation": "`break`文は、ループを即座に終了させます。forループやwhileループで使用できます。"
+    },
+    {
+      "id": 26,
+      "level": "intermediate",
+      "text": "Pythonでクラスを定義する際に使用するキーワードはどれですか？",
+      "options": ["class", "object", "struct", "type"],
+      "correctAnswerIndex": 0,
+      "explanation": "`class`キーワードはクラスを定義する際に使用されます。`class クラス名:`の形式で定義します。"
+    },
+    {
+      "id": 27,
+      "level": "intermediate",
+      "text": "Pythonのクラスでコンストラクタメソッドの名前はどれですか？",
+      "options": ["__init__", "constructor", "new", "create"],
+      "correctAnswerIndex": 0,
+      "explanation": "`__init__`メソッドはクラスのコンストラクタで、インスタンス作成時に自動的に呼び出されます。"
+    },
+    {
+      "id": 28,
+      "level": "intermediate",
+      "text": "Pythonで例外処理を行う際のキーワードはどれですか？",
+      "options": ["try", "catch", "handle", "exception"],
+      "correctAnswerIndex": 0,
+      "explanation": "`try`ブロック内で例外が発生する可能性のあるコードを記述し、`except`ブロックで例外を処理します。"
+    },
+    {
+      "id": 29,
+      "level": "intermediate",
+      "text": "Pythonでファイルを開く関数はどれですか？",
+      "options": ["open()", "file()", "read()", "load()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`open()`関数はファイルを開き、ファイルオブジェクトを返します。読み書きモードを指定できます。"
+    },
+    {
+      "id": 30,
+      "level": "intermediate",
+      "text": "Pythonで辞書のすべてのキーを取得するメソッドはどれですか？",
+      "options": ["keys()", "getkeys()", "allkeys()", "keylist()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`keys()`メソッドは辞書のすべてのキーをdict_keys型のビューオブジェクトとして返します。"
+    },
+    {
+      "id": 31,
+      "level": "intermediate",
+      "text": "Pythonでリスト内包表記の正しい構文はどれですか？",
+      "options": ["[x for x in range(5)]", "[x in range(5)]", "[for x in range(5)]", "[x: range(5)]"],
+      "correctAnswerIndex": 0,
+      "explanation": "リスト内包表記は`[expression for item in iterable]`の形式で、効率的にリストを生成できます。"
+    },
+    {
+      "id": 32,
+      "level": "intermediate",
+      "text": "Pythonでモジュールをインポートする基本的なキーワードはどれですか？",
+      "options": ["import", "include", "require", "load"],
+      "correctAnswerIndex": 0,
+      "explanation": "`import`文は外部モジュールや標準ライブラリを読み込む際に使用されます。"
+    },
+    {
+      "id": 33,
+      "level": "intermediate",
+      "text": "Pythonでクラスの継承を表現する正しい構文はどれですか？",
+      "options": ["class Child(Parent):", "class Child extends Parent:", "class Child inherits Parent:", "class Child : Parent"],
+      "correctAnswerIndex": 0,
+      "explanation": "Pythonでは`class 子クラス(親クラス):`の形式で継承を表現します。"
+    },
+    {
+      "id": 34,
+      "level": "intermediate",
+      "text": "Pythonで現在の日時を取得するために使用するモジュールはどれですか？",
+      "options": ["datetime", "time", "calendar", "date"],
+      "correctAnswerIndex": 0,
+      "explanation": "`datetime`モジュールは日付と時刻を扱うための豊富な機能を提供します。`datetime.datetime.now()`で現在時刻を取得できます。"
+    },
+    {
+      "id": 35,
+      "level": "intermediate",
+      "text": "Pythonで正規表現を使用するために必要なモジュールはどれですか？",
+      "options": ["re", "regex", "pattern", "match"],
+      "correctAnswerIndex": 0,
+      "explanation": "`re`モジュールは正規表現パターンマッチングの機能を提供します。"
+    },
+    {
+      "id": 36,
+      "level": "intermediate",
+      "text": "Pythonでセット（set）を作成する正しい構文はどれですか？",
+      "options": ["{1, 2, 3}", "set(1, 2, 3)", "[1, 2, 3]", "(1, 2, 3)"],
+      "correctAnswerIndex": 0,
+      "explanation": "セットは波括弧`{}`を使って作成します。重複要素を持たない順序のないコレクションです。"
+    },
+    {
+      "id": 37,
+      "level": "intermediate",
+      "text": "Pythonで辞書に新しいキーと値のペアを追加する方法として正しいものはどれですか？",
+      "options": ["dict['key'] = 'value'", "dict.add('key', 'value')", "dict.insert('key', 'value')", "dict.append('key', 'value')"],
+      "correctAnswerIndex": 0,
+      "explanation": "辞書に新しいペアを追加するには、`辞書[キー] = 値`の形式で代入します。"
+    },
+    {
+      "id": 38,
+      "level": "intermediate",
+      "text": "Pythonでリストをソートするメソッドはどれですか？",
+      "options": ["sort()", "order()", "arrange()", "organize()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`sort()`メソッドはリストをその場で（in-place）ソートします。元のリストが変更されます。"
+    },
+    {
+      "id": 39,
+      "level": "intermediate",
+      "text": "Pythonでファイルをwithステートメントで開く利点は何ですか？",
+      "options": ["自動的にファイルがクローズされる", "高速でファイルを読める", "メモリ使用量が少ない", "エラーが発生しにくい"],
+      "correctAnswerIndex": 0,
+      "explanation": "`with`ステートメントを使用すると、ブロックを出る際に自動的にファイルがクローズされ、リソースリークを防げます。"
+    },
+    {
+      "id": 40,
+      "level": "intermediate",
+      "text": "Pythonでランダムな数値を生成するために使用するモジュールはどれですか？",
+      "options": ["random", "rand", "number", "generate"],
+      "correctAnswerIndex": 0,
+      "explanation": "`random`モジュールは乱数生成機能を提供します。`random.random()`で0-1の浮動小数点数を生成できます。"
+    },
+    {
+      "id": 41,
+      "level": "intermediate",
+      "text": "Pythonで関数のデフォルト引数を指定する正しい構文はどれですか？",
+      "options": ["def func(x=10):", "def func(x default 10):", "def func(x := 10):", "def func(x -> 10):"],
+      "correctAnswerIndex": 0,
+      "explanation": "デフォルト引数は`def 関数名(引数=デフォルト値):`の形式で指定します。"
+    },
+    {
+      "id": 42,
+      "level": "intermediate",
+      "text": "Pythonで可変長引数を受け取る構文はどれですか？",
+      "options": ["*args", "...args", "args[]", "args*"],
+      "correctAnswerIndex": 0,
+      "explanation": "`*args`は可変長の位置引数を受け取ります。関数内ではタプルとして扱われます。"
+    },
+    {
+      "id": 43,
+      "level": "intermediate",
+      "text": "Pythonでキーワード引数を辞書として受け取る構文はどれですか？",
+      "options": ["**kwargs", "kwargs**", "*kwargs", "kwargs*"],
+      "correctAnswerIndex": 0,
+      "explanation": "`**kwargs`は可変長のキーワード引数を辞書として受け取ります。"
+    },
+    {
+      "id": 44,
+      "level": "intermediate",
+      "text": "Pythonでリストの要素をインデックスと一緒に取得する関数はどれですか？",
+      "options": ["enumerate()", "index()", "items()", "pairs()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`enumerate()`関数は、イテラブルオブジェクトのインデックスと要素を同時に返します。"
+    },
+    {
+      "id": 45,
+      "level": "intermediate",
+      "text": "Pythonで複数のイテラブルを同時に処理する関数はどれですか？",
+      "options": ["zip()", "combine()", "merge()", "pair()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`zip()`関数は複数のイテラブルを同時に処理し、対応する要素をタプルとして返します。"
+    },
+    {
+      "id": 46,
+      "level": "intermediate",
+      "text": "Pythonでオブジェクトが特定の型かどうかチェックする関数はどれですか？",
+      "options": ["isinstance()", "istype()", "checktype()", "typeof()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`isinstance(obj, type)`は、オブジェクトが指定した型のインスタンスかどうかを確認します。"
+    },
+    {
+      "id": 47,
+      "level": "intermediate",
+      "text": "PythonでJSONデータを扱うためのモジュールはどれですか？",
+      "options": ["json", "jsonlib", "data", "parse"],
+      "correctAnswerIndex": 0,
+      "explanation": "`json`モジュールはJSON形式のデータのエンコード・デコード機能を提供します。"
+    },
+    {
+      "id": 48,
+      "level": "intermediate",
+      "text": "Pythonでオブジェクトの文字列表現をカスタマイズするメソッドはどれですか？",
+      "options": ["__str__", "__string__", "__repr__", "__format__"],
+      "correctAnswerIndex": 0,
+      "explanation": "`__str__`メソッドは`str(obj)`や`print(obj)`で使用される文字列表現を定義します。"
+    },
+    {
+      "id": 49,
+      "level": "intermediate",
+      "text": "Pythonで浅いコピーを作成する方法として正しいものはどれですか？",
+      "options": ["list.copy()", "list.clone()", "list.duplicate()", "list.shallow()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`copy()`メソッドまたは`copy.copy()`関数で浅いコピーを作成できます。"
+    },
+    {
+      "id": 50,
+      "level": "intermediate",
+      "text": "Pythonでラムダ関数を定義する際に使用するキーワードはどれですか？",
+      "options": ["lambda", "func", "anonymous", "inline"],
+      "correctAnswerIndex": 0,
+      "explanation": "`lambda`キーワードは無名関数（ラムダ関数）を定義する際に使用されます。"
+    },
+    {
+      "id": 51,
+      "level": "advanced",
+      "text": "Pythonでデコレータを定義する際の一般的なパターンはどれですか？",
+      "options": ["@の記号を使用", "#の記号を使用", "&の記号を使用", "%の記号を使用"],
+      "correctAnswerIndex": 0,
+      "explanation": "デコレータは`@`記号を使って適用されます。`@decorator`の形式で関数やクラスの前に記述します。"
+    },
+    {
+      "id": 52,
+      "level": "advanced",
+      "text": "Pythonでジェネレータを作成するために使用するキーワードはどれですか？",
+      "options": ["yield", "generate", "return", "produce"],
+      "correctAnswerIndex": 0,
+      "explanation": "`yield`キーワードはジェネレータ関数を作成します。値を一つずつ生成し、メモリ効率が良いです。"
+    },
+    {
+      "id": 53,
+      "level": "advanced",
+      "text": "PythonでGIL（Global Interpreter Lock）の影響を最も受けるのはどれですか？",
+      "options": ["CPUバウンドなマルチスレッド処理", "I/Oバウンドなマルチスレッド処理", "単一スレッド処理", "メモリ使用量"],
+      "correctAnswerIndex": 0,
+      "explanation": "GILはCPUバウンドなマルチスレッド処理の並列実行を制限します。I/Oバウンドな処理では影響は少ないです。"
+    },
+    {
+      "id": 54,
+      "level": "advanced",
+      "text": "Pythonでコンテキストマネージャを作成するために実装すべきメソッドはどれですか？",
+      "options": ["__enter__と__exit__", "__start__と__stop__", "__begin__と__end__", "__open__と__close__"],
+      "correctAnswerIndex": 0,
+      "explanation": "`__enter__`と`__exit__`メソッドを実装することで、`with`文で使用できるコンテキストマネージャを作成できます。"
+    },
+    {
+      "id": 55,
+      "level": "advanced",
+      "text": "Pandasでデータフレームを作成する関数はどれですか？",
+      "options": ["pd.DataFrame()", "pd.Table()", "pd.Data()", "pd.Sheet()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`pd.DataFrame()`はPandasの主要なデータ構造で、表形式のデータを扱います。"
+    },
+    {
+      "id": 56,
+      "level": "advanced",
+      "text": "NumPyで配列を作成する基本的な関数はどれですか？",
+      "options": ["np.array()", "np.list()", "np.matrix()", "np.data()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`np.array()`はNumPyの基本的なデータ構造であるndarrayを作成します。"
+    },
+    {
+      "id": 57,
+      "level": "advanced",
+      "text": "PythonでHTTPリクエストを送信するための人気ライブラリはどれですか？",
+      "options": ["requests", "http", "urllib", "web"],
+      "correctAnswerIndex": 0,
+      "explanation": "`requests`ライブラリは、HTTPリクエストを簡単に送信するための最も人気のあるサードパーティライブラリです。"
+    },
+    {
+      "id": 58,
+      "level": "advanced",
+      "text": "Pythonで非同期プログラミングを行うためのキーワードはどれですか？",
+      "options": ["async/await", "thread/join", "parallel/sync", "concurrent/wait"],
+      "correctAnswerIndex": 0,
+      "explanation": "`async`と`await`キーワードは、非同期関数の定義と非同期処理の待機に使用されます。"
+    },
+    {
+      "id": 59,
+      "level": "advanced",
+      "text": "Pythonでメタクラスを指定する際に使用する引数はどれですか？",
+      "options": ["metaclass", "meta", "class_type", "type_class"],
+      "correctAnswerIndex": 0,
+      "explanation": "`class MyClass(metaclass=MyMeta):`の形式で、クラス作成時にメタクラスを指定できます。"
+    },
+    {
+      "id": 60,
+      "level": "advanced",
+      "text": "Pythonで深いコピーを作成するために使用する関数はどれですか？",
+      "options": ["copy.deepcopy()", "copy.deep()", "deep.copy()", "clone.deep()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`copy.deepcopy()`は、ネストしたオブジェクトも含めて完全にコピーを作成します。"
+    },
+    {
+      "id": 61,
+      "level": "advanced",
+      "text": "Pythonでプロパティを定義するデコレータはどれですか？",
+      "options": ["@property", "@attribute", "@getter", "@field"],
+      "correctAnswerIndex": 0,
+      "explanation": "`@property`デコレータは、メソッドを属性のようにアクセスできるプロパティに変換します。"
+    },
+    {
+      "id": 62,
+      "level": "advanced",
+      "text": "Pythonで静的メソッドを定義するデコレータはどれですか？",
+      "options": ["@staticmethod", "@static", "@class_method", "@shared"],
+      "correctAnswerIndex": 0,
+      "explanation": "`@staticmethod`デコレータは、クラスやインスタンスに依存しない静的メソッドを定義します。"
+    },
+    {
+      "id": 63,
+      "level": "advanced",
+      "text": "Pythonでクラスメソッドを定義するデコレータはどれですか？",
+      "options": ["@classmethod", "@class", "@method", "@cls"],
+      "correctAnswerIndex": 0,
+      "explanation": "`@classmethod`デコレータは、第1引数にクラス自身を受け取るクラスメソッドを定義します。"
+    },
+    {
+      "id": 64,
+      "level": "advanced",
+      "text": "Pythonでマルチプロセッシングを行うためのモジュールはどれですか？",
+      "options": ["multiprocessing", "threading", "concurrent", "parallel"],
+      "correctAnswerIndex": 0,
+      "explanation": "`multiprocessing`モジュールは、GILの制限を回避してCPUバウンドなタスクを並列処理できます。"
+    },
+    {
+      "id": 65,
+      "level": "advanced",
+      "text": "Pythonでオブジェクトが呼び出し可能かどうかチェックする関数はどれですか？",
+      "options": ["callable()", "invokable()", "executable()", "runnable()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`callable()`関数は、オブジェクトが呼び出し可能（関数的）かどうかを確認します。"
+    },
+    {
+      "id": 66,
+      "level": "advanced",
+      "text": "PythonでオブジェクトのメモリIDを取得する関数はどれですか？",
+      "options": ["id()", "memory()", "address()", "pointer()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`id()`関数は、オブジェクトの一意なメモリアドレス（識別子）を返します。"
+    },
+    {
+      "id": 67,
+      "level": "advanced",
+      "text": "Pythonでオブジェクトの属性を動的に取得する関数はどれですか？",
+      "options": ["getattr()", "get()", "attribute()", "attr()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`getattr(obj, 'attr_name')`は、オブジェクトから指定した名前の属性を動的に取得します。"
+    },
+    {
+      "id": 68,
+      "level": "advanced",
+      "text": "Pythonでオブジェクトに属性を動的に設定する関数はどれですか？",
+      "options": ["setattr()", "set()", "assign()", "put()"],
+      "correctAnswerIndex": 0,
+      "explanation": "`setattr(obj, 'attr_name', value)`は、オブジェクトに属性を動的に設定します。"
+    },
+    {
+      "id": 69,
+      "level": "advanced",
+      "text": "Pythonでイテレータプロトコルを実装するために必要なメソッドはどれですか？",
+      "options": ["__iter__と__next__", "__start__と__next__", "__begin__と__end__", "__first__と__last__"],
+      "correctAnswerIndex": 0,
+      "explanation": "`__iter__`でイテレータ自身を返し、`__next__`で次の値を返すことでイテレータプロトコルを実装します。"
+    },
+    {
+      "id": 70,
+      "level": "advanced",
+      "text": "Pythonで関数の実行時間を測定する標準ライブラリモジュールはどれですか？",
+      "options": ["time", "timing", "benchmark", "performance"],
+      "correctAnswerIndex": 0,
+      "explanation": "`time`モジュールの`time.time()`や`time.perf_counter()`を使って実行時間を測定できます。"
+    },
+    {
+      "id": 71,
+      "level": "advanced",
+      "text": "PythonでCSVファイルを扱うための標準ライブラリモジュールはどれですか？",
+      "options": ["csv", "file", "data", "table"],
+      "correctAnswerIndex": 0,
+      "explanation": "`csv`モジュールは、CSV（Comma-Separated Values）ファイルの読み書き機能を提供します。"
+    },
+    {
+      "id": 72,
+      "level": "advanced",
+      "text": "Pythonで抽象基底クラスを作成するために使用するモジュールはどれですか？",
+      "options": ["abc", "abstract", "base", "interface"],
+      "correctAnswerIndex": 0,
+      "explanation": "`abc`（Abstract Base Classes）モジュールは、抽象メソッドを持つ抽象基底クラスを定義するために使用されます。"
+    },
+    {
+      "id": 73,
+      "level": "advanced",
+      "text": "Pythonで弱参照を作成するモジュールはどれですか？",
+      "options": ["weakref", "weak", "reference", "ref"],
+      "correctAnswerIndex": 0,
+      "explanation": "`weakref`モジュールは、オブジェクトへの弱参照を作成し、循環参照の問題を解決するために使用されます。"
+    },
+    {
+      "id": 74,
+      "level": "advanced",
+      "text": "Pythonでアプリケーションのコマンドライン引数を解析するための標準ライブラリはどれですか？",
+      "options": ["argparse", "sys.argv", "getopt", "optparse"],
+      "correctAnswerIndex": 0,
+      "explanation": "`argparse`は、コマンドライン引数の解析とヘルプメッセージの生成を行う推奨のライブラリです。"
+    },
+    {
+      "id": 75,
+      "level": "advanced",
+      "text": "Pythonでパフォーマンスプロファイリングを行うための標準ライブラリはどれですか？",
+      "options": ["cProfile", "profile", "performance", "benchmark"],
+      "correctAnswerIndex": 0,
+      "explanation": "`cProfile`は、Pythonコードの実行時間とパフォーマンスを分析するための標準プロファイラです。"
+    }
+  ]
+}
