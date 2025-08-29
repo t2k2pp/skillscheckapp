@@ -1,20 +1,25 @@
 
 import React, { useState, useCallback } from 'react';
-import { QuizQuestion, UserAnswer, QuizPattern } from './types';
+import { QuizQuestion, UserAnswer, QuizPattern, QuizMode } from './types';
 import { QUESTIONS } from './constants/questions';
 import { getQuestionsByPattern, shuffleQuestionOptions } from './utils/quizPatterns';
 import { QuestionLoader } from './utils/questionLoader';
 import { QuestionSet } from './types/questionSet';
 import BookSelectionScreen from './components/BookSelectionScreen';
 import WelcomeScreen from './components/WelcomeScreen';
+import ModeSelectionScreen from './components/ModeSelectionScreen';
 import PatternSelectionScreen from './components/PatternSelectionScreen';
 import QuestionCard from './components/QuestionCard';
+import OneByOneQuestionCard from './components/OneByOneQuestionCard';
+import DictionaryScreen from './components/DictionaryScreen';
+import DictionaryDetailCard from './components/DictionaryDetailCard';
 import ResultsScreen from './components/ResultsScreen';
 
 const App: React.FC = () => {
-  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'pattern_selection' | 'active' | 'finished'>('book_selection');
+  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'mode_selection' | 'pattern_selection' | 'active' | 'one_by_one_active' | 'dictionary_list' | 'dictionary_detail' | 'finished'>('book_selection');
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [currentQuestionSet, setCurrentQuestionSet] = useState<QuestionSet | null>(null);
+  const [selectedMode, setSelectedMode] = useState<QuizMode>(QuizMode.Standard);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
   const [userAnswers, setUserAnswers] = useState<UserAnswer[]>([]);
   const [questions, setQuestions] = useState<QuizQuestion[]>([]);
@@ -35,35 +40,66 @@ const App: React.FC = () => {
     }
   }, []);
 
-  const prepareQuizQuestions = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions, questionSet?: QuestionSet) => {
+  const prepareQuizQuestions = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions, questionSet?: QuestionSet, mode: QuizMode = QuizMode.Standard) => {
     // Use current question set or fallback to legacy questions
     if (questionSet) {
       // Convert JSON questions to QuizQuestion format
       const quizQuestions = QuestionLoader.convertToQuizQuestions(questionSet.questions);
-      // Apply pattern filtering
-      const selectedQuestions = getQuestionsByPattern(pattern, quizQuestions);
-      return selectedQuestions.map(shuffleQuestionOptions);
+      
+      // Apply pattern filtering for Standard mode, all questions for other modes
+      let selectedQuestions: QuizQuestion[];
+      if (mode === QuizMode.Standard) {
+        selectedQuestions = getQuestionsByPattern(pattern, quizQuestions);
+        return selectedQuestions.map(shuffleQuestionOptions);
+      } else if (mode === QuizMode.OneByOne) {
+        // Shuffle questions but keep options shuffled per question
+        selectedQuestions = getQuestionsByPattern(pattern, quizQuestions);
+        return selectedQuestions.map(shuffleQuestionOptions);
+      } else {
+        // Dictionary mode: no shuffling, original order
+        return getQuestionsByPattern(QuizPattern.AllQuestions, quizQuestions);
+      }
     } else {
-      // Fallback to legacy questions (this should not happen in new version)
-      const quizQuestions = QuestionLoader.convertToQuizQuestions([]);
-      const selectedQuestions = getQuestionsByPattern(pattern, quizQuestions);
-      return selectedQuestions.map(shuffleQuestionOptions);
+      // Fallback to empty array
+      return [];
     }
   }, []);
 
   const startQuiz = useCallback((pattern: QuizPattern = QuizPattern.AllQuestions) => {
-    setQuestions(prepareQuizQuestions(pattern, currentQuestionSet || undefined));
+    setQuestions(prepareQuizQuestions(pattern, currentQuestionSet || undefined, selectedMode));
     setCurrentQuestionIndex(0);
     setUserAnswers([]);
-    setQuizState('active');
-    const now = Date.now();
-    setStartTime(now);
-    setQuestionStartTime(now);
-  }, [prepareQuizQuestions, currentQuestionSet]);
+    
+    if (selectedMode === QuizMode.Standard) {
+      setQuizState('active');
+      const now = Date.now();
+      setStartTime(now);
+      setQuestionStartTime(now);
+    } else if (selectedMode === QuizMode.OneByOne) {
+      setQuizState('one_by_one_active');
+    } else {
+      setQuizState('dictionary_list');
+    }
+  }, [prepareQuizQuestions, currentQuestionSet, selectedMode]);
+
+  const showModeSelection = useCallback(() => {
+    setQuizState('mode_selection');
+  }, []);
 
   const showPatternSelection = useCallback(() => {
     setQuizState('pattern_selection');
   }, []);
+
+  const handleModeSelect = useCallback((mode: QuizMode) => {
+    setSelectedMode(mode);
+    if (mode === QuizMode.Dictionary) {
+      // Dictionary mode doesn't need pattern selection
+      startQuiz(QuizPattern.AllQuestions);
+    } else {
+      // Standard and OneByOne modes need pattern selection
+      showPatternSelection();
+    }
+  }, [startQuiz, showPatternSelection]);
 
   const handlePatternSelect = useCallback((pattern: QuizPattern) => {
     startQuiz(pattern);
@@ -73,11 +109,48 @@ const App: React.FC = () => {
     setQuizState('welcome');
   }, []);
 
+  const backToModeSelection = useCallback(() => {
+    setQuizState('mode_selection');
+  }, []);
+
   const backToBookSelection = useCallback(() => {
     setQuizState('book_selection');
     setSelectedBook(null);
     setCurrentQuestionSet(null);
   }, []);
+
+  // New handlers for OneByOne mode
+  const handleOneByOneNext = useCallback(() => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(prev => prev + 1);
+    }
+  }, [currentQuestionIndex, questions.length]);
+
+  const handleOneByOneFinish = useCallback(() => {
+    setQuizState('welcome');
+  }, []);
+
+  // New handlers for Dictionary mode
+  const handleDictionaryQuestionSelect = useCallback((questionIndex: number) => {
+    setCurrentQuestionIndex(questionIndex);
+    setQuizState('dictionary_detail');
+  }, []);
+
+  const handleDictionaryBack = useCallback(() => {
+    setQuizState('dictionary_list');
+  }, []);
+
+  const handleDictionaryPrevious = useCallback(() => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(prev => prev - 1);
+    }
+  }, [currentQuestionIndex]);
+
+  const handleDictionaryNext = useCallback(() => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(prev => prev + 1);
+    }
+  }, [currentQuestionIndex, questions.length]);
   
   const handleAnswer = useCallback((answerIndex: number) => {
     const now = Date.now();
@@ -113,17 +186,58 @@ const App: React.FC = () => {
     switch (quizState) {
       case 'book_selection':
         return <BookSelectionScreen onSelectBook={handleBookSelect} />;
+      case 'mode_selection':
+        return (
+          <ModeSelectionScreen
+            onModeSelect={handleModeSelect}
+            onBack={backToWelcome}
+            questionSet={currentQuestionSet}
+          />
+        );
       case 'pattern_selection': {
         const quizQuestions = currentQuestionSet ? QuestionLoader.convertToQuizQuestions(currentQuestionSet.questions) : [];
         return (
           <PatternSelectionScreen
             onPatternSelect={handlePatternSelect}
-            onBack={backToWelcome}
+            onBack={backToModeSelection}
             questionSet={currentQuestionSet}
             questions={quizQuestions}
           />
         );
       }
+      case 'one_by_one_active':
+        return (
+          <OneByOneQuestionCard
+            question={questions[currentQuestionIndex]}
+            questionNumber={currentQuestionIndex + 1}
+            totalQuestions={questions.length}
+            onNext={handleOneByOneNext}
+            onFinish={handleOneByOneFinish}
+            onBack={backToModeSelection}
+          />
+        );
+      case 'dictionary_list':
+        return (
+          <DictionaryScreen
+            questions={questions}
+            questionSet={currentQuestionSet}
+            onQuestionSelect={handleDictionaryQuestionSelect}
+            onBack={backToModeSelection}
+          />
+        );
+      case 'dictionary_detail':
+        return (
+          <DictionaryDetailCard
+            question={questions[currentQuestionIndex]}
+            questionNumber={currentQuestionIndex + 1}
+            totalQuestions={questions.length}
+            onBack={handleDictionaryBack}
+            onPrevious={handleDictionaryPrevious}
+            onNext={handleDictionaryNext}
+            hasPrevious={currentQuestionIndex > 0}
+            hasNext={currentQuestionIndex < questions.length - 1}
+          />
+        );
       case 'active':
         return (
           <QuestionCard
@@ -149,8 +263,8 @@ const App: React.FC = () => {
       default:
         return (
           <WelcomeScreen 
-            onStart={() => startQuiz()} 
-            onPatternSelect={showPatternSelection}
+            onStart={showModeSelection}
+            onPatternSelect={showModeSelection}
             onBackToBooks={backToBookSelection}
             bookTitle={currentQuestionSet?.title || 'Unknown Book'}
           />

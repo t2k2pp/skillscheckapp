@@ -34,3 +34,25 @@ export interface QuizPatternInfo {
   estimatedTime: string;
   questionCount: number;
 }
+
+// 新しいクイズモード
+export enum QuizMode {
+  Standard = 'standard',        // 従来の連続問題モード
+  OneByOne = 'one_by_one',     // 1問1答モード（解説付き）
+  Dictionary = 'dictionary'     // 一覧辞書モード
+}
+
+// モード情報
+export interface QuizModeInfo {
+  id: QuizMode;
+  name: string;
+  description: string;
+  icon: string;
+}
+
+// 問題サマリー（辞書モード用）
+export interface QuestionSummary {
+  id: number;
+  shortText: string;
+  level: QuestionLevel;
+}
