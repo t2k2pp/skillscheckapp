@@ -21,6 +21,8 @@ export interface Question {
   explanation: string;
 }
 
+export type ContentType = 'quiz' | 'ebook' | 'slides' | 'pdf';
+
 export interface QuestionSetMetadata {
   id: string;
   title: string;
@@ -32,4 +34,7 @@ export interface QuestionSetMetadata {
   estimatedTime: string;
   coverImage?: string;
   color?: string;
+  type?: ContentType;
+  contentFile?: string;
+  githubRepo?: string;
 }

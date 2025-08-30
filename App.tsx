@@ -4,7 +4,7 @@ import { QuizQuestion, UserAnswer, QuizPattern, QuizMode, LearningCategory, Quiz
 import { QUESTIONS } from './constants/questions';
 import { getQuestionsByPattern, shuffleQuestionOptions } from './utils/quizPatterns';
 import { QuestionLoader } from './utils/questionLoader';
-import { QuestionSet } from './types/questionSet';
+import { QuestionSet, QuestionSetMetadata } from './types/questionSet';
 import BookSelectionScreen from './components/BookSelectionScreen';
 import WelcomeScreen from './components/WelcomeScreen';
 import LearningCategoryScreen from './components/LearningCategoryScreen';
@@ -15,11 +15,13 @@ import OneByOneQuestionCard from './components/OneByOneQuestionCard';
 import DictionaryScreen from './components/DictionaryScreen';
 import DictionaryDetailCard from './components/DictionaryDetailCard';
 import ResultsScreen from './components/ResultsScreen';
+import EbookViewer from './components/EbookViewer';
 
 const App: React.FC = () => {
-  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'category_selection' | 'quiz_mode_selection' | 'pattern_selection' | 'active' | 'one_by_one_active' | 'dictionary_list' | 'dictionary_detail' | 'finished'>('book_selection');
+  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'category_selection' | 'quiz_mode_selection' | 'pattern_selection' | 'active' | 'one_by_one_active' | 'dictionary_list' | 'dictionary_detail' | 'finished' | 'ebook_viewer'>('book_selection');
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [currentQuestionSet, setCurrentQuestionSet] = useState<QuestionSet | null>(null);
+  const [currentBookMetadata, setCurrentBookMetadata] = useState<QuestionSetMetadata | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<LearningCategory | null>(null);
   const [selectedQuizMode, setSelectedQuizMode] = useState<QuizModeType | null>(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
@@ -30,11 +32,21 @@ const App: React.FC = () => {
   const [totalTime, setTotalTime] = useState<number>(0);
 
   // Book selection handler
-  const handleBookSelect = useCallback(async (bookId: string) => {
+  const handleBookSelect = useCallback(async (bookId: string, metadata?: QuestionSetMetadata) => {
     try {
+      // マークダウンコンテンツの場合、直接Ebookビューアに移動
+      if (metadata?.type === 'ebook' && metadata.contentFile) {
+        setSelectedBook(bookId);
+        setCurrentBookMetadata(metadata);
+        setQuizState('ebook_viewer');
+        return;
+      }
+
+      // 通常のクイズコンテンツ
       const questionSet = await QuestionLoader.loadQuestionSet(bookId);
       setSelectedBook(bookId);
       setCurrentQuestionSet(questionSet);
+      setCurrentBookMetadata(metadata || null);
       setQuizState('category_selection');
     } catch (error) {
       console.error('Failed to load question set:', error);
@@ -102,6 +114,7 @@ const App: React.FC = () => {
     setQuizState('book_selection');
     setSelectedBook(null);
     setCurrentQuestionSet(null);
+    setCurrentBookMetadata(null);
     setSelectedCategory(null);
     setSelectedQuizMode(null);
   }, []);
@@ -311,6 +324,18 @@ const App: React.FC = () => {
             questionSet={currentQuestionSet}
           />
         );
+      case 'ebook_viewer':
+        if (currentBookMetadata?.contentFile) {
+          return (
+            <EbookViewer
+              contentFile={currentBookMetadata.contentFile}
+              title={currentBookMetadata.title}
+              onBack={backToBookSelection}
+              githubRepo={currentBookMetadata.githubRepo}
+            />
+          );
+        }
+        return <BookSelectionScreen onSelectBook={handleBookSelect} />;
       case 'welcome':
         // Legacy welcome screen - redirect to category selection
         return (
@@ -326,10 +351,8 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col items-center justify-center p-4 font-sans transition-colors duration-500">
-      <div className="w-full max-w-2xl">
-        {renderContent()}
-      </div>
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 font-sans transition-colors duration-500">
+      {renderContent()}
     </div>
   );
 };

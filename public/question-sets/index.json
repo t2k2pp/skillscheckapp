@@ -15,6 +15,21 @@
       "color": "#339933"
     },
     {
+      "id": "sample-ebook",
+      "title": "Node.js 基礎ガイド",
+      "description": "Node.jsの基礎から実用的な応用まで学習できる電子書籍です。環境構築からHTTPサーバー構築まで、実践的な内容で学習できます。",
+      "version": "1.0.0",
+      "author": "Node.js Learning Team",
+      "categories": ["Node.js", "プログラミング", "バックエンド"],
+      "totalQuestions": 0,
+      "estimatedTime": "45-60分",
+      "coverImage": "nodejs-logo.png",
+      "color": "#339933",
+      "type": "ebook",
+      "contentFile": "sample-ebook.md",
+      "githubRepo": "your-username/dockerskillchecker"
+    },
+    {
       "id": "python",
       "title": "Python プログラミングスキルテスト",
       "description": "Pythonの基礎から上級まで、実務で必要なプログラミングスキルを測定します。基本文法からライブラリ活用、オブジェクト指向まで幅広くカバーします。",
