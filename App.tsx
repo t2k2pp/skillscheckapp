@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { QuizQuestion, UserAnswer, QuizPattern, QuizMode, LearningCategory, QuizModeType } from './types';
 import { getQuestionsByPattern, shuffleQuestionOptions } from './utils/quizPatterns';

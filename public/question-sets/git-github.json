@@ -12,7 +12,7 @@
   "questions": [
     {
       "id": 1,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Gitとは何ですか？",
       "options": ["分散型バージョン管理システム", "集中型バージョン管理システム", "プログラミング言語", "テキストエディタ"],
       "correctAnswerIndex": 0,
@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "level": "beginner",
+      "level": "基礎",
       "text": "新しいGitリポジトリを初期化するコマンドはどれですか？",
       "options": ["git init", "git start", "git create", "git new"],
       "correctAnswerIndex": 0,
@@ -28,7 +28,7 @@
     },
     {
       "id": 3,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ファイルをステージングエリアに追加するコマンドはどれですか？",
       "options": ["git add", "git stage", "git include", "git prepare"],
       "correctAnswerIndex": 0,
@@ -36,7 +36,7 @@
     },
     {
       "id": 4,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ワーキングディレクトリの状態を確認するコマンドはどれですか？",
       "options": ["git status", "git state", "git check", "git info"],
       "correctAnswerIndex": 0,
@@ -44,7 +44,7 @@
     },
     {
       "id": 5,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ステージされた変更をリポジトリに記録するコマンドはどれですか？",
       "options": ["git commit", "git save", "git record", "git submit"],
       "correctAnswerIndex": 0,
@@ -52,7 +52,7 @@
     },
     {
       "id": 6,
-      "level": "beginner",
+      "level": "基礎",
       "text": "コミット履歴を表示するコマンドはどれですか？",
       "options": ["git log", "git history", "git list", "git show"],
       "correctAnswerIndex": 0,
@@ -60,7 +60,7 @@
     },
     {
       "id": 7,
-      "level": "beginner",
+      "level": "基礎",
       "text": "リモートリポジトリを複製するコマンドはどれですか？",
       "options": ["git clone", "git copy", "git download", "git fetch"],
       "correctAnswerIndex": 0,
@@ -68,7 +68,7 @@
     },
     {
       "id": 8,
-      "level": "beginner",
+      "level": "基礎",
       "text": "すべてのファイルをステージングエリアに追加するコマンドはどれですか？",
       "options": ["git add .", "git add *", "git add all", "git add --everything"],
       "correctAnswerIndex": 0,
@@ -76,7 +76,7 @@
     },
     {
       "id": 9,
-      "level": "beginner",
+      "level": "基礎",
       "text": "コミットメッセージを含めて一行でコミットするオプションはどれですか？",
       "options": ["git commit -m", "git commit --message", "git commit -msg", "git commit --comment"],
       "correctAnswerIndex": 0,
@@ -84,7 +84,7 @@
     },
     {
       "id": 10,
-      "level": "beginner",
+      "level": "基礎",
       "text": "リモートリポジトリのデフォルト名は何ですか？",
       "options": ["origin", "master", "remote", "upstream"],
       "correctAnswerIndex": 0,
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ローカルの変更をリモートリポジトリに送信するコマンドはどれですか？",
       "options": ["git push", "git send", "git upload", "git sync"],
       "correctAnswerIndex": 0,
@@ -100,7 +100,7 @@
     },
     {
       "id": 12,
-      "level": "beginner",
+      "level": "基礎",
       "text": "リモートリポジトリの変更をローカルに取得するコマンドはどれですか？",
       "options": ["git pull", "git get", "git download", "git sync"],
       "correctAnswerIndex": 0,
@@ -108,7 +108,7 @@
     },
     {
       "id": 13,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Gitで無視するファイルを指定するファイル名は何ですか？",
       "options": [".gitignore", ".ignore", ".gitexclude", ".exclude"],
       "correctAnswerIndex": 0,
@@ -116,7 +116,7 @@
     },
     {
       "id": 14,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ファイルの変更差分を表示するコマンドはどれですか？",
       "options": ["git diff", "git compare", "git changes", "git delta"],
       "correctAnswerIndex": 0,
@@ -124,7 +124,7 @@
     },
     {
       "id": 15,
-      "level": "beginner",
+      "level": "基礎",
       "text": "GitHubとは何ですか？",
       "options": ["Gitリポジトリのホスティングサービス", "バージョン管理システム", "プログラミング言語", "コードエディタ"],
       "correctAnswerIndex": 0,
@@ -132,7 +132,7 @@
     },
     {
       "id": 16,
-      "level": "beginner",
+      "level": "基礎",
       "text": "現在のブランチ名を表示する最も簡単な方法はどれですか？",
       "options": ["git branch", "git status", "git current", "git name"],
       "correctAnswerIndex": 0,
@@ -140,7 +140,7 @@
     },
     {
       "id": 17,
-      "level": "beginner",
+      "level": "基礎",
       "text": "新しいブランチを作成するコマンドはどれですか？",
       "options": ["git branch <branch-name>", "git create <branch-name>", "git new <branch-name>", "git make <branch-name>"],
       "correctAnswerIndex": 0,
@@ -148,7 +148,7 @@
     },
     {
       "id": 18,
-      "level": "beginner",
+      "level": "基礎",
       "text": "別のブランチに切り替えるコマンドはどれですか？",
       "options": ["git checkout", "git switch", "git change", "git move"],
       "correctAnswerIndex": 0,
@@ -156,7 +156,7 @@
     },
     {
       "id": 19,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ファイルをステージングエリアから除外するコマンドはどれですか？",
       "options": ["git reset", "git unstage", "git remove", "git exclude"],
       "correctAnswerIndex": 0,
@@ -164,7 +164,7 @@
     },
     {
       "id": 20,
-      "level": "beginner",
+      "level": "基礎",
       "text": "コミットに含める変更を部分的に選択する際に使用するオプションはどれですか？",
       "options": ["git add -p", "git add --partial", "git add --select", "git add --interactive"],
       "correctAnswerIndex": 0,
@@ -172,7 +172,7 @@
     },
     {
       "id": 21,
-      "level": "beginner",
+      "level": "基礎",
       "text": "特定のコミットの詳細を表示するコマンドはどれですか？",
       "options": ["git show", "git view", "git display", "git detail"],
       "correctAnswerIndex": 0,
@@ -180,7 +180,7 @@
     },
     {
       "id": 22,
-      "level": "beginner",
+      "level": "基礎",
       "text": "直前のコミットを修正するオプションはどれですか？",
       "options": ["git commit --amend", "git commit --fix", "git commit --modify", "git commit --update"],
       "correctAnswerIndex": 0,
@@ -188,7 +188,7 @@
     },
     {
       "id": 23,
-      "level": "beginner",
+      "level": "基礎",
       "text": "リモートリポジトリの情報を表示するコマンドはどれですか？",
       "options": ["git remote -v", "git remote --info", "git remote --show", "git remote --list"],
       "correctAnswerIndex": 0,
@@ -196,7 +196,7 @@
     },
     {
       "id": 24,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ワーキングディレクトリの変更を一時的に保存するコマンドはどれですか？",
       "options": ["git stash", "git save", "git temp", "git backup"],
       "correctAnswerIndex": 0,
@@ -204,7 +204,7 @@
     },
     {
       "id": 25,
-      "level": "beginner",
+      "level": "基礎",
       "text": "タグを作成するコマンドはどれですか？",
       "options": ["git tag", "git mark", "git label", "git version"],
       "correctAnswerIndex": 0,
@@ -212,7 +212,7 @@
     },
     {
       "id": 26,
-      "level": "intermediate",
+      "level": "中級",
       "text": "新しいブランチを作成して同時に切り替えるコマンドはどれですか？",
       "options": ["git checkout -b", "git branch --switch", "git create --checkout", "git switch --new"],
       "correctAnswerIndex": 0,
@@ -220,7 +220,7 @@
     },
     {
       "id": 27,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ブランチをマージする際に使用する基本的なコマンドはどれですか？",
       "options": ["git merge", "git join", "git combine", "git integrate"],
       "correctAnswerIndex": 0,
@@ -228,7 +228,7 @@
     },
     {
       "id": 28,
-      "level": "intermediate",
+      "level": "中級",
       "text": "マージコミットを作成せずにブランチを統合する方法はどれですか？",
       "options": ["git merge --squash", "git merge --no-commit", "git merge --linear", "git merge --direct"],
       "correctAnswerIndex": 0,
@@ -236,7 +236,7 @@
     },
     {
       "id": 29,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ブランチの履歴を一直線にするためのコマンドはどれですか？",
       "options": ["git rebase", "git linearize", "git flatten", "git straighten"],
       "correctAnswerIndex": 0,
@@ -244,7 +244,7 @@
     },
     {
       "id": 30,
-      "level": "intermediate",
+      "level": "中級",
       "text": "リモートブランチの情報を更新するコマンドはどれですか？",
       "options": ["git fetch", "git update", "git refresh", "git sync"],
       "correctAnswerIndex": 0,
@@ -252,7 +252,7 @@
     },
     {
       "id": 31,
-      "level": "intermediate",
+      "level": "中級",
       "text": "マージコンフリクトが発生した際、どのファイルでコンフリクトが起きているかを確認するコマンドはどれですか？",
       "options": ["git status", "git conflicts", "git diff --conflicts", "git merge --status"],
       "correctAnswerIndex": 0,
@@ -260,7 +260,7 @@
     },
     {
       "id": 32,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ブランチを削除するコマンドはどれですか？",
       "options": ["git branch -d", "git delete branch", "git remove branch", "git branch --delete"],
       "correctAnswerIndex": 0,
@@ -268,7 +268,7 @@
     },
     {
       "id": 33,
-      "level": "intermediate",
+      "level": "中級",
       "text": "特定のコミットの変更を現在のブランチに適用するコマンドはどれですか？",
       "options": ["git cherry-pick", "git apply", "git copy-commit", "git pick"],
       "correctAnswerIndex": 0,
@@ -276,7 +276,7 @@
     },
     {
       "id": 34,
-      "level": "intermediate",
+      "level": "中級",
       "text": "プルリクエスト（Pull Request）とは何ですか？",
       "options": ["ブランチのマージを提案・レビューするためのGitHub機能", "リモートリポジトリから変更を取得するコマンド", "ブランチを作成する際の申請", "コミットを取り消す機能"],
       "correctAnswerIndex": 0,
@@ -284,7 +284,7 @@
     },
     {
       "id": 35,
-      "level": "intermediate",
+      "level": "中級",
       "text": "リモートブランチを追跡するローカルブランチを作成するコマンドはどれですか？",
       "options": ["git checkout -b <local-branch> origin/<remote-branch>", "git branch --track origin/<remote-branch>", "git pull origin <remote-branch>", "git clone -b <remote-branch>"],
       "correctAnswerIndex": 0,
@@ -292,7 +292,7 @@
     },
     {
       "id": 36,
-      "level": "intermediate",
+      "level": "中級",
       "text": "複数のコミットを1つにまとめるGitの機能は何ですか？",
       "options": ["スカッシュ（Squash）", "マージ（Merge）", "リベース（Rebase）", "チェリーピック（Cherry-pick）"],
       "correctAnswerIndex": 0,
@@ -300,7 +300,7 @@
     },
     {
       "id": 37,
-      "level": "intermediate",
+      "level": "中級",
       "text": "インタラクティブリベースを開始するコマンドはどれですか？",
       "options": ["git rebase -i", "git rebase --interactive", "git rebase --edit", "git rebase --modify"],
       "correctAnswerIndex": 0,
@@ -308,7 +308,7 @@
     },
     {
       "id": 38,
-      "level": "intermediate",
+      "level": "中級",
       "text": "フォーク（Fork）とは何ですか？",
       "options": ["他人のリポジトリのコピーを自分のアカウントに作成すること", "ブランチを分岐させること", "リポジトリを複製すること", "プルリクエストを作成すること"],
       "correctAnswerIndex": 0,
@@ -316,7 +316,7 @@
     },
     {
       "id": 39,
-      "level": "intermediate",
+      "level": "中級",
       "text": "上流（upstream）リポジトリとは何を指しますか？",
       "options": ["フォーク元のオリジナルリポジトリ", "最新のリモートリポジトリ", "メインブランチのリポジトリ", "最初にクローンしたリポジトリ"],
       "correctAnswerIndex": 0,
@@ -324,7 +324,7 @@
     },
     {
       "id": 40,
-      "level": "intermediate",
+      "level": "中級",
       "text": "特定のファイルのコミット履歴を表示するコマンドはどれですか？",
       "options": ["git log <filename>", "git history <filename>", "git track <filename>", "git file-log <filename>"],
       "correctAnswerIndex": 0,
@@ -332,7 +332,7 @@
     },
     {
       "id": 41,
-      "level": "intermediate",
+      "level": "中級",
       "text": "コミットメッセージの推奨される形式はどれですか？",
       "options": ["1行目に概要、空行、詳細説明", "詳細な説明のみ", "日付とコミット者名から開始", "変更ファイル名の羅列"],
       "correctAnswerIndex": 0,
@@ -340,7 +340,7 @@
     },
     {
       "id": 42,
-      "level": "intermediate",
+      "level": "中級",
       "text": "他の開発者の変更と競合を避けるための基本的な作業フローはどれですか？",
       "options": ["頻繁にpullしてからpushする", "常にmainブランチで作業する", "pushする前にfetchする", "毎回新しいリポジトリを作成する"],
       "correctAnswerIndex": 0,
@@ -348,7 +348,7 @@
     },
     {
       "id": 43,
-      "level": "intermediate",
+      "level": "中級",
       "text": "コミット履歴を装飾付きで見やすく表示するオプションはどれですか？",
       "options": ["git log --oneline --graph --decorate", "git log --pretty", "git log --visual", "git log --format"],
       "correctAnswerIndex": 0,
@@ -356,7 +356,7 @@
     },
     {
       "id": 44,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ファイルのある部分がいつ変更されたかを調べるコマンドはどれですか？",
       "options": ["git blame", "git who", "git author", "git history"],
       "correctAnswerIndex": 0,
@@ -364,7 +364,7 @@
     },
     {
       "id": 45,
-      "level": "intermediate",
+      "level": "中級",
       "text": "マージとリベースの主な違いは何ですか？",
       "options": ["マージは履歴を保持、リベースは履歴を一直線にする", "マージは高速、リベースは低速", "マージは安全、リベースは危険", "マージは自動、リベースは手動"],
       "correctAnswerIndex": 0,
@@ -372,7 +372,7 @@
     },
     {
       "id": 46,
-      "level": "intermediate",
+      "level": "中級",
       "text": "stashした変更を復元するコマンドはどれですか？",
       "options": ["git stash pop", "git stash restore", "git stash apply", "git stash get"],
       "correctAnswerIndex": 0,
@@ -380,7 +380,7 @@
     },
     {
       "id": 47,
-      "level": "intermediate",
+      "level": "中級",
       "text": "特定のブランチのみをクローンするオプションはどれですか？",
       "options": ["git clone -b <branch>", "git clone --branch <branch>", "git clone --single <branch>", "git clone --only <branch>"],
       "correctAnswerIndex": 0,
@@ -388,7 +388,7 @@
     },
     {
       "id": 48,
-      "level": "intermediate",
+      "level": "中級",
       "text": "リモートブランチを削除するコマンドはどれですか？",
       "options": ["git push origin --delete <branch>", "git remote delete <branch>", "git branch -r -d <branch>", "git push --remove <branch>"],
       "correctAnswerIndex": 0,
@@ -396,7 +396,7 @@
     },
     {
       "id": 49,
-      "level": "intermediate",
+      "level": "中級",
       "text": "サブモジュールとは何ですか？",
       "options": ["他のGitリポジトリを含む仕組み", "ブランチの一種", "コミットの分割機能", "マージの方法"],
       "correctAnswerIndex": 0,
@@ -404,7 +404,7 @@
     },
     {
       "id": 50,
-      "level": "intermediate",
+      "level": "中級",
       "text": "コンフリクト解決後に行うべきコマンドはどれですか？",
       "options": ["git add で変更をステージしてからgit commit", "git merge --continue", "git conflict --resolve", "git fix --complete"],
       "correctAnswerIndex": 0,
@@ -412,7 +412,7 @@
     },
     {
       "id": 51,
-      "level": "advanced",
+      "level": "上級",
       "text": "過去のコミットを取り消す安全な方法はどれですか？",
       "options": ["git revert", "git reset --hard", "git delete", "git undo"],
       "correctAnswerIndex": 0,
@@ -420,7 +420,7 @@
     },
     {
       "id": 52,
-      "level": "advanced",
+      "level": "上級",
       "text": "共有されたブランチで避けるべきGitコマンドはどれですか？",
       "options": ["git reset --hard", "git merge", "git pull", "git push"],
       "correctAnswerIndex": 0,
@@ -428,7 +428,7 @@
     },
     {
       "id": 53,
-      "level": "advanced",
+      "level": "上級",
       "text": "Gitフックとは何ですか？",
       "options": ["特定のGitイベント発生時に自動実行されるスクリプト", "ブランチを結合する機能", "コミットを修正する機能", "リモートリポジトリとの同期機能"],
       "correctAnswerIndex": 0,
@@ -436,7 +436,7 @@
     },
     {
       "id": 54,
-      "level": "advanced",
+      "level": "上級",
       "text": "Git内部でコミットを識別するために使用されるハッシュアルゴリズムはどれですか？",
       "options": ["SHA-1", "MD5", "SHA-256", "CRC32"],
       "correctAnswerIndex": 0,
@@ -444,7 +444,7 @@
     },
     {
       "id": 55,
-      "level": "advanced",
+      "level": "上級",
       "text": "大きなファイルを効率的に管理するGitの拡張機能はどれですか？",
       "options": ["Git LFS", "Git Big", "Git Large", "Git Huge"],
       "correctAnswerIndex": 0,
@@ -452,7 +452,7 @@
     },
     {
       "id": 56,
-      "level": "advanced",
+      "level": "上級",
       "text": "複数のコミットにまたがる変更を検索するコマンドはどれですか？",
       "options": ["git bisect", "git search", "git find", "git hunt"],
       "correctAnswerIndex": 0,
@@ -460,7 +460,7 @@
     },
     {
       "id": 57,
-      "level": "advanced",
+      "level": "上級",
       "text": "ワークツリーとは何ですか？",
       "options": ["同じリポジトリから複数のブランチを同時にチェックアウトする機能", "ブランチの履歴を表示する機能", "リモートリポジトリとの同期状態", "コミットの階層構造"],
       "correctAnswerIndex": 0,
@@ -468,7 +468,7 @@
     },
     {
       "id": 58,
-      "level": "advanced",
+      "level": "上級",
       "text": "Gitリポジトリのメタデータが保存されるディレクトリはどれですか？",
       "options": [".git", ".gitdata", ".repository", ".version"],
       "correctAnswerIndex": 0,
@@ -476,7 +476,7 @@
     },
     {
       "id": 59,
-      "level": "advanced",
+      "level": "上級",
       "text": "reflogとは何ですか？",
       "options": ["ローカルリポジトリでのリファレンスの変更履歴", "リモートリポジトリのログ", "エラーログ", "設定変更履歴"],
       "correctAnswerIndex": 0,
@@ -484,7 +484,7 @@
     },
     {
       "id": 60,
-      "level": "advanced",
+      "level": "上級",
       "text": "shallow cloneとは何ですか？",
       "options": ["履歴を制限してクローンすること", "ブランチを1つだけクローンすること", "ファイルサイズを制限すること", "特定のディレクトリのみクローンすること"],
       "correctAnswerIndex": 0,
@@ -492,7 +492,7 @@
     },
     {
       "id": 61,
-      "level": "advanced",
+      "level": "上級",
       "text": "コミットメッセージにGitHubの課題を自動でクローズする記述はどれですか？",
       "options": ["fixes #123", "closes #123", "resolves #123", "すべて正解"],
       "correctAnswerIndex": 3,
@@ -500,7 +500,7 @@
     },
     {
       "id": 62,
-      "level": "advanced",
+      "level": "上級",
       "text": "Gitオブジェクトの種類で正しくないものはどれですか？",
       "options": ["commit", "tree", "blob", "branch"],
       "correctAnswerIndex": 3,
@@ -508,7 +508,7 @@
     },
     {
       "id": 63,
-      "level": "advanced",
+      "level": "上級",
       "text": "マージコミットの特徴として正しいものはどれですか？",
       "options": ["2つ以上の親コミットを持つ", "必ず1つの親コミットを持つ", "親コミットを持たない", "ファイル変更を含まない"],
       "correctAnswerIndex": 0,
@@ -516,7 +516,7 @@
     },
     {
       "id": 64,
-      "level": "advanced",
+      "level": "上級",
       "text": "fast-forward マージとは何ですか？",
       "options": ["マージコミットを作成せずに単純にポインタを移動する", "高速でマージ処理を行う", "自動的にコンフリクトを解決する", "リモートブランチを優先してマージする"],
       "correctAnswerIndex": 0,
@@ -524,7 +524,7 @@
     },
     {
       "id": 65,
-      "level": "advanced",
+      "level": "上級",
       "text": "三方向マージ（3-way merge）で使用される3つの要素は何ですか？",
       "options": ["マージ先ブランチ、マージ元ブランチ、共通祖先", "現在のブランチ、リモートブランチ、メインブランチ", "ローカル、リモート、ステージング", "HEAD、インデックス、ワーキングツリー"],
       "correctAnswerIndex": 0,
@@ -532,7 +532,7 @@
     },
     {
       "id": 66,
-      "level": "advanced",
+      "level": "上級",
       "text": "git config のスコープで最も優先度が高いのはどれですか？",
       "options": ["local", "global", "system", "repository"],
       "correctAnswerIndex": 0,
@@ -540,7 +540,7 @@
     },
     {
       "id": 67,
-      "level": "advanced",
+      "level": "上級",
       "text": "Gitのパッキング（packing）とは何ですか？",
       "options": ["複数のオブジェクトを圧縮して効率的に保存する仕組み", "ブランチをまとめる機能", "コミットを圧縮する機能", "リモートリポジトリとの同期機能"],
       "correctAnswerIndex": 0,
@@ -548,7 +548,7 @@
     },
     {
       "id": 68,
-      "level": "advanced",
+      "level": "上級",
       "text": "デタッチドHEAD状態とは何ですか？",
       "options": ["特定のコミットを直接指している状態", "HEADが削除された状態", "ブランチが壊れた状態", "リモートとの接続が切れた状態"],
       "correctAnswerIndex": 0,
@@ -556,7 +556,7 @@
     },
     {
       "id": 69,
-      "level": "advanced",
+      "level": "上級",
       "text": "Gitフローワークフローで最も安定したブランチはどれですか？",
       "options": ["master/main", "develop", "feature", "release"],
       "correctAnswerIndex": 0,
@@ -564,7 +564,7 @@
     },
     {
       "id": 70,
-      "level": "advanced",
+      "level": "上級",
       "text": "GitHub Flowワークフローの特徴として正しいものはどれですか？",
       "options": ["mainブランチが常にデプロイ可能", "複数の長期ブランチを維持", "リリースブランチが必須", "hotfixブランチを使用"],
       "correctAnswerIndex": 0,
@@ -572,7 +572,7 @@
     },
     {
       "id": 71,
-      "level": "advanced",
+      "level": "上級",
       "text": "コードレビューのベストプラクティスとして適切でないものはどれですか？",
       "options": ["大きな変更を一度にレビュー", "建設的なフィードバック", "早期のレビュー依頼", "コードスタイルの一貫性確認"],
       "correctAnswerIndex": 0,
@@ -580,7 +580,7 @@
     },
     {
       "id": 72,
-      "level": "advanced",
+      "level": "上級",
       "text": "semantic versioningにおいて、MAJOR.MINOR.PATCHのうち、後方互換性を破る変更で増加するのはどれですか？",
       "options": ["MAJOR", "MINOR", "PATCH", "すべて"],
       "correctAnswerIndex": 0,
@@ -588,7 +588,7 @@
     },
     {
       "id": 73,
-      "level": "advanced",
+      "level": "上級",
       "text": "Gitエイリアスを設定するコマンドの例として正しいものはどれですか？",
       "options": ["git config --global alias.st status", "git alias st=status", "git set-alias st status", "git config alias st=status"],
       "correctAnswerIndex": 0,
@@ -596,7 +596,7 @@
     },
     {
       "id": 74,
-      "level": "advanced",
+      "level": "上級",
       "text": "プロジェクトで.gitkeepファイルを使用する理由は何ですか？",
       "options": ["空のディレクトリをGitで追跡するため", "重要なファイルを保護するため", "設定ファイルを保存するため", "Gitの動作を制御するため"],
       "correctAnswerIndex": 0,
@@ -604,7 +604,7 @@
     },
     {
       "id": 75,
-      "level": "advanced",
+      "level": "上級",
       "text": "Gitリポジトリの整合性をチェックするコマンドはどれですか？",
       "options": ["git fsck", "git check", "git verify", "git validate"],
       "correctAnswerIndex": 0,

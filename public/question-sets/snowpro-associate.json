@@ -14,7 +14,7 @@
   "questions": [
     {
       "id": 1,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeの基本的なアーキテクチャの特徴として正しいものはどれですか？",
       "options": [
         "シェアードストレージ、シェアードコンピュート",
@@ -27,7 +27,7 @@
     },
     {
       "id": 2,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeのクラウドプロバイダーとして利用可能でないものはどれですか？",
       "options": [
         "Amazon Web Services (AWS)",
@@ -40,7 +40,7 @@
     },
     {
       "id": 3,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのバーチャルウェアハウスについて正しい説明はどれですか？",
       "options": [
         "データを物理的に保存する場所",
@@ -53,7 +53,7 @@
     },
     {
       "id": 4,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeでサポートされている半構造化データ形式でないものはどれですか？",
       "options": [
         "JSON",
@@ -66,7 +66,7 @@
     },
     {
       "id": 5,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのデータクラウドの3つの主要コンポーネントとして正しくないものはどれですか？",
       "options": [
         "Database Storage",
@@ -79,7 +79,7 @@
     },
     {
       "id": 6,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのマイクロパーティション（Micro-partitions）の特徴として正しいものはどれですか？",
       "options": [
         "ユーザーが手動で作成・管理する必要がある",
@@ -92,7 +92,7 @@
     },
     {
       "id": 7,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeでクレジットが消費されるのはどの場合ですか？",
       "options": [
         "データを保存している時間",
@@ -105,7 +105,7 @@
     },
     {
       "id": 8,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeの標準SQLで使用できないデータ型はどれですか？",
       "options": [
         "VARCHAR",
@@ -118,7 +118,7 @@
     },
     {
       "id": 9,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのクラスタリングキー（Clustering Key）の主な目的は何ですか？",
       "options": [
         "データの重複を排除する",
@@ -131,7 +131,7 @@
     },
     {
       "id": 10,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeの Time Travel 機能について正しい説明はどれですか？",
       "options": [
         "最大1年前のデータを復元できる",
@@ -144,7 +144,7 @@
     },
     {
       "id": 11,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "SnowflakeのFail-safe機能の保持期間はどれくらいですか？",
       "options": [
         "1日間",
@@ -157,7 +157,7 @@
     },
     {
       "id": 12,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのゼロコピークローン機能について正しいものはどれですか？",
       "options": [
         "データを物理的にコピーするため時間がかかる",
@@ -170,7 +170,7 @@
     },
     {
       "id": 13,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのマルチクラスター機能の主な利点は何ですか？",
       "options": [
         "データの冗長性向上",
@@ -183,7 +183,7 @@
     },
     {
       "id": 14,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "SnowflakeのVariant データ型について正しい説明はどれですか？",
       "options": [
         "数値データのみを格納できる",
@@ -196,7 +196,7 @@
     },
     {
       "id": 15,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのストリームオブジェクトの主な用途は何ですか？",
       "options": [
         "データの圧縮",
@@ -209,7 +209,7 @@
     },
     {
       "id": 16,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeでタスク（Task）オブジェクトを使用する主な目的は何ですか？",
       "options": [
         "データ型の変換",
@@ -222,7 +222,7 @@
     },
     {
       "id": 17,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのリソースモニターで設定できるアクションとして正しくないものはどれですか？",
       "options": [
         "通知のみ",
@@ -235,7 +235,7 @@
     },
     {
       "id": 18,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのデータシェアリング機能について正しい説明はどれですか？",
       "options": [
         "データのコピーを作成してシェアする",
@@ -248,7 +248,7 @@
     },
     {
       "id": 19,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのセキュア機能として提供されていないものはどれですか？",
       "options": [
         "セキュアビュー（Secure Views）",
@@ -261,7 +261,7 @@
     },
     {
       "id": 20,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのプライベートデータエクスチェンジの特徴として正しいものはどれですか？",
       "options": [
         "パブリックに公開されたデータのみ利用可能",
@@ -274,7 +274,7 @@
     },
     {
       "id": 21,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeのウェブインターフェースの名称は何ですか？",
       "options": [
         "SnowSQL",
@@ -287,7 +287,7 @@
     },
     {
       "id": 22,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SnowSQLについて正しい説明はどれですか？",
       "options": [
         "Webベースのクエリエディタ",
@@ -300,7 +300,7 @@
     },
     {
       "id": 23,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのステージ（Stage）について正しい説明はどれですか？",
       "options": [
         "クエリ実行の段階を管理する機能",
@@ -313,7 +313,7 @@
     },
     {
       "id": 24,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "SnowPipeについて正しい説明はどれですか？",
       "options": [
         "手動データロード機能",
@@ -326,7 +326,7 @@
     },
     {
       "id": 25,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのファイル形式として最も圧縮効率が良いのはどれですか？",
       "options": [
         "CSV",
@@ -339,7 +339,7 @@
     },
     {
       "id": 26,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのマテリアライズドビューの制限として正しいものはどれですか？",
       "options": [
         "JOINを含むクエリはサポートされない",
@@ -352,7 +352,7 @@
     },
     {
       "id": 27,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeの動的データマスキングポリシーについて正しいものはどれですか？",
       "options": [
         "データを物理的に変更する",
@@ -365,7 +365,7 @@
     },
     {
       "id": 28,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeの行アクセスポリシーの特徴として正しいものはどれですか？",
       "options": [
         "テーブル全体へのアクセス制御",
@@ -378,7 +378,7 @@
     },
     {
       "id": 29,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeでデータベースを作成するSQLコマンドはどれですか？",
       "options": [
         "CREATE DATABASE",
@@ -391,7 +391,7 @@
     },
     {
       "id": 30,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeでウェアハウスを作成するSQLコマンドはどれですか？",
       "options": [
         "CREATE WAREHOUSE",
@@ -404,7 +404,7 @@
     },
     {
       "id": 31,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのジェネレータ関数について正しいものはどれですか？",
       "options": [
         "外部データを取得する関数",
@@ -417,7 +417,7 @@
     },
     {
       "id": 32,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeでサポートされる外部関数の言語として正しくないものはどれですか？",
       "options": [
         "Python",
@@ -430,7 +430,7 @@
     },
     {
       "id": 33,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのガバナンス機能として提供されていないものはどれですか？",
       "options": [
         "データリネージュトラッキング",
@@ -443,7 +443,7 @@
     },
     {
       "id": 34,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeの接続プーリングについて正しい説明はどれですか？",
       "options": [
         "ユーザーが手動で設定する必要がある",
@@ -456,7 +456,7 @@
     },
     {
       "id": 35,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのウェアハウスサイズで最小のものはどれですか？",
       "options": [
         "X-Small",
@@ -469,7 +469,7 @@
     },
     {
       "id": 36,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのクエリプロファイルで確認できる情報として正しくないものはどれですか？",
       "options": [
         "実行時間の詳細",
@@ -482,7 +482,7 @@
     },
     {
       "id": 37,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのレプリケーション機能について正しい説明はどれですか？",
       "options": [
         "同一リージョン内でのみ可能",
@@ -495,7 +495,7 @@
     },
     {
       "id": 38,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのフェデレーション機能について正しいものはどれですか？",
       "options": [
         "異なるクラウド間でのデータ統合",
@@ -508,7 +508,7 @@
     },
     {
       "id": 39,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeのコンテキスト関数 CURRENT_WAREHOUSE() は何を返しますか？",
       "options": [
         "現在使用中のデータベース名",
@@ -521,7 +521,7 @@
     },
     {
       "id": 40,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeでテーブルを削除するSQLコマンドはどれですか？",
       "options": [
         "DELETE TABLE",
@@ -534,7 +534,7 @@
     },
     {
       "id": 41,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのトランザクション分離レベルはどれですか？",
       "options": [
         "READ UNCOMMITTED",
@@ -547,7 +547,7 @@
     },
     {
       "id": 42,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのクローン機能で作成できないオブジェクトはどれですか？",
       "options": [
         "テーブル",
@@ -560,7 +560,7 @@
     },
     {
       "id": 43,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのデータクラウドエコシステムの構成要素として正しくないものはどれですか？",
       "options": [
         "Snowflake Data Marketplace",
@@ -573,7 +573,7 @@
     },
     {
       "id": 44,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのクレジット使用量監視のベストプラクティスとして適切でないものはどれですか？",
       "options": [
         "リソースモニターの設定",
@@ -586,7 +586,7 @@
     },
     {
       "id": 45,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "SnowflakeのINFORMATION_SCHEMAについて正しい説明はどれですか？",
       "options": [
         "ユーザーデータを格納するスキーマ",
@@ -599,7 +599,7 @@
     },
     {
       "id": 46,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのエッジ配信ネットワークの利点として正しいものはどれですか？",
       "options": [
         "データ暗号化の強化",
@@ -612,7 +612,7 @@
     },
     {
       "id": 47,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeでデータをロードする際に推奨されるファイルサイズはどれくらいですか？",
       "options": [
         "1MB-10MB",
@@ -625,7 +625,7 @@
     },
     {
       "id": 48,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのスキーマオンリード（Schema-on-Read）について正しい説明はどれですか？",
       "options": [
         "データロード時にスキーマを定義する",
@@ -638,7 +638,7 @@
     },
     {
       "id": 49,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのクロスクラウドレプリケーションについて正しいものはどれですか？",
       "options": [
         "同一クラウドプロバイダー間でのみ可能",
@@ -651,7 +651,7 @@
     },
     {
       "id": 50,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのキーペア認証について正しい説明はどれですか？",
       "options": [
         "パスワード認証の代替として使用可能",
@@ -664,7 +664,7 @@
     },
     {
       "id": 51,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeの$1, $2, $3といった記法は何を表していますか？",
       "options": [
         "変数の参照",
@@ -677,7 +677,7 @@
     },
     {
       "id": 52,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeでファイル形式オブジェクトを作成する主な目的は何ですか？",
       "options": [
         "データの暗号化設定",
@@ -690,7 +690,7 @@
     },
     {
       "id": 53,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのプライベートリンク（Private Link）機能の利点として正しいものはどれですか？",
       "options": [
         "パフォーマンスの向上のみ",
@@ -703,7 +703,7 @@
     },
     {
       "id": 54,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeの組織について正しい説明はどれですか？",
       "options": [
         "単一のアカウントのみ管理可能",
@@ -716,7 +716,7 @@
     },
     {
       "id": 55,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeでのデフォルトタイムゾーンはどれですか？",
       "options": [
         "ローカルタイムゾーン",
@@ -729,7 +729,7 @@
     },
     {
       "id": 56,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのメタデータベースにアクセスするために使用される仮想的なデータベースはどれですか？",
       "options": [
         "INFORMATION_SCHEMA",
@@ -742,7 +742,7 @@
     },
     {
       "id": 57,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのマルチテナント機能について正しい説明はどれですか？",
       "options": [
         "単一顧客のみ対応",
@@ -755,7 +755,7 @@
     },
     {
       "id": 58,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeでのセミストラクチャードデータのクエリ最適化について正しいものはどれですか？",
       "options": [
         "常にフルスキャンが必要",
@@ -768,7 +768,7 @@
     },
     {
       "id": 59,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのデータガバナンス機能として正しくないものはどれですか？",
       "options": [
         "タグベースのポリシー管理",
@@ -781,7 +781,7 @@
     },
     {
       "id": 60,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeのユーザー名には使用できない文字はどれですか？",
       "options": [
         "アンダースコア(_)",
@@ -794,7 +794,7 @@
     },
     {
       "id": 61,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeの検索最適化サービス（Search Optimization Service）について正しいものはどれですか？",
       "options": [
         "全てのクエリで自動的に有効",
@@ -807,7 +807,7 @@
     },
     {
       "id": 62,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeの外部トークナイザ（External Tokenizer）の主な用途は何ですか？",
       "options": [
         "データの暗号化",
@@ -820,7 +820,7 @@
     },
     {
       "id": 63,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのクエリアクセラレーションサービス（Query Acceleration Service）について正しいものはどれですか？",
       "options": [
         "全てのクエリに自動適用される",
@@ -833,7 +833,7 @@
     },
     {
       "id": 64,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのクエリタグ（Query Tag）機能の主な用途は何ですか？",
       "options": [
         "クエリのパフォーマンス向上",
@@ -846,7 +846,7 @@
     },
     {
       "id": 65,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのデータメトリクスストア（Data Metric Store）について正しいものはどれですか？",
       "options": [
         "生データのみ格納可能",
@@ -859,7 +859,7 @@
     },
     {
       "id": 66,
-      "level": "Beginner",
+      "level": "基礎",
       "text": "Snowflakeで大文字小文字を区別しない識別子にするための記法はどれですか？",
       "options": [
         "シングルクォート('')",
@@ -872,7 +872,7 @@
     },
     {
       "id": 67,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのリザルトキャッシュ（Result Cache）について正しいものはどれですか？",
       "options": [
         "ウェアハウスごとに個別に管理",
@@ -885,7 +885,7 @@
     },
     {
       "id": 68,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのクレジットコントロール（Credit Controls）で設定できないアクションはどれですか？",
       "options": [
         "通知メール送信",
@@ -898,7 +898,7 @@
     },
     {
       "id": 69,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのネットワークポリシーで制御できるものはどれですか？",
       "options": [
         "ユーザーのロール権限",
@@ -911,7 +911,7 @@
     },
     {
       "id": 70,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのセッション変数について正しいものはどれですか？",
       "options": [
         "全ユーザーで共有される",
@@ -924,7 +924,7 @@
     },
     {
       "id": 71,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのクライアント接続検証（Client Connection Validation）について正しいものはどれですか？",
       "options": [
         "パスワードの複雑性をチェック",
@@ -937,7 +937,7 @@
     },
     {
       "id": 72,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのドライバー設定で、接続プールの最大接続数を制御するパラメータはどれですか？",
       "options": [
         "maxConnectionPool",
@@ -950,7 +950,7 @@
     },
     {
       "id": 73,
-      "level": "Intermediate",
+      "level": "中級",
       "text": "Snowflakeのデータサンプリング機能について正しいものはどれですか？",
       "options": [
         "手動でサンプル行を選択する必要がある",
@@ -963,7 +963,7 @@
     },
     {
       "id": 74,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeのアカウント利用レポート（Account Usage Report）で追跡できない情報はどれですか？",
       "options": [
         "クレジット使用量の詳細",
@@ -976,7 +976,7 @@
     },
     {
       "id": 75,
-      "level": "Advanced",
+      "level": "上級",
       "text": "Snowflakeの自動クラスタリング（Automatic Clustering）について正しい説明はどれですか？",
       "options": [
         "Standard Edition で利用可能",

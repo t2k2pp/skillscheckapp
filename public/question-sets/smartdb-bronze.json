@@ -13,7 +13,7 @@
   "passingScore": 65,
   "questions": [
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SmartDBとは何ですか？",
       "options": [
         "デスクトップアプリケーション",
@@ -25,7 +25,7 @@
       "explanation": "SmartDBは、NTTコミュニケーションズが提供するクラウドベースのマネージドデータベースサービスです。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SmartDBの最も基本的な利点はどれですか？",
       "options": [
         "無料で利用できる",
@@ -37,7 +37,7 @@
       "explanation": "SmartDBはマネージドサービスのため、物理的なサーバーの管理や保守作業をNTTコミュニケーションズが代行します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SmartDBにアクセスするために必要なものはどれですか？",
       "options": [
         "専用のハードウェア",
@@ -49,7 +49,7 @@
       "explanation": "SmartDBはクラウドサービスのため、インターネット接続と適切なSQLクライアントツール（SQL*Plus、SQL Developer等）があれば接続できます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SmartDBで使用されるデータベース言語はどれですか？",
       "options": [
         "Python",
@@ -61,7 +61,7 @@
       "explanation": "SmartDBはOracle Databaseベースのため、標準的なSQL（Structured Query Language）を使用してデータベース操作を行います。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "テーブルとは何ですか？",
       "options": [
         "データを行と列の形で格納する構造",
@@ -73,7 +73,7 @@
       "explanation": "テーブルは、データベースにおいてデータを行（レコード）と列（フィールド）の二次元的な表形式で格納するための基本的な構造です。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "データベースにおける「行」とは何を指しますか？",
       "options": [
         "テーブルの項目名",
@@ -85,7 +85,7 @@
       "explanation": "行（Row）またはレコード（Record）は、テーブル内の1つの完全なデータエントリを表し、関連するすべての情報が含まれています。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "データベースにおける「列」とは何を指しますか？",
       "options": [
         "データの種類や項目を表す縦の要素",
@@ -97,7 +97,7 @@
       "explanation": "列（Column）またはフィールド（Field）は、テーブル内でデータの種類や項目を表す縦方向の要素で、例えば「名前」「年齢」「住所」などの属性を表します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "基本的なSELECT文の構文はどれですか？",
       "options": [
         "GET * FROM table_name",
@@ -109,7 +109,7 @@
       "explanation": "SELECT文は「SELECT 列名 FROM テーブル名」という構文で、データを検索・表示するための基本的なSQL文です。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SELECT文で全ての列を選択するために使用する記号はどれですか？",
       "options": [
         "&",
@@ -121,7 +121,7 @@
       "explanation": "アスタリスク（*）は「すべての列」を意味し、「SELECT * FROM テーブル名」でテーブルのすべての列を選択できます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "テーブルに新しいデータを追加するためのSQL文はどれですか？",
       "options": [
         "ADD",
@@ -133,7 +133,7 @@
       "explanation": "INSERT文は、テーブルに新しいデータ（行）を追加するためのSQL文です。構文は「INSERT INTO テーブル名 VALUES (値1, 値2, ...)」です。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "既存のデータを変更するためのSQL文はどれですか？",
       "options": [
         "CHANGE",
@@ -145,7 +145,7 @@
       "explanation": "UPDATE文は、既存のデータを変更するためのSQL文で、「UPDATE テーブル名 SET 列名=新しい値 WHERE 条件」という構文で使用します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "データを削除するためのSQL文はどれですか？",
       "options": [
         "REMOVE",
@@ -157,7 +157,7 @@
       "explanation": "DELETE文は、テーブルから特定の行（データ）を削除するためのSQL文で、「DELETE FROM テーブル名 WHERE 条件」という構文で使用します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "WHERE句の役割は何ですか？",
       "options": [
         "テーブルを作成する",
@@ -169,7 +169,7 @@
       "explanation": "WHERE句は、特定の条件を満たすデータのみを対象とするためのSQL句で、データの検索、更新、削除時に使用します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "データを昇順に並べ替えるキーワードはどれですか？",
       "options": [
         "ASC",
@@ -181,7 +181,7 @@
       "explanation": "ASC（Ascending）は昇順を表すキーワードで、ORDER BY句と組み合わせて「ORDER BY 列名 ASC」として使用します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "データを降順に並べ替えるキーワードはどれですか？",
       "options": [
         "DOWN",
@@ -193,7 +193,7 @@
       "explanation": "DESC（Descending）は降順を表すキーワードで、ORDER BY句と組み合わせて「ORDER BY 列名 DESC」として使用します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "新しいテーブルを作成するためのSQL文はどれですか？",
       "options": [
         "MAKE TABLE",
@@ -205,7 +205,7 @@
       "explanation": "CREATE TABLE文は、新しいテーブルを作成するためのSQL文で、列名とデータ型を指定してテーブル構造を定義します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "テーブルを削除するためのSQL文はどれですか？",
       "options": [
         "DELETE TABLE",
@@ -217,7 +217,7 @@
       "explanation": "DROP TABLE文は、テーブル自体を完全に削除するためのSQL文です。テーブル構造とデータがすべて削除されます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "主キー（Primary Key）の役割は何ですか？",
       "options": [
         "データを暗号化する",
@@ -229,7 +229,7 @@
       "explanation": "主キー（Primary Key）は、テーブル内の各行を一意に識別するための制約で、重複値やNULL値は許可されません。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "NULLとは何を意味しますか？",
       "options": [
         "数値の0",
@@ -241,7 +241,7 @@
       "explanation": "NULLは「値が存在しない」または「不明」を表す特別な値で、数値の0や空文字列とは異なります。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "COUNT関数の機能は何ですか？",
       "options": [
         "データを並べ替える",
@@ -253,7 +253,7 @@
       "explanation": "COUNT関数は、指定された条件に一致する行の数を数えるための集約関数です。例：「SELECT COUNT(*) FROM テーブル名」"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SUM関数の機能は何ですか？",
       "options": [
         "文字列を連結する",
@@ -265,7 +265,7 @@
       "explanation": "SUM関数は、指定された列の数値データの合計を計算するための集約関数です。例：「SELECT SUM(価格) FROM 商品テーブル」"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "AVG関数の機能は何ですか？",
       "options": [
         "最大値を求める",
@@ -277,7 +277,7 @@
       "explanation": "AVG関数は、指定された列の数値データの平均値を計算するための集約関数です。例：「SELECT AVG(年齢) FROM 顧客テーブル」"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "MAX関数の機能は何ですか？",
       "options": [
         "最大値を取得する",
@@ -289,7 +289,7 @@
       "explanation": "MAX関数は、指定された列の最大値を取得するための集約関数です。数値だけでなく、日付や文字列にも適用できます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "MIN関数の機能は何ですか？",
       "options": [
         "データを最小化する",
@@ -301,7 +301,7 @@
       "explanation": "MIN関数は、指定された列の最小値を取得するための集約関数です。数値だけでなく、日付や文字列にも適用できます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "GROUP BY句の役割は何ですか？",
       "options": [
         "データをグループ化して集約関数を適用する",
@@ -313,7 +313,7 @@
       "explanation": "GROUP BY句は、指定した列の値が同じ行をグループ化し、各グループに対して集約関数（COUNT、SUM等）を適用するために使用します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "HAVING句の用途は何ですか？",
       "options": [
         "テーブル名を変更する",
@@ -325,7 +325,7 @@
       "explanation": "HAVING句は、GROUP BY句によってグループ化された結果に対して条件を指定するために使用され、通常は集約関数の結果に基づいて絞り込みを行います。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "INNER JOINの基本的な機能は何ですか？",
       "options": [
         "2つのテーブルで一致するデータのみを結合する",
@@ -337,7 +337,7 @@
       "explanation": "INNER JOINは、2つのテーブルで指定した結合条件に一致するデータのみを結合して表示する結合方式です。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "LEFT JOINの特徴は何ですか？",
       "options": [
         "右のテーブルのデータをすべて表示する",
@@ -349,7 +349,7 @@
       "explanation": "LEFT JOINは、左側のテーブルのすべてのデータを表示し、右側のテーブルで一致しないデータはNULLで補完します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "文字列データ型として一般的なものはどれですか？",
       "options": [
         "INT",
@@ -361,7 +361,7 @@
       "explanation": "VARCHAR（Variable Character）は、可変長の文字列を格納するために使用される一般的な文字列データ型です。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "整数を格納するデータ型はどれですか？",
       "options": [
         "TEXT",
@@ -373,7 +373,7 @@
       "explanation": "INTEGER（またはINT）は、整数値を格納するための数値データ型です。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "日付を格納するデータ型はどれですか？",
       "options": [
         "STRING",
@@ -385,7 +385,7 @@
       "explanation": "DATEは、日付情報（年、月、日）を格納するための専用のデータ型です。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SmartDBでのバックアップについて基本的な説明として正しいものはどれですか？",
       "options": [
         "ユーザーが毎日手動で実行する必要がある",
@@ -397,7 +397,7 @@
       "explanation": "SmartDBでは、データ保護のために自動バックアップ機能が標準で提供されており、定期的にデータのバックアップが取得されます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "データベースへの接続に必要な基本的な情報として含まれないものはどれですか？",
       "options": [
         "ホスト名またはIPアドレス",
@@ -409,7 +409,7 @@
       "explanation": "データベースへの接続には、ホスト名、ユーザー名、パスワード、データベース名が必要ですが、使用するコンピュータの機種は関係ありません。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "データベースにおける「スキーマ」とは何ですか？",
       "options": [
         "データベースの物理的な保存場所",
@@ -421,7 +421,7 @@
       "explanation": "スキーマは、データベースの論理的な構造を定義するもので、テーブル、列、制約、インデックスなどの定義を含みます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "インデックス（INDEX）の主な目的は何ですか？",
       "options": [
         "データを暗号化する",
@@ -433,7 +433,7 @@
       "explanation": "インデックスは、テーブル内のデータ検索を高速化するために作成される特別な構造で、特定の列への検索性能を大幅に向上させます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "UNIQUE制約の機能は何ですか？",
       "options": [
         "データを一意（重複なし）に保つ",
@@ -445,7 +445,7 @@
       "explanation": "UNIQUE制約は、指定した列に重複する値の入力を防ぎ、データの一意性を保証するための整合性制約です。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "FOREIGN KEY（外部キー）制約の役割は何ですか？",
       "options": [
         "データを高速化する",
@@ -457,7 +457,7 @@
       "explanation": "FOREIGN KEY制約は、他のテーブルの主キーを参照することで、テーブル間の参照整合性を保証する制約です。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SmartDBの管理画面にアクセスする一般的な方法はどれですか？",
       "options": [
         "専用アプリケーションのインストール",
@@ -469,7 +469,7 @@
       "explanation": "SmartDBの管理機能は、一般的にWebベースの管理コンソールとして提供され、Webブラウザから直感的に操作できます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "SQL文の終端に必要な記号はどれですか？",
       "options": [
         ".",
@@ -481,7 +481,7 @@
       "explanation": "SQL文はセミコロン（;）で終端する必要があります。これにより、1つのSQL文の終了を明示します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "コメント（注釈）を記述するためのSQL記号はどれですか？",
       "options": [
         "/* */",
@@ -493,7 +493,7 @@
       "explanation": "SQLでは、/* */（複数行コメント）や --（単一行コメント）を使用してコメントを記述できます。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "LIKE演算子の用途は何ですか？",
       "options": [
         "数値の比較",
@@ -505,7 +505,7 @@
       "explanation": "LIKE演算子は、ワイルドカード（%や_）を使用して文字列のパターンマッチング検索を行うために使用します。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "ワイルドカード「%」の意味は何ですか？",
       "options": [
         "1文字を表す",
@@ -517,7 +517,7 @@
       "explanation": "ワイルドカード「%」は、0文字以上の任意の文字列にマッチします。例：'山田%'は「山田」で始まるすべての文字列にマッチ。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "ワイルドカード「_」の意味は何ですか？",
       "options": [
         "任意の1文字を表す",
@@ -529,7 +529,7 @@
       "explanation": "ワイルドカード「_」は、任意の1文字にマッチします。例：'2025-__-01'は「2025-01-01」や「2025-12-01」などにマッチ。"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "IN演算子の機能は何ですか？",
       "options": [
         "範囲検索を行う",
@@ -541,7 +541,7 @@
       "explanation": "IN演算子は、指定した値のリストの中に対象の値が含まれているかをチェックします。例：WHERE 都道府県 IN ('東京', '大阪', '愛知')"
     },
     {
-      "level": "Beginner",
+      "level": "基礎",
       "text": "BETWEEN演算子の機能は何ですか？",
       "options": [
         "文字列の長さをチェックする",
@@ -553,7 +553,7 @@
       "explanation": "BETWEEN演算子は、値が指定した2つの値の間にあるかをチェックします。例：WHERE 年齢 BETWEEN 20 AND 30"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "IS NULL演算子の機能は何ですか？",
       "options": [
         "値が0かチェックする",
@@ -565,7 +565,7 @@
       "explanation": "IS NULL演算子は、指定した列の値がNULL（値が存在しない状態）かどうかをチェックするために使用します。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "AND演算子の機能は何ですか？",
       "options": [
         "すべての条件が真の場合のみ真を返す",
@@ -577,7 +577,7 @@
       "explanation": "AND演算子は、複数の条件をすべて満たす場合のみ真（TRUE）を返す論理演算子です。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "OR演算子の機能は何ですか？",
       "options": [
         "すべての条件が真の場合のみ真を返す",
@@ -589,7 +589,7 @@
       "explanation": "OR演算子は、複数の条件のうち、いずれか1つでも満たす場合に真（TRUE）を返す論理演算子です。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "データベースのトランザクションとは何ですか？",
       "options": [
         "データの送信",
@@ -601,7 +601,7 @@
       "explanation": "トランザクションは、データベースに対する一連の処理をひとまとまりの作業単位として扱い、すべて成功するか、すべて失敗するかを保証する仕組みです。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "COMMITコマンドの機能は何ですか？",
       "options": [
         "トランザクションの変更を確定する",
@@ -613,7 +613,7 @@
       "explanation": "COMMITコマンドは、トランザクション内で行ったすべての変更をデータベースに確定的に保存するために使用します。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "ROLLBACKコマンドの機能は何ですか？",
       "options": [
         "変更を確定する",
@@ -625,7 +625,7 @@
       "explanation": "ROLLBACKコマンドは、現在のトランザクション内で行ったすべての変更を取り消し、トランザクション開始前の状態に戻すために使用します。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "SmartDBでデータをエクスポートする際の一般的なファイル形式はどれですか？",
       "options": [
         "PDF",
@@ -637,7 +637,7 @@
       "explanation": "CSV（Comma-Separated Values）は、データベースからデータをエクスポートする際に最も一般的に使用される形式の1つです。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "ビュー（VIEW）とは何ですか？",
       "options": [
         "物理的なテーブル",
@@ -649,7 +649,7 @@
       "explanation": "ビューは、1つ以上のテーブルからデータを取得するクエリを保存した仮想的なテーブルで、実際のデータは格納されません。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "ストアドプロシージャとは何ですか？",
       "options": [
         "データファイル",
@@ -661,7 +661,7 @@
       "explanation": "ストアドプロシージャは、データベースに保存された一連のSQL文で、名前を付けて再利用可能な形で格納されている処理です。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "データベースのユーザー権限管理について、最小権限の原則とは何ですか？",
       "options": [
         "すべてのユーザーに全権限を与える",
@@ -673,7 +673,7 @@
       "explanation": "最小権限の原則とは、セキュリティ向上のため、各ユーザーに業務遂行に必要な最小限の権限のみを付与することです。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "正規化の主な目的は何ですか？",
       "options": [
         "データの検索を高速化する",
@@ -685,7 +685,7 @@
       "explanation": "正規化は、データの冗長性（重複）を排除し、データの整合性を保つためのデータベース設計手法です。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "データベースのパフォーマンスに影響を与える要因として最も関係ないものはどれですか？",
       "options": [
         "インデックスの有無",
@@ -697,7 +697,7 @@
       "explanation": "データベースのパフォーマンスには、インデックス、データ量、クエリの複雑さなどが影響しますが、開発者の年齢は直接的な影響を与えません。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "デッドロックとは何ですか？",
       "options": [
         "システムのシャットダウン",
@@ -709,7 +709,7 @@
       "explanation": "デッドロックは、複数のトランザクションが相互に相手の持つリソースを待ち続けることで、処理が進まなくなる状態のことです。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "SmartDBのサポートを受ける際に準備すべき情報として最も重要でないものはどれですか？",
       "options": [
         "発生している問題の詳細",
@@ -721,7 +721,7 @@
       "explanation": "問題解決のためには、問題の詳細、エラーメッセージ、実行したSQL文が重要ですが、PCのメーカーはクラウドサービスの問題には通常関係しません。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "データベース設計において、テーブル名や列名の命名で避けるべきものはどれですか？",
       "options": [
         "日本語",
@@ -733,7 +733,7 @@
       "explanation": "SQLの予約語（SELECT、INSERT、FROM等）は、テーブル名や列名として使用を避けるべきです。混乱やエラーの原因となります。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "SmartDBへの接続が失敗する最も一般的な原因はどれですか？",
       "options": [
         "コンピュータの性能不足",
@@ -745,7 +745,7 @@
       "explanation": "データベースへの接続失敗の最も一般的な原因は、ホスト名、ユーザー名、パスワードなどの接続情報の誤りです。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "サブクエリとは何ですか？",
       "options": [
         "バックアップクエリ",
@@ -757,7 +757,7 @@
       "explanation": "サブクエリは、別のSQL文（メインクエリ）の内部で実行される入れ子構造のクエリです。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "CASE文の用途は何ですか？",
       "options": [
         "テーブルを作成する",
@@ -769,7 +769,7 @@
       "explanation": "CASE文は、条件に応じて異なる値を返すための条件分岐を行うSQL文です。プログラミングのif-else文に相当します。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "UNIONの機能は何ですか？",
       "options": [
         "テーブルを削除する",
@@ -781,7 +781,7 @@
       "explanation": "UNION演算子は、複数のSELECT文の結果を縦方向に結合し、1つの結果セットにまとめるために使用します。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "データベースでのデータ型の選択において、最も重要な考慮事項はどれですか？",
       "options": [
         "格納する数値の大きさや文字列の長さ",
@@ -793,7 +793,7 @@
       "explanation": "データ型を選択する際は、格納するデータの性質（数値の範囲、文字列の最大長など）に適したデータ型を選ぶことが重要です。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "SmartDBでよく使用されるSQLクライアントツールでないものはどれですか？",
       "options": [
         "SQL*Plus",
@@ -805,7 +805,7 @@
       "explanation": "Microsoft WordはワープロソフトでありSQLクライアントツールではありません。SmartDBには専用のSQLクライアントツールでアクセスします。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "データベースのパフォーマンス監視で重要な指標として適切でないものはどれですか？",
       "options": [
         "実行時間の長いクエリ",
@@ -817,7 +817,7 @@
       "explanation": "データベースのパフォーマンス監視では、クエリ実行時間、同時接続数、CPU使用率が重要ですが、オフィスの室温は直接関係ありません。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "ALTER TABLE文の主な用途は何ですか？",
       "options": [
         "テーブル内のデータを変更する",
@@ -829,7 +829,7 @@
       "explanation": "ALTER TABLE文は、既存のテーブルの構造（列の追加、削除、データ型変更など）を変更するためのSQL文です。"
     },
     {
-      "level": "Intermediate",
+      "level": "中級",
       "text": "データベースの整合性制約に含まれないものはどれですか？",
       "options": [
         "PRIMARY KEY制約",
@@ -841,7 +841,7 @@
       "explanation": "SPEED制約は存在しません。データベースの整合性制約には、PRIMARY KEY、FOREIGN KEY、UNIQUE、CHECK、NOT NULL制約があります。"
     },
     {
-      "level": "Advanced",
+      "level": "上級",
       "text": "SmartDBでデータを安全に管理するための基本原則として適切でないものはどれですか？",
       "options": [
         "定期的なバックアップの確認",
@@ -853,7 +853,7 @@
       "explanation": "データセキュリティの観点から、すべてのデータを公開することは適切ではありません。必要最小限のアクセス権限を設定するべきです。"
     },
     {
-      "level": "Advanced",
+      "level": "上級",
       "text": "DISTINCT句の機能は何ですか？",
       "options": [
         "データを削除する",
@@ -865,7 +865,7 @@
       "explanation": "DISTINCT句は、SELECT文の結果から重複する行を除外し、一意な結果のみを表示するために使用します。"
     },
     {
-      "level": "Advanced",
+      "level": "上級",
       "text": "LIMIT句（またはROWNUM）の用途は何ですか？",
       "options": [
         "アクセス制限を設定する",
@@ -877,7 +877,7 @@
       "explanation": "LIMIT句（OracleではROWNUM）は、クエリの結果から取得する行数を制限するために使用します。"
     },
     {
-      "level": "Advanced",
+      "level": "上級",
       "text": "SmartDBの利用開始時に最初に行うべき作業はどれですか？",
       "options": [
         "大量データの投入",
@@ -889,7 +889,7 @@
       "explanation": "SmartDBの利用開始時は、まず接続テストを行い、簡単なサンプルテーブルを作成して基本操作を確認することが重要です。"
     },
     {
-      "level": "Advanced",
+      "level": "上級",
       "text": "データベース設計において「テーブルの正規化」を行う主な理由はどれですか？",
       "options": [
         "処理速度を最大限に向上させる",
@@ -901,7 +901,7 @@
       "explanation": "テーブルの正規化は、データの冗長性（重複）を排除し、データの更新・削除・挿入時に発生する異常を防ぐために行います。"
     },
     {
-      "level": "Advanced",
+      "level": "上級",
       "text": "SmartDBを学習する上で最も重要な基礎知識はどれですか？",
       "options": [
         "プログラミング言語の詳細な知識",

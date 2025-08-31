@@ -12,7 +12,7 @@
   "questions": [
     {
       "id": 1,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナの基となるテンプレートを何と呼びますか？",
       "options": ["テンプレート", "スナップショット", "イメージ", "ボリューム"],
       "correctAnswerIndex": 2,
@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナを作成・起動するコマンドはどれですか？",
       "options": ["docker start", "docker create", "docker run", "docker launch"],
       "correctAnswerIndex": 2,
@@ -28,7 +28,7 @@
     },
     {
       "id": 3,
-      "level": "beginner",
+      "level": "基礎",
       "text": "実行中のDockerコンテナ一覧を表示するコマンドはどれですか？",
       "options": ["docker list", "docker show", "docker ps", "docker containers"],
       "correctAnswerIndex": 2,
@@ -36,7 +36,7 @@
     },
     {
       "id": 4,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerfileでベースイメージを指定するために使用されるディレクティブはどれですか？",
       "options": ["BASE", "IMAGE", "FROM", "PARENT"],
       "correctAnswerIndex": 2,
@@ -44,7 +44,7 @@
     },
     {
       "id": 5,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerfileで作業ディレクトリを設定するディレクティブはどれですか？",
       "options": ["WORKDIR", "SETDIR", "CHDIR", "DIR"],
       "correctAnswerIndex": 0,
@@ -52,7 +52,7 @@
     },
     {
       "id": 6,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerfileでファイルやディレクトリをコンテナにコピーするディレクティブはどれですか？",
       "options": ["COPY", "MOVE", "ADD", "COPY と ADD の両方"],
       "correctAnswerIndex": 3,
@@ -60,7 +60,7 @@
     },
     {
       "id": 7,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナが停止した後も自動的に再起動する設定はどれですか？",
       "options": ["--restart always", "--auto-restart", "--keep-alive", "--persist"],
       "correctAnswerIndex": 0,
@@ -68,7 +68,7 @@
     },
     {
       "id": 8,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerネットワークで異なるネットワーク間のコンテナ同士が通信するために必要なことは何ですか？",
       "options": ["ポートマッピング", "ブリッジネットワークの接続", "コンテナを複数のネットワークに接続", "hostネットワークの使用"],
       "correctAnswerIndex": 2,
@@ -76,7 +76,7 @@
     },
     {
       "id": 9,
-      "level": "advanced",
+      "level": "上級",
       "text": "KubernetesでDockerコンテナをオーケストレーションする際の最小デプロイメント単位は何ですか？",
       "options": ["Container", "Pod", "Service", "Deployment"],
       "correctAnswerIndex": 1,
@@ -84,7 +84,7 @@
     },
     {
       "id": 10,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのセキュリティを向上させるためのLinuxセキュリティ機能はどれですか？",
       "options": ["AppArmor/SELinux", "seccomp", "capabilities", "すべての選択肢"],
       "correctAnswerIndex": 3,
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "level": "advanced",
+      "level": "上級",
       "text": "Docker BuildKitが提供する高級機能はどれですか？",
       "options": ["マルチステージビルド", "ビルドキャッシュ", "秘密情報管理", "すべての機能"],
       "correctAnswerIndex": 3,
@@ -100,7 +100,7 @@
     },
     {
       "id": 12,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのリソース使用量を監視するためのコマンドはどれですか？",
       "options": ["docker monitor", "docker stats", "docker usage", "docker resources"],
       "correctAnswerIndex": 1,
@@ -108,7 +108,7 @@
     },
     {
       "id": 13,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナを停止するコマンドはどれですか？",
       "options": ["docker pause", "docker halt", "docker stop", "docker kill"],
       "correctAnswerIndex": 2,
@@ -116,7 +116,7 @@
     },
     {
       "id": 14,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerイメージを削除するコマンドはどれですか？",
       "options": ["docker delete", "docker remove", "docker rmi", "docker rm"],
       "correctAnswerIndex": 2,
@@ -124,7 +124,7 @@
     },
     {
       "id": 15,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナ内でコマンドを実行するために使用されるコマンドはどれですか？",
       "options": ["docker run", "docker exec", "docker enter", "docker command"],
       "correctAnswerIndex": 1,
@@ -132,7 +132,7 @@
     },
     {
       "id": 16,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerイメージからコンテナを作成する際、コンテナに名前を付けるオプションはどれですか？",
       "options": ["--name", "--title", "--label", "--id"],
       "correctAnswerIndex": 0,
@@ -140,7 +140,7 @@
     },
     {
       "id": 17,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナのリソース使用量（CPU、メモリ）を制限するオプションはどれですか？",
       "options": ["--limit", "--resource", "--cpus と --memory", "--constraint"],
       "correctAnswerIndex": 2,
@@ -148,7 +148,7 @@
     },
     {
       "id": 18,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerボリュームとバインドマウントの主な違いは何ですか？",
       "options": ["ボリュームはDockerが管理、バインドマウントはホストのパスを直接指定", "ボリュームは読み取り専用、バインドマウントは書き込み可能", "ボリュームは永続的、バインドマウントは一時的", "機能的な違いはない"],
       "correctAnswerIndex": 0,
@@ -156,7 +156,7 @@
     },
     {
       "id": 19,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerfileでコンテナ実行時のデフォルトコマンドを指定するディレクティブはどれですか？",
       "options": ["CMD", "ENTRYPOINT", "RUN", "CMD と ENTRYPOINT の両方"],
       "correctAnswerIndex": 3,
@@ -164,7 +164,7 @@
     },
     {
       "id": 20,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerイメージのレイヤー構造について正しいのはどれですか？",
       "options": ["レイヤーは読み書き可能", "レイヤーは読み取り専用", "各レイヤーは独立している", "レイヤーはイメージごとに作り直される"],
       "correctAnswerIndex": 1,
@@ -172,7 +172,7 @@
     },
     {
       "id": 21,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのファイルシステムで使用されるUnionFSシステムの特徴は何ですか？",
       "options": ["ファイルの圧縮", "レイヤーを重ねて一つのファイルシステムとして表示", "ファイルの暗号化", "ネットワークファイルシステム"],
       "correctAnswerIndex": 1,
@@ -180,7 +180,7 @@
     },
     {
       "id": 22,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナで使用されるデフォルトのcgroupバージョンとその特徴は何ですか？",
       "options": ["cgroup v1 - 階層構造", "cgroup v2 - 統一階層", "両方を混合使用", "システム依存"],
       "correctAnswerIndex": 3,
@@ -188,7 +188,7 @@
     },
     {
       "id": 23,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのネットワーク名前空間分離の仕組みは何ですか？",
       "options": ["virtual network interface", "Linux network namespaces", "bridge network", "overlay network"],
       "correctAnswerIndex": 1,
@@ -196,7 +196,7 @@
     },
     {
       "id": 24,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのシステムコール制限機能であるseccompプロファイルの目的は何ですか？",
       "options": ["ファイルアクセスの制限", "システムコールの制限", "ネットワークアクセスの制限", "メモリ使用量の制限"],
       "correctAnswerIndex": 1,
@@ -204,7 +204,7 @@
     },
     {
       "id": 25,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナとホスト間でファイルをコピーするコマンドはどれですか？",
       "options": ["docker copy", "docker move", "docker cp", "docker transfer"],
       "correctAnswerIndex": 2,
@@ -212,7 +212,7 @@
     },
     {
       "id": 26,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerイメージの一覧を表示するコマンドはどれですか？",
       "options": ["docker list", "docker images", "docker show", "docker ls"],
       "correctAnswerIndex": 1,
@@ -220,7 +220,7 @@
     },
     {
       "id": 27,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナをバックグラウンドで実行するためのオプションはどれですか？",
       "options": ["-b", "-d", "--background", "--daemon"],
       "correctAnswerIndex": 1,
@@ -228,7 +228,7 @@
     },
     {
       "id": 28,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナのログを表示するコマンドはどれですか？",
       "options": ["docker log", "docker logs", "docker show-logs", "docker output"],
       "correctAnswerIndex": 1,
@@ -236,7 +236,7 @@
     },
     {
       "id": 29,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナのポートをホストのポートにマッピングするためのオプションはどれですか？",
       "options": ["-p", "--port", "-m", "--map"],
       "correctAnswerIndex": 0,
@@ -244,7 +244,7 @@
     },
     {
       "id": 30,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナの環境変数を設定するためのオプションはどれですか？",
       "options": ["-e", "--env", "-v", "--var"],
       "correctAnswerIndex": 0,
@@ -252,7 +252,7 @@
     },
     {
       "id": 31,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerfileでコマンドを実行するためのディレクティブはどれですか？",
       "options": ["EXEC", "RUN", "CMD", "COMMAND"],
       "correctAnswerIndex": 1,
@@ -260,7 +260,7 @@
     },
     {
       "id": 32,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerボリュームをコンテナにマウントするためのオプションはどれですか？",
       "options": ["-v", "--volume", "-m", "--mount"],
       "correctAnswerIndex": 0,
@@ -268,7 +268,7 @@
     },
     {
       "id": 33,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Docker Composeでコンテナ関の依存関係を定義するキーはどれですか？",
       "options": ["depends_on", "requires", "needs", "after"],
       "correctAnswerIndex": 0,
@@ -276,7 +276,7 @@
     },
     {
       "id": 34,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナ内からホストのDockerデーモンにアクセスするためにマウントするファイルは何ですか？",
       "options": ["/var/run/docker.sock", "/usr/bin/docker", "/etc/docker/daemon.json", "/var/lib/docker"],
       "correctAnswerIndex": 0,
@@ -284,7 +284,7 @@
     },
     {
       "id": 35,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerfileで環境変数を設定するディレクティブはどれですか？",
       "options": ["ENV", "SET", "EXPORT", "VAR"],
       "correctAnswerIndex": 0,
@@ -292,7 +292,7 @@
     },
     {
       "id": 36,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerネットワークでコンテナがホストのネットワークスタックを直接使用するモードはどれですか？",
       "options": ["bridge", "host", "none", "overlay"],
       "correctAnswerIndex": 1,
@@ -300,7 +300,7 @@
     },
     {
       "id": 37,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerイメージのサイズを最小化するためのベストプラクティスはどれですか？",
       "options": ["ベースイメージにalpineを使用", "マルチステージビルドを使用", "RUNコマンドを結合", "すべての手法を組み合わせて使用"],
       "correctAnswerIndex": 3,
@@ -308,7 +308,7 @@
     },
     {
       "id": 38,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナのヘルスチェックを設定するDockerfileディレクティブはどれですか？",
       "options": ["HEALTHCHECK", "CHECK", "HEALTH", "MONITOR"],
       "correctAnswerIndex": 0,
@@ -316,7 +316,7 @@
     },
     {
       "id": 39,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナのセキュリティを向上させるためのベストプラクティスはどれですか？",
       "options": ["rootユーザーで実行する", "非特権ユーザーで実行する", "すべてのポートを開放する", "ホストのファイルシステムを直接マウントする"],
       "correctAnswerIndex": 1,
@@ -324,7 +324,7 @@
     },
     {
       "id": 40,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Docker Swarmでサービスのレプリカ数を設定するコマンドはどれですか？",
       "options": ["docker service create --replicas", "docker swarm replicas", "docker scale --replicas", "docker service scale"],
       "correctAnswerIndex": 3,
@@ -332,7 +332,7 @@
     },
     {
       "id": 41,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのセキュリティコンテキストとして使用されるSELinuxのMCS（Multi-Category Security）ラベルの目的は何ですか？",
       "options": ["ユーザー認証", "コンテナ間の分離", "ネットワーク制御", "リソース制限"],
       "correctAnswerIndex": 1,
@@ -340,7 +340,7 @@
     },
     {
       "id": 42,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのプロセス間通信で使用されるIPC namespaceの機能は何ですか？",
       "options": ["ファイルシステムの分離", "プロセスIDの分離", "共有メモリやセマフォ等のIPCリソースの分離", "ユーザーIDの分離"],
       "correctAnswerIndex": 2,
@@ -348,7 +348,7 @@
     },
     {
       "id": 43,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのメモリ管理で使用されるOOM Killerの動作を制御するパラメータはどれですか？",
       "options": ["--memory-limit", "--oom-kill-disable", "--memory-swap", "--oom-score-adj"],
       "correctAnswerIndex": 3,
@@ -356,7 +356,7 @@
     },
     {
       "id": 44,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのシステムコールを監視・ログ出力するためのツールはどれですか？",
       "options": ["strace", "auditd", "sysdig", "すべてのツール"],
       "correctAnswerIndex": 3,
@@ -364,7 +364,7 @@
     },
     {
       "id": 45,
-      "level": "advanced",
+      "level": "上級",
       "text": "DockerコンテナのInitプロセス問題を解決する`--init`オプションの機能は何ですか？",
       "options": ["コンテナのヘルスチェック", "ゾンビプロセスの処理とシグナルの適切な処理", "セキュリティコンテキストの設定", "リソース制限の適用"],
       "correctAnswerIndex": 1,
@@ -372,7 +372,7 @@
     },
     {
       "id": 46,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのセキュリティを強化するUser Namespaceの仕組みは何ですか？",
       "options": ["ファイルアクセスの制限", "コンテナ内rootをホストの非特権ユーザーにマッピング", "ネットワークアクセスの制限", "プロセス数の制限"],
       "correctAnswerIndex": 1,
@@ -380,7 +380,7 @@
     },
     {
       "id": 47,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのイメージスキャンと脆弱性検知のためのツールはどれですか？",
       "options": ["Docker Scout", "Trivy", "Clair", "すべてのツール"],
       "correctAnswerIndex": 3,
@@ -388,7 +388,7 @@
     },
     {
       "id": 48,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのランタイムセキュリティを強化するGVisorやKata Containersのアプローチは何ですか？",
       "options": ["コンテナをVMで完全に分離", "サンドボック化や軽量VMによる分離", "コンテナの暗号化", "ネットワークの完全分離"],
       "correctAnswerIndex": 1,
@@ -396,7 +396,7 @@
     },
     {
       "id": 49,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Docker Composeでサービスのスケールを指定するキーはどれですか？",
       "options": ["scale", "replicas", "instances", "deploy.replicas"],
       "correctAnswerIndex": 3,
@@ -404,7 +404,7 @@
     },
     {
       "id": 50,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのパフォーマンスチューニングで重要なカーネルパラメータはどれですか？",
       "options": ["vm.swappiness", "net.core.somaxconn", "fs.file-max", "すべて重要"],
       "correctAnswerIndex": 3,
@@ -412,7 +412,7 @@
     },
     {
       "id": 51,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナのディスク使用量を確認するコマンドはどれですか？",
       "options": ["docker size", "docker system df", "docker usage", "docker disk"],
       "correctAnswerIndex": 1,
@@ -420,7 +420,7 @@
     },
     {
       "id": 52,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerコンテナのタイムゾーンをホストと同期させる方法はどれですか？",
       "options": ["-v /etc/timezone:/etc/timezone:ro", "-e TZ=Asia/Tokyo", "-v /etc/localtime:/etc/localtime:ro", "すべての方法が有効"],
       "correctAnswerIndex": 3,
@@ -428,7 +428,7 @@
     },
     {
       "id": 53,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Dockerイメージのタグを削除するコマンドはどれですか？",
       "options": ["docker rmi", "docker tag --remove", "docker untag", "docker image rm"],
       "correctAnswerIndex": 0,
@@ -436,7 +436,7 @@
     },
     {
       "id": 54,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Docker Composeでコンテナの起動順序を制御するためのオプションはどれですか？",
       "options": ["depends_on", "wait_for", "startup_order", "sequence"],
       "correctAnswerIndex": 0,
@@ -444,7 +444,7 @@
     },
     {
       "id": 55,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナでのシグナル処理で重要なSIGTERMとSIGKILLの違いは何ですか？",
       "options": ["SIGTERMは即座終了、SIGKILLは遅延終了", "SIGTERMは正常終了、SIGKILLは強制終了", "機能的な違いはない", "SIGTERMはユーザー用、SIGKILLはシステム用"],
       "correctAnswerIndex": 1,
@@ -452,7 +452,7 @@
     },
     {
       "id": 56,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナのシステムリソースをクリーンアップするコマンドはどれですか？",
       "options": ["docker cleanup", "docker system prune", "docker clean", "docker gc"],
       "correctAnswerIndex": 1,
@@ -460,7 +460,7 @@
     },
     {
       "id": 57,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナのメモリ使用量を制限し、スワップも制限するオプション組み合わせはどれですか？",
       "options": ["--memory のみ", "--memory と --memory-swap", "--memory-limit", "--mem と --swap"],
       "correctAnswerIndex": 1,
@@ -468,7 +468,7 @@
     },
     {
       "id": 58,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerfileでマルチステージビルドを行う際のステージ指定方法はどれですか？",
       "options": ["FROM image AS stage", "STAGE stage FROM image", "SET STAGE stage", "FROM image NAME stage"],
       "correctAnswerIndex": 0,
@@ -476,7 +476,7 @@
     },
     {
       "id": 59,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナ内のアプリケーションが正常に動作していることを確認するコマンドはどれですか？",
       "options": ["docker health", "docker status", "docker logs", "docker inspect"],
       "correctAnswerIndex": 2,
@@ -484,7 +484,7 @@
     },
     {
       "id": 60,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Docker Composeでサービスを再作成せずに設定変更を反映させるコマンドはどれですか？",
       "options": ["docker-compose restart", "docker-compose reload", "docker-compose refresh", "docker-compose up --force-recreate"],
       "correctAnswerIndex": 0,
@@ -492,7 +492,7 @@
     },
     {
       "id": 61,
-      "level": "intermediate",
+      "level": "中級",
       "text": "DockerイメージをDocker Hubにプッシュする前に必要なコマンドはどれですか？",
       "options": ["docker login", "docker auth", "docker signin", "docker connect"],
       "correctAnswerIndex": 0,
@@ -500,7 +500,7 @@
     },
     {
       "id": 62,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナの実行中プロセスを確認するために使用できるコマンドはどれですか？",
       "options": ["docker ps", "docker exec ps aux", "docker top", "すべてのコマンド"],
       "correctAnswerIndex": 3,
@@ -508,7 +508,7 @@
     },
     {
       "id": 63,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Docker Composeでサービス間の通信に使用されるデフォルトのネットワーク名はどのような形式ですか？",
       "options": ["docker_default", "compose_default", "プロジェクト名_default", "app_network"],
       "correctAnswerIndex": 2,
@@ -516,7 +516,7 @@
     },
     {
       "id": 64,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Dockerコンテナのストレージドライバとして一般的に使用されるものはどれですか？",
       "options": ["overlay2", "aufs", "devicemapper", "overlay2とaufs"],
       "correctAnswerIndex": 0,
@@ -524,7 +524,7 @@
     },
     {
       "id": 65,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのセキュリティ強化のためのReadOnly Root Filesystemを設定するオプションはどれですか？",
       "options": ["--read-only", "--readonly-root", "--ro-root", "--immutable"],
       "correctAnswerIndex": 0,
@@ -532,7 +532,7 @@
     },
     {
       "id": 66,
-      "level": "advanced",
+      "level": "上級",
       "text": "DockerコンテナのLinux Capabilitiesを制限するためのオプションはどれですか？",
       "options": ["--cap-add/--cap-drop", "--security-opt", "--privileged", "--user"],
       "correctAnswerIndex": 0,
@@ -540,7 +540,7 @@
     },
     {
       "id": 67,
-      "level": "advanced",
+      "level": "上級",
       "text": "Docker Swarmでサービスのローディングバランサーとして使用されるデフォルトのモードはどれですか？",
       "options": ["round-robin", "least-connections", "ip-hash", "vip"],
       "correctAnswerIndex": 3,
@@ -548,7 +548,7 @@
     },
     {
       "id": 68,
-      "level": "advanced",
+      "level": "上級",
       "text": "DockerコンテナのPID namespaceをホストと共有するオプションはどれですか？",
       "options": ["--pid=host", "--share-pid", "--host-pid", "--pid-mode=host"],
       "correctAnswerIndex": 0,
@@ -556,7 +556,7 @@
     },
     {
       "id": 69,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナのセキュリティプロファイルを適用するためのAppArmor設定オプションはどれですか？",
       "options": ["--security-opt apparmor=profile_name", "--apparmor=profile_name", "--security apparmor:profile_name", "--profile apparmor:profile_name"],
       "correctAnswerIndex": 0,
@@ -564,7 +564,7 @@
     },
     {
       "id": 70,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナで最小権限の原則を実現するためのベストプラクティスはどれですか？",
       "options": ["常にrootユーザーで実行", "非特権ユーザーで実行し、必要最小限の権限のみ付与", "すべてのLinux capabilitiesを有効化", "--privilegedオプションを使用"],
       "correctAnswerIndex": 1,
@@ -572,7 +572,7 @@
     },
     {
       "id": 71,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナでcgroup v2を使用することの主なメリットは何ですか？",
       "options": ["リソース制限の統一管理と性能向上", "メモリ使用量の減少", "ネットワーク速度の向上", "ファイルシステムの最適化"],
       "correctAnswerIndex": 0,
@@ -580,7 +580,7 @@
     },
     {
       "id": 72,
-      "level": "advanced",
+      "level": "上級",
       "text": "Docker BuildKitの秘密情報管理機能でビルド時に秘密情報を使用する方法はどれですか？",
       "options": ["ENVで秘密情報を設定", "RUN --mount=type=secretでマウント", "COPYで秘密情報ファイルをコピー", "ARGで秘密情報を渡す"],
       "correctAnswerIndex": 1,
@@ -588,7 +588,7 @@
     },
     {
       "id": 73,
-      "level": "advanced",
+      "level": "上級",
       "text": "DockerコンテナのマルチアーキテクチャイメージをビルドするためのBuildKit機能はどれですか？",
       "options": ["docker buildx", "docker multi-arch", "docker platform", "docker cross-build"],
       "correctAnswerIndex": 0,
@@ -596,7 +596,7 @@
     },
     {
       "id": 74,
-      "level": "advanced",
+      "level": "上級",
       "text": "DockerコンテナのFileSystemをメモリ上にマウントして高速化するための方法はどれですか？",
       "options": ["--tmpfs /path", "--mount type=tmpfs", "--memory-fs /path", "tmpfsボリュームの作成"],
       "correctAnswerIndex": 1,
@@ -604,7 +604,7 @@
     },
     {
       "id": 75,
-      "level": "advanced",
+      "level": "上級",
       "text": "Dockerコンテナでカーネルモジュールをロードするための権限が必要な場合のオプションはどれですか？",
       "options": ["--privileged", "--cap-add SYS_MODULE", "--device /dev/kmod", "--kernel-module"],
       "correctAnswerIndex": 1,

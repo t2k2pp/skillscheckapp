@@ -12,7 +12,7 @@
   "questions": [
     {
       "id": 1,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsとは何ですか？",
       "options": ["プログレッシブJavaScriptフレームワーク", "サーバーサイドフレームワーク", "データベース", "プログラミング言語"],
       "correctAnswerIndex": 0,
@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでHTMLテンプレート内に値を表示するための記法はどれですか？",
       "options": ["{{ }}", "<%= %>", "${ }", "{ }"],
       "correctAnswerIndex": 0,
@@ -28,7 +28,7 @@
     },
     {
       "id": 3,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでHTML属性にデータをバインドする際に使用するディレクティブはどれですか？",
       "options": ["v-bind", "v-model", "v-show", "v-if"],
       "correctAnswerIndex": 0,
@@ -36,7 +36,7 @@
     },
     {
       "id": 4,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsで双方向データバインディングを実現するディレクティブはどれですか？",
       "options": ["v-model", "v-bind", "v-sync", "v-data"],
       "correctAnswerIndex": 0,
@@ -44,7 +44,7 @@
     },
     {
       "id": 5,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsで条件付きレンダリングを行うディレクティブはどれですか？",
       "options": ["v-if", "v-show", "v-display", "v-render"],
       "correctAnswerIndex": 0,
@@ -52,7 +52,7 @@
     },
     {
       "id": 6,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでリストレンダリングを行うディレクティブはどれですか？",
       "options": ["v-for", "v-repeat", "v-loop", "v-list"],
       "correctAnswerIndex": 0,
@@ -60,7 +60,7 @@
     },
     {
       "id": 7,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでイベントリスナーを追加するディレクティブはどれですか？",
       "options": ["v-on", "v-event", "v-listener", "v-click"],
       "correctAnswerIndex": 0,
@@ -68,7 +68,7 @@
     },
     {
       "id": 8,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでコンポーネントのデータを定義する際に使用するオプションはどれですか？",
       "options": ["data", "props", "methods", "computed"],
       "correctAnswerIndex": 0,
@@ -76,7 +76,7 @@
     },
     {
       "id": 9,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでメソッドを定義する際に使用するオプションはどれですか？",
       "options": ["methods", "functions", "actions", "handlers"],
       "correctAnswerIndex": 0,
@@ -84,7 +84,7 @@
     },
     {
       "id": 10,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsで計算プロパティを定義する際に使用するオプションはどれですか？",
       "options": ["computed", "calculated", "derived", "dynamic"],
       "correctAnswerIndex": 0,
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでデータの変化を監視する際に使用するオプションはどれですか？",
       "options": ["watch", "observe", "monitor", "track"],
       "correctAnswerIndex": 0,
@@ -100,7 +100,7 @@
     },
     {
       "id": 12,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsで親コンポーネントから子コンポーネントにデータを渡す方法はどれですか？",
       "options": ["props", "data", "emit", "slot"],
       "correctAnswerIndex": 0,
@@ -108,7 +108,7 @@
     },
     {
       "id": 13,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsで子コンポーネントから親コンポーネントにイベントを送信する方法はどれですか？",
       "options": ["$emit", "$send", "$notify", "$dispatch"],
       "correctAnswerIndex": 0,
@@ -116,7 +116,7 @@
     },
     {
       "id": 14,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでコンポーネントのライフサイクルフックの中で、DOMにアクセスできるものはどれですか？",
       "options": ["mounted", "created", "beforeCreate", "beforeMount"],
       "correctAnswerIndex": 0,
@@ -124,7 +124,7 @@
     },
     {
       "id": 15,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでDOM要素への参照を取得する方法はどれですか？",
       "options": ["$refs", "$el", "$dom", "$element"],
       "correctAnswerIndex": 0,
@@ -132,7 +132,7 @@
     },
     {
       "id": 16,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでコンポーネントを別のファイルで定義し、使用するために必要な処理はどれですか？",
       "options": ["export/import", "require/module", "include/define", "load/use"],
       "correctAnswerIndex": 0,
@@ -140,7 +140,7 @@
     },
     {
       "id": 17,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでグローバルにコンポーネントを登録する方法はどれですか？",
       "options": ["Vue.component()", "Vue.register()", "Vue.global()", "Vue.define()"],
       "correctAnswerIndex": 0,
@@ -148,7 +148,7 @@
     },
     {
       "id": 18,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでスタイルをコンポーネントにスコープする方法はどれですか？",
       "options": ["<style scoped>", "<style local>", "<style component>", "<style isolated>"],
       "correctAnswerIndex": 0,
@@ -156,7 +156,7 @@
     },
     {
       "id": 19,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsで動的にクラス名を適用する方法として正しいものはどれですか？",
       "options": [":class=\"{active: isActive}\"", "class=\"{active: isActive}\"", "v-class=\"{active: isActive}\"", "dynamic-class=\"{active: isActive}\""],
       "correctAnswerIndex": 0,
@@ -164,7 +164,7 @@
     },
     {
       "id": 20,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでインラインスタイルを動的に適用する方法はどれですか？",
       "options": [":style=\"{color: textColor}\"", "style=\"{color: textColor}\"", "v-style=\"{color: textColor}\"", "dynamic-style=\"{color: textColor}\""],
       "correctAnswerIndex": 0,
@@ -172,7 +172,7 @@
     },
     {
       "id": 21,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsで要素の表示/非表示を切り替えるディレクティブはどれですか？",
       "options": ["v-show", "v-if", "v-display", "v-visible"],
       "correctAnswerIndex": 0,
@@ -180,7 +180,7 @@
     },
     {
       "id": 22,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでv-forを使用する際に必ず設定すべき属性はどれですか？",
       "options": ["key", "id", "index", "unique"],
       "correctAnswerIndex": 0,
@@ -188,7 +188,7 @@
     },
     {
       "id": 23,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsで単一ファイルコンポーネント（SFC）のファイル拡張子はどれですか？",
       "options": [".vue", ".sfc", ".component", ".vc"],
       "correctAnswerIndex": 0,
@@ -196,7 +196,7 @@
     },
     {
       "id": 24,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue CLIでVueプロジェクトを作成するコマンドはどれですか？",
       "options": ["vue create", "vue new", "vue init", "vue generate"],
       "correctAnswerIndex": 0,
@@ -204,7 +204,7 @@
     },
     {
       "id": 25,
-      "level": "beginner",
+      "level": "基礎",
       "text": "Vue.jsでコンポーネント間で状態を共有する最も基本的な方法はどれですか？",
       "options": ["親子間でprops/emitを使用", "グローバル変数", "localStorage", "外部ライブラリ"],
       "correctAnswerIndex": 0,
@@ -212,7 +212,7 @@
     },
     {
       "id": 26,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.js 3のComposition APIで状態を定義する関数はどれですか？",
       "options": ["ref", "reactive", "computed", "watch"],
       "correctAnswerIndex": 0,
@@ -220,7 +220,7 @@
     },
     {
       "id": 27,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.js 3のComposition APIでライフサイクルフックを使用する方法はどれですか？",
       "options": ["onMounted, onUpdated などの関数", "mounted, updated などのオプション", "lifecycle オブジェクト", "hooks 配列"],
       "correctAnswerIndex": 0,
@@ -228,7 +228,7 @@
     },
     {
       "id": 28,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.js 3で複数のコンポーネント間で状態を共有するために推奨される方法はどれですか？",
       "options": ["provide/inject", "グローバル変数", "localStorage", "EventBus"],
       "correctAnswerIndex": 0,
@@ -236,7 +236,7 @@
     },
     {
       "id": 29,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue Routerでプログラマティックナビゲーションを行う方法はどれですか？",
       "options": ["$router.push()", "$route.push()", "router.navigate()", "this.navigate()"],
       "correctAnswerIndex": 0,
@@ -244,7 +244,7 @@
     },
     {
       "id": 30,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue Routerでルートパラメータを取得する方法はどれですか？",
       "options": ["$route.params", "$router.params", "$route.query", "$router.query"],
       "correctAnswerIndex": 0,
@@ -252,7 +252,7 @@
     },
     {
       "id": 31,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vuexで状態を変更する正しい方法はどれですか？",
       "options": ["mutation経由", "直接変更", "action経由", "getter経由"],
       "correctAnswerIndex": 0,
@@ -260,7 +260,7 @@
     },
     {
       "id": 32,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vuexで非同期処理を扱う際に使用するものはどれですか？",
       "options": ["action", "mutation", "getter", "state"],
       "correctAnswerIndex": 0,
@@ -268,7 +268,7 @@
     },
     {
       "id": 33,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでカスタムディレクティブを定義する方法はどれですか？",
       "options": ["Vue.directive()", "Vue.custom()", "Vue.define()", "Vue.register()"],
       "correctAnswerIndex": 0,
@@ -276,7 +276,7 @@
     },
     {
       "id": 34,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでスロット（slot）の主な用途は何ですか？",
       "options": ["コンテンツ配信", "状態管理", "ルーティング", "データバインディング"],
       "correctAnswerIndex": 0,
@@ -284,7 +284,7 @@
     },
     {
       "id": 35,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsで名前付きスロットを定義する方法はどれですか？",
       "options": ["<slot name=\"header\">", "<slot id=\"header\">", "<slot type=\"header\">", "<slot class=\"header\">"],
       "correctAnswerIndex": 0,
@@ -292,7 +292,7 @@
     },
     {
       "id": 36,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでスコープ付きスロットの用途は何ですか？",
       "options": ["子コンポーネントのデータを親に渡す", "スタイルを適用する", "イベントを処理する", "ルーティングを制御する"],
       "correctAnswerIndex": 0,
@@ -300,7 +300,7 @@
     },
     {
       "id": 37,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでmixinを使用する目的は何ですか？",
       "options": ["コンポーネント間でオプションを共有", "状態を管理", "ルーティングを制御", "スタイルを適用"],
       "correctAnswerIndex": 0,
@@ -308,7 +308,7 @@
     },
     {
       "id": 38,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでフィルターを定義する方法はどれですか？",
       "options": ["filters オプション", "methods オプション", "computed オプション", "watch オプション"],
       "correctAnswerIndex": 0,
@@ -316,7 +316,7 @@
     },
     {
       "id": 39,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.js 3でTeleportコンポーネントの目的は何ですか？",
       "options": ["DOM要素を別の場所にレンダリング", "コンポーネント間通信", "状態管理", "ルーティング"],
       "correctAnswerIndex": 0,
@@ -324,7 +324,7 @@
     },
     {
       "id": 40,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.js 3でFragmentの利点は何ですか？",
       "options": ["複数のルート要素を持てる", "パフォーマンス向上", "メモリ使用量削減", "セキュリティ向上"],
       "correctAnswerIndex": 0,
@@ -332,7 +332,7 @@
     },
     {
       "id": 41,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsで動的コンポーネントを使用する方法はどれですか？",
       "options": ["<component :is=\"componentName\">", "<dynamic :component=\"componentName\">", "<switch :to=\"componentName\">", "<render :component=\"componentName\">"],
       "correctAnswerIndex": 0,
@@ -340,7 +340,7 @@
     },
     {
       "id": 42,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでコンポーネントの状態を保持しながら切り替える方法はどれですか？",
       "options": ["<keep-alive>", "<preserve>", "<cache>", "<maintain>"],
       "correctAnswerIndex": 0,
@@ -348,7 +348,7 @@
     },
     {
       "id": 43,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsで非同期コンポーネントを定義する方法はどれですか？",
       "options": ["() => import('./Component.vue')", "async Component()", "Promise.resolve(Component)", "Vue.asyncComponent()"],
       "correctAnswerIndex": 0,
@@ -356,7 +356,7 @@
     },
     {
       "id": 44,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでイベント修飾子（.prevent）の目的は何ですか？",
       "options": ["デフォルト動作を防ぐ", "イベントバブリングを停止", "イベント伝播を停止", "イベントを遅延"],
       "correctAnswerIndex": 0,
@@ -364,7 +364,7 @@
     },
     {
       "id": 45,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでキー修飾子の使用例として正しいものはどれですか？",
       "options": ["@keyup.enter", "@key.enter", "@keyboard.enter", "@input.enter"],
       "correctAnswerIndex": 0,
@@ -372,7 +372,7 @@
     },
     {
       "id": 46,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.js 3のComposition APIで依存配列を持つwatchの正しい構文はどれですか？",
       "options": ["watch(source, callback, options)", "watch(callback, dependencies)", "watchEffect(callback)", "observer(source, callback)"],
       "correctAnswerIndex": 0,
@@ -380,7 +380,7 @@
     },
     {
       "id": 47,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでprop validation における型チェックの書き方はどれですか？",
       "options": ["props: { name: String }", "props: { name: 'string' }", "props: { name: typeof String }", "props: { name: {string} }"],
       "correctAnswerIndex": 0,
@@ -388,7 +388,7 @@
     },
     {
       "id": 48,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでwatcherの即座実行を設定する方法はどれですか？",
       "options": ["{ immediate: true }", "{ now: true }", "{ instant: true }", "{ direct: true }"],
       "correctAnswerIndex": 0,
@@ -396,7 +396,7 @@
     },
     {
       "id": 49,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsで深いオブジェクトの変化を監視する方法はどれですか？",
       "options": ["{ deep: true }", "{ nested: true }", "{ recursive: true }", "{ complete: true }"],
       "correctAnswerIndex": 0,
@@ -404,7 +404,7 @@
     },
     {
       "id": 50,
-      "level": "intermediate",
+      "level": "中級",
       "text": "Vue.jsでコンポーネントの通信パターンでないものはどれですか？",
       "options": ["direct mutation", "props down", "events up", "provide/inject"],
       "correctAnswerIndex": 0,
@@ -412,7 +412,7 @@
     },
     {
       "id": 51,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.js 3のProxyベースのリアクティブシステムの利点は何ですか？",
       "options": ["配列の変更メソッドも追跡可能", "パフォーマンス向上", "メモリ使用量削減", "型安全性向上"],
       "correctAnswerIndex": 0,
@@ -420,7 +420,7 @@
     },
     {
       "id": 52,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.js 3でカスタムレンダラーを作成する主な用途は何ですか？",
       "options": ["非DOM環境でのレンダリング", "パフォーマンス最適化", "コンポーネント分離", "状態管理"],
       "correctAnswerIndex": 0,
@@ -428,7 +428,7 @@
     },
     {
       "id": 53,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.js 3のTree-shakingの利点は何ですか？",
       "options": ["未使用コードの除去", "実行速度向上", "メモリ使用量削減", "デバッグ容易性"],
       "correctAnswerIndex": 0,
@@ -436,7 +436,7 @@
     },
     {
       "id": 54,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.js 3のSuspenseコンポーネントの主な用途は何ですか？",
       "options": ["非同期コンポーネントのローディング状態管理", "エラーハンドリング", "ルート遷移", "状態管理"],
       "correctAnswerIndex": 0,
@@ -444,7 +444,7 @@
     },
     {
       "id": 55,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでコンパイル時最適化の例として正しくないものはどれですか？",
       "options": ["動的プロパティの実行時解決", "静的ホイスティング", "パッチフラグ", "ブロックツリー"],
       "correctAnswerIndex": 0,
@@ -452,7 +452,7 @@
     },
     {
       "id": 56,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsのSSR（サーバーサイドレンダリング）で hydration とは何ですか？",
       "options": ["静的HTMLにJavaScript機能を追加", "サーバーでのHTML生成", "SEO最適化", "初期データの取得"],
       "correctAnswerIndex": 0,
@@ -460,7 +460,7 @@
     },
     {
       "id": 57,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでメモリリークを避けるベストプラクティスはどれですか？",
       "options": ["beforeDestroy/beforeUnmountでクリーンアップ", "データを null に設定", "コンポーネントを小さくする", "computedを多用する"],
       "correctAnswerIndex": 0,
@@ -468,7 +468,7 @@
     },
     {
       "id": 58,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.js 3のComposition APIで effectScope の目的は何ですか？",
       "options": ["副作用の自動クリーンアップ", "パフォーマンス測定", "エラーハンドリング", "状態の永続化"],
       "correctAnswerIndex": 0,
@@ -476,7 +476,7 @@
     },
     {
       "id": 59,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでコンポーネント設計のComposition vs Inheritance の原則について正しいものはどれですか？",
       "options": ["Compositionを優先し、mixinは避ける", "Inheritanceを優先する", "どちらも同等に使用", "場面によって使い分ける"],
       "correctAnswerIndex": 0,
@@ -484,7 +484,7 @@
     },
     {
       "id": 60,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでリアクティブシステムのパフォーマンス最適化として正しくないものはどれですか？",
       "options": ["深いオブジェクトを常にリアクティブにする", "shallowRef/shallowReactiveの活用", "不要なwatcherを避ける", "computed の適切な使用"],
       "correctAnswerIndex": 0,
@@ -492,7 +492,7 @@
     },
     {
       "id": 61,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.js 3でv-modelのカスタマイズにおける新しい方式は何ですか？",
       "options": ["update:modelValueイベント", "input イベント", "change イベント", "sync イベント"],
       "correctAnswerIndex": 0,
@@ -500,7 +500,7 @@
     },
     {
       "id": 62,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでWebComponentsとの相互運用性において重要な設定はどれですか？",
       "options": ["compilerOptions.isCustomElement", "components.custom", "app.config.customElements", "Vue.config.custom"],
       "correctAnswerIndex": 0,
@@ -508,7 +508,7 @@
     },
     {
       "id": 63,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでTypeScriptとの統合における型推論の改善方法はどれですか？",
       "options": ["Composition APIの使用", "Options APIのみ使用", "PropTypeの使用", "JavaScript の使用"],
       "correctAnswerIndex": 0,
@@ -516,7 +516,7 @@
     },
     {
       "id": 64,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでBundle分析とパフォーマンス最適化のツールとして適切でないものはどれですか？",
       "options": ["Vue DevTools のみ", "webpack-bundle-analyzer", "Vue DevTools Performance", "Lighthouse"],
       "correctAnswerIndex": 0,
@@ -524,7 +524,7 @@
     },
     {
       "id": 65,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでPWA（Progressive Web App）を実装する際の重要な考慮事項はどれですか？",
       "options": ["Service Worker との統合", "コンポーネント分割", "状態管理", "ルーティング"],
       "correctAnswerIndex": 0,
@@ -532,7 +532,7 @@
     },
     {
       "id": 66,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでマイクロフロントエンド アーキテクチャを実装する際の課題はどれですか？",
       "options": ["Vue インスタンスの分離と通信", "パフォーマンス向上", "開発速度向上", "保守性向上"],
       "correctAnswerIndex": 0,
@@ -540,7 +540,7 @@
     },
     {
       "id": 67,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.js 3の<script setup>構文の利点として正しくないものはどれですか？",
       "options": ["ランタイムパフォーマンスの向上", "簡潔な記法", "より良いTypeScript推論", "自動的なコンポーネント登録"],
       "correctAnswerIndex": 0,
@@ -548,7 +548,7 @@
     },
     {
       "id": 68,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでCode Splittingの戦略として推奨されるのはどれですか？",
       "options": ["ルートベースとコンポーネントベースの組み合わせ", "すべてのコンポーネントを分割", "ライブラリのみ分割", "分割しない"],
       "correctAnswerIndex": 0,
@@ -556,7 +556,7 @@
     },
     {
       "id": 69,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでメタフレームワーク（Nuxt.js）を使用する主な利点はどれですか？",
       "options": ["SSR/SSG の簡易実装", "バンドルサイズ削減", "開発速度向上のみ", "Vue バージョン管理"],
       "correctAnswerIndex": 0,
@@ -564,7 +564,7 @@
     },
     {
       "id": 70,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.js 3でPatch Flag最適化の仕組みについて正しいものはどれですか？",
       "options": ["動的な要素のみ更新", "すべて更新", "静的要素のみ更新", "ランダム更新"],
       "correctAnswerIndex": 0,
@@ -572,7 +572,7 @@
     },
     {
       "id": 71,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでE2Eテストのベストプラクティスとして適切でないものはどれですか？",
       "options": ["すべてのコンポーネントを個別テスト", "ユーザージャーニーテスト", "クリティカルパステスト", "回帰テスト"],
       "correctAnswerIndex": 0,
@@ -580,7 +580,7 @@
     },
     {
       "id": 72,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでConcurrent Featuresに相当する概念はどれですか？",
       "options": ["Vue 3には直接的な実装はない", "async/await", "Suspense", "Teleport"],
       "correctAnswerIndex": 0,
@@ -588,7 +588,7 @@
     },
     {
       "id": 73,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでモジュール連邦（Module Federation）を実装する際の考慮事項はどれですか？",
       "options": ["Vueバージョンとプラグインの互換性", "パフォーマンス向上のみ", "開発体験のみ", "コストのみ"],
       "correctAnswerIndex": 0,
@@ -596,7 +596,7 @@
     },
     {
       "id": 74,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.jsでWebWorkerとの統合における主な用途はどれですか？",
       "options": ["CPU集約的処理の並列化", "UI描画の高速化", "メモリ管理", "ファイルI/O"],
       "correctAnswerIndex": 0,
@@ -604,7 +604,7 @@
     },
     {
       "id": 75,
-      "level": "advanced",
+      "level": "上級",
       "text": "Vue.js 3でProxy対応ブラウザでない場合のフォールバック戦略はどれですか？",
       "options": ["@vue/compat での段階的移行", "Vue 2の継続使用", "別フレームワークへの移行", "機能制限での対応"],
       "correctAnswerIndex": 0,

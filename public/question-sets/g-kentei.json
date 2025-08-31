@@ -13,7 +13,7 @@
   "questions": [
     {
       "id": 1,
-      "level": "beginner",
+      "level": "基礎",
       "text": "「人工知能」という言葉が初めて公の場で使われた会議として知られているものはどれですか？",
       "options": ["Yalta Conference", "Dartmouth Conference", "Potsdam Conference", "Solvay Conference"],
       "correctAnswerIndex": 1,
@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "level": "beginner",
+      "level": "基礎",
       "text": "AI研究の歴史において、期待が先行しすぎた結果、研究が停滞した時期を指す言葉はどれですか？",
       "options": ["AIの夏", "AIの春", "AIの秋", "AIの冬"],
       "correctAnswerIndex": 3,
@@ -29,7 +29,7 @@
     },
     {
       "id": 3,
-      "level": "beginner",
+      "level": "基礎",
       "text": "機械が人間と見分けがつかないほど知的に振る舞えるかを判断するテストとして、アラン・チューリングが提唱したものはどれですか？",
       "options": ["ベンチマークテスト", "IQテスト", "チューリングテスト", "ストレステスト"],
       "correctAnswerIndex": 2,
@@ -37,7 +37,7 @@
     },
     {
       "id": 4,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ジョン・サールが提唱した、AIが持つ知能に関する思考実験で、記号処理能力だけでは「心」や「意識」は生まれないと主張するものはどれですか？",
       "options": ["中国語の部屋", "スワンプマン", "マリーの部屋", "テセウスの船"],
       "correctAnswerIndex": 0,
@@ -45,7 +45,7 @@
     },
     {
       "id": 5,
-      "level": "beginner",
+      "level": "基礎",
       "text": "AIの能力レベルによる分類で、特定のタスクのみを処理するAIを指す言葉はどれですか？",
       "options": ["汎用人工知能 (AGI)", "特化型人工知能 (Narrow AI)", "超人工知能 (ASI)", "意識を持つAI"],
       "correctAnswerIndex": 1,
@@ -53,7 +53,7 @@
     },
     {
       "id": 6,
-      "level": "beginner",
+      "level": "基礎",
       "text": "専門家の知識をルールとしてコンピュータに記述し、そのルールに基づいて推論を行うことで、専門家のように振る舞うAIシステムを何と呼びますか？",
       "options": ["ニューラルネットワーク", "エキスパートシステム", "遺伝的アルゴリズム", "強化学習システム"],
       "correctAnswerIndex": 1,
@@ -61,7 +61,7 @@
     },
     {
       "id": 7,
-      "level": "intermediate",
+      "level": "中級",
       "text": "問題解決のための探索アルゴリズムで、考えられる全ての手を木の形で表現し、その中から最適な解を見つけ出す手法の総称はどれですか？",
       "options": ["遺伝的アルゴリズム", "木探索", "焼きなまし法", "強化学習"],
       "correctAnswerIndex": 1,
@@ -69,7 +69,7 @@
     },
     {
       "id": 8,
-      "level": "intermediate",
+      "level": "中級",
       "text": "チェスや囲碁のような二人零和有限確定完全情報ゲームにおいて、自身の手番では評価値を最大化し、相手の手番では評価値を最小化する手を選択する探索アルゴリズムはどれですか？",
       "options": ["モンテカルロ法", "ミニマックス法", "Q学習", "遺伝的アルゴリズム"],
       "correctAnswerIndex": 1,
@@ -77,7 +77,7 @@
     },
     {
       "id": 9,
-      "level": "advanced",
+      "level": "上級",
       "text": "ミニマックス法の計算量を削減するため、明らかに無駄な手の探索を省略する枝刈りの手法はどれですか？",
       "options": ["ベータ枝刈り", "ガンマ枝刈り", "アルファ・ベータ法", "デルタ枝刈り"],
       "correctAnswerIndex": 2,
@@ -85,7 +85,7 @@
     },
     {
       "id": 10,
-      "level": "advanced",
+      "level": "上級",
       "text": "囲碁AI「AlphaGo」にも採用された、ランダムなシミュレーション（プレイアウト）を多数行うことで、各手の有望さを評価する探索アルゴリズムはどれですか？",
       "options": ["ミニマックス法", "モンテカルロ木探索", "遺伝的アルゴリズム", "焼きなまし法"],
       "correctAnswerIndex": 1,
@@ -93,7 +93,7 @@
     },
     {
       "id": 11,
-      "level": "beginner",
+      "level": "基礎",
       "text": "機械学習のカテゴリのうち、正解ラベルが付与されたデータを用いて学習を行う手法はどれですか？",
       "options": ["教師あり学習", "教師なし学習", "強化学習", "半教師あり学習"],
       "correctAnswerIndex": 0,
@@ -101,7 +101,7 @@
     },
     {
       "id": 12,
-      "level": "beginner",
+      "level": "基礎",
       "text": "機械学習のカテゴリのうち、正解ラベルがないデータから、データの構造やパターンを学習する手法はどれですか？",
       "options": ["教師あり学習", "教師なし学習", "強化学習", "自己教師あり学習"],
       "correctAnswerIndex": 1,
@@ -109,7 +109,7 @@
     },
     {
       "id": 13,
-      "level": "beginner",
+      "level": "基礎",
       "text": "機械学習のカテゴリのうち、エージェントが試行錯誤を通じて、得られる報酬を最大化するような行動を学習する手法はどれですか？",
       "options": ["教師あり学習", "教師なし学習", "強化学習", "転移学習"],
       "correctAnswerIndex": 2,
@@ -117,7 +117,7 @@
     },
     {
       "id": 14,
-      "level": "beginner",
+      "level": "基礎",
       "text": "教師あり学習において、連続値を予測するタスクを何と呼びますか？",
       "options": ["回帰", "分類", "クラスタリング", "次元削減"],
       "correctAnswerIndex": 0,
@@ -125,7 +125,7 @@
     },
     {
       "id": 15,
-      "level": "beginner",
+      "level": "基礎",
       "text": "教師あり学習において、データが属するカテゴリを予測するタスクを何と呼びますか？",
       "options": ["回帰", "分類", "クラスタリング", "異常検知"],
       "correctAnswerIndex": 1,
@@ -133,7 +133,7 @@
     },
     {
       "id": 16,
-      "level": "intermediate",
+      "level": "中級",
       "text": "教師なし学習において、データを類似性に基づいてグループ分けする手法を何と呼びますか？",
       "options": ["回帰", "分類", "クラスタリング", "主成分分析"],
       "correctAnswerIndex": 2,
@@ -141,7 +141,7 @@
     },
     {
       "id": 17,
-      "level": "intermediate",
+      "level": "中級",
       "text": "クラスタリングの代表的なアルゴリズムで、最初にランダムな中心点を決め、各データを最も近い中心点に割り当て、中心点を移動させる、という処理を繰り返すものはどれですか？",
       "options": ["k-means法", "階層的クラスタリング", "DBSCAN", "主成分分析"],
       "correctAnswerIndex": 0,
@@ -149,7 +149,7 @@
     },
     {
       "id": 18,
-      "level": "intermediate",
+      "level": "中級",
       "text": "データの次元を、元の特徴をなるべく失わないように削減する教師なし学習の手法はどれですか？",
       "options": ["線形判別分析", "主成分分析 (PCA)", "k-means法", "サポートベクターマシン"],
       "correctAnswerIndex": 1,
@@ -157,7 +157,7 @@
     },
     {
       "id": 19,
-      "level": "intermediate",
+      "level": "中級",
       "text": "機械学習モデルの性能評価において、学習データに対しては高い性能を示すが、未知のデータ（テストデータ）に対しては性能が低い状態を何と呼びますか？",
       "options": ["過学習（オーバーフィッティング）", "学習不足（アンダーフィッティング）", "汎化", "交差検証"],
       "correctAnswerIndex": 0,
@@ -165,7 +165,7 @@
     },
     {
       "id": 20,
-      "level": "intermediate",
+      "level": "中級",
       "text": "過学習を防ぐため、データを学習用、検証用、テスト用に分割し、モデルの汎化性能を評価する手法を何と呼びますか？",
       "options": ["ブートストラップ法", "グリッドサーチ", "交差検証（クロスバリデーション）", "アンサンブル学習"],
       "correctAnswerIndex": 2,
@@ -173,7 +173,7 @@
     },
     {
       "id": 21,
-      "level": "intermediate",
+      "level": "中級",
       "text": "分類問題の評価指標で、正と予測したもののうち、実際に正であったものの割合を示す指標はどれですか？",
       "options": ["適合率 (Precision)", "再現率 (Recall)", "F値 (F-measure)", "正解率 (Accuracy)"],
       "correctAnswerIndex": 0,
@@ -181,7 +181,7 @@
     },
     {
       "id": 22,
-      "level": "intermediate",
+      "level": "中級",
       "text": "分類問題の評価指標で、実際に正であるもののうち、正であると予測できたものの割合を示す指標はどれですか？",
       "options": ["適合率 (Precision)", "再現率 (Recall)", "F値 (F-measure)", "ROC曲線"],
       "correctAnswerIndex": 1,
@@ -189,7 +189,7 @@
     },
     {
       "id": 23,
-      "level": "advanced",
+      "level": "上級",
       "text": "適合率と再現率のトレードオフの関係を考慮し、両者の調和平均をとった評価指標はどれですか？",
       "options": ["AUC", "LogLoss", "F値 (F-measure)", "正解率 (Accuracy)"],
       "correctAnswerIndex": 2,
@@ -197,7 +197,7 @@
     },
     {
       "id": 24,
-      "level": "advanced",
+      "level": "上級",
       "text": "複数の学習モデルを組み合わせることで、単一のモデルよりも高い性能を得ようとする手法の総称はどれですか？",
       "options": ["転移学習", "アンサンブル学習", "自己教師あり学習", "能動学習"],
       "correctAnswerIndex": 1,
@@ -205,7 +205,7 @@
     },
     {
       "id": 25,
-      "level": "advanced",
+      "level": "上級",
       "text": "アンサンブル学習の一つで、データから復元抽出で複数のサブセットを作り、それぞれでモデルを学習させて結果を統合する手法はどれですか？ランダムフォレストがこの手法に基づいています。",
       "options": ["ブースティング", "バギング", "スタッキング", "アダブースト"],
       "correctAnswerIndex": 1,
@@ -213,7 +213,7 @@
     },
     {
       "id": 26,
-      "level": "beginner",
+      "level": "基礎",
       "text": "人間の脳の神経細胞（ニューロン）の仕組みを模した数理モデルを何と呼びますか？",
       "options": ["遺伝的アルゴリズム", "パーセプトロン", "サポートベクターマシン", "決定木"],
       "correctAnswerIndex": 1,
@@ -221,7 +221,7 @@
     },
     {
       "id": 27,
-      "level": "beginner",
+      "level": "基礎",
       "text": "パーセプトロンなどのニューラルネットワークモデルを多層に接続したものを何と呼びますか？",
       "options": ["ディープラーニング", "ニューラルネットワーク", "アンサンブル学習", "強化学習"],
       "correctAnswerIndex": 1,
@@ -229,7 +229,7 @@
     },
     {
       "id": 28,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ニューラルネットワークにおいて、入力された信号の総和を次の層にどのように出力するかを決定する関数を何と呼びますか？",
       "options": ["損失関数", "評価関数", "活性化関数", "最適化関数"],
       "correctAnswerIndex": 2,
@@ -237,7 +237,7 @@
     },
     {
       "id": 29,
-      "level": "intermediate",
+      "level": "中級",
       "text": "活性化関数の一つで、入力が0より大きい場合はそのまま出力し、0以下の場合は0を出力する関数はどれですか？",
       "options": ["シグモイド関数", "tanh関数", "ReLU (Rectified Linear Unit)", "ソフトマックス関数"],
       "correctAnswerIndex": 2,
@@ -245,7 +245,7 @@
     },
     {
       "id": 30,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ニューラルネットワークの学習において、モデルの予測値と実際の正解値との誤差を測る関数を何と呼びますか？",
       "options": ["活性化関数", "損失関数（目的関数、コスト関数）", "評価関数", "正則化項"],
       "correctAnswerIndex": 1,
@@ -253,7 +253,7 @@
     },
     {
       "id": 31,
-      "level": "intermediate",
+      "level": "中級",
       "text": "損失関数の値を最小化するために、パラメータをどの方向にどれだけ更新するかを決定するアルゴリズムを何と呼びますか？",
       "options": ["活性化関数", "正則化", "最適化アルゴリズム", "誤差逆伝播法"],
       "correctAnswerIndex": 2,
@@ -261,7 +261,7 @@
     },
     {
       "id": 32,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ニューラルネットワークの学習において、出力層から入力層に向かって、予測誤差が各層の重みにどれだけ影響を与えたか（勾配）を効率的に計算する手法はどれですか？",
       "options": ["勾配降下法", "誤差逆伝播法（バックプロパゲーション）", "連鎖律", "自動微分"],
       "correctAnswerIndex": 1,
@@ -269,7 +269,7 @@
     },
     {
       "id": 33,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ディープラーニングの学習において、活性化関数にシグモイド関数などを用いた深い層のネットワークで、勾配が0に近くなり学習が進まなくなる問題を何と呼びますか？",
       "options": ["勾配爆発", "勾配消失", "過学習", "次元の呪い"],
       "correctAnswerIndex": 1,
@@ -277,7 +277,7 @@
     },
     {
       "id": 34,
-      "level": "beginner",
+      "level": "基礎",
       "text": "主に画像認識の分野で高い性能を発揮する、畳み込み層とプーリング層を持つニューラルネットワークのモデルはどれですか？",
       "options": ["CNN (畳み込みニューラルネットワーク)", "RNN (再帰型ニューラルネットワーク)", "GAN (敵対的生成ネットワーク)", "Transformer"],
       "correctAnswerIndex": 0,
@@ -285,7 +285,7 @@
     },
     {
       "id": 35,
-      "level": "intermediate",
+      "level": "中級",
       "text": "CNNの畳み込み層で、入力データに対してスライドさせながら積和演算を行う小さな行列を何と呼びますか？",
       "options": ["ストライド", "パディング", "カーネル（フィルタ）", "チャネル"],
       "correctAnswerIndex": 2,
@@ -293,7 +293,7 @@
     },
     {
       "id": 36,
-      "level": "intermediate",
+      "level": "中級",
       "text": "CNNのプーリング層で、特徴マップの小さな領域内の最大値をとる操作を何と呼びますか？",
       "options": ["最大値プーリング (Max Pooling)", "平均値プーリング (Average Pooling)", "畳み込み", "全結合"],
       "correctAnswerIndex": 0,
@@ -301,7 +301,7 @@
     },
     {
       "id": 37,
-      "level": "advanced",
+      "level": "上級",
       "text": "画像認識のコンペティションILSVRCで2012年に圧勝し、ディープラーニングブームの火付け役となったCNNモデルはどれですか？",
       "options": ["LeNet", "AlexNet", "VGGNet", "ResNet"],
       "correctAnswerIndex": 1,
@@ -309,7 +309,7 @@
     },
     {
       "id": 38,
-      "level": "advanced",
+      "level": "上級",
       "text": "CNNの層を深くすると性能が劣化する問題を、スキップコネクション（ショートカット）を用いて解決したモデルはどれですか？",
       "options": ["GoogLeNet (Inception)", "VGGNet", "ResNet (Residual Network)", "DenseNet"],
       "correctAnswerIndex": 2,
@@ -317,7 +317,7 @@
     },
     {
       "id": 39,
-      "level": "beginner",
+      "level": "基礎",
       "text": "時系列データや自然言語など、系列データの扱いに適した、過去の情報を保持するループ構造を持つニューラルネットワークはどれですか？",
       "options": ["CNN", "RNN (再帰型ニューラルネットワーク)", "MLP (多層パーセプトロン)", "Autoencoder"],
       "correctAnswerIndex": 1,
@@ -325,7 +325,7 @@
     },
     {
       "id": 40,
-      "level": "intermediate",
+      "level": "中級",
       "text": "RNNの長期依存性問題を解決するために、ゲート機構を導入して情報の取捨選択を可能にした改良モデルはどれですか？",
       "options": ["Simple RNN", "LSTM (Long Short-Term Memory)", "GRU (Gated Recurrent Unit)", "LSTMとGRUの両方"],
       "correctAnswerIndex": 3,
@@ -333,7 +333,7 @@
     },
     {
       "id": 41,
-      "level": "intermediate",
+      "level": "中級",
       "text": "自然言語処理において、単語を低次元で密なベクトルで表現する手法を何と呼びますか？",
       "options": ["One-hot表現", "Bag-of-Words", "単語埋め込み (Word Embedding)", "TF-IDF"],
       "correctAnswerIndex": 2,
@@ -341,7 +341,7 @@
     },
     {
       "id": 42,
-      "level": "advanced",
+      "level": "上級",
       "text": "RNNやCNNを使わず、Attention機構のみで構成された、現在の自然言語処理で主流となっているモデルはどれですか？",
       "options": ["Seq2Seq", "ELMo", "Transformer", "BERT"],
       "correctAnswerIndex": 2,
@@ -349,7 +349,7 @@
     },
     {
       "id": 43,
-      "level": "advanced",
+      "level": "上級",
       "text": "TransformerのAttention機構において、入力間の関連度を計算するために使われる3種類のベクトルはどれですか？",
       "options": ["Input, Hidden, Output", "Query, Key, Value", "Encoder, Decoder, Context", "Position, Segment, Token"],
       "correctAnswerIndex": 1,
@@ -357,7 +357,7 @@
     },
     {
       "id": 44,
-      "level": "advanced",
+      "level": "上級",
       "text": "Transformerをベースにした大規模言語モデルで、文章の穴埋め問題を解くように事前学習することで、様々なタスクに適用可能となった双方向モデルはどれですか？",
       "options": ["GPT (Generative Pre-trained Transformer)", "BERT (Bidirectional Encoder Representations from Transformers)", "T5", "XLNet"],
       "correctAnswerIndex": 1,
@@ -365,7 +365,7 @@
     },
     {
       "id": 45,
-      "level": "advanced",
+      "level": "上級",
       "text": "Transformerのデコーダ部分をベースに、巨大なテキストデータで自己回帰的に事前学習された、文章生成を得意とする大規模言語モデルの系統はどれですか？",
       "options": ["GPT (Generative Pre-trained Transformer)", "BERT", "RoBERTa", "ALBERT"],
       "correctAnswerIndex": 0,
@@ -373,7 +373,7 @@
     },
     {
       "id": 46,
-      "level": "intermediate",
+      "level": "中級",
       "text": "あるタスクで学習させたモデルの知識を、別の関連するタスクに役立てる学習手法を何と呼びますか？",
       "options": ["強化学習", "アンサンブル学習", "転移学習", "メタ学習"],
       "correctAnswerIndex": 2,
@@ -381,7 +381,7 @@
     },
     {
       "id": 47,
-      "level": "advanced",
+      "level": "上級",
       "text": "生成モデルの一種で、生成器（Generator）と識別器（Discriminator）が互いに競い合いながら学習を進めることで、精巧な偽データを生成するモデルはどれですか？",
       "options": ["VAE (変分オートエンコーダ)", "GAN (敵対的生成ネットワーク)", "フローベースモデル", "拡散モデル"],
       "correctAnswerIndex": 1,
@@ -389,7 +389,7 @@
     },
     {
       "id": 48,
-      "level": "advanced",
+      "level": "上級",
       "text": "近年の画像生成AIで主流となっている、データに徐々にノイズを加えていき、その逆の過程（ノイズ除去）を学習することでデータを生成するモデルはどれですか？",
       "options": ["VAE", "GAN", "拡散モデル (Diffusion Model)", "Transformer"],
       "correctAnswerIndex": 2,
@@ -397,7 +397,7 @@
     },
     {
       "id": 49,
-      "level": "beginner",
+      "level": "基礎",
       "text": "AI開発プロジェクトの進め方として、多くの企業で参考にされているプロセスモデルはどれですか？",
       "options": ["ウォーターフォールモデル", "アジャイル開発", "CRISP-DM", "DevOps"],
       "correctAnswerIndex": 2,
@@ -405,7 +405,7 @@
     },
     {
       "id": 50,
-      "level": "intermediate",
+      "level": "中級",
       "text": "AIモデルに予測させた結果について、「なぜそのように判断したのか」を人間が理解・解釈できるように説明する技術や考え方を何と呼びますか？",
       "options": ["説明可能なAI (XAI)", "AI倫理", "AIガバナンス", "アカウンタビリティ"],
       "correctAnswerIndex": 0,
@@ -413,7 +413,7 @@
     },
     {
       "id": 51,
-      "level": "intermediate",
+      "level": "中級",
       "text": "AIの学習データに起因する社会的な偏見や差別を、AIが学習・増幅してしまう問題を何と呼びますか？",
       "options": ["過学習", "敵対的攻撃", "AIバイアス", "ポイズニング"],
       "correctAnswerIndex": 2,
@@ -421,7 +421,7 @@
     },
     {
       "id": 52,
-      "level": "intermediate",
+      "level": "中級",
       "text": "AIの利活用において、企業や組織が遵守すべき倫理原則や行動規範を定め、実践するための体制や仕組みを何と呼びますか？",
       "options": ["AI倫理", "AIガバナンス", "AIアライメント", "AIセーフティ"],
       "correctAnswerIndex": 1,
@@ -429,7 +429,7 @@
     },
     {
       "id": 53,
-      "level": "beginner",
+      "level": "基礎",
       "text": "日本において、個人の権利利益を保護することを目的として、個人情報の取扱いに関するルールを定めた法律はどれですか？",
       "options": ["著作権法", "不正競争防止法", "個人情報保護法", "製造物責任法"],
       "correctAnswerIndex": 2,
@@ -437,7 +437,7 @@
     },
     {
       "id": 54,
-      "level": "intermediate",
+      "level": "中級",
       "text": "個人情報保護法において、他の情報と容易に照合でき、それにより特定の個人を識別できる情報を何と呼びますか？",
       "options": ["要配慮個人情報", "個人識別符号", "個人情報", "仮名加工情報"],
       "correctAnswerIndex": 2,
@@ -445,7 +445,7 @@
     },
     {
       "id": 55,
-      "level": "advanced",
+      "level": "上級",
       "text": "個人情報保護法において、元の個人情報に加工を施し、他の情報と照合しない限り特定の個人を識別できないようにした情報を何と呼びますか？",
       "options": ["匿名加工情報", "仮名加工情報", "統計情報", "要配慮個人情報"],
       "correctAnswerIndex": 1,
@@ -453,7 +453,7 @@
     },
     {
       "id": 56,
-      "level": "advanced",
+      "level": "上級",
       "text": "個人情報保護法において、特定の個人を識別できないように加工し、かつ、元の個人情報を復元できないようにした情報を何と呼びますか？",
       "options": ["匿名加工情報", "仮名加工情報", "統計情報", "暗号化情報"],
       "correctAnswerIndex": 0,
@@ -461,7 +461,7 @@
     },
     {
       "id": 57,
-      "level": "beginner",
+      "level": "基礎",
       "text": "思想、文学、美術、音楽などの創作的な表現を保護する権利を定めた法律はどれですか？AIによる生成物との関係で議論が活発化しています。",
       "options": ["特許法", "意匠法", "商標法", "著作権法"],
       "correctAnswerIndex": 3,
@@ -469,7 +469,7 @@
     },
     {
       "id": 58,
-      "level": "intermediate",
+      "level": "中級",
       "text": "著作権法上、著作物に該当するための要件として、適切でないものはどれですか？",
       "options": ["思想又は感情を創作的に表現したものであること", "文芸、学術、美術又は音楽の範囲に属するものであること", "新規性・進歩性があること", "人間によって創作されたものであること"],
       "correctAnswerIndex": 2,
@@ -477,7 +477,7 @@
     },
     {
       "id": 59,
-      "level": "advanced",
+      "level": "上級",
       "text": "著作権法第30条の4では、情報解析などの目的であれば、原則として著作権者の許諾なく著作物を利用できると定められています。AI開発における学習データ作成もこれに該当する可能性がありますが、この規定の例外として、不適切な利用とされているケースはどれですか？",
       "options": ["非営利目的の研究での利用", "著作権者の利益を不当に害することとなる場合", "個人ブログの文章の解析", "公開されている論文の利用"],
       "correctAnswerIndex": 1,
@@ -485,7 +485,7 @@
     },
     {
       "id": 60,
-      "level": "advanced",
+      "level": "上級",
       "text": "AI生成物が既存の著作物と類似しており、依拠性（既存の著作物をもとに創作したこと）が認められる場合に成立する権利侵害はどれですか？",
       "options": ["同一性保持権の侵害", "氏名表示権の侵害", "翻案権または複製権の侵害", "公表権の侵害"],
       "correctAnswerIndex": 2,
@@ -493,7 +493,7 @@
     },
     {
       "id": 61,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ディープラーニングのモデルを構築・学習・評価するための代表的なオープンソースライブラリ（フレームワーク）として、不適切なものはどれですか？",
       "options": ["TensorFlow", "PyTorch", "Scikit-learn", "Apache Spark"],
       "correctAnswerIndex": 3,
@@ -501,7 +501,7 @@
     },
     {
       "id": 62,
-      "level": "beginner",
+      "level": "基礎",
       "text": "クラウドサービス上で提供される、GPUなどの高性能な計算リソースを利用してAI開発を行う形態を何と呼びますか？",
       "options": ["オンプレミス", "エッジコンピューティング", "クラウドコンピューティング", "量子コンピューティング"],
       "correctAnswerIndex": 2,
@@ -509,7 +509,7 @@
     },
     {
       "id": 63,
-      "level": "intermediate",
+      "level": "中級",
       "text": "スマートフォンやIoTデバイスなど、データが発生する現場に近い場所でAIの推論処理を行う技術を何と呼びますか？",
       "options": ["クラウドコンピューティング", "エッジコンピューティング", "スーパーコンピューティング", "グリッドコンピューティング"],
       "correctAnswerIndex": 1,
@@ -517,7 +517,7 @@
     },
     {
       "id": 64,
-      "level": "advanced",
+      "level": "上級",
       "text": "AIモデルのライフサイクル全体を効率的に管理し、開発（Dev）と運用（Ops）を連携させるための考え方や手法を何と呼びますか？",
       "options": ["MLOps (Machine Learning Operations)", "Agile", "CI/CD", "DataOps"],
       "correctAnswerIndex": 0,
@@ -525,7 +525,7 @@
     },
     {
       "id": 65,
-      "level": "intermediate",
+      "level": "中級",
       "text": "AIモデルに対して、意図的に微小なノイズを加えた入力データを与えることで、モデルに誤認識を引き起こさせる攻撃を何と呼びますか？",
       "options": ["ポイズニング攻撃", "敵対的サンプル（Adversarial Example）", "なりすまし攻撃", "サービス妨害攻撃"],
       "correctAnswerIndex": 1,
@@ -533,7 +533,7 @@
     },
     {
       "id": 66,
-      "level": "intermediate",
+      "level": "中級",
       "text": "レイ・カーツワイルが提唱した、技術進歩が直線的ではなく指数関数的に加速するという法則を何と呼びますか？",
       "options": ["ムーアの法則", "メトカーフの法則", "収穫加速の法則", "パーキンソンの法則"],
       "correctAnswerIndex": 2,
@@ -541,7 +541,7 @@
     },
     {
       "id": 67,
-      "level": "beginner",
+      "level": "基礎",
       "text": "人間の脳機能を模倣した半導体チップで、低消費電力で高速なAI処理を目指すハードウェアを総称して何と呼びますか？",
       "options": ["CPU", "GPU", "ニューロモーフィックチップ", "ASIC"],
       "correctAnswerIndex": 2,
@@ -549,7 +549,7 @@
     },
     {
       "id": 68,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ディープラーニングの計算で頻繁に行われる、行列の積和演算に特化したプロセッサを何と呼びますか？Googleが開発しました。",
       "options": ["GPU (Graphics Processing Unit)", "TPU (Tensor Processing Unit)", "FPGA (Field-Programmable Gate Array)", "NPU (Neural Processing Unit)"],
       "correctAnswerIndex": 1,
@@ -557,7 +557,7 @@
     },
     {
       "id": 69,
-      "level": "advanced",
+      "level": "上級",
       "text": "強化学習において、現在の状態sで行動aをとった後に得られる将来の累積報酬の期待値を表す関数はどれですか？",
       "options": ["方策関数 π(a|s)", "状態価値関数 V(s)", "行動価値関数 Q(s, a)", "報酬関数 R(s, a)"],
       "correctAnswerIndex": 2,
@@ -565,7 +565,7 @@
     },
     {
       "id": 70,
-      "level": "advanced",
+      "level": "上級",
       "text": "強化学習において、エージェントが最適な行動ではなく、敢えて未知の行動をとることで、より良い方策を見つけようとすることを何と呼びますか？",
       "options": ["活用 (Exploitation)", "探索 (Exploration)", "学習 (Learning)", "推論 (Inference)"],
       "correctAnswerIndex": 1,
@@ -573,7 +573,7 @@
     },
     {
       "id": 71,
-      "level": "intermediate",
+      "level": "中級",
       "text": "自然言語処理のタスクで、文章を構成する最小単位の語句に分割する処理を何と呼びますか？",
       "options": ["構文解析", "意味解析", "形態素解析", "固有表現抽出"],
       "correctAnswerIndex": 2,
@@ -581,7 +581,7 @@
     },
     {
       "id": 72,
-      "level": "intermediate",
+      "level": "中級",
       "text": "文章中の人名、組織名、地名などの固有名詞を抽出する自然言語処理のタスクを何と呼びますか？",
       "options": ["感情分析", "固有表現抽出 (NER)", "文書分類", "機械翻訳"],
       "correctAnswerIndex": 1,
@@ -589,7 +589,7 @@
     },
     {
       "id": 73,
-      "level": "advanced",
+      "level": "上級",
       "text": "ある単語の重要度を、その単語が文書中に多く出現し、かつ他の多くの文書には出現しないほど高くなると評価する手法はどれですか？",
       "options": ["Bag-of-Words", "TF-IDF", "Word2Vec", "One-hot Encoding"],
       "correctAnswerIndex": 1,
@@ -597,7 +597,7 @@
     },
     {
       "id": 74,
-      "level": "intermediate",
+      "level": "中級",
       "text": "AIが生成したコンテンツであることを人間やAIが識別できるように、電子的な透かし情報を埋め込む技術を何と呼びますか？フェイクニュース対策などで期待されています。",
       "options": ["ブロックチェーン", "ステガノグラフィ", "電子署名", "電子透かし"],
       "correctAnswerIndex": 3,
@@ -605,7 +605,7 @@
     },
     {
       "id": 75,
-      "level": "advanced",
+      "level": "上級",
       "text": "AIモデルの判断が、特定の個人の属性（性別、人種など）によって不利益な扱いをしないことを保証する、AI倫理の重要な概念はどれですか？",
       "options": ["透明性 (Transparency)", "プライバシー (Privacy)", "公平性 (Fairness)", "安全性 (Safety)"],
       "correctAnswerIndex": 2,

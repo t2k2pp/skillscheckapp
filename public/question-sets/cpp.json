@@ -16,7 +16,7 @@
   "questions": [
     {
       "id": 1,
-      "level": "beginner",
+      "level": "基礎",
       "text": "`std::vector` の末尾に要素を追加するためのメンバ関数はどれですか？",
       "options": [
         "add_element",
@@ -29,7 +29,7 @@
     },
     {
       "id": 2,
-      "level": "beginner",
+      "level": "基礎",
       "text": "C++において、オブジェクトの初期化時に呼び出される特殊なメンバ関数は何ですか？",
       "options": [
         "デストラクタ",
@@ -42,7 +42,7 @@
     },
     {
       "id": 3,
-      "level": "beginner",
+      "level": "基礎",
       "text": "例外が発生する可能性のあるコードブロックを囲むために使用されるキーワードはどれですか？",
       "options": [
         "catch",
@@ -55,7 +55,7 @@
     },
     {
       "id": 4,
-      "level": "beginner",
+      "level": "基礎",
       "text": "キーと値のペアを格納し、キーに基づいて高速な検索を可能にするSTLコンテナはどれですか？",
       "options": [
         "std::vector",
@@ -68,7 +68,7 @@
     },
     {
       "id": 13,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ポインタと参照の主な違いは何ですか？",
       "options": [
         "参照は再代入可能だが、ポインタは不可能",
@@ -81,7 +81,7 @@
     },
     {
       "id": 14,
-      "level": "beginner",
+      "level": "基礎",
       "text": "`std::string`オブジェクト `s1` と `s2` を連結する正しい方法はどれですか？",
       "options": [
         "s1.concat(s2)",
@@ -94,7 +94,7 @@
     },
     {
       "id": 15,
-      "level": "beginner",
+      "level": "基礎",
       "text": "クラスのメンバに対する `private` アクセス指定子の意味は何ですか？",
       "options": [
         "そのクラスのオブジェクトからのみアクセス可能",
@@ -107,7 +107,7 @@
     },
     {
       "id": 16,
-      "level": "beginner",
+      "level": "基礎",
       "text": "`std::set` コンテナの最も重要な特性は何ですか？",
       "options": [
         "要素を挿入順に保持する",
@@ -120,7 +120,7 @@
     },
     {
       "id": 25,
-      "level": "beginner",
+      "level": "基礎",
       "text": "C++11で導入された、nullポインタを表すためのキーワードはどれですか？",
       "options": [
         "NULL",
@@ -133,7 +133,7 @@
     },
     {
       "id": 26,
-      "level": "beginner",
+      "level": "基礎",
       "text": "`struct` と `class` の主な違いは何ですか？",
       "options": [
         "`struct` はメンバ関数を持てない",
@@ -146,7 +146,7 @@
     },
     {
       "id": 27,
-      "level": "beginner",
+      "level": "基礎",
       "text": "コンテナの全ての要素に対して繰り返し処理を行う、C++11で導入された構文はどれですか？",
       "options": [
         "`for_each(v.begin(), v.end(), ...)`",
@@ -159,7 +159,7 @@
     },
     {
       "id": 28,
-      "level": "beginner",
+      "level": "基礎",
       "text": "`new` で確保したメモリを解放するために使用する演算子はどれですか？",
       "options": [
         "`free`",
@@ -172,7 +172,7 @@
     },
     {
       "id": 29,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ヘッダーファイルでインクルードガード（`#ifndef`, `#define`, `#endif`）を使用する主な理由は何ですか？",
       "options": [
         "コンパイル時間を短縮するため",
@@ -185,7 +185,7 @@
     },
     {
       "id": 30,
-      "level": "beginner",
+      "level": "基礎",
       "text": "関数の引数で `const std::string& name` のように `const` と参照 `&` を使う利点は何ですか？",
       "options": [
         "関数内で引数を変更できる",
@@ -198,7 +198,7 @@
     },
     {
       "id": 31,
-      "level": "beginner",
+      "level": "基礎",
       "text": "`std::vector` の現在の要素数を得る関数と、確保されているメモリ容量を得る関数の組み合わせはどれですか？",
       "options": [
         "`count()` と `storage()`",
@@ -211,7 +211,7 @@
     },
     {
       "id": 32,
-      "level": "beginner",
+      "level": "基礎",
       "text": "オブジェクトの生存期間が終了するときに自動的に呼び出される特殊なメンバ関数は何ですか？",
       "options": [
         "ファイナライザ",
@@ -224,7 +224,7 @@
     },
     {
       "id": 5,
-      "level": "intermediate",
+      "level": "中級",
       "text": "RAII (Resource Acquisition Is Initialization) 原則を最も体現しているC++の機能はどれですか？",
       "options": [
         "スマートポインタ",
@@ -237,7 +237,7 @@
     },
     {
       "id": 6,
-      "level": "intermediate",
+      "level": "中級",
       "text": "任意の型に対して動作する関数を定義するために使用されるC++の機能は何ですか？",
       "options": [
         "ポリモーフィズム",
@@ -250,7 +250,7 @@
     },
     {
       "id": 7,
-      "level": "intermediate",
+      "level": "中級",
       "text": "`std::sort` を使用して `std::vector<int>` を降順にソートするための正しい方法はどれですか？",
       "options": [
         "std::sort(vec.begin(), vec.end(), std::greater<int>());",
@@ -263,7 +263,7 @@
     },
     {
       "id": 8,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ファイルからの読み込みとファイルへの書き込みの両方を行うために使用される `fstream` のクラスはどれですか？",
       "options": [
         "std::ifstream",
@@ -276,7 +276,7 @@
     },
     {
       "id": 17,
-      "level": "intermediate",
+      "level": "中級",
       "text": "`std::vector<int> v` 内で特定の値 `x` を探すために推奨されるSTLアルゴリズムはどれですか？",
       "options": [
         "std::search",
@@ -289,7 +289,7 @@
     },
     {
       "id": 18,
-      "level": "intermediate",
+      "level": "中級",
       "text": "`std::unique_ptr` と `std::shared_ptr` の最も大きな違いは何ですか？",
       "options": [
         "`unique_ptr` はスタックにしか割り当てられない",
@@ -302,7 +302,7 @@
     },
     {
       "id": 19,
-      "level": "intermediate",
+      "level": "中級",
       "text": "`template <typename T> class Box { ... };` のように定義されたクラステンプレートを、`int` 型でインスタンス化する正しい構文はどれですか？",
       "options": [
         "Box<int> b;",
@@ -315,7 +315,7 @@
     },
     {
       "id": 20,
-      "level": "intermediate",
+      "level": "中級",
       "text": "クラスのメンバ関数が `const` として宣言されている場合、それは何を意味しますか？",
       "options": [
         "その関数は静的メンバである",
@@ -328,7 +328,7 @@
     },
     {
       "id": 33,
-      "level": "intermediate",
+      "level": "中級",
       "text": "基底クラスのポインタや参照を通じて派生クラスのオブジェクトを安全に削除するために必要なものは何ですか？",
       "options": [
         "純粋仮想関数",
@@ -341,7 +341,7 @@
     },
     {
       "id": 34,
-      "level": "intermediate",
+      "level": "中級",
       "text": "`std::move` の主な目的は何ですか？",
       "options": [
         "オブジェクトを別のメモリ位置に移動させる",
@@ -354,7 +354,7 @@
     },
     {
       "id": 35,
-      "level": "intermediate",
+      "level": "中級",
       "text": "ラムダ式 `[=](){ ... }` の `[=]` は何を意味しますか？",
       "options": [
         "外部の変数を参照でキャプチャする",
@@ -367,7 +367,7 @@
     },
     {
       "id": 36,
-      "level": "intermediate",
+      "level": "中級",
       "text": "クラスの特定のインスタンスに属さず、クラス全体で共有されるメンバ変数やメンバ関数を宣言するキーワードはどれですか？",
       "options": [
         "`global`",
@@ -380,7 +380,7 @@
     },
     {
       "id": 37,
-      "level": "intermediate",
+      "level": "中級",
       "text": "`std::vector` の全要素を2倍にする処理を `std::transform` で記述する際の正しいラムダ式はどれですか？",
       "options": [
         "`(int x){ x * 2; }`",
@@ -393,7 +393,7 @@
     },
     {
       "id": 38,
-      "level": "intermediate",
+      "level": "中級",
       "text": "コンストラクタに `explicit` キーワードを付ける主な理由は何ですか？",
       "options": [
         "コンストラクタのインライン化を防ぐため",
@@ -406,7 +406,7 @@
     },
     {
       "id": 39,
-      "level": "intermediate",
+      "level": "中級",
       "text": "C++17で導入された `std::optional` はどのような状況で使用するのが最も適切ですか？",
       "options": [
         "値が存在しない可能性がある場合",
@@ -419,7 +419,7 @@
     },
     {
       "id": 40,
-      "level": "intermediate",
+      "level": "中級",
       "text": "関数から複数の値を返すための、C++17で推奨される現代的な方法の一つはどれですか？",
       "options": [
         "ポインタ引数を使用する",
@@ -432,7 +432,7 @@
     },
     {
       "id": 49,
-      "level": "intermediate",
+      "level": "中級",
       "text": "C++17で導入された `std::variant` の主な用途は何ですか？",
       "options": [
         "値が存在しない可能性を表現する",
@@ -445,7 +445,7 @@
     },
     {
       "id": 9,
-      "level": "advanced",
+      "level": "上級",
       "text": "オブジェクトの生成プロセスをカプセル化し、クライアントコードから具象クラスを分離するデザインパターンはどれですか？",
       "options": [
         "Observer パターン",
@@ -458,7 +458,7 @@
     },
     {
       "id": 10,
-      "level": "advanced",
+      "level": "上級",
       "text": "複数のスレッドから共有リソースへの同時アクセスを防ぎ、競合状態を回避するために使用される同期プリミティブはどれですか？",
       "options": [
         "std::thread",
@@ -471,7 +471,7 @@
     },
     {
       "id": 11,
-      "level": "advanced",
+      "level": "上級",
       "text": "右辺値参照 (`&&`) を活用して、不要なオブジェクトのコピーを避け、リソースの所有権を効率的に移動させるC++の機能は何ですか？",
       "options": [
         "完全転送 (Perfect Forwarding)",
@@ -484,7 +484,7 @@
     },
     {
       "id": 12,
-      "level": "advanced",
+      "level": "上級",
       "text": "C++20で導入され、テンプレートパラメータに対する制約を簡潔に記述できるようにする機能はどれですか？",
       "options": [
         "SFINAE",
@@ -497,7 +497,7 @@
     },
     {
       "id": 21,
-      "level": "advanced",
+      "level": "上級",
       "text": "`std::thread` を使用して新しいスレッドを開始する際の一般的な方法はどれですか？",
       "options": [
         "`std::thread t; t.start(my_function);`",
@@ -510,7 +510,7 @@
     },
     {
       "id": 22,
-      "level": "advanced",
+      "level": "上級",
       "text": "Observer パターンの主な目的は何ですか？",
       "options": [
         "オブジェクトの生成ロジックをカプセル化する",
@@ -523,7 +523,7 @@
     },
     {
       "id": 23,
-      "level": "advanced",
+      "level": "上級",
       "text": "SFINAE (\"Substitution Failure Is Not An Error\") は、主にどのような目的で使用されますか？",
       "options": [
         "実行時エラーを処理するため",
@@ -536,7 +536,7 @@
     },
     {
       "id": 24,
-      "level": "advanced",
+      "level": "上級",
       "text": "コンパイラが特定の状況でオブジェクトのコピーやムーブを省略する最適化を何と呼びますか？",
       "options": [
         "インライン展開 (Inlining)",
@@ -549,7 +549,7 @@
     },
     {
       "id": 41,
-      "level": "advanced",
+      "level": "上級",
       "text": "`constexpr` と `const` の主な違いは何ですか？",
       "options": [
         "`constexpr` は変数にのみ使用でき、`const` は関数にも使用できる",
@@ -562,7 +562,7 @@
     },
     {
       "id": 42,
-      "level": "advanced",
+      "level": "上級",
       "text": "テンプレート引数の推論において、引数が左辺値か右辺値かの情報を保持するテンプレートパラメータの形式はどれですか？",
       "options": [
         "`T&&`",
@@ -575,7 +575,7 @@
     },
     {
       "id": 43,
-      "level": "advanced",
+      "level": "上級",
       "text": "`std::async` を使って非同期タスクを実行し、その結果を後で受け取るために使用するクラスはどれですか？",
       "options": [
         "`std::promise`",
@@ -588,7 +588,7 @@
     },
     {
       "id": 44,
-      "level": "advanced",
+      "level": "上級",
       "text": "スレッドセーフな方法で変数の読み書きを行うための、C++11の標準ライブラリコンポーネントはどれですか？",
       "options": [
         "`volatile`",
@@ -601,7 +601,7 @@
     },
     {
       "id": 45,
-      "level": "advanced",
+      "level": "上級",
       "text": "CRTP (Curiously Recurring Template Pattern) は、どのような目的で一般的に使用されますか？",
       "options": [
         "実行時ポリモーフィズムを実現するため",
@@ -614,7 +614,7 @@
     },
     {
       "id": 46,
-      "level": "advanced",
+      "level": "上級",
       "text": "RAII原則と例外安全性を組み合わせる上で、最も重要な考え方はどれですか？",
       "options": [
         "全ての関数で `noexcept` を指定する",
@@ -627,7 +627,7 @@
     },
     {
       "id": 47,
-      "level": "advanced",
+      "level": "上級",
       "text": "アルゴリズムのファミリーを定義し、それぞれをカプセル化して、動的に交換可能にするデザインパターンはどれですか？",
       "options": [
         "Strategy パターン",
@@ -640,7 +640,7 @@
     },
     {
       "id": 48,
-      "level": "advanced",
+      "level": "上級",
       "text": "C++20のRangesライブラリがもたらす主な利点は何ですか？",
       "options": [
         "コンパイル時間の劇的な短縮",
@@ -653,7 +653,7 @@
     },
     {
       "id": 50,
-      "level": "advanced",
+      "level": "上級",
       "text": "C++20で導入されたコルーチン (`co_await`, `co_yield`, `co_return`) の主な目的は何ですか？",
       "options": [
         "非同期処理やジェネレータを、同期処理のような見た目で記述できるようにするため",
@@ -666,7 +666,7 @@
     },
     {
       "id": 51,
-      "level": "beginner",
+      "level": "基礎",
       "text": "配列名を関数の引数として渡した場合、どのように扱われますか？",
       "options": [
         "配列全体のコピーが渡される",
@@ -679,7 +679,7 @@
     },
     {
       "id": 52,
-      "level": "beginner",
+      "level": "基礎",
       "text": "以下のうち、関数オーバーロードの判断基準として**使用されない**ものはどれですか？",
       "options": [
         "引数の型",
@@ -692,7 +692,7 @@
     },
     {
       "id": 53,
-      "level": "beginner",
+      "level": "基礎",
       "text": "`operator+` を定義する際、一般的に推奨される実装方法はどれですか？",
       "options": [
         "メンバ関数として定義し、左オペランドを変更する",
@@ -705,7 +705,7 @@
     },
     {
       "id": 54,
-      "level": "beginner",
+      "level": "基礎",
       "text": "`#ifndef`/`#define`/`#endif` に代わる、より簡潔なインクルードガードの方法はどれですか？",
       "options": [
         "`#once`",
@@ -718,7 +718,7 @@
     },
     {
       "id": 55,
-      "level": "beginner",
+      "level": "基礎",
       "text": "範囲ベースforループで `std::vector<std::string>` の各要素を変更せずに処理する場合、最も適切な型指定はどれですか？",
       "options": [
         "for (auto item : vec)",
@@ -731,7 +731,7 @@
     },
     {
       "id": 56,
-      "level": "beginner",
+      "level": "基礎",
       "text": "ヘッダーファイル(.h)に書くべき内容として最も適切なものはどれですか？",
       "options": [
         "関数の実装コード",
@@ -744,7 +744,7 @@
     },
     {
       "id": 57,
-      "level": "intermediate",
+      "level": "中級",
       "text": "仮想関数を持つクラスで、派生クラスのオブジェクトを基底クラスのポインタで削除する際に重要なのは何ですか？",
       "options": [
         "仮想コンストラクタ",
@@ -757,7 +757,7 @@
     },
     {
       "id": 59,
-      "level": "intermediate",
+      "level": "中級",
       "text": "メンバ初期化リストを**必ず**使用しなければならない場合はどれですか？",
       "options": [
         "intメンバの初期化",
@@ -770,7 +770,7 @@
     },
     {
       "id": 60,
-      "level": "intermediate",
+      "level": "中級",
       "text": "以下のコードで出力される結果はどれですか？\n```cpp\nclass Base {\npublic:\n    virtual void print() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void print() override { cout << \"Derived\"; }\n};\nBase* ptr = new Derived();\nptr->print();\n```",
       "options": [
         "Base",
@@ -783,7 +783,7 @@
     },
     {
       "id": 61,
-      "level": "intermediate",
+      "level": "中級",
       "text": "静的メンバ関数について正しいのはどれですか？",
       "options": [
         "thisポインタを使用できる",
@@ -796,7 +796,7 @@
     },
     {
       "id": 62,
-      "level": "intermediate",
+      "level": "中級",
       "text": "C++17で導入された `std::string_view` の主な利点は何ですか？",
       "options": [
         "文字列を変更可能にする",
@@ -809,7 +809,7 @@
     },
     {
       "id": 63,
-      "level": "intermediate",
+      "level": "中級",
       "text": "`std::vector<std::pair<int, std::string>>` に要素を追加する際、最も効率的な方法はどれですか？",
       "options": [
         "vec.push_back(std::pair<int, std::string>(1, \"hello\"));",
@@ -822,7 +822,7 @@
     },
     {
       "id": 64,
-      "level": "intermediate",
+      "level": "中級",
       "text": "`std::vector<int> v{10};` と `std::vector<int> v(10);` の違いは何ですか？",
       "options": [
         "両方とも同じ結果になる",
@@ -835,7 +835,7 @@
     },
     {
       "id": 65,
-      "level": "intermediate",
+      "level": "中級",
       "text": "仮想関数をオーバーライドする際に `override` キーワードを使用する主な理由は何ですか？",
       "options": [
         "パフォーマンスを向上させるため",
@@ -848,7 +848,7 @@
     },
     {
       "id": 66,
-      "level": "advanced",
+      "level": "上級",
       "text": "仮想関数を持つクラスのオブジェクトが通常含むものはどれですか？",
       "options": [
         "仮想関数テーブル（vtable）",
@@ -861,7 +861,7 @@
     },
     {
       "id": 67,
-      "level": "advanced",
+      "level": "上級",
       "text": "以下のような関数テンプレートの完全特殊化の正しい記法はどれですか？\n```cpp\ntemplate<typename T>\nvoid func(T value) { /* 汎用版 */ }\n```",
       "options": [
         "`template<> void func<int>(int value) { /* int特殊版 */ }`",
@@ -874,7 +874,7 @@
     },
     {
       "id": 68,
-      "level": "advanced",
+      "level": "上級",
       "text": "`constexpr`関数について正しいのはどれですか？",
       "options": [
         "常にコンパイル時に評価される",
@@ -887,7 +887,7 @@
     },
     {
       "id": 69,
-      "level": "advanced",
+      "level": "上級",
       "text": "SFINAE (Substitution Failure Is Not An Error) の主な用途は何ですか？",
       "options": [
         "コンパイル時にエラーを強制的に発生させる",
@@ -900,7 +900,7 @@
     },
     {
       "id": 70,
-      "level": "advanced",
+      "level": "上級",
       "text": "以下の構造体のサイズ（64bit環境、通常のアライメント）はおそらく何バイトですか？\n```cpp\nstruct MyStruct {\n    char a;     // 1 byte\n    int b;      // 4 bytes\n    char c;     // 1 byte\n};\n```",
       "options": [
         "6 bytes",
@@ -913,7 +913,7 @@
     },
     {
       "id": 71,
-      "level": "advanced",
+      "level": "上級",
       "text": "強い例外安全性（Strong Exception Safety）の保証とは何ですか？",
       "options": [
         "例外が発生しないことを保証する",
@@ -926,7 +926,7 @@
     },
     {
       "id": 72,
-      "level": "advanced",
+      "level": "上級",
       "text": "複数スレッドから共有リソースを安全にアクセスするための `std::lock_guard` の正しい使用方法はどれですか？",
       "options": [
         "std::lock_guard<std::mutex> lock(mutex); の後でmutex.lock();",
@@ -939,7 +939,7 @@
     },
     {
       "id": 73,
-      "level": "advanced",
+      "level": "上級",
       "text": "`std::atomic<int>` 変数に対する最もストリクト（厳格）なメモリオーダーはどれですか？",
       "options": [
         "std::memory_order_relaxed",
@@ -952,7 +952,7 @@
     },
     {
       "id": 74,
-      "level": "advanced",
+      "level": "上級",
       "text": "テンプレート関数で引数を別の関数に「完全転送」するための正しいコードはどれですか？",
       "options": [
         "other_func(args);",
@@ -965,7 +965,7 @@
     },
     {
       "id": 75,
-      "level": "advanced",
+      "level": "上級",
       "text": "ファイルハンドルを安全に管理するRAIIクラスの基本構造として最も適切なものはどれですか？",
       "options": [
         "コンストラクタでファイルを開き、明示的なclose()メソッドで閉じる",
