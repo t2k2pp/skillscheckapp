@@ -1,0 +1,991 @@
+{
+  "id": "snowpro-associate",
+  "title": "SnowPro Associate 認定試験対策",
+  "description": "Snowflake SnowPro Associate認定試験対策の問題集です。Snowflakeの基礎概念から実践的な知識まで、Associate レベルの必須スキルを幅広くカバーします。",
+  "categories": ["Snowflake", "データベース", "クラウド", "基礎", "中級"],
+  "totalQuestions": 75,
+  "estimatedTime": "60-75分",
+  "difficulty": "Associate",
+  "version": "1.0.0",
+  "author": "Snowflake Learning Team",
+  "lastUpdated": "2025-08-31",
+  "language": "ja",
+  "passingScore": 80,
+  "questions": [
+    {
+      "id": 1,
+      "level": "Beginner",
+      "text": "Snowflakeの基本的なアーキテクチャの特徴として正しいものはどれですか？",
+      "options": [
+        "シェアードストレージ、シェアードコンピュート",
+        "シェアードストレージ、分離されたコンピュート",
+        "分離されたストレージ、シェアードコンピュート",
+        "分離されたストレージ、分離されたコンピュート"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Snowflakeは、シェアードストレージと分離されたコンピュート（独立したコンピュートクラスター）を特徴とするアーキテクチャを採用しています。これにより、ストレージとコンピュートを独立してスケールできます。"
+    },
+    {
+      "id": 2,
+      "level": "Beginner",
+      "text": "Snowflakeのクラウドプロバイダーとして利用可能でないものはどれですか？",
+      "options": [
+        "Amazon Web Services (AWS)",
+        "Microsoft Azure",
+        "Google Cloud Platform (GCP)",
+        "Oracle Cloud Infrastructure (OCI)"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "現在、SnowflakeはAWS、Azure、GCPの3つの主要クラウドプロバイダーで利用可能です。Oracle Cloud Infrastructureでは提供されていません。"
+    },
+    {
+      "id": 3,
+      "level": "Beginner",
+      "text": "Snowflakeのバーチャルウェアハウスについて正しい説明はどれですか？",
+      "options": [
+        "データを物理的に保存する場所",
+        "クエリを実行するためのコンピュートリソース",
+        "ユーザーアカウント情報を管理する機能",
+        "データベースのスキーマ構造"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "バーチャルウェアハウス（Virtual Warehouse）は、Snowflakeにおけるクエリ実行のためのコンピュートリソースです。必要に応じて起動・停止・スケールが可能です。"
+    },
+    {
+      "id": 4,
+      "level": "Beginner",
+      "text": "Snowflakeでサポートされている半構造化データ形式でないものはどれですか？",
+      "options": [
+        "JSON",
+        "Avro",
+        "CSV",
+        "Parquet"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "CSVは構造化データ形式です。Snowflakeは半構造化データとしてJSON、Avro、Parquet、ORC、XMLなどをサポートしています。"
+    },
+    {
+      "id": 5,
+      "level": "Beginner",
+      "text": "Snowflakeのデータクラウドの3つの主要コンポーネントとして正しくないものはどれですか？",
+      "options": [
+        "Database Storage",
+        "Query Processing",
+        "Cloud Services",
+        "Data Pipeline"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Snowflakeアーキテクチャの3つの主要レイヤーは、Database Storage、Query Processing（Compute）、Cloud Servicesです。Data Pipelineは主要コンポーネントではありません。"
+    },
+    {
+      "id": 6,
+      "level": "Beginner",
+      "text": "Snowflakeのマイクロパーティション（Micro-partitions）の特徴として正しいものはどれですか？",
+      "options": [
+        "ユーザーが手動で作成・管理する必要がある",
+        "固定サイズで50GB-100GB程度",
+        "自動的に作成され、通常50MB-500MB程度",
+        "構造化データのみに適用される"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "マイクロパーティションは、Snowflakeが自動的に作成・管理する小さなデータファイルで、通常50MB-500MB程度のサイズです。すべてのデータタイプに適用されます。"
+    },
+    {
+      "id": 7,
+      "level": "Beginner",
+      "text": "Snowflakeでクレジットが消費されるのはどの場合ですか？",
+      "options": [
+        "データを保存している時間",
+        "バーチャルウェアハウスが実行されている時間",
+        "データを転送する際の通信量",
+        "ユーザーがログインしている時間"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Snowflakeでは、バーチャルウェアハウスが実行されている時間に対してクレジットが消費されます。データストレージは別途料金体系があります。"
+    },
+    {
+      "id": 8,
+      "level": "Beginner",
+      "text": "Snowflakeの標準SQLで使用できないデータ型はどれですか？",
+      "options": [
+        "VARCHAR",
+        "NUMBER",
+        "TIMESTAMP",
+        "BLOB"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "SnowflakeはBLOBデータ型をサポートしていません。バイナリデータにはBINARY型を使用します。VARCHAR、NUMBER、TIMESTAMPは標準でサポートされています。"
+    },
+    {
+      "id": 9,
+      "level": "Intermediate",
+      "text": "Snowflakeのクラスタリングキー（Clustering Key）の主な目的は何ですか？",
+      "options": [
+        "データの重複を排除する",
+        "データの圧縮率を向上させる",
+        "クエリパフォーマンスを向上させる",
+        "データの暗号化を強化する"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "クラスタリングキーは、テーブル内のデータの物理的な配置を最適化し、フィルタリングクエリのパフォーマンスを向上させるために使用されます。"
+    },
+    {
+      "id": 10,
+      "level": "Intermediate",
+      "text": "Snowflakeの Time Travel 機能について正しい説明はどれですか？",
+      "options": [
+        "最大1年前のデータを復元できる",
+        "Enterprise Edition以上でのみ利用可能",
+        "過去のデータ状態をクエリ・復元できる機能",
+        "リアルタイムデータストリーミング機能"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Time Travelは、過去の特定時点でのデータ状態をクエリしたり復元したりできる機能です。Standard Editionでも利用可能で、保持期間は最大90日間です。"
+    },
+    {
+      "id": 11,
+      "level": "Intermediate",
+      "text": "SnowflakeのFail-safe機能の保持期間はどれくらいですか？",
+      "options": [
+        "1日間",
+        "7日間",
+        "30日間",
+        "90日間"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Fail-safeは、Time Travel期間が過ぎた後に7日間データを保持する災害復旧機能です。この期間中のデータ復旧はSnowflakeサポートに依頼する必要があります。"
+    },
+    {
+      "id": 12,
+      "level": "Intermediate",
+      "text": "Snowflakeのゼロコピークローン機能について正しいものはどれですか？",
+      "options": [
+        "データを物理的にコピーするため時間がかかる",
+        "メタデータのみをコピーし、実際のデータは共有される",
+        "クローン作成時に追加のストレージ費用が発生する",
+        "テーブルレベルでのクローンはサポートされていない"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ゼロコピークローンは、メタデータのみをコピーし、実際のデータは元のオブジェクトと共有されます。変更があった部分のみが新しく作成されます。"
+    },
+    {
+      "id": 13,
+      "level": "Intermediate",
+      "text": "Snowflakeのマルチクラスター機能の主な利点は何ですか？",
+      "options": [
+        "データの冗長性向上",
+        "同時実行性の向上とキューイング回避",
+        "ストレージコストの削減",
+        "データセキュリティの強化"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "マルチクラスター機能は、ユーザー数やクエリ負荷に応じて自動的にクラスターを増減し、同時実行性を向上させ、キューイングを回避します。"
+    },
+    {
+      "id": 14,
+      "level": "Intermediate",
+      "text": "SnowflakeのVariant データ型について正しい説明はどれですか？",
+      "options": [
+        "数値データのみを格納できる",
+        "JSON、XML、Avroなどの半構造化データを格納できる",
+        "最大1KBまでのデータを格納できる",
+        "SQLクエリでは直接アクセスできない"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Variant データ型は、JSON、XML、Avroなどの半構造化データを格納するためのデータ型で、最大16MBまでのデータを格納でき、SQLで直接クエリできます。"
+    },
+    {
+      "id": 15,
+      "level": "Intermediate",
+      "text": "Snowflakeのストリームオブジェクトの主な用途は何ですか？",
+      "options": [
+        "データの圧縮",
+        "データの変更追跡（CDC）",
+        "クエリの最適化",
+        "ユーザー権限管理"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ストリームオブジェクトは、テーブルに対するDML操作（INSERT、UPDATE、DELETE）を追跡し、変更データキャプチャ（CDC）を実現するために使用されます。"
+    },
+    {
+      "id": 16,
+      "level": "Intermediate",
+      "text": "Snowflakeでタスク（Task）オブジェクトを使用する主な目的は何ですか？",
+      "options": [
+        "データ型の変換",
+        "SQLの実行をスケジューリング",
+        "ユーザーアクセス制御",
+        "データの暗号化"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "タスクオブジェクトは、SQL文やストアドプロシージャの実行をスケジューリングするために使用され、ETLパイプラインや定期的なデータ処理を自動化できます。"
+    },
+    {
+      "id": 17,
+      "level": "Advanced",
+      "text": "Snowflakeのリソースモニターで設定できるアクションとして正しくないものはどれですか？",
+      "options": [
+        "通知のみ",
+        "ウェアハウスの一時停止",
+        "ウェアハウスの一時停止と継続するクエリのキャンセル",
+        "データベース全体の削除"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "リソースモニターでは、通知、ウェアハウスの一時停止、継続するクエリのキャンセルなどのアクションを設定できますが、データベースの削除はできません。"
+    },
+    {
+      "id": 18,
+      "level": "Advanced",
+      "text": "Snowflakeのデータシェアリング機能について正しい説明はどれですか？",
+      "options": [
+        "データのコピーを作成してシェアする",
+        "ライブデータを直接シェアし、コピーは作成されない",
+        "シェア先でデータを変更できる",
+        "同一クラウドプロバイダー内でのみ可能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Snowflakeのデータシェアリングは、データのコピーを作成せずにライブデータを直接シェアします。シェア先は読み取り専用でデータにアクセスできます。"
+    },
+    {
+      "id": 19,
+      "level": "Advanced",
+      "text": "Snowflakeのセキュア機能として提供されていないものはどれですか？",
+      "options": [
+        "セキュアビュー（Secure Views）",
+        "セキュア関数（Secure Functions）",
+        "セキュアUDF（Secure UDFs）",
+        "セキュアテーブル（Secure Tables）"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Snowflakeでは、セキュアビュー、セキュア関数、セキュアUDFが提供されていますが、セキュアテーブルという機能は存在しません。"
+    },
+    {
+      "id": 20,
+      "level": "Advanced",
+      "text": "Snowflakeのプライベートデータエクスチェンジの特徴として正しいものはどれですか？",
+      "options": [
+        "パブリックに公開されたデータのみ利用可能",
+        "招待制でデータを安全にシェア可能",
+        "追加料金が発生する",
+        "リアルタイムデータストリーミングのみサポート"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "プライベートデータエクスチェンジは、特定のパートナーや顧客を招待してデータを安全にシェアできる機能で、追加料金は発生しません。"
+    },
+    {
+      "id": 21,
+      "level": "Beginner",
+      "text": "Snowflakeのウェブインターフェースの名称は何ですか？",
+      "options": [
+        "SnowSQL",
+        "Snowsight",
+        "SnowPipe",
+        "SnowFlake UI"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Snowsightは、Snowflakeの新しいウェブインターフェースで、クエリの実行、データの可視化、コラボレーション機能を提供します。"
+    },
+    {
+      "id": 22,
+      "level": "Beginner",
+      "text": "SnowSQLについて正しい説明はどれですか？",
+      "options": [
+        "Webベースのクエリエディタ",
+        "Snowflakeのコマンドライン型クライアント",
+        "データロード専用ツール",
+        "モバイルアプリケーション"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SnowSQLは、Snowflakeのコマンドライン型クライアントツールで、SQLクエリの実行やスクリプトの自動化に使用されます。"
+    },
+    {
+      "id": 23,
+      "level": "Intermediate",
+      "text": "Snowflakeのステージ（Stage）について正しい説明はどれですか？",
+      "options": [
+        "クエリ実行の段階を管理する機能",
+        "データロード・アンロード用の中間ストレージ",
+        "ユーザーの権限レベル",
+        "データベースのバージョン管理"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ステージは、データのロード・アンロード処理において、ファイルを一時的に保存する中間ストレージエリアです。内部ステージと外部ステージがあります。"
+    },
+    {
+      "id": 24,
+      "level": "Intermediate",
+      "text": "SnowPipeについて正しい説明はどれですか？",
+      "options": [
+        "手動データロード機能",
+        "連続データロード（データストリーミング）機能",
+        "データ変換専用機能",
+        "クエリ最適化機能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SnowPipeは、クラウドストレージに新しいファイルが到着すると自動的にデータをロードする連続データロード機能です。"
+    },
+    {
+      "id": 25,
+      "level": "Intermediate",
+      "text": "Snowflakeのファイル形式として最も圧縮効率が良いのはどれですか？",
+      "options": [
+        "CSV",
+        "JSON",
+        "Parquet",
+        "XML"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Parquetは列指向のバイナリ形式で、高い圧縮効率とクエリパフォーマンスを提供します。大量データの格納と分析に最適です。"
+    },
+    {
+      "id": 26,
+      "level": "Advanced",
+      "text": "Snowflakeのマテリアライズドビューの制限として正しいものはどれですか？",
+      "options": [
+        "JOINを含むクエリはサポートされない",
+        "Enterprise Edition以上でのみ利用可能",
+        "自動更新はされない",
+        "最大テーブル数は3つまで"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "マテリアライズドビューは、Enterprise Edition以上で利用可能な機能で、自動更新され、JOINや集約関数を含むクエリもサポートされます。"
+    },
+    {
+      "id": 27,
+      "level": "Advanced",
+      "text": "Snowflakeの動的データマスキングポリシーについて正しいものはどれですか？",
+      "options": [
+        "データを物理的に変更する",
+        "クエリ実行時に動的にデータをマスキングする",
+        "バッチ処理でのみ適用される",
+        "数値データにのみ適用可能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "動的データマスキングは、クエリ実行時にリアルタイムでデータをマスキングし、元のデータは変更されません。あらゆるデータ型に適用可能です。"
+    },
+    {
+      "id": 28,
+      "level": "Advanced",
+      "text": "Snowflakeの行アクセスポリシーの特徴として正しいものはどれですか？",
+      "options": [
+        "テーブル全体へのアクセス制御",
+        "特定の行への細かいアクセス制御",
+        "列レベルでのアクセス制御",
+        "スキーマレベルでのアクセス制御"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "行アクセスポリシーは、ユーザーまたはロールに基づいて特定の行へのアクセスを制御する細かいアクセス制御機能です。"
+    },
+    {
+      "id": 29,
+      "level": "Beginner",
+      "text": "Snowflakeでデータベースを作成するSQLコマンドはどれですか？",
+      "options": [
+        "CREATE DATABASE",
+        "NEW DATABASE",
+        "MAKE DATABASE",
+        "BUILD DATABASE"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Snowflakeでは標準SQL構文の「CREATE DATABASE」を使用してデータベースを作成します。"
+    },
+    {
+      "id": 30,
+      "level": "Beginner",
+      "text": "Snowflakeでウェアハウスを作成するSQLコマンドはどれですか？",
+      "options": [
+        "CREATE WAREHOUSE",
+        "NEW WAREHOUSE",
+        "BUILD WAREHOUSE",
+        "SETUP WAREHOUSE"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "「CREATE WAREHOUSE」コマンドを使用してバーチャルウェアハウスを作成し、サイズやその他の設定を指定できます。"
+    },
+    {
+      "id": 31,
+      "level": "Intermediate",
+      "text": "Snowflakeのジェネレータ関数について正しいものはどれですか？",
+      "options": [
+        "外部データを取得する関数",
+        "テストデータや連番を生成する関数",
+        "データを暗号化する関数",
+        "クエリを最適化する関数"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ジェネレータ関数（GENERATOR関数など）は、テストデータや連続した値を生成するために使用され、データのモックアップやテーブル作成に便利です。"
+    },
+    {
+      "id": 32,
+      "level": "Intermediate",
+      "text": "Snowflakeでサポートされる外部関数の言語として正しくないものはどれですか？",
+      "options": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C++"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Snowflakeの外部関数では、Python、Java、JavaScript、Scalaなどがサポートされていますが、C++は直接サポートされていません。"
+    },
+    {
+      "id": 33,
+      "level": "Advanced",
+      "text": "Snowflakeのガバナンス機能として提供されていないものはどれですか？",
+      "options": [
+        "データリネージュトラッキング",
+        "オブジェクトタグ付け",
+        "自動データクリーニング",
+        "アクセスヒストリー"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Snowflakeでは、データリネージュトラッキング、オブジェクトタグ付け、アクセスヒストリーなどのガバナンス機能が提供されていますが、自動データクリーニング機能はありません。"
+    },
+    {
+      "id": 34,
+      "level": "Advanced",
+      "text": "Snowflakeの接続プーリングについて正しい説明はどれですか？",
+      "options": [
+        "ユーザーが手動で設定する必要がある",
+        "Snowflakeクライアントドライバーが自動的に管理",
+        "ウェアハウスごとに個別設定が必要",
+        "Standard Edition では利用不可"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Snowflakeのクライアントドライバーは、接続プーリングを自動的に管理し、アプリケーションのパフォーマンスと効率性を向上させます。"
+    },
+    {
+      "id": 35,
+      "level": "Intermediate",
+      "text": "Snowflakeのウェアハウスサイズで最小のものはどれですか？",
+      "options": [
+        "X-Small",
+        "Small",
+        "Medium",
+        "Micro"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "X-Small（XS）がSnowflakeウェアハウスの最小サイズです。その後、Small、Medium、Large、X-Large...と続きます。"
+    },
+    {
+      "id": 36,
+      "level": "Intermediate",
+      "text": "Snowflakeのクエリプロファイルで確認できる情報として正しくないものはどれですか？",
+      "options": [
+        "実行時間の詳細",
+        "各ステップのリソース使用量",
+        "他ユーザーのクエリ履歴",
+        "データスキャン量"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "クエリプロファイルでは、自分のクエリの実行時間、リソース使用量、データスキャン量などを確認できますが、他ユーザーのクエリ履歴は見ることができません。"
+    },
+    {
+      "id": 37,
+      "level": "Advanced",
+      "text": "Snowflakeのレプリケーション機能について正しい説明はどれですか？",
+      "options": [
+        "同一リージョン内でのみ可能",
+        "データベース全体の複製のみサポート",
+        "異なるリージョン・アカウント間でデータベース・スキーマを複製可能",
+        "Standard Edition で利用可能"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "レプリケーション機能は、Business Critical Edition以上で利用可能で、異なるリージョンやアカウント間でデータベースやスキーマを複製できます。"
+    },
+    {
+      "id": 38,
+      "level": "Advanced",
+      "text": "Snowflakeのフェデレーション機能について正しいものはどれですか？",
+      "options": [
+        "異なるクラウド間でのデータ統合",
+        "外部データソースへの直接クエリ実行",
+        "データの自動バックアップ",
+        "ユーザー認証システムの統合"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "フェデレーション機能により、データを移動せずに外部データソース（S3、Azure Blob、GCSなど）に対して直接クエリを実行できます。"
+    },
+    {
+      "id": 39,
+      "level": "Beginner",
+      "text": "Snowflakeのコンテキスト関数 CURRENT_WAREHOUSE() は何を返しますか？",
+      "options": [
+        "現在使用中のデータベース名",
+        "現在使用中のスキーマ名",
+        "現在使用中のウェアハウス名",
+        "現在のユーザー名"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "CURRENT_WAREHOUSE()関数は、現在のセッションで使用中のウェアハウス名を返します。"
+    },
+    {
+      "id": 40,
+      "level": "Beginner",
+      "text": "Snowflakeでテーブルを削除するSQLコマンドはどれですか？",
+      "options": [
+        "DELETE TABLE",
+        "REMOVE TABLE",
+        "DROP TABLE",
+        "DESTROY TABLE"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "標準SQLの「DROP TABLE」コマンドを使用してテーブルを削除します。DELETEはテーブル内の行を削除するコマンドです。"
+    },
+    {
+      "id": 41,
+      "level": "Intermediate",
+      "text": "Snowflakeのトランザクション分離レベルはどれですか？",
+      "options": [
+        "READ UNCOMMITTED",
+        "READ COMMITTED",
+        "REPEATABLE READ",
+        "SERIALIZABLE"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SnowflakeはREAD COMMITTEDトランザクション分離レベルを使用しており、コミットされたデータのみが他のトランザクションから読み取り可能です。"
+    },
+    {
+      "id": 42,
+      "level": "Intermediate",
+      "text": "Snowflakeのクローン機能で作成できないオブジェクトはどれですか？",
+      "options": [
+        "テーブル",
+        "スキーマ",
+        "データベース",
+        "ウェアハウス"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "クローン機能では、テーブル、スキーマ、データベースのクローンを作成できますが、ウェアハウスはクローンできません。"
+    },
+    {
+      "id": 43,
+      "level": "Advanced",
+      "text": "Snowflakeのデータクラウドエコシステムの構成要素として正しくないものはどれですか？",
+      "options": [
+        "Snowflake Data Marketplace",
+        "Partner Network",
+        "Data Exchange",
+        "Data Warehouse Manager"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Snowflakeのデータクラウドエコシステムには、Data Marketplace、Partner Network、Data Exchangeが含まれますが、Data Warehouse Managerは存在しません。"
+    },
+    {
+      "id": 44,
+      "level": "Advanced",
+      "text": "Snowflakeのクレジット使用量監視のベストプラクティスとして適切でないものはどれですか？",
+      "options": [
+        "リソースモニターの設定",
+        "自動サスペンド設定の有効化",
+        "適切なウェアハウスサイズの選択",
+        "全ウェアハウスを常時稼働"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "コスト最適化のため、使用していない時はウェアハウスを停止すべきです。常時稼働は不要なクレジット消費を招きます。"
+    },
+    {
+      "id": 45,
+      "level": "Intermediate",
+      "text": "SnowflakeのINFORMATION_SCHEMAについて正しい説明はどれですか？",
+      "options": [
+        "ユーザーデータを格納するスキーマ",
+        "メタデータ情報を提供する読み取り専用スキーマ",
+        "一時的なデータを格納するスキーマ",
+        "バックアップデータを格納するスキーマ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "INFORMATION_SCHEMAは、データベース、テーブル、列などのメタデータ情報を提供する標準的な読み取り専用スキーマです。"
+    },
+    {
+      "id": 46,
+      "level": "Advanced",
+      "text": "Snowflakeのエッジ配信ネットワークの利点として正しいものはどれですか？",
+      "options": [
+        "データ暗号化の強化",
+        "地理的に分散したキャッシングによる高速化",
+        "ストレージコストの削減",
+        "同時実行数の増加"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "エッジ配信ネットワーク機能により、地理的に分散した場所にデータがキャッシュされ、クエリ応答時間が向上します。"
+    },
+    {
+      "id": 47,
+      "level": "Beginner",
+      "text": "Snowflakeでデータをロードする際に推奨されるファイルサイズはどれくらいですか？",
+      "options": [
+        "1MB-10MB",
+        "10MB-100MB",
+        "100MB-250MB",
+        "1GB以上"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Snowflakeでは、並列処理を最適化するために100MB-250MB程度のファイルサイズが推奨されています。"
+    },
+    {
+      "id": 48,
+      "level": "Intermediate",
+      "text": "Snowflakeのスキーマオンリード（Schema-on-Read）について正しい説明はどれですか？",
+      "options": [
+        "データロード時にスキーマを定義する",
+        "データ読み取り時にスキーマを解釈する",
+        "スキーマが事前定義されている必要がある",
+        "スキーマの変更ができない"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "スキーマオンリードでは、半構造化データ（JSON等）をそのまま格納し、クエリ時にスキーマを解釈してデータを取得できます。"
+    },
+    {
+      "id": 49,
+      "level": "Advanced",
+      "text": "Snowflakeのクロスクラウドレプリケーションについて正しいものはどれですか？",
+      "options": [
+        "同一クラウドプロバイダー間でのみ可能",
+        "異なるクラウドプロバイダー間でも可能",
+        "Standard Editionで利用可能",
+        "手動でのみ実行可能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Business Critical Edition以上では、AWS、Azure、GCPなど異なるクラウドプロバイダー間でもレプリケーションが可能です。"
+    },
+    {
+      "id": 50,
+      "level": "Advanced",
+      "text": "Snowflakeのキーペア認証について正しい説明はどれですか？",
+      "options": [
+        "パスワード認証の代替として使用可能",
+        "プログラムからの接続でのみ利用可能",
+        "秘密鍵と公開鍵のペアを使用した認証方式",
+        "クラウドプロバイダーが管理する"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "キーペア認証は、RSA秘密鍵・公開鍵ペアを使用した認証方式で、パスワード認証より高いセキュリティを提供します。"
+    },
+    {
+      "id": 51,
+      "level": "Intermediate",
+      "text": "Snowflakeの$1, $2, $3といった記法は何を表していますか？",
+      "options": [
+        "変数の参照",
+        "CSVファイルの列番号",
+        "パラメータの順序",
+        "テーブルのインデックス"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "$1, $2, $3は、区切り文字で分割されたファイル（CSV等）の各列を参照する際に使用される記法です。"
+    },
+    {
+      "id": 52,
+      "level": "Intermediate",
+      "text": "Snowflakeでファイル形式オブジェクトを作成する主な目的は何ですか？",
+      "options": [
+        "データの暗号化設定",
+        "ファイル読み込み時の形式設定の再利用",
+        "ストレージの圧縮設定",
+        "アクセス権限の設定"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ファイル形式オブジェクトは、CSV、JSON、Parquetなどのファイル読み込み時の設定（区切り文字、エスケープ文字など）を再利用可能にします。"
+    },
+    {
+      "id": 53,
+      "level": "Advanced",
+      "text": "Snowflakeのプライベートリンク（Private Link）機能の利点として正しいものはどれですか？",
+      "options": [
+        "パフォーマンスの向上のみ",
+        "インターネットを経由せずプライベートネットワークで接続",
+        "ストレージ容量の増加",
+        "無料で利用可能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "プライベートリンクにより、クラウドプロバイダーのプライベートネットワークを使用してSnowflakeに接続でき、セキュリティが向上します。"
+    },
+    {
+      "id": 54,
+      "level": "Advanced",
+      "text": "Snowflakeの組織について正しい説明はどれですか？",
+      "options": [
+        "単一のアカウントのみ管理可能",
+        "複数のSnowflakeアカウントを統合管理する上位概念",
+        "データベースのグループ化機能",
+        "ユーザーロールの管理機能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "組織は、複数のSnowflakeアカウントを統合的に管理し、アカウント間での課金統合やガバナンス機能を提供する上位概念です。"
+    },
+    {
+      "id": 55,
+      "level": "Beginner",
+      "text": "Snowflakeでのデフォルトタイムゾーンはどれですか？",
+      "options": [
+        "ローカルタイムゾーン",
+        "UTC",
+        "America/Los_Angeles",
+        "ユーザー設定による"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Snowflakeのデフォルトタイムゾーンは「America/Los_Angeles」（太平洋時間）ですが、セッションレベルで変更可能です。"
+    },
+    {
+      "id": 56,
+      "level": "Intermediate",
+      "text": "Snowflakeのメタデータベースにアクセスするために使用される仮想的なデータベースはどれですか？",
+      "options": [
+        "INFORMATION_SCHEMA",
+        "ACCOUNT_USAGE",
+        "METADATA_DB",
+        "SYSTEM_DB"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ACCOUNT_USAGEスキーマは、アカウントレベルの詳細なメタデータや使用状況データにアクセスするための仮想データベースです。"
+    },
+    {
+      "id": 57,
+      "level": "Advanced",
+      "text": "Snowflakeのマルチテナント機能について正しい説明はどれですか？",
+      "options": [
+        "単一顧客のみ対応",
+        "複数の独立したワークスペースを提供",
+        "物理的にサーバーを分離",
+        "追加料金が必要"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Snowflakeはマルチテナント・アーキテクチャを採用し、複数の顧客が同じインフラストラクチャを共有しながら完全に独立したワークスペースを提供します。"
+    },
+    {
+      "id": 58,
+      "level": "Intermediate",
+      "text": "Snowflakeでのセミストラクチャードデータのクエリ最適化について正しいものはどれですか？",
+      "options": [
+        "常にフルスキャンが必要",
+        "自動的にコラムナー形式で格納され最適化される",
+        "別途インデックス作成が必要",
+        "構造化データより常に遅い"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Snowflakeはセミストラクチャードデータでもコラムナーストレージ形式で格納し、自動的にメタデータを生成してクエリを最適化します。"
+    },
+    {
+      "id": 59,
+      "level": "Advanced",
+      "text": "Snowflakeのデータガバナンス機能として正しくないものはどれですか？",
+      "options": [
+        "タグベースのポリシー管理",
+        "監査ログの取得",
+        "自動的なPII検出と削除",
+        "アクセス制御ポリシー"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Snowflakeはタグベースのポリシー管理、監査ログ取得、アクセス制御を提供しますが、PII（個人識別情報）の自動検出・削除機能はありません。"
+    },
+    {
+      "id": 60,
+      "level": "Beginner",
+      "text": "Snowflakeのユーザー名には使用できない文字はどれですか？",
+      "options": [
+        "アンダースコア(_)",
+        "ハイフン(-)",
+        "スペース( )",
+        "数字"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Snowflakeのユーザー名には、アンダースコア、ハイフン、数字は使用できますが、スペースは使用できません。"
+    },
+    {
+      "id": 61,
+      "level": "Intermediate",
+      "text": "Snowflakeの検索最適化サービス（Search Optimization Service）について正しいものはどれですか？",
+      "options": [
+        "全てのクエリで自動的に有効",
+        "ポイントルックアップクエリのパフォーマンス向上",
+        "ストレージコストを削減",
+        "Standard Edition では利用不可"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "検索最適化サービスは、等価フィルタや少数の値を検索するポイントルックアップクエリのパフォーマンスを大幅に向上させます。"
+    },
+    {
+      "id": 62,
+      "level": "Advanced",
+      "text": "Snowflakeの外部トークナイザ（External Tokenizer）の主な用途は何ですか？",
+      "options": [
+        "データの暗号化",
+        "機密データの非識別化",
+        "パフォーマンスの向上",
+        "ストレージの圧縮"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "外部トークナイザは、機密データ（SSN、クレジットカード番号など）を外部システムでトークン化し、Snowflakeでは非識別化されたトークンを使用します。"
+    },
+    {
+      "id": 63,
+      "level": "Advanced",
+      "text": "Snowflakeのクエリアクセラレーションサービス（Query Acceleration Service）について正しいものはどれですか？",
+      "options": [
+        "全てのクエリに自動適用される",
+        "予測不可能な負荷に対する動的リソース追加",
+        "ストレージアクセス速度を向上させる",
+        "ウェアハウスサイズを自動変更する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "クエリアクセラレーションサービスは、予測できない変動する負荷に対して、オンデマンドでコンピュートリソースを追加してクエリを高速化します。"
+    },
+    {
+      "id": 64,
+      "level": "Intermediate",
+      "text": "Snowflakeのクエリタグ（Query Tag）機能の主な用途は何ですか？",
+      "options": [
+        "クエリのパフォーマンス向上",
+        "クエリの分類と追跡",
+        "データの暗号化",
+        "自動バックアップの設定"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "クエリタグは、クエリに任意のラベルを付けることで、コストトラッキング、パフォーマンス分析、監査などの目的でクエリを分類・追跡できます。"
+    },
+    {
+      "id": 65,
+      "level": "Advanced",
+      "text": "Snowflakeのデータメトリクスストア（Data Metric Store）について正しいものはどれですか？",
+      "options": [
+        "生データのみ格納可能",
+        "集計されたメトリクスデータを効率的に格納・管理",
+        "Standard Edition で利用可能",
+        "外部システムとの連携不可"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "データメトリクスストアは、事前に計算された集計メトリクスを効率的に格納し、ダッシュボードやレポートのクエリパフォーマンスを向上させます。"
+    },
+    {
+      "id": 66,
+      "level": "Beginner",
+      "text": "Snowflakeで大文字小文字を区別しない識別子にするための記法はどれですか？",
+      "options": [
+        "シングルクォート('')",
+        "ダブルクォート(\"\")",
+        "バッククォート(``)",
+        "クォートなし"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Snowflakeでは、クォートで囲まない識別子は自動的に大文字に変換され、大文字小文字を区別しません。ダブルクォートで囲むと大文字小文字が区別されます。"
+    },
+    {
+      "id": 67,
+      "level": "Intermediate",
+      "text": "Snowflakeのリザルトキャッシュ（Result Cache）について正しいものはどれですか？",
+      "options": [
+        "ウェアハウスごとに個別に管理",
+        "アカウントレベルでグローバルに共有",
+        "手動で有効化する必要がある",
+        "24時間で無効になる"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "リザルトキャッシュはアカウント全体で共有され、同一のクエリ結果を複数のユーザー・ウェアハウスで再利用でき、自動的に有効化されています。"
+    },
+    {
+      "id": 68,
+      "level": "Advanced",
+      "text": "Snowflakeのクレジットコントロール（Credit Controls）で設定できないアクションはどれですか？",
+      "options": [
+        "通知メール送信",
+        "ウェアハウス一時停止",
+        "新規クエリの実行停止",
+        "データベース自動バックアップ"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "クレジットコントロールでは、通知、ウェアハウス一時停止、クエリ実行停止などが可能ですが、データベースの自動バックアップ制御はできません。"
+    },
+    {
+      "id": 69,
+      "level": "Advanced",
+      "text": "Snowflakeのネットワークポリシーで制御できるものはどれですか？",
+      "options": [
+        "ユーザーのロール権限",
+        "データアクセス権限",
+        "IPアドレスベースのアクセス制限",
+        "クエリ実行時間制限"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "ネットワークポリシーは、特定のIPアドレスやIP範囲からのアクセスを許可・拒否するセキュリティ機能です。"
+    },
+    {
+      "id": 70,
+      "level": "Intermediate",
+      "text": "Snowflakeのセッション変数について正しいものはどれですか？",
+      "options": [
+        "全ユーザーで共有される",
+        "データベースに永続的に保存される",
+        "セッション内でのみ有効",
+        "再起動後も保持される"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "セッション変数は、個々のユーザーセッション内でのみ有効で、セッション終了時に削除される一時的な変数です。"
+    },
+    {
+      "id": 71,
+      "level": "Advanced",
+      "text": "Snowflakeのクライアント接続検証（Client Connection Validation）について正しいものはどれですか？",
+      "options": [
+        "パスワードの複雑性をチェック",
+        "ネットワークの帯域幅をテスト",
+        "接続の整合性とセキュリティを検証",
+        "データ転送量を制限"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "クライアント接続検証は、Snowflakeへの接続が適切に暗号化され、セキュリティ要件を満たしているかを検証する機能です。"
+    },
+    {
+      "id": 72,
+      "level": "Advanced",
+      "text": "Snowflakeのドライバー設定で、接続プールの最大接続数を制御するパラメータはどれですか？",
+      "options": [
+        "maxConnectionPool",
+        "connectionPoolMaxSize",
+        "maxPoolSize",
+        "poolMaxConnections"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "connectionPoolMaxSizeパラメータは、Snowflakeドライバーの接続プールで保持される最大接続数を制御します。"
+    },
+    {
+      "id": 73,
+      "level": "Intermediate",
+      "text": "Snowflakeのデータサンプリング機能について正しいものはどれですか？",
+      "options": [
+        "手動でサンプル行を選択する必要がある",
+        "SAMPLE機能で統計的サンプリングが可能",
+        "構造化データのみサポート",
+        "追加のストレージが必要"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SAMPLE句を使用することで、統計的手法に基づいてテーブルから代表的なサンプルデータを効率的に取得できます。"
+    },
+    {
+      "id": 74,
+      "level": "Advanced",
+      "text": "Snowflakeのアカウント利用レポート（Account Usage Report）で追跡できない情報はどれですか？",
+      "options": [
+        "クレジット使用量の詳細",
+        "ストレージ使用量の推移",
+        "個別ユーザーのパスワード履歴",
+        "データ転送量の統計"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "アカウント利用レポートでは、クレジット使用量、ストレージ使用量、データ転送量などを追跡できますが、セキュリティ上の理由でパスワード履歴は記録されません。"
+    },
+    {
+      "id": 75,
+      "level": "Advanced",
+      "text": "Snowflakeの自動クラスタリング（Automatic Clustering）について正しい説明はどれですか？",
+      "options": [
+        "Standard Edition で利用可能",
+        "手動でトリガーする必要がある",
+        "Enterprise Edition以上で利用可能で自動実行",
+        "ストレージコストが増加する"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "自動クラスタリングは、Enterprise Edition以上で利用可能で、定義されたクラスタリングキーに基づいて自動的にテーブルのデータを最適化します。"
+    }
+  ]
+}

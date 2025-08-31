@@ -220,6 +220,30 @@
       "estimatedTime": "60-75分",
       "coverImage": "pmp-logo.png",
       "color": "#8B0000"
+    },
+    {
+      "id": "snowpro-associate",
+      "title": "SnowPro Associate 認定試験対策",
+      "description": "Snowflake SnowPro Associate認定試験対策の問題集です。Snowflakeの基礎概念から実践的な知識まで、Associate レベルの必須スキルを幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "Snowflake Learning Team",
+      "categories": ["Snowflake", "データベース", "クラウド", "基礎", "中級"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "snowflake-logo.png",
+      "color": "#29B5E8"
+    },
+    {
+      "id": "snowpro-core",
+      "title": "SnowPro Core 認定試験対策",
+      "description": "Snowflake SnowPro Core認定試験対策の問題集です。Snowflakeプラットフォームの深い理解と実践的な知識を測定し、上級レベルの技術スキルを幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "Snowflake Learning Team",
+      "categories": ["Snowflake", "データベース", "クラウド", "中級", "上級"],
+      "totalQuestions": 75,
+      "estimatedTime": "75-90分",
+      "coverImage": "snowflake-core-logo.png",
+      "color": "#1E40AF"
     }
   ]
 }
