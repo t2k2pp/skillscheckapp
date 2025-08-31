@@ -1,0 +1,5 @@
+{
+  "name": "Python Quiz Authoring Tool",
+  "description": "An application to load, edit, and export Python quiz content in JSON format. It provides a user-friendly interface for managing quiz metadata and individual questions, including options, correct answers, and explanations.",
+  "requestFramePermissions": []
+}

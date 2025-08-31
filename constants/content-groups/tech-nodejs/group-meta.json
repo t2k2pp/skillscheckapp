@@ -1,0 +1,33 @@
+{
+  "id": "tech-nodejs",
+  "type": "technology",
+  "title": "Node.js エコシステム",
+  "description": "Node.jsに関する包括的な学習コンテンツ。基礎から実践的な応用まで、サーバーサイドJavaScript開発に必要な知識を体系的に学習できます。",
+  "icon": "nodejs-logo.png",
+  "color": "#339933",
+  "difficulty": ["beginner", "intermediate", "advanced"],
+  "contentTypes": {
+    "quizzes": {
+      "count": 1,
+      "description": "Node.jsのスキルテスト問題集"
+    },
+    "ebooks": {
+      "count": 1,
+      "description": "Node.js基礎ガイド電子書籍"
+    },
+    "pdfs": {
+      "count": 0,
+      "description": "PDF形式の参考資料"
+    },
+    "videos": {
+      "count": 0,
+      "description": "動画による解説コンテンツ"
+    }
+  },
+  "totalEstimatedTime": "120-150分",
+  "prerequisites": ["JavaScript基礎"],
+  "relatedGroups": ["tech-react", "theme-fullstack", "level-beginner-fullstack"],
+  "tags": ["javascript", "backend", "server", "npm", "express"],
+  "lastUpdated": "2025-08-30",
+  "author": "Node.js Learning Team"
+}

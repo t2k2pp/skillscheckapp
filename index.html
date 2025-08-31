@@ -33,6 +33,27 @@
   }
 }
 </script>
+    <style>
+      /* PDF表示用のカスタムスタイル */
+      .react-pdf__Page__canvas {
+        max-width: 100% !important;
+        height: auto !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        border-radius: 8px;
+      }
+      
+      .pdf-page {
+        display: inline-block;
+        margin: 0 auto;
+      }
+      
+      /* ダークモード対応 */
+      @media (prefers-color-scheme: dark) {
+        .react-pdf__Page__canvas {
+          filter: brightness(0.9) contrast(1.1);
+        }
+      }
+    </style>
 </head>
   <body class="bg-light dark:bg-dark text-dark dark:text-light">
     <div id="root"></div>

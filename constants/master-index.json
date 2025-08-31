@@ -1,0 +1,71 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2025-08-30",
+  "description": "Master index for content group management system",
+  "contentTypes": {
+    "quizzes": {
+      "name": "スキルテスト問題集",
+      "description": "4択式テスト形式のコンテンツ",
+      "icon": "quiz-icon"
+    },
+    "ebooks": {
+      "name": "電子書籍",
+      "description": "マークダウン形式の技術文書",
+      "icon": "book-icon"
+    },
+    "pdfs": {
+      "name": "PDF資料",
+      "description": "PDF形式のドキュメント",
+      "icon": "pdf-icon"
+    },
+    "videos": {
+      "name": "動画コンテンツ",
+      "description": "YouTube動画 + 補助マークダウン",
+      "icon": "video-icon"
+    }
+  },
+  "groupingAxes": {
+    "technology": {
+      "name": "技術軸",
+      "description": "特定の技術やフレームワークに特化したコンテンツ",
+      "examples": ["nodejs", "react", "docker", "python"]
+    },
+    "level": {
+      "name": "レベル軸", 
+      "description": "スキルレベルや職種に特化したコンテンツ",
+      "examples": ["beginner-fullstack", "advanced-pm", "expert-architect"]
+    },
+    "authority": {
+      "name": "人物軸",
+      "description": "特定の専門家や著者によるコンテンツ",
+      "examples": ["t-wada-tdd", "martin-fowler", "uncle-bob"]
+    },
+    "theme": {
+      "name": "テーマ軸",
+      "description": "横断的なテーマやトピックのコンテンツ",
+      "examples": ["microservices", "security-fundamentals", "ai-ml-basics"]
+    }
+  },
+  "contentGroups": [
+    {
+      "groupId": "tech-csharp",
+      "name": "C#技術資料",
+      "description": "C#プログラミングに関する包括的な学習コンテンツ",
+      "axis": "technology",
+      "path": "./content-groups/tech-csharp",
+      "contentTypes": ["quizzes", "ebooks", "pdfs", "videos"],
+      "enabled": true,
+      "lastUpdated": "2025-08-30"
+    },
+    {
+      "groupId": "tech-nodejs", 
+      "name": "Node.js技術資料",
+      "description": "Node.jsプログラミングに関する包括的な学習コンテンツ",
+      "axis": "technology",
+      "path": "./content-groups/tech-nodejs",
+      "contentTypes": ["quizzes", "ebooks", "pdfs", "videos"],
+      "enabled": true,
+      "lastUpdated": "2025-08-30"
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 
 import React, { useState, useCallback } from 'react';
 import { QuizQuestion, UserAnswer, QuizPattern, QuizMode, LearningCategory, QuizModeType } from './types';
-import { QUESTIONS } from './constants/questions';
 import { getQuestionsByPattern, shuffleQuestionOptions } from './utils/quizPatterns';
 import { QuestionLoader } from './utils/questionLoader';
 import { QuestionSet, QuestionSetMetadata } from './types/questionSet';
@@ -16,9 +15,11 @@ import DictionaryScreen from './components/DictionaryScreen';
 import DictionaryDetailCard from './components/DictionaryDetailCard';
 import ResultsScreen from './components/ResultsScreen';
 import EbookViewer from './components/EbookViewer';
+import PDFViewer from './components/PDFViewer';
+import VideoViewer from './components/VideoViewer';
 
 const App: React.FC = () => {
-  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'category_selection' | 'quiz_mode_selection' | 'pattern_selection' | 'active' | 'one_by_one_active' | 'dictionary_list' | 'dictionary_detail' | 'finished' | 'ebook_viewer'>('book_selection');
+  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'category_selection' | 'quiz_mode_selection' | 'pattern_selection' | 'active' | 'one_by_one_active' | 'dictionary_list' | 'dictionary_detail' | 'finished' | 'ebook_viewer' | 'pdf_viewer' | 'video_viewer'>('book_selection');
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [currentQuestionSet, setCurrentQuestionSet] = useState<QuestionSet | null>(null);
   const [currentBookMetadata, setCurrentBookMetadata] = useState<QuestionSetMetadata | null>(null);
@@ -39,6 +40,22 @@ const App: React.FC = () => {
         setSelectedBook(bookId);
         setCurrentBookMetadata(metadata);
         setQuizState('ebook_viewer');
+        return;
+      }
+
+      // PDFコンテンツの場合、直接PDFビューアに移動
+      if (metadata?.type === 'pdf' && metadata.pdfFile) {
+        setSelectedBook(bookId);
+        setCurrentBookMetadata(metadata);
+        setQuizState('pdf_viewer');
+        return;
+      }
+
+      // ビデオコンテンツの場合、直接ビデオビューアに移動
+      if (metadata?.type === 'video' && metadata.youtubeId) {
+        setSelectedBook(bookId);
+        setCurrentBookMetadata(metadata);
+        setQuizState('video_viewer');
         return;
       }
 
@@ -242,87 +259,103 @@ const App: React.FC = () => {
         return <BookSelectionScreen onSelectBook={handleBookSelect} />;
       case 'category_selection':
         return (
-          <LearningCategoryScreen
-            onCategorySelect={handleCategorySelect}
-            onBack={backToBookSelection}
-            questionSet={currentQuestionSet}
-          />
+          <div className="container mx-auto px-4 py-8 max-w-4xl">
+            <LearningCategoryScreen
+              onCategorySelect={handleCategorySelect}
+              onBack={backToBookSelection}
+              questionSet={currentQuestionSet}
+            />
+          </div>
         );
       case 'quiz_mode_selection': {
         const quizQuestions = currentQuestionSet ? QuestionLoader.convertToQuizQuestions(currentQuestionSet.questions) : [];
         return (
-          <QuizModeSelectionScreen
-            onModeSelect={handleQuizModeSelect}
-            onBack={backToCategorySelection}
-            questionSet={currentQuestionSet}
-            questions={quizQuestions}
-          />
+          <div className="container mx-auto px-4 py-8 max-w-4xl">
+            <QuizModeSelectionScreen
+              onModeSelect={handleQuizModeSelect}
+              onBack={backToCategorySelection}
+              questionSet={currentQuestionSet}
+              questions={quizQuestions}
+            />
+          </div>
         );
       }
       case 'pattern_selection': {
         const quizQuestions = currentQuestionSet ? QuestionLoader.convertToQuizQuestions(currentQuestionSet.questions) : [];
         return (
-          <PatternSelectionScreen
-            onPatternSelect={handlePatternSelect}
-            onBack={backToQuizModeSelection}
-            questionSet={currentQuestionSet}
-            questions={quizQuestions}
-          />
+          <div className="container mx-auto px-4 py-8 max-w-4xl">
+            <PatternSelectionScreen
+              onPatternSelect={handlePatternSelect}
+              onBack={backToQuizModeSelection}
+              questionSet={currentQuestionSet}
+              questions={quizQuestions}
+            />
+          </div>
         );
       }
       case 'one_by_one_active':
         return (
-          <OneByOneQuestionCard
-            question={questions[currentQuestionIndex]}
-            questionNumber={currentQuestionIndex + 1}
-            totalQuestions={questions.length}
-            onNext={handleOneByOneNext}
-            onFinish={handleOneByOneFinish}
-            onBack={backToCategorySelection}
-          />
+          <div className="container mx-auto px-4 py-8 max-w-4xl">
+            <OneByOneQuestionCard
+              question={questions[currentQuestionIndex]}
+              questionNumber={currentQuestionIndex + 1}
+              totalQuestions={questions.length}
+              onNext={handleOneByOneNext}
+              onFinish={handleOneByOneFinish}
+              onBack={backToCategorySelection}
+            />
+          </div>
         );
       case 'dictionary_list':
         return (
-          <DictionaryScreen
-            questions={questions}
-            questionSet={currentQuestionSet}
-            onQuestionSelect={handleDictionaryQuestionSelect}
-            onBack={backToCategorySelection}
-          />
+          <div className="container mx-auto px-4 py-8 max-w-4xl">
+            <DictionaryScreen
+              questions={questions}
+              questionSet={currentQuestionSet}
+              onQuestionSelect={handleDictionaryQuestionSelect}
+              onBack={backToCategorySelection}
+            />
+          </div>
         );
       case 'dictionary_detail':
         return (
-          <DictionaryDetailCard
-            question={questions[currentQuestionIndex]}
-            questionNumber={currentQuestionIndex + 1}
-            totalQuestions={questions.length}
-            onBack={handleDictionaryBack}
-            onPrevious={handleDictionaryPrevious}
-            onNext={handleDictionaryNext}
-            hasPrevious={currentQuestionIndex > 0}
-            hasNext={currentQuestionIndex < questions.length - 1}
-          />
+          <div className="container mx-auto px-4 py-8 max-w-4xl">
+            <DictionaryDetailCard
+              question={questions[currentQuestionIndex]}
+              questionNumber={currentQuestionIndex + 1}
+              totalQuestions={questions.length}
+              onBack={handleDictionaryBack}
+              onPrevious={handleDictionaryPrevious}
+              onNext={handleDictionaryNext}
+              hasPrevious={currentQuestionIndex > 0}
+              hasNext={currentQuestionIndex < questions.length - 1}
+            />
+          </div>
         );
       case 'active':
         return (
-          <QuestionCard
-            question={questions[currentQuestionIndex]}
-            questionNumber={currentQuestionIndex + 1}
-            totalQuestions={questions.length}
-            onAnswer={handleAnswer}
-            onEarlyFinish={handleEarlyFinish}
-          />
+          <div className="container mx-auto px-4 py-8 max-w-4xl">
+            <QuestionCard
+              question={questions[currentQuestionIndex]}
+              questionNumber={currentQuestionIndex + 1}
+              totalQuestions={questions.length}
+              onAnswer={handleAnswer}
+              onEarlyFinish={handleEarlyFinish}
+            />
+          </div>
         );
       case 'finished':
         return (
-          <ResultsScreen
-            userAnswers={userAnswers}
-            questions={questions}
-            onRestart={restartQuiz}
-            onBackToBooks={backToBookSelection}
-            totalTime={totalTime}
-            questionSet={currentQuestionSet}
-          />
+          <div className="container mx-auto px-4 py-8 max-w-4xl">
+            <ResultsScreen
+              userAnswers={userAnswers}
+              questions={questions}
+              onRestart={restartQuiz}
+              onBackToBooks={backToBookSelection}
+              totalTime={totalTime}
+              questionSet={currentQuestionSet}
+            />
+          </div>
         );
       case 'ebook_viewer':
         if (currentBookMetadata?.contentFile) {
@@ -332,6 +365,29 @@ const App: React.FC = () => {
               title={currentBookMetadata.title}
               onBack={backToBookSelection}
               githubRepo={currentBookMetadata.githubRepo}
+            />
+          );
+        }
+        return <BookSelectionScreen onSelectBook={handleBookSelect} />;
+      case 'pdf_viewer':
+        if (currentBookMetadata?.pdfFile) {
+          return (
+            <PDFViewer
+              pdfFile={currentBookMetadata.pdfFile}
+              title={currentBookMetadata.title}
+              onBack={backToBookSelection}
+            />
+          );
+        }
+        return <BookSelectionScreen onSelectBook={handleBookSelect} />;
+      case 'video_viewer':
+        if (currentBookMetadata?.youtubeId) {
+          return (
+            <VideoViewer
+              youtubeId={currentBookMetadata.youtubeId}
+              markdownFile={currentBookMetadata.markdownFile}
+              title={currentBookMetadata.title}
+              onBack={backToBookSelection}
             />
           );
         }

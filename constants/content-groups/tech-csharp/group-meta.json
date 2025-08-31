@@ -1,0 +1,33 @@
+{
+  "id": "tech-csharp",
+  "type": "technology",
+  "title": "C# プログラミング",
+  "description": "C#に関する包括的な学習コンテンツ。基礎から.NET Framework、オブジェクト指向プログラミングまで、Microsoft技術スタックでの開発に必要な知識を体系的に学習できます。",
+  "icon": "csharp-logo.png",
+  "color": "#239120",
+  "difficulty": ["beginner", "intermediate", "advanced"],
+  "contentTypes": {
+    "quizzes": {
+      "count": 0,
+      "description": "C#のスキルテスト問題集"
+    },
+    "ebooks": {
+      "count": 0,
+      "description": "C#技術書籍"
+    },
+    "pdfs": {
+      "count": 1,
+      "description": "C#入門書PDF"
+    },
+    "videos": {
+      "count": 0,
+      "description": "動画による解説コンテンツ"
+    }
+  },
+  "totalEstimatedTime": "180-240分",
+  "prerequisites": ["プログラミング基礎"],
+  "relatedGroups": ["tech-dotnet", "level-beginner-programming"],
+  "tags": ["csharp", "microsoft", "dotnet", "programming", "oop"],
+  "lastUpdated": "2025-08-30",
+  "author": "C# Learning Team"
+}

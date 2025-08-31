@@ -21,7 +21,7 @@ export interface Question {
   explanation: string;
 }
 
-export type ContentType = 'quiz' | 'ebook' | 'slides' | 'pdf';
+export type ContentType = 'quiz' | 'ebook' | 'slides' | 'pdf' | 'video';
 
 export interface QuestionSetMetadata {
   id: string;
@@ -37,4 +37,7 @@ export interface QuestionSetMetadata {
   type?: ContentType;
   contentFile?: string;
   githubRepo?: string;
+  pdfFile?: string;
+  youtubeId?: string;
+  markdownFile?: string;
 }

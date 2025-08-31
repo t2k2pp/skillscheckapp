@@ -1,0 +1,21 @@
+{
+  "groupId": "tech-csharp",
+  "contentType": "pdfs",
+  "lastUpdated": "2025-08-30",
+  "items": [
+    {
+      "id": "csharp-beginner-book",
+      "title": "C# 初心者ガイドブック",
+      "description": "C#プログラミングの基礎から応用まで学べる入門書です。変数の宣言からオブジェクト指向プログラミングまで、実践的なサンプルコードとともに詳しく解説します。",
+      "type": "pdf",
+      "pdfFile": "csharp-beginner-book.pdf",
+      "categories": ["C#", "プログラミング基礎", "オブジェクト指向"],
+      "totalQuestions": 0,
+      "estimatedTime": "4時間",
+      "author": "C#開発チーム",
+      "version": "1.0",
+      "lastUpdated": "2025-08-30",
+      "color": "#512BD4"
+    }
+  ]
+}

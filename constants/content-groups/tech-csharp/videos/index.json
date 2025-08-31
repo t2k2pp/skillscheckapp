@@ -1,0 +1,22 @@
+{
+  "groupId": "tech-csharp",
+  "contentType": "videos",
+  "lastUpdated": "2025-08-30",
+  "items": [
+    {
+      "id": "csharp-tutorial-basics",
+      "title": "C# プログラミング基礎講座",
+      "description": "C#プログラミングの基本概念から実践的な開発手法まで、初心者にもわかりやすく解説した学習動画です。補助資料と合わせて効率的に学習できます。",
+      "type": "video",
+      "youtubeId": "lB6uDpOO_DU",
+      "markdownFile": "sample-tutorial-guide.md",
+      "categories": ["C#", "プログラミング基礎", "動画学習"],
+      "totalQuestions": 0,
+      "estimatedTime": "45分",
+      "author": "開発チーム",
+      "version": "1.0",
+      "lastUpdated": "2025-08-30",
+      "color": "#FF0000"
+    }
+  ]
+}

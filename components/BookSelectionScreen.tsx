@@ -12,7 +12,7 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const [selectedCategoryGroup, setSelectedCategoryGroup] = useState<string>('all');
+  const [selectedContentType, setSelectedContentType] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'title' | 'totalQuestions' | 'estimatedTime'>('title');
 
   useEffect(() => {
@@ -22,37 +22,27 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
   // すべてのカテゴリを取得
   const allCategories = useMemo(() => {
     const categories = new Set<string>();
-    questionSets.forEach(set => {
-      set.categories.forEach(cat => categories.add(cat));
-    });
+    if (questionSets && questionSets.length > 0) {
+      questionSets.forEach(set => {
+        if (set.categories && Array.isArray(set.categories)) {
+          set.categories.forEach(cat => categories.add(cat));
+        }
+      });
+    }
     return Array.from(categories).sort();
   }, [questionSets]);
 
-  // 主要カテゴリの分類
-  const categoryGroups = useMemo(() => {
-    return {
-      'プログラミング・開発': allCategories.filter(cat => 
-        cat.includes('React') || cat.includes('Vue') || cat.includes('Python') || 
-        cat.includes('Node.js') || cat.includes('C++') || cat.includes('フロントエンド') || 
-        cat.includes('バックエンド') || cat.includes('Vite')
-      ),
-      'インフラ・ツール': allCategories.filter(cat => 
-        cat.includes('Docker') || cat.includes('Git') || cat.includes('GitHub') || 
-        cat.includes('DevOps') || cat.includes('インフラ')
-      ),
-      'データ・データベース': allCategories.filter(cat => 
-        cat.includes('データベース') || cat.includes('SQL') || cat.includes('データ')
-      ),
-      'ビジネスアプリケーション': allCategories.filter(cat => 
-        cat.includes('PowerApps') || cat.includes('Excel') || cat.includes('Microsoft') || 
-        cat.includes('CAPM') || cat.includes('PMP') || cat.includes('プロジェクト管理')
-      ),
-      'AI・機械学習': allCategories.filter(cat => 
-        cat.includes('AI') || cat.includes('機械学習') || cat.includes('G検定') || 
-        cat.includes('ディープラーニング')
-      )
-    };
-  }, [allCategories]);
+  // コンテンツタイプ別の集計
+  const contentTypeCounts = useMemo(() => {
+    const counts = { quiz: 0, ebook: 0, pdf: 0, video: 0 };
+    questionSets.forEach(set => {
+      if (set.type === 'ebook') counts.ebook++;
+      else if (set.type === 'pdf') counts.pdf++;
+      else if (set.type === 'video') counts.video++;
+      else counts.quiz++;
+    });
+    return counts;
+  }, [questionSets]);
 
   // フィルタリングとソート機能
   useEffect(() => {
@@ -63,22 +53,22 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
       filtered = filtered.filter(set => 
         set.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         set.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        set.categories.some(cat => cat.toLowerCase().includes(searchQuery.toLowerCase()))
+        (set.categories && Array.isArray(set.categories) && set.categories.some(cat => cat.toLowerCase().includes(searchQuery.toLowerCase())))
       );
     }
 
-    // カテゴリグループフィルタ
-    if (selectedCategoryGroup !== 'all') {
-      const groupCategories = categoryGroups[selectedCategoryGroup as keyof typeof categoryGroups] || [];
-      filtered = filtered.filter(set => 
-        set.categories.some(cat => groupCategories.includes(cat))
-      );
+    // コンテンツタイプフィルタ
+    if (selectedContentType !== 'all') {
+      filtered = filtered.filter(set => {
+        if (selectedContentType === 'quiz') return !set.type || set.type === 'quiz';
+        return set.type === selectedContentType;
+      });
     }
 
     // 個別カテゴリフィルタ
     if (selectedCategory !== 'all') {
       filtered = filtered.filter(set => 
-        set.categories.some(cat => cat.toLowerCase() === selectedCategory.toLowerCase())
+        set.categories && Array.isArray(set.categories) && set.categories.some(cat => cat.toLowerCase() === selectedCategory.toLowerCase())
       );
     }
 
@@ -96,18 +86,53 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
     });
 
     setFilteredQuestionSets(filtered);
-  }, [questionSets, searchQuery, selectedCategory, selectedCategoryGroup, sortBy, categoryGroups]);
+  }, [questionSets, searchQuery, selectedCategory, selectedContentType, sortBy]);
 
   const loadQuestionSets = async () => {
     try {
       setLoading(true);
-      // 問題集メタデータを取得
-      const response = await fetch(`${import.meta.env.BASE_URL}question-sets/index.json`);
-      if (!response.ok) {
-        throw new Error('問題集の読み込みに失敗しました');
+      let allContent: QuestionSetMetadata[] = [];
+
+      // 既存のquestion-setsを読み込み
+      try {
+        const response = await fetch(`${import.meta.env.BASE_URL}question-sets/index.json`);
+        if (response.ok) {
+          const data = await response.json();
+          allContent = [...allContent, ...(data.questionSets || [])];
+        }
+      } catch (e) {
+        console.warn('Legacy question-sets index not found, continuing with new structure');
       }
-      const data = await response.json();
-      setQuestionSets(data.questionSets || []);
+
+      // 新しいconstants構造からコンテンツを読み込み
+      try {
+        const masterResponse = await fetch(`${import.meta.env.BASE_URL}constants/master-index.json`);
+        if (masterResponse.ok) {
+          const masterData = await masterResponse.json();
+          
+          for (const group of masterData.contentGroups) {
+            if (!group.enabled) continue;
+            
+            for (const contentType of group.contentTypes) {
+              try {
+                const contentResponse = await fetch(
+                  `${import.meta.env.BASE_URL}constants/content-groups/${group.groupId}/${contentType}/index.json`
+                );
+                if (contentResponse.ok) {
+                  const contentData = await contentResponse.json();
+                  allContent = [...allContent, ...(contentData.items || [])];
+                }
+              } catch (e) {
+                console.warn(`Failed to load ${contentType} for group ${group.groupId}:`, e);
+              }
+            }
+          }
+        }
+      } catch (e) {
+        console.warn('New constants structure not found, using only legacy data');
+      }
+
+      setQuestionSets(allContent);
     } catch (err) {
       setError(err instanceof Error ? err.message : '問題集の読み込みでエラーが発生しました');
     } finally {
@@ -162,47 +187,73 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
             <div className="flex flex-wrap justify-center gap-2 mb-6">
               <button
                 onClick={() => {
-                  setSelectedCategoryGroup('all');
+                  setSelectedContentType('all');
                   setSelectedCategory('all');
                 }}
                 className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
-                  selectedCategoryGroup === 'all'
+                  selectedContentType === 'all'
                     ? 'bg-blue-600 text-white shadow-lg'
                     : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
                 }`}
               >
                 すべて ({questionSets.length})
               </button>
-              {Object.entries(categoryGroups).map(([groupName, categories]) => {
-                const count = questionSets.filter(set => 
-                  set.categories.some(cat => categories.includes(cat))
-                ).length;
-                
-                if (count === 0) return null;
-                
-                return (
-                  <button
-                    key={groupName}
-                    onClick={() => {
-                      setSelectedCategoryGroup(groupName);
-                      setSelectedCategory('all');
-                    }}
-                    className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
-                      selectedCategoryGroup === groupName
-                        ? 'bg-blue-600 text-white shadow-lg'
-                        : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
-                    }`}
-                  >
-                    {groupName === 'プログラミング・開発' && '💻'} 
-                    {groupName === 'インフラ・ツール' && '🔧'} 
-                    {groupName === 'データ・データベース' && '📊'} 
-                    {groupName === 'ビジネスアプリケーション' && '🏢'} 
-                    {groupName === 'AI・機械学習' && '🤖'} 
-                    {' '}
-                    {groupName} ({count})
-                  </button>
-                );
-              })}
+              
+              <button
+                onClick={() => {
+                  setSelectedContentType('quiz');
+                  setSelectedCategory('all');
+                }}
+                className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
+                  selectedContentType === 'quiz'
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
+                }`}
+              >
+                📝 クイズ ({contentTypeCounts.quiz})
+              </button>
+              
+              <button
+                onClick={() => {
+                  setSelectedContentType('ebook');
+                  setSelectedCategory('all');
+                }}
+                className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
+                  selectedContentType === 'ebook'
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
+                }`}
+              >
+                📖 電子書籍 ({contentTypeCounts.ebook})
+              </button>
+              
+              <button
+                onClick={() => {
+                  setSelectedContentType('pdf');
+                  setSelectedCategory('all');
+                }}
+                className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
+                  selectedContentType === 'pdf'
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
+                }`}
+              >
+                📄 PDF ({contentTypeCounts.pdf})
+              </button>
+              
+              <button
+                onClick={() => {
+                  setSelectedContentType('video');
+                  setSelectedCategory('all');
+                }}
+                className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
+                  selectedContentType === 'video'
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
+                }`}
+              >
+                🎥 動画 ({contentTypeCounts.video})
+              </button>
             </div>
           </div>
         )}
@@ -351,7 +402,7 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
 
                   {/* カテゴリタグ */}
                   <div className="flex flex-wrap gap-1 mb-3">
-                    {questionSet.categories.slice(0, 2).map((category) => (
+                    {questionSet.categories && Array.isArray(questionSet.categories) && questionSet.categories.slice(0, 2).map((category) => (
                       <span
                         key={category}
                         className="px-2 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-md text-xs font-medium"
@@ -359,7 +410,7 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
                         {category}
                       </span>
                     ))}
-                    {questionSet.categories.length > 2 && (
+                    {questionSet.categories && Array.isArray(questionSet.categories) && questionSet.categories.length > 2 && (
                       <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-md text-xs">
                         +{questionSet.categories.length - 2}
                       </span>
@@ -373,16 +424,28 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
                       <span className={`px-2 py-1 rounded-md text-xs font-medium ${
                         questionSet.type === 'ebook' 
                           ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
+                          : questionSet.type === 'pdf'
+                          ? 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
+                          : questionSet.type === 'video'
+                          ? 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200'
                           : 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200'
                       }`}>
-                        {questionSet.type === 'ebook' ? '📖 電子書籍' : '📝 クイズ'}
+                        {questionSet.type === 'ebook' ? '📖 電子書籍' : 
+                         questionSet.type === 'pdf' ? '📄 PDF文書' : 
+                         questionSet.type === 'video' ? '🎥 動画' : 
+                         '📝 クイズ'}
                       </span>
                     </div>
                     
                     <div className="flex justify-between items-center text-sm text-gray-500 dark:text-gray-400">
                       <span className="flex items-center gap-1">
-                        <span>{questionSet.type === 'ebook' ? '📄' : '📝'}</span>
-                        <span>{questionSet.type === 'ebook' ? 'ページ数' : `${questionSet.totalQuestions}問`}</span>
+                        <span>{questionSet.type === 'ebook' ? '📄' : 
+                               questionSet.type === 'pdf' ? '📄' : 
+                               questionSet.type === 'video' ? '🎥' : 
+                               '📝'}</span>
+                        <span>{questionSet.type === 'ebook' || questionSet.type === 'pdf' ? 'ページ数' : 
+                               questionSet.type === 'video' ? '動画時間' : 
+                               `${questionSet.totalQuestions}問`}</span>
                       </span>
                       <span className="flex items-center gap-1">
                         <span>⏱️</span>
