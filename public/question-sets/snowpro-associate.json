@@ -140,7 +140,7 @@
         "リアルタイムデータストリーミング機能"
       ],
       "correctAnswerIndex": 2,
-      "explanation": "Time Travelは、過去の特定時点でのデータ状態をクエリしたり復元したりできる機能です。Standard Editionでも利用可能で、保持期間は最大90日間です。"
+      "explanation": "Time Travelは、過去の特定時点でのデータ状態をクエリしたり復元したりできる機能です。Standard Editionでは1日間、Enterprise Edition以上では最大90日間の保持期間を設定できます。"
     },
     {
       "id": 11,

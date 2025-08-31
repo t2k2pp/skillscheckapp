@@ -283,41 +283,41 @@
     {
       "id": 22,
       "level": "中級",
-      "text": "左外部結合を表すキーワードはどれですか？",
+      "text": "左外部結合を表すキーワードとして不適切なものはどれですか？",
       "options": [
         "LEFT JOIN",
         "LEFT OUTER JOIN",
         "LEFT EXTERNAL JOIN",
         "LEFT SIDE JOIN"
       ],
-      "correctAnswerIndex": 1,
-      "explanation": "LEFT OUTER JOINは左外部結合を表し、左側テーブルのすべてのレコードと、右側テーブルの一致するレコードを結果に含めます。LEFT JOINとも書けます。"
+      "correctAnswerIndex": 2,
+      "explanation": "LEFT JOINとLEFT OUTER JOINは完全に同義で、どちらも左外部結合を表します。LEFT EXTERNAL JOINは存在しない構文です。"
     },
     {
       "id": 23,
       "level": "中級",
-      "text": "右外部結合を表すキーワードはどれですか？",
+      "text": "右外部結合を表すキーワードとして不適切なものはどれですか？",
       "options": [
         "RIGHT JOIN",
         "RIGHT OUTER JOIN",
         "RIGHT EXTERNAL JOIN",
         "RIGHT SIDE JOIN"
       ],
-      "correctAnswerIndex": 1,
-      "explanation": "RIGHT OUTER JOINは右外部結合を表し、右側テーブルのすべてのレコードと、左側テーブルの一致するレコードを結果に含めます。RIGHT JOINとも書けます。"
+      "correctAnswerIndex": 2,
+      "explanation": "RIGHT JOINとRIGHT OUTER JOINは完全に同義で、どちらも右外部結合を表します。RIGHT EXTERNAL JOINは存在しない構文です。"
     },
     {
       "id": 24,
       "level": "中級",
-      "text": "完全外部結合を表すキーワードはどれですか？",
+      "text": "完全外部結合を表すキーワードとして不適切なものはどれですか？",
       "options": [
         "FULL JOIN",
         "FULL OUTER JOIN",
         "COMPLETE JOIN",
         "ALL JOIN"
       ],
-      "correctAnswerIndex": 1,
-      "explanation": "FULL OUTER JOINは完全外部結合を表し、両方のテーブルのすべてのレコードを結果に含めます。一致しない場合はNULL値が設定されます。"
+      "correctAnswerIndex": 2,
+      "explanation": "FULL JOINとFULL OUTER JOINは完全に同義で、どちらも完全外部結合を表します。COMPLETE JOINは存在しない構文です。"
     },
     {
       "id": 25,
