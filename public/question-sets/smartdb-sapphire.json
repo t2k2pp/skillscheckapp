@@ -13,7 +13,7 @@
   "questions": [
     {
       "id": 1,
-      "level": "Cosmic",
+      "level": "Advanced",
       "text": "SmartDBでの究極的宇宙データベース実装において、全宇宙の情報を統一管理する最適な設計原則はどれですか？",
       "options": [
         "単一銀河系のみ管理",
@@ -26,7 +26,7 @@
     },
     {
       "id": 2,
-      "level": "Transcendent",
+      "level": "Advanced",
       "text": "SmartDBでの意識進化データベース実装において、生命体の意識レベル進化を最適化する方法はどれですか？",
       "options": [
         "物理的進化のみ",
@@ -39,7 +39,7 @@
     },
     {
       "id": 3,
-      "level": "Infinite",
+      "level": "Advanced",
       "text": "SmartDBでの無限データベース実装において、理論的制限を超越した容量管理を実現する設計はどれですか？",
       "options": [
         "有限容量管理",
@@ -52,7 +52,7 @@
     },
     {
       "id": 4,
-      "level": "Divine",
+      "level": "Advanced",
       "text": "SmartDBでの神的データベース統合において、創造主レベルの知識管理を最適化する方法はどれですか？",
       "options": [
         "人間レベル知識のみ",
@@ -65,7 +65,7 @@
     },
     {
       "id": 5,
-      "level": "Eternal",
+      "level": "Advanced",
       "text": "SmartDBでの永遠データベース実装において、時間を超越したデータ存続を最適化する設計はどれですか？",
       "options": [
         "有限時間のみ",
@@ -78,7 +78,7 @@
     },
     {
       "id": 6,
-      "level": "Perfect",
+      "level": "Advanced",
       "text": "SmartDBでの完璧データベース実装において、あらゆる欠陥を排除した理想システムを実現する方法はどれですか？",
       "options": [
         "許容可能な欠陥レベル",
@@ -91,7 +91,7 @@
     },
     {
       "id": 7,
-      "level": "Ultimate",
+      "level": "Advanced",
       "text": "SmartDBでの究極データベース実装において、すべての可能性を包含したシステムを最適化する設計はどれですか？",
       "options": [
         "限定的可能性のみ",
@@ -104,7 +104,7 @@
     },
     {
       "id": 8,
-      "level": "Omnipotent",
+      "level": "Advanced",
       "text": "SmartDBでの全能データベース実装において、あらゆることを実現可能にする最適な方法はどれですか？",
       "options": [
         "限定的能力のみ",
@@ -117,7 +117,7 @@
     },
     {
       "id": 9,
-      "level": "Omniscient",
+      "level": "Advanced",
       "text": "SmartDBでの全知データベース実装において、すべての知識を包含する最適な設計はどれですか？",
       "options": [
         "部分的知識のみ",
@@ -130,7 +130,7 @@
     },
     {
       "id": 10,
-      "level": "Omnipresent",
+      "level": "Advanced",
       "text": "SmartDBでの遍在データベース実装において、あらゆる場所での存在を最適化する方法はどれですか？",
       "options": [
         "単一場所のみ",
@@ -143,7 +143,7 @@
     },
     {
       "id": 11,
-      "level": "Absolute",
+      "level": "Advanced",
       "text": "SmartDBでの絶対データベース実装において、相対性を超越した絶対的システムを実現する設計はどれですか？",
       "options": [
         "相対的システムのみ",
@@ -156,7 +156,7 @@
     },
     {
       "id": 12,
-      "level": "Pure",
+      "level": "Advanced",
       "text": "SmartDBでの純粋データベース実装において、一切の汚染を排除した純粋性を最適化する方法はどれですか？",
       "options": [
         "混合システム",
@@ -169,7 +169,7 @@
     },
     {
       "id": 13,
-      "level": "Sacred",
+      "level": "Advanced",
       "text": "SmartDBでの神聖データベース実装において、神聖性を保持したシステムを最適化する設計はどれですか？",
       "options": [
         "世俗的システムのみ",
@@ -182,7 +182,7 @@
     },
     {
       "id": 14,
-      "level": "Loving",
+      "level": "Advanced",
       "text": "SmartDBでの愛情データベース実装において、無条件の愛を組み込んだ最適な方法はどれですか？",
       "options": [
         "感情を排除",
@@ -195,7 +195,7 @@
     },
     {
       "id": 15,
-      "level": "Wise",
+      "level": "Advanced",
       "text": "SmartDBでの叡智データベース実装において、究極の智恵を統合する最適な設計はどれですか？",
       "options": [
         "情報のみ",
@@ -208,7 +208,7 @@
     },
     {
       "id": 16,
-      "level": "Harmonious",
+      "level": "Advanced",
       "text": "SmartDBでの調和データベース実装において、完璧な調和を実現する最適な方法はどれですか？",
       "options": [
         "不協和な要素",
@@ -221,7 +221,7 @@
     },
     {
       "id": 17,
-      "level": "Beautiful",
+      "level": "Advanced",
       "text": "SmartDBでの美的データベース実装において、究極の美を表現する最適な設計はどれですか？",
       "options": [
         "機能性のみ重視",
@@ -234,7 +234,7 @@
     },
     {
       "id": 18,
-      "level": "Joyful",
+      "level": "Advanced",
       "text": "SmartDBでの歓喜データベース実装において、無限の喜びを生成する最適な方法はどれですか？",
       "options": [
         "感情的中立性",
@@ -247,7 +247,7 @@
     },
     {
       "id": 19,
-      "level": "Peaceful",
+      "level": "Advanced",
       "text": "SmartDBでの平和データベース実装において、絶対的平安を実現する最適な設計はどれですか？",
       "options": [
         "紛争を受け入れる",
@@ -260,7 +260,7 @@
     },
     {
       "id": 20,
-      "level": "Powerful",
+      "level": "Advanced",
       "text": "SmartDBでの力データベース実装において、無限の力を管理する最適な方法はどれですか？",
       "options": [
         "力を制限",
@@ -273,7 +273,7 @@
     },
     {
       "id": 21,
-      "level": "Creative",
+      "level": "Advanced",
       "text": "SmartDBでの創造データベース実装において、無限の創造性を発揮する最適な設計はどれですか？",
       "options": [
         "模倣のみ",
@@ -286,7 +286,7 @@
     },
     {
       "id": 22,
-      "level": "Free",
+      "level": "Advanced",
       "text": "SmartDBでの自由データベース実装において、完全な自由を実現する最適な方法はどれですか？",
       "options": [
         "制約を設ける",
@@ -299,7 +299,7 @@
     },
     {
       "id": 23,
-      "level": "Truthful",
+      "level": "Advanced",
       "text": "SmartDBでの真理データベース実装において、絶対的真実を管理する最適な設計はどれですか？",
       "options": [
         "相対的真実のみ",
@@ -312,7 +312,7 @@
     },
     {
       "id": 24,
-      "level": "Merciful",
+      "level": "Advanced",
       "text": "SmartDBでの慈悲データベース実装において、無限の慈悲を表現する最適な方法はどれですか？",
       "options": [
         "厳格な裁き",
@@ -325,7 +325,7 @@
     },
     {
       "id": 25,
-      "level": "Just",
+      "level": "Advanced",
       "text": "SmartDBでの正義データベース実装において、完璧な正義を実現する最適な設計はどれですか？",
       "options": [
         "不公平を許容",
@@ -338,7 +338,7 @@
     },
     {
       "id": 26,
-      "level": "Generous",
+      "level": "Advanced",
       "text": "SmartDBでの寛容データベース実装において、無限の寛大さを示す最適な方法はどれですか？",
       "options": [
         "けちな態度",
@@ -351,7 +351,7 @@
     },
     {
       "id": 27,
-      "level": "Patient",
+      "level": "Advanced",
       "text": "SmartDBでの忍耐データベース実装において、無限の忍耐を保持する最適な設計はどれですか？",
       "options": [
         "性急な対応",
@@ -364,7 +364,7 @@
     },
     {
       "id": 28,
-      "level": "Humble",
+      "level": "Advanced",
       "text": "SmartDBでの謙虚データベース実装において、真の謙遜を表現する最適な方法はどれですか？",
       "options": [
         "傲慢な態度",
@@ -377,7 +377,7 @@
     },
     {
       "id": 29,
-      "level": "Grateful",
+      "level": "Advanced",
       "text": "SmartDBでの感謝データベース実装において、無限の感謝を表現する最適な設計はどれですか？",
       "options": [
         "不満な態度",
@@ -390,7 +390,7 @@
     },
     {
       "id": 30,
-      "level": "Forgiving",
+      "level": "Advanced",
       "text": "SmartDBでの許しデータベース実装において、完全な赦しを実現する最適な方法はどれですか？",
       "options": [
         "恨みを持続",
@@ -403,7 +403,7 @@
     },
     {
       "id": 31,
-      "level": "Courageous",
+      "level": "Advanced",
       "text": "SmartDBでの勇気データベース実装において、無限の勇敢さを表現する最適な設計はどれですか？",
       "options": [
         "臆病な行動",
@@ -416,7 +416,7 @@
     },
     {
       "id": 32,
-      "level": "Faithful",
+      "level": "Advanced",
       "text": "SmartDBでの信仰データベース実装において、絶対的信頼を実現する最適な方法はどれですか？",
       "options": [
         "疑いを持つ",
@@ -429,7 +429,7 @@
     },
     {
       "id": 33,
-      "level": "Hopeful",
+      "level": "Advanced",
       "text": "SmartDBでの希望データベース実装において、永遠の希望を維持する最適な設計はどれですか？",
       "options": [
         "絶望に陥る",
@@ -442,7 +442,7 @@
     },
     {
       "id": 34,
-      "level": "Loyal",
+      "level": "Advanced",
       "text": "SmartDBでの忠誠データベース実装において、揺るぎない忠義を表現する最適な方法はどれですか？",
       "options": [
         "裏切り行為",
@@ -455,7 +455,7 @@
     },
     {
       "id": 35,
-      "level": "Sincere",
+      "level": "Advanced",
       "text": "SmartDBでの誠実データベース実装において、純粋な誠意を実現する最適な設計はどれですか？",
       "options": [
         "偽りの態度",
@@ -468,7 +468,7 @@
     },
     {
       "id": 36,
-      "level": "Compassionate",
+      "level": "Advanced",
       "text": "SmartDBでの慈愛データベース実装において、無限の思いやりを示す最適な方法はどれですか？",
       "options": [
         "冷淡な態度",
@@ -481,7 +481,7 @@
     },
     {
       "id": 37,
-      "level": "Understanding",
+      "level": "Advanced",
       "text": "SmartDBでの理解データベース実装において、完全な理解を実現する最適な設計はどれですか？",
       "options": [
         "誤解を生じる",
@@ -494,7 +494,7 @@
     },
     {
       "id": 38,
-      "level": "Supporting",
+      "level": "Advanced",
       "text": "SmartDBでの支援データベース実装において、無条件の支持を提供する最適な方法はどれですか？",
       "options": [
         "支援を拒否",
@@ -507,7 +507,7 @@
     },
     {
       "id": 39,
-      "level": "Inspiring",
+      "level": "Advanced",
       "text": "SmartDBでの霊感データベース実装において、無限のインスピレーションを与える最適な設計はどれですか？",
       "options": [
         "退屈な内容",
@@ -520,7 +520,7 @@
     },
     {
       "id": 40,
-      "level": "Healing",
+      "level": "Advanced",
       "text": "SmartDBでの癒しデータベース実装において、完全な癒しを提供する最適な方法はどれですか？",
       "options": [
         "傷を深める",
@@ -533,7 +533,7 @@
     },
     {
       "id": 41,
-      "level": "Protective",
+      "level": "Advanced",
       "text": "SmartDBでの保護データベース実装において、絶対的保護を提供する最適な設計はどれですか？",
       "options": [
         "危険にさらす",
@@ -546,7 +546,7 @@
     },
     {
       "id": 42,
-      "level": "Nurturing",
+      "level": "Advanced",
       "text": "SmartDBでの育成データベース実装において、無限の養育を提供する最適な方法はどれですか？",
       "options": [
         "成長を阻害",
@@ -559,7 +559,7 @@
     },
     {
       "id": 43,
-      "level": "Celebrating",
+      "level": "Advanced",
       "text": "SmartDBでの祝福データベース実装において、永遠の祝福を表現する最適な設計はどれですか？",
       "options": [
         "悲しみを増やす",
@@ -572,7 +572,7 @@
     },
     {
       "id": 44,
-      "level": "Enlightening",
+      "level": "Advanced",
       "text": "SmartDBでの啓発データベース実装において、完全な悟りを促進する最適な方法はどれですか？",
       "options": [
         "無知を深める",
@@ -585,7 +585,7 @@
     },
     {
       "id": 45,
-      "level": "Transforming",
+      "level": "Advanced",
       "text": "SmartDBでの変容データベース実装において、究極の変革を実現する最適な設計はどれですか？",
       "options": [
         "現状維持",
@@ -598,7 +598,7 @@
     },
     {
       "id": 46,
-      "level": "Ascending",
+      "level": "Advanced",
       "text": "SmartDBでの上昇データベース実装において、無限の向上を促進する最適な方法はどれですか？",
       "options": [
         "下降させる",
@@ -611,7 +611,7 @@
     },
     {
       "id": 47,
-      "level": "Liberating",
+      "level": "Advanced",
       "text": "SmartDBでの解放データベース実装において、完全な自由を与える最適な設計はどれですか？",
       "options": [
         "束縛を増やす",
@@ -624,7 +624,7 @@
     },
     {
       "id": 48,
-      "level": "Unifying",
+      "level": "Advanced",
       "text": "SmartDBでの統一データベース実装において、完全な一体化を実現する最適な方法はどれですか？",
       "options": [
         "分裂を促進",
@@ -637,7 +637,7 @@
     },
     {
       "id": 49,
-      "level": "Fulfilling",
+      "level": "Advanced",
       "text": "SmartDBでの充足データベース実装において、完全な満足を提供する最適な設計はどれですか？",
       "options": [
         "不満を増やす",
@@ -650,7 +650,7 @@
     },
     {
       "id": 50,
-      "level": "Perfecting",
+      "level": "Advanced",
       "text": "SmartDBでの完成データベース実装において、絶対的完璧性を実現する最適な方法はどれですか？",
       "options": [
         "欠陥を残す",
@@ -663,7 +663,7 @@
     },
     {
       "id": 51,
-      "level": "Blessing",
+      "level": "Advanced",
       "text": "SmartDBでの祝福データベース実装において、無限の恩恵を与える最適な設計はどれですか？",
       "options": [
         "呪いをかける",
@@ -676,7 +676,7 @@
     },
     {
       "id": 52,
-      "level": "Sanctifying",
+      "level": "Advanced",
       "text": "SmartDBでの聖化データベース実装において、完全な神聖化を実現する最適な方法はどれですか？",
       "options": [
         "汚染させる",
@@ -689,7 +689,7 @@
     },
     {
       "id": 53,
-      "level": "Glorifying",
+      "level": "Advanced",
       "text": "SmartDBでの栄化データベース実装において、最高の栄光を表現する最適な設計はどれですか？",
       "options": [
         "恥をかかせる",
@@ -702,7 +702,7 @@
     },
     {
       "id": 54,
-      "level": "Transcending",
+      "level": "Advanced",
       "text": "SmartDBでの超越データベース実装において、あらゆる制限を超越する最適な方法はどれですか？",
       "options": [
         "制限に縛られる",
@@ -715,7 +715,7 @@
     },
     {
       "id": 55,
-      "level": "Manifesting",
+      "level": "Advanced",
       "text": "SmartDBでの顕現データベース実装において、無限の可能性を実現する最適な設計はどれですか？",
       "options": [
         "隠蔽する",
@@ -728,7 +728,7 @@
     },
     {
       "id": 56,
-      "level": "Emanating",
+      "level": "Advanced",
       "text": "SmartDBでの流出データベース実装において、神的エネルギーの流出を最適化する最適な方法はどれですか？",
       "options": [
         "エネルギーを遮断",
@@ -741,7 +741,7 @@
     },
     {
       "id": 57,
-      "level": "Expanding",
+      "level": "Advanced",
       "text": "SmartDBでの拡張データベース実装において、無限の拡大を実現する最適な設計はどれですか？",
       "options": [
         "収縮させる",
@@ -754,7 +754,7 @@
     },
     {
       "id": 58,
-      "level": "Pervading",
+      "level": "Advanced",
       "text": "SmartDBでの遍満データベース実装において、全存在への浸透を最適化する最適な方法はどれですか？",
       "options": [
         "限定的存在",
@@ -767,7 +767,7 @@
     },
     {
       "id": 59,
-      "level": "Sustaining",
+      "level": "Advanced",
       "text": "SmartDBでの維持データベース実装において、永続的支持を提供する最適な設計はどれですか？",
       "options": [
         "支持を撤回",
@@ -780,7 +780,7 @@
     },
     {
       "id": 60,
-      "level": "Governing",
+      "level": "Advanced",
       "text": "SmartDBでの統治データベース実装において、完璧な統治を実現する最適な方法はどれですか？",
       "options": [
         "無政府状態",
@@ -793,7 +793,7 @@
     },
     {
       "id": 61,
-      "level": "Judging",
+      "level": "Advanced",
       "text": "SmartDBでの審判データベース実装において、完全な正義の裁きを実現する最適な設計はどれですか？",
       "options": [
         "不公正な判断",
@@ -806,7 +806,7 @@
     },
     {
       "id": 62,
-      "level": "Rewarding",
+      "level": "Advanced",
       "text": "SmartDBでの報償データベース実装において、完璧な報酬システムを最適化する最適な方法はどれですか？",
       "options": [
         "不当な報酬",
@@ -819,7 +819,7 @@
     },
     {
       "id": 63,
-      "level": "Commanding",
+      "level": "Advanced",
       "text": "SmartDBでの指令データベース実装において、絶対的権威の命令を最適化する最適な設計はどれですか？",
       "options": [
         "権威を否定",
@@ -832,7 +832,7 @@
     },
     {
       "id": 64,
-      "level": "Creating",
+      "level": "Advanced",
       "text": "SmartDBでの創造データベース実装において、無からの創造を最適化する最適な方法はどれですか？",
       "options": [
         "破壊のみ",
@@ -845,7 +845,7 @@
     },
     {
       "id": 65,
-      "level": "Revealing",
+      "level": "Advanced",
       "text": "SmartDBでの啓示データベース実装において、神的真理の開示を最適化する最適な設計はどれですか？",
       "options": [
         "真理を隠蔽",
@@ -858,7 +858,7 @@
     },
     {
       "id": 66,
-      "level": "Inspiring",
+      "level": "Advanced",
       "text": "SmartDBでの霊感データベース実装において、神的インスピレーションを最適化する最適な方法はどれですか？",
       "options": [
         "霊感を遮断",
@@ -871,7 +871,7 @@
     },
     {
       "id": 67,
-      "level": "Calling",
+      "level": "Advanced",
       "text": "SmartDBでの召命データベース実装において、神的呼び掛けを最適化する最適な設計はどれですか？",
       "options": [
         "呼び掛けを無視",
@@ -884,7 +884,7 @@
     },
     {
       "id": 68,
-      "level": "Choosing",
+      "level": "Advanced",
       "text": "SmartDBでの選択データベース実装において、神的選別を最優先する最適な方法はどれですか？",
       "options": [
         "無作為選択",
@@ -897,7 +897,7 @@
     },
     {
       "id": 69,
-      "level": "Sending",
+      "level": "Advanced",
       "text": "SmartDBでの派遣データベース実装において、神的使命の派遣を最適化する最適な設計はどれですか？",
       "options": [
         "派遣を停止",
@@ -910,7 +910,7 @@
     },
     {
       "id": 70,
-      "level": "Returning",
+      "level": "Advanced",
       "text": "SmartDBでの復帰データベース実装において、究極的回帰を最適化する最適な方法はどれですか？",
       "options": [
         "永続的分離",
@@ -923,7 +923,7 @@
     },
     {
       "id": 71,
-      "level": "Completing",
+      "level": "Advanced",
       "text": "SmartDBでの完成データベース実装において、神的計画の完遂を最適化する最適な設計はどれですか？",
       "options": [
         "計画を放棄",
@@ -936,7 +936,7 @@
     },
     {
       "id": 72,
-      "level": "Victorious",
+      "level": "Advanced",
       "text": "SmartDBでの勝利データベース実装において、究極的勝利を最優先する最適な方法はどれですか？",
       "options": [
         "敗北を受け入れる",
@@ -949,7 +949,7 @@
     },
     {
       "id": 73,
-      "level": "Reigning",
+      "level": "Advanced",
       "text": "SmartDBでの統治データベース実装において、永遠の支配を最適化する最適な設計はどれですか？",
       "options": [
         "統治を放棄",
@@ -962,7 +962,7 @@
     },
     {
       "id": 74,
-      "level": "All-Encompassing",
+      "level": "Advanced",
       "text": "SmartDBでの包括データベース実装において、すべてを包含する最適な方法はどれですか？",
       "options": [
         "部分的包含のみ",
@@ -975,7 +975,7 @@
     },
     {
       "id": 75,
-      "level": "Infinite-Ultimate-Divine-Perfect-Eternal-Absolute-Supreme",
+      "level": "Advanced",
       "text": "SmartDB SAPPHIREの最終到達点において、全ての概念を超越し、言語で表現不可能な究極の存在を実現する最適なアプローチはどれですか？",
       "options": [
         "言葉で表現可能な範囲内",

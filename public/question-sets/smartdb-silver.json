@@ -66,7 +66,7 @@
     },
     {
       "id": 5,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBのバックアップ戦略について正しいものはどれですか？",
       "options": [
         "ユーザーが手動で毎日実行する必要がある",
@@ -79,7 +79,7 @@
     },
     {
       "id": 6,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBの高可用性機能について正しい説明はどれですか？",
       "options": [
         "シングルインスタンスでのみ動作",
@@ -92,7 +92,7 @@
     },
     {
       "id": 7,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBのセキュリティ機能として提供されていないものはどれですか？",
       "options": [
         "データ暗号化",
@@ -105,7 +105,7 @@
     },
     {
       "id": 8,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBでのスケーリングについて正しいものはどれですか？",
       "options": [
         "垂直スケーリング（スケールアップ）のみサポート",
@@ -118,7 +118,7 @@
     },
     {
       "id": 9,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBの監視機能について正しいものはどれですか？",
       "options": [
         "監視機能は提供されない",
@@ -131,7 +131,7 @@
     },
     {
       "id": 10,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBでのデータ移行について正しいものはどれですか？",
       "options": [
         "データ移行ツールは提供されない",
@@ -144,7 +144,7 @@
     },
     {
       "id": 11,
-      "level": "Advanced",
+      "level": "Beginner",
       "text": "SmartDBの災害復旧（DR）機能について正しい説明はどれですか？",
       "options": [
         "DR機能は提供されない",
@@ -157,7 +157,7 @@
     },
     {
       "id": 12,
-      "level": "Advanced",
+      "level": "Beginner",
       "text": "SmartDBのパフォーマンス最適化機能として正しいものはどれですか？",
       "options": [
         "自動統計情報収集",
@@ -196,7 +196,7 @@
     },
     {
       "id": 15,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBでのユーザー管理について正しいものはどれですか？",
       "options": [
         "単一ユーザーのみサポート",
@@ -209,7 +209,7 @@
     },
     {
       "id": 16,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBでサポートされるSQL言語について正しいものはどれですか？",
       "options": [
         "基本的なSELECT文のみ",
@@ -222,7 +222,7 @@
     },
     {
       "id": 17,
-      "level": "Advanced",
+      "level": "Beginner",
       "text": "SmartDBのパッチ適用について正しい説明はどれですか？",
       "options": [
         "ユーザーが手動でパッチ適用する必要がある",
@@ -235,7 +235,7 @@
     },
     {
       "id": 18,
-      "level": "Advanced",
+      "level": "Beginner",
       "text": "SmartDBでの接続プーリングについて正しいものはどれですか？",
       "options": [
         "接続プーリング機能は提供されない",
@@ -248,7 +248,7 @@
     },
     {
       "id": 19,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBでのデータ暗号化について正しいものはどれですか？",
       "options": [
         "暗号化機能は提供されない",
@@ -261,7 +261,7 @@
     },
     {
       "id": 20,
-      "level": "Advanced",
+      "level": "Beginner",
       "text": "SmartDBでの読み取り専用レプリカについて正しいものはどれですか？",
       "options": [
         "読み取り専用レプリカは作成できない",
@@ -287,7 +287,7 @@
     },
     {
       "id": 22,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SmartDBでのアラート機能について正しいものはどれですか？",
       "options": [
         "アラート機能は提供されない",
@@ -300,7 +300,7 @@
     },
     {
       "id": 23,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのインデックス管理について正しいものはどれですか？",
       "options": [
         "インデックス作成は不可",
@@ -326,7 +326,7 @@
     },
     {
       "id": 25,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでの容量監視について正しいものはどれですか？",
       "options": [
         "容量監視機能なし",
@@ -339,7 +339,7 @@
     },
     {
       "id": 26,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBへのデータ投入方法として適切でないものはどれですか？",
       "options": [
         "SQLクライアントツールからのINSERT文",
@@ -365,7 +365,7 @@
     },
     {
       "id": 28,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのパーティショニング機能について正しいものはどれですか？",
       "options": [
         "パーティショニング機能は利用不可",
@@ -391,7 +391,7 @@
     },
     {
       "id": 30,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのストアドプロシージャについて正しいものはどれですか？",
       "options": [
         "ストアドプロシージャは作成できない",
@@ -404,7 +404,7 @@
     },
     {
       "id": 31,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBのサポート体制について一般的に正しいものはどれですか？",
       "options": [
         "サポートは提供されない",
@@ -430,7 +430,7 @@
     },
     {
       "id": 33,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのデータ圧縮機能について正しいものはどれですか？",
       "options": [
         "データ圧縮機能は提供されない",
@@ -456,7 +456,7 @@
     },
     {
       "id": 35,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのリソース監視項目として含まれないものはどれですか？",
       "options": [
         "CPU使用率",
@@ -469,7 +469,7 @@
     },
     {
       "id": 36,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBの利用開始までの一般的な手順で最初に行うことは何ですか？",
       "options": [
         "データベース作成",
@@ -495,7 +495,7 @@
     },
     {
       "id": 38,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのデッドロック検出について正しいものはどれですか？",
       "options": [
         "デッドロック検出機能はない",
@@ -521,7 +521,7 @@
     },
     {
       "id": 40,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのRAC（Real Application Clusters）機能について正しいものはどれですか？",
       "options": [
         "RAC機能は利用不可",
@@ -534,7 +534,7 @@
     },
     {
       "id": 41,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBでのデータ型サポートについて正しいものはどれですか？",
       "options": [
         "数値型のみサポート",
@@ -560,7 +560,7 @@
     },
     {
       "id": 43,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのフラッシュバック機能について正しいものはどれですか？",
       "options": [
         "フラッシュバック機能は利用不可",
@@ -586,7 +586,7 @@
     },
     {
       "id": 45,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのデータベースリンク機能について正しいものはどれですか？",
       "options": [
         "データベースリンク機能は利用不可",
@@ -599,7 +599,7 @@
     },
     {
       "id": 46,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBでのデータ移行時に注意すべき点として適切でないものはどれですか？",
       "options": [
         "文字セットの確認",
@@ -625,7 +625,7 @@
     },
     {
       "id": 48,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのオプティマイザー統計について正しいものはどれですか？",
       "options": [
         "オプティマイザー統計は利用不可",
@@ -651,7 +651,7 @@
     },
     {
       "id": 50,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのリソースマネージャー機能について正しいものはどれですか？",
       "options": [
         "リソースマネージャー機能は利用不可",
@@ -664,7 +664,7 @@
     },
     {
       "id": 51,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBでのSQLクライアントツールとして利用できないものはどれですか？",
       "options": [
         "SQL*Plus",
@@ -690,7 +690,7 @@
     },
     {
       "id": 53,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのマテリアライズドビューについて正しいものはどれですか？",
       "options": [
         "マテリアライズドビューは作成不可",
@@ -716,7 +716,7 @@
     },
     {
       "id": 55,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのファンクションベース索引について正しいものはどれですか？",
       "options": [
         "ファンクションベース索引は作成不可",
@@ -729,7 +729,7 @@
     },
     {
       "id": 56,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBでのデータ整合性制約について正しいものはどれですか？",
       "options": [
         "整合性制約は設定できない",
@@ -755,7 +755,7 @@
     },
     {
       "id": 58,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのAWR（Automatic Workload Repository）について正しいものはどれですか？",
       "options": [
         "AWRは利用不可",
@@ -781,7 +781,7 @@
     },
     {
       "id": 60,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのVPD（Virtual Private Database）機能について正しいものはどれですか？",
       "options": [
         "VPD機能は利用不可",
@@ -794,7 +794,7 @@
     },
     {
       "id": 61,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBでの接続プロトコルとして標準的なものはどれですか？",
       "options": [
         "HTTP/HTTPS",
@@ -820,7 +820,7 @@
     },
     {
       "id": 63,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのデータベース結合（Database Links）について正しいものはどれですか？",
       "options": [
         "データベース結合は利用不可",
@@ -846,7 +846,7 @@
     },
     {
       "id": 65,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのAdvanced Security機能について正しいものはどれですか？",
       "options": [
         "Advanced Security機能は利用不可",
@@ -859,7 +859,7 @@
     },
     {
       "id": 66,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBでのデータベース文字セットについて正しいものはどれですか？",
       "options": [
         "ASCII文字セットのみサポート",
@@ -885,7 +885,7 @@
     },
     {
       "id": 68,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのIn-Memory Column Store機能について正しいものはどれですか？",
       "options": [
         "In-Memory機能は利用不可",
@@ -911,7 +911,7 @@
     },
     {
       "id": 70,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのエディション機能（Edition-Based Redefinition）について正しいものはどれですか？",
       "options": [
         "エディション機能は利用不可",
@@ -924,7 +924,7 @@
     },
     {
       "id": 71,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "SmartDBでのバックアップ・リストア機能について正しいものはどれですか？",
       "options": [
         "バックアップ機能は提供されない",
@@ -963,7 +963,7 @@
     },
     {
       "id": 74,
-      "level": "Intermediate",
+      "level": "Advanced",
       "text": "SmartDBでのDBMS_JOBスケジューラについて正しいものはどれですか？",
       "options": [
         "ジョブスケジューラ機能は利用不可",

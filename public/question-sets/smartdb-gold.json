@@ -26,7 +26,7 @@
     },
     {
       "id": 2,
-      "level": "Expert",
+      "level": "Beginner",
       "text": "SmartDBでパーティション表の性能を最適化する際、最も効果的なパーティション戦略はどれですか？",
       "options": [
         "Range Partitioning のみ",
@@ -39,7 +39,7 @@
     },
     {
       "id": 3,
-      "level": "Advanced",
+      "level": "Beginner",
       "text": "SmartDBのExadata環境でStorage Indexを最大限活用するための設計原則として正しいものはどれですか？",
       "options": [
         "全てのテーブルにStorage Indexを適用",
@@ -52,7 +52,7 @@
     },
     {
       "id": 4,
-      "level": "Expert",
+      "level": "Beginner",
       "text": "SmartDBでのマルチテナント環境において、Container Database（CDB）とPluggable Database（PDB）のリソース管理で正しい設定方法はどれですか？",
       "options": [
         "CDBレベルでのリソース制限のみ",
@@ -65,7 +65,7 @@
     },
     {
       "id": 5,
-      "level": "Advanced",
+      "level": "Beginner",
       "text": "SmartDBでのApplication Continuity（AC）を実装する際の重要な考慮事項はどれですか？",
       "options": [
         "全てのアプリケーションで自動的に有効",
@@ -78,7 +78,7 @@
     },
     {
       "id": 6,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBのIn-Memory Database機能で、コンプレッション率と検索性能のバランスを取る最適な設定はどれですか？",
       "options": [
         "FOR QUERY LOWコンプレッション",
@@ -91,7 +91,7 @@
     },
     {
       "id": 7,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのPartition Wise JoinでCPUリソースを最大限活用するための設計で正しいものはどれですか？",
       "options": [
         "パーティション数は2の倍数に制限",
@@ -104,7 +104,7 @@
     },
     {
       "id": 8,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでReal-Time SQL Monitoringの結果を自動化スクリプトで活用する場合、最も効果的な方法はどれですか？",
       "options": [
         "V$SQL_MONITORビューの定期的なスナップショット",
@@ -117,7 +117,7 @@
     },
     {
       "id": 9,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBのAdvanced Security Option（ASO）でTDE（Transparent Data Encryption）を実装する際の性能影響を最小化する方法はどれですか？",
       "options": [
         "全てのテーブルスペースを暗号化",
@@ -130,7 +130,7 @@
     },
     {
       "id": 10,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのシャーディング環境において、グローバルトランザクションの整合性を保証する最適な方法はどれですか？",
       "options": [
         "2-Phase Commitプロトコル",
@@ -143,7 +143,7 @@
     },
     {
       "id": 11,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBのExadata Smart Scanを最大限活用するSQLの書き方として正しいものはどれですか？",
       "options": [
         "複雑なJOINを避けてシンプルなクエリを書く",
@@ -156,7 +156,7 @@
     },
     {
       "id": 12,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのData Guard環境において、Logical Standbyの利用が適している場面はどれですか？",
       "options": [
         "完全にReadOnlyなレポート環境",
@@ -169,7 +169,7 @@
     },
     {
       "id": 13,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでHybrid Columnar Compression（HCC）を使用する際、最適な圧縮レベルの選択基準はどれですか？",
       "options": [
         "常に最高レベルのARCHIVE HIGHを使用",
@@ -182,7 +182,7 @@
     },
     {
       "id": 14,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのSQL Plan Managementにおいて、既存のSQL実行計画の性能劣化を防ぐ最適なアプローチはどれですか？",
       "options": [
         "全てのSQL文に対して計画固定",
@@ -195,7 +195,7 @@
     },
     {
       "id": 15,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBの統計情報の自動収集で、大規模テーブルの統計精度と収集時間のバランスを取る設定はどれですか？",
       "options": [
         "ESTIMATE_PERCENT を AUTO に設定",
@@ -208,7 +208,7 @@
     },
     {
       "id": 16,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのConnection Pooling環境において、接続リークを防止する最適な設定はどれですか？",
       "options": [
         "Connection Timeout の無効化",
@@ -221,7 +221,7 @@
     },
     {
       "id": 17,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのContinuous Query Notification（CQN）を活用する際の設計上の注意点はどれですか？",
       "options": [
         "全てのテーブルに対してCQNを有効化",
@@ -234,7 +234,7 @@
     },
     {
       "id": 18,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのFlashback Technology使用時、大量のDMLが発生する環境での適切なUndo管理方法はどれですか？",
       "options": [
         "Undo Retention を無制限に設定",
@@ -247,7 +247,7 @@
     },
     {
       "id": 19,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのResult Cache機能を効果的に活用するクエリの特徴として正しいものはどれですか？",
       "options": [
         "頻繁に更新されるテーブルを対象とするクエリ",
@@ -260,7 +260,7 @@
     },
     {
       "id": 20,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのSecure External Password Store使用時のセキュリティ強化策として最適なものはどれですか？",
       "options": [
         "パスワードストアファイルのパーミッション管理",
@@ -273,7 +273,7 @@
     },
     {
       "id": 21,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのAdvanced Queuing（AQ）において、メッセージ処理の高可用性を実現する方法はどれですか？",
       "options": [
         "単一のQueueで全メッセージを処理",
@@ -286,7 +286,7 @@
     },
     {
       "id": 22,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのオンライン操作（Online Operations）において、インデックスの再作成時にロック競合を最小化する方法はどれですか？",
       "options": [
         "CREATE INDEX ONLINE の使用",
@@ -299,7 +299,7 @@
     },
     {
       "id": 23,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのDatabase Links使用時、リモートデータベースとの接続障害に対する適切な対処方法はどれですか？",
       "options": [
         "接続タイムアウトを無制限に設定",
@@ -312,7 +312,7 @@
     },
     {
       "id": 24,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのWorkload Repository（AWR）データの長期保管戦略として最適なものはどれですか？",
       "options": [
         "全AWRデータの永続保管",
@@ -325,7 +325,7 @@
     },
     {
       "id": 25,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのOracle Text索引の最適化において、大量のドキュメント更新がある環境での推奨設定はどれですか？",
       "options": [
         "リアルタイムでの索引更新",
@@ -338,7 +338,7 @@
     },
     {
       "id": 26,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのVirtual Private Database（VPD）実装時、動的ポリシーの性能影響を最小化する方法はどれですか？",
       "options": [
         "全テーブルに同一ポリシーを適用",
@@ -351,7 +351,7 @@
     },
     {
       "id": 27,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのData Pump使用時、大容量データの効率的なエクスポート/インポートを実現する設定はどれですか？",
       "options": [
         "PARALLEL=1 で安定性重視",
@@ -364,7 +364,7 @@
     },
     {
       "id": 28,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのEdition-Based Redefinition使用時、アプリケーションの無停止アップグレードで重要な考慮事項はどれですか？",
       "options": [
         "全てのオブジェクトを一度に移行",
@@ -377,7 +377,7 @@
     },
     {
       "id": 29,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのOracle Database Firewall統合時の最適なセキュリティポリシー設計原則はどれですか？",
       "options": [
         "全SQLステートメントの許可",
@@ -390,7 +390,7 @@
     },
     {
       "id": 30,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのGlobal Data Services（GDS）を使用したサービス指向アーキテクチャにおいて、データ局所性を最適化する方法はどれですか？",
       "options": [
         "全サービスを同一リージョンに配置",
@@ -403,7 +403,7 @@
     },
     {
       "id": 31,
-      "level": "Advanced",
+      "level": "Intermediate",
       "text": "SmartDBでのIn-Memory Column Store使用時、ハイブリッドワークロード（OLTP+OLAP）の最適化方法はどれですか？",
       "options": [
         "全テーブルをIn-Memory化",
@@ -416,7 +416,7 @@
     },
     {
       "id": 32,
-      "level": "Expert",
+      "level": "Intermediate",
       "text": "SmartDBでのActive Session History（ASH）データ分析において、パフォーマンス問題の根本原因特定に最も効果的な手法はどれですか？",
       "options": [
         "Wait Event の頻度分析のみ",
@@ -442,7 +442,7 @@
     },
     {
       "id": 34,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのDatabase Resource Manager使用時、コンテナ環境での適切なリソース配分戦略はどれですか？",
       "options": [
         "全PDBに均等なリソース配分",
@@ -468,7 +468,7 @@
     },
     {
       "id": 36,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Compression使用時、更新頻度の高いテーブルでの最適な圧縮戦略はどれですか？",
       "options": [
         "最高レベルの圧縮を常に適用",
@@ -494,7 +494,7 @@
     },
     {
       "id": 38,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのExadata Smart Flash Cache活用時、I/Oパフォーマンスを最大化するアプリケーション設計のポイントはどれですか？",
       "options": [
         "大量のランダムI/Oを生成",
@@ -520,7 +520,7 @@
     },
     {
       "id": 40,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Security使用時、監査ログの効率的な管理戦略として最適なものはどれですか？",
       "options": [
         "全操作の詳細監査ログ保存",
@@ -546,7 +546,7 @@
     },
     {
       "id": 42,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのマルチマスターレプリケーション環境において、データコンフリクト解決の最適な戦略はどれですか？",
       "options": [
         "タイムスタンプベースの自動解決のみ",
@@ -572,7 +572,7 @@
     },
     {
       "id": 44,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのApplication Express（APEX）高負荷環境での性能最適化において最も重要な要素はどれですか？",
       "options": [
         "APEXバージョンのアップグレードのみ",
@@ -598,7 +598,7 @@
     },
     {
       "id": 46,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのOracle Machine Learning使用時、インメモリデータベースとの連携で最高の学習性能を実現する方法はどれですか？",
       "options": [
         "全データをディスクから読み込み",
@@ -624,7 +624,7 @@
     },
     {
       "id": 48,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのJSON Document Store使用時、リレーショナルデータとの効率的な統合方法はどれですか？",
       "options": [
         "JSONデータとリレーショナルデータを完全分離",
@@ -650,7 +650,7 @@
     },
     {
       "id": 50,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのOracle REST Data Services（ORDS）使用時、RESTAPIの高性能化に最も効果的な手法はどれですか？",
       "options": [
         "全APIでデータベース接続を新規作成",
@@ -676,7 +676,7 @@
     },
     {
       "id": 52,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのPivot/Unpivot操作において、大量データでの効率的な処理を実現する方法はどれですか？",
       "options": [
         "メモリ内での全データ処理",
@@ -702,7 +702,7 @@
     },
     {
       "id": 54,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Analytics使用時、統計関数とウィンドウ関数を効率的に活用するクエリ設計のポイントはどれですか？",
       "options": [
         "全ての分析をアプリケーション層で実行",
@@ -728,7 +728,7 @@
     },
     {
       "id": 56,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのOracle Label Security使用時、多階層セキュリティレベルでのデータアクセス制御の最適化方法はどれですか？",
       "options": [
         "全データに最高機密レベルを設定",
@@ -754,7 +754,7 @@
     },
     {
       "id": 58,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Replication使用時、ネットワーク帯域制限がある環境での最適化方法はどれですか？",
       "options": [
         "レプリケーションを無効化",
@@ -780,7 +780,7 @@
     },
     {
       "id": 60,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのOracle Big Data統合において、Hadoop/Sparkクラスターとの効率的なデータ交換を実現する方法はどれですか？",
       "options": [
         "全データをOracleデータベースに集約",
@@ -806,7 +806,7 @@
     },
     {
       "id": 62,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのOracle Database Gateway使用時、異種データベース間でのトランザクション整合性を保証する方法はどれですか？",
       "options": [
         "各データベースで独立したトランザクション",
@@ -832,7 +832,7 @@
     },
     {
       "id": 64,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのData Warehousing環境において、星型スキーマのクエリ性能を最大化する最適化手法はどれですか？",
       "options": [
         "正規化による完全な関係モデル",
@@ -858,7 +858,7 @@
     },
     {
       "id": 66,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのOracle XML DB使用時、大量XMLドキュメントでの検索性能最適化方法はどれですか？",
       "options": [
         "全XMLデータをテキスト検索",
@@ -884,7 +884,7 @@
     },
     {
       "id": 68,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのWorkload-based Automatic SQL Tuning使用時、チューニング効果を最大化する設定はどれですか？",
       "options": [
         "全SQLステートメントに対して実行",
@@ -910,7 +910,7 @@
     },
     {
       "id": 70,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのOracle Fusion Middleware統合時、WebLogic Serverとの効率的な連携を実現する方法はどれですか？",
       "options": [
         "直接JDBC接続のみ使用",
@@ -936,7 +936,7 @@
     },
     {
       "id": 72,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのマイクロサービス環境において、データベースごとの独立性とデータ整合性を両立する方法はどれですか？",
       "options": [
         "単一の共有データベース使用",
@@ -962,7 +962,7 @@
     },
     {
       "id": 74,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAI/ML統合環境において、大規模データセットでのモデルトレーニング最適化の最重要ポイントはどれですか？",
       "options": [
         "全データをメモリに展開",
@@ -975,7 +975,7 @@
     },
     {
       "id": 75,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでの未来志向の設計において、量子コンピューティング耐性を持つ暗号化への移行準備として重要なものはどれですか？",
       "options": [
         "現在の暗号化方式の継続使用",

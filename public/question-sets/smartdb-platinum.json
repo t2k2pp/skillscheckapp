@@ -13,7 +13,7 @@
   "questions": [
     {
       "id": 1,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのエクサスケール環境（10,000+ concurrent users）において、最適なアーキテクチャ戦略はどれですか？",
       "options": [
         "単一の巨大インスタンス",
@@ -26,7 +26,7 @@
     },
     {
       "id": 2,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのMulti-Cloud Hybrid環境において、データ主権（Data Sovereignty）を確保しながらグローバル展開する設計原則はどれですか？",
       "options": [
         "全データを単一クラウドに集約",
@@ -39,7 +39,7 @@
     },
     {
       "id": 3,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでの量子暗号化時代への準備として、暗号アジリティ（Crypto-Agility）を実現する最適な設計はどれですか？",
       "options": [
         "現在の暗号方式に依存した設計",
@@ -52,7 +52,7 @@
     },
     {
       "id": 4,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのDigital Twin環境において、リアルタイムデータストリームと時系列分析を統合する最適なアーキテクチャはどれですか？",
       "options": [
         "バッチ処理による定期更新",
@@ -65,7 +65,7 @@
     },
     {
       "id": 5,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのZero-Trust Security Model実装において、データベースレベルでの包括的なセキュリティ統合方法はどれですか？",
       "options": [
         "ネットワークセキュリティのみ依存",
@@ -78,7 +78,7 @@
     },
     {
       "id": 6,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのEdge Computing統合において、中央データベースとエッジデバイスの最適な同期戦略はどれですか？",
       "options": [
         "常時完全同期",
@@ -91,7 +91,7 @@
     },
     {
       "id": 7,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでの大規模AIワークロード統合において、GPU加速データベース処理の最適化方法はどれですか？",
       "options": [
         "CPU処理のみ使用",
@@ -104,7 +104,7 @@
     },
     {
       "id": 8,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのServerless Architecture統合において、動的スケーリングとコスト最適化を両立する設計はどれですか？",
       "options": [
         "固定リソース配分",
@@ -117,7 +117,7 @@
     },
     {
       "id": 9,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのDataOps実装において、データパイプラインの自動化と品質保証を統合する最適な方法はどれですか？",
       "options": [
         "手動でのデータ管理",
@@ -130,7 +130,7 @@
     },
     {
       "id": 10,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのQuantum-Safe暗号化移行において、既存システムとの互換性を保ちながら段階的移行を実現する方法はどれですか？",
       "options": [
         "一括での暗号化方式変更",
@@ -143,7 +143,7 @@
     },
     {
       "id": 11,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのData Mesh Architecture実装において、分散データオーナーシップと中央ガバナンスを両立する設計原則はどれですか？",
       "options": [
         "完全な中央集権管理",
@@ -156,7 +156,7 @@
     },
     {
       "id": 12,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのNear Real-time Analytics環境において、ストリーミングデータとバッチデータの統合分析を最適化する方法はどれですか？",
       "options": [
         "ストリーミング処理のみ",
@@ -169,7 +169,7 @@
     },
     {
       "id": 13,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのMulti-tenant SaaS環境において、テナント間の完全分離とリソース効率を最適化する設計はどれですか？",
       "options": [
         "テナントごとに個別データベース",
@@ -182,7 +182,7 @@
     },
     {
       "id": 14,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのChaos Engineering実装において、データベース層の障害耐性を継続的に検証する方法はどれですか？",
       "options": [
         "障害テストを行わない",
@@ -195,7 +195,7 @@
     },
     {
       "id": 15,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのGreen IT実装において、データベース環境のカーボンニュートラル化を実現する最適な戦略はどれですか？",
       "options": [
         "現在のリソース使用量維持",
@@ -208,7 +208,7 @@
     },
     {
       "id": 16,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでの大規模Blockchain統合において、分散台帳とデータベースの整合性を保証する設計原則はどれですか？",
       "options": [
         "Blockchain機能を使用しない",
@@ -221,7 +221,7 @@
     },
     {
       "id": 17,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Analytics統合において、リアルタイムML推論とオンライン学習を同時最適化する方法はどれですか？",
       "options": [
         "オフラインでの学習のみ",
@@ -234,7 +234,7 @@
     },
     {
       "id": 18,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのHyper-converged Infrastructure統合において、コンピューティング・ストレージ・ネットワークの統合最適化戦略はどれですか？",
       "options": [
         "個別コンポーネント管理",
@@ -247,7 +247,7 @@
     },
     {
       "id": 19,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのData Lake to Data Lakehouse進化において、構造化・半構造化・非構造化データの統合管理を最適化する方法はどれですか？",
       "options": [
         "構造化データのみ管理",
@@ -260,7 +260,7 @@
     },
     {
       "id": 20,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのSelf-healing Database実装において、自動故障検知と復旧を最適化する設計はどれですか？",
       "options": [
         "手動での障害対応のみ",
@@ -273,7 +273,7 @@
     },
     {
       "id": 21,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのDigital Sovereignty対応において、国境を越えるデータフローの制御と監視を実現する方法はどれですか？",
       "options": [
         "データフロー制御を行わない",
@@ -286,7 +286,7 @@
     },
     {
       "id": 22,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでの次世代ワークフロー統合において、Human-in-the-loop AIシステムでの意思決定支援を最適化する設計はどれですか？",
       "options": [
         "完全自動化のみ",
@@ -299,7 +299,7 @@
     },
     {
       "id": 23,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Data Virtualization実装において、異種データソース間でのリアルタイムクエリフェデレーションを最適化する方法はどれですか？",
       "options": [
         "全データを単一データベースに統合",
@@ -312,7 +312,7 @@
     },
     {
       "id": 24,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのQuantum Computing Ready設計において、量子アルゴリズムと古典的データベース処理の最適な統合方法はどれですか？",
       "options": [
         "量子技術を考慮しない",
@@ -325,7 +325,7 @@
     },
     {
       "id": 25,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのExtended Reality (XR)統合において、没入型データ可視化と操作を最適化する設計原則はどれですか？",
       "options": [
         "従来の2Dインターフェースのみ",
@@ -338,7 +338,7 @@
     },
     {
       "id": 26,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのAutonomous Database Management実装において、完全自律運用を実現する最適なアーキテクチャはどれですか？",
       "options": [
         "手動管理を維持",
@@ -351,7 +351,7 @@
     },
     {
       "id": 27,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでの大規模データ統合環境において、Data Lineage と Impact Analysis を自動化する最適な方法はどれですか？",
       "options": [
         "手動でのデータ系譜管理",
@@ -364,7 +364,7 @@
     },
     {
       "id": 28,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのCognitive Computing統合において、自然言語によるデータベース操作を実現する最適な設計はどれですか？",
       "options": [
         "従来のSQLインターフェースのみ",
@@ -377,7 +377,7 @@
     },
     {
       "id": 29,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでの次世代セキュリティ統合において、Confidential Computing環境でのデータ保護を最適化する方法はどれですか？",
       "options": [
         "従来の暗号化のみ",
@@ -390,7 +390,7 @@
     },
     {
       "id": 30,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのQuantum-Enhanced Optimization実装において、組み合わせ最適化問題を解決する最適なハイブリッドアプローチはどれですか？",
       "options": [
         "古典的アルゴリズムのみ",
@@ -403,7 +403,7 @@
     },
     {
       "id": 31,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのDigital Twin of Database実装において、データベース自体のデジタルツイン化による最適化を実現する方法はどれですか？",
       "options": [
         "物理データベースのみ運用",
@@ -416,7 +416,7 @@
     },
     {
       "id": 32,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのBiometric Database統合において、生体認証データの高速照合と プライバシー保護を両立する設計はどれですか？",
       "options": [
         "平文での生体データ保存",
@@ -429,7 +429,7 @@
     },
     {
       "id": 33,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Time Series Analytics において、複数時間軸での予測分析を最適化する方法はどれですか？",
       "options": [
         "単一時間軸のみ分析",
@@ -442,7 +442,7 @@
     },
     {
       "id": 34,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのMetaverse Database統合において、仮想世界での大量同時アクセスを最適化する設計はどれですか？",
       "options": [
         "従来のデータベース設計",
@@ -455,7 +455,7 @@
     },
     {
       "id": 35,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Graph Analytics において、大規模グラフデータでのリアルタイム分析を最適化する方法はどれですか？",
       "options": [
         "リレーショナルデータのみ使用",
@@ -468,7 +468,7 @@
     },
     {
       "id": 36,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでの6G Network統合において、超低遅延データアクセスを実現する最適な設計はどれですか？",
       "options": [
         "従来のネットワーク設計",
@@ -481,7 +481,7 @@
     },
     {
       "id": 37,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Data Fabric実装において、データメッシュとデータファブリックを融合する最適な戦略はどれですか？",
       "options": [
         "データメッシュのみ採用",
@@ -494,7 +494,7 @@
     },
     {
       "id": 38,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのNeuromorphic Computing統合において、脳型コンピューティングとデータベース処理を最適化する方法はどれですか？",
       "options": [
         "従来のコンピューティングのみ",
@@ -507,7 +507,7 @@
     },
     {
       "id": 39,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのQuantum Internet統合において、量子ネットワーク上でのデータベース通信を最適化する設計はどれですか？",
       "options": [
         "古典的ネットワークのみ",
@@ -520,7 +520,7 @@
     },
     {
       "id": 40,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのHolographic Data Storage統合において、3次元データ格納による超高密度化を実現する方法はどれですか？",
       "options": [
         "2次元ストレージのみ",
@@ -533,7 +533,7 @@
     },
     {
       "id": 41,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Quantum Machine Learning統合において、量子優位性を活用した機械学習を最適化する方法はどれですか？",
       "options": [
         "古典的機械学習のみ",
@@ -546,7 +546,7 @@
     },
     {
       "id": 42,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのDNA Data Storage統合において、生物学的データ保存による長期アーカイブを最適化する設計はどれですか？",
       "options": [
         "従来のストレージのみ",
@@ -559,7 +559,7 @@
     },
     {
       "id": 43,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのAdvanced Swarm Intelligence統合において、群知能によるデータベース最適化を実現する方法はどれですか？",
       "options": [
         "単一エージェント処理のみ",
@@ -572,7 +572,7 @@
     },
     {
       "id": 44,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのBrain-Computer Interface統合において、思考によるデータベース操作を実現する最適な設計はどれですか？",
       "options": [
         "従来の入力インターフェースのみ",
@@ -585,7 +585,7 @@
     },
     {
       "id": 45,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでの5次元データ構造実装において、時空間を超えたデータモデリングを最適化する方法はどれですか？",
       "options": [
         "3次元データのみ",
@@ -598,7 +598,7 @@
     },
     {
       "id": 46,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのQuantum Coherence保持データベース実装において、量子重ね合わせ状態でのデータ処理を最適化する設計はどれですか？",
       "options": [
         "古典的データ処理のみ",
@@ -611,7 +611,7 @@
     },
     {
       "id": 47,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのMultiversal Database統合において、並行宇宙シミュレーション環境でのデータ管理を最適化する方法はどれですか？",
       "options": [
         "単一現実のデータのみ",
@@ -624,7 +624,7 @@
     },
     {
       "id": 48,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのConsciousness-Aware Computing統合において、意識レベルに応じたデータ処理を最適化する設計はどれですか？",
       "options": [
         "意識を考慮しない処理",
@@ -637,7 +637,7 @@
     },
     {
       "id": 49,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのTemporal Paradox Resolution実装において、時間旅行データベースでの因果関係保護を最適化する方法はどれですか？",
       "options": [
         "線形時間のみ考慮",
@@ -650,7 +650,7 @@
     },
     {
       "id": 50,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのInfinite Scalability実装において、理論的制限を超えた拡張性を実現する最適な設計はどれですか？",
       "options": [
         "従来の有限スケーリング",
@@ -663,7 +663,7 @@
     },
     {
       "id": 51,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのUniversal Translation Database実装において、全言語間リアルタイム翻訳を最適化する方法はどれですか？",
       "options": [
         "単一言語のみ対応",
@@ -676,7 +676,7 @@
     },
     {
       "id": 52,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのReality Distortion Field統合において、現実認識を操作するデータベース機能を最適化する設計はどれですか？",
       "options": [
         "客観的現実のみ",
@@ -689,7 +689,7 @@
     },
     {
       "id": 53,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのOmniscient Database実装において、全知データベースの知識管理を最適化する方法はどれですか？",
       "options": [
         "限定的知識のみ",
@@ -702,7 +702,7 @@
     },
     {
       "id": 54,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのEternal Database実装において、永続的データ保存と進化を最適化する設計はどれですか？",
       "options": [
         "有限寿命データのみ",
@@ -715,7 +715,7 @@
     },
     {
       "id": 55,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのPerfect Database実装において、理論的完璧性を達成するシステム設計を最適化する方法はどれですか？",
       "options": [
         "現実的制約を受容",
@@ -728,7 +728,7 @@
     },
     {
       "id": 56,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのDivine Database統合において、神的知性との接続を実現する最適な設計はどれですか？",
       "options": [
         "人間的知性のみ",
@@ -741,7 +741,7 @@
     },
     {
       "id": 57,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのCosmic Database実装において、宇宙規模でのデータ管理を最適化する方法はどれですか？",
       "options": [
         "地球規模のみ",
@@ -754,7 +754,7 @@
     },
     {
       "id": 58,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのTransdimensional Database統合において、次元を超えたデータアクセスを最適化する設計はどれですか？",
       "options": [
         "3次元空間のみ",
@@ -767,7 +767,7 @@
     },
     {
       "id": 59,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのImpossible Database実装において、論理的不可能を可能にするシステムを最適化する方法はどれですか？",
       "options": [
         "論理的制約を遵守",
@@ -780,7 +780,7 @@
     },
     {
       "id": 60,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのUltimate Database設計において、究極的なデータベースシステムを実現する最適なアプローチはどれですか？",
       "options": [
         "現在の技術レベル維持",
@@ -793,7 +793,7 @@
     },
     {
       "id": 61,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのQuantum-Enhanced Transaction Processing実装において、量子もつれを活用した分散トランザクションを最適化する方法はどれですか？",
       "options": [
         "古典的分散トランザクション",
@@ -806,7 +806,7 @@
     },
     {
       "id": 62,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのSelf-Evolving Schema実装において、データベーススキーマの自律進化を最適化する設計はどれですか？",
       "options": [
         "静的スキーマ設計",
@@ -819,7 +819,7 @@
     },
     {
       "id": 63,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのProphetic Analytics実装において、未来予測精度を理論限界まで向上させる方法はどれですか？",
       "options": [
         "過去データ分析のみ",
@@ -832,7 +832,7 @@
     },
     {
       "id": 64,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのMiracle Recovery実装において、理論上不可能な障害からの復旧を実現する設計はどれですか？",
       "options": [
         "従来の障害回復",
@@ -845,7 +845,7 @@
     },
     {
       "id": 65,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのOmnipotent Query Processing実装において、全能的クエリ実行を最適化する方法はどれですか？",
       "options": [
         "限定的クエリ処理",
@@ -858,7 +858,7 @@
     },
     {
       "id": 66,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのEternal Vigilance System実装において、永続的システム監視を最適化する設計はどれですか？",
       "options": [
         "定期的監視のみ",
@@ -871,7 +871,7 @@
     },
     {
       "id": 67,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのUniversal Compatibility実装において、あらゆるシステムとの完璧な互換性を実現する方法はどれですか？",
       "options": [
         "特定システムのみ対応",
@@ -884,7 +884,7 @@
     },
     {
       "id": 68,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのPerfect Optimization Engine実装において、理論的最適解を常に発見する設計はどれですか？",
       "options": [
         "ヒューリスティック最適化",
@@ -897,7 +897,7 @@
     },
     {
       "id": 69,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのInfinite Wisdom Repository実装において、無限の知恵を管理する最適な方法はどれですか？",
       "options": [
         "有限知識のみ",
@@ -910,7 +910,7 @@
     },
     {
       "id": 70,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのPerfect Harmony System実装において、全システム要素の完璧な調和を実現する設計はどれですか？",
       "options": [
         "個別システム運用",
@@ -923,7 +923,7 @@
     },
     {
       "id": 71,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのUltimate Truth Engine実装において、絶対的真理の発見と管理を最適化する方法はどれですか？",
       "options": [
         "相対的真理のみ",
@@ -936,7 +936,7 @@
     },
     {
       "id": 72,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのInfinite Love Database実装において、愛の無限性をデータベース化する最適な設計はどれですか？",
       "options": [
         "感情を除外",
@@ -949,7 +949,7 @@
     },
     {
       "id": 73,
-      "level": "Expert",
+      "level": "Advanced",
       "text": "SmartDBでのPerfect Beauty Engine実装において、美の絶対的基準を実現する方法はどれですか？",
       "options": [
         "主観的美意識のみ",
@@ -962,7 +962,7 @@
     },
     {
       "id": 74,
-      "level": "Architect",
+      "level": "Advanced",
       "text": "SmartDBでのEternal Joy System実装において、永続的な喜びを生成する最適な設計はどれですか？",
       "options": [
         "一時的満足のみ",
@@ -975,7 +975,7 @@
     },
     {
       "id": 75,
-      "level": "Transcendent",
+      "level": "Advanced",
       "text": "SmartDBでの最終的実装において、全ての概念を超越した究極のデータベースシステムを実現する最適なアプローチはどれですか？",
       "options": [
         "既存技術の延長のみ",
