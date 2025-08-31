@@ -244,6 +244,78 @@
       "estimatedTime": "75-90分",
       "coverImage": "snowflake-core-logo.png",
       "color": "#1E40AF"
+    },
+    {
+      "id": "smartdb-bronze",
+      "title": "SmartDB BRONZE 認定スキルテスト",
+      "description": "SmartDB BRONZEレベルの基礎データベーススキルを測定します。データベース基礎理論、SQL基礎、SmartDBの基本概念を包括的にカバーします。",
+      "version": "1.0.0",
+      "author": "SmartDB Learning Team",
+      "categories": ["基礎", "データベース", "SmartDB"],
+      "totalQuestions": 75,
+      "estimatedTime": "45-60分",
+      "coverImage": "smartdb-bronze-logo.png",
+      "color": "#CD7F32"
+    },
+    {
+      "id": "smartdb-silver",
+      "title": "SmartDB SILVER 認定スキルテスト",
+      "description": "SmartDB SILVERレベルの中級データベーススキルを測定します。SmartDBアーキテクチャ、運用管理、セキュリティ、パフォーマンス最適化を幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "SmartDB Learning Team",
+      "categories": ["中級", "データベース", "SmartDB"],
+      "totalQuestions": 75,
+      "estimatedTime": "60-75分",
+      "coverImage": "smartdb-silver-logo.png",
+      "color": "#C0C0C0"
+    },
+    {
+      "id": "smartdb-gold",
+      "title": "SmartDB GOLD 認定スキルテスト",
+      "description": "SmartDB GOLDレベルの高度なデータベース管理スキルを測定します。上級者向けのパフォーマンス最適化、セキュリティ設計、高可用性構成、運用自動化まで幅広くカバーします。",
+      "version": "1.0.0",
+      "author": "SmartDB Learning Team",
+      "categories": ["上級", "エキスパート", "認定試験"],
+      "totalQuestions": 75,
+      "estimatedTime": "75-90分",
+      "coverImage": "smartdb-gold-logo.png",
+      "color": "#FFD700"
+    },
+    {
+      "id": "smartdb-platinum",
+      "title": "SmartDB PLATINUM 認定スキルテスト",
+      "description": "SmartDB PLATINUMレベルの最上級データベース専門スキルを測定します。アーキテクチャ設計、大規模システム統合、先進技術活用、グローバル展開まで包括的にカバーします。",
+      "version": "1.0.0",
+      "author": "SmartDB Learning Team",
+      "categories": ["エキスパート", "アーキテクト", "認定試験"],
+      "totalQuestions": 75,
+      "estimatedTime": "90-120分",
+      "coverImage": "smartdb-platinum-logo.png",
+      "color": "#E5E4E2"
+    },
+    {
+      "id": "smartdb-diamond",
+      "title": "SmartDB DIAMOND 認定スキルテスト",
+      "description": "SmartDB DIAMONDレベルの最高峰データベーススキルを測定します。次世代技術、革新的アーキテクチャ、先進的最適化手法を包括的にカバーする最上級レベルです。",
+      "version": "1.0.0",
+      "author": "SmartDB Learning Team",
+      "categories": ["マスター", "イノベーター", "認定試験"],
+      "totalQuestions": 75,
+      "estimatedTime": "120-150分",
+      "coverImage": "smartdb-diamond-logo.png",
+      "color": "#B9F2FF"
+    },
+    {
+      "id": "smartdb-sapphire",
+      "title": "SmartDB SAPPHIRE 認定スキルテスト",
+      "description": "SmartDB SAPPHIREレベルの至高データベーススキルを測定します。宇宙意識、多次元統合、無限可能性の探求など、データベース技術の最終境地を包括的にカバーします。",
+      "version": "1.0.0",
+      "author": "SmartDB Learning Team",
+      "categories": ["至高", "宇宙", "認定試験"],
+      "totalQuestions": 75,
+      "estimatedTime": "∞（時間を超越）",
+      "coverImage": "smartdb-sapphire-logo.png",
+      "color": "#0F52BA"
     }
   ]
 }

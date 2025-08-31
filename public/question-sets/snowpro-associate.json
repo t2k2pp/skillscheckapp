@@ -40,7 +40,7 @@
     },
     {
       "id": 3,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "Snowflakeのバーチャルウェアハウスについて正しい説明はどれですか？",
       "options": [
         "データを物理的に保存する場所",
@@ -53,7 +53,7 @@
     },
     {
       "id": 4,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "Snowflakeでサポートされている半構造化データ形式でないものはどれですか？",
       "options": [
         "JSON",
@@ -66,7 +66,7 @@
     },
     {
       "id": 5,
-      "level": "Beginner",
+      "level": "Advanced",
       "text": "Snowflakeのデータクラウドの3つの主要コンポーネントとして正しくないものはどれですか？",
       "options": [
         "Database Storage",
@@ -79,7 +79,7 @@
     },
     {
       "id": 6,
-      "level": "Beginner",
+      "level": "Advanced",
       "text": "Snowflakeのマイクロパーティション（Micro-partitions）の特徴として正しいものはどれですか？",
       "options": [
         "ユーザーが手動で作成・管理する必要がある",
@@ -92,7 +92,7 @@
     },
     {
       "id": 7,
-      "level": "Beginner",
+      "level": "Intermediate",
       "text": "Snowflakeでクレジットが消費されるのはどの場合ですか？",
       "options": [
         "データを保存している時間",

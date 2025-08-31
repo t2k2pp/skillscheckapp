@@ -14,7 +14,7 @@
   "questions": [
     {
       "id": 1,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "Snowflakeのマイクロパーティションの再クラスタリングが自動的に発生するのはどのような場合ですか？",
       "options": [
         "テーブルサイズが1GBを超えた時",
@@ -53,7 +53,7 @@
     },
     {
       "id": 4,
-      "level": "Intermediate",
+      "level": "Beginner",
       "text": "SnowflakeのVARIANTデータ型で格納されたJSONデータから特定の要素を取得する際の記法として正しいものはどれですか？",
       "options": [
         "column_name->path",

@@ -1,0 +1,991 @@
+{
+  "id": "smartdb-bronze",
+  "title": "SmartDB BRONZE 認定試験対策",
+  "description": "NTTコミュニケーションズ SmartDB BRONZE認定試験対策の問題集です。SmartDBの基本概念、初歩的な操作、基礎的なデータベース管理スキルを測定します。",
+  "categories": ["SmartDB", "クラウドDB", "基礎", "初級"],
+  "totalQuestions": 75,
+  "estimatedTime": "45-60分",
+  "difficulty": "BRONZE",
+  "version": "1.0.0",
+  "author": "SmartDB Learning Team",
+  "lastUpdated": "2025-08-31",
+  "language": "ja",
+  "passingScore": 65,
+  "questions": [
+    {
+      "id": 1,
+      "level": "Beginner",
+      "text": "SmartDBとは何ですか？",
+      "options": [
+        "デスクトップアプリケーション",
+        "クラウドベースのデータベースサービス",
+        "ネットワーク監視ツール",
+        "メール配信システム"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SmartDBは、NTTコミュニケーションズが提供するクラウドベースのマネージドデータベースサービスです。"
+    },
+    {
+      "id": 2,
+      "level": "Beginner",
+      "text": "SmartDBの最も基本的な利点はどれですか？",
+      "options": [
+        "無料で利用できる",
+        "プログラミング不要でデータ管理が可能",
+        "物理的なサーバー管理が不要",
+        "インターネット接続が不要"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "SmartDBはマネージドサービスのため、物理的なサーバーの管理や保守作業をNTTコミュニケーションズが代行します。"
+    },
+    {
+      "id": 3,
+      "level": "Beginner",
+      "text": "SmartDBにアクセスするために必要なものはどれですか？",
+      "options": [
+        "専用のハードウェア",
+        "インターネット接続とSQLクライアントツール",
+        "特別なオペレーティングシステム",
+        "物理的な接続ケーブル"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SmartDBはクラウドサービスのため、インターネット接続と適切なSQLクライアントツール（SQL*Plus、SQL Developer等）があれば接続できます。"
+    },
+    {
+      "id": 4,
+      "level": "Beginner",
+      "text": "SmartDBで使用されるデータベース言語はどれですか？",
+      "options": [
+        "Python",
+        "Java",
+        "SQL",
+        "HTML"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "SmartDBはOracle Databaseベースのため、標準的なSQL（Structured Query Language）を使用してデータベース操作を行います。"
+    },
+    {
+      "id": 5,
+      "level": "Beginner",
+      "text": "テーブルとは何ですか？",
+      "options": [
+        "データを行と列の形で格納する構造",
+        "コンピュータの部品",
+        "ネットワーク設定",
+        "プログラミング言語"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "テーブルは、データベースにおいてデータを行（レコード）と列（フィールド）の二次元的な表形式で格納するための基本的な構造です。"
+    },
+    {
+      "id": 6,
+      "level": "Intermediate",
+      "text": "データベースにおける「行」とは何を指しますか？",
+      "options": [
+        "テーブルの項目名",
+        "1つの完全なデータエントリ（レコード）",
+        "データベース名",
+        "ユーザーアカウント"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "行（Row）またはレコード（Record）は、テーブル内の1つの完全なデータエントリを表し、関連するすべての情報が含まれています。"
+    },
+    {
+      "id": 7,
+      "level": "Intermediate",
+      "text": "データベースにおける「列」とは何を指しますか？",
+      "options": [
+        "データの種類や項目を表す縦の要素",
+        "データベースのバックアップ",
+        "ユーザーの権限",
+        "接続設定"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "列（Column）またはフィールド（Field）は、テーブル内でデータの種類や項目を表す縦方向の要素で、例えば「名前」「年齢」「住所」などの属性を表します。"
+    },
+    {
+      "id": 8,
+      "level": "Intermediate",
+      "text": "基本的なSELECT文の構文はどれですか？",
+      "options": [
+        "GET * FROM table_name",
+        "SELECT * FROM table_name",
+        "SHOW * FROM table_name",
+        "DISPLAY * FROM table_name"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SELECT文は「SELECT 列名 FROM テーブル名」という構文で、データを検索・表示するための基本的なSQL文です。"
+    },
+    {
+      "id": 9,
+      "level": "Intermediate",
+      "text": "SELECT文で全ての列を選択するために使用する記号はどれですか？",
+      "options": [
+        "&",
+        "#",
+        "*",
+        "%"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "アスタリスク（*）は「すべての列」を意味し、「SELECT * FROM テーブル名」でテーブルのすべての列を選択できます。"
+    },
+    {
+      "id": 10,
+      "level": "Intermediate",
+      "text": "テーブルに新しいデータを追加するためのSQL文はどれですか？",
+      "options": [
+        "ADD",
+        "INSERT",
+        "CREATE",
+        "APPEND"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "INSERT文は、テーブルに新しいデータ（行）を追加するためのSQL文です。構文は「INSERT INTO テーブル名 VALUES (値1, 値2, ...)」です。"
+    },
+    {
+      "id": 11,
+      "level": "Intermediate",
+      "text": "既存のデータを変更するためのSQL文はどれですか？",
+      "options": [
+        "CHANGE",
+        "MODIFY",
+        "UPDATE",
+        "ALTER"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "UPDATE文は、既存のデータを変更するためのSQL文で、「UPDATE テーブル名 SET 列名=新しい値 WHERE 条件」という構文で使用します。"
+    },
+    {
+      "id": 12,
+      "level": "Intermediate",
+      "text": "データを削除するためのSQL文はどれですか？",
+      "options": [
+        "REMOVE",
+        "DELETE",
+        "DROP",
+        "CLEAR"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "DELETE文は、テーブルから特定の行（データ）を削除するためのSQL文で、「DELETE FROM テーブル名 WHERE 条件」という構文で使用します。"
+    },
+    {
+      "id": 13,
+      "level": "Intermediate",
+      "text": "WHERE句の役割は何ですか？",
+      "options": [
+        "テーブルを作成する",
+        "条件を指定してデータを絞り込む",
+        "データを並べ替える",
+        "列を追加する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "WHERE句は、特定の条件を満たすデータのみを対象とするためのSQL句で、データの検索、更新、削除時に使用します。"
+    },
+    {
+      "id": 14,
+      "level": "Intermediate",
+      "text": "データを昇順に並べ替えるキーワードはどれですか？",
+      "options": [
+        "ASC",
+        "DESC",
+        "UP",
+        "SORT"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ASC（Ascending）は昇順を表すキーワードで、ORDER BY句と組み合わせて「ORDER BY 列名 ASC」として使用します。"
+    },
+    {
+      "id": 15,
+      "level": "Intermediate",
+      "text": "データを降順に並べ替えるキーワードはどれですか？",
+      "options": [
+        "DOWN",
+        "DESC",
+        "LOW",
+        "REVERSE"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "DESC（Descending）は降順を表すキーワードで、ORDER BY句と組み合わせて「ORDER BY 列名 DESC」として使用します。"
+    },
+    {
+      "id": 16,
+      "level": "Intermediate",
+      "text": "新しいテーブルを作成するためのSQL文はどれですか？",
+      "options": [
+        "MAKE TABLE",
+        "NEW TABLE",
+        "CREATE TABLE",
+        "BUILD TABLE"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "CREATE TABLE文は、新しいテーブルを作成するためのSQL文で、列名とデータ型を指定してテーブル構造を定義します。"
+    },
+    {
+      "id": 17,
+      "level": "Intermediate",
+      "text": "テーブルを削除するためのSQL文はどれですか？",
+      "options": [
+        "DELETE TABLE",
+        "REMOVE TABLE",
+        "DROP TABLE",
+        "DESTROY TABLE"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "DROP TABLE文は、テーブル自体を完全に削除するためのSQL文です。テーブル構造とデータがすべて削除されます。"
+    },
+    {
+      "id": 18,
+      "level": "Intermediate",
+      "text": "主キー（Primary Key）の役割は何ですか？",
+      "options": [
+        "データを暗号化する",
+        "各行を一意に識別する",
+        "データを圧縮する",
+        "バックアップを作成する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "主キー（Primary Key）は、テーブル内の各行を一意に識別するための制約で、重複値やNULL値は許可されません。"
+    },
+    {
+      "id": 19,
+      "level": "Intermediate",
+      "text": "NULLとは何を意味しますか？",
+      "options": [
+        "数値の0",
+        "空の文字列",
+        "値が存在しない（未定義）状態",
+        "エラー状態"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "NULLは「値が存在しない」または「不明」を表す特別な値で、数値の0や空文字列とは異なります。"
+    },
+    {
+      "id": 20,
+      "level": "Intermediate",
+      "text": "COUNT関数の機能は何ですか？",
+      "options": [
+        "データを並べ替える",
+        "行の数を数える",
+        "データを削除する",
+        "テーブルを作成する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "COUNT関数は、指定された条件に一致する行の数を数えるための集約関数です。例：「SELECT COUNT(*) FROM テーブル名」"
+    },
+    {
+      "id": 21,
+      "level": "Intermediate",
+      "text": "SUM関数の機能は何ですか？",
+      "options": [
+        "文字列を連結する",
+        "数値の合計を計算する",
+        "データを分割する",
+        "文字数を数える"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SUM関数は、指定された列の数値データの合計を計算するための集約関数です。例：「SELECT SUM(価格) FROM 商品テーブル」"
+    },
+    {
+      "id": 22,
+      "level": "Intermediate",
+      "text": "AVG関数の機能は何ですか？",
+      "options": [
+        "最大値を求める",
+        "最小値を求める",
+        "平均値を計算する",
+        "中央値を計算する"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "AVG関数は、指定された列の数値データの平均値を計算するための集約関数です。例：「SELECT AVG(年齢) FROM 顧客テーブル」"
+    },
+    {
+      "id": 23,
+      "level": "Intermediate",
+      "text": "MAX関数の機能は何ですか？",
+      "options": [
+        "最大値を取得する",
+        "データを増加させる",
+        "テーブルを拡張する",
+        "権限を最大化する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "MAX関数は、指定された列の最大値を取得するための集約関数です。数値だけでなく、日付や文字列にも適用できます。"
+    },
+    {
+      "id": 24,
+      "level": "Intermediate",
+      "text": "MIN関数の機能は何ですか？",
+      "options": [
+        "データを最小化する",
+        "最小値を取得する",
+        "テーブルを縮小する",
+        "権限を制限する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "MIN関数は、指定された列の最小値を取得するための集約関数です。数値だけでなく、日付や文字列にも適用できます。"
+    },
+    {
+      "id": 25,
+      "level": "Intermediate",
+      "text": "GROUP BY句の役割は何ですか？",
+      "options": [
+        "データをグループ化して集約関数を適用する",
+        "テーブルを結合する",
+        "インデックスを作成する",
+        "ユーザーをグループ化する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "GROUP BY句は、指定した列の値が同じ行をグループ化し、各グループに対して集約関数（COUNT、SUM等）を適用するために使用します。"
+    },
+    {
+      "id": 26,
+      "level": "Intermediate",
+      "text": "HAVING句の用途は何ですか？",
+      "options": [
+        "テーブル名を変更する",
+        "グループ化された結果に条件を指定する",
+        "列を追加する",
+        "インデックスを削除する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "HAVING句は、GROUP BY句によってグループ化された結果に対して条件を指定するために使用され、通常は集約関数の結果に基づいて絞り込みを行います。"
+    },
+    {
+      "id": 27,
+      "level": "Intermediate",
+      "text": "INNER JOINの基本的な機能は何ですか？",
+      "options": [
+        "2つのテーブルで一致するデータのみを結合する",
+        "テーブル内のデータを並べ替える",
+        "テーブルの列を結合する",
+        "データを圧縮する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "INNER JOINは、2つのテーブルで指定した結合条件に一致するデータのみを結合して表示する結合方式です。"
+    },
+    {
+      "id": 28,
+      "level": "Intermediate",
+      "text": "LEFT JOINの特徴は何ですか？",
+      "options": [
+        "右のテーブルのデータをすべて表示する",
+        "左のテーブルのデータをすべて表示し、一致しない場合はNULLで補完する",
+        "両方のテーブルのデータをすべて表示する",
+        "一致するデータのみ表示する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "LEFT JOINは、左側のテーブルのすべてのデータを表示し、右側のテーブルで一致しないデータはNULLで補完します。"
+    },
+    {
+      "id": 29,
+      "level": "Intermediate",
+      "text": "文字列データ型として一般的なものはどれですか？",
+      "options": [
+        "INT",
+        "VARCHAR",
+        "DATE",
+        "BOOLEAN"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "VARCHAR（Variable Character）は、可変長の文字列を格納するために使用される一般的な文字列データ型です。"
+    },
+    {
+      "id": 30,
+      "level": "Intermediate",
+      "text": "整数を格納するデータ型はどれですか？",
+      "options": [
+        "TEXT",
+        "FLOAT",
+        "INTEGER",
+        "CHAR"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "INTEGER（またはINT）は、整数値を格納するための数値データ型です。"
+    },
+    {
+      "id": 31,
+      "level": "Intermediate",
+      "text": "日付を格納するデータ型はどれですか？",
+      "options": [
+        "STRING",
+        "NUMBER",
+        "DATE",
+        "TIME"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "DATEは、日付情報（年、月、日）を格納するための専用のデータ型です。"
+    },
+    {
+      "id": 32,
+      "level": "Intermediate",
+      "text": "SmartDBでのバックアップについて基本的な説明として正しいものはどれですか？",
+      "options": [
+        "ユーザーが毎日手動で実行する必要がある",
+        "自動バックアップ機能が提供される",
+        "バックアップ機能は存在しない",
+        "月1回のみ実行される"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SmartDBでは、データ保護のために自動バックアップ機能が標準で提供されており、定期的にデータのバックアップが取得されます。"
+    },
+    {
+      "id": 33,
+      "level": "Intermediate",
+      "text": "データベースへの接続に必要な基本的な情報として含まれないものはどれですか？",
+      "options": [
+        "ホスト名またはIPアドレス",
+        "ユーザー名とパスワード",
+        "データベース名",
+        "コンピュータの機種"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "データベースへの接続には、ホスト名、ユーザー名、パスワード、データベース名が必要ですが、使用するコンピュータの機種は関係ありません。"
+    },
+    {
+      "id": 34,
+      "level": "Intermediate",
+      "text": "データベースにおける「スキーマ」とは何ですか？",
+      "options": [
+        "データベースの物理的な保存場所",
+        "データベースの論理的な構造や設計図",
+        "ユーザーアカウント",
+        "バックアップファイル"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "スキーマは、データベースの論理的な構造を定義するもので、テーブル、列、制約、インデックスなどの定義を含みます。"
+    },
+    {
+      "id": 35,
+      "level": "Intermediate",
+      "text": "インデックス（INDEX）の主な目的は何ですか？",
+      "options": [
+        "データを暗号化する",
+        "検索性能を向上させる",
+        "データを圧縮する",
+        "バックアップを作成する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "インデックスは、テーブル内のデータ検索を高速化するために作成される特別な構造で、特定の列への検索性能を大幅に向上させます。"
+    },
+    {
+      "id": 36,
+      "level": "Intermediate",
+      "text": "UNIQUE制約の機能は何ですか？",
+      "options": [
+        "データを一意（重複なし）に保つ",
+        "データを暗号化する",
+        "データを自動で並べ替える",
+        "データを自動で削除する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "UNIQUE制約は、指定した列に重複する値の入力を防ぎ、データの一意性を保証するための整合性制約です。"
+    },
+    {
+      "id": 37,
+      "level": "Intermediate",
+      "text": "FOREIGN KEY（外部キー）制約の役割は何ですか？",
+      "options": [
+        "データを高速化する",
+        "他のテーブルとの参照整合性を保つ",
+        "データを暗号化する",
+        "自動的にバックアップを取る"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "FOREIGN KEY制約は、他のテーブルの主キーを参照することで、テーブル間の参照整合性を保証する制約です。"
+    },
+    {
+      "id": 38,
+      "level": "Intermediate",
+      "text": "SmartDBの管理画面にアクセスする一般的な方法はどれですか？",
+      "options": [
+        "専用アプリケーションのインストール",
+        "Webブラウザ経由でのアクセス",
+        "コマンドラインのみ",
+        "電話での操作依頼"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SmartDBの管理機能は、一般的にWebベースの管理コンソールとして提供され、Webブラウザから直感的に操作できます。"
+    },
+    {
+      "id": 39,
+      "level": "Intermediate",
+      "text": "SQL文の終端に必要な記号はどれですか？",
+      "options": [
+        ".",
+        ";",
+        ":",
+        "!"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SQL文はセミコロン（;）で終端する必要があります。これにより、1つのSQL文の終了を明示します。"
+    },
+    {
+      "id": 40,
+      "level": "Intermediate",
+      "text": "コメント（注釈）を記述するためのSQL記号はどれですか？",
+      "options": [
+        "/* */",
+        "< >",
+        "[ ]",
+        "{ }"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "SQLでは、/* */（複数行コメント）や --（単一行コメント）を使用してコメントを記述できます。"
+    },
+    {
+      "id": 41,
+      "level": "Intermediate",
+      "text": "LIKE演算子の用途は何ですか？",
+      "options": [
+        "数値の比較",
+        "文字列のパターンマッチング",
+        "日付の計算",
+        "論理演算"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "LIKE演算子は、ワイルドカード（%や_）を使用して文字列のパターンマッチング検索を行うために使用します。"
+    },
+    {
+      "id": 42,
+      "level": "Intermediate",
+      "text": "ワイルドカード「%」の意味は何ですか？",
+      "options": [
+        "1文字を表す",
+        "0文字以上の任意の文字列を表す",
+        "数字のみを表す",
+        "アルファベットのみを表す"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ワイルドカード「%」は、0文字以上の任意の文字列にマッチします。例：'山田%'は「山田」で始まるすべての文字列にマッチ。"
+    },
+    {
+      "id": 43,
+      "level": "Intermediate",
+      "text": "ワイルドカード「_」の意味は何ですか？",
+      "options": [
+        "任意の1文字を表す",
+        "すべての文字を表す",
+        "数字のみを表す",
+        "スペースのみを表す"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "ワイルドカード「_」は、任意の1文字にマッチします。例：'2025-__-01'は「2025-01-01」や「2025-12-01」などにマッチ。"
+    },
+    {
+      "id": 44,
+      "level": "Intermediate",
+      "text": "IN演算子の機能は何ですか？",
+      "options": [
+        "範囲検索を行う",
+        "複数の値のいずれかと一致するかチェックする",
+        "文字列を検索する",
+        "NULL値をチェックする"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "IN演算子は、指定した値のリストの中に対象の値が含まれているかをチェックします。例：WHERE 都道府県 IN ('東京', '大阪', '愛知')"
+    },
+    {
+      "id": 45,
+      "level": "Intermediate",
+      "text": "BETWEEN演算子の機能は何ですか？",
+      "options": [
+        "文字列の長さをチェックする",
+        "2つの値の間にあるかをチェックする",
+        "NULL値をチェックする",
+        "重複をチェックする"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "BETWEEN演算子は、値が指定した2つの値の間にあるかをチェックします。例：WHERE 年齢 BETWEEN 20 AND 30"
+    },
+    {
+      "id": 46,
+      "level": "Intermediate",
+      "text": "IS NULL演算子の機能は何ですか？",
+      "options": [
+        "値が0かチェックする",
+        "値がNULLかチェックする",
+        "文字列が空かチェックする",
+        "値が負数かチェックする"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "IS NULL演算子は、指定した列の値がNULL（値が存在しない状態）かどうかをチェックするために使用します。"
+    },
+    {
+      "id": 47,
+      "level": "Intermediate",
+      "text": "AND演算子の機能は何ですか？",
+      "options": [
+        "すべての条件が真の場合のみ真を返す",
+        "いずれかの条件が真の場合に真を返す",
+        "条件を否定する",
+        "値を加算する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "AND演算子は、複数の条件をすべて満たす場合のみ真（TRUE）を返す論理演算子です。"
+    },
+    {
+      "id": 48,
+      "level": "Intermediate",
+      "text": "OR演算子の機能は何ですか？",
+      "options": [
+        "すべての条件が真の場合のみ真を返す",
+        "いずれかの条件が真の場合に真を返す",
+        "条件を否定する",
+        "値を減算する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "OR演算子は、複数の条件のうち、いずれか1つでも満たす場合に真（TRUE）を返す論理演算子です。"
+    },
+    {
+      "id": 49,
+      "level": "Intermediate",
+      "text": "データベースのトランザクションとは何ですか？",
+      "options": [
+        "データの送信",
+        "一連の処理をひとまとまりとして扱う単位",
+        "データの変換",
+        "バックアップ処理"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "トランザクションは、データベースに対する一連の処理をひとまとまりの作業単位として扱い、すべて成功するか、すべて失敗するかを保証する仕組みです。"
+    },
+    {
+      "id": 50,
+      "level": "Intermediate",
+      "text": "COMMITコマンドの機能は何ですか？",
+      "options": [
+        "トランザクションの変更を確定する",
+        "トランザクションを取り消す",
+        "データを削除する",
+        "テーブルを作成する"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "COMMITコマンドは、トランザクション内で行ったすべての変更をデータベースに確定的に保存するために使用します。"
+    },
+    {
+      "id": 51,
+      "level": "Intermediate",
+      "text": "ROLLBACKコマンドの機能は何ですか？",
+      "options": [
+        "変更を確定する",
+        "トランザクションの変更を取り消す",
+        "データを復元する",
+        "ログを削除する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ROLLBACKコマンドは、現在のトランザクション内で行ったすべての変更を取り消し、トランザクション開始前の状態に戻すために使用します。"
+    },
+    {
+      "id": 52,
+      "level": "Intermediate",
+      "text": "SmartDBでデータをエクスポートする際の一般的なファイル形式はどれですか？",
+      "options": [
+        "PDF",
+        "CSV",
+        "MP3",
+        "JPG"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "CSV（Comma-Separated Values）は、データベースからデータをエクスポートする際に最も一般的に使用される形式の1つです。"
+    },
+    {
+      "id": 53,
+      "level": "Intermediate",
+      "text": "ビュー（VIEW）とは何ですか？",
+      "options": [
+        "物理的なテーブル",
+        "仮想的なテーブル（保存されたクエリ）",
+        "バックアップファイル",
+        "ユーザーアカウント"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ビューは、1つ以上のテーブルからデータを取得するクエリを保存した仮想的なテーブルで、実際のデータは格納されません。"
+    },
+    {
+      "id": 54,
+      "level": "Intermediate",
+      "text": "ストアドプロシージャとは何ですか？",
+      "options": [
+        "データファイル",
+        "保存された一連のSQL文",
+        "バックアップ方式",
+        "暗号化方式"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ストアドプロシージャは、データベースに保存された一連のSQL文で、名前を付けて再利用可能な形で格納されている処理です。"
+    },
+    {
+      "id": 55,
+      "level": "Intermediate",
+      "text": "データベースのユーザー権限管理について、最小権限の原則とは何ですか？",
+      "options": [
+        "すべてのユーザーに全権限を与える",
+        "業務に必要な最小限の権限のみを与える",
+        "権限は設定しない",
+        "権限はシステム管理者のみが持つ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "最小権限の原則とは、セキュリティ向上のため、各ユーザーに業務遂行に必要な最小限の権限のみを付与することです。"
+    },
+    {
+      "id": 56,
+      "level": "Intermediate",
+      "text": "正規化の主な目的は何ですか？",
+      "options": [
+        "データの検索を高速化する",
+        "データの冗長性を排除し整合性を保つ",
+        "データを暗号化する",
+        "バックアップサイズを削減する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "正規化は、データの冗長性（重複）を排除し、データの整合性を保つためのデータベース設計手法です。"
+    },
+    {
+      "id": 57,
+      "level": "Intermediate",
+      "text": "データベースのパフォーマンスに影響を与える要因として最も関係ないものはどれですか？",
+      "options": [
+        "インデックスの有無",
+        "テーブルのデータ量",
+        "クエリの複雑さ",
+        "開発者の年齢"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "データベースのパフォーマンスには、インデックス、データ量、クエリの複雑さなどが影響しますが、開発者の年齢は直接的な影響を与えません。"
+    },
+    {
+      "id": 58,
+      "level": "Intermediate",
+      "text": "デッドロックとは何ですか？",
+      "options": [
+        "システムのシャットダウン",
+        "複数の処理が互いを待ち続ける状態",
+        "データの削除",
+        "ネットワークの切断"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "デッドロックは、複数のトランザクションが相互に相手の持つリソースを待ち続けることで、処理が進まなくなる状態のことです。"
+    },
+    {
+      "id": 59,
+      "level": "Intermediate",
+      "text": "SmartDBのサポートを受ける際に準備すべき情報として最も重要でないものはどれですか？",
+      "options": [
+        "発生している問題の詳細",
+        "エラーメッセージの内容",
+        "実行していたSQL文",
+        "使用しているPCのメーカー"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "問題解決のためには、問題の詳細、エラーメッセージ、実行したSQL文が重要ですが、PCのメーカーはクラウドサービスの問題には通常関係しません。"
+    },
+    {
+      "id": 60,
+      "level": "Intermediate",
+      "text": "データベース設計において、テーブル名や列名の命名で避けるべきものはどれですか？",
+      "options": [
+        "日本語",
+        "予約語（SELECT、INSERT等）",
+        "数字",
+        "アルファベット"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SQLの予約語（SELECT、INSERT、FROM等）は、テーブル名や列名として使用を避けるべきです。混乱やエラーの原因となります。"
+    },
+    {
+      "id": 61,
+      "level": "Intermediate",
+      "text": "SmartDBへの接続が失敗する最も一般的な原因はどれですか？",
+      "options": [
+        "コンピュータの性能不足",
+        "接続情報（ホスト名、ユーザー名、パスワード）の誤り",
+        "モニターの解像度",
+        "マウスの故障"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "データベースへの接続失敗の最も一般的な原因は、ホスト名、ユーザー名、パスワードなどの接続情報の誤りです。"
+    },
+    {
+      "id": 62,
+      "level": "Intermediate",
+      "text": "サブクエリとは何ですか？",
+      "options": [
+        "バックアップクエリ",
+        "別のクエリの内部で実行されるクエリ",
+        "削除されたクエリ",
+        "エラーが発生したクエリ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "サブクエリは、別のSQL文（メインクエリ）の内部で実行される入れ子構造のクエリです。"
+    },
+    {
+      "id": 63,
+      "level": "Intermediate",
+      "text": "CASE文の用途は何ですか？",
+      "options": [
+        "テーブルを作成する",
+        "条件によって異なる値を返す",
+        "データを削除する",
+        "インデックスを作成する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "CASE文は、条件に応じて異なる値を返すための条件分岐を行うSQL文です。プログラミングのif-else文に相当します。"
+    },
+    {
+      "id": 64,
+      "level": "Intermediate",
+      "text": "UNIONの機能は何ですか？",
+      "options": [
+        "テーブルを削除する",
+        "複数のSELECT文の結果を結合する",
+        "データを更新する",
+        "インデックスを最適化する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "UNION演算子は、複数のSELECT文の結果を縦方向に結合し、1つの結果セットにまとめるために使用します。"
+    },
+    {
+      "id": 65,
+      "level": "Intermediate",
+      "text": "データベースでのデータ型の選択において、最も重要な考慮事項はどれですか？",
+      "options": [
+        "格納する数値の大きさや文字列の長さ",
+        "テーブル名の長さ",
+        "作成者の好み",
+        "データベースの色"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "データ型を選択する際は、格納するデータの性質（数値の範囲、文字列の最大長など）に適したデータ型を選ぶことが重要です。"
+    },
+    {
+      "id": 66,
+      "level": "Intermediate",
+      "text": "SmartDBでよく使用されるSQLクライアントツールでないものはどれですか？",
+      "options": [
+        "SQL*Plus",
+        "SQL Developer",
+        "Microsoft Word",
+        "Toad"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Microsoft WordはワープロソフトでありSQLクライアントツールではありません。SmartDBには専用のSQLクライアントツールでアクセスします。"
+    },
+    {
+      "id": 67,
+      "level": "Intermediate",
+      "text": "データベースのパフォーマンス監視で重要な指標として適切でないものはどれですか？",
+      "options": [
+        "実行時間の長いクエリ",
+        "同時接続ユーザー数",
+        "CPU使用率",
+        "オフィスの室温"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "データベースのパフォーマンス監視では、クエリ実行時間、同時接続数、CPU使用率が重要ですが、オフィスの室温は直接関係ありません。"
+    },
+    {
+      "id": 68,
+      "level": "Intermediate",
+      "text": "ALTER TABLE文の主な用途は何ですか？",
+      "options": [
+        "テーブル内のデータを変更する",
+        "既存テーブルの構造を変更する",
+        "テーブルのデータを削除する",
+        "新しいテーブルを作成する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ALTER TABLE文は、既存のテーブルの構造（列の追加、削除、データ型変更など）を変更するためのSQL文です。"
+    },
+    {
+      "id": 69,
+      "level": "Intermediate",
+      "text": "データベースの整合性制約に含まれないものはどれですか？",
+      "options": [
+        "PRIMARY KEY制約",
+        "FOREIGN KEY制約",
+        "UNIQUE制約",
+        "SPEED制約"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "SPEED制約は存在しません。データベースの整合性制約には、PRIMARY KEY、FOREIGN KEY、UNIQUE、CHECK、NOT NULL制約があります。"
+    },
+    {
+      "id": 70,
+      "level": "Intermediate",
+      "text": "SmartDBでデータを安全に管理するための基本原則として適切でないものはどれですか？",
+      "options": [
+        "定期的なバックアップの確認",
+        "適切なユーザー権限の設定",
+        "すべてのデータを公開する",
+        "パスワードの定期的な変更"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "データセキュリティの観点から、すべてのデータを公開することは適切ではありません。必要最小限のアクセス権限を設定するべきです。"
+    },
+    {
+      "id": 71,
+      "level": "Advanced",
+      "text": "DISTINCT句の機能は何ですか？",
+      "options": [
+        "データを削除する",
+        "重複する行を除外する",
+        "データを並べ替える",
+        "データを暗号化する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "DISTINCT句は、SELECT文の結果から重複する行を除外し、一意な結果のみを表示するために使用します。"
+    },
+    {
+      "id": 72,
+      "level": "Intermediate",
+      "text": "LIMIT句（またはROWNUM）の用途は何ですか？",
+      "options": [
+        "アクセス制限を設定する",
+        "取得する行数を制限する",
+        "データサイズを制限する",
+        "時間制限を設定する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "LIMIT句（OracleではROWNUM）は、クエリの結果から取得する行数を制限するために使用します。"
+    },
+    {
+      "id": 73,
+      "level": "Advanced",
+      "text": "SmartDBの利用開始時に最初に行うべき作業はどれですか？",
+      "options": [
+        "大量データの投入",
+        "接続テストとサンプルテーブルの作成",
+        "全ユーザーへの権限付与",
+        "外部システムとの連携設定"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SmartDBの利用開始時は、まず接続テストを行い、簡単なサンプルテーブルを作成して基本操作を確認することが重要です。"
+    },
+    {
+      "id": 74,
+      "level": "Intermediate",
+      "text": "データベース設計において「テーブルの正規化」を行う主な理由はどれですか？",
+      "options": [
+        "処理速度を最大限に向上させる",
+        "データの冗長性を排除し更新異常を防ぐ",
+        "ストレージコストを削減する",
+        "ユーザーインターフェースを改善する"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "テーブルの正規化は、データの冗長性（重複）を排除し、データの更新・削除・挿入時に発生する異常を防ぐために行います。"
+    },
+    {
+      "id": 75,
+      "level": "Advanced",
+      "text": "SmartDBを学習する上で最も重要な基礎知識はどれですか？",
+      "options": [
+        "プログラミング言語の詳細な知識",
+        "SQL言語の基本文法と概念",
+        "コンピュータハードウェアの詳細",
+        "ネットワークプロトコルの仕組み"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SmartDBを効果的に活用するためには、SQL言語の基本文法と データベースの基本概念を理解することが最も重要です。"
+    }
+  ]
+}
