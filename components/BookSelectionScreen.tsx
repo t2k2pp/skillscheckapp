@@ -34,14 +34,12 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
 
   // コンテンツタイプ別の集計
   const contentTypeCounts = useMemo(() => {
-    const counts = { quiz: 0, ebook: 0, pdf: 0, video: 0, test: 0, skillcheck: 0 };
+    const counts = { test: 0, ebook: 0, pdf: 0, video: 0 };
     questionSets.forEach(set => {
       if (set.type === 'ebook' || set.type === 'ebook-separate') counts.ebook++;
       else if (set.type === 'pdf') counts.pdf++;
       else if (set.type === 'video') counts.video++;
-      else if (set.type === 'test') counts.test++;
-      else if (set.type === 'skillcheck') counts.skillcheck++;
-      else counts.quiz++;
+      else counts.test++;
     });
     return counts;
   }, [questionSets]);
@@ -62,7 +60,7 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
     // コンテンツタイプフィルタ
     if (selectedContentType !== 'all') {
       filtered = filtered.filter(set => {
-        if (selectedContentType === 'quiz') return !set.type || set.type === 'quiz';
+        if (selectedContentType === 'test') return !set.type || set.type === 'test' || set.type === 'quiz' || set.type === 'skillcheck';
         if (selectedContentType === 'ebook') return set.type === 'ebook' || set.type === 'ebook-separate';
         return set.type === selectedContentType;
       });
@@ -177,7 +175,7 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
       <div className="container mx-auto px-4 py-8">
         <header className="text-center mb-12">
           <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
-            📚 スキルチェッカー ライブラリ
+            📚 スキル ビルド ライブラリ
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
             学習したい分野を選択してください
@@ -204,16 +202,16 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
               
               <button
                 onClick={() => {
-                  setSelectedContentType('quiz');
+                  setSelectedContentType('test');
                   setSelectedCategory('all');
                 }}
                 className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
-                  selectedContentType === 'quiz'
+                  selectedContentType === 'test'
                     ? 'bg-blue-600 text-white shadow-lg'
                     : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
                 }`}
               >
-                📝 クイズ ({contentTypeCounts.quiz})
+                📝 テスト ({contentTypeCounts.test})
               </button>
               
               <button
@@ -270,20 +268,6 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
                 }`}
               >
                 📝 テスト ({contentTypeCounts.test})
-              </button>
-              
-              <button
-                onClick={() => {
-                  setSelectedContentType('skillcheck');
-                  setSelectedCategory('all');
-                }}
-                className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
-                  selectedContentType === 'skillcheck'
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
-                }`}
-              >
-                🎯 スキルチェック ({contentTypeCounts.skillcheck})
               </button>
             </div>
           </div>

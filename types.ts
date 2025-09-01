@@ -44,7 +44,7 @@ export enum QuizMode {
 
 // 学習カテゴリ
 export enum LearningCategory {
-  Quiz = 'quiz',
+  Test = 'test',
   Dictionary = 'dictionary'
 }
 
