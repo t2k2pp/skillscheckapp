@@ -21,7 +21,7 @@ export interface Question {
   explanation: string;
 }
 
-export type ContentType = 'quiz' | 'ebook' | 'slides' | 'pdf' | 'video';
+export type ContentType = 'quiz' | 'ebook' | 'ebook-separate' | 'slides' | 'pdf' | 'video' | 'test' | 'skillcheck';
 
 export interface QuestionSetMetadata {
   id: string;

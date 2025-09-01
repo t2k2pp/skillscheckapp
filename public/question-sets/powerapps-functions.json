@@ -23,7 +23,7 @@
     {
       "id": 2,
       "level": "基礎",
-      "text": "PowerAppsでIF関数を使用する正しい構文はどれですか？",
+      "text": "PowerAppsでIF関数を使用する推奨される構文はどれですか？",
       "options": [
         "If(条件, 真の値, 偽の値)",
         "IF(条件, 真の値, 偽の値)",
@@ -31,7 +31,7 @@
         "If(条件; 真の値; 偽の値)"
       ],
       "correctAnswerIndex": 0,
-      "explanation": "PowerAppsのIF関数は「If(条件, 真の値, 偽の値)」の形式で記述します。PowerAppsでは大文字小文字を区別し、区切り文字にはカンマを使用します。"
+      "explanation": "PowerAppsのIF関数は「If(条件, 真の値, 偽の値)」の形式で記述します。Power Fxは大文字小文字を区別しませんが、パスカルケースが推奨され、区切り文字にはカンマを使用します。"
     },
     {
       "id": 3,

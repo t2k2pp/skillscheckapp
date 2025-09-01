@@ -45,10 +45,10 @@
     {
       "id": 5,
       "level": "基礎",
-      "text": "Vue.jsで条件付きレンダリングを行うディレクティブはどれですか？",
+      "text": "Vue.jsで条件が偽の場合にDOMから要素を完全に削除するディレクティブはどれですか？",
       "options": ["v-if", "v-show", "v-display", "v-render"],
       "correctAnswerIndex": 0,
-      "explanation": "`v-if`は条件に基づいて要素を条件付きでレンダリングします。`v-show`は表示/非表示を切り替えますが、DOMには要素が存在します。"
+      "explanation": "`v-if`は条件が偽の場合、DOMから要素を完全に削除します。`v-show`は`display: none`で非表示にしますが、DOMには要素が残ります。"
     },
     {
       "id": 6,
@@ -542,9 +542,9 @@
       "id": 67,
       "level": "上級",
       "text": "Vue.js 3の<script setup>構文の利点として正しくないものはどれですか？",
-      "options": ["ランタイムパフォーマンスの向上", "簡潔な記法", "より良いTypeScript推論", "自動的なコンポーネント登録"],
-      "correctAnswerIndex": 0,
-      "explanation": "`<script setup>`は主にDX（開発体験）の向上に焦点を当てており、ランタイムパフォーマンスには大きな影響はありません。"
+      "options": ["ランタイムパフォーマンスの向上", "簡潔な記法", "より良いTypeScript推論", "自動的なグローバルコンポーネント登録"],
+      "correctAnswerIndex": 3,
+      "explanation": "`<script setup>`にはランタイムパフォーマンスの向上、簡潔な記法、TypeScript推論の改善などの利点がありますが、グローバルコンポーネントの自動登録機能はありません。"
     },
     {
       "id": 68,

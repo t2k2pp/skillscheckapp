@@ -34,11 +34,13 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
 
   // コンテンツタイプ別の集計
   const contentTypeCounts = useMemo(() => {
-    const counts = { quiz: 0, ebook: 0, pdf: 0, video: 0 };
+    const counts = { quiz: 0, ebook: 0, pdf: 0, video: 0, test: 0, skillcheck: 0 };
     questionSets.forEach(set => {
-      if (set.type === 'ebook') counts.ebook++;
+      if (set.type === 'ebook' || set.type === 'ebook-separate') counts.ebook++;
       else if (set.type === 'pdf') counts.pdf++;
       else if (set.type === 'video') counts.video++;
+      else if (set.type === 'test') counts.test++;
+      else if (set.type === 'skillcheck') counts.skillcheck++;
       else counts.quiz++;
     });
     return counts;
@@ -61,6 +63,7 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
     if (selectedContentType !== 'all') {
       filtered = filtered.filter(set => {
         if (selectedContentType === 'quiz') return !set.type || set.type === 'quiz';
+        if (selectedContentType === 'ebook') return set.type === 'ebook' || set.type === 'ebook-separate';
         return set.type === selectedContentType;
       });
     }
@@ -254,6 +257,34 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
               >
                 🎥 動画 ({contentTypeCounts.video})
               </button>
+              
+              <button
+                onClick={() => {
+                  setSelectedContentType('test');
+                  setSelectedCategory('all');
+                }}
+                className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
+                  selectedContentType === 'test'
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
+                }`}
+              >
+                📝 テスト ({contentTypeCounts.test})
+              </button>
+              
+              <button
+                onClick={() => {
+                  setSelectedContentType('skillcheck');
+                  setSelectedCategory('all');
+                }}
+                className={`px-6 py-3 rounded-full text-sm font-medium transition-all ${
+                  selectedContentType === 'skillcheck'
+                    ? 'bg-blue-600 text-white shadow-lg'
+                    : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 border border-gray-200 dark:border-gray-600'
+                }`}
+              >
+                🎯 スキルチェック ({contentTypeCounts.skillcheck})
+              </button>
             </div>
           </div>
         )}
@@ -424,26 +455,35 @@ const BookSelectionScreen: React.FC<BookSelectionScreenProps> = ({ onSelectBook 
                       <span className={`px-2 py-1 rounded-md text-xs font-medium ${
                         questionSet.type === 'ebook' 
                           ? 'bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200'
+                          : questionSet.type === 'ebook-separate'
+                          ? 'bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200'
                           : questionSet.type === 'pdf'
                           ? 'bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200'
                           : questionSet.type === 'video'
                           ? 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200'
+                          : questionSet.type === 'test'
+                          ? 'bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200'
+                          : questionSet.type === 'skillcheck'
+                          ? 'bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200'
                           : 'bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200'
                       }`}>
                         {questionSet.type === 'ebook' ? '📖 電子書籍' : 
+                         questionSet.type === 'ebook-separate' ? '📑 ページ分割書籍' : 
                          questionSet.type === 'pdf' ? '📄 PDF文書' : 
                          questionSet.type === 'video' ? '🎥 動画' : 
+                         questionSet.type === 'test' ? '📝 テスト' : 
+                         questionSet.type === 'skillcheck' ? '🎯 スキルチェック' : 
                          '📝 クイズ'}
                       </span>
                     </div>
                     
                     <div className="flex justify-between items-center text-sm text-gray-500 dark:text-gray-400">
                       <span className="flex items-center gap-1">
-                        <span>{questionSet.type === 'ebook' ? '📄' : 
+                        <span>{questionSet.type === 'ebook' || questionSet.type === 'ebook-separate' ? '📄' : 
                                questionSet.type === 'pdf' ? '📄' : 
                                questionSet.type === 'video' ? '🎥' : 
                                '📝'}</span>
-                        <span>{questionSet.type === 'ebook' || questionSet.type === 'pdf' ? 'ページ数' : 
+                        <span>{questionSet.type === 'ebook' || questionSet.type === 'ebook-separate' || questionSet.type === 'pdf' ? 'ページ数' : 
                                questionSet.type === 'video' ? '動画時間' : 
                                `${questionSet.totalQuestions}問`}</span>
                       </span>

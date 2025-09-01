@@ -30,6 +30,21 @@
       "githubRepo": "your-username/dockerskillchecker"
     },
     {
+      "id": "test-ebook-separate",
+      "title": "ページ分割表示テスト",
+      "description": "ebook-separateタイプのテスト用コンテンツです。見出し1と---による自動ページ分割、ナビゲーション機能をテストできます。",
+      "version": "1.0.0",
+      "author": "Test Team",
+      "categories": ["テスト", "デモ", "機能確認"],
+      "totalQuestions": 0,
+      "estimatedTime": "10-15分",
+      "coverImage": "test-logo.png",
+      "color": "#FF6B6B",
+      "type": "ebook-separate",
+      "contentFile": "test-ebook-separate-sample.md",
+      "githubRepo": "your-username/dockerskillchecker"
+    },
+    {
       "id": "python",
       "title": "Python プログラミングスキルテスト",
       "description": "Pythonの基礎から上級まで、実務で必要なプログラミングスキルを測定します。基本文法からライブラリ活用、オブジェクト指向まで幅広くカバーします。",

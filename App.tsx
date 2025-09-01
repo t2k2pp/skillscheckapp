@@ -14,11 +14,12 @@ import DictionaryScreen from './components/DictionaryScreen';
 import DictionaryDetailCard from './components/DictionaryDetailCard';
 import ResultsScreen from './components/ResultsScreen';
 import EbookViewer from './components/EbookViewer';
+import EbookSeparateViewer from './components/EbookSeparateViewer';
 import PDFViewer from './components/PDFViewer';
 import VideoViewer from './components/VideoViewer';
 
 const App: React.FC = () => {
-  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'category_selection' | 'quiz_mode_selection' | 'pattern_selection' | 'active' | 'one_by_one_active' | 'dictionary_list' | 'dictionary_detail' | 'finished' | 'ebook_viewer' | 'pdf_viewer' | 'video_viewer'>('book_selection');
+  const [quizState, setQuizState] = useState<'book_selection' | 'welcome' | 'category_selection' | 'quiz_mode_selection' | 'pattern_selection' | 'active' | 'one_by_one_active' | 'dictionary_list' | 'dictionary_detail' | 'finished' | 'ebook_viewer' | 'ebook_separate_viewer' | 'pdf_viewer' | 'video_viewer'>('book_selection');
   const [selectedBook, setSelectedBook] = useState<string | null>(null);
   const [currentQuestionSet, setCurrentQuestionSet] = useState<QuestionSet | null>(null);
   const [currentBookMetadata, setCurrentBookMetadata] = useState<QuestionSetMetadata | null>(null);
@@ -39,6 +40,14 @@ const App: React.FC = () => {
         setSelectedBook(bookId);
         setCurrentBookMetadata(metadata);
         setQuizState('ebook_viewer');
+        return;
+      }
+
+      // ページ分割Ebookコンテンツの場合、直接EbookSeparateビューアに移動
+      if (metadata?.type === 'ebook-separate' && metadata.contentFile) {
+        setSelectedBook(bookId);
+        setCurrentBookMetadata(metadata);
+        setQuizState('ebook_separate_viewer');
         return;
       }
 
@@ -360,6 +369,18 @@ const App: React.FC = () => {
         if (currentBookMetadata?.contentFile) {
           return (
             <EbookViewer
+              contentFile={currentBookMetadata.contentFile}
+              title={currentBookMetadata.title}
+              onBack={backToBookSelection}
+              githubRepo={currentBookMetadata.githubRepo}
+            />
+          );
+        }
+        return <BookSelectionScreen onSelectBook={handleBookSelect} />;
+      case 'ebook_separate_viewer':
+        if (currentBookMetadata?.contentFile) {
+          return (
+            <EbookSeparateViewer
               contentFile={currentBookMetadata.contentFile}
               title={currentBookMetadata.title}
               onBack={backToBookSelection}
