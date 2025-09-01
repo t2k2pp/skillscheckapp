@@ -165,18 +165,18 @@
     {
       "id": 20,
       "level": "基礎",
-      "text": "Reactアプリケーションを作成するための公式ツールはどれですか？",
-      "options": ["Create React App", "React CLI", "React Generator", "React Starter"],
+      "text": "現在推奨されるReactアプリケーション作成ツールはどれですか？",
+      "options": ["Vite", "Create React App", "React CLI", "React Generator"],
       "correctAnswerIndex": 0,
-      "explanation": "Create React App（CRA）は、Reactアプリケーションの開発環境を素早く構築するための公式ツールです。"
+      "explanation": "ViteやNext.js等のモダンツールが現在推奨されます。Create React App（CRA）は保守が停止し、新規プロジェクトでは推奨されません。"
     },
     {
       "id": 21,
       "level": "基礎",
-      "text": "ReactでDOMにアプリケーションをレンダリングする際に使用する関数はどれですか？",
-      "options": ["ReactDOM.render()", "React.render()", "ReactDOM.mount()", "React.mount()"],
+      "text": "React 18以降でDOMにアプリケーションをレンダリングする際に推奨される方法はどれですか？",
+      "options": ["createRoot().render()", "ReactDOM.render()", "ReactDOM.mount()", "React.mount()"],
       "correctAnswerIndex": 0,
-      "explanation": "`ReactDOM.render()`（React 18では`createRoot().render()`）を使用してReactコンポーネントをDOM要素にレンダリングします。"
+      "explanation": "React 18以降では`createRoot().render()`が推奨されます。`ReactDOM.render()`は非推奨となり、新機能（automatic batching、Suspense等）が利用できません。"
     },
     {
       "id": 22,
@@ -189,10 +189,10 @@
     {
       "id": 23,
       "level": "基礎",
-      "text": "Reactでエラー境界（Error Boundary）を実装するために必要なメソッドはどれですか？",
-      "options": ["componentDidCatch", "errorHandler", "onError", "catchError"],
-      "correctAnswerIndex": 0,
-      "explanation": "`componentDidCatch`と`getDerivedStateFromError`を実装することで、子コンポーネントのJavaScriptエラーをキャッチできます。"
+      "text": "Reactでエラー境界（Error Boundary）を実装するために主に使用されるメソッドはどれですか？",
+      "options": ["componentDidCatch", "getDerivedStateFromError", "onError", "catchError"],
+      "correctAnswerIndex": 1,
+      "explanation": "`getDerivedStateFromError`でエラー状態を更新し、`componentDidCatch`でエラーログを記録します。両方使用するのがベストプラクティスです。"
     },
     {
       "id": 24,
@@ -352,7 +352,7 @@
       "text": "Reactで状態更新が非同期的に実行される理由は何ですか？",
       "options": ["パフォーマンス最適化のため", "メモリ節約のため", "エラー防止のため", "セキュリティのため"],
       "correctAnswerIndex": 0,
-      "explanation": "ReactはバッチングというプロセスでsetState呼び出しをグループ化し、不要な再レンダリングを避けてパフォーマンスを最適化します。"
+      "explanation": "ReactはバッチングというプロセスでsetState呼び出しをグループ化し、不要な再レンダリングを避けてパフォーマンスを最適化します。React 18では自動バッチングが拡張され、timeout、promise、native event handler内でも適用されます。"
     },
     {
       "id": 44,

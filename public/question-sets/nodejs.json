@@ -24,7 +24,7 @@
       "text": "Node.jsでモジュールを読み込むために使用する関数はどれですか？",
       "options": ["require()", "import()", "include()", "load()"],
       "correctAnswerIndex": 0,
-      "explanation": "`require()`関数はCommonJSモジュールシステムでモジュールを読み込むために使用されます。例：`const fs = require('fs')`"
+      "explanation": "`require()`関数はCommonJSモジュールシステムでモジュールを読み込むために使用されます。例：`const fs = require('fs')`。なお、Node.js 12以降ではESモジュールの`import`も使用可能です。"
     },
     {
       "id": 3,
@@ -152,7 +152,7 @@
       "text": "Node.jsでURLを解析するために使用する標準モジュールはどれですか？",
       "options": ["url", "uri", "link", "address"],
       "correctAnswerIndex": 0,
-      "explanation": "`url`モジュールは、URLの解析、構築、検証などの機能を提供します。`url.parse()`や`url.format()`などが使用できます。"
+      "explanation": "`url`モジュールは、URLの解析、構築、検証などの機能を提供します。レガシー`url.parse()`に加えて、WHATWG URL APIも利用可能です。"
     },
     {
       "id": 19,
@@ -160,7 +160,7 @@
       "text": "Node.jsでクエリ文字列を解析するために使用する標準モジュールはどれですか？",
       "options": ["querystring", "query", "params", "search"],
       "correctAnswerIndex": 0,
-      "explanation": "`querystring`モジュールは、URLのクエリ文字列を解析してオブジェクトに変換したり、その逆を行います。"
+      "explanation": "`querystring`モジュールは、URLのクエリ文字列を解析してオブジェクトに変換したり、その逆を行います。現在は`URLSearchParams` APIの使用も推奨されています。"
     },
     {
       "id": 20,
@@ -179,7 +179,7 @@
       "explanation": "`console.log()`は、標準出力に文字列を表示します。デバッグやログ出力によく使用されます。"
     },
     {
-      "id": 21,
+      "id": 22,
       "level": "基礎",
       "text": "Node.jsでエラー情報をコンソールに出力する関数はどれですか？",
       "options": ["console.error()", "console.log()", "error()", "console.warn()"],
@@ -232,7 +232,7 @@
       "text": "Express.jsでリクエストボディをパースするためのミドルウェアはどれですか？",
       "options": ["express.json()", "bodyParser.json()", "express.parse()", "express.body()"],
       "correctAnswerIndex": 0,
-      "explanation": "`express.json()`は、JSONペイロードを含むリクエストボディをパースします。Express 4.16以降では内蔵されています。"
+      "explanation": "`express.json()`は、JSONペイロードを含むリクエストボディをパースします。Express 4.16以降では内蔵されており、以前使用されていた`body-parser`は不要になりました。"
     },
     {
       "id": 29,
@@ -368,7 +368,7 @@
       "text": "Node.jsでHTTPリクエストを送信するための人気サードパーティライブラリはどれですか？",
       "options": ["axios", "fetch", "request", "http-client"],
       "correctAnswerIndex": 0,
-      "explanation": "axiosは、Promise ベースのHTTPクライアントライブラリで、リクエスト/レスポンスのインターセプトなどの機能を提供します。"
+      "explanation": "axiosは、Promise ベースのHTTPクライアントライブラリで、リクエスト/レスポンスのインターセプトなどの機能を提供します。なお、Node.js 18以降では`fetch` APIも標準で利用可能です。"
     },
     {
       "id": 46,
@@ -421,10 +421,10 @@
     {
       "id": 52,
       "level": "上級",
-      "text": "Node.jsでストリームを作成する際の基底クラスとして正しくないものはどれですか？",
-      "options": ["Stream", "Readable", "Writable", "Transform"],
+      "text": "Node.jsでストリームの具体的な実装クラスはどれですか？",
+      "options": ["Readable", "Stream", "Base", "Abstract"],
       "correctAnswerIndex": 0,
-      "explanation": "`Readable`、`Writable`、`Duplex`、`Transform`がストリームの基底クラスです。`Stream`は抽象的な概念です。"
+      "explanation": "`Readable`、`Writable`、`Duplex`、`Transform`がストリームの具体的実装クラスです。`Stream`は基底クラスですが、直接使用することは少ないです。"
     },
     {
       "id": 53,
