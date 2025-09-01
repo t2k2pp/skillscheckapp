@@ -764,7 +764,7 @@
     {
       "id": 59,
       "level": "上級",
-      "text": "ビッグデータの特徴を表す「3V」として適切でない組み合わせはどれですか？",
+      "text": "ビッグデータの基本的な「3V」として適切でない組み合わせはどれですか？",
       "options": [
         "Volume、Velocity、Variety",
         "Volume、Velocity、Value",
@@ -772,7 +772,7 @@
         "Volume、Velocity、Visibility"
       ],
       "correctAnswerIndex": 3,
-      "explanation": "Visibilityは一般的な3Vに含まれません。Volume（量）、Velocity（速度）、Variety（多様性）が基本的な3Vです。Value（価値）、Veracity（正確性）も追加要素として使われます。"
+      "explanation": "Visibilityはビッグデータの特徴を表す概念ではありません。基本的な3Vは、Volume（量）、Velocity（速度）、Variety（多様性）です。Value（価値）、Veracity（正確性）は後から追加された拡張概念ですが、Visibilityは含まれません。"
     },
     {
       "id": 60,

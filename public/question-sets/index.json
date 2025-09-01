@@ -8,7 +8,11 @@
       "description": "Node.jsの基礎から上級まで、サーバーサイド開発で必要なスキルを測定します。Express.js、データベース、非同期処理、パフォーマンス最適化まで幅広くカバーします。",
       "version": "1.0.0",
       "author": "Node.js Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "nodejs-logo.png",
@@ -20,7 +24,11 @@
       "description": "Node.jsの基礎から実用的な応用まで学習できる電子書籍です。環境構築からHTTPサーバー構築まで、実践的な内容で学習できます。",
       "version": "1.0.0",
       "author": "Node.js Learning Team",
-      "categories": ["Node.js", "プログラミング", "バックエンド"],
+      "categories": [
+        "Node.js",
+        "プログラミング",
+        "バックエンド"
+      ],
       "totalQuestions": 0,
       "estimatedTime": "45-60分",
       "coverImage": "nodejs-logo.png",
@@ -35,7 +43,11 @@
       "description": "ebook-separateタイプのテスト用コンテンツです。見出し1と---による自動ページ分割、ナビゲーション機能をテストできます。",
       "version": "1.0.0",
       "author": "Test Team",
-      "categories": ["テスト", "デモ", "機能確認"],
+      "categories": [
+        "テスト",
+        "デモ",
+        "機能確認"
+      ],
       "totalQuestions": 0,
       "estimatedTime": "10-15分",
       "coverImage": "test-logo.png",
@@ -50,7 +62,11 @@
       "description": "Pythonの基礎から上級まで、実務で必要なプログラミングスキルを測定します。基本文法からライブラリ活用、オブジェクト指向まで幅広くカバーします。",
       "version": "1.0.0",
       "author": "Python Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "python-logo.png",
@@ -62,7 +78,11 @@
       "description": "Git/GitHubの基礎から上級まで、実務で必要なバージョン管理スキルを測定します。基本コマンドからチーム開発のベストプラクティスまで幅広くカバーします。",
       "version": "1.0.0",
       "author": "Git Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "git-logo.png",
@@ -74,7 +94,12 @@
       "description": "JDLA G検定のシラバスを網羅した総合問題集です。AIの基礎から機械学習、ディープラーニング、法律・倫理まで、実践的な知識の定着を目指します。",
       "version": "1.0.0",
       "author": "Gemini",
-      "categories": ["AI基礎", "機械学習", "ディープラーニング", "法律・倫理"],
+      "categories": [
+        "AI基礎",
+        "機械学習",
+        "ディープラーニング",
+        "法律・倫理"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "g-kentei-logo.png",
@@ -86,7 +111,11 @@
       "description": "Dockerのスキルを効率的に測定できる問題集です。基礎から上級まで幅広いレベルの問題を収録し、実践的なスキル評価を提供します。",
       "version": "1.0.0",
       "author": "Docker Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "docker-logo.png",
@@ -98,7 +127,11 @@
       "description": "C++の基礎から上級まで、幅広いスキルレベルに対応した問題集です。STL、オブジェクト指向、テンプレート、メモリ管理など、実践的な知識を測定します。",
       "version": "1.0.0",
       "author": "C++ Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "cpp-logo.png",
@@ -110,7 +143,11 @@
       "description": "Reactの基礎から上級まで、モダンなフロントエンド開発で必要なスキルを測定します。Hooks、Context、パフォーマンス最適化、テスト手法まで幅広くカバーします。",
       "version": "1.0.0",
       "author": "React Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "react-logo.png",
@@ -122,7 +159,11 @@
       "description": "Vue.jsの基礎から上級まで、コンポーネントベース開発で必要なスキルを測定します。Options API、Composition API、Vue Router、状態管理まで幅広くカバーします。",
       "version": "1.0.0",
       "author": "Vue.js Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "vuejs-logo.png",
@@ -134,7 +175,11 @@
       "description": "Viteの基礎から上級まで、モダンなフロントエンド開発環境で必要なスキルを測定します。開発サーバー、HMR、プラグイン、最適化まで幅広くカバーします。",
       "version": "1.0.0",
       "author": "Vite Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "vite-logo.png",
@@ -146,7 +191,11 @@
       "description": "Excel関数の基礎から最新機能まで、実務で必要なスキルを測定します。基本関数から動的配列、XLOOKUP、LAMBDA関数まで幅広くカバーします。",
       "version": "1.0.0",
       "author": "Excel Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "excel-logo.png",
@@ -158,7 +207,11 @@
       "description": "PowerAppsでの関数活用から最新機能まで、実務で必要なスキルを測定します。基本関数からコレクション操作、エラーハンドリング、パフォーマンス最適化まで幅広くカバーします。",
       "version": "1.0.0",
       "author": "PowerApps Functions Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "powerapps-logo.png",
@@ -170,7 +223,11 @@
       "description": "PowerAppsでのデータベース操作から最新機能まで、実務で必要なスキルを測定します。Dataverse、SharePoint、SQL Server、各種コネクタとの連携まで幅広くカバーします。",
       "version": "1.0.0",
       "author": "PowerApps Database Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "powerapps-database-logo.png",
@@ -182,7 +239,11 @@
       "description": "PowerAppsでのSQL Server連携から高度なデータベース設計まで、実務で必要なスキルを測定します。T-SQL、ストアドプロシージャ、パフォーマンス最適化、セキュリティまで幅広くカバーします。",
       "version": "1.0.0",
       "author": "PowerApps SQL Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "powerapps-sql-logo.png",
@@ -194,7 +255,11 @@
       "description": "データベースの基礎から上級まで、実務で必要な知識を測定します。正規化、ER図、トランザクション、インデックス、設計原則まで幅広くカバーします。",
       "version": "1.0.0",
       "author": "Database Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "database-logo.png",
@@ -206,7 +271,11 @@
       "description": "標準SQLの基礎から上級まで、実務で必要なスキルを測定します。SELECT文、結合、集約、サブクエリ、ビュー、ストアドプロシージャまで幅広くカバーします。",
       "version": "1.0.0",
       "author": "SQL Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "sql-logo.png",
@@ -218,7 +287,11 @@
       "description": "CAPM（Certified Associate in Project Management）試験対策の問題集です。プロジェクト管理の基礎知識、用語、プロセス、計算式など暗記系の問題を重点的にカバーします。",
       "version": "1.0.0",
       "author": "CAPM Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "capm-logo.png",
@@ -230,7 +303,11 @@
       "description": "PMP（Project Management Professional）試験対策の問題集です。上級レベルのプロジェクト管理知識、プロセス統合、高度な計算問題、実践的なシナリオなど暗記系の問題を重点的にカバーします。",
       "version": "1.0.0",
       "author": "PMP Learning Team",
-      "categories": ["基礎", "中級", "上級"],
+      "categories": [
+        "基礎",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "pmp-logo.png",
@@ -242,7 +319,13 @@
       "description": "Snowflake SnowPro Associate認定試験対策の問題集です。Snowflakeの基礎概念から実践的な知識まで、Associate レベルの必須スキルを幅広くカバーします。",
       "version": "1.0.0",
       "author": "Snowflake Learning Team",
-      "categories": ["Snowflake", "データベース", "クラウド", "基礎", "中級"],
+      "categories": [
+        "Snowflake",
+        "データベース",
+        "クラウド",
+        "基礎",
+        "中級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "60-75分",
       "coverImage": "snowflake-logo.png",
@@ -254,83 +337,17 @@
       "description": "Snowflake SnowPro Core認定試験対策の問題集です。Snowflakeプラットフォームの深い理解と実践的な知識を測定し、上級レベルの技術スキルを幅広くカバーします。",
       "version": "1.0.0",
       "author": "Snowflake Learning Team",
-      "categories": ["Snowflake", "データベース", "クラウド", "中級", "上級"],
+      "categories": [
+        "Snowflake",
+        "データベース",
+        "クラウド",
+        "中級",
+        "上級"
+      ],
       "totalQuestions": 75,
       "estimatedTime": "75-90分",
       "coverImage": "snowflake-core-logo.png",
       "color": "#1E40AF"
-    },
-    {
-      "id": "smartdb-bronze",
-      "title": "SmartDB BRONZE 認定スキルテスト",
-      "description": "SmartDB BRONZEレベルの基礎データベーススキルを測定します。データベース基礎理論、SQL基礎、SmartDBの基本概念を包括的にカバーします。",
-      "version": "1.0.0",
-      "author": "SmartDB Learning Team",
-      "categories": ["基礎", "データベース", "SmartDB"],
-      "totalQuestions": 75,
-      "estimatedTime": "45-60分",
-      "coverImage": "smartdb-bronze-logo.png",
-      "color": "#CD7F32"
-    },
-    {
-      "id": "smartdb-silver",
-      "title": "SmartDB SILVER 認定スキルテスト",
-      "description": "SmartDB SILVERレベルの中級データベーススキルを測定します。SmartDBアーキテクチャ、運用管理、セキュリティ、パフォーマンス最適化を幅広くカバーします。",
-      "version": "1.0.0",
-      "author": "SmartDB Learning Team",
-      "categories": ["中級", "データベース", "SmartDB"],
-      "totalQuestions": 75,
-      "estimatedTime": "60-75分",
-      "coverImage": "smartdb-silver-logo.png",
-      "color": "#C0C0C0"
-    },
-    {
-      "id": "smartdb-gold",
-      "title": "SmartDB GOLD 認定スキルテスト",
-      "description": "SmartDB GOLDレベルの高度なデータベース管理スキルを測定します。上級者向けのパフォーマンス最適化、セキュリティ設計、高可用性構成、運用自動化まで幅広くカバーします。",
-      "version": "1.0.0",
-      "author": "SmartDB Learning Team",
-      "categories": ["上級", "エキスパート", "認定試験"],
-      "totalQuestions": 75,
-      "estimatedTime": "75-90分",
-      "coverImage": "smartdb-gold-logo.png",
-      "color": "#FFD700"
-    },
-    {
-      "id": "smartdb-platinum",
-      "title": "SmartDB PLATINUM 認定スキルテスト",
-      "description": "SmartDB PLATINUMレベルの最上級データベース専門スキルを測定します。アーキテクチャ設計、大規模システム統合、先進技術活用、グローバル展開まで包括的にカバーします。",
-      "version": "1.0.0",
-      "author": "SmartDB Learning Team",
-      "categories": ["エキスパート", "アーキテクト", "認定試験"],
-      "totalQuestions": 75,
-      "estimatedTime": "90-120分",
-      "coverImage": "smartdb-platinum-logo.png",
-      "color": "#E5E4E2"
-    },
-    {
-      "id": "smartdb-diamond",
-      "title": "SmartDB DIAMOND 認定スキルテスト",
-      "description": "SmartDB DIAMONDレベルの最高峰データベーススキルを測定します。次世代技術、革新的アーキテクチャ、先進的最適化手法を包括的にカバーする最上級レベルです。",
-      "version": "1.0.0",
-      "author": "SmartDB Learning Team",
-      "categories": ["マスター", "イノベーター", "認定試験"],
-      "totalQuestions": 75,
-      "estimatedTime": "120-150分",
-      "coverImage": "smartdb-diamond-logo.png",
-      "color": "#B9F2FF"
-    },
-    {
-      "id": "smartdb-sapphire",
-      "title": "SmartDB SAPPHIRE 認定スキルテスト",
-      "description": "SmartDB SAPPHIREレベルの至高データベーススキルを測定します。宇宙意識、多次元統合、無限可能性の探求など、データベース技術の最終境地を包括的にカバーします。",
-      "version": "1.0.0",
-      "author": "SmartDB Learning Team",
-      "categories": ["至高", "宇宙", "認定試験"],
-      "totalQuestions": 75,
-      "estimatedTime": "∞（時間を超越）",
-      "coverImage": "smartdb-sapphire-logo.png",
-      "color": "#0F52BA"
     }
   ]
 }
