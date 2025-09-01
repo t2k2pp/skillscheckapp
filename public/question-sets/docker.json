@@ -485,10 +485,10 @@
     {
       "id": 60,
       "level": "中級",
-      "text": "Docker Composeでサービスを再作成せずに設定変更を反映させるコマンドはどれですか？",
+      "text": "Docker Composeでサービスのコンテナを停止・再起動するコマンドはどれですか？",
       "options": ["docker-compose restart", "docker-compose reload", "docker-compose refresh", "docker-compose up --force-recreate"],
       "correctAnswerIndex": 0,
-      "explanation": "`docker-compose restart` は既存のコンテナを停止・再起動します。設定変更を完全に反映するには `docker-compose up --force-recreate` が確実ですが、単純な再起動では `restart` を使用します。"
+      "explanation": "`docker-compose restart` は既存のコンテナを停止・再起動します。docker-compose.ymlファイルの設定変更を反映するには `docker-compose up --force-recreate` でコンテナを再作成する必要があります。"
     },
     {
       "id": 61,

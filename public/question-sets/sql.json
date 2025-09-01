@@ -213,7 +213,7 @@
         "COUNT_CHARS"
       ],
       "correctAnswerIndex": 0,
-      "explanation": "LENGTH関数（またはCHAR_LENGTH）は、文字列の文字数を返す標準SQL関数です。例：LENGTH('Hello') → 5"
+      "explanation": "標準SQLではCHAR_LENGTH関数が正式ですが、LENGTH関数も広く使用されています。どちらも文字列の文字数を返します。例：CHAR_LENGTH('Hello') → 5"
     },
     {
       "id": 17,

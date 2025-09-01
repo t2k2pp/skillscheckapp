@@ -133,10 +133,10 @@
     {
       "id": 16,
       "level": "基礎",
-      "text": "Pythonでリストに要素を追加するメソッドはどれですか？",
+      "text": "Pythonでリストの末尾に要素を追加するメソッドはどれですか？",
       "options": ["append()", "add()", "insert()", "push()"],
       "correctAnswerIndex": 0,
-      "explanation": "`append()`メソッドは、リストの末尾に要素を追加します。例：`my_list.append(4)`"
+      "explanation": "`append()`メソッドは、リストの末尾に要素を追加します。例：`my_list.append(4)`。指定位置に追加する場合は`insert()`を使用します。"
     },
     {
       "id": 17,
@@ -296,7 +296,7 @@
       "text": "Pythonでセット（set）を作成する正しい構文はどれですか？",
       "options": ["{1, 2, 3}", "set(1, 2, 3)", "[1, 2, 3]", "(1, 2, 3)"],
       "correctAnswerIndex": 0,
-      "explanation": "セットは波括弧`{}`を使って作成します。重複要素を持たない順序のないコレクションです。"
+      "explanation": "セットは波括弧`{}`を使って作成します。重複要素を持たない順序のないコレクションです。なお、空のセットを作成する場合は`{}`ではなく`set()`を使用します（`{}`は空の辞書になります）。"
     },
     {
       "id": 37,
@@ -389,10 +389,10 @@
     {
       "id": 48,
       "level": "中級",
-      "text": "Pythonでオブジェクトの文字列表現をカスタマイズするメソッドはどれですか？",
+      "text": "Pythonでprint()関数などで使われる、オブジェクトのユーザー向けの文字列表現を定義するメソッドはどれですか？",
       "options": ["__str__", "__string__", "__repr__", "__format__"],
       "correctAnswerIndex": 0,
-      "explanation": "`__str__`メソッドは`str(obj)`や`print(obj)`で使用される文字列表現を定義します。"
+      "explanation": "`__str__`メソッドは`str(obj)`や`print(obj)`で使用されるユーザー向けの文字列表現を定義します。`__repr__`は開発者向けの公式な文字列表現を定義します。"
     },
     {
       "id": 49,
@@ -597,10 +597,10 @@
     {
       "id": 74,
       "level": "上級",
-      "text": "Pythonでアプリケーションのコマンドライン引数を解析するための標準ライブラリはどれですか？",
+      "text": "Pythonでコマンドライン引数を解析するために、現在最も推奨されている標準ライブラリはどれですか？",
       "options": ["argparse", "sys.argv", "getopt", "optparse"],
       "correctAnswerIndex": 0,
-      "explanation": "`argparse`は、コマンドライン引数の解析とヘルプメッセージの生成を行う推奨のライブラリです。"
+      "explanation": "`argparse`は、コマンドライン引数の解析とヘルプメッセージの生成を行う現在推奨のライブラリです。`getopt`や`optparse`は古い手法です。"
     },
     {
       "id": 75,

@@ -472,8 +472,8 @@
         "完全に読み書き可能",
         "PowerAppsでは使用不可能"
       ],
-      "correctAnswerIndex": 0,
-      "explanation": "ExcelファイルをPowerAppsで使用する場合、基本的には読み取り専用となり、データはテーブル形式で定義されている必要があります。"
+      "correctAnswerIndex": 1,
+      "explanation": "PowerAppsではExcelファイルを読み書き可能なデータソースとして使用できますが、複数ユーザーによる同時編集はサポートされていません。データはテーブル形式で定義されている必要があります。"
     },
     {
       "id": 37,

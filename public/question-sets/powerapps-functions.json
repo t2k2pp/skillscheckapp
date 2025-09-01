@@ -121,8 +121,8 @@
         "RandBetween()",
         "Generate()"
       ],
-      "correctAnswerIndex": 0,
-      "explanation": "Random()関数は0から1未満のランダムな数値を生成します。RandBetween()関数は指定した範囲内のランダムな整数を生成します。"
+      "correctAnswerIndex": 1,
+      "explanation": "Rand()関数は0から1未満のランダムな数値を生成します。PowerAppsではRandom()ではなくRand()を使用します。RandBetween()関数は指定した範囲内のランダムな整数を生成します。"
     },
     {
       "id": 10,
@@ -283,7 +283,7 @@
     {
       "id": 22,
       "level": "中級",
-      "text": "Filter関数で複数の条件を指定する正しい方法はどれですか？",
+      "text": "Filter関数でAND条件（複数の条件すべてを満たす）を指定する正しい方法はどれですか？",
       "options": [
         "Filter(データソース, 条件1 && 条件2)",
         "Filter(データソース, 条件1 And 条件2)",
@@ -291,7 +291,7 @@
         "Filter(データソース, And(条件1, 条件2))"
       ],
       "correctAnswerIndex": 1,
-      "explanation": "Filter関数でAND条件を指定する場合は「And」演算子を使用します。PowerAppsでは「&&」ではなく「And」を使用します。"
+      "explanation": "Filter関数でAND条件を指定する場合は「And」演算子を使用します。PowerAppsでは「&&」ではなく「And」を使用します。オプション3の「条件1, 条件2」形式も動作しますが、明示的な「And」の使用が推奨されます。"
     },
     {
       "id": 23,
