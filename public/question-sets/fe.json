@@ -78,7 +78,7 @@
     {
       "id": 6,
       "level": "中級",
-      "text": "キャッシュメモリの制御方式で、最も古いデータを置き換える方式はどれか。",
+      "text": "キャッシュメモリの制御方式で、最も長い間使用されていないデータを置き換える方式はどれか。",
       "options": [
         "FIFO（First In First Out）",
         "LRU（Least Recently Used）",
@@ -86,7 +86,7 @@
         "Random"
       ],
       "correctAnswerIndex": 1,
-      "explanation": "LRU（Least Recently Used）は、最も長い間使用されていないデータを置き換える方式で、時間的局所性を活用した効率的な方式です。"
+      "explanation": "LRU（Least Recently Used）は、最も長い間使用されていないデータを置き換える方式で、時間的局所性を活用した効率的な方式です。FIFOは最も古く格納されたデータを置き換える方式で、LRUとは異なります。"
     },
     {
       "id": 7,
