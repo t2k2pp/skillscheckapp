@@ -1,0 +1,1061 @@
+{
+  "id": "es",
+  "title": "エンベデッドシステムスペシャリスト試験対策",
+  "description": "エンベデッドシステムスペシャリスト試験の午前問題対策です。組込みシステム開発、リアルタイムOS、ハードウェア設計、IoT・エッジコンピューティングなどの専門知識を問う問題を収録しています。",
+  "categories": ["組込みシステム設計", "リアルタイムOS", "ハードウェア・回路", "IoT・エッジ", "開発・テスト"],
+  "estimatedTime": "120分",
+  "difficultyLevel": "上級",
+  "totalQuestions": 75,
+  "questions": [
+    {
+      "id": 1,
+      "category": "組込みシステム設計",
+      "question": "リアルタイムシステムにおける「ハードリアルタイム」と「ソフトリアルタイム」の違いとして適切なものはどれか。",
+      "options": [
+        "ハードリアルタイムは高性能CPU、ソフトリアルタイムは低性能CPU",
+        "ハードリアルタイムはデッドライン違反が致命的、ソフトリアルタイムは性能劣化",
+        "ハードリアルタイムは組込み専用、ソフトリアルタイムは汎用",
+        "ハードリアルタイムは複雑、ソフトリアルタイムは単純"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ハードリアルタイムシステムではデッドライン違反が致命的な結果を招き、ソフトリアルタイムシステムでは性能劣化は許容されます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 2,
+      "category": "リアルタイムOS",
+      "question": "Rate Monotonic Scheduling（RMS）アルゴリズムにおけるスケジューラビリティ条件として適切なものはどれか。",
+      "options": [
+        "CPU使用率の合計が100%以下",
+        "CPU使用率の合計がn(2^(1/n) - 1)以下（nはタスク数）",
+        "すべてのタスクの優先度が同一",
+        "タスクの実行時間が周期と同一"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "RMSでは、CPU使用率の合計がn(2^(1/n) - 1)以下の場合にスケジューラビリティが保証されます（nはタスク数）。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 3,
+      "category": "ハードウェア・回路",
+      "question": "ARM Cortex-M マイクロコントローラーにおける「NVIC（Nested Vectored Interrupt Controller）」の機能として適切なものはどれか。",
+      "options": [
+        "メモリ管理ユニット",
+        "割り込みの優先度管理とネスト制御",
+        "フラッシュメモリの制御",
+        "クロック分周器"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "NVICは、ARM Cortex-Mの割り込みコントローラーで、割り込みの優先度管理とネスト制御を行います。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 4,
+      "category": "IoT・エッジ",
+      "question": "LoRaWAN における「Class A」デバイスの通信特性として適切なものはどれか。",
+      "options": [
+        "常時受信可能",
+        "送信後のみ2つの受信ウィンドウで受信可能",
+        "スケジュールされた受信ウィンドウ",
+        "双方向通信は不可"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Class Aデバイスは、アップリンク送信後にのみRX1、RX2の2つの受信ウィンドウを開き、最も省電力です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 5,
+      "category": "開発・テスト",
+      "question": "Model-Based Testing（MBT）における「状態遷移テスト」の利点として適切なものはどれか。",
+      "options": [
+        "テストコードの自動生成が不可能",
+        "システムの振る舞いをモデル化してテストケース自動生成",
+        "単体テストのみに適用可能",
+        "手動テストの効率化のみ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "MBTは、システムの振る舞いを状態遷移モデルで表現し、そこからテストケースを自動生成する手法です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 6,
+      "category": "組込みシステム設計",
+      "question": "Safety-Critical Systemにおける「Fail-Safe」と「Fail-Operational」の設計思想の違いとして適切なものはどれか。",
+      "options": [
+        "Fail-Safeは安全停止、Fail-Operationalは機能継続",
+        "Fail-Safeは高コスト、Fail-Operationalは低コスト",
+        "Fail-Safeは複雑、Fail-Operationalは単純",
+        "機能的な違いはない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Fail-Safeは障害時に安全な状態に停止し、Fail-Operationalは障害時でも機能を継続する設計思想です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 7,
+      "category": "リアルタイムOS",
+      "question": "Priority Inversion問題を解決する「Priority Inheritance Protocol」の動作として適切なものはどれか。",
+      "options": [
+        "低優先度タスクの優先度を永続的に上昇",
+        "高優先度タスクをブロックした低優先度タスクが一時的に高優先度を継承",
+        "中優先度タスクの実行を禁止",
+        "すべてのタスクを同一優先度で実行"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Priority Inheritance Protocolは、高優先度タスクをブロックした低優先度タスクが一時的にその優先度を継承します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 8,
+      "category": "ハードウェア・回路",
+      "question": "SPI（Serial Peripheral Interface）通信における「CPOL」と「CPHA」パラメータの役割として適切なものはどれか。",
+      "options": [
+        "通信速度の設定",
+        "クロック極性とフェーズの設定",
+        "データビット数の設定",
+        "エラー検出方式の設定"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "CPOLはクロックのアイドル状態の極性、CPHAはデータサンプリングのクロックフェーズを設定します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 9,
+      "category": "IoT・エッジ",
+      "question": "Edge Computing における「Data Locality」の利点として適切でないものはどれか。",
+      "options": [
+        "ネットワーク遅延の削減",
+        "プライバシー保護の向上",
+        "クラウドサーバーの処理能力向上",
+        "帯域幅使用量の削減"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Data Localityは、データをエッジで処理することの利点であり、クラウドサーバーの処理能力向上は直接的な効果ではありません。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 10,
+      "category": "開発・テスト",
+      "question": "HIL（Hardware-in-the-Loop）テストの特徴として適切なものはどれか。",
+      "options": [
+        "ソフトウェアのみをテスト",
+        "実際のハードウェアとシミュレーターを組み合わせた統合テスト",
+        "単体テストのみに適用",
+        "手動テストのみで実施"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "HILテストは、実際のハードウェア（ECUなど）とシミュレートされた環境を組み合わせて行う統合テスト手法です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 11,
+      "category": "組込みシステム設計",
+      "question": "AUTOSAR（AUTomotive Open System ARchitecture）における「Virtual Functional Bus（VFB）」の概念として適切なものはどれか。",
+      "options": [
+        "物理的な通信バス",
+        "アプリケーション間の論理的な通信インターフェース",
+        "車載ネットワークの物理層",
+        "診断通信専用バス"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "VFBは、AUTOSARでアプリケーションコンポーネント間の論理的な通信を抽象化するインターフェースです。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 12,
+      "category": "リアルタイムOS",
+      "question": "μITRON仕様における「タスク状態遷移」で、WAITING状態から遷移可能な状態として適切でないものはどれか。",
+      "options": [
+        "READY状態",
+        "DORMANT状態",
+        "RUNNING状態",
+        "遷移可能な状態は存在しない"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "WAITINGからRUNNINGに直接遷移することはできず、必ずREADYを経由する必要があります。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 13,
+      "category": "ハードウェア・回路",
+      "question": "FPGA（Field-Programmable Gate Array）におけるLUT（Look-Up Table）の機能として適切なものはどれか。",
+      "options": [
+        "メモリ容量の拡張",
+        "組み合わせ論理関数の実装",
+        "クロック信号の生成",
+        "アナログ信号の変換"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "LUTは、FPGAで任意の組み合わせ論理関数を実装するための基本構成要素です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 14,
+      "category": "IoT・エッジ",
+      "question": "MQTT プロトコルにおける「Quality of Service（QoS）レベル2」の保証内容として適切なものはどれか。",
+      "options": [
+        "メッセージ配信の保証なし",
+        "最低1回の配信保証",
+        "厳密に1回の配信保証",
+        "最高3回の配信保証"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "MQTT QoSレベル2は「Exactly once」であり、メッセージが厳密に1回だけ配信されることを保証します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 15,
+      "category": "開発・テスト",
+      "question": "ISO 26262（機能安全）におけるASIL（Automotive Safety Integrity Level）の最高レベルはどれか。",
+      "options": [
+        "ASIL A",
+        "ASIL B",
+        "ASIL C",
+        "ASIL D"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "ISO 26262では、ASIL DがAutomotive Safety Integrity Levelの最高レベルで、最も厳しい安全要求です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 16,
+      "category": "組込みシステム設計",
+      "question": "低電力設計における「Dynamic Voltage and Frequency Scaling（DVFS）」の効果として適切なものはどれか。",
+      "options": [
+        "性能の向上",
+        "処理負荷に応じた電圧・周波数調整による消費電力削減",
+        "メモリ容量の拡張",
+        "通信性能の向上"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "DVFSは、処理負荷に応じてCPUの電圧と動作周波数を動的に調整し、消費電力を最適化する技術です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 17,
+      "category": "リアルタイムOS",
+      "question": "Earliest Deadline First（EDF）スケジューリングの特徴として適切でないものはどれか。",
+      "options": [
+        "動的優先度スケジューリング",
+        "デッドラインが最も近いタスクを実行",
+        "固定優先度での実装",
+        "理論的には最適スケジューリング"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "EDFは動的優先度スケジューリングであり、デッドラインに基づいて実行時に優先度が決定されます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 18,
+      "category": "ハードウェア・回路",
+      "question": "CAN（Controller Area Network）バスにおける「Arbitration」機能の目的として適切なものはどれか。",
+      "options": [
+        "データの暗号化",
+        "複数ノードが同時送信した際の衝突解決",
+        "ネットワークトポロジの管理",
+        "電力供給の制御"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "CANのArbitrationは、複数ノードが同時にメッセージを送信した際に、ID の優先度により衝突を解決します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 19,
+      "category": "IoT・エッジ",
+      "question": "NB-IoT（Narrow Band IoT）の特徴として適切でないものはどれか。",
+      "options": [
+        "低消費電力",
+        "広域カバレッジ",
+        "高速データ転送",
+        "低コスト"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "NB-IoTは、低消費電力、広域カバレッジ、低コストを特徴としますが、データ転送速度は低速です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 20,
+      "category": "開発・テスト",
+      "question": "組込みソフトウェアの静的解析における「MISRA C」の目的として適切なものはどれか。",
+      "options": [
+        "実行時性能の最適化",
+        "C言語の安全で信頼性の高いコーディング標準",
+        "メモリ使用量の削減",
+        "コンパイル時間の短縮"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "MISRA Cは、組込みソフトウェア開発でC言語を安全かつ信頼性高く使用するためのコーディング標準です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 21,
+      "category": "組込みシステム設計",
+      "question": "Time-Triggered Architecture（TTA）の設計原則として適切なものはどれか。",
+      "options": [
+        "イベント駆動による非同期処理",
+        "グローバルタイムベースでの同期処理",
+        "割り込み駆動の優先度処理",
+        "動的なタスクスケジューリング"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "TTAは、グローバルタイムベースで全ノードが同期し、予定された時刻での決定論的な動作を実現します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 22,
+      "category": "リアルタイムOS",
+      "question": "FreeRTOS における「Binary Semaphore」と「Counting Semaphore」の違いとして適切なものはどれか。",
+      "options": [
+        "Binary は0/1の2値、Counting は任意の正整数",
+        "Binary は高速、Counting は低速",
+        "Binary は排他制御専用、Counting は同期専用",
+        "機能的な違いはない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Binary Semaphoreは0または1の値のみ、Counting Semaphoreは指定された最大値までの任意の正整数を取ります。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 23,
+      "category": "ハードウェア・回路",
+      "question": "ADC（Analog-to-Digital Converter）における「サンプリング定理（ナイキスト定理）」の内容として適切なものはどれか。",
+      "options": [
+        "サンプリング周波数は信号の最高周波数と同じ",
+        "サンプリング周波数は信号の最高周波数の2倍以上",
+        "サンプリング周波数は信号の最高周波数の半分",
+        "サンプリング周波数は任意でよい"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ナイキスト定理により、エイリアシングを避けるにはサンプリング周波数を信号の最高周波数の2倍以上にする必要があります。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 24,
+      "category": "IoT・エッジ",
+      "question": "CoAP（Constrained Application Protocol）がHTTPに対して持つ利点として適切なものはどれか。",
+      "options": [
+        "高機能なWebブラウザサポート",
+        "軽量でUDP上での動作による低オーバーヘッド",
+        "複雑なセキュリティ機能",
+        "大容量データ転送の最適化"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "CoAPは、制約のあるデバイス向けに設計された軽量プロトコルで、UDP上で動作し低オーバーヘッドを実現します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 25,
+      "category": "開発・テスト",
+      "question": "組込みシステムにおける「Continuous Integration（CI）」の実装で重要な要素として適切でないものはどれか。",
+      "options": [
+        "自動ビルドとテスト",
+        "ターゲットハードウェアでの検証",
+        "手動による全テスト実行",
+        "静的解析ツールの統合"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "CIは自動化が重要であり、手動による全テスト実行はCIの原則に反します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 26,
+      "category": "組込みシステム設計",
+      "question": "Automotive Ethernet における「Time-Sensitive Networking（TSN）」の機能として適切なものはどれか。",
+      "options": [
+        "帯域幅の無制限使用",
+        "決定論的な低遅延通信の保証",
+        "セキュリティ機能の削除",
+        "物理層の高速化のみ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "TSNは、標準Ethernet上で決定論的で低遅延の通信を実現し、リアルタイム要求を満たします。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 27,
+      "category": "リアルタイムOS",
+      "question": "Zephyr OS における「Device Tree」の役割として適切なものはどれか。",
+      "options": [
+        "アプリケーションコードの生成",
+        "ハードウェア構成の記述とデバイス抽象化",
+        "リアルタイムスケジューリング",
+        "ネットワーク設定"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Device Treeは、ハードウェア構成を構造化して記述し、OSがハードウェアを抽象化してアクセスするための仕組みです。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 28,
+      "category": "ハードウェア・回路",
+      "question": "Embedded Flash メモリにおける「Wear Leveling」の目的として適切なものはどれか。",
+      "options": [
+        "読み取り速度の向上",
+        "書き込み回数を均等化して寿命を延ばす",
+        "消費電力の削減",
+        "データ圧縮"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Wear Levelingは、フラッシュメモリの各ブロックへの書き込み回数を均等化し、メモリ全体の寿命を延ばす技術です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 29,
+      "category": "IoT・エッジ",
+      "question": "Zigbee 3.0 における「Green Power」機能の特徴として適切なものはどれか。",
+      "options": [
+        "高消費電力設計",
+        "バッテリーレスまたは超低消費電力デバイス対応",
+        "高速データ通信専用",
+        "有線接続のみサポート"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Zigbee Green Powerは、エネルギーハーベスティングによるバッテリーレスデバイスや超低消費電力デバイスをサポートします。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 30,
+      "category": "開発・テスト",
+      "question": "DO-178C（航空機ソフトウェア認証標準）におけるDAL（Design Assurance Level）Aの要求として適切なものはどれか。",
+      "options": [
+        "最低限の検証で十分",
+        "最も厳格な検証・妥当性確認が必要",
+        "テストは不要",
+        "文書化は不要"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "DAL Aは最高レベルで、致命的な障害を防ぐため最も厳格な開発プロセスと検証が要求されます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 31,
+      "category": "組込みシステム設計",
+      "question": "Security by Design における「Root of Trust」の概念として適切なものはどれか。",
+      "options": [
+        "ソフトウェアのみによるセキュリティ",
+        "ハードウェアベースの信頼の起点",
+        "ネットワーク暗号化",
+        "ユーザー認証システム"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Root of Trustは、セキュリティチェーンの出発点となるハードウェアベースの信頼できる基盤です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 32,
+      "category": "リアルタイムOS",
+      "question": "POSIX.1b リアルタイム拡張における「優先度継承ミューテックス」の動作として適切なものはどれか。",
+      "options": [
+        "常に最高優先度で実行",
+        "ミューテックス保持タスクが待機タスクの優先度を一時継承",
+        "優先度は変更されない",
+        "最低優先度で実行"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "優先度継承ミューテックスは、Priority Inversionを防ぐため、ミューテックス保持タスクが待機中の高優先度タスクの優先度を継承します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 33,
+      "category": "ハードウェア・回路",
+      "question": "PCIe（PCI Express）における「Lane」の概念として適切なものはどれか。",
+      "options": [
+        "メモリアドレス空間",
+        "差動信号線の組み合わせによる双方向通信路",
+        "電力供給端子",
+        "クロック信号線"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "PCIeのLaneは、差動送信線と差動受信線で構成される双方向の高速通信路で、複数Lane で帯域幅を拡張できます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 34,
+      "category": "IoT・エッジ",
+      "question": "Thread（IEEE 802.15.4ベース）メッシュネットワークにおける「Border Router」の役割として適切なものはどれか。",
+      "options": [
+        "メッシュネットワーク内のルーティングのみ",
+        "ThreadネットワークとIP ネットワーク間のゲートウェイ",
+        "デバイス認証のみ",
+        "電力管理のみ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Thread Border Routerは、ThreadメッシュネットワークとWi-Fi/Ethernet等のIP ネットワーク間の通信を仲介します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 35,
+      "category": "開発・テスト",
+      "question": "組込みシステムのデバッグにおける「JTAG（Joint Test Action Group）」の機能として適切でないものはどれか。",
+      "options": [
+        "境界スキャンテスト",
+        "オンチップデバッグ",
+        "無線通信機能",
+        "フラッシュメモリプログラミング"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "JTAGは有線接続によるデバッグ・テスト・プログラミングインターフェースで、無線通信機能は含まれません。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 36,
+      "category": "組込みシステム設計",
+      "question": "Functional Safety における「Systematic Fault」と「Random Hardware Fault」の違いとして適切なものはどれか。",
+      "options": [
+        "Systematic は予測可能、Random は予測不可能",
+        "Systematic は設計・実装の誤り、Random はハードウェアの偶発的故障",
+        "Systematic は軽微、Random は重大",
+        "違いはない"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Systematic Faultは設計・実装段階での人的誤りによる故障、Random Hardware Faultは使用中のハードウェア劣化による偶発故障です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 37,
+      "category": "リアルタイムOS",
+      "question": "OSEK/VDX仕様における「Basic Task」と「Extended Task」の主な違いはどれか。",
+      "options": [
+        "Basic は低優先度、Extended は高優先度",
+        "Basic は待機状態不可、Extended は待機状態可",
+        "Basic は単発実行、Extended は周期実行",
+        "違いはない"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "OSEK/VDXでは、Basic TaskはWAITING状態になれず、Extended TaskはWAITING状態でイベント等を待機可能です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 38,
+      "category": "ハードウェア・回路",
+      "question": "USB-C における「Power Delivery（PD）」機能の最大供給電力として適切なものはどれか。",
+      "options": [
+        "15W",
+        "45W",
+        "100W",
+        "240W"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "USB Power Delivery 3.1では、最大240W（48V/5A）の電力供給が可能です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 39,
+      "category": "IoT・エッジ",
+      "question": "5G における「mMTC（massive Machine Type Communication）」の特徴として適切なものはどれか。",
+      "options": [
+        "超高速通信",
+        "超低遅延通信",
+        "大量のIoTデバイス接続",
+        "高品質映像配信"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "mMTCは5Gのユースケースの一つで、1km²あたり100万台のIoTデバイス接続をサポートします。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 40,
+      "category": "開発・テスト",
+      "question": "組込みシステムの消費電力測定における「Energy Profiling」の目的として適切なものはどれか。",
+      "options": [
+        "処理速度の最適化",
+        "機能別・時間別の消費電力分析と最適化",
+        "メモリ使用量の削減",
+        "通信性能の向上"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Energy Profilingは、システムの各機能や時間軸での消費電力を詳細に分析し、省電力最適化を行うための手法です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 41,
+      "category": "組込みシステム設計",
+      "question": "Industrial IoT（IIoT）における「OPC UA（Open Platform Communications Unified Architecture）」の特徴として適切なものはどれか。",
+      "options": [
+        "Web技術のみサポート",
+        "プラットフォーム独立でセキュアなM2M通信",
+        "コンシューマー向け専用",
+        "リアルタイム性なし"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "OPC UAは、産業機器間のプラットフォーム独立した安全な通信を実現する国際標準です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 42,
+      "category": "リアルタイムOS",
+      "question": "RT-Linux における「Hard Real-Time」機能の実現方法として適切なものはどれか。",
+      "options": [
+        "Linux カーネルの完全置換",
+        "Linux をマイクロカーネル上のタスクとして動作",
+        "通常のLinux プロセス優先度調整",
+        "特別な仕組みは不要"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "RT-Linuxは、リアルタイムマイクロカーネル上でLinux を一つのタスクとして動作させ、ハードリアルタイム性を実現します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 43,
+      "category": "ハードウェア・回路",
+      "question": "DDR4 SDRAM における「On-Die Termination（ODT）」の目的として適切なものはどれか。",
+      "options": [
+        "消費電力の増加",
+        "信号反射の抑制と信号品質向上",
+        "メモリ容量の拡張",
+        "アクセス速度の低下"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ODTは、メモリチップ内部の終端抵抗により信号反射を抑制し、高速動作時の信号品質を向上させます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 44,
+      "category": "IoT・エッジ",
+      "question": "Digital Twin における「Simulation Twin」と「Predictive Twin」の違いとして適切なものはどれか。",
+      "options": [
+        "Simulation は過去分析、Predictive は未来予測",
+        "Simulation は現在状況の再現、Predictive は将来予測とメンテナンス",
+        "機能的違いはない",
+        "Simulation は簡易、Predictive は複雑"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Simulation Twinは現在の物理システムの動作を忠実に再現し、Predictive Twinは将来の状態予測や予防保全に活用されます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 45,
+      "category": "開発・テスト",
+      "question": "組込みシステムのセキュリティテストにおける「Penetration Testing」で評価すべき項目として適切でないものはどれか。",
+      "options": [
+        "物理的アクセス制御",
+        "ネットワーク通信の脆弱性",
+        "処理性能の最大値",
+        "認証機構の強度"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "Penetration Testingはセキュリティ脆弱性の評価が目的であり、処理性能の最大値は対象外です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 46,
+      "category": "組込みシステム設計",
+      "question": "Edge AI における「Model Quantization」の効果として適切なものはどれか。",
+      "options": [
+        "モデル精度の大幅向上",
+        "メモリ使用量削減と推論速度向上",
+        "学習時間の短縮",
+        "データ収集の自動化"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Model Quantizationは、AI モデルの重みを低精度に変換し、メモリ使用量削減と推論の高速化を実現します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 47,
+      "category": "リアルタイムOS",
+      "question": "Xenomai における「Cobalt Core」と「Mercury Core」の違いとして適切なものはどれか。",
+      "options": [
+        "Cobalt は独自カーネル、Mercury は標準Linux利用",
+        "Cobalt は高レベル、Mercury は低レベル",
+        "Cobalt は古い、Mercury は新しい",
+        "機能的違いはない"
+      ],
+      "correctAnswerIndex": 0,
+      "explanation": "Cobaltは独自のリアルタイムマイクロカーネル、MercuryはLinux カーネルのPREEMPT_RT機能を利用したアプローチです。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 48,
+      "category": "ハードウェア・回路",
+      "question": "MIPI CSI-2（Mobile Industry Processor Interface Camera Serial Interface）の特徴として適切なものはどれか。",
+      "options": [
+        "低速パラレル通信",
+        "高速シリアル差動通信によるカメラインターフェース",
+        "アナログ映像信号専用",
+        "音声信号の伝送"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "MIPI CSI-2は、モバイルデバイス向けの高速シリアル差動通信による標準カメラインターフェースです。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 49,
+      "category": "IoT・エッジ",
+      "question": "AWS IoT Greengrass における「Lambda@Edge」機能の目的として適切なものはどれか。",
+      "options": [
+        "クラウドでのみ処理実行",
+        "エッジデバイスでAWS Lambda関数を実行",
+        "データの削除のみ",
+        "ネットワーク設定の管理"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "AWS IoT GreengrassのLambda機能は、クラウドで開発したLambda関数をエッジデバイスで実行可能にします。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 50,
+      "category": "開発・テスト",
+      "question": "組込みシステムの「Formal Verification」における「Model Checking」の利点として適切なものはどれか。",
+      "options": [
+        "実行速度の向上",
+        "すべての状態パスを網羅的に検証",
+        "コンパイル時間の短縮",
+        "メモリ使用量の削減"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Model Checkingは、システムの状態空間を数学的に表現し、すべての実行パスを網羅的に検証する手法です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 51,
+      "category": "組込みシステム設計",
+      "question": "Automotive Cybersecurity における「E/E Architecture」の進化で重要な考慮事項として適切なものはどれか。",
+      "options": [
+        "ECU数の無制限増加",
+        "Domain-based architectureとセキュリティ境界の明確化",
+        "すべての通信を無暗号化",
+        "物理的なセキュリティのみ重視"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "次世代車載アーキテクチャでは、機能ドメイン毎の統合ECUとセキュリティ境界の明確化が重要です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 52,
+      "category": "リアルタイムOS",
+      "question": "Partition Schedulingにおける「Temporal Partitioning」の目的として適切なものはどれか。",
+      "options": [
+        "メモリの物理的分割",
+        "CPU時間の時間的分離によるアプリケーション間の干渉防止",
+        "ストレージの論理分割",
+        "ネットワーク帯域の分割"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Temporal Partitioningは、CPU実行時間を時間的に分離し、異なるアプリケーション間の干渉を防止します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 53,
+      "category": "ハードウェア・回路",
+      "question": "RISC-V アーキテクチャにおける「Hart（Hardware Thread）」の概念として適切なものはどれか。",
+      "options": [
+        "物理的なCPU コア",
+        "命令を独立実行可能な論理プロセッサ",
+        "メモリ管理ユニット",
+        "I/O コントローラ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "RISC-VのHartは、命令を独立して実行可能な論理的なハードウェアスレッド単位です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 54,
+      "category": "IoT・エッジ",
+      "question": "Industrial Ethernet における「EtherCAT（Ethernet for Control Automation Technology）」の通信方式として適切なものはどれか。",
+      "options": [
+        "スター型のみ",
+        "リング型トポロジでのシーケンシャル処理",
+        "メッシュ型のみ",
+        "バス型のみ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "EtherCATは、リング型トポロジでEthernetフレームが各ノードを順次通過しながら高速処理されます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 55,
+      "category": "開発・テスト",
+      "question": "Safety Case における「GSN（Goal Structuring Notation）」の役割として適切なものはどれか。",
+      "options": [
+        "プログラムコードの生成",
+        "安全論証の構造化と可視化",
+        "テストケースの実行",
+        "性能測定"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "GSNは、安全性の目標、戦略、根拠を構造化して図式化し、安全論証を可視化する記法です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 56,
+      "category": "組込みシステム設計",
+      "question": "Vehicle-to-Everything（V2X）通信における「DSRC（Dedicated Short Range Communication）」と「C-V2X」の主な違いはどれか。",
+      "options": [
+        "DSRCは有線、C-V2Xは無線",
+        "DSRCは802.11pベース、C-V2Xはセルラーベース",
+        "DSRCは低速、C-V2Xは高速",
+        "機能的違いはない"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "DSRCはIEEE 802.11p Wi-Fiベース、C-V2XはLTE/5Gセルラー技術ベースのV2X通信方式です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 57,
+      "category": "リアルタイムOS",
+      "question": "ARINC 653における「Health Monitoring」の機能として適切なものはどれか。",
+      "options": [
+        "CPU使用率の監視のみ",
+        "アプリケーションの異常検出と回復動作",
+        "ネットワーク通信の監視のみ",
+        "ディスク容量の監視のみ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "ARINC 653のHealth Monitoringは、パーティション内のアプリケーションの異常を検出し、適切な回復動作を実行します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 58,
+      "category": "ハードウェア・回路",
+      "question": "eFuse（Electrical Fuse）メモリの特徴として適切なものはどれか。",
+      "options": [
+        "何度でも書き換え可能",
+        "電気的に一度だけ書き込み可能",
+        "揮発性メモリ",
+        "書き込み不可能"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "eFuseは、電気的に一度だけ書き込み可能な不揮発性メモリで、セキュリティキーや設定値の永続保存に使用されます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 59,
+      "category": "IoT・エッジ",
+      "question": "LoRa Alliance による「LoRaWAN 1.1」の新機能として適切なものはどれか。",
+      "options": [
+        "データレートの大幅向上",
+        "ハンドオーバーサポートとセキュリティ強化",
+        "消費電力の増加",
+        "通信距離の短縮"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "LoRaWAN 1.1では、ネットワーク間のハンドオーバーサポートと暗号化の強化が主要な新機能です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 60,
+      "category": "開発・テスト",
+      "question": "組込みソフトウェアの「Worst-Case Execution Time（WCET）」解析の目的として適切なものはどれか。",
+      "options": [
+        "平均実行時間の測定",
+        "プログラムの最悪実行時間の理論的上界算出",
+        "メモリ使用量の測定",
+        "消費電力の測定"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "WCET解析は、プログラムが実行される最悪ケースでの実行時間の理論的上界を算出し、リアルタイム保証に使用されます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 61,
+      "category": "組込みシステム設計",
+      "question": "Predictive Maintenance における「Condition-Based Monitoring」の実装で重要な技術要素はどれか。",
+      "options": [
+        "定期的なシステム停止",
+        "センサーデータのリアルタイム分析と機械学習",
+        "手動による定期点検",
+        "事後修理の迅速化"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Condition-Based Monitoringでは、センサーからのリアルタイムデータを機械学習で分析し、設備の状態を継続監視します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 62,
+      "category": "リアルタイムOS",
+      "question": "QNX Neutrino における「Microkernel Architecture」の利点として適切でないものはどれか。",
+      "options": [
+        "システムの信頼性向上",
+        "モジュール性とスケーラビリティ",
+        "実行オーバーヘッドの完全な排除",
+        "障害の分離とシステム回復"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "マイクロカーネルアーキテクチャは信頼性やモジュール性に優れますが、メッセージパッシングによる実行オーバーヘッドは存在します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 63,
+      "category": "ハードウェア・回路",
+      "question": "LPDDR5（Low Power DDR5）メモリの特徴として適切でないものはどれか。",
+      "options": [
+        "従来DRAMより低消費電力",
+        "高いデータ転送レート",
+        "モバイル機器向け設計",
+        "DDR4と完全なピン互換性"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "LPDDR5は、低電力・高性能なモバイル向けメモリですが、DDR4とはピン配置や電圧が異なり互換性はありません。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 64,
+      "category": "IoT・エッジ",
+      "question": "Matter（旧Project CHIP）プロトコルの目的として適切なものはどれか。",
+      "options": [
+        "高速データ転送の実現",
+        "スマートホームデバイスの相互運用性確保",
+        "産業用ネットワークの標準化",
+        "セキュリティ機能の削除"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Matterは、異なるメーカーのスマートホームデバイス間の相互運用性を確保するための統一プロトコル標準です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 65,
+      "category": "開発・テスト",
+      "question": "組込みシステムの「Fault Injection Testing」における「SEU（Single Event Upset）」の模擬目的はどれか。",
+      "options": [
+        "ソフトウェアバグの発見",
+        "宇宙線等による一時的メモリビット反転の影響評価",
+        "処理性能の測定",
+        "消費電力の測定"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SEU テストは、宇宙線や放射線によるメモリビットの一時的な反転がシステムに与える影響を評価します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 66,
+      "category": "組込みシステム設計",
+      "question": "Autonomous Vehicle の「Sensor Fusion」において重要な技術要素として適切でないものはどれか。",
+      "options": [
+        "Kalman Filter",
+        "Particle Filter",
+        "機械学習による統合処理",
+        "単一センサーへの完全依存"
+      ],
+      "correctAnswerIndex": 3,
+      "explanation": "Sensor Fusionは複数センサー情報を統合する技術であり、単一センサーへの依存は冗長性や信頼性の観点で不適切です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 67,
+      "category": "リアルタイムOS",
+      "question": "OSEK Time-Triggered（OSEK/Time）における「Time Base」の役割として適切なものはどれか。",
+      "options": [
+        "CPU クロックの生成",
+        "グローバル時刻基準とタスクスケジューリング",
+        "割り込み処理の優先度決定",
+        "メモリ管理"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "OSEK/TimeのTime Baseは、システム全体の時刻基準となり、時刻駆動型タスクスケジューリングの基盤となります。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 68,
+      "category": "ハードウェア・回路",
+      "question": "SERDES（Serializer/Deserializer）回路の主な用途として適切なものはどれか。",
+      "options": [
+        "アナログ信号の増幅",
+        "パラレルデータとシリアルデータの相互変換",
+        "電力変換",
+        "クロック信号の分周"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "SERDESは、パラレルデータをシリアル化して高速伝送し、受信側で再びパラレル化する回路です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 69,
+      "category": "IoT・エッジ",
+      "question": "Wireless Power Transfer における「Qi Standard」の通信方式として適切なものはどれか。",
+      "options": [
+        "電磁誘導による電力伝送のみ",
+        "電力伝送と制御データ通信の組み合わせ",
+        "有線通信のみ",
+        "光通信"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Qi標準では、電磁誘導による電力伝送に加え、送受電デバイス間で制御情報をやり取りする通信機能も含まれます。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 70,
+      "category": "開発・テスト",
+      "question": "ISO 21448（SOTIF: Safety of the Intended Functionality）が対象とする安全問題として適切なものはどれか。",
+      "options": [
+        "ハードウェア故障のみ",
+        "ソフトウェア不具合のみ",
+        "機能不十分や予見可能な誤用による危険",
+        "設計仕様書の形式チェック"
+      ],
+      "correctAnswerIndex": 2,
+      "explanation": "SOTIFは、システムの意図した機能自体の不十分さや、予見可能な誤使用による安全リスクを扱います。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 71,
+      "category": "組込みシステム設計",
+      "question": "Cybersecurity Framework における「Defense in Depth」戦略の実装として適切でないものはどれか。",
+      "options": [
+        "多層のセキュリティ対策",
+        "単一の強固なセキュリティ対策のみ",
+        "ネットワークとホストレベルでの防御",
+        "物理的セキュリティとの組み合わせ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Defense in Depthは多層防御の考え方であり、単一対策のみに依存することは戦略に反します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 72,
+      "category": "リアルタイムOS",
+      "question": "Ada Ravenscar Profile における制約として適切なものはどれか。",
+      "options": [
+        "動的メモリ割り当ての使用",
+        "固定優先度スケジューリングと制限されたタスク間通信",
+        "無制限の割り込み処理",
+        "動的タスク生成"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Ravenscar Profileは、予測可能性を高めるため固定優先度スケジューリングと制限されたタスク間通信のみを許可します。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 73,
+      "category": "ハードウェア・回路",
+      "question": "Neural Processing Unit（NPU）の特徴として適切なものはどれか。",
+      "options": [
+        "汎用計算処理の最適化",
+        "機械学習推論の専用ハードウェア最適化",
+        "浮動小数点演算の回避",
+        "メモリアクセスの削減"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "NPUは、ニューラルネットワークの推論処理に特化したハードウェアアーキテクチャで最適化されています。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 74,
+      "category": "IoT・エッジ",
+      "question": "6LoWPAN（IPv6 over Low-Power Wireless Personal Area Networks）の主な機能として適切なものはどれか。",
+      "options": [
+        "IPv4の無線LAN への適用",
+        "IPv6の IEEE 802.15.4 への適応層",
+        "Bluetoothの高速化",
+        "有線LANの無線化"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "6LoWPANは、IPv6をIEEE 802.15.4のような低電力無線ネットワーク上で動作可能にする適応層技術です。",
+      "difficulty": "上級"
+    },
+    {
+      "id": 75,
+      "category": "開発・テスト",
+      "question": "組込みシステムの「Configuration Management」における「Baseline」の概念として適切なものはどれか。",
+      "options": [
+        "最新バージョンのみ管理",
+        "承認された構成要素の特定時点でのスナップショット",
+        "未完成の作業成果物",
+        "テスト結果のみ"
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Baselineは、正式に承認されたソフトウェア・ハードウェア構成要素の特定時点での状態を記録した基準点です。",
+      "difficulty": "上級"
+    }
+  ]
+}

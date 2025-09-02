@@ -348,6 +348,214 @@
       "estimatedTime": "75-90分",
       "coverImage": "snowflake-core-logo.png",
       "color": "#1E40AF"
+    },
+    {
+      "id": "itpassport",
+      "title": "ITパスポート試験",
+      "description": "ITパスポート試験の問題集です。情報技術の基礎知識から経営戦略、プロジェクトマネジメント、システム開発技術まで幅広くカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "ストラテジ系",
+        "マネジメント系", 
+        "テクノロジ系"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "120分",
+      "coverImage": "ipa-logo.png",
+      "color": "#2E8B57"
+    },
+    {
+      "id": "sg",
+      "title": "情報セキュリティマネジメント試験",
+      "description": "情報セキュリティマネジメント試験の問題集です。情報セキュリティの管理・運用から脅威と脆弱性、技術的対策まで幅広くカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "情報セキュリティ管理",
+        "脅威と脆弱性",
+        "技術的対策"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "120分",
+      "coverImage": "ipa-sg-logo.png",
+      "color": "#DC143C"
+    },
+    {
+      "id": "fe",
+      "title": "基本情報技術者試験（科目A）",
+      "description": "基本情報技術者試験（科目A）の問題集です。コンピュータ科学基礎、アルゴリズム、データ構造、ネットワーク、データベースなど技術者の基礎知識をカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "基礎理論",
+        "コンピュータシステム",
+        "技術要素"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-fe-logo.png",
+      "color": "#4169E1"
+    },
+    {
+      "id": "ap",
+      "title": "応用情報技術者試験（午前）",
+      "description": "応用情報技術者試験（午前）の問題集です。高度なシステム設計、分散システム、プロジェクトマネジメントなど応用レベルの知識をカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "システム開発技術",
+        "プロジェクトマネジメント",
+        "サービスマネジメント"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-ap-logo.png",
+      "color": "#FF8C00"
+    },
+    {
+      "id": "its",
+      "title": "ITストラテジスト試験",
+      "description": "ITストラテジスト試験の問題集です。企業におけるIT戦略の策定・推進、事業戦略とIT戦略の整合、システム化計画の策定などをカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "システム戦略",
+        "システム企画",
+        "企業活動"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-its-logo.png",
+      "color": "#800080"
+    },
+    {
+      "id": "sa",
+      "title": "システムアーキテクト試験",
+      "description": "システムアーキテクト試験の問題集です。システムの設計・開発において、上流工程の設計書作成、アーキテクチャ設計、技術選定などをカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "システムアーキテクチャ",
+        "システム設計",
+        "開発技術"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-sa-logo.png",
+      "color": "#228B22"
+    },
+    {
+      "id": "pm",
+      "title": "プロジェクトマネージャ試験",
+      "description": "プロジェクトマネージャ試験の問題集です。プロジェクト全体の管理・運営、品質管理、リスク管理、チーム運営などをカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "プロジェクトマネジメント",
+        "品質管理",
+        "リスク管理"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-pm-logo.png",
+      "color": "#B22222"
+    },
+    {
+      "id": "nw",
+      "title": "ネットワークスペシャリスト試験",
+      "description": "ネットワークスペシャリスト試験の問題集です。ネットワークシステムの企画・設計・構築・運用、ネットワークセキュリティなど専門知識をカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "ネットワーク技術",
+        "ネットワーク設計",
+        "ネットワークセキュリティ"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-nw-logo.png",
+      "color": "#00CED1"
+    },
+    {
+      "id": "db",
+      "title": "データベーススペシャリスト試験",
+      "description": "データベーススペシャリスト試験の問題集です。データベースシステムの企画・設計・構築・運用、高度なデータベース技術など専門知識をカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "データベース技術",
+        "データベース設計",
+        "データベース運用"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-db-logo.png",
+      "color": "#FF4500"
+    },
+    {
+      "id": "es",
+      "title": "エンベデッドシステムスペシャリスト試験",
+      "description": "エンベデッドシステムスペシャリスト試験の問題集です。組込みシステムの開発技術、リアルタイムOS、ハードウェア設計、IoT技術などをカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "エンベデッドシステム",
+        "リアルタイム技術",
+        "IoT技術"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-es-logo.png",
+      "color": "#9932CC"
+    },
+    {
+      "id": "sm",
+      "title": "ITサービスマネージャ試験",
+      "description": "ITサービスマネージャ試験の問題集です。ITサービスの安定供給と品質向上、ITIL、DevOps、SRE、インシデント管理などをカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "ITサービスマネジメント",
+        "システム運用",
+        "品質管理"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-sm-logo.png",
+      "color": "#32CD32"
+    },
+    {
+      "id": "au",
+      "title": "システム監査技術者試験",
+      "description": "システム監査技術者試験の問題集です。情報システム監査、内部統制、リスク管理、コンプライアンス、監査技法などをカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "システム監査",
+        "内部統制",
+        "リスク管理"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-au-logo.png",
+      "color": "#8B4513"
+    },
+    {
+      "id": "riss",
+      "title": "情報処理安全確保支援士試験",
+      "description": "情報処理安全確保支援士試験の問題集です。サイバーセキュリティ、脅威分析、セキュリティ技術、法制度・標準など最高レベルのセキュリティ知識をカバーしています。",
+      "version": "1.0.0",
+      "author": "IPA Qualification Team",
+      "categories": [
+        "サイバーセキュリティ",
+        "セキュリティ技術",
+        "脅威分析"
+      ],
+      "totalQuestions": 75,
+      "estimatedTime": "150分",
+      "coverImage": "ipa-riss-logo.png",
+      "color": "#8B0000"
     }
   ]
 }
