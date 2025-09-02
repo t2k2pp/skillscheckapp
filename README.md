@@ -2,6 +2,11 @@
 
 複数の技術分野に対応したオンラインスキルチェックアプリケーションです。
 
+## 🌐 デモ
+
+[https://t2k2pp.github.io/skillscheckapp/](https://t2k2pp.github.io/skillscheckapp/)
+
+
 ## 🎯 特徴
 
 - **マルチコンテンツ対応**: クイズ問題集と電子書籍の両方に対応
@@ -324,10 +329,6 @@ npm run build
 - **コード**: シンタックスハイライト対応
 - **図表**: Mermaid図表示対応
 - **ナビゲーション**: 見出し自動抽出（PC表示時）
-
-## 🌐 デモ
-
-[https://t2k2pp.github.io/skillscheckapp/](https://t2k2pp.github.io/skillscheckapp/)
 
 ## 📋 改訂履歴
 
