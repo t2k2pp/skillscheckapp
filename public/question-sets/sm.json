@@ -2,7 +2,13 @@
   "id": "sm",
   "title": "ITサービスマネージャ試験対策",
   "description": "ITサービスマネージャ試験の午前問題対策です。ITサービスマネジメント、ITIL、サービス戦略・設計・運用・改善、インシデント・問題管理などの専門知識を問う問題を収録しています。",
-  "categories": ["サービス戦略", "サービス設計", "サービス運用", "継続的改善", "ガバナンス・リスク管理"],
+  "categories": [
+    "サービス戦略",
+    "サービス設計",
+    "サービス運用",
+    "継続的改善",
+    "ガバナンス・リスク管理"
+  ],
   "estimatedTime": "120分",
   "difficultyLevel": "上級",
   "totalQuestions": 75,
@@ -10,7 +16,6 @@
     {
       "id": 1,
       "category": "サービス戦略",
-      "question": "ITIL 4におけるサービス価値システム（SVS）の中核要素として含まれないものはどれか。",
       "options": [
         "ガイディングプリンシプル",
         "ガバナンス",
@@ -19,12 +24,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "ITIL 4では、プロセス中心からプラクティス中心のアプローチに変更されており、SVSの中核要素ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ITIL 4におけるサービス価値システム（SVS）の中核要素として含まれないものはどれか。"
     },
     {
       "id": 2,
       "category": "サービス設計",
-      "question": "SLA（Service Level Agreement）の設計において、可用性99.9%が意味するダウンタイムとして適切なものはどれか（年間）。",
       "options": [
         "約8.76時間",
         "約87.6時間",
@@ -33,12 +38,12 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "99.9%の可用性は、年間0.1%のダウンタイム（8760時間×0.001＝8.76時間）を許容することを意味します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SLA（Service Level Agreement）の設計において、可用性99.9%が意味するダウンタイムとして適切なものはどれか（年間）。"
     },
     {
       "id": 3,
       "category": "サービス運用",
-      "question": "インシデント管理における「優先度（Priority）」の決定要因として適切なものはどれか。",
       "options": [
         "発生時刻のみ",
         "影響度（Impact）と緊急度（Urgency）の組み合わせ",
@@ -47,12 +52,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "インシデントの優先度は、ビジネスへの影響度と解決の緊急度を総合的に評価して決定されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "インシデント管理における「優先度（Priority）」の決定要因として適切なものはどれか。"
     },
     {
       "id": 4,
       "category": "継続的改善",
-      "question": "PDCA サイクルにおける「Check」フェーズで実施すべき活動として適切なものはどれか。",
       "options": [
         "改善計画の立案",
         "施策の実行",
@@ -61,12 +66,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Checkフェーズでは、実施した施策の結果を測定し、計画との差異を評価することが主要な活動です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "PDCA サイクルにおける「Check」フェーズで実施すべき活動として適切なものはどれか。"
     },
     {
       "id": 5,
       "category": "ガバナンス・リスク管理",
-      "question": "COBIT 2019における「設計要因（Design Factors）」として含まれないものはどれか。",
       "options": [
         "エンタープライズ戦略",
         "エンタープライズ目標",
@@ -75,12 +80,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "COBIT 2019の設計要因には、戦略、目標、リスク、脅威、コンプライアンス要件などが含まれますが、IT投資予算は直接的な設計要因ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "COBIT 2019における「設計要因（Design Factors）」として含まれないものはどれか。"
     },
     {
       "id": 6,
       "category": "サービス戦略",
-      "question": "デジタルトランスフォーメーション戦略において「Three Horizons Model」の各ホライゾンとして適切でないものはどれか。",
       "options": [
         "Horizon 1: 既存事業の最適化",
         "Horizon 2: 新興事業の拡大",
@@ -89,12 +94,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Three Horizons Modelは3つのホライゾンで構成され、Horizon 4は存在しません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "デジタルトランスフォーメーション戦略において「Three Horizons Model」の各ホライゾンとして適切でないものはどれか。"
     },
     {
       "id": 7,
       "category": "サービス設計",
-      "question": "マイクロサービスアーキテクチャにおけるサービス監視で重要な「Four Golden Signals」に含まれないものはどれか。",
       "options": [
         "Latency（遅延）",
         "Traffic（トラフィック）",
@@ -103,12 +108,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Four Golden Signalsは、Latency、Traffic、Errors、Saturation（飽和度）であり、Availabilityは含まれません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "マイクロサービスアーキテクチャにおけるサービス監視で重要な「Four Golden Signals」に含まれないものはどれか。"
     },
     {
       "id": 8,
       "category": "サービス運用",
-      "question": "SRE（Site Reliability Engineering）における「Error Budget」の目的として適切なものはどれか。",
       "options": [
         "エラー対応コストの計算",
         "信頼性と機能開発のバランス管理",
@@ -117,12 +122,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Error Budgetは、SLOに基づいて許容可能な障害時間を定義し、信頼性向上と新機能開発の適切なバランスを管理します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SRE（Site Reliability Engineering）における「Error Budget」の目的として適切なものはどれか。"
     },
     {
       "id": 9,
       "category": "継続的改善",
-      "question": "DevOps における「継続的改善」の実践として適切でないものはどれか。",
       "options": [
         "Value Stream Mapping による無駄の特定",
         "レトロスペクティブの定期実施",
@@ -131,12 +136,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "DevOpsでは完璧を目指すよりも、小さな改善を継続的に実施し、学習と適応を重視します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "DevOps における「継続的改善」の実践として適切でないものはどれか。"
     },
     {
       "id": 10,
       "category": "ガバナンス・リスク管理",
-      "question": "ISO/IEC 20000-1におけるサービスマネジメントシステム（SMS）の要求事項として含まれないものはどれか。",
       "options": [
         "経営陣のコミットメント",
         "サービスマネジメント方針",
@@ -145,12 +150,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "ISO/IEC 20000-1は、特定のベンダーやツールに依存しない標準であり、ツール選択は組織の裁量に委ねられています。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ISO/IEC 20000-1におけるサービスマネジメントシステム（SMS）の要求事項として含まれないものはどれか。"
     },
     {
       "id": 11,
       "category": "サービス戦略",
-      "question": "クラウドファースト戦略における「経済性評価」で考慮すべき要素として適切でないものはどれか。",
       "options": [
         "TCO（Total Cost of Ownership）",
         "スケーラビリティコスト",
@@ -159,12 +164,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "経済性評価では、TCO、スケーラビリティ、ベンダーロックイン等の技術的・経済的要因を考慮しますが、従業員の年齢構成は直接関係しません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "クラウドファースト戦略における「経済性評価」で考慮すべき要素として適切でないものはどれか。"
     },
     {
       "id": 12,
       "category": "サービス設計",
-      "question": "Chaos Engineering におけるBlast Radiusの制御として適切なものはどれか。",
       "options": [
         "全システムに同時に障害を注入",
         "影響範囲を限定し段階的に実験を拡大",
@@ -173,12 +178,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Chaos Engineeringでは、実験の影響範囲（Blast Radius）を制限し、段階的に範囲を拡大することで安全性を確保します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Chaos Engineering におけるBlast Radiusの制御として適切なものはどれか。"
     },
     {
       "id": 13,
       "category": "サービス運用",
-      "question": "ITIL 4における「問題管理」の目的として最も適切なものはどれか。",
       "options": [
         "インシデントの迅速な復旧のみ",
         "根本原因の特定と再発防止",
@@ -187,12 +192,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "問題管理の主な目的は、インシデントの根本原因を特定し、再発を防止することです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ITIL 4における「問題管理」の目的として最も適切なものはどれか。"
     },
     {
       "id": 14,
       "category": "継続的改善",
-      "question": "Lean IT における「Value Stream」の最適化で重要な原則として適切でないものはどれか。",
       "options": [
         "顧客価値の明確化",
         "無駄（Waste）の除去",
@@ -201,12 +206,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Lean ITでは在庫を無駄と考え最小化を目指します。在庫の最大化はLeanの原則に反します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Lean IT における「Value Stream」の最適化で重要な原則として適切でないものはどれか。"
     },
     {
       "id": 15,
       "category": "ガバナンス・リスク管理",
-      "question": "クラウドサービス利用時のデータ主権（Data Sovereignty）に関する考慮事項として適切なものはどれか。",
       "options": [
         "データ処理速度の最適化",
         "データ保存場所と適用法規制の明確化",
@@ -215,12 +220,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "データ主権では、データの保存・処理場所と、そこに適用される法的規制を明確にすることが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "クラウドサービス利用時のデータ主権（Data Sovereignty）に関する考慮事項として適切なものはどれか。"
     },
     {
       "id": 16,
       "category": "サービス戦略",
-      "question": "API経済における「API Product Management」で重要な要素として適切でないものはどれか。",
       "options": [
         "Developer Experience（DX）",
         "API のライフサイクル管理",
@@ -229,12 +234,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "API Product Managementでは、内部システムの詳細を隠蔽し、適切な抽象化レベルでAPIを提供することが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "API経済における「API Product Management」で重要な要素として適切でないものはどれか。"
     },
     {
       "id": 17,
       "category": "サービス設計",
-      "question": "Container Orchestration環境におけるService Meshの役割として適切なものはどれか。",
       "options": [
         "アプリケーションコードの管理",
         "サービス間通信の制御と可視化",
@@ -243,12 +248,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Service Meshは、マイクロサービス間の通信を制御・監視・セキュア化するインフラストラクチャレイヤーです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Container Orchestration環境におけるService Meshの役割として適切なものはどれか。"
     },
     {
       "id": 18,
       "category": "サービス運用",
-      "question": "Observability における「Three Pillars」として含まれないものはどれか。",
       "options": [
         "Metrics（メトリクス）",
         "Logs（ログ）",
@@ -257,12 +262,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Observabilityの三本柱は、Metrics、Logs、Tracesです。Eventsは別の概念です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Observability における「Three Pillars」として含まれないものはどれか。"
     },
     {
       "id": 19,
       "category": "継続的改善",
-      "question": "アジャイル・サービス開発における「MVP（Minimum Viable Product）」の目的として適切なものはどれか。",
       "options": [
         "完璧な製品を一度に提供",
         "最小限の機能で顧客価値を検証",
@@ -271,12 +276,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "MVPは最小限の機能で顧客価値を検証し、フィードバックを基に継続的に改善するアプローチです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アジャイル・サービス開発における「MVP（Minimum Viable Product）」の目的として適切なものはどれか。"
     },
     {
       "id": 20,
       "category": "ガバナンス・リスク管理",
-      "question": "Zero Trust Security Architecture の実装において重要な原則として適切でないものはどれか。",
       "options": [
         "「決して信頼せず、常に検証する」",
         "最小権限アクセス",
@@ -285,12 +290,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Zero Trustでは、境界内のトラフィックも含めてすべてを検証対象とし、完全信頼することはありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Zero Trust Security Architecture の実装において重要な原則として適切でないものはどれか。"
     },
     {
       "id": 21,
       "category": "サービス戦略",
-      "question": "Platform as a Product 戦略における「Developer Portal」の機能として適切でないものはどれか。",
       "options": [
         "API ドキュメント",
         "セルフサービス機能",
@@ -299,12 +304,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Developer Portalは、自社プラットフォームの利用促進が目的であり、競合他社の情報提供は適切ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Platform as a Product 戦略における「Developer Portal」の機能として適切でないものはどれか。"
     },
     {
       "id": 22,
       "category": "サービス設計",
-      "question": "Event-Driven Architecture における「Saga Pattern」の適用場面として適切なものはどれか。",
       "options": [
         "単一サービス内のデータ整合性",
         "分散トランザクションの整合性管理",
@@ -313,12 +318,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Saga Patternは、複数のマイクロサービスにまたがる分散トランザクションの整合性を管理する手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event-Driven Architecture における「Saga Pattern」の適用場面として適切なものはどれか。"
     },
     {
       "id": 23,
       "category": "サービス運用",
-      "question": "AIOps（Artificial Intelligence for IT Operations）の活用として適切でないものはどれか。",
       "options": [
         "異常検知の自動化",
         "根本原因分析の支援",
@@ -327,12 +332,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "AIOpsは人間のオペレーターを支援・強化することが目的であり、完全置換ではなく協働を目指します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "AIOps（Artificial Intelligence for IT Operations）の活用として適切でないものはどれか。"
     },
     {
       "id": 24,
       "category": "継続的改善",
-      "question": "North Star Framework における「Leading Indicators」の役割として適切なものはどれか。",
       "options": [
         "最終的な成果のみを測定",
         "North Star Metricに影響する先行指標の監視",
@@ -341,12 +346,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Leading Indicatorsは、North Star Metricの改善に影響を与える先行指標として、施策の効果を早期に把握するために使用されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "North Star Framework における「Leading Indicators」の役割として適切なものはどれか。"
     },
     {
       "id": 25,
       "category": "ガバナンス・リスク管理",
-      "question": "Privacy by Design における7つの原則として含まれないものはどれか。",
       "options": [
         "事前対応型であり予防的",
         "設計に埋め込まれたプライバシー",
@@ -355,12 +360,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Privacy by Designでは、データ収集を最小化することが原則であり、最大化は逆の概念です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Privacy by Design における7つの原則として含まれないものはどれか。"
     },
     {
       "id": 26,
       "category": "サービス戦略",
-      "question": "Multi-Cloud戦略における「Best of Breed」アプローチの利点として適切でないものはどれか。",
       "options": [
         "各領域で最適なサービス選択",
         "ベンダーロックイン回避",
@@ -369,12 +374,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Best of Breedアプローチは最適化を図れますが、複数ベンダーとの統合により管理複雑性は増大します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Multi-Cloud戦略における「Best of Breed」アプローチの利点として適切でないものはどれか。"
     },
     {
       "id": 27,
       "category": "サービス設計",
-      "question": "GraphQL API設計における「N+1問題」の解決手法として適切なものはどれか。",
       "options": [
         "より多くのクエリを実行",
         "DataLoaderパターンによるバッチング",
@@ -383,12 +388,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "N+1問題は、DataLoaderパターンでクエリをバッチングすることで効率的に解決できます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "GraphQL API設計における「N+1問題」の解決手法として適切なものはどれか。"
     },
     {
       "id": 28,
       "category": "サービス運用",
-      "question": "Kubernetes 環境における「Health Check」の種類として含まれないものはどれか。",
       "options": [
         "Liveness Probe",
         "Readiness Probe",
@@ -397,12 +402,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "KubernetesのHealth Checkには、Liveness、Readiness、Startup Probeがありますが、Security Probeは存在しません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Kubernetes 環境における「Health Check」の種類として含まれないものはどれか。"
     },
     {
       "id": 29,
       "category": "継続的改善",
-      "question": "Team Topologies における「Platform Team」の役割として適切なものはどれか。",
       "options": [
         "すべての機能開発を担当",
         "開発チームの生産性向上のための基盤提供",
@@ -411,12 +416,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Platform Teamは、他の開発チームの生産性向上のための共通基盤やツールを提供する役割を担います。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Team Topologies における「Platform Team」の役割として適切なものはどれか。"
     },
     {
       "id": 30,
       "category": "ガバナンス・リスク管理",
-      "question": "GDPR における「データ保護影響評価（DPIA）」の実施が必要な場面として適切でないものはどれか。",
       "options": [
         "高リスクな個人データ処理",
         "新技術を使用したプロファイリング",
@@ -425,12 +430,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "DPIAは、高リスクな処理について実施が義務付けられており、既存の低リスク処理では不要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "GDPR における「データ保護影響評価（DPIA）」の実施が必要な場面として適切でないものはどれか。"
     },
     {
       "id": 31,
       "category": "サービス戦略",
-      "question": "Service-Dominant Logic における「Value Co-creation」の概念として適切なものはどれか。",
       "options": [
         "企業が一方的に価値を創造",
         "顧客と企業が協働して価値を創造",
@@ -439,12 +444,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Service-Dominant Logicでは、顧客と企業が協働してサービスを通じて価値を共創することが重要概念です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Service-Dominant Logic における「Value Co-creation」の概念として適切なものはどれか。"
     },
     {
       "id": 32,
       "category": "サービス設計",
-      "question": "API Rate Limiting の実装手法として適切でないものはどれか。",
       "options": [
         "Token Bucket",
         "Leaky Bucket",
@@ -453,12 +458,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Unlimited Accessは制限なしのアクセスを意味し、Rate Limitingの手法ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "API Rate Limiting の実装手法として適切でないものはどれか。"
     },
     {
       "id": 33,
       "category": "サービス運用",
-      "question": "Site Reliability Engineering（SRE）における「Postmortem」の目的として適切でないものはどれか。",
       "options": [
         "根本原因の特定",
         "再発防止策の策定",
@@ -467,12 +472,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "SREのPostmortemは、Blameless（非難しない）文化の下で学習と改善を目的とし、処罰は目的ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Site Reliability Engineering（SRE）における「Postmortem」の目的として適切でないものはどれか。"
     },
     {
       "id": 34,
       "category": "継続的改善",
-      "question": "SPACE Framework における開発者生産性の測定軸として含まれないものはどれか。",
       "options": [
         "Satisfaction and well-being",
         "Performance",
@@ -481,12 +486,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "SPACEフレームワークは、Satisfaction、Performance、Activity、Communication、Efficiency の5軸で構成されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SPACE Framework における開発者生産性の測定軸として含まれないものはどれか。"
     },
     {
       "id": 35,
       "category": "ガバナンス・リスク管理",
-      "question": "Cyber Risk Quantification における「FAIR（Factor Analysis of Information Risk）」フレームワークの基本構成要素として適切でないものはどれか。",
       "options": [
         "Loss Event Frequency",
         "Loss Magnitude",
@@ -495,12 +500,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "FAIRの基本要素は、Loss Event FrequencyとLoss Magnitude、および関連するAsset Valueですが、Threat Actor Motivationは直接的な構成要素ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Cyber Risk Quantification における「FAIR（Factor Analysis of Information Risk）」フレームワークの基本構成要素として適切でないものはどれか。"
     },
     {
       "id": 36,
       "category": "サービス戦略",
-      "question": "Digital Platform Strategy における「Network Effect」の種類として含まれないものはどれか。",
       "options": [
         "Direct Network Effect",
         "Indirect Network Effect",
@@ -509,12 +514,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Network Effectには、Direct、Indirect、Data Network Effectがありますが、Cost Network Effectという分類は一般的ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Digital Platform Strategy における「Network Effect」の種類として含まれないものはどれか。"
     },
     {
       "id": 37,
       "category": "サービス設計",
-      "question": "Event Sourcing Architecture における「Snapshot」の役割として適切なものはどれか。",
       "options": [
         "イベント履歴の削除",
         "状態復元の高速化",
@@ -523,12 +528,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Event SourcingのSnapshotは、大量のイベント履歴から状態を復元する処理を高速化するために使用されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event Sourcing Architecture における「Snapshot」の役割として適切なものはどれか。"
     },
     {
       "id": 38,
       "category": "サービス運用",
-      "question": "Infrastructure as Code（IaC）における「Idempotency」の特性として適切なものはどれか。",
       "options": [
         "実行結果が毎回異なる",
         "同じ操作を複数回実行しても結果が同じ",
@@ -537,12 +542,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Idempotencyは、同じ操作を何度実行しても同じ結果になる特性で、IaCの重要な原則です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Infrastructure as Code（IaC）における「Idempotency」の特性として適切なものはどれか。"
     },
     {
       "id": 39,
       "category": "継続的改善",
-      "question": "Flow Framework における「Flow Metrics」として含まれないものはどれか。",
       "options": [
         "Flow Velocity",
         "Flow Efficiency",
@@ -551,12 +556,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Flow Frameworkの主要メトリクスは、Flow Velocity、Flow Efficiency、Flow Time、Flow Load の4つです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Flow Framework における「Flow Metrics」として含まれないものはどれか。"
     },
     {
       "id": 40,
       "category": "ガバナンス・リスク管理",
-      "question": "Third-Party Risk Management における「Vendor Risk Assessment」で評価すべき領域として適切でないものはどれか。",
       "options": [
         "サイバーセキュリティ",
         "事業継続性",
@@ -565,12 +570,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "ベンダーリスク評価では、セキュリティ、継続性、プライバシーなどのリスク要因を評価しますが、競合他社の動向は直接的な評価対象ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Third-Party Risk Management における「Vendor Risk Assessment」で評価すべき領域として適切でないものはどれか。"
     },
     {
       "id": 41,
       "category": "サービス戦略",
-      "question": "Ecosystem Strategy における「Platform Envelopment」の戦略として適切なものはどれか。",
       "options": [
         "単一機能の特化",
         "隣接市場への機能拡張による競合排除",
@@ -579,12 +584,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Platform Envelopmentは、既存のプラットフォームから隣接市場に機能を拡張し、競合他社を包み込む戦略です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Ecosystem Strategy における「Platform Envelopment」の戦略として適切なものはどれか。"
     },
     {
       "id": 42,
       "category": "サービス設計",
-      "question": "Distributed System における「Circuit Breaker Pattern」のState遷移として適切でないものはどれか。",
       "options": [
         "Closed → Open",
         "Open → Half-Open",
@@ -593,12 +598,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Circuit Breaker Patternでは、OpenからClosedへの直接遷移はなく、必ずHalf-Open状態を経由します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Distributed System における「Circuit Breaker Pattern」のState遷移として適切でないものはどれか。"
     },
     {
       "id": 43,
       "category": "サービス運用",
-      "question": "Prometheus監視システムにおける「PromQL」の機能として適切でないものはどれか。",
       "options": [
         "メトリクスのクエリ",
         "時系列データの集計",
@@ -607,12 +612,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "PromQLは、Prometheusの時系列データクエリ言語であり、データベーススキーマ変更機能はありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Prometheus監視システムにおける「PromQL」の機能として適切でないものはどれか。"
     },
     {
       "id": 44,
       "category": "継続的改善",
-      "question": "Accelerate（DevOps Research and Assessment）で測定される「Four Key Metrics」として含まれないものはどれか。",
       "options": [
         "Deployment Frequency",
         "Lead Time for Changes",
@@ -621,12 +626,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Four Key Metricsは、Deployment Frequency、Lead Time、MTTR、Change Failure Rateの4つです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Accelerate（DevOps Research and Assessment）で測定される「Four Key Metrics」として含まれないものはどれか。"
     },
     {
       "id": 45,
       "category": "ガバナンス・リスク管理",
-      "question": "SOC 2（Service Organization Control 2）Type II監査における「Trust Service Criteria」として含まれないものはどれか。",
       "options": [
         "Security",
         "Availability",
@@ -635,12 +640,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "SOC 2は、Security、Availability、Processing Integrity、Confidentiality、Privacy の5つの基準を対象とし、Financial Reportingは SOC 1の対象です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SOC 2（Service Organization Control 2）Type II監査における「Trust Service Criteria」として含まれないものはどれか。"
     },
     {
       "id": 46,
       "category": "サービス戦略",
-      "question": "API-First Strategy における「Conway's Law」の影響を最小化する組織設計として適切なものはどれか。",
       "options": [
         "機能別の縦割り組織",
         "APIドメインに沿ったクロスファンクショナルチーム",
@@ -649,12 +654,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Conway's Lawを考慮し、APIの境界に沿ってクロスファンクショナルチームを編成することで、適切なAPIアーキテクチャを実現できます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "API-First Strategy における「Conway's Law」の影響を最小化する組織設計として適切なものはどれか。"
     },
     {
       "id": 47,
       "category": "サービス設計",
-      "question": "Reactive Manifesto における「Resilient」システムの特徴として適切なものはどれか。",
       "options": [
         "障害を完全に防ぐ",
         "障害を封じ込め、復旧・複製により回復力を保つ",
@@ -663,12 +668,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Resilientシステムは、障害を完全に防ぐのではなく、障害が発生しても封じ込めて復旧力を維持します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Reactive Manifesto における「Resilient」システムの特徴として適切なものはどれか。"
     },
     {
       "id": 48,
       "category": "サービス運用",
-      "question": "GitOps における「Declarative Configuration」の利点として適切でないものはどれか。",
       "options": [
         "望ましい状態の明確な定義",
         "設定変更の追跡可能性",
@@ -677,12 +682,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "GitOpsは自動化を推進しますが、緊急時対応など必要に応じた手動操作は完全に排除されません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "GitOps における「Declarative Configuration」の利点として適切でないものはどれか。"
     },
     {
       "id": 49,
       "category": "継続的改善",
-      "question": "Value Stream Mapping における「Current State Map」の作成で重要な要素として適切でないものはどれか。",
       "options": [
         "プロセスフロー",
         "リードタイム",
@@ -691,12 +696,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Current State Mapは現在の状態を正確に把握することが目的であり、理想的な将来状態はFuture State Mapで扱います。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Value Stream Mapping における「Current State Map」の作成で重要な要素として適切でないものはどれか。"
     },
     {
       "id": 50,
       "category": "ガバナンス・リスク管理",
-      "question": "Cloud Security Alliance（CSA）の「Cloud Controls Matrix（CCM）」の目的として適切なものはどれか。",
       "options": [
         "クラウド料金の最適化",
         "クラウドセキュリティ統制の標準化",
@@ -705,12 +710,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CCMは、クラウド環境でのセキュリティ統制要件を標準化し、リスク評価とコンプライアンスを支援します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Cloud Security Alliance（CSA）の「Cloud Controls Matrix（CCM）」の目的として適切なものはどれか。"
     },
     {
       "id": 51,
       "category": "サービス戦略",
-      "question": "Data Product Strategy における「Data as a Product」の成功要因として適切でないものはどれか。",
       "options": [
         "データ品質の保証",
         "セルフサービス機能",
@@ -719,12 +724,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Data as a Productでは、利用者（消費者）のニーズを理解し、それに応えることが成功の鍵となります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Data Product Strategy における「Data as a Product」の成功要因として適切でないものはどれか。"
     },
     {
       "id": 52,
       "category": "サービス設計",
-      "question": "API Security における「OAuth 2.0のPKCE拡張」の目的として適切なものはどれか。",
       "options": [
         "認証速度の向上",
         "パブリッククライアントでの認可コード傍受攻撃防止",
@@ -733,12 +738,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "PKCE（Proof Key for Code Exchange）は、モバイルアプリなどのパブリッククライアントで認可コードが傍受される攻撃を防ぐ拡張です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "API Security における「OAuth 2.0のPKCE拡張」の目的として適切なものはどれか。"
     },
     {
       "id": 53,
       "category": "サービス運用",
-      "question": "Serverless Computing における「Cold Start」問題の軽減策として適切でないものはどれか。",
       "options": [
         "関数のウォームアップ",
         "Provisioned Concurrency",
@@ -747,12 +752,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Cold Start対策では、関数実行時間を最小化することが重要であり、最大化は逆効果です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Serverless Computing における「Cold Start」問題の軽減策として適切でないものはどれか。"
     },
     {
       "id": 54,
       "category": "継続的改善",
-      "question": "OKR（Objectives and Key Results）の設定における「Stretch Goal」の適切な達成率はどれか。",
       "options": [
         "100%",
         "70-80%",
@@ -761,12 +766,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "OKRのStretch Goalは野心的な目標として設定され、70-80%の達成率が適切とされています。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "OKR（Objectives and Key Results）の設定における「Stretch Goal」の適切な達成率はどれか。"
     },
     {
       "id": 55,
       "category": "ガバナンス・リスク管理",
-      "question": "Quantum-Safe Cryptography への移行における考慮事項として適切でないものはどれか。",
       "options": [
         "既存システムとの互換性",
         "移行期間中のハイブリッド運用",
@@ -775,12 +780,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "量子耐性暗号への移行は、量子コンピュータの脅威に備えて事前に準備すべきであり、普及を待つのは適切ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Quantum-Safe Cryptography への移行における考慮事項として適切でないものはどれか。"
     },
     {
       "id": 56,
       "category": "サービス戦略",
-      "question": "Platform Business Model における「Multi-homing」現象への対策として適切なものはどれか。",
       "options": [
         "プラットフォーム利用を強制",
         "差別化価値とスイッチングコストの向上",
@@ -789,12 +794,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Multi-homing対策として、ユーザーが複数プラットフォームを使う動機を減らすため、独自価値とスイッチングコストを高めます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Platform Business Model における「Multi-homing」現象への対策として適切なものはどれか。"
     },
     {
       "id": 57,
       "category": "サービス設計",
-      "question": "WebAssembly（WASM）のサーバーサイド利用における利点として適切でないものはどれか。",
       "options": [
         "言語非依存の実行環境",
         "高いセキュリティサンドボックス",
@@ -803,12 +808,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "WebAssemblyはJavaScriptと相互運用可能ですが、完全な互換性があるわけではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "WebAssembly（WASM）のサーバーサイド利用における利点として適切でないものはどれか。"
     },
     {
       "id": 58,
       "category": "サービス運用",
-      "question": "Database Reliability Engineering における「Connection Pool」の最適化要因として適切でないものはどれか。",
       "options": [
         "アプリケーションの同時接続数",
         "データベースの最大接続制限",
@@ -817,12 +822,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Connection Poolの最適化では、接続数、制限、ライフサイクルが重要ですが、データベースの物理的場所は直接的な最適化要因ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Reliability Engineering における「Connection Pool」の最適化要因として適切でないものはどれか。"
     },
     {
       "id": 59,
       "category": "継続的改善",
-      "question": "Design Thinking における「Empathy Map」の作成目的として適切なものはどれか。",
       "options": [
         "競合分析の実施",
         "ユーザーの感情・思考・行動の理解",
@@ -831,12 +836,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Empathy Mapは、ユーザーの感情、思考、発言、行動を整理し、深い理解を得るためのツールです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Design Thinking における「Empathy Map」の作成目的として適切なものはどれか。"
     },
     {
       "id": 60,
       "category": "ガバナンス・リスク管理",
-      "question": "Supply Chain Security における「Software Bill of Materials（SBOM）」の役割として適切なものはどれか。",
       "options": [
         "ソフトウェア開発コストの算出",
         "ソフトウェアコンポーネントの脆弱性管理",
@@ -845,12 +850,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SBOMは、ソフトウェアに含まれるコンポーネントを管理し、脆弱性の特定と対策を可能にします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Supply Chain Security における「Software Bill of Materials（SBOM）」の役割として適切なものはどれか。"
     },
     {
       "id": 61,
       "category": "サービス戦略",
-      "question": "Subscription Economy における「Churn Analysis」で重要な指標として適切でないものはどれか。",
       "options": [
         "Customer Churn Rate",
         "Revenue Churn Rate",
@@ -859,12 +864,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Churn Analysisでは、解約率、収益損失率、解約までの時間が重要ですが、初期設定コストは直接的な指標ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Subscription Economy における「Churn Analysis」で重要な指標として適切でないものはどれか。"
     },
     {
       "id": 62,
       "category": "サービス設計",
-      "question": "Event Streaming Architecture における「Exactly-Once Processing」の実現手法として適切なものはどれか。",
       "options": [
         "At-Least-Once + Idempotency",
         "At-Most-Once処理のみ",
@@ -873,12 +878,12 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "Exactly-Once Processingは、At-Least-Once配信とIdempotent処理の組み合わせで実現されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event Streaming Architecture における「Exactly-Once Processing」の実現手法として適切なものはどれか。"
     },
     {
       "id": 63,
       "category": "サービス運用",
-      "question": "Cloud Cost Optimization における「Right-sizing」の実践として適切なものはどれか。",
       "options": [
         "すべてのインスタンスを最小サイズに変更",
         "実際の使用パターンに基づくサイズ最適化",
@@ -887,12 +892,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Right-sizingは、実際のワークロードと使用パターンを分析し、最適なリソースサイズを選択することです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Cloud Cost Optimization における「Right-sizing」の実践として適切なものはどれか。"
     },
     {
       "id": 64,
       "category": "継続的改善",
-      "question": "Psychological Safety を組織で醸成する手法として適切でないものはどれか。",
       "options": [
         "失敗を学習機会として扱う",
         "多様な意見を積極的に求める",
@@ -901,12 +906,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "心理的安全性の醸成には、処罰ではなく学習と改善を重視する文化が重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Psychological Safety を組織で醸成する手法として適切でないものはどれか。"
     },
     {
       "id": 65,
       "category": "ガバナンス・リスク管理",
-      "question": "Zero Trust Network Access（ZTNA）の実装における「Policy Engine」の役割として適切なものはどれか。",
       "options": [
         "ネットワーク速度の最適化",
         "リアルタイムでのアクセス判定と制御",
@@ -915,12 +920,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ZTNAのPolicy Engineは、ユーザー、デバイス、コンテキストを総合評価し、リアルタイムでアクセス可否を判定します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Zero Trust Network Access（ZTNA）の実装における「Policy Engine」の役割として適切なものはどれか。"
     },
     {
       "id": 66,
       "category": "サービス戦略",
-      "question": "API Marketplace Strategy における「Developer Ecosystem」の構築要素として適切でないものはどれか。",
       "options": [
         "Developer Portal",
         "SDK/ライブラリ",
@@ -929,12 +934,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Developer Ecosystemでは、開発者の利便性とコミュニティ形成が重要であり、競合APIの利用禁止は適切ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "API Marketplace Strategy における「Developer Ecosystem」の構築要素として適切でないものはどれか。"
     },
     {
       "id": 67,
       "category": "サービス設計",
-      "question": "Edge Computing Architecture における「Data Locality」の実現手法として適切でないものはどれか。",
       "options": [
         "CDN によるコンテンツ配信",
         "Edge での計算処理",
@@ -943,12 +948,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Data Localityはデータを利用場所に近づけることが目的であり、すべてを中央で処理するのは逆の発想です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Edge Computing Architecture における「Data Locality」の実現手法として適切でないものはどれか。"
     },
     {
       "id": 68,
       "category": "サービス運用",
-      "question": "Multi-Region DR（Disaster Recovery）における「RTO（Recovery Time Objective）」の改善手法として適切でないものはどれか。",
       "options": [
         "Active-Active構成の採用",
         "自動フェイルオーバーの実装",
@@ -957,12 +962,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "RTOの改善には迅速な復旧が重要であり、データ同期頻度を削減すると復旧時間が長くなる可能性があります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Multi-Region DR（Disaster Recovery）における「RTO（Recovery Time Objective）」の改善手法として適切でないものはどれか。"
     },
     {
       "id": 69,
       "category": "継続的改善",
-      "question": "Systems Thinking における「Leverage Points」の概念で、最も影響力が高いとされる介入点はどれか。",
       "options": [
         "パラメータの調整",
         "ルールの変更",
@@ -971,12 +976,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Donella Meadowsの12のLeverage Pointsでは、パラダイムやマインドセットの転換が最も高い影響力を持つとされています。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Systems Thinking における「Leverage Points」の概念で、最も影響力が高いとされる介入点はどれか。"
     },
     {
       "id": 70,
       "category": "ガバナンス・リスク管理",
-      "question": "AI/ML Governance における「Model Drift」の監視として適切でないものはどれか。",
       "options": [
         "データドリフトの検出",
         "予測精度の継続監視",
@@ -985,12 +990,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Model Driftが検出された場合、必要に応じてモデルの更新や置き換えを実施することが重要であり、回避は適切ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "AI/ML Governance における「Model Drift」の監視として適切でないものはどれか。"
     },
     {
       "id": 71,
       "category": "サービス戦略",
-      "question": "Circular Economy における IT Service Provider の役割として適切なものはどれか。",
       "options": [
         "ハードウェアの大量消費推進",
         "Resource Efficiency とWaste Reduction の支援",
@@ -999,12 +1004,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Circular EconomyではResource Efficiency、Waste Reduction、Sustainable Designが重要であり、ITサービスもこれらを支援する役割を担います。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Circular Economy における IT Service Provider の役割として適切なものはどれか。"
     },
     {
       "id": 72,
       "category": "サービス設計",
-      "question": "Blockchain-as-a-Service（BaaS）における「Consensus Mechanism」の選択要因として適切でないものはどれか。",
       "options": [
         "スループット要件",
         "エネルギー効率",
@@ -1013,12 +1018,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Consensus Mechanismの選択は、技術的要件（スループット、エネルギー効率、分散性等）に基づくべきであり、個人の好みは適切な判断基準ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Blockchain-as-a-Service（BaaS）における「Consensus Mechanism」の選択要因として適切でないものはどれか。"
     },
     {
       "id": 73,
       "category": "サービス運用",
-      "question": "Green IT における「Power Usage Effectiveness（PUE）」の改善手法として適切でないものはどれか。",
       "options": [
         "冷却システムの効率化",
         "サーバー統合による稼働率向上",
@@ -1027,12 +1032,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "PUEは電力効率を示す指標であり、データセンターの電力消費量増加は改善ではなく悪化を意味します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Green IT における「Power Usage Effectiveness（PUE）」の改善手法として適切でないものはどれか。"
     },
     {
       "id": 74,
       "category": "継続的改善",
-      "question": "Agile Transformation における「Spotify Model」の適用で注意すべき点として適切なものはどれか。",
       "options": [
         "すべての組織で同じ構造を強制",
         "組織文化やコンテキストを考慮した適応",
@@ -1041,12 +1046,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Spotify Modelは参考フレームワークであり、各組織の文化、規模、コンテキストに応じた適応が重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Agile Transformation における「Spotify Model」の適用で注意すべき点として適切なものはどれか。"
     },
     {
       "id": 75,
       "category": "ガバナンス・リスク管理",
-      "question": "Digital Ethics における「Algorithmic Bias」の軽減手法として適切でないものはどれか。",
       "options": [
         "多様な学習データの使用",
         "定期的なバイアス監査",
@@ -1055,7 +1060,8 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Algorithmic Biasの軽減には、多様な視点と包括的なデータ収集が重要であり、単一視点は逆効果です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Digital Ethics における「Algorithmic Bias」の軽減手法として適切でないものはどれか。"
     }
   ]
 }

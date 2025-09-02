@@ -2,7 +2,13 @@
   "id": "db",
   "title": "データベーススペシャリスト試験対策",
   "description": "データベーススペシャリスト試験の午前問題対策です。データベースシステム、データモデリング、SQL、パフォーマンス最適化、運用管理などの専門知識を問う問題を収録しています。",
-  "categories": ["データベース設計", "SQL・クエリ最適化", "トランザクション管理", "性能・運用", "新技術・標準"],
+  "categories": [
+    "データベース設計",
+    "SQL・クエリ最適化",
+    "トランザクション管理",
+    "性能・運用",
+    "新技術・標準"
+  ],
   "estimatedTime": "120分",
   "difficultyLevel": "上級",
   "totalQuestions": 75,
@@ -10,7 +16,6 @@
     {
       "id": 1,
       "category": "データベース設計",
-      "question": "正規化理論における第3正規形（3NF）の条件として適切なものはどれか。",
       "options": [
         "すべての非キー属性が主キーに完全関数従属",
         "すべての非キー属性が主キーに完全関数従属し、推移的関数従属がない",
@@ -19,12 +24,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "第3正規形は、第2正規形の条件に加えて、非キー属性間の推移的関数従属が存在しないことが条件です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "正規化理論における第3正規形（3NF）の条件として適切なものはどれか。"
     },
     {
       "id": 2,
       "category": "SQL・クエリ最適化",
-      "question": "SQL クエリオプティマイザーにおける「カーディナリティ推定」の精度がクエリ性能に与える影響として適切なものはどれか。",
       "options": [
         "推定精度はクエリ性能に影響しない",
         "不正確な推定により非効率な実行計画が選択される可能性",
@@ -33,12 +38,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "カーディナリティ推定の精度は実行計画の選択に直接影響し、不正確な推定は非効率なJOIN順序やアクセス方法の選択につながります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SQL クエリオプティマイザーにおける「カーディナリティ推定」の精度がクエリ性能に与える影響として適切なものはどれか。"
     },
     {
       "id": 3,
       "category": "トランザクション管理",
-      "question": "分散データベースにおける「Two-Phase Commit（2PC）」プロトコルの課題として適切なものはどれか。",
       "options": [
         "トランザクションの原子性が保証されない",
         "コーディネーターが障害時にブロッキングが発生する可能性",
@@ -47,12 +52,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "2PCでは、第2フェーズでコーディネーターが障害に遭うと、参加者は決定を受け取るまで indefinitely にブロックされる可能性があります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "分散データベースにおける「Two-Phase Commit（2PC）」プロトコルの課題として適切なものはどれか。"
     },
     {
       "id": 4,
       "category": "性能・運用",
-      "question": "データベースのRead Replica における「Read-after-Write Consistency」を保証する手法として適切なものはどれか。",
       "options": [
         "すべての読み取りをマスターに向ける",
         "書き込み直後の読み取りをマスターにルーティング",
@@ -61,12 +66,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Read-after-Write Consistencyを保証するには、ユーザーが書き込んだ直後の読み取りクエリをマスターDB に向け、レプリケーション遅延の影響を回避します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "データベースのRead Replica における「Read-after-Write Consistency」を保証する手法として適切なものはどれか。"
     },
     {
       "id": 5,
       "category": "新技術・標準",
-      "question": "NewSQL データベースの特徴として適切でないものはどれか。",
       "options": [
         "ACID特性の保証",
         "水平スケーラビリティ",
@@ -75,12 +80,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "NewSQLは、NoSQLのスケーラビリティと従来RDBMSのACID特性・SQL インターフェースを両立させ、強一貫性を提供します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "NewSQL データベースの特徴として適切でないものはどれか。"
     },
     {
       "id": 6,
       "category": "データベース設計",
-      "question": "Time Series Database の設計において重要な考慮事項として適切でないものはどれか。",
       "options": [
         "高い書き込みスループット",
         "時間範囲クエリの最適化",
@@ -89,12 +94,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "時系列データベースは、時間軸でのデータ蓄積・分析に特化しており、複雑なJOIN操作よりも時間範囲での効率的なクエリが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Time Series Database の設計において重要な考慮事項として適切でないものはどれか。"
     },
     {
       "id": 7,
       "category": "SQL・クエリ最適化",
-      "question": "PostgreSQL における「EXPLAIN ANALYZE」の出力で「actual time」と「planned time」に大きな差がある場合の原因として適切なものはどれか。",
       "options": [
         "クエリの構文エラー",
         "統計情報の古さやカーディナリティ推定の誤り",
@@ -103,12 +108,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "実行時間と計画時間の大きな差は、オプティマイザーが使用する統計情報が古い、または不正確であることが主な原因です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "PostgreSQL における「EXPLAIN ANALYZE」の出力で「actual time」と「planned time」に大きな差がある場合の原因として適切なものはどれか。"
     },
     {
       "id": 8,
       "category": "トランザクション管理",
-      "question": "Multi-Version Concurrency Control（MVCC）における「Snapshot Isolation」のファントムリード対策として適切なものはどれか。",
       "options": [
         "行レベルロックの使用",
         "Predicate Lock または Serializable Snapshot Isolation",
@@ -117,12 +122,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Snapshot Isolation単体ではファントムリードを防げないため、Predicate Lock やSSI（Serializable Snapshot Isolation）が必要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Multi-Version Concurrency Control（MVCC）における「Snapshot Isolation」のファントムリード対策として適切なものはどれか。"
     },
     {
       "id": 9,
       "category": "性能・運用",
-      "question": "Database Connection Pooling における「Connection Leak」の対策として適切なものはどれか。",
       "options": [
         "プールサイズを無制限にする",
         "接続タイムアウトの設定と適切なリソース管理",
@@ -131,12 +136,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Connection Leakを防ぐには、適切なタイムアウト設定、try-with-resources構文の使用、プール監視による早期検出が重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Connection Pooling における「Connection Leak」の対策として適切なものはどれか。"
     },
     {
       "id": 10,
       "category": "新技術・標準",
-      "question": "Vector Database の用途として最も適切なものはどれか。",
       "options": [
         "従来の関係データの管理",
         "埋め込みベクトルによる類似性検索とAI アプリケーション",
@@ -145,12 +150,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Vector DatabaseはAI・機械学習で生成される埋め込みベクトルを効率的に保存・検索し、類似性検索やレコメンデーションシステムで活用されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Vector Database の用途として最も適切なものはどれか。"
     },
     {
       "id": 11,
       "category": "データベース設計",
-      "question": "Data Vault 2.0 モデリング手法における「Hub」エンティティの役割として適切なものはどれか。",
       "options": [
         "関係性の詳細情報を格納",
         "ビジネスキーとメタデータを格納",
@@ -159,12 +164,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Data Vault モデルでは、Hubがビジネスキー（顧客ID、製品IDなど）とメタデータを格納し、データの一意性を確保します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Data Vault 2.0 モデリング手法における「Hub」エンティティの役割として適切なものはどれか。"
     },
     {
       "id": 12,
       "category": "SQL・クエリ最適化",
-      "question": "Window Function におけるフレーム指定「ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW」の意味として適切なものはどれか。",
       "options": [
         "現在行のみを対象とする",
         "先頭行から現在行までを対象とする",
@@ -173,12 +178,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "UNBOUNDED PRECEDING は先頭行、CURRENT ROW は現在行を示すため、パーティション内の先頭行から現在行までがフレームの範囲となります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Window Function におけるフレーム指定「ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW」の意味として適切なものはどれか。"
     },
     {
       "id": 13,
       "category": "トランザクション管理",
-      "question": "分散データベースにおける「Eventual Consistency」を実現するアプローチとして適切なものはどれか。",
       "options": [
         "すべてのノードでの同期的更新",
         "非同期レプリケーションと競合解決戦略",
@@ -187,12 +192,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Eventual Consistencyは、非同期レプリケーションにより、一定時間後にすべてのレプリカが同じ状態に収束することを保証するモデルです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "分散データベースにおける「Eventual Consistency」を実現するアプローチとして適切なものはどれか。"
     },
     {
       "id": 14,
       "category": "性能・運用",
-      "question": "Database Sharding における「Rebalancing」の課題として適切なものはどれか。",
       "options": [
         "データの完全な複製",
         "データ移行中のサービス可用性とパフォーマンス影響",
@@ -201,12 +206,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Shardingのリバランシングでは、大量のデータ移行を行うため、サービスの可用性を保ちながらパフォーマンス影響を最小化することが重要な課題です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Sharding における「Rebalancing」の課題として適切なものはどれか。"
     },
     {
       "id": 15,
       "category": "新技術・標準",
-      "question": "Graph Database における「Traversal」クエリの最適化で重要な要素はどれか。",
       "options": [
         "テーブルスキャンの利用",
         "インデックスと隣接リストの効率的な実装",
@@ -215,12 +220,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "グラフデータベースでは、ノード間の関係を効率的に辿るため、適切なインデックスと隣接リスト構造の実装が性能の鍵となります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Graph Database における「Traversal」クエリの最適化で重要な要素はどれか。"
     },
     {
       "id": 16,
       "category": "データベース設計",
-      "question": "Temporal Database における「Bi-temporal」データ管理の2つの時間軸として適切なものはどれか。",
       "options": [
         "作成時間と更新時間",
         "Valid Time と Transaction Time",
@@ -229,12 +234,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Bi-temporalデータベースは、Valid Time（実世界での有効期間）とTransaction Time（データベースでの記録期間）の2つの時間軸を管理します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Temporal Database における「Bi-temporal」データ管理の2つの時間軸として適切なものはどれか。"
     },
     {
       "id": 17,
       "category": "SQL・クエリ最適化",
-      "question": "MySQL の InnoDB におけるIndex Condition Pushdown（ICP）の効果として適切なものはどれか。",
       "options": [
         "インデックスの作成速度向上",
         "WHERE条件の一部をストレージエンジンレベルで評価し不要な行読み取りを削減",
@@ -243,12 +248,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ICPは、WHERE条件の一部をストレージエンジンレベルで事前評価することで、不要な行の読み取りを削減し、クエリ性能を向上させます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "MySQL の InnoDB におけるIndex Condition Pushdown（ICP）の効果として適切なものはどれか。"
     },
     {
       "id": 18,
       "category": "トランザクション管理",
-      "question": "CAP定理において「Partition Tolerance」を選択した分散データベースシステムで実装される整合性モデルとして適切なものはどれか。",
       "options": [
         "強一貫性のみ",
         "結果整合性（Eventual Consistency）",
@@ -257,12 +262,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CAP定理では、Partition ToleranceとAvailabilityを選択した場合、強一貫性を犠牲にして結果整合性を採用することが一般的です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "CAP定理において「Partition Tolerance」を選択した分散データベースシステムで実装される整合性モデルとして適切なものはどれか。"
     },
     {
       "id": 19,
       "category": "性能・運用",
-      "question": "Database Query Cache の効率性を向上させる設計として適切でないものはどれか。",
       "options": [
         "クエリのパラメータ化",
         "適切なキャッシュサイズの設定",
@@ -271,12 +276,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "頻繁に変更されるデータや一度しか実行されないクエリは、キャッシュの効果が低く、むしろメモリリソースの無駄遣いになります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Query Cache の効率性を向上させる設計として適切でないものはどれか。"
     },
     {
       "id": 20,
       "category": "新技術・標準",
-      "question": "Columnar Storage Database の分析処理における利点として適切なものはどれか。",
       "options": [
         "OLTP処理の高速化",
         "集計クエリでの圧縮効果とI/O削減",
@@ -285,12 +290,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Columnar Storageは、同一データタイプを連続格納することで高い圧縮率を実現し、分析クエリでの読み取りI/Oを大幅に削減します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Columnar Storage Database の分析処理における利点として適切なものはどれか。"
     },
     {
       "id": 21,
       "category": "データベース設計",
-      "question": "Event Sourcing におけるSnapshot の作成タイミングとして適切なものはどれか。",
       "options": [
         "すべてのイベント後に必ず作成",
         "一定のイベント数やパフォーマンス要件に基づく定期作成",
@@ -299,12 +304,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Snapshotは、大量のイベント履歴からの状態復元コストを削減するため、適切な間隔で作成することが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event Sourcing におけるSnapshot の作成タイミングとして適切なものはどれか。"
     },
     {
       "id": 22,
       "category": "SQL・クエリ最適化",
-      "question": "PostgreSQL における「Parallel Query」実行の制限事項として適切なものはどれか。",
       "options": [
         "SELECT文でのみ利用可能",
         "書き込み処理を含むクエリでは制限がある",
@@ -313,12 +318,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "PostgreSQLのParallel Queryは主に読み取り処理に最適化されており、書き込み処理や特定の関数を含むクエリでは制限があります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "PostgreSQL における「Parallel Query」実行の制限事項として適切なものはどれか。"
     },
     {
       "id": 23,
       "category": "トランザクション管理",
-      "question": "Distributed Transaction における「Sagas Pattern」で使用される補償アクション（Compensating Action）の特徴として適切なものはどれか。",
       "options": [
         "元の操作を完全に元に戻す逆操作",
         "ビジネス的に意味のある補償処理",
@@ -327,12 +332,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Sagaの補償アクションは、技術的な逆操作ではなく、ビジネス要件に応じた意味のある補償処理（例：注文キャンセル、在庫復元等）を実装します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Distributed Transaction における「Sagas Pattern」で使用される補償アクション（Compensating Action）の特徴として適切なものはどれか。"
     },
     {
       "id": 24,
       "category": "性能・運用",
-      "question": "Database Monitoring における「Wait Event Analysis」の目的として適切なものはどれか。",
       "options": [
         "SQL 構文の正確性確認",
         "パフォーマンス ボトルネックの特定と分析",
@@ -341,12 +346,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Wait Event Analysisは、データベースがどのリソース（I/O、CPU、ロック等）で待機しているかを分析し、パフォーマンスボトルネックを特定します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Monitoring における「Wait Event Analysis」の目的として適切なものはどれか。"
     },
     {
       "id": 25,
       "category": "新技術・標準",
-      "question": "In-Memory Database における「Persistent Memory（PMEM）」の活用効果として適切なものはどれか。",
       "options": [
         "バックアップ容量の削減のみ",
         "メモリ速度でのデータ永続化",
@@ -355,12 +360,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Persistent Memory（Intel Optane等）は、DRAM並みの高速アクセスと不揮発性を両立し、高速でのデータ永続化を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "In-Memory Database における「Persistent Memory（PMEM）」の活用効果として適切なものはどれか。"
     },
     {
       "id": 26,
       "category": "データベース設計",
-      "question": "Polyglot Persistence アーキテクチャにおけるデータストア選択の基準として適切でないものはどれか。",
       "options": [
         "データ特性とアクセスパターン",
         "一貫性要件",
@@ -369,12 +374,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Polyglot Persistenceは、異なるデータ特性や要件に応じて最適なデータストア技術を選択・組み合わせるアプローチです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Polyglot Persistence アーキテクチャにおけるデータストア選択の基準として適切でないものはどれか。"
     },
     {
       "id": 27,
       "category": "SQL・クエリ最適化",
-      "question": "Apache Spark SQL における「Catalyst Optimizer」の最適化として適切でないものはどれか。",
       "options": [
         "Predicate Pushdown",
         "Column Pruning",
@@ -383,12 +388,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Catalyst Optimizerは、Predicate Pushdown、Column Pruning等のルールベース最適化を行いますが、セキュリティ機能を無効化することはありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Apache Spark SQL における「Catalyst Optimizer」の最適化として適切でないものはどれか。"
     },
     {
       "id": 28,
       "category": "トランザクション管理",
-      "question": "Blockchain Database における「Consensus Mechanism」として適切でないものはどれか。",
       "options": [
         "Proof of Work（PoW）",
         "Proof of Stake（PoS）",
@@ -397,12 +402,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "2PCは従来の分散データベースの合意アルゴリズムであり、ブロックチェーンのByzantine fault tolerantな環境での合意メカニズムではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Blockchain Database における「Consensus Mechanism」として適切でないものはどれか。"
     },
     {
       "id": 29,
       "category": "性能・運用",
-      "question": "Database as a Service（DBaaS）における「Vertical Scaling」の限界として適切なものはどれか。",
       "options": [
         "コストに上限がない",
         "物理的なリソース限界とダウンタイムの発生",
@@ -411,12 +416,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Vertical Scalingは、単一インスタンスのリソース増強のため、物理的限界があり、スケールアップ時にダウンタイムが発生する可能性があります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database as a Service（DBaaS）における「Vertical Scaling」の限界として適切なものはどれか。"
     },
     {
       "id": 30,
       "category": "新技術・標準",
-      "question": "Multi-Model Database の利点として適切でないものはどれか。",
       "options": [
         "単一システムでの多様なデータ型サポート",
         "データモデル間の関係性表現",
@@ -425,12 +430,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Multi-Model Databaseでは、各データモデル（Document、Graph、Key-Value等）に応じた最適化が必要であり、同一の最適化は適切ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Multi-Model Database の利点として適切でないものはどれか。"
     },
     {
       "id": 31,
       "category": "データベース設計",
-      "question": "Domain-Driven Design における「Aggregate」とデータベース設計の関係として適切なものはどれか。",
       "options": [
         "Aggregate は必ず単一テーブルで実装",
         "Aggregate の境界は トランザクション境界と一致させる",
@@ -439,12 +444,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "DDDでは、Aggregateの境界をトランザクション境界と一致させることで、データ整合性とビジネス不変条件を効率的に保護します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Domain-Driven Design における「Aggregate」とデータベース設計の関係として適切なものはどれか。"
     },
     {
       "id": 32,
       "category": "SQL・クエリ最適化",
-      "question": "Distributed SQL Database における「Distributed JOIN」の最適化手法として適切なものはどれか。",
       "options": [
         "すべてのデータを単一ノードに移動",
         "Co-location とBroadcast JOIN の適切な選択",
@@ -453,12 +458,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "分散データベースでは、データサイズと分散状況に応じて、Co-location（データ配置最適化）やBroadcast JOIN を選択してネットワーク転送を最小化します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Distributed SQL Database における「Distributed JOIN」の最適化手法として適切なものはどれか。"
     },
     {
       "id": 33,
       "category": "トランザクション管理",
-      "question": "CRDT（Conflict-free Replicated Data Type）の特徴として適切なものはどれか。",
       "options": [
         "中央調整が必須",
         "競合解決なしで自動的にマージ可能",
@@ -467,12 +472,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CRDTは、数学的特性により、分散環境での並行更新が自動的にマージ可能で、競合解決メカニズムを不要にするデータ型です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "CRDT（Conflict-free Replicated Data Type）の特徴として適切なものはどれか。"
     },
     {
       "id": 34,
       "category": "性能・運用",
-      "question": "Database Connection Pool における「Connection Validation」の実装として適切なものはどれか。",
       "options": [
         "接続の事前検証を一切行わない",
         "定期的なHealth Check クエリの実行",
@@ -481,12 +486,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Connection Validationでは、「SELECT 1」などの軽量クエリを定期実行し、無効な接続を事前に検出・除去することで安定性を確保します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Connection Pool における「Connection Validation」の実装として適切なものはどれか。"
     },
     {
       "id": 35,
       "category": "新技術・標準",
-      "question": "Serverless Database の課題として適切なものはどれか。",
       "options": [
         "スケーラビリティの制限",
         "コールドスタート遅延と接続管理",
@@ -495,12 +500,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Serverless DBは、使用時の起動遅延（コールドスタート）と、従来の永続的接続モデルとの適合性が主要な課題です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Serverless Database の課題として適切なものはどれか。"
     },
     {
       "id": 36,
       "category": "データベース設計",
-      "question": "Data Mesh アーキテクチャにおける「Data Product」の設計原則として適切なものはどれか。",
       "options": [
         "中央集権的なデータ管理",
         "ドメイン指向で自己完結的なデータセット",
@@ -509,12 +514,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Data Meshでは、各ドメインチームが自己完結的なData Productを所有・管理し、ドメイン知識に基づいたデータ提供を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Data Mesh アーキテクチャにおける「Data Product」の設計原則として適切なものはどれか。"
     },
     {
       "id": 37,
       "category": "SQL・クエリ最適化",
-      "question": "Oracle Database における「Adaptive Cursor Sharing」の目的として適切なものはどれか。",
       "options": [
         "カーソルの メモリ使用量削減",
         "パラメータ値の偏りに応じた実行計画の最適化",
@@ -523,12 +528,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Adaptive Cursor Sharingは、バインド変数の値分布に偏りがある場合に、異なる実行計画を作成してパフォーマンスを最適化します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Oracle Database における「Adaptive Cursor Sharing」の目的として適切なものはどれか。"
     },
     {
       "id": 38,
       "category": "トランザクション管理",
-      "question": "Database における「Write Skew」アノマリーが発生する条件として適切なものはどれか。",
       "options": [
         "単一行の同時更新",
         "異なる行の読み取り結果に基づく別行への書き込み",
@@ -537,12 +542,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Write Skewは、複数トランザクションが異なる行を読み取り、その結果に基づいて別の行を更新することで、ビジネス制約が破られる現象です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database における「Write Skew」アノマリーが発生する条件として適切なものはどれか。"
     },
     {
       "id": 39,
       "category": "性能・運用",
-      "question": "Database Partitioning における「Horizontal Partitioning」と「Vertical Partitioning」の組み合わせ効果として適切なものはどれか。",
       "options": [
         "データ整合性の完全な保証",
         "クエリ性能とストレージ効率の向上",
@@ -551,12 +556,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "水平分割（行分割）と垂直分割（列分割）の組み合わせにより、アクセスパターンに応じたクエリ性能とストレージ効率の最適化が可能になります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Partitioning における「Horizontal Partitioning」と「Vertical Partitioning」の組み合わせ効果として適切なものはどれか。"
     },
     {
       "id": 40,
       "category": "新技術・標準",
-      "question": "Quantum Database における「Quantum Superposition」の活用として期待される効果はどれか。",
       "options": [
         "ストレージ容量の物理的な増大",
         "並列検索による指数的な検索速度向上",
@@ -565,12 +570,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "量子データベースでは、量子の重ね合わせ状態を利用して、複数の検索パスを同時に実行し、特定の問題で指数的な検索速度向上が期待されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Quantum Database における「Quantum Superposition」の活用として期待される効果はどれか。"
     },
     {
       "id": 41,
       "category": "データベース設計",
-      "question": "Lambda Architecture における「Speed Layer」の役割として適切なものはどれか。",
       "options": [
         "過去データの一括処理",
         "リアルタイムデータの低遅延処理",
@@ -579,12 +584,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Lambda ArchitectureのSpeed Layerは、ストリーミングデータをリアルタイムで処理し、低遅延でのクエリ応答を提供します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Lambda Architecture における「Speed Layer」の役割として適切なものはどれか。"
     },
     {
       "id": 42,
       "category": "SQL・クエリ最適化",
-      "question": "Analytical Database における「Star Schema」と「Snowflake Schema」の主な違いはどれか。",
       "options": [
         "Star Schemaは非正規化、Snowflake Schemaは正規化されたディメンション",
         "Star Schemaは複雑、Snowflake Schemaは単純",
@@ -593,12 +598,12 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "Star Schemaはディメンションテーブルを非正規化、Snowflake Schemaはディメンションテーブルを正規化して、階層構造を分離します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Analytical Database における「Star Schema」と「Snowflake Schema」の主な違いはどれか。"
     },
     {
       "id": 43,
       "category": "トランザクション管理",
-      "question": "Distributed Consensus において「Raft Algorithm」の Leader Election プロセスの特徴として適切なものはどれか。",
       "options": [
         "事前に決められた固定リーダー",
         "ランダム化されたタイムアウトによる分散的リーダー選出",
@@ -607,12 +612,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Raftでは、各ノードがランダム化されたelection timeoutを持ち、タイムアウト後に候補者となってリーダー選出を開始します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Distributed Consensus において「Raft Algorithm」の Leader Election プロセスの特徴として適切なものはどれか。"
     },
     {
       "id": 44,
       "category": "性能・運用",
-      "question": "Database Lock Escalation の発生を抑制する手法として適切なものはどれか。",
       "options": [
         "トランザクションサイズの大型化",
         "適切なインデックス設計とクエリ最適化によるロック数削減",
@@ -621,12 +626,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Lock Escalationを防ぐには、効率的なインデックス設計により必要最小限の行のみをロックし、適切なクエリ最適化でロック保持時間を短縮します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Lock Escalation の発生を抑制する手法として適切なものはどれか。"
     },
     {
       "id": 45,
       "category": "新技術・標準",
-      "question": "Edge Database の特徴として適切でないものはどれか。",
       "options": [
         "地理的分散配置",
         "低遅延アクセス",
@@ -635,12 +640,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Edge Databaseは、データを中央に集約するのではなく、エッジ（ユーザーやデバイスに近い場所）に分散配置することが特徴です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Edge Database の特徴として適切でないものはどれか。"
     },
     {
       "id": 46,
       "category": "データベース設計",
-      "question": "Change Data Capture（CDC）における「Log-Based CDC」の利点として適切なものはどれか。",
       "options": [
         "アプリケーションコードの変更が必要",
         "データベースログを利用したリアルタイム変更検知",
@@ -649,12 +654,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Log-Based CDCは、データベースのトランザクションログを監視することで、アプリケーション変更なしにリアルタイムでデータ変更を検知します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Change Data Capture（CDC）における「Log-Based CDC」の利点として適切なものはどれか。"
     },
     {
       "id": 47,
       "category": "SQL・クエリ最適化",
-      "question": "SQL Server における「Columnstore Index」の効果として適切でないものはどれか。",
       "options": [
         "分析クエリの高速化",
         "データ圧縮率の向上",
@@ -663,12 +668,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Columnstore Indexは分析処理（OLAP）に最適化されており、頻繁な行単位更新を伴うOLTP処理には適していません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SQL Server における「Columnstore Index」の効果として適切でないものはどれか。"
     },
     {
       "id": 48,
       "category": "トランザクション管理",
-      "question": "Event Sourcing における「Temporal Query」の実装として適切なものはどれか。",
       "options": [
         "最新の状態のみを保持",
         "特定時点でのシステム状態の再構築",
@@ -677,12 +682,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Event Sourcingでは、イベント履歴から任意の過去時点でのシステム状態を再構築するTemporal Queryが重要な機能です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event Sourcing における「Temporal Query」の実装として適切なものはどれか。"
     },
     {
       "id": 49,
       "category": "性能・運用",
-      "question": "Database Backup における「Point-in-Time Recovery（PITR）」の実現に必要な要素はどれか。",
       "options": [
         "フルバックアップのみ",
         "フルバックアップとトランザクションログの継続的保存",
@@ -691,12 +696,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "PITRには、基準点となるフルバックアップと、それ以降のすべてのトランザクションログが必要で、任意時点での状態復元が可能になります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Backup における「Point-in-Time Recovery（PITR）」の実現に必要な要素はどれか。"
     },
     {
       "id": 50,
       "category": "新技術・標準",
-      "question": "Computational Storage における Database Processing の利点として適切なものはどれか。",
       "options": [
         "CPU負荷の増大",
         "ストレージデバイス内でのデータ処理によるI/O削減",
@@ -705,12 +710,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Computational Storageは、ストレージデバイス内にプロセッサーを搭載し、データ移動を最小化してフィルタリングや集計処理を実行します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Computational Storage における Database Processing の利点として適切なものはどれか。"
     },
     {
       "id": 51,
       "category": "データベース設計",
-      "question": "Microservices における「Database per Service」パターンでの課題として適切なものはどれか。",
       "options": [
         "データ独立性の向上",
         "分散トランザクションとデータ整合性の管理",
@@ -719,12 +724,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Database per Serviceでは、サービス間でのデータ整合性確保と、複数データベースにまたがるトランザクション管理が大きな課題となります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Microservices における「Database per Service」パターンでの課題として適切なものはどれか。"
     },
     {
       "id": 52,
       "category": "SQL・クエリ最適化",
-      "question": "BigQuery における「Partitioning」と「Clustering」の組み合わせ効果として適切なものはどれか。",
       "options": [
         "データの完全な複製",
         "スキャン範囲の削減とクエリ性能の向上",
@@ -733,12 +738,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "BigQueryでは、Partitioning（日付等による分割）とClustering（関連データの物理的配置）により、クエリでスキャンするデータ量を大幅に削減できます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "BigQuery における「Partitioning」と「Clustering」の組み合わせ効果として適切なものはどれか。"
     },
     {
       "id": 53,
       "category": "トランザクション管理",
-      "question": "Spanner Database における「External Consistency」の実現メカニズムとして適切なものはどれか。",
       "options": [
         "ローカルクロックのみ使用",
         "TrueTime API による全世界での時刻同期",
@@ -747,12 +752,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Google SpannerはTrueTime APIを使用し、GPS とアトミッククロックによる全世界での時刻同期により、外部一貫性を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Spanner Database における「External Consistency」の実現メカニズムとして適切なものはどれか。"
     },
     {
       "id": 54,
       "category": "性能・運用",
-      "question": "Database Memory Management における「Buffer Pool」の効率化手法として適切でないものはどれか。",
       "options": [
         "LRU（Least Recently Used）アルゴリズム",
         "アダプティブな プリフェッチ",
@@ -761,12 +766,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "すべてのデータをメモリに保持することは、メモリリソースの制約と コストの観点から現実的ではなく、効率的な管理アルゴリズムが必要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Memory Management における「Buffer Pool」の効率化手法として適切でないものはどれか。"
     },
     {
       "id": 55,
       "category": "新技術・標準",
-      "question": "Federated Database System の利点として適切でないものはどれか。",
       "options": [
         "既存システムを統合した統一ビュー",
         "データの物理的な統合が必須",
@@ -775,12 +780,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Federated Database Systemは、データを物理的に統合せず、仮想的な統一ビューを提供することで既存システムの自律性を保持します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Federated Database System の利点として適切でないものはどれか。"
     },
     {
       "id": 56,
       "category": "データベース設計",
-      "question": "Stream Processing Database における「Watermark」の概念として適切なものはどれか。",
       "options": [
         "データの品質評価指標",
         "遅延データの処理タイミングを制御する時刻指標",
@@ -789,12 +794,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Watermarkは、ストリーミングデータ処理において、「この時刻以前のデータは概ね到着済み」を示す指標で、ウィンドウ処理のタイミングを決定します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Stream Processing Database における「Watermark」の概念として適切なものはどれか。"
     },
     {
       "id": 57,
       "category": "SQL・クエリ最適化",
-      "question": "Apache Spark における「Adaptive Query Execution（AQE）」の機能として適切でないものはどれか。",
       "options": [
         "実行時統計に基づく Join 戦略の動的変更",
         "Data Skew の動的検出と調整",
@@ -803,12 +808,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "AQEは実行時の統計情報に基づく最適化を行いますが、SQL構文自体の修正は行わず、実行計画の動的調整を実施します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Apache Spark における「Adaptive Query Execution（AQE）」の機能として適切でないものはどれか。"
     },
     {
       "id": 58,
       "category": "トランザクション管理",
-      "question": "Multi-Master Replication における「Conflict Resolution」戦略として適切でないものはどれか。",
       "options": [
         "Last Write Wins（LWW）",
         "Vector Clock による因果関係ベース解決",
@@ -817,12 +822,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Multi-Master環境では、データ整合性のために適切な競合解決戦略が必須であり、競合を無視することはデータ破損につながります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Multi-Master Replication における「Conflict Resolution」戦略として適切でないものはどれか。"
     },
     {
       "id": 59,
       "category": "性能・運用",
-      "question": "Database Auto-Scaling における「Predictive Scaling」の利点として適切なものはどれか。",
       "options": [
         "リアクティブなスケーリングのみ",
         "負荷パターンの予測による事前リソース準備",
@@ -831,12 +836,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Predictive Scalingは、過去のパターンや外部要因を分析して負荷を予測し、事前にリソースを準備することで、レスポンス性能を維持します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Auto-Scaling における「Predictive Scaling」の利点として適切なものはどれか。"
     },
     {
       "id": 60,
       "category": "新技術・標準",
-      "question": "Confidential Computing における Database の活用として適切なものはどれか。",
       "options": [
         "データの平文処理のみ",
         "Trusted Execution Environment での暗号化データ処理",
@@ -845,12 +850,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Confidential Computingでは、TEE（Trusted Execution Environment）内で暗号化されたデータを復号・処理し、メモリ上でも保護します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Confidential Computing における Database の活用として適切なものはどれか。"
     },
     {
       "id": 61,
       "category": "データベース設計",
-      "question": "Data Lakehouse アーキテクチャの特徴として適切なものはどれか。",
       "options": [
         "構造化データのみサポート",
         "Data Lake の柔軟性と Data Warehouse の管理機能を統合",
@@ -859,12 +864,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Data Lakehouseは、Data Lakeの柔軟性（多様なデータ形式、低コスト）とData Warehouseの管理機能（ACID、スキーマ管理）を統合したアーキテクチャです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Data Lakehouse アーキテクチャの特徴として適切なものはどれか。"
     },
     {
       "id": 62,
       "category": "SQL・クエリ最適化",
-      "question": "Distributed Database における「Push-Down Optimization」の効果として適切なものはどれか。",
       "options": [
         "ネットワーク転送データ量の増加",
         "データ転送前のローカルフィルタリングによる効率化",
@@ -873,12 +878,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Push-Down Optimizationは、フィルタ条件や集計処理をデータ保存ノードで事前実行し、ネットワーク転送量を削減します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Distributed Database における「Push-Down Optimization」の効果として適切なものはどれか。"
     },
     {
       "id": 63,
       "category": "トランザクション管理",
-      "question": "CockroachDB における「Serializable Snapshot Isolation」の実装手法として適切なものはどれか。",
       "options": [
         "2 Phase Locking のみ",
         "Read と Write のタイムスタンプを用いた競合検出",
@@ -887,12 +892,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CockroachDBのSSIは、読み取りと書き込みのタイムスタンプを比較し、Serializable性を損なう競合を検出してトランザクションを中止します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "CockroachDB における「Serializable Snapshot Isolation」の実装手法として適切なものはどれか。"
     },
     {
       "id": 64,
       "category": "性能・運用",
-      "question": "Database Observability における「Query Performance Insight」で監視すべき主要メトリクスとして適切でないものはどれか。",
       "options": [
         "実行時間とCPU使用率",
         "ロック待機時間",
@@ -901,12 +906,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Database Query Performance Insightは、データベース内部のクエリ性能に焦点を当て、UI応答性はアプリケーション層の指標です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Observability における「Query Performance Insight」で監視すべき主要メトリクスとして適切でないものはどれか。"
     },
     {
       "id": 65,
       "category": "新技術・標準",
-      "question": "Homomorphic Encryption を Database で活用する場合の制限として適切なものはどれか。",
       "options": [
         "暗号化処理が不可能",
         "限定的な演算サポートと処理性能の低下",
@@ -915,12 +920,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "準同型暗号は、暗号化したままでの計算を可能にしますが、サポートされる演算が限定的で、処理性能も大幅に低下します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Homomorphic Encryption を Database で活用する場合の制限として適切なものはどれか。"
     },
     {
       "id": 66,
       "category": "データベース設計",
-      "question": "Event Store の設計において「Upcasting」の目的として適切なものはどれか。",
       "options": [
         "イベントサイズの削減",
         "古いイベント形式を新しい形式に変換",
@@ -929,12 +934,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Upcastingは、Event Sourcingにおいてスキーマ進化に対応し、古い形式のイベントを読み取り時に新しい形式に変換する仕組みです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event Store の設計において「Upcasting」の目的として適切なものはどれか。"
     },
     {
       "id": 67,
       "category": "SQL・クエリ最適化",
-      "question": "Apache Calcite における「Rule-Based Optimization」の特徴として適切なものはどれか。",
       "options": [
         "実行時統計のみに依存",
         "事前定義されたルールによる論理的なクエリ変換",
@@ -943,12 +948,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Apache Calciteは、事前定義されたルール（projection pushdown、filter pushdown等）を適用して、論理的にクエリを最適化します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Apache Calcite における「Rule-Based Optimization」の特徴として適切なものはどれか。"
     },
     {
       "id": 68,
       "category": "トランザクション管理",
-      "question": "FaunaDB における「CALVIN」アルゴリズムの特徴として適切なものはどれか。",
       "options": [
         "悲観的並行制御のみ",
         "決定論的トランザクションスケジューリング",
@@ -957,12 +962,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CALVINは、トランザクションを決定論的にスケジューリングすることで、分散環境でも一貫性を保ちながら高いスループットを実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "FaunaDB における「CALVIN」アルゴリズムの特徴として適切なものはどれか。"
     },
     {
       "id": 69,
       "category": "性能・運用",
-      "question": "Database Chaos Engineering における「Latency Injection」の目的として適切なものはどれか。",
       "options": [
         "システム性能の向上",
         "ネットワーク遅延耐性とタイムアウト処理の検証",
@@ -971,12 +976,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Latency Injectionは、意図的にデータベース応答遅延を発生させ、アプリケーションのタイムアウト処理や障害対応を検証します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Chaos Engineering における「Latency Injection」の目的として適切なものはどれか。"
     },
     {
       "id": 70,
       "category": "新技術・標準",
-      "question": "Differential Privacy を Database で実装する際の効果として適切なものはどれか。",
       "options": [
         "クエリ性能の大幅な向上",
         "個人特定リスクを数学的に制御した統計情報提供",
@@ -985,12 +990,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Differential Privacyは、統計的クエリにノイズを加えることで、個人のプライバシーを数学的に保証しながら有用な統計情報を提供します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Differential Privacy を Database で実装する際の効果として適切なものはどれか。"
     },
     {
       "id": 71,
       "category": "データベース設計",
-      "question": "Data Versioning システムにおける「Branching and Merging」の Database 実装課題として適切なものはどれか。",
       "options": [
         "データサイズの削減",
         "大規模データセットでの効率的な差分管理とマージ競合解決",
@@ -999,12 +1004,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "データバージョニングでは、大規模データセットの変更差分を効率的に管理し、マージ時の競合を適切に解決することが主要な技術課題です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Data Versioning システムにおける「Branching and Merging」の Database 実装課題として適切なものはどれか。"
     },
     {
       "id": 72,
       "category": "SQL・クエリ最適化",
-      "question": "Analytical Database における「Materialized View」の自動更新戦略として適切なものはどれか。",
       "options": [
         "すべての変更で即座に更新",
         "データ更新頻度とクエリパターンに基づく最適化",
@@ -1013,12 +1018,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Materialized Viewの更新戦略は、ベースデータの更新頻度、クエリアクセスパターン、更新コストを考慮して最適化する必要があります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Analytical Database における「Materialized View」の自動更新戦略として適切なものはどれか。"
     },
     {
       "id": 73,
       "category": "トランザクション管理",
-      "question": "CRDTs（Conflict-free Replicated Data Types）における「State-based」と「Operation-based」CRDTの違いとして適切なものはどれか。",
       "options": [
         "機能的な違いはない",
         "State-basedは状態を同期、Operation-basedは操作を同期",
@@ -1027,12 +1032,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "State-based CRDTは状態の変更を同期し、Operation-based CRDTは操作（オペレーション）を同期して、結果整合性を保ちます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "CRDTs（Conflict-free Replicated Data Types）における「State-based」と「Operation-based」CRDTの違いとして適切なものはどれか。"
     },
     {
       "id": 74,
       "category": "性能・運用",
-      "question": "Database Migration における「Zero-Downtime Migration」の実現手法として適切なものはどれか。",
       "options": [
         "サービス停止による一括移行",
         "Dual Write とGradual Read Migration による段階的移行",
@@ -1041,12 +1046,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Zero-Downtime Migrationでは、新旧システムへの並行書き込み（Dual Write）と読み取りの段階的移行により、サービス継続を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Migration における「Zero-Downtime Migration」の実現手法として適切なものはどれか。"
     },
     {
       "id": 75,
       "category": "新技術・標準",
-      "question": "Distributed SQL Database における「Consensus-based Replication」の利点として適切なものはどれか。",
       "options": [
         "レプリケーション遅延の増大",
         "強一貫性とByzantine fault tolerance の実現",
@@ -1055,7 +1060,8 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Consensusベースのレプリケーション（Raft、pBFT等）は、分散環境でも強一貫性を保ち、ビザンチン障害への耐性を提供します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Distributed SQL Database における「Consensus-based Replication」の利点として適切なものはどれか。"
     }
   ]
 }

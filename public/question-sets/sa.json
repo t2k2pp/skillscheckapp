@@ -2,7 +2,13 @@
   "id": "sa",
   "title": "システムアーキテクト試験対策",
   "description": "システムアーキテクト試験の午前問題対策です。情報システム戦略、システムアーキテクチャ設計、情報技術、プロジェクトマネジメントなどの専門知識を問う問題を収録しています。",
-  "categories": ["情報システム戦略", "システムアーキテクチャ設計", "情報技術", "プロジェクトマネジメント", "サービスマネジメント"],
+  "categories": [
+    "情報システム戦略",
+    "システムアーキテクチャ設計",
+    "情報技術",
+    "プロジェクトマネジメント",
+    "サービスマネジメント"
+  ],
   "estimatedTime": "120分",
   "difficultyLevel": "上級",
   "totalQuestions": 75,
@@ -10,7 +16,6 @@
     {
       "id": 1,
       "category": "システムアーキテクチャ設計",
-      "question": "レイヤードアーキテクチャにおいて、プレゼンテーション層からデータアクセス層への直接的なアクセスを禁止する理由として適切なものはどれか。",
       "options": [
         "処理速度を向上させるため",
         "メモリ使用量を削減するため",
@@ -19,12 +24,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "レイヤードアーキテクチャでは、各層の責任を明確に分離し、下位層への直接アクセスを制限することで、保守性と再利用性を高めます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "レイヤードアーキテクチャにおいて、プレゼンテーション層からデータアクセス層への直接的なアクセスを禁止する理由として適切なものはどれか。"
     },
     {
       "id": 2,
       "category": "情報システム戦略",
-      "question": "クラウドファーストアプローチを採用する際の考慮事項として最も重要なものはどれか。",
       "options": [
         "初期コストの最小化",
         "データ主権とコンプライアンス要件",
@@ -33,12 +38,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "クラウドファーストでは、データの所在地やセキュリティ、各国の規制要件への準拠が重要な考慮事項となります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "クラウドファーストアプローチを採用する際の考慮事項として最も重要なものはどれか。"
     },
     {
       "id": 3,
       "category": "システムアーキテクチャ設計",
-      "question": "マイクロサービスアーキテクチャにおけるデータ管理パターンで「Database per Service」の利点として適切なものはどれか。",
       "options": [
         "複数サービス間でのトランザクション処理が簡単",
         "データスキーマの統一管理が可能",
@@ -47,12 +52,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Database per Serviceパターンでは、各サービスが独自のデータベースを持つことで、サービス間の疎結合と独立したスケーリングが可能になります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "マイクロサービスアーキテクチャにおけるデータ管理パターンで「Database per Service」の利点として適切なものはどれか。"
     },
     {
       "id": 4,
       "category": "情報技術",
-      "question": "分散システムにおけるConsensusアルゴリズムのRaftの特徴として適切なものはどれか。",
       "options": [
         "ビザンチン障害耐性を持つ",
         "リーダー選出による強い一貫性を保証",
@@ -61,12 +66,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Raftアルゴリズムは、リーダー選出メカニズムにより強い一貫性を保証し、分散システムでの合意形成を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "分散システムにおけるConsensusアルゴリズムのRaftの特徴として適切なものはどれか。"
     },
     {
       "id": 5,
       "category": "プロジェクトマネジメント",
-      "question": "アジャイル開発におけるスパイク（Spike）の目的として適切なものはどれか。",
       "options": [
         "プロダクトの機能を実装する",
         "技術的な不確実性を調査・解決する",
@@ -75,12 +80,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "スパイクは、技術的な不確実性やリスクを調査し、見積もりの精度向上や技術的な実現可能性を検証するためのタイムボックス化された調査活動です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アジャイル開発におけるスパイク（Spike）の目的として適切なものはどれか。"
     },
     {
       "id": 6,
       "category": "サービスマネジメント",
-      "question": "ITIL 4におけるサービス価値システム（SVS）の中核となる概念として適切なものはどれか。",
       "options": [
         "プロセス中心のアプローチ",
         "価値共創を通じたステークホルダーとの協働",
@@ -89,12 +94,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ITIL 4のSVSは、ステークホルダーとの価値共創を中心とし、柔軟性と適応性を重視したサービスマネジメントアプローチです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ITIL 4におけるサービス価値システム（SVS）の中核となる概念として適切なものはどれか。"
     },
     {
       "id": 7,
       "category": "システムアーキテクチャ設計",
-      "question": "Clean Architectureにおける依存性逆転の原則として適切なものはどれか。",
       "options": [
         "上位層が下位層に依存する",
         "具象クラスが抽象クラスに依存する",
@@ -103,12 +108,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Clean Architectureでは、外側の層（UI、DB等）が内側の層（ビジネスロジック）の詳細に依存せず、抽象化を通じて依存関係を制御します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Clean Architectureにおける依存性逆転の原則として適切なものはどれか。"
     },
     {
       "id": 8,
       "category": "情報システム戦略",
-      "question": "ハイブリッドクラウド戦略における「クラウドバースティング」の目的として適切なものはどれか。",
       "options": [
         "常時パブリッククラウドを優先利用する",
         "負荷急増時にパブリッククラウドへ一時的にスケールアウトする",
@@ -117,12 +122,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "クラウドバースティングは、通常はプライベートクラウドで運用し、負荷急増時に一時的にパブリッククラウドへスケールアウトする手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ハイブリッドクラウド戦略における「クラウドバースティング」の目的として適切なものはどれか。"
     },
     {
       "id": 9,
       "category": "情報技術",
-      "question": "分散トレーシングシステムにおけるスパン（Span）の役割として適切なものはどれか。",
       "options": [
         "エラーログを収集する",
         "個々の操作の実行時間と依存関係を記録する",
@@ -131,12 +136,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "スパンは、分散システム内の個々の操作（例：HTTP リクエスト処理）の実行時間、メタデータ、他のスパンとの関係を記録します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "分散トレーシングシステムにおけるスパン（Span）の役割として適切なものはどれか。"
     },
     {
       "id": 10,
       "category": "プロジェクトマネジメント",
-      "question": "SAFe（Scaled Agile Framework）におけるART（Agile Release Train）の特徴として適切なものはどれか。",
       "options": [
         "個別チームが独立してリリース計画を策定する",
         "複数チームが同期化されたプログラムインクリメントで協働する",
@@ -145,12 +150,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ARTは、複数のアジャイルチームが同期化されたプログラムインクリメント（通常8-12週間）で協働し、大規模な価値提供を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SAFe（Scaled Agile Framework）におけるART（Agile Release Train）の特徴として適切なものはどれか。"
     },
     {
       "id": 11,
       "category": "サービスマネジメント",
-      "question": "SRE（Site Reliability Engineering）における「エラーバジェット」の消費パターンとして適切な対応はどれか。",
       "options": [
         "エラーバジェットが残っていても新機能開発を停止する",
         "エラーバジェットが枯渇したら信頼性向上を優先する",
@@ -159,12 +164,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SREでは、エラーバジェットが枯渇した場合は新機能開発を停止し、システムの信頼性向上を最優先に取り組みます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SRE（Site Reliability Engineering）における「エラーバジェット」の消費パターンとして適切な対応はどれか。"
     },
     {
       "id": 12,
       "category": "システムアーキテクチャ設計",
-      "question": "Reactive Systemsの4つの特性として含まれないものはどれか。",
       "options": [
         "応答性（Responsive）",
         "回復力（Resilient）",
@@ -173,12 +178,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Reactive Systemsの4つの特性は、応答性（Responsive）、回復力（Resilient）、弾力性（Elastic）、メッセージ駆動（Message Driven）です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Reactive Systemsの4つの特性として含まれないものはどれか。"
     },
     {
       "id": 13,
       "category": "情報システム戦略",
-      "question": "デジタルツインの実装において最も重要な技術要素はどれか。",
       "options": [
         "3Dモデリングソフトウェア",
         "リアルタイムデータ収集とIoTセンサー",
@@ -187,12 +192,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "デジタルツインは物理世界のリアルタイムデータを収集・反映するため、IoTセンサーによるデータ収集とリアルタイム処理が最も重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "デジタルツインの実装において最も重要な技術要素はどれか。"
     },
     {
       "id": 14,
       "category": "情報技術",
-      "question": "コンテナセキュリティにおけるイメージの脆弱性スキャンのタイミングとして最も適切なものはどれか。",
       "options": [
         "本番デプロイ後のみ",
         "開発完了後のみ",
@@ -201,12 +206,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "コンテナセキュリティでは、ビルド時、レジストリ登録時、実行時の各段階で継続的な脆弱性スキャンを実施することが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "コンテナセキュリティにおけるイメージの脆弱性スキャンのタイミングとして最も適切なものはどれか。"
     },
     {
       "id": 15,
       "category": "プロジェクトマネジメント",
-      "question": "Large Scale Scrum（LeSS）における「スプリントレビュー」の特徴として適切なものはどれか。",
       "options": [
         "各チームが個別にレビューを実施する",
         "全チームが合同で統合されたプロダクトインクリメントをレビューする",
@@ -215,12 +220,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "LeSSでは、複数チームが開発した統合されたプロダクトインクリメントを、全チーム合同でレビューし、全体的な価値提供を確認します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Large Scale Scrum（LeSS）における「スプリントレビュー」の特徴として適切なものはどれか。"
     },
     {
       "id": 16,
       "category": "サービスマネジメント",
-      "question": "DevOpsにおけるObservabilityの3つの柱として含まれないものはどれか。",
       "options": [
         "メトリクス（Metrics）",
         "ログ（Logs）",
@@ -229,12 +234,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "Observabilityの3つの柱は、メトリクス、ログ、トレースです。アラートはこれらのデータを基に構築される仕組みです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "DevOpsにおけるObservabilityの3つの柱として含まれないものはどれか。"
     },
     {
       "id": 17,
       "category": "システムアーキテクチャ設計",
-      "question": "CQRSアーキテクチャにおけるEvent Sourcingとの組み合わせによる利点として適切なものはどれか。",
       "options": [
         "データベース容量の削減",
         "完全な監査証跡と時点復元機能",
@@ -243,12 +248,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Event SourcingとCQRSの組み合わせにより、すべての変更がイベントとして記録され、完全な監査証跡と任意時点での状態復元が可能になります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "CQRSアーキテクチャにおけるEvent Sourcingとの組み合わせによる利点として適切なものはどれか。"
     },
     {
       "id": 18,
       "category": "情報システム戦略",
-      "question": "API戦略におけるAPI Gatewayの機能として適切でないものはどれか。",
       "options": [
         "認証・認可",
         "レート制限",
@@ -257,12 +262,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "API Gatewayは、認証、レート制限、プロトコル変換などの横断的関心事を処理しますが、アプリケーション固有のビジネスロジックは実装しません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "API戦略におけるAPI Gatewayの機能として適切でないものはどれか。"
     },
     {
       "id": 19,
       "category": "情報技術",
-      "question": "Kubernetesにおけるカスタムリソース定義（CRD）の用途として適切なものはどれか。",
       "options": [
         "標準リソースの性能を向上させる",
         "アプリケーション固有のリソースタイプを定義する",
@@ -271,12 +276,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CRDは、Kubernetesの標準リソース（Pod、Service等）に加えて、アプリケーション固有のカスタムリソースタイプを定義する機能です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Kubernetesにおけるカスタムリソース定義（CRD）の用途として適切なものはどれか。"
     },
     {
       "id": 20,
       "category": "プロジェクトマネジメント",
-      "question": "プロダクトディスカバリーにおける「リーンUXキャンバス」の主な目的はどれか。",
       "options": [
         "詳細な技術仕様を記述する",
         "プロダクトのビジネスモデルを分析する",
@@ -285,12 +290,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "リーンUXキャンバスは、ユーザー体験に関する仮説、成功指標、検証方法を一覧化し、ユーザー中心の設計アプローチを支援します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プロダクトディスカバリーにおける「リーンUXキャンバス」の主な目的はどれか。"
     },
     {
       "id": 21,
       "category": "サービスマネジメント",
-      "question": "Chaos Engineeringの原則として適切でないものはどれか。",
       "options": [
         "無計画な本番環境での実験実施",
         "仮説に基づく実験設計",
@@ -299,12 +304,12 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "Chaos Engineeringは「管理された本番環境での実験」を基本原則とし、仮説に基づく実験設計、システム障害の意図的な誘発、影響の最小化を重視します。無計画な実験実施は原則に反します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Chaos Engineeringの原則として適切でないものはどれか。"
     },
     {
       "id": 22,
       "category": "システムアーキテクチャ設計",
-      "question": "ドメイン駆動設計におけるアグリゲートルートの責任として適切なものはどれか。",
       "options": [
         "他のアグリゲートとの通信を直接制御する",
         "アグリゲート内の整合性を保護し外部アクセスを制御する",
@@ -313,12 +318,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "アグリゲートルートは、アグリゲート内のエンティティへの外部アクセスを制御し、ビジネス不変条件を保護する責任を持ちます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ドメイン駆動設計におけるアグリゲートルートの責任として適切なものはどれか。"
     },
     {
       "id": 23,
       "category": "情報システム戦略",
-      "question": "エッジAIアーキテクチャの利点として適切でないものはどれか。",
       "options": [
         "レイテンシの削減",
         "プライバシー保護の向上",
@@ -327,12 +332,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "エッジAIは、デバイス近くで処理を行うことで中央処理への依存度を減らし、レイテンシ削減とプライバシー保護を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "エッジAIアーキテクチャの利点として適切でないものはどれか。"
     },
     {
       "id": 24,
       "category": "情報技術",
-      "question": "Service MeshにおけるmTLS（mutual TLS）の機能として適切なものはどれか。",
       "options": [
         "データ圧縮による通信効率化",
         "サービス間通信の相互認証と暗号化",
@@ -341,12 +346,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "mTLSは、サービス間通信において双方向の認証と暗号化を実現し、ゼロトラストネットワークの基盤となります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Service MeshにおけるmTLS（mutual TLS）の機能として適切なものはどれか。"
     },
     {
       "id": 25,
       "category": "プロジェクトマネジメント",
-      "question": "Design Sprintにおける「プロトタイピング」段階の成果物として適切なものはどれか。",
       "options": [
         "完全に機能するプロダクト",
         "詳細な技術仕様書",
@@ -355,12 +360,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Design Sprintでは、1日でユーザーテスト可能なリアルな外観のプロトタイプ（実際には動作しなくても良い）を作成します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Design Sprintにおける「プロトタイピング」段階の成果物として適切なものはどれか。"
     },
     {
       "id": 26,
       "category": "サービスマネジメント",
-      "question": "Platform Engineeringにおける「Golden Path」の概念として適切なものはどれか。",
       "options": [
         "最も複雑な技術スタックの組み合わせ",
         "開発者が推奨される標準的な開発・デプロイパス",
@@ -369,12 +374,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Golden Pathは、開発者が迷わずに効率的に開発・デプロイできるよう、プラットフォームチームが提供する推奨パスです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Platform Engineeringにおける「Golden Path」の概念として適切なものはどれか。"
     },
     {
       "id": 27,
       "category": "システムアーキテクチャ設計",
-      "question": "Serverless アーキテクチャにおける「関数の粒度」設計で考慮すべき要因として適切でないものはどれか。",
       "options": [
         "ビジネス機能の境界",
         "チーム組織の構造",
@@ -383,12 +388,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Serverlessでは関数の短時間実行が前提のため、データベース接続数を最大化するのではなく、効率的な接続管理が重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Serverless アーキテクチャにおける「関数の粒度」設計で考慮すべき要因として適切でないものはどれか。"
     },
     {
       "id": 28,
       "category": "情報システム戦略",
-      "question": "データメッシュアーキテクチャの原則として適切でないものはどれか。",
       "options": [
         "データ製品思考",
         "ドメイン志向の分散データオーナーシップ",
@@ -397,12 +402,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "データメッシュは中央集権的なデータレイクの課題を解決するため、ドメイン志向の分散データオーナーシップを特徴とします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "データメッシュアーキテクチャの原則として適切でないものはどれか。"
     },
     {
       "id": 29,
       "category": "情報技術",
-      "question": "WebAssembly（WASM）をWeb開発で使用する主な利点はどれか。",
       "options": [
         "JavaScriptよりも開発が簡単",
         "ネイティブレベルの実行性能をWebブラウザで実現",
@@ -411,12 +416,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "WebAssemblyは、C/C++、Rust等で開発されたコードをWebブラウザでネイティブレベルの性能で実行可能にする技術です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "WebAssembly（WASM）をWeb開発で使用する主な利点はどれか。"
     },
     {
       "id": 30,
       "category": "プロジェクトマネジメント",
-      "question": "Feature Flagを使用したプログレッシブデリバリーの利点として適切でないものはどれか。",
       "options": [
         "カナリアリリースの実現",
         "A/Bテストの実施",
@@ -425,12 +430,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Feature Flagは デプロイリスクの軽減や段階的なリリースを可能にしますが、実装と管理には追加の工数が必要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Feature Flagを使用したプログレッシブデリバリーの利点として適切でないものはどれか。"
     },
     {
       "id": 31,
       "category": "サービスマネジメント",
-      "question": "Infrastructure as Code（IaC）におけるドリフト検出の目的として適切なものはどれか。",
       "options": [
         "インフラのコストを最適化する",
         "コードで定義された状態と実際の状態の差異を検出する",
@@ -439,12 +444,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ドリフト検出は、IaCで定義された理想状態と実際のインフラ状態の差異を検出し、構成管理の整合性を保つ仕組みです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Infrastructure as Code（IaC）におけるドリフト検出の目的として適切なものはどれか。"
     },
     {
       "id": 32,
       "category": "システムアーキテクチャ設計",
-      "question": "Hexagonal Architecture におけるポート（Port）の役割として適切なものはどれか。",
       "options": [
         "データベースの物理設計を定義する",
         "アプリケーション内部と外部世界のインターフェースを定義する",
@@ -453,12 +458,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ポートは、アプリケーションのコア部分と外部世界（UI、データベース、外部API等）との間のインターフェースを定義します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Hexagonal Architecture におけるポート（Port）の役割として適切なものはどれか。"
     },
     {
       "id": 33,
       "category": "情報システム戦略",
-      "question": "マルチクラウド戦略における「ベストオブブリード」アプローチの特徴として適切なものはどれか。",
       "options": [
         "単一ベンダーのサービスのみを使用する",
         "各領域で最適なクラウドサービスを選択・組み合わせる",
@@ -467,12 +472,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ベストオブブリードアプローチでは、各機能領域において最も優れたクラウドサービスを選択し、組み合わせて最適解を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "マルチクラウド戦略における「ベストオブブリード」アプローチの特徴として適切なものはどれか。"
     },
     {
       "id": 34,
       "category": "情報技術",
-      "question": "GraphQLにおけるN+1問題を解決する手法として適切なものはどれか。",
       "options": [
         "クエリの実行回数を制限する",
         "DataLoaderパターンによるバッチング",
@@ -481,12 +486,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "DataLoaderパターンは、複数のクエリをバッチングして一度にデータを取得し、N+1問題を解決します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "GraphQLにおけるN+1問題を解決する手法として適切なものはどれか。"
     },
     {
       "id": 35,
       "category": "プロジェクトマネジメント",
-      "question": "Mob Programmingにおける「ナビゲーター」の役割として適切なものはどれか。",
       "options": [
         "コードの詳細な実装を行う",
         "戦略的思考と方向性の指示を行う",
@@ -495,12 +500,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Mob Programmingでは、ナビゲーターが戦略的思考と高レベルな方向性を提供し、ドライバーが実際のコーディングを行います。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Mob Programmingにおける「ナビゲーター」の役割として適切なものはどれか。"
     },
     {
       "id": 36,
       "category": "サービスマネジメント",
-      "question": "AIOpsにおける機械学習の活用として適切でないものはどれか。",
       "options": [
         "異常検知によるインシデント予防",
         "根本原因分析の自動化",
@@ -509,12 +514,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "AIOpsは人間のオペレーターを支援・強化することが目的であり、完全な置き換えではなく人間とAIの協働を目指します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "AIOpsにおける機械学習の活用として適切でないものはどれか。"
     },
     {
       "id": 37,
       "category": "システムアーキテクチャ設計",
-      "question": "Event-Driven Architectureにおける「イベントストア」の特徴として適切なものはどれか。",
       "options": [
         "最新のスナップショットのみを保存する",
         "イベントの履歴を変更不可能な形で永続化する",
@@ -523,12 +528,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "イベントストアは、発生したすべてのイベントを時系列順に変更不可能（Immutable）な形で永続化し、システムの状態を再構築可能にします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event-Driven Architectureにおける「イベントストア」の特徴として適切なものはどれか。"
     },
     {
       "id": 38,
       "category": "情報システム戦略",
-      "question": "Digital Twin実装におけるリアルタイム同期の課題として適切なものはどれか。",
       "options": [
         "3Dモデリングの精度不足",
         "物理世界とデジタル世界の時間差とデータ整合性",
@@ -537,12 +542,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Digital Twinでは、物理世界の変化をリアルタイムでデジタル空間に反映する必要があり、時間差とデータ整合性の確保が重要な課題です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Digital Twin実装におけるリアルタイム同期の課題として適切なものはどれか。"
     },
     {
       "id": 39,
       "category": "情報技術",
-      "question": "Distributed Tracing における sampling 戦略の目的として適切なものはどれか。",
       "options": [
         "全リクエストを必ず記録する",
         "システム負荷を制御しながら有用なトレース情報を収集する",
@@ -551,12 +556,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Sampling戦略は、システムへの負荷を適切に制御しながら、システム全体の振る舞いを理解できる代表的なトレース情報を収集します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Distributed Tracing における sampling 戦略の目的として適切なものはどれか。"
     },
     {
       "id": 40,
       "category": "プロジェクトマネジメント",
-      "question": "Spotify Model における「Chapter」の概念として適切なものはどれか。",
       "options": [
         "プロダクト機能に基づくチーム",
         "同一のスキルや関心を持つ人々のコミュニティ",
@@ -565,12 +570,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ChapterはSpotifyモデルにおいて、同一のスキルや関心を持つ人々が知識共有と成長を図るコミュニティ組織です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Spotify Model における「Chapter」の概念として適切なものはどれか。"
     },
     {
       "id": 41,
       "category": "サービスマネジメント",
-      "question": "Incident Response におけるMTTR（Mean Time To Recovery）を短縮する手法として適切でないものはどれか。",
       "options": [
         "自動化されたロールバック機能",
         "包括的な監視とアラート",
@@ -579,12 +584,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "MTTRの短縮には迅速な復旧が重要であり、詳細な根本原因分析は復旧後に実施します。復旧時は迅速な対応を優先します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Incident Response におけるMTTR（Mean Time To Recovery）を短縮する手法として適切でないものはどれか。"
     },
     {
       "id": 42,
       "category": "システムアーキテクチャ設計",
-      "question": "Bulkhead Pattern の目的として適切なものはどれか。",
       "options": [
         "処理性能を向上させる",
         "障害の影響を局所化し全体への波及を防ぐ",
@@ -593,12 +598,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Bulkhead Patternは、システムのリソース（スレッドプール、接続プール等）を分離し、一部の障害が全体に波及することを防ぎます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Bulkhead Pattern の目的として適切なものはどれか。"
     },
     {
       "id": 43,
       "category": "情報システム戦略",
-      "question": "API-First開発戦略における「契約駆動開発」の利点として適切なものはどれか。",
       "options": [
         "実装完了後にAPIを設計できる",
         "フロントエンドとバックエンドの並行開発が可能",
@@ -607,12 +612,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "API仕様を最初に定義することで、フロントエンドとバックエンドチームが契約に基づいて並行開発を進めることができます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "API-First開発戦略における「契約駆動開発」の利点として適切なものはどれか。"
     },
     {
       "id": 44,
       "category": "情報技術",
-      "question": "gRPCの特徴として適切でないものはどれか。",
       "options": [
         "Protocol Buffersによるシリアライゼーション",
         "HTTP/2上での双方向ストリーミング",
@@ -621,12 +626,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "gRPCはProtocol Buffersを使用したバイナリペイロードを特徴とし、テキストベースのJSONやXMLとは異なります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "gRPCの特徴として適切でないものはどれか。"
     },
     {
       "id": 45,
       "category": "プロジェクトマネジメント",
-      "question": "DevOps における「Shift-Left Testing」の概念として適切なものはどれか。",
       "options": [
         "テストを本番環境でのみ実施する",
         "テストを開発プロセスの早期段階に移行する",
@@ -635,12 +640,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Shift-Left Testingは、テストを開発プロセスの早期段階（左側）に移行し、バグの早期発見とフィードバックループの短縮を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "DevOps における「Shift-Left Testing」の概念として適切なものはどれか。"
     },
     {
       "id": 46,
       "category": "サービスマネジメント",
-      "question": "GitOps におけるArgo CDやFlux などのツールの主要機能はどれか。",
       "options": [
         "ソースコードのバージョン管理",
         "宣言的設定と実際の状態の同期",
@@ -649,12 +654,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "GitOpsツール（Argo CD、Flux等）は、Gitリポジトリの宣言的設定と実際のクラスター状態を継続的に同期させます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "GitOps におけるArgo CDやFlux などのツールの主要機能はどれか。"
     },
     {
       "id": 47,
       "category": "システムアーキテクチャ設計",
-      "question": "Onion Architecture における依存関係の方向として適切なものはどれか。",
       "options": [
         "内側の層が外側の層に依存する",
         "外側の層が内側の層に依存する",
@@ -663,12 +668,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Onion Architectureでは、外側の層（インフラストラクチャ、UI等）が内側の層（ドメイン、アプリケーション）に依存し、逆の依存は禁止されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Onion Architecture における依存関係の方向として適切なものはどれか。"
     },
     {
       "id": 48,
       "category": "情報システム戦略",
-      "question": "Edge Computing とFog Computing の主な違いとして適切なものはどれか。",
       "options": [
         "Edge Computingは中央処理のみを行う",
         "Fog Computingはより階層的で分散された処理アーキテクチャ",
@@ -677,12 +682,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Fog Computingは、エッジとクラウドの間に複数の層を持つ階層的な分散コンピューティングアーキテクチャです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Edge Computing とFog Computing の主な違いとして適切なものはどれか。"
     },
     {
       "id": 49,
       "category": "情報技術",
-      "question": "WebRTCを使用したリアルタイム通信の特徴として適切でないものはどれか。",
       "options": [
         "ピアツーピア通信",
         "低レイテンシ",
@@ -691,12 +696,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "WebRTCはピアツーピア通信を特徴とし、一度接続が確立されれば中央サーバーを経由せずに直接通信が可能です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "WebRTCを使用したリアルタイム通信の特徴として適切でないものはどれか。"
     },
     {
       "id": 50,
       "category": "プロジェクトマネジメント",
-      "question": "Team Topologies における「Complicated-Subsystem Team」の特徴として適切なものはどれか。",
       "options": [
         "単純な機能開発のみを担当する",
         "特定の複雑な技術領域の専門知識を提供する",
@@ -705,12 +710,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Complicated-Subsystem Teamは、数学的モデル、複雑なアルゴリズム等の専門的で複雑な技術領域を担当するチームです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Team Topologies における「Complicated-Subsystem Team」の特徴として適切なものはどれか。"
     },
     {
       "id": 51,
       "category": "サービスマネジメント",
-      "question": "Continuous Delivery における「デプロイメントパイプライン」の設計原則として適切でないものはどれか。",
       "options": [
         "各ステージでの品質ゲートの設置",
         "手動承認プロセスの可能な限りの自動化",
@@ -719,12 +724,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Continuous Deliveryでは自動化が重要であり、手動プロセスは必要最小限に留め、可能な限り自動化されたパイプラインを構築します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Continuous Delivery における「デプロイメントパイプライン」の設計原則として適切でないものはどれか。"
     },
     {
       "id": 52,
       "category": "システムアーキテクチャ設計",
-      "question": "Reactive Streams仕様における「バックプレッシャー」の目的として適切なものはどれか。",
       "options": [
         "データ圧縮によるネットワーク最適化",
         "プロデューサーとコンシューマー間の流量制御",
@@ -733,12 +738,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "バックプレッシャーは、データの生産者（プロデューサー）が消費者（コンシューマー）の処理能力を超えてデータを送信することを制御する仕組みです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Reactive Streams仕様における「バックプレッシャー」の目的として適切なものはどれか。"
     },
     {
       "id": 53,
       "category": "情報システム戦略",
-      "question": "Low-Code/No-Code プラットフォームの企業導入における課題として適切でないものはどれか。",
       "options": [
         "ベンダーロックインのリスク",
         "セキュリティとガバナンスの確保",
@@ -747,12 +752,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Low-Code/No-Codeプラットフォームは開発者の技術スキル向上ではなく、非技術者でも開発できることを目的としており、技術スキル向上は主要課題ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Low-Code/No-Code プラットフォームの企業導入における課題として適切でないものはどれか。"
     },
     {
       "id": 54,
       "category": "情報技術",
-      "question": "OAuth 2.0のPKCE（Proof Key for Code Exchange）拡張の目的として適切なものはどれか。",
       "options": [
         "認証プロセスの高速化",
         "パブリッククライアントでの認可コード傍受攻撃の防止",
@@ -761,12 +766,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "PKCEは、モバイルアプリなどのパブリッククライアントで、認可コードが傍受されることを防ぐセキュリティ拡張です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "OAuth 2.0のPKCE（Proof Key for Code Exchange）拡張の目的として適切なものはどれか。"
     },
     {
       "id": 55,
       "category": "プロジェクトマネジメント",
-      "question": "Lean Portfolio Management における「価値ストリーム」の識別基準として適切なものはどれか。",
       "options": [
         "組織の部門構造に基づく",
         "技術スタックの類似性に基づく",
@@ -775,12 +780,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "価値ストリームは、顧客に価値を提供するための一連の活動として識別され、組織構造や技術ではなく価値創造の流れに基づきます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Lean Portfolio Management における「価値ストリーム」の識別基準として適切なものはどれか。"
     },
     {
       "id": 56,
       "category": "サービスマネジメント",
-      "question": "Cloud Cost Optimization における「RightSizing」の概念として適切なものはどれか。",
       "options": [
         "すべてのリソースを最大サイズにする",
         "実際の使用パターンに基づいてリソースサイズを最適化する",
@@ -789,12 +794,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "RightSizingは、アプリケーションの実際の使用パターンとパフォーマンス要件に基づいて、適切なサイズのクラウドリソースを選択することです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Cloud Cost Optimization における「RightSizing」の概念として適切なものはどれか。"
     },
     {
       "id": 57,
       "category": "システムアーキテクチャ設計",
-      "question": "CQRS における「読み取りモデル」の設計で重視すべき点として適切なものはどれか。",
       "options": [
         "書き込みモデルとの完全な一致",
         "クエリの性能とユーザー体験の最適化",
@@ -803,12 +808,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CQRSの読み取りモデルは、クエリの性能とユーザー体験を最適化するために、書き込みモデルとは異なる非正規化された構造を取ることができます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "CQRS における「読み取りモデル」の設計で重視すべき点として適切なものはどれか。"
     },
     {
       "id": 58,
       "category": "情報システム戦略",
-      "question": "Blockchain技術をエンタープライズシステムに適用する際の考慮事項として適切でないものはどれか。",
       "options": [
         "スケーラビリティの制限",
         "エネルギー消費量",
@@ -817,12 +822,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Blockchainは分散型・非中央集権的な技術であり、中央集権的な管理の強化は技術の特性と矛盾します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Blockchain技術をエンタープライズシステムに適用する際の考慮事項として適切でないものはどれか。"
     },
     {
       "id": 59,
       "category": "情報技術",
-      "question": "Apache Kafkaにおける「Producer Acknowledgment」設定のacks=allの意味として適切なものはどれか。",
       "options": [
         "リーダーレプリカからの確認のみ待つ",
         "確認応答を待たない",
@@ -831,12 +836,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "acks=allは、リーダーレプリカとすべてのin-syncレプリカがメッセージを受信して永続化したことを確認してから応答を返す設定です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Apache Kafkaにおける「Producer Acknowledgment」設定のacks=allの意味として適切なものはどれか。"
     },
     {
       "id": 60,
       "category": "プロジェクトマネジメント",
-      "question": "Product Discovery における「ジョブ理論」（Jobs-to-be-Done）の活用として適切なものはどれか。",
       "options": [
         "競合他社の機能を模倣する",
         "顧客が達成したい「ジョブ」を理解して製品設計に活かす",
@@ -845,12 +850,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ジョブ理論では、顧客が製品を「雇う」理由となる達成したい「ジョブ」を理解し、それに基づいて製品設計を行います。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Product Discovery における「ジョブ理論」（Jobs-to-be-Done）の活用として適切なものはどれか。"
     },
     {
       "id": 61,
       "category": "サービスマネジメント",
-      "question": "Prometheus におけるメトリクス収集の「Pull Model」の特徴として適切なものはどれか。",
       "options": [
         "アプリケーションがメトリクスサーバーにデータを送信する",
         "Prometheusサーバーが各ターゲットからメトリクスを取得する",
@@ -859,12 +864,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "PrometheusはPull Modelを採用し、設定されたターゲット（アプリケーション）から定期的にメトリクスデータを取得します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Prometheus におけるメトリクス収集の「Pull Model」の特徴として適切なものはどれか。"
     },
     {
       "id": 62,
       "category": "システムアーキテクチャ設計",
-      "question": "DDD におけるドメインサービスを使用すべき状況として適切なものはどれか。",
       "options": [
         "単一エンティティの状態変更",
         "複数のアグリゲートにまたがるビジネスロジック",
@@ -873,12 +878,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ドメインサービスは、複数のアグリゲートやエンティティにまたがるビジネスロジックで、特定のエンティティに属さない操作を実装します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "DDD におけるドメインサービスを使用すべき状況として適切なものはどれか。"
     },
     {
       "id": 63,
       "category": "情報システム戦略",
-      "question": "AI/ML システムにおけるMLOps の主要な課題として適切でないものはどれか。",
       "options": [
         "モデルのバージョン管理",
         "データドリフトの検知",
@@ -887,12 +892,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "MLOpsは機械学習モデルの本番運用に焦点を当てており、アルゴリズムの理論研究ではなく、実運用での課題解決が主要目的です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "AI/ML システムにおけるMLOps の主要な課題として適切でないものはどれか。"
     },
     {
       "id": 64,
       "category": "情報技術",
-      "question": "Service Worker の主な用途として適切でないものはどれか。",
       "options": [
         "オフライン機能の実装",
         "バックグラウンド同期",
@@ -901,12 +906,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Service WorkerはメインスレッドとDOMから分離された環境で動作し、DOMに直接アクセスすることはできません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Service Worker の主な用途として適切でないものはどれか。"
     },
     {
       "id": 65,
       "category": "プロジェクトマネジメント",
-      "question": "Dual Track Agile における「Discovery Track」の目的として適切なものはどれか。",
       "options": [
         "完成した機能をリリースする",
         "顧客価値と実現可能性を検証する",
@@ -915,12 +920,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Discovery Trackでは、顧客価値、ユーザビリティ、実現可能性、ビジネス実行可能性を検証し、Delivery Trackで実装すべき機能を特定します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Dual Track Agile における「Discovery Track」の目的として適切なものはどれか。"
     },
     {
       "id": 66,
       "category": "サービスマネジメント",
-      "question": "Container Orchestration における「Declarative Configuration」の利点として適切なものはどれか。",
       "options": [
         "手動での設定変更が必要",
         "望ましい状態を定義しシステムが自動的に実現する",
@@ -929,12 +934,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "宣言的設定では、望ましい最終状態を定義し、オーケストレーションシステムが現在の状態から目標状態への変更を自動的に実行します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Container Orchestration における「Declarative Configuration」の利点として適切なものはどれか。"
     },
     {
       "id": 67,
       "category": "システムアーキテクチャ設計",
-      "question": "Event Sourcing における「スナップショット」の目的として適切なものはどれか。",
       "options": [
         "イベントの履歴を削除する",
         "特定時点の状態を保存し再構築処理を最適化する",
@@ -943,12 +948,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "スナップショットは、特定時点でのアグリゲートの状態を保存し、大量のイベント履歴から状態を再構築する処理を高速化します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event Sourcing における「スナップショット」の目的として適切なものはどれか。"
     },
     {
       "id": 68,
       "category": "情報システム戦略",
-      "question": "Quantum Computing の企業システムへの応用として現実的なものはどれか。",
       "options": [
         "日常的な業務システムの置き換え",
         "最適化問題や暗号解読などの特定領域での活用",
@@ -957,12 +962,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "現在の量子コンピューティングは、組み合わせ最適化、暗号、シミュレーションなどの特定の問題領域での活用が現実的です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Quantum Computing の企業システムへの応用として現実的なものはどれか。"
     },
     {
       "id": 69,
       "category": "情報技術",
-      "question": "WebAssembly System Interface（WASI）の目的として適切なものはどれか。",
       "options": [
         "WebブラウザでのJavaScript実行速度向上",
         "WebAssemblyコードがシステムリソースに安全にアクセスする標準",
@@ -971,12 +976,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "WASIは、WebAssemblyがファイルシステム、ネットワーク等のシステムリソースに安全かつ標準的にアクセスするためのインターフェースです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "WebAssembly System Interface（WASI）の目的として適切なものはどれか。"
     },
     {
       "id": 70,
       "category": "プロジェクトマネジメント",
-      "question": "Evidence-Based Management（EBM）における「Current Value」の測定として適切でないものはどれか。",
       "options": [
         "顧客満足度",
         "ビジネス価値の実現度",
@@ -985,12 +990,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Current Valueは顧客や組織に提供される実際の価値を測定するものであり、開発チームの作業時間は価値そのものではなく活動指標です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Evidence-Based Management（EBM）における「Current Value」の測定として適切でないものはどれか。"
     },
     {
       "id": 71,
       "category": "サービスマネジメント",
-      "question": "Progressive Web App（PWA）の特徴として適切でないものはどれか。",
       "options": [
         "オフライン動作機能",
         "ネイティブアプリ同等のUX",
@@ -999,12 +1004,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "PWAはWebテクノロジーベースでありながらネイティブアプリ的なUXを提供し、アプリストアを経由せずにブラウザから直接インストール可能です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Progressive Web App（PWA）の特徴として適切でないものはどれか。"
     },
     {
       "id": 72,
       "category": "システムアーキテクチャ設計",
-      "question": "Event-Driven Architecture における「Event Choreography」と「Event Orchestration」の違いとして適切なものはどれか。",
       "options": [
         "Choreographyは中央制御、Orchestrationは分散制御",
         "Choreographyは分散制御、Orchestrationは中央制御",
@@ -1013,12 +1018,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Choreographyは各サービスが独立してイベントに反応する分散制御、Orchestrationは中央のオーケストレーターが処理を制御する手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event-Driven Architecture における「Event Choreography」と「Event Orchestration」の違いとして適切なものはどれか。"
     },
     {
       "id": 73,
       "category": "情報システム戦略",
-      "question": "Data Fabric アーキテクチャの主な目的として適切なものはどれか。",
       "options": [
         "データを単一の場所に集約する",
         "分散したデータソースを統一的にアクセス可能にする",
@@ -1027,12 +1032,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Data Fabricは、分散した異種データソースを仮想的に統合し、統一的なアクセス方法を提供するアーキテクチャです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Data Fabric アーキテクチャの主な目的として適切なものはどれか。"
     },
     {
       "id": 74,
       "category": "情報技術",
-      "question": "HTTP/3（QUIC）の従来のHTTP/2に対する主な改善点はどれか。",
       "options": [
         "暗号化の廃止",
         "TCPからUDPベースへの変更による性能向上",
@@ -1041,12 +1046,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "HTTP/3は、TCPの代わりにUDPベースのQUICプロトコルを使用し、Head-of-line Blockingの解決と接続確立の高速化を実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "HTTP/3（QUIC）の従来のHTTP/2に対する主な改善点はどれか。"
     },
     {
       "id": 75,
       "category": "プロジェクトマネジメント",
-      "question": "North Star Framework における「North Star Metric」の特徴として適切なものはどれか。",
       "options": [
         "技術的な性能指標のみを重視する",
         "顧客価値と事業成長を結び付ける単一の主要指標",
@@ -1055,7 +1060,8 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "North Star Metricは、顧客への価値提供と長期的な事業成長を結び付ける単一の主要指標として機能します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "North Star Framework における「North Star Metric」の特徴として適切なものはどれか。"
     }
   ]
 }

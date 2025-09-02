@@ -2,7 +2,13 @@
   "id": "pm",
   "title": "プロジェクトマネージャ試験対策",
   "description": "プロジェクトマネージャ試験の午前問題対策です。プロジェクトマネジメント、システム開発技術、組織運営、リスク管理などの専門知識を問う問題を収録しています。",
-  "categories": ["プロジェクトマネジメント", "システム開発技術", "組織運営", "リスク管理", "品質管理"],
+  "categories": [
+    "プロジェクトマネジメント",
+    "システム開発技術",
+    "組織運営",
+    "リスク管理",
+    "品質管理"
+  ],
   "estimatedTime": "120分",
   "difficultyLevel": "上級",
   "totalQuestions": 75,
@@ -10,7 +16,6 @@
     {
       "id": 1,
       "category": "プロジェクトマネジメント",
-      "question": "PMBOK ガイド第7版におけるプロジェクトマネジメント原則として含まれないものはどれか。",
       "options": [
         "ステークホルダーへの効果的な関与",
         "価値に焦点を当てる",
@@ -19,12 +24,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "PMBOK第7版では価値創造と適応性を重視し、プロセスの標準化よりも成果と価値に焦点を当てる原則へと進化しています。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "PMBOK ガイド第7版におけるプロジェクトマネジメント原則として含まれないものはどれか。"
     },
     {
       "id": 2,
       "category": "リスク管理",
-      "question": "モンテカルロシミュレーションを用いたスケジュールリスク分析の目的として適切なものはどれか。",
       "options": [
         "プロジェクトの正確な完了日を決定する",
         "スケジュール完了確率の分布を推定する",
@@ -33,12 +38,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "モンテカルロシミュレーションは、不確実性を考慮してプロジェクト完了日の確率分布を推定し、リスクベースの計画策定を支援します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "モンテカルロシミュレーションを用いたスケジュールリスク分析の目的として適切なものはどれか。"
     },
     {
       "id": 3,
       "category": "システム開発技術",
-      "question": "アジャイル開発におけるスプリントレトロスペクティブの主要な成果として適切なものはどれか。",
       "options": [
         "次スプリントの詳細なタスク計画",
         "チームプロセスの継続的改善施策",
@@ -47,12 +52,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "スプリントレトロスペクティブは、チームの働き方やプロセスを振り返り、継続的改善のための具体的施策を特定することが主目的です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アジャイル開発におけるスプリントレトロスペクティブの主要な成果として適切なものはどれか。"
     },
     {
       "id": 4,
       "category": "組織運営",
-      "question": "アジャイルチームにおける「自己組織化」の特徴として適切でないものはどれか。",
       "options": [
         "チーム内での意思決定権限の委譲",
         "外部からの詳細な作業指示に基づく行動",
@@ -61,12 +66,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "自己組織化チームは、外部からの詳細な指示ではなく、目標とガイドラインに基づいてチーム自体が判断し行動することが特徴です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アジャイルチームにおける「自己組織化」の特徴として適切でないものはどれか。"
     },
     {
       "id": 5,
       "category": "品質管理",
-      "question": "Test-Driven Development（TDD）における「Red-Green-Refactor」サイクルの「Red」段階で行うこととして適切なものはどれか。",
       "options": [
         "既存のテストを修正する",
         "失敗するテストケースを先に書く",
@@ -75,12 +80,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "TDDの「Red」段階では、まだ実装されていない機能のテストケースを書き、意図的に失敗させることから始めます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Test-Driven Development（TDD）における「Red-Green-Refactor」サイクルの「Red」段階で行うこととして適切なものはどれか。"
     },
     {
       "id": 6,
       "category": "プロジェクトマネジメント",
-      "question": "アーンドバリューマネジメント（EVM）において、SPI（Schedule Performance Index）が0.8の場合の解釈として適切なものはどれか。",
       "options": [
         "スケジュールが20%進んでいる",
         "スケジュールが20%遅れている",
@@ -89,12 +94,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SPI = EV/PV であり、0.8は計画した作業の80%しか完了していないことを意味し、20%のスケジュール遅れを示します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アーンドバリューマネジメント（EVM）において、SPI（Schedule Performance Index）が0.8の場合の解釈として適切なものはどれか。"
     },
     {
       "id": 7,
       "category": "リスク管理",
-      "question": "リスクマネジメントにおける「ポジティブリスク」（機会）への対応戦略として適切でないものはどれか。",
       "options": [
         "活用（Exploit）",
         "強化（Enhance）",
@@ -103,12 +108,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "回避（Avoid）は脅威（ネガティブリスク）への対応戦略です。機会には活用、強化、共有、受容の戦略を適用します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "リスクマネジメントにおける「ポジティブリスク」（機会）への対応戦略として適切でないものはどれか。"
     },
     {
       "id": 8,
       "category": "システム開発技術",
-      "question": "Continuous Integration において「Build Breaker」が発生した場合の適切な対応はどれか。",
       "options": [
         "次回のビルドまで修正を待つ",
         "可能な限り迅速にビルドを修正し緑の状態に戻す",
@@ -117,12 +122,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CIではビルドの健全性維持が重要であり、ビルドブレイクが発生した場合は最優先で修正し、チーム全体の開発を妨げないようにします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Continuous Integration において「Build Breaker」が発生した場合の適切な対応はどれか。"
     },
     {
       "id": 9,
       "category": "組織運営",
-      "question": "サーバントリーダーシップにおけるリーダーの役割として最も適切なものはどれか。",
       "options": [
         "権威的な指示による統制",
         "チームメンバーの成長と成功を支援する",
@@ -131,12 +136,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "サーバントリーダーシップでは、リーダーがチームメンバーに奉仕し、彼らの成長と成功を支援することでチーム全体の成果を向上させます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "サーバントリーダーシップにおけるリーダーの役割として最も適切なものはどれか。"
     },
     {
       "id": 10,
       "category": "品質管理",
-      "question": "Behavior-Driven Development（BDD）における「Given-When-Then」の形式で記述される内容として適切なものはどれか。",
       "options": [
         "システムの技術仕様",
         "プロジェクトのスケジュール",
@@ -145,12 +150,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "BDDの「Given-When-Then」形式は、ユーザーストーリーの受け入れ基準を、前提条件、実行、期待結果として構造化して記述します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Behavior-Driven Development（BDD）における「Given-When-Then」の形式で記述される内容として適切なものはどれか。"
     },
     {
       "id": 11,
       "category": "プロジェクトマネジメント",
-      "question": "スクラムにおける「ベロシティ」の適切な使用方法はどれか。",
       "options": [
         "チーム間のパフォーマンス比較指標として使用する",
         "チームの継続的改善と将来スプリントの計画に使用する",
@@ -159,12 +164,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ベロシティは各チーム固有の指標であり、チーム内での継続的改善と将来スプリントの計画策定に使用するのが適切です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "スクラムにおける「ベロシティ」の適切な使用方法はどれか。"
     },
     {
       "id": 12,
       "category": "リスク管理",
-      "question": "プロジェクトリスクの定量的分析手法である「期待金銭価値（EMV）」の計算式として適切なものはどれか。",
       "options": [
         "インパクト × 発生確率",
         "インパクト + 発生確率",
@@ -173,12 +178,12 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "期待金銭価値（EMV）は、リスクのインパクト（金銭的影響）と発生確率を乗算して算出される定量的リスク評価指標です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プロジェクトリスクの定量的分析手法である「期待金銭価値（EMV）」の計算式として適切なものはどれか。"
     },
     {
       "id": 13,
       "category": "システム開発技術",
-      "question": "DevOps における「Infrastructure as Code」の利点として適切でないものはどれか。",
       "options": [
         "環境構築の再現性向上",
         "手動設定ミスの削減",
@@ -187,12 +192,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Infrastructure as Codeは手動管理を削減し、コードによる自動化されたインフラ管理を実現することが目的です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "DevOps における「Infrastructure as Code」の利点として適切でないものはどれか。"
     },
     {
       "id": 14,
       "category": "組織運営",
-      "question": "Tuckmanのチーム発達段階モデルにおける「Storming」段階の特徴として適切なものはどれか。",
       "options": [
         "チームメンバーが互いを理解し合意形成がスムーズ",
         "メンバー間の対立や意見の衝突が発生する",
@@ -201,12 +206,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Storming段階では、チームメンバー間で役割や責任について対立や意見の衝突が生じる段階です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Tuckmanのチーム発達段階モデルにおける「Storming」段階の特徴として適切なものはどれか。"
     },
     {
       "id": 15,
       "category": "品質管理",
-      "question": "静的解析ツールによるコード品質測定において「技術的負債」として計測される内容として適切なものはどれか。",
       "options": [
         "実行時のパフォーマンス問題",
         "コーディング規約違反や複雑性の高いコード",
@@ -215,12 +220,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "静的解析による技術的負債は、コーディング規約違反、循環的複雑度、重複コードなど、保守性に影響する構造的な問題を測定します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "静的解析ツールによるコード品質測定において「技術的負債」として計測される内容として適切なものはどれか。"
     },
     {
       "id": 16,
       "category": "プロジェクトマネジメント",
-      "question": "プロジェクト憲章（Project Charter）に含まれるべき内容として適切でないものはどれか。",
       "options": [
         "プロジェクトの目的と成功基準",
         "高レベルなスコープ記述",
@@ -229,12 +234,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "プロジェクト憲章は高レベルな文書であり、詳細なWBSは後のスコープ計画プロセスで作成されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プロジェクト憲章（Project Charter）に含まれるべき内容として適切でないものはどれか。"
     },
     {
       "id": 17,
       "category": "リスク管理",
-      "question": "アジャイル開発におけるリスク管理として「タイムボックス」が果たす役割はどれか。",
       "options": [
         "プロジェクト全体の期間を延長する",
         "リスクの影響を一定期間に限定し早期に露呈させる",
@@ -243,12 +248,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "タイムボックスは、リスクの影響を一定期間に限定し、問題を早期に露呈させることで、迅速な対応と学習を可能にします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アジャイル開発におけるリスク管理として「タイムボックス」が果たす役割はどれか。"
     },
     {
       "id": 18,
       "category": "システム開発技術",
-      "question": "Microservices Architecture における分散トランザクション管理で「Saga Pattern」が解決する課題はどれか。",
       "options": [
         "ネットワークレイテンシの削減",
         "複数サービス間でのデータ整合性確保",
@@ -257,12 +262,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Saga Patternは、分散システムで複数のサービスにまたがるトランザクションを、補償アクションを用いて結果整合性を保つパターンです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Microservices Architecture における分散トランザクション管理で「Saga Pattern」が解決する課題はどれか。"
     },
     {
       "id": 19,
       "category": "組織運営",
-      "question": "コンウェイの法則（Conway's Law）が示唆するシステム設計への影響として適切なものはどれか。",
       "options": [
         "技術選択がシステム構造を決定する",
         "組織のコミュニケーション構造がシステム構造に反映される",
@@ -271,12 +276,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "コンウェイの法則は、「システムを設計する組織は、その組織のコミュニケーション構造を反映した設計を生み出す」ことを示しています。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "コンウェイの法則（Conway's Law）が示唆するシステム設計への影響として適切なものはどれか。"
     },
     {
       "id": 20,
       "category": "品質管理",
-      "question": "ペアプログラミングにおける「ナビゲーター」の役割として適切なものはどれか。",
       "options": [
         "キーボードでコードを入力する",
         "戦略的思考と品質レビューを担当する",
@@ -285,12 +290,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ペアプログラミングでは、ナビゲーターが全体的な戦略、設計、品質について考え、ドライバーが実際のコーディングを行います。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ペアプログラミングにおける「ナビゲーター」の役割として適切なものはどれか。"
     },
     {
       "id": 21,
       "category": "プロジェクトマネジメント",
-      "question": "PRINCE2 方法論における「事業ケース」の役割として適切なものはどれか。",
       "options": [
         "詳細な技術仕様の記述",
         "プロジェクトの事業的正当性と投資対効果の継続的評価",
@@ -299,12 +304,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "PRINCE2の事業ケースは、プロジェクトの事業的正当性を示し、プロジェクト期間中継続的に更新・評価される重要な文書です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "PRINCE2 方法論における「事業ケース」の役割として適切なものはどれか。"
     },
     {
       "id": 22,
       "category": "リスク管理",
-      "question": "ブラックスワンイベントに対するプロジェクト戦略として適切なものはどれか。",
       "options": [
         "詳細な事前計画によりすべて予測する",
         "アンチフラジャイル設計により不確実性から利益を得る",
@@ -313,12 +318,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ブラックスワンイベントは予測困難であり、アンチフラジャイル設計により不確実性や変動から利益を得られる構造を作ることが有効です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ブラックスワンイベントに対するプロジェクト戦略として適切なものはどれか。"
     },
     {
       "id": 23,
       "category": "システム開発技術",
-      "question": "Feature Flag管理において考慮すべき「技術的負債」として適切なものはどれか。",
       "options": [
         "機能の実装工数増加",
         "古いフラグの蓄積による複雑性とメンテナンス負荷",
@@ -327,12 +332,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Feature Flagは便利ですが、削除されずに残った古いフラグが蓄積すると、コードベースの複雑性が増し、メンテナンス負荷が高くなります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Feature Flag管理において考慮すべき「技術的負債」として適切なものはどれか。"
     },
     {
       "id": 24,
       "category": "組織運営",
-      "question": "Spotify Model における「Squad」の理想的なサイズとして推奨されるものはどれか。",
       "options": [
         "3-5名",
         "6-12名",
@@ -341,12 +346,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Spotifyモデルでは、Squadの理想的なサイズを6-12名とし、「2つのピザで食事できる」サイズを推奨しています。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Spotify Model における「Squad」の理想的なサイズとして推奨されるものはどれか。"
     },
     {
       "id": 25,
       "category": "品質管理",
-      "question": "Shift-Left Testing において「セキュリティテスト」を早期化する手法として適切なものはどれか。",
       "options": [
         "本番環境でのペネトレーションテストのみ",
         "Static Application Security Testing（SAST）の開発段階での統合",
@@ -355,12 +360,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Shift-Left Securityでは、SASTツールを開発・ビルドプロセスに統合し、コーディング段階でセキュリティ脆弱性を早期発見します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Shift-Left Testing において「セキュリティテスト」を早期化する手法として適切なものはどれか。"
     },
     {
       "id": 26,
       "category": "プロジェクトマネジメント",
-      "question": "Large Scale Scrum（LeSS）における「Overall Retrospective」の目的として適切なものはどれか。",
       "options": [
         "個別チームの技術的課題を解決する",
         "組織とシステム全体の改善機会を特定する",
@@ -369,12 +374,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Overall Retrospectiveは、複数チームが参加し、組織レベルやシステム全体の構造的な改善機会を特定することが目的です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Large Scale Scrum（LeSS）における「Overall Retrospective」の目的として適切なものはどれか。"
     },
     {
       "id": 27,
       "category": "リスク管理",
-      "question": "Cynefin フレームワークにおける「複雑（Complex）」領域でのマネジメントアプローチとして適切なものはどれか。",
       "options": [
         "ベストプラクティスの適用",
         "グッドプラクティスの分析",
@@ -383,12 +388,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "複雑領域では、因果関係が事後的にしか判明しないため、小さな実験（探査）を通じて理解を深めてから対応するアプローチが適切です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Cynefin フレームワークにおける「複雑（Complex）」領域でのマネジメントアプローチとして適切なものはどれか。"
     },
     {
       "id": 28,
       "category": "システム開発技術",
-      "question": "Continuous Deployment において「Blue-Green Deployment」の主な利点はどれか。",
       "options": [
         "開発コストの削減",
         "ダウンタイムゼロでのデプロイと即座のロールバック",
@@ -397,12 +402,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Blue-Green Deploymentは、2つの同等な本番環境を維持し、瞬時の切り替えによりダウンタイムゼロのデプロイと高速ロールバックを実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Continuous Deployment において「Blue-Green Deployment」の主な利点はどれか。"
     },
     {
       "id": 29,
       "category": "組織運営",
-      "question": "クロスファンクショナルチームの特徴として適切でないものはどれか。",
       "options": [
         "多様なスキルセットを持つメンバーで構成",
         "エンドツーエンドでの価値提供能力",
@@ -411,12 +416,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "クロスファンクショナルチームでは、メンバーが複数のスキルを持ち、協力してエンドツーエンドの価値提供を実現することが特徴です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "クロスファンクショナルチームの特徴として適切でないものはどれか。"
     },
     {
       "id": 30,
       "category": "品質管理",
-      "question": "Mutation Testing の目的として適切なものはどれか。",
       "options": [
         "アプリケーションの実行速度を測定する",
         "テストケースの品質と網羅性を評価する",
@@ -425,12 +430,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Mutation Testingは、コードに意図的な変更（ミューテーション）を加え、既存のテストがその変更を検出できるかでテストの品質を評価する手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Mutation Testing の目的として適切なものはどれか。"
     },
     {
       "id": 31,
       "category": "プロジェクトマネジメント",
-      "question": "SAFe における「PI Planning」で作成される主要な成果物として適切でないものはどれか。",
       "options": [
         "Team PI Objectives",
         "Program Board",
@@ -439,12 +444,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "PI Planningはチームレベルでの計画であり、個人の詳細作業計画ではなく、チーム目標と依存関係の調整に焦点を当てます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SAFe における「PI Planning」で作成される主要な成果物として適切でないものはどれか。"
     },
     {
       "id": 32,
       "category": "リスク管理",
-      "question": "プロジェクトにおける「技術リスク」の評価において重要な要素として適切でないものはどれか。",
       "options": [
         "技術の成熟度",
         "チームの技術習熟度",
@@ -453,12 +458,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "技術リスクの評価では、技術の成熟度、チームのスキル、技術的複雑性が重要であり、マーケティング戦略は事業リスクの範疇です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プロジェクトにおける「技術リスク」の評価において重要な要素として適切でないものはどれか。"
     },
     {
       "id": 33,
       "category": "システム開発技術",
-      "question": "GitFlow ブランチ戦略における「release ブランチ」の目的として適切なものはどれか。",
       "options": [
         "新機能の開発を行う",
         "リリース準備とバグ修正を分離して行う",
@@ -467,12 +472,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "releaseブランチは、リリース準備作業（バグ修正、ドキュメント更新等）を develop ブランチでの新機能開発から分離して実施するために使用されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "GitFlow ブランチ戦略における「release ブランチ」の目的として適切なものはどれか。"
     },
     {
       "id": 34,
       "category": "組織運営",
-      "question": "リモートワークにおけるアジャイルチーム運営で重要な要素として適切でないものはどれか。",
       "options": [
         "非同期コミュニケーションツールの活用",
         "定期的な同期セッション（Daily Standup）",
@@ -481,12 +486,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "リモートワークでは対面作業は制限されるため、適切なツールと非同期・同期コミュニケーションの組み合わせが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "リモートワークにおけるアジャイルチーム運営で重要な要素として適切でないものはどれか。"
     },
     {
       "id": 35,
       "category": "品質管理",
-      "question": "Property-Based Testing の特徴として適切なものはどれか。",
       "options": [
         "特定の入力値に対する期待結果をテストする",
         "システムの性質（プロパティ）をランダム入力で検証する",
@@ -495,12 +500,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Property-Based Testingは、システムが満たすべき性質を定義し、大量のランダム入力データで検証することで、予期しないバグを発見します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Property-Based Testing の特徴として適切なものはどれか。"
     },
     {
       "id": 36,
       "category": "プロジェクトマネジメント",
-      "question": "プロジェクトポートフォリオ管理における「戦略的整合性」の評価として適切なものはどれか。",
       "options": [
         "プロジェクトの技術的難易度のみを考慮",
         "組織戦略とプロジェクト目標の一致度を評価",
@@ -509,12 +514,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "戦略的整合性は、個々のプロジェクトが組織の戦略目標や価値観とどの程度一致しているかを評価する重要な指標です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プロジェクトポートフォリオ管理における「戦略的整合性」の評価として適切なものはどれか。"
     },
     {
       "id": 37,
       "category": "リスク管理",
-      "question": "アジャイル開発における「Risk Burndown Chart」の目的として適切なものはどれか。",
       "options": [
         "プロジェクトコストの推移を追跡する",
         "時間経過に伴うリスクレベルの変化を可視化する",
@@ -523,12 +528,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Risk Burndown Chartは、スプリントやイテレーションごとにリスクレベルがどのように軽減されているかを視覚的に追跡する手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アジャイル開発における「Risk Burndown Chart」の目的として適切なものはどれか。"
     },
     {
       "id": 38,
       "category": "システム開発技術",
-      "question": "Trunk-Based Development の特徴として適切でないものはどれか。",
       "options": [
         "メインブランチへの頻繁なコミット",
         "長期間の feature ブランチの使用",
@@ -537,12 +542,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Trunk-Based Developmentは、長期間のfeatureブランチを避け、短期間の作業を直接メインブランチ（trunk）にコミットすることを特徴とします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Trunk-Based Development の特徴として適切でないものはどれか。"
     },
     {
       "id": 39,
       "category": "組織運営",
-      "question": "心理的安全性の高いチーム環境の特徴として適切でないものはどれか。",
       "options": [
         "失敗を学習機会として扱う",
         "建設的な意見対立が歓迎される",
@@ -551,12 +556,12 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "心理的安全性は建設的な対話を促進しますが、すべての意見を無条件に受け入れることではなく、建設的な議論と学習を重視します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "心理的安全性の高いチーム環境の特徴として適切でないものはどれか。"
     },
     {
       "id": 40,
       "category": "品質管理",
-      "question": "Chaos Engineering における「Blast Radius」の概念として適切なものはどれか。",
       "options": [
         "実験の成功確率",
         "実験による影響の範囲と限定",
@@ -565,12 +570,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Blast Radiusは、カオス実験が失敗した場合の影響範囲を事前に限定し、システム全体への重大な影響を防ぐ概念です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Chaos Engineering における「Blast Radius」の概念として適切なものはどれか。"
     },
     {
       "id": 41,
       "category": "プロジェクトマネジメント",
-      "question": "OKR（Objectives and Key Results）における「ストレッチ目標」の適切な達成率はどれか。",
       "options": [
         "100%",
         "70-80%",
@@ -579,12 +584,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "OKRのストレッチ目標は野心的に設定され、70-80%の達成率が適切とされており、100%達成は目標設定が低すぎることを示します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "OKR（Objectives and Key Results）における「ストレッチ目標」の適切な達成率はどれか。"
     },
     {
       "id": 42,
       "category": "リスク管理",
-      "question": "プロジェクトにおける「認知バイアス」がリスク判断に与える影響として適切なものはどれか。",
       "options": [
         "すべてのリスクを正確に予測できる",
         "楽観主義バイアスによりリスクを過小評価する可能性",
@@ -593,12 +598,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "楽観主義バイアスなどの認知バイアスにより、プロジェクトマネジャーがリスクを過小評価し、不適切な判断を行う可能性があります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プロジェクトにおける「認知バイアス」がリスク判断に与える影響として適切なものはどれか。"
     },
     {
       "id": 43,
       "category": "システム開発技術",
-      "question": "API Version管理戦略における「セマンティックバージョニング」の破壊的変更を示すバージョン番号として適切なものはどれか。",
       "options": [
         "パッチバージョン（Z）の増加",
         "マイナーバージョン（Y）の増加",
@@ -607,12 +612,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "セマンティックバージョニング（X.Y.Z）では、後方互換性を破る変更はメジャーバージョン（X）を増加させて示します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "API Version管理戦略における「セマンティックバージョニング」の破壊的変更を示すバージョン番号として適切なものはどれか。"
     },
     {
       "id": 44,
       "category": "組織運営",
-      "question": "Holacracy におけるテンション（Tension）の概念として適切なものはどれか。",
       "options": [
         "チーム内の人間関係の問題",
         "現状とあるべき姿のギャップを感じること",
@@ -621,12 +626,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Holacracyにおけるテンションは、現在の状況と理想的な状況の間のギャップを感じることで、組織改善の起点となります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Holacracy におけるテンション（Tension）の概念として適切なものはどれか。"
     },
     {
       "id": 45,
       "category": "品質管理",
-      "question": "Contract Testing の主な目的として適切なものはどれか。",
       "options": [
         "ユーザーインターフェースの検証",
         "サービス間のAPI契約の整合性検証",
@@ -635,12 +640,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Contract Testingは、マイクロサービス間やフロントエンド・バックエンド間のAPI契約が両側で正しく実装されているかを検証します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Contract Testing の主な目的として適切なものはどれか。"
     },
     {
       "id": 46,
       "category": "プロジェクトマネジメント",
-      "question": "プロジェクトスポンサーの主要な責任として適切でないものはどれか。",
       "options": [
         "プロジェクトの資金調達と政治的支援",
         "日常的なチーム管理と作業指示",
@@ -649,12 +654,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "プロジェクトスポンサーは戦略的支援と意思決定を担当し、日常的なチーム管理はプロジェクトマネジャーの責任です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プロジェクトスポンサーの主要な責任として適切でないものはどれか。"
     },
     {
       "id": 47,
       "category": "リスク管理",
-      "question": "「ファットテール分布」を示すリスクの特徴として適切なものはどれか。",
       "options": [
         "極端な事象の発生確率が正規分布より高い",
         "すべてのリスクが平均的な影響を持つ",
@@ -663,12 +668,12 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "ファットテール分布では、極端な事象（テール部分）の発生確率が正規分布よりも高く、予測困難な大きな影響を与える可能性があります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "「ファットテール分布」を示すリスクの特徴として適切なものはどれか。"
     },
     {
       "id": 48,
       "category": "システム開発技術",
-      "question": "Database Migration の ブルーグリーンデプロイメント適用時の課題として適切なものはどれか。",
       "options": [
         "アプリケーションコードの複雑化",
         "新旧環境間のデータ整合性とスキーマ互換性",
@@ -677,12 +682,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "データベースを伴うブルーグリーンデプロイでは、新旧環境間でのデータ同期とスキーマの下位互換性確保が主要な課題となります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Database Migration の ブルーグリーンデプロイメント適用時の課題として適切なものはどれか。"
     },
     {
       "id": 49,
       "category": "組織運営",
-      "question": "Psychological Ownership の概念がチームパフォーマンスに与える影響として適切なものはどれか。",
       "options": [
         "チームメンバーの競争意識を高める",
         "プロダクトへの責任感とエンゲージメントを向上させる",
@@ -691,12 +696,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "心理的オーナーシップは、チームメンバーがプロダクトを「自分のもの」として捉え、責任感とエンゲージメントを高める効果があります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Psychological Ownership の概念がチームパフォーマンスに与える影響として適切なものはどれか。"
     },
     {
       "id": 50,
       "category": "品質管理",
-      "question": "Performance Testing における「Spike Testing」の目的として適切なものはどれか。",
       "options": [
         "通常負荷での安定性を検証する",
         "急激な負荷増加に対するシステムの反応を検証する",
@@ -705,12 +710,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Spike Testingは、通常負荷から急激に負荷を増加させ、システムが予期しない負荷変動にどう反応するかを検証します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Performance Testing における「Spike Testing」の目的として適切なものはどれか。"
     },
     {
       "id": 51,
       "category": "プロジェクトマネジメント",
-      "question": "Lean Project Management における「Value Stream Mapping」の目的として適切なものはどれか。",
       "options": [
         "プロジェクトの詳細スケジュールを作成する",
         "価値創造プロセスのムダを特定し改善する",
@@ -719,12 +724,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Value Stream Mappingは、顧客価値を生み出すプロセスの流れを可視化し、ムダ（非付加価値活動）を特定して改善につなげる手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Lean Project Management における「Value Stream Mapping」の目的として適切なものはどれか。"
     },
     {
       "id": 52,
       "category": "リスク管理",
-      "question": "「Fail Fast」原則をプロジェクトマネジメントに適用する際の利点として適切なものはどれか。",
       "options": [
         "プロジェクトの完全な成功を保証する",
         "問題の早期発見により修正コストを削減する",
@@ -733,12 +738,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Fail Fast原則は、問題を早期に発見し迅速に対処することで、後工程での大きな修正コストや影響を回避することを目的とします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "「Fail Fast」原則をプロジェクトマネジメントに適用する際の利点として適切なものはどれか。"
     },
     {
       "id": 53,
       "category": "システム開発技術",
-      "question": "マイクロサービス開発における「Database per Service」パターンでのデータ整合性管理として適切な手法はどれか。",
       "options": [
         "分散トランザクション（2PC）のみを使用",
         "Saga パターンによる結果整合性",
@@ -747,12 +752,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "マイクロサービスでは、各サービスが独自のデータベースを持つため、Sagaパターンによる結果整合性の確保が一般的な手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "マイクロサービス開発における「Database per Service」パターンでのデータ整合性管理として適切な手法はどれか。"
     },
     {
       "id": 54,
       "category": "組織運営",
-      "question": "分散チーム（リモート・多拠点）におけるナレッジマネジメントの課題として適切なものはどれか。",
       "options": [
         "知識の明示化と効果的な共有メカニズムの構築",
         "すべての知識を文書化する必要がない",
@@ -761,12 +766,12 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "分散チームでは、暗黙知の明示化と効果的な知識共有メカニズムの構築が、組織学習と品質維持のために重要な課題となります。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "分散チーム（リモート・多拠点）におけるナレッジマネジメントの課題として適切なものはどれか。"
     },
     {
       "id": 55,
       "category": "品質管理",
-      "question": "CI/CD パイプラインにおける「Quality Gate」の設計原則として適切でないものはどれか。",
       "options": [
         "明確で測定可能な品質基準の設定",
         "自動化された客観的な判定",
@@ -775,12 +780,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Quality Gateは、自動化された客観的な品質基準によりパイプラインの各段階で品質を担保し、手動プロセスを最小化することが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "CI/CD パイプラインにおける「Quality Gate」の設計原則として適切でないものはどれか。"
     },
     {
       "id": 56,
       "category": "プロジェクトマネジメント",
-      "question": "複雑なプロジェクトにおける「適応的ライフサイクル」の特徴として適切なものはどれか。",
       "options": [
         "詳細な事前計画と変更制御",
         "反復的アプローチと継続的な調整",
@@ -789,12 +794,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "適応的ライフサイクルは、要求や環境の変化に対して反復的に対応し、継続的に計画を調整するアプローチです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "複雑なプロジェクトにおける「適応的ライフサイクル」の特徴として適切なものはどれか。"
     },
     {
       "id": 57,
       "category": "リスク管理",
-      "question": "Premortem Analysis（プリモーテム分析）の手法として適切なものはどれか。",
       "options": [
         "プロジェクト完了後の成功要因を分析する",
         "プロジェクト開始前に仮想的な失敗シナリオを想定し対策を検討する",
@@ -803,12 +808,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "プリモーテム分析は、プロジェクト開始前に「もしプロジェクトが失敗したら」というシナリオを想定し、事前に対策を検討する手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Premortem Analysis（プリモーテム分析）の手法として適切なものはどれか。"
     },
     {
       "id": 58,
       "category": "システム開発技術",
-      "question": "Cloud Native アプリケーション開発における「Twelve-Factor App」の原則として含まれないものはどれか。",
       "options": [
         "設定の外部化",
         "ステートレスプロセス",
@@ -817,12 +822,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Twelve-Factor Appは、スケーラブルで保守可能なクラウドアプリケーションの構築原則であり、モノリシック構造の維持は含まれません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Cloud Native アプリケーション開発における「Twelve-Factor App」の原則として含まれないものはどれか。"
     },
     {
       "id": 59,
       "category": "組織運営",
-      "question": "アジャイル組織における「ネットワーク型組織」の特徴として適切なものはどれか。",
       "options": [
         "厳格な階層構造の維持",
         "情報の流れが垂直方向のみ",
@@ -831,12 +836,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "ネットワーク型組織は、従来の階層構造に代わり、柔軟なチーム編成と水平的な情報共有により迅速な対応を可能にします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アジャイル組織における「ネットワーク型組織」の特徴として適切なものはどれか。"
     },
     {
       "id": 60,
       "category": "品質管理",
-      "question": "Test Pyramid における各レベルのテストの実行速度として適切な関係はどれか。",
       "options": [
         "Unit > Integration > E2E（すべて同じ速度）",
         "Unit < Integration < E2E（下位ほど遅い）",
@@ -845,12 +850,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Test Pyramidでは、Unit Test（高速・多数）、Integration Test（中速・中数）、E2E Test（低速・少数）の構成が推奨されます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Test Pyramid における各レベルのテストの実行速度として適切な関係はどれか。"
     },
     {
       "id": 61,
       "category": "プロジェクトマネジメント",
-      "question": "アジャイルプロジェクトにおける「Definition of Done」の目的として適切なものはどれか。",
       "options": [
         "プロジェクトの最終成果物のみを定義する",
         "各ユーザーストーリーやインクリメントの完了基準を共有する",
@@ -859,12 +864,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Definition of Doneは、チーム全体でユーザーストーリーやインクリメントが「完了」と見なされる共通の基準を明確にします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アジャイルプロジェクトにおける「Definition of Done」の目的として適切なものはどれか。"
     },
     {
       "id": 62,
       "category": "リスク管理",
-      "question": "プロジェクトにおける「技術的負債」の管理戦略として適切でないものはどれか。",
       "options": [
         "負債の可視化と継続的な監視",
         "意図的な負債と偶発的な負債の区別",
@@ -873,12 +878,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "技術的負債は戦略的に管理すべきであり、すべてを即座に解消するのではなく、ビジネス価値とのバランスを考慮した優先順位付けが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プロジェクトにおける「技術的負債」の管理戦略として適切でないものはどれか。"
     },
     {
       "id": 63,
       "category": "システム開発技術",
-      "question": "Continuous Delivery における「Deployment Pipeline」のステージ設計で重要な原則はどれか。",
       "options": [
         "すべてのステージを並列実行する",
         "失敗は早期に、フィードバックは迅速に",
@@ -887,12 +892,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Deployment Pipelineでは、問題の早期発見と迅速なフィードバックにより、品質問題や統合問題を素早く特定・修正することが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Continuous Delivery における「Deployment Pipeline」のステージ設計で重要な原則はどれか。"
     },
     {
       "id": 64,
       "category": "組織運営",
-      "question": "Spotify Model における「Tribe」の適切なサイズと目的はどれか。",
       "options": [
         "100名以下、関連するSquadの集合",
         "10名以下、技術専門チーム",
@@ -901,12 +906,12 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "Spotifyモデルでは、Tribeは100名以下で構成され、共通の使命を持つ複数のSquadの集合として機能します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Spotify Model における「Tribe」の適切なサイズと目的はどれか。"
     },
     {
       "id": 65,
       "category": "品質管理",
-      "question": "Shift-Right Testing における「Production Testing」の手法として適切でないものはどれか。",
       "options": [
         "カナリアリリース",
         "A/Bテスト",
@@ -915,12 +920,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Production Testingでは本番環境での検証を行いますが、機能破壊テストは本番サービスに影響を与えるため適切ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Shift-Right Testing における「Production Testing」の手法として適切でないものはどれか。"
     },
     {
       "id": 66,
       "category": "プロジェクトマネジメント",
-      "question": "Design Thinking における「Empathy Map」の作成目的として適切なものはどれか。",
       "options": [
         "技術アーキテクチャを設計する",
         "ユーザーの感情、思考、行動を深く理解する",
@@ -929,12 +934,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Empathy Mapは、ユーザーが何を考え、感じ、見聞きし、言動するかを整理し、ユーザー理解を深めるツールです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Design Thinking における「Empathy Map」の作成目的として適切なものはどれか。"
     },
     {
       "id": 67,
       "category": "リスク管理",
-      "question": "アジャイル環境での「Risk-Adjusted Backlog」の概念として適切なものはどれか。",
       "options": [
         "リスクの高いアイテムを後回しにする",
         "リスクを考慮してバックログアイテムの優先順位を調整する",
@@ -943,12 +948,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Risk-Adjusted Backlogは、各バックログアイテムのリスクレベルを評価し、価値とリスクのバランスを考慮して優先順位を決定します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "アジャイル環境での「Risk-Adjusted Backlog」の概念として適切なものはどれか。"
     },
     {
       "id": 68,
       "category": "システム開発技術",
-      "question": "Event-Driven Development における「Event Storming」セッションの成果として期待されるものはどれか。",
       "options": [
         "詳細なデータベース設計",
         "ドメインイベントと業務フローの共通理解",
@@ -957,12 +962,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Event Stormingは、ビジネス関係者と開発者が協力してドメインイベントを洗い出し、業務フローの共通理解を構築する手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Event-Driven Development における「Event Storming」セッションの成果として期待されるものはどれか。"
     },
     {
       "id": 69,
       "category": "組織運営",
-      "question": "Team of Teams アプローチにおける「Shared Consciousness」の実現方法として適切なものはどれか。",
       "options": [
         "情報の厳格な機密管理",
         "透明性の高い情報共有と状況認識の統一",
@@ -971,12 +976,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Shared Consciousnessは、組織全体で透明性の高い情報共有を行い、状況認識を統一することで、分散された意思決定を可能にします。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Team of Teams アプローチにおける「Shared Consciousness」の実現方法として適切なものはどれか。"
     },
     {
       "id": 70,
       "category": "品質管理",
-      "question": "Code Review における「Pull Request Template」の効果として適切なものはどれか。",
       "options": [
         "レビュー時間の大幅な延長",
         "レビューの観点統一と品質の標準化",
@@ -985,12 +990,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Pull Request Templateは、レビューで確認すべき観点を標準化し、一貫した品質のコードレビューを実現します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Code Review における「Pull Request Template」の効果として適切なものはどれか。"
     },
     {
       "id": 71,
       "category": "プロジェクトマネジメント",
-      "question": "Portfolio Kanban における「Weighted Shortest Job First（WSJF）」の計算要素として含まれないものはどれか。",
       "options": [
         "ビジネス価値",
         "時間的価値",
@@ -999,12 +1004,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "WSJFは（ビジネス価値 + 時間的価値 + リスク軽減・機会創出価値）÷ ジョブサイズで計算され、チームスキルは直接的な要素ではありません。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Portfolio Kanban における「Weighted Shortest Job First（WSJF）」の計算要素として含まれないものはどれか。"
     },
     {
       "id": 72,
       "category": "リスク管理",
-      "question": "プロジェクトにおける「Unknown Unknowns」への対応戦略として適切なものはどれか。",
       "options": [
         "詳細な計画により完全に予測する",
         "バッファとコンティンジェンシーの確保",
@@ -1013,12 +1018,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Unknown Unknowns（予想できない未知の事象）に対しては、バッファの確保と柔軟な対応能力の構築が重要な戦略です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プロジェクトにおける「Unknown Unknowns」への対応戦略として適切なものはどれか。"
     },
     {
       "id": 73,
       "category": "システム開発技術",
-      "question": "API契約テスト（Contract Testing）における「Consumer-Driven Contract」の特徴として適切なものはどれか。",
       "options": [
         "プロバイダーがすべての契約を決定する",
         "コンシューマーが必要とする契約仕様を定義する",
@@ -1027,12 +1032,12 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Consumer-Driven Contractでは、API利用側（コンシューマー）が必要とする契約仕様を定義し、プロバイダー側がその契約を満たすよう実装します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "API契約テスト（Contract Testing）における「Consumer-Driven Contract」の特徴として適切なものはどれか。"
     },
     {
       "id": 74,
       "category": "組織運営",
-      "question": "Psychological Safety を組織で醸成するためのリーダーの行動として適切でないものはどれか。",
       "options": [
         "失敗を学習機会として扱う",
         "質問や懸念の表明を奨励する",
@@ -1041,12 +1046,12 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "心理的安全性の醸成には、失敗を責めるのではなく学習機会として扱い、建設的なフィードバック環境を作ることが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Psychological Safety を組織で醸成するためのリーダーの行動として適切でないものはどれか。"
     },
     {
       "id": 75,
       "category": "品質管理",
-      "question": "Production Ready な マイクロサービスの品質特性として適切でないものはどれか。",
       "options": [
         "健全性チェック（Health Check）の実装",
         "分散トレーシングとログ集約",
@@ -1055,7 +1060,8 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Production Readyなマイクロサービスは、他サービスとの疎結合を保ち、障害時の独立性と回復力を確保することが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "Production Ready な マイクロサービスの品質特性として適切でないものはどれか。"
     }
   ]
 }

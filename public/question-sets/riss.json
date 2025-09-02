@@ -2,12 +2,17 @@
   "id": "riss",
   "title": "情報処理安全確保支援士試験",
   "description": "情報セキュリティ分野の高度IT人材として、情報システムや組織に対する脅威や脆弱性を評価し、技術面・管理面での有効な対策を遂行できる人材を目指す試験です。",
-  "categories": ["サイバーセキュリティ", "セキュリティ技術", "セキュリティ管理", "法制度・標準", "脅威分析"],
+  "categories": [
+    "サイバーセキュリティ",
+    "セキュリティ技術",
+    "セキュリティ管理",
+    "法制度・標準",
+    "脅威分析"
+  ],
   "estimatedTime": 150,
   "questions": [
     {
       "id": 1,
-      "question": "SQLインジェクション攻撃を防ぐ最も効果的な対策はどれか。",
       "options": [
         "入力値の長さチェックを行う",
         "プレースホルダを使用したプリペアドステートメントを使用する",
@@ -16,11 +21,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SQLインジェクション攻撃を防ぐ最も効果的な対策は、プレースホルダを使用したプリペアドステートメントです。これにより、SQLコードとデータが明確に分離され、悪意のあるSQLコードの実行を防げます。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "SQLインジェクション攻撃を防ぐ最も効果的な対策はどれか。"
     },
     {
       "id": 2,
-      "question": "NIST Cybersecurity Frameworkの5つの機能で、攻撃を受けた際の影響を最小限に抑える活動はどれか。",
       "options": [
         "Identify（識別）",
         "Protect（防御）",
@@ -29,11 +34,11 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "NIST Cybersecurity Frameworkの「Contain（封じ込め）」は、攻撃を受けた際に被害の拡大を防ぎ、影響を最小限に抑える活動です。インシデント対応における重要な段階の一つです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "NIST Cybersecurity Frameworkの5つの機能で、攻撃を受けた際の影響を最小限に抑える活動はどれか。"
     },
     {
       "id": 3,
-      "question": "ゼロトラスト・セキュリティモデルの基本原則として正しいものはどれか。",
       "options": [
         "社内ネットワークは信頼できるものとして扱う",
         "一度認証されたユーザーは継続的にアクセスを許可する",
@@ -42,11 +47,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "ゼロトラスト・セキュリティモデルの基本原則は「信頼せず、常に検証する」であり、すべてのアクセスを検証し、最小権限の原則を適用することが重要です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ゼロトラスト・セキュリティモデルの基本原則として正しいものはどれか。"
     },
     {
       "id": 4,
-      "question": "暗号化方式AES-256における「256」が示すものはどれか。",
       "options": [
         "ブロックサイズ（bit）",
         "鍵長（bit）",
@@ -55,11 +60,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "AES-256の「256」は鍵長を示しており、256ビットの暗号鍵を使用することを意味します。AESのブロックサイズは常に128ビットです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "暗号化方式AES-256における「256」が示すものはどれか。"
     },
     {
       "id": 5,
-      "question": "PKI（公開鍵基盤）において、証明書の失効情報を確認する仕組みとして最適なものはどれか。",
       "options": [
         "CRL（Certificate Revocation List）",
         "LDAP（Lightweight Directory Access Protocol）",
@@ -68,11 +73,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "CRL（Certificate Revocation List）は、PKIにおいて失効された証明書のリストを管理し、証明書の有効性を確認するための仕組みです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "PKI（公開鍵基盤）において、証明書の失効情報を確認する仕組みとして最適なものはどれか。"
     },
     {
       "id": 6,
-      "question": "SIEM（Security Information and Event Management）システムの主要な機能として最も適切なものはどれか。",
       "options": [
         "ネットワークトラフィックの暗号化",
         "セキュリティイベントの収集・分析・相関分析",
@@ -81,11 +86,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SIEMシステムの主要機能は、様々なセキュリティイベントを収集し、分析・相関分析を行うことで、脅威の早期発見と対応を可能にすることです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "SIEM（Security Information and Event Management）システムの主要な機能として最も適切なものはどれか。"
     },
     {
       "id": 7,
-      "question": "ペネトレーションテストにおいて、事前に対象システムの情報を一切与えられない手法はどれか。",
       "options": [
         "ホワイトボックステスト",
         "グレーボックステスト",
@@ -94,11 +99,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "ブラックボックステストは、対象システムに関する事前情報を一切与えられずに実施するペネトレーションテストの手法で、外部攻撃者の視点でのテストが可能です。",
-      "difficulty": "基礎"
+      "difficulty": "基礎",
+      "text": "ペネトレーションテストにおいて、事前に対象システムの情報を一切与えられない手法はどれか。"
     },
     {
       "id": 8,
-      "question": "CSIRTが実施するインシデント対応プロセスで、最初に行うべき活動はどれか。",
       "options": [
         "証拠保全",
         "被害状況の調査",
@@ -107,11 +112,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "CSIRTがインシデント対応を行う際、最初に実施すべきはインシデントのトリアージ（優先度判定）です。これにより、限られたリソースを効率的に配分できます。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "CSIRTが実施するインシデント対応プロセスで、最初に行うべき活動はどれか。"
     },
     {
       "id": 9,
-      "question": "WAF（Web Application Firewall）が防御できる攻撃として最も適切なものはどれか。",
       "options": [
         "DDoS攻撃",
         "クロスサイトスクリプティング（XSS）",
@@ -120,11 +125,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "WAFは、WebアプリケーションレイヤーでのHTTP/HTTPSトラフィックを検査し、XSS、SQLインジェクションなどのWebアプリケーション攻撃を防御する専用ファイアウォールです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "WAF（Web Application Firewall）が防御できる攻撃として最も適切なものはどれか。"
     },
     {
       "id": 10,
-      "question": "情報セキュリティマネジメントシステム（ISMS）認証で使用される国際規格はどれか。",
       "options": [
         "ISO/IEC 27001",
         "ISO/IEC 15408",
@@ -133,11 +138,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "ISMS認証は、ISO/IEC 27001規格に基づいて実施されます。この規格は、情報セキュリティマネジメントシステムの要求事項を定めています。",
-      "difficulty": "基礎"
+      "difficulty": "基礎",
+      "text": "情報セキュリティマネジメントシステム（ISMS）認証で使用される国際規格はどれか。"
     },
     {
       "id": 11,
-      "question": "デジタルフォレンジックにおいて、証拠の完全性を保証するために使用される技術はどれか。",
       "options": [
         "暗号化",
         "ハッシュ値計算",
@@ -146,11 +151,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "デジタルフォレンジックでは、証拠データの完全性を保証するためにハッシュ値（MD5、SHA-256など）を計算し、データの改ざんがないことを証明します。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "デジタルフォレンジックにおいて、証拠の完全性を保証するために使用される技術はどれか。"
     },
     {
       "id": 12,
-      "question": "OWASP Top 10 2021で新たに追加されたセキュリティリスクはどれか。",
       "options": [
         "Injection",
         "Insecure Design",
@@ -159,11 +164,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "OWASP Top 10 2021では「Insecure Design（安全でない設計）」が新たに追加されました。これは設計段階でのセキュリティ考慮不足によるリスクです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "OWASP Top 10 2021で新たに追加されたセキュリティリスクはどれか。"
     },
     {
       "id": 13,
-      "question": "CVSS（Common Vulnerability Scoring System）v3.1において、脆弱性の深刻度を示すスコアの最大値はいくつか。",
       "options": [
         "7.0",
         "8.0",
@@ -172,11 +177,11 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "CVSS v3.1では、脆弱性の深刻度を0.0から10.0のスコアで評価し、10.0が最も深刻な脆弱性を示します。",
-      "difficulty": "基礎"
+      "difficulty": "基礎",
+      "text": "CVSS（Common Vulnerability Scoring System）v3.1において、脆弱性の深刻度を示すスコアの最大値はいくつか。"
     },
     {
       "id": 14,
-      "question": "EDR（Endpoint Detection and Response）ソリューションの主要な機能として最も適切なものはどれか。",
       "options": [
         "エンドポイントでのマルウェア検知と対応の自動化",
         "ネットワークトラフィックの暗号化",
@@ -185,11 +190,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "EDRは、エンドポイント（端末）でのセキュリティイベントを監視し、マルウェアやAPT攻撃の検知・対応を自動化するセキュリティソリューションです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "EDR（Endpoint Detection and Response）ソリューションの主要な機能として最も適切なものはどれか。"
     },
     {
       "id": 15,
-      "question": "サイバーキルチェーンモデルにおいて、攻撃者がマルウェアを実行する段階はどれか。",
       "options": [
         "Reconnaissance（偵察）",
         "Weaponization（武器化）",
@@ -198,11 +203,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "サイバーキルチェーンモデルの「Installation（インストール）」段階では、攻撃者がターゲットシステムにマルウェアをインストールし、実行します。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "サイバーキルチェーンモデルにおいて、攻撃者がマルウェアを実行する段階はどれか。"
     },
     {
       "id": 16,
-      "question": "GDPR（EU一般データ保護規則）において、個人データ侵害の通知期限として定められているのはどれか。",
       "options": [
         "24時間以内",
         "48時間以内",
@@ -211,11 +216,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "GDPRでは、個人データ侵害を認識した場合、72時間以内に監督機関への通知が義務付けられています。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "GDPR（EU一般データ保護規則）において、個人データ侵害の通知期限として定められているのはどれか。"
     },
     {
       "id": 17,
-      "question": "脅威インテリジェンスにおいて、IoC（Indicators of Compromise）として使用されるものはどれか。",
       "options": [
         "企業の売上データ",
         "マルウェアのハッシュ値",
@@ -224,11 +229,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "IoC（侵害指標）は、システムの侵害を示す証拠や痕跡のことで、マルウェアのハッシュ値、不正なIPアドレス、ドメイン名などが含まれます。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "脅威インテリジェンスにおいて、IoC（Indicators of Compromise）として使用されるものはどれか。"
     },
     {
       "id": 18,
-      "question": "セキュリティオーケストレーション（SOAR）の主要な目的として最も適切なものはどれか。",
       "options": [
         "ネットワーク速度の向上",
         "セキュリティ運用の自動化と効率化",
@@ -237,11 +242,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SOAR（Security Orchestration, Automation and Response）は、セキュリティ運用における手順の自動化と効率化を目的としたプラットフォームです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "セキュリティオーケストレーション（SOAR）の主要な目的として最も適切なものはどれか。"
     },
     {
       "id": 19,
-      "question": "暗号学的ハッシュ関数の性質として、攻撃への耐性に関して最も重要なものはどれか。",
       "options": [
         "高速な計算が可能",
         "衝突困難性（Collision Resistance）",
@@ -250,11 +255,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "暗号学的ハッシュ関数において最も重要な性質は衝突困難性で、異なる入力値から同じハッシュ値を生成することが困難であることです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "暗号学的ハッシュ関数の性質として、攻撃への耐性に関して最も重要なものはどれか。"
     },
     {
       "id": 20,
-      "question": "セキュアプログラミングにおいて、バッファオーバーフロー攻撃を防ぐ技術として最も効果的なものはどれか。",
       "options": [
         "入力値の暗号化",
         "境界チェックの実装",
@@ -263,11 +268,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "バッファオーバーフロー攻撃を防ぐには、入力データのサイズチェックや配列の境界チェックを適切に実装することが最も効果的です。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュアプログラミングにおいて、バッファオーバーフロー攻撃を防ぐ技術として最も効果的なものはどれか。"
     },
     {
       "id": 21,
-      "question": "クラウドセキュリティにおいて、責任共有モデル（Shared Responsibility Model）で顧客が責任を持つ領域として最も適切なものはどれか。",
       "options": [
         "データセンターの物理的セキュリティ",
         "ハイパーバイザーの管理",
@@ -276,11 +281,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "クラウドの責任共有モデルにおいて、顧客はデータの暗号化、分類、アクセス制御など「クラウド内のセキュリティ」に責任を持ちます。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "クラウドセキュリティにおいて、責任共有モデル（Shared Responsibility Model）で顧客が責任を持つ領域として最も適切なものはどれか。"
     },
     {
       "id": 22,
-      "question": "APT（Advanced Persistent Threat）攻撃の特徴として最も適切なものはどれか。",
       "options": [
         "短期間で大量のデータを窃取する",
         "長期間にわたって潜伏し、継続的に活動する",
@@ -289,11 +294,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "APT攻撃の特徴は、特定の組織を標的とし、長期間にわたって潜伏しながら継続的に機密情報を窃取する高度で持続的な脅威であることです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "APT（Advanced Persistent Threat）攻撃の特徴として最も適切なものはどれか。"
     },
     {
       "id": 23,
-      "question": "OAuth 2.0における「認可コードフロー」で最初に取得するものはどれか。",
       "options": [
         "アクセストークン",
         "リフレッシュトークン",
@@ -302,11 +307,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "OAuth 2.0の認可コードフローでは、まず認可サーバーから認可コードを取得し、その後アクセストークンと交換します。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "OAuth 2.0における「認可コードフロー」で最初に取得するものはどれか。"
     },
     {
       "id": 24,
-      "question": "セキュリティ情報の機密性分類において、「極秘」レベルの情報が漏えいした場合の影響として最も適切なものはどれか。",
       "options": [
         "業務に軽微な支障をきたす",
         "組織の信頼性に重大な損害を与える",
@@ -315,11 +320,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "極秘レベルの情報漏えいは、組織の信頼性、競争力、存続に重大な損害を与える可能性があり、最も深刻な影響レベルです。",
-      "difficulty": "基礎"
+      "difficulty": "基礎",
+      "text": "セキュリティ情報の機密性分類において、「極秘」レベルの情報が漏えいした場合の影響として最も適切なものはどれか。"
     },
     {
       "id": 25,
-      "question": "ハニーポット（Honeypot）システムの主要な目的として最も適切なものはどれか。",
       "options": [
         "システムの性能向上",
         "攻撃者を誘導し、攻撃手法を分析する",
@@ -328,11 +333,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ハニーポットは、攻撃者を意図的に誘導するおとりシステムで、攻撃手法の分析や脅威情報の収集を目的として運用されます。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "ハニーポット（Honeypot）システムの主要な目的として最も適切なものはどれか。"
     },
     {
       "id": 26,
-      "question": "多要素認証（MFA）において、「知識要素」に該当するものはどれか。",
       "options": [
         "指紋認証",
         "パスワード",
@@ -341,11 +346,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "多要素認証の「知識要素」は、ユーザーが知っている情報（パスワード、PIN、秘密の質問など）を指します。",
-      "difficulty": "基礎"
+      "difficulty": "基礎",
+      "text": "多要素認証（MFA）において、「知識要素」に該当するものはどれか。"
     },
     {
       "id": 27,
-      "question": "MITRE ATT&CKフレームワークの主要な用途として最も適切なものはどれか。",
       "options": [
         "ネットワーク帯域幅の計算",
         "攻撃者の戦術・技術・手順（TTP）の分類と分析",
@@ -354,11 +359,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "MITRE ATT&CKフレームワークは、現実の攻撃で観察された攻撃者の戦術・技術・手順（TTP）を体系的に分類し、脅威分析に活用するフレームワークです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "MITRE ATT&CKフレームワークの主要な用途として最も適切なものはどれか。"
     },
     {
       "id": 28,
-      "question": "情報セキュリティ監査において、「統制の有効性」を評価する際に最も重要な観点はどれか。",
       "options": [
         "統制の文書化状況",
         "統制の実装コスト",
@@ -367,11 +372,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "統制の有効性評価では、統制が設計された目的を達成し、期待される効果を実際に発揮しているかどうかを確認することが最も重要です。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "情報セキュリティ監査において、「統制の有効性」を評価する際に最も重要な観点はどれか。"
     },
     {
       "id": 29,
-      "question": "サイドチャネル攻撃の手法として、処理時間の違いを利用するものはどれか。",
       "options": [
         "電力解析攻撃",
         "タイミング攻撃",
@@ -380,11 +385,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "タイミング攻撃は、暗号処理や認証処理の実行時間の違いを測定・分析することで、秘密情報を推測するサイドチャネル攻撃の一種です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "サイドチャネル攻撃の手法として、処理時間の違いを利用するものはどれか。"
     },
     {
       "id": 30,
-      "question": "DevSecOpsにおいて、「Shift Left」アプローチの主要な目的として最も適切なものはどれか。",
       "options": [
         "開発コストの削減",
         "セキュリティテストを開発プロセスの早期段階に組み込む",
@@ -393,11 +398,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "DevSecOpsの「Shift Left」アプローチは、従来リリース前に実施していたセキュリティテストを開発プロセスの早期段階に組み込み、セキュリティ問題の早期発見・解決を目指します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "DevSecOpsにおいて、「Shift Left」アプローチの主要な目的として最も適切なものはどれか。"
     },
     {
       "id": 31,
-      "question": "TLS 1.3で廃止された脆弱な暗号化方式はどれか。",
       "options": [
         "AES-GCM",
         "ChaCha20-Poly1305",
@@ -406,11 +411,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "TLS 1.3では、RC4やDES、3DESなどの脆弱な暗号化方式が廃止され、より安全な暗号化方式のみがサポートされています。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "TLS 1.3で廃止された脆弱な暗号化方式はどれか。"
     },
     {
       "id": 32,
-      "question": "ブロックチェーン技術をセキュリティに活用する場合の主要なメリットはどれか。",
       "options": [
         "高速な処理能力",
         "データの改ざん耐性と透明性",
@@ -419,11 +424,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ブロックチェーン技術の分散台帳と暗号学的ハッシュチェーンにより、データの改ざんが困難で、透明性の高いセキュリティソリューションを構築できます。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ブロックチェーン技術をセキュリティに活用する場合の主要なメリットはどれか。"
     },
     {
       "id": 33,
-      "question": "量子コンピュータが実用化された場合、最も脅威にさらされる暗号方式はどれか。",
       "options": [
         "AES対称暗号",
         "RSA公開鍵暗号",
@@ -432,11 +437,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "量子コンピュータのShorアルゴリズムは、RSAやECCなどの現在の公開鍵暗号方式を効率的に解読する可能性があり、最大の脅威とされています。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "量子コンピュータが実用化された場合、最も脅威にさらされる暗号方式はどれか。"
     },
     {
       "id": 34,
-      "question": "セキュリティ運用センター（SOC）の主要な機能として最も適切なものはどれか。",
       "options": [
         "システム開発の管理",
         "24時間365日のセキュリティ監視と対応",
@@ -445,11 +450,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SOC（Security Operations Center）は、24時間365日体制でセキュリティイベントの監視、分析、対応を行う専門組織・拠点です。",
-      "difficulty": "基礎"
+      "difficulty": "基礎",
+      "text": "セキュリティ運用センター（SOC）の主要な機能として最も適切なものはどれか。"
     },
     {
       "id": 35,
-      "question": "OWASP ASVS（Application Security Verification Standard）の主要な目的として最も適切なものはどれか。",
       "options": [
         "Webアプリケーションの性能測定",
         "アプリケーションセキュリティ検証の標準化",
@@ -458,11 +463,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "OWASP ASVSは、アプリケーションのセキュリティ要件と検証方法を標準化し、セキュアな開発を支援するフレームワークです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "OWASP ASVS（Application Security Verification Standard）の主要な目的として最も適切なものはどれか。"
     },
     {
       "id": 36,
-      "question": "CTI（Cyber Threat Intelligence）の収集において、OSINT（Open Source Intelligence）が含むものはどれか。",
       "options": [
         "社内の機密文書",
         "公開されているブログやSNSの情報",
@@ -471,11 +476,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "OSINT（オープンソースインテリジェンス）は、公開されている情報源（ニュース、ブログ、SNS、学術論文など）から収集される情報を指します。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "CTI（Cyber Threat Intelligence）の収集において、OSINT（Open Source Intelligence）が含むものはどれか。"
     },
     {
       "id": 37,
-      "question": "コンテナセキュリティにおいて、実行時の脅威検知に最も適した手法はどれか。",
       "options": [
         "イメージの脆弱性スキャン",
         "ランタイムセキュリティ監視",
@@ -484,11 +489,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "コンテナの実行時脅威検知には、ランタイムセキュリティ監視ツールを使用してコンテナの実行時動作を監視し、異常を検知することが効果的です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "コンテナセキュリティにおいて、実行時の脅威検知に最も適した手法はどれか。"
     },
     {
       "id": 38,
-      "question": "CASB（Cloud Access Security Broker）の主要な機能として最も適切なものはどれか。",
       "options": [
         "クラウドサービスのセキュリティ統制と可視化",
         "オンプレミスサーバーの監視",
@@ -497,11 +502,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "CASB（Cloud Access Security Broker）は、企業とクラウドサービスプロバイダーの間に位置し、クラウドサービスの利用状況を可視化し、セキュリティ統制を提供します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "CASB（Cloud Access Security Broker）の主要な機能として最も適切なものはどれか。"
     },
     {
       "id": 39,
-      "question": "脅威ハンティング（Threat Hunting）活動の主要な目的として最も適切なものはどれか。",
       "options": [
         "システムの性能向上",
         "潜在的な脅威の能動的な発見と分析",
@@ -510,11 +515,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "脅威ハンティングは、従来の受動的な検知手法では発見できない潜在的な脅威を能動的に探索し、分析する高度なセキュリティ活動です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "脅威ハンティング（Threat Hunting）活動の主要な目的として最も適切なものはどれか。"
     },
     {
       "id": 40,
-      "question": "Red Team演習において、Blue Teamが担当する主要な役割はどれか。",
       "options": [
         "攻撃シナリオの実行",
         "システムへの侵入テスト",
@@ -523,11 +528,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Red Team演習において、Blue Teamは防御側として攻撃を検知し、対応する役割を担います。Red Teamが攻撃側を担当します。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "Red Team演習において、Blue Teamが担当する主要な役割はどれか。"
     },
     {
       "id": 41,
-      "question": "SOAR（Security Orchestration, Automation and Response）プラットフォームにおけるプレイブック（Playbook）の主要な目的はどれか。",
       "options": [
         "セキュリティイベントの自動対応手順の標準化",
         "ネットワーク構成の可視化",
@@ -536,11 +541,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "SOARのプレイブックは、セキュリティインシデント対応の手順を自動化・標準化し、一貫した対応を可能にする重要な機能です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SOAR（Security Orchestration, Automation and Response）プラットフォームにおけるプレイブック（Playbook）の主要な目的はどれか。"
     },
     {
       "id": 42,
-      "question": "ゼロデイ攻撃（Zero-day Attack）の特徴として最も適切なものはどれか。",
       "options": [
         "既知の脆弱性を利用する",
         "未知の脆弱性を利用し、対策が未実装の状態で攻撃する",
@@ -549,11 +554,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ゼロデイ攻撃は、まだ公表されていない未知の脆弱性を利用する攻撃で、パッチや対策が存在しないため検知・防御が困難です。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "ゼロデイ攻撃（Zero-day Attack）の特徴として最も適切なものはどれか。"
     },
     {
       "id": 43,
-      "question": "セキュリティ・バイ・デザイン（Security by Design）の基本原則として最も適切なものはどれか。",
       "options": [
         "システム構築後にセキュリティ機能を追加する",
         "設計段階からセキュリティを組み込む",
@@ -562,11 +567,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "セキュリティ・バイ・デザインは、システムやアプリケーションの設計段階からセキュリティを考慮し、根本的にセキュアなシステムを構築するアプローチです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ・バイ・デザイン（Security by Design）の基本原則として最も適切なものはどれか。"
     },
     {
       "id": 44,
-      "question": "STRIDE脅威モデリング手法において、「T」が表す脅威の種類はどれか。",
       "options": [
         "なりすまし（Spoofing）",
         "改ざん（Tampering）",
@@ -575,11 +580,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "STRIDEモデルの「T」は「Tampering（改ざん）」を表し、データやシステムの不正な変更に関する脅威を分類します。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "STRIDE脅威モデリング手法において、「T」が表す脅威の種類はどれか。"
     },
     {
       "id": 45,
-      "question": "SBOM（Software Bill of Materials）の主要な目的として最も適切なものはどれか。",
       "options": [
         "ソフトウェアの性能測定",
         "ソフトウェア構成要素と依存関係の透明化",
@@ -588,11 +593,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SBOM（Software Bill of Materials）は、ソフトウェア製品に含まれる構成要素、ライブラリ、依存関係を明確に記載した一覧表で、サプライチェーンセキュリティの向上が目的です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "SBOM（Software Bill of Materials）の主要な目的として最も適切なものはどれか。"
     },
     {
       "id": 46,
-      "question": "XDR（Extended Detection and Response）が従来のEDRから拡張された主要な特徴はどれか。",
       "options": [
         "エンドポイントのみを監視対象とする",
         "複数のセキュリティレイヤーにわたる統合的な脅威検知・対応",
@@ -601,11 +606,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "XDRは、エンドポイント、ネットワーク、クラウド、アプリケーションなど複数のセキュリティレイヤーからデータを統合し、総合的な脅威検知・対応を提供します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "XDR（Extended Detection and Response）が従来のEDRから拡張された主要な特徴はどれか。"
     },
     {
       "id": 47,
-      "question": "セキュリティ意識向上教育において、フィッシング攻撃の模擬訓練を実施する主要な目的はどれか。",
       "options": [
         "従業員のITスキル向上",
         "フィッシング攻撃に対する判断力と対応能力の向上",
@@ -614,11 +619,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "フィッシング攻撃の模擬訓練は、従業員が実際のフィッシング攻撃を識別し、適切に対応する能力を向上させることを目的として実施されます。",
-      "difficulty": "基礎"
+      "difficulty": "基礎",
+      "text": "セキュリティ意識向上教育において、フィッシング攻撃の模擬訓練を実施する主要な目的はどれか。"
     },
     {
       "id": 48,
-      "question": "API（Application Programming Interface）セキュリティにおいて、認証・認可の実装で推奨される方式はどれか。",
       "options": [
         "APIキーのみを使用",
         "OAuth 2.0 + OpenID Connect",
@@ -627,11 +632,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "APIセキュリティでは、OAuth 2.0による認可とOpenID Connectによる認証を組み合わせることで、セキュアで標準的なAPI保護が実現できます。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "API（Application Programming Interface）セキュリティにおいて、認証・認可の実装で推奨される方式はどれか。"
     },
     {
       "id": 49,
-      "question": "インシデント対応において、「エスカレーション」を実施する主要な判断基準はどれか。",
       "options": [
         "インシデントの発生時刻",
         "インシデントの影響度と緊急度",
@@ -640,11 +645,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "インシデント対応でのエスカレーションは、インシデントの影響度（業務への影響範囲）と緊急度（対応の急ぎ度）に基づいて判断します。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "インシデント対応において、「エスカレーション」を実施する主要な判断基準はどれか。"
     },
     {
       "id": 50,
-      "question": "セキュリティ成熟度モデルにおいて、「最適化」レベルの特徴として最も適切なものはどれか。",
       "options": [
         "セキュリティ対策が全く実装されていない",
         "基本的なセキュリティ対策が実装されている",
@@ -653,11 +658,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "セキュリティ成熟度モデルの「最適化」レベルでは、継続的改善、イノベーション、先進的な技術活用によりセキュリティを強化する最高段階です。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ成熟度モデルにおいて、「最適化」レベルの特徴として最も適切なものはどれか。"
     },
     {
       "id": 51,
-      "question": "機械学習を活用したセキュリティシステムにおいて、「敵対的機械学習攻撃」の対象となるのはどれか。",
       "options": [
         "システムの物理的破壊",
         "機械学習モデルに対する意図的な入力操作",
@@ -666,11 +671,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "敵対的機械学習攻撃は、機械学習モデルの判断を誤らせるために、入力データを意図的に操作する攻撃手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "機械学習を活用したセキュリティシステムにおいて、「敵対的機械学習攻撃」の対象となるのはどれか。"
     },
     {
       "id": 52,
-      "question": "セキュリティ監査における「限定意見」が表明される主要な理由はどれか。",
       "options": [
         "監査範囲に制約がある場合",
         "重大な不備があるが全体への影響は限定的な場合",
@@ -679,11 +684,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "限定意見は、監査において重要な不備が発見されたものの、その影響が全体に及ぶほど重大ではない場合に表明されます。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ監査における「限定意見」が表明される主要な理由はどれか。"
     },
     {
       "id": 53,
-      "question": "クラウドネイティブセキュリティにおいて、「Service Mesh」が提供する主要なセキュリティ機能はどれか。",
       "options": [
         "データの永続化",
         "マイクロサービス間の通信の暗号化と認証",
@@ -692,11 +697,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Service Meshは、マイクロサービス間の通信において、mTLS（mutual TLS）による暗号化、認証、認可などのセキュリティ機能を透過的に提供します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "クラウドネイティブセキュリティにおいて、「Service Mesh」が提供する主要なセキュリティ機能はどれか。"
     },
     {
       "id": 54,
-      "question": "セキュリティトークンサービス（STS）の主要な機能として最も適切なものはどれか。",
       "options": [
         "ネットワークトラフィックの監視",
         "セキュリティトークンの発行と検証",
@@ -705,11 +710,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "STS（Security Token Service）は、SAML、JWTなどのセキュリティトークンを発行・検証し、認証・認可サービスを提供する専用サービスです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティトークンサービス（STS）の主要な機能として最も適切なものはどれか。"
     },
     {
       "id": 55,
-      "question": "DevSecOpsパイプラインにおいて、「SAST（Static Application Security Testing）」を実行する最適なタイミングはどれか。",
       "options": [
         "本番環境デプロイ後",
         "ソースコードコミット時",
@@ -718,11 +723,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SASTは静的解析によりソースコードの脆弱性を検知するため、コード作成直後のコミット時に実行することで、早期に問題を発見できます。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "DevSecOpsパイプラインにおいて、「SAST（Static Application Security Testing）」を実行する最適なタイミングはどれか。"
     },
     {
       "id": 56,
-      "question": "情報資産の「可用性」を脅かす攻撃として最も適切なものはどれか。",
       "options": [
         "データの改ざん",
         "情報の盗取",
@@ -731,11 +736,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "DDoS攻撃は、システムやネットワークを利用不可能な状態にすることで、情報資産の「可用性」を直接的に脅かす攻撃です。",
-      "difficulty": "基礎"
+      "difficulty": "基礎",
+      "text": "情報資産の「可用性」を脅かす攻撃として最も適切なものはどれか。"
     },
     {
       "id": 57,
-      "question": "ダークウェブ（Dark Web）における脅威インテリジェンス収集の主要な目的はどれか。",
       "options": [
         "一般的なWebサイトの監視",
         "サイバー犯罪情報と脅威情報の早期収集",
@@ -744,11 +749,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ダークウェブでの脅威インテリジェンス収集は、サイバー犯罪組織の活動、新しい攻撃手法、漏えいした認証情報などの情報を早期に把握することが目的です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ダークウェブ（Dark Web）における脅威インテリジェンス収集の主要な目的はどれか。"
     },
     {
       "id": 58,
-      "question": "生体認証システムにおいて、「FAR（False Accept Rate）」が表す指標はどれか。",
       "options": [
         "正当なユーザーを拒否する率",
         "不正なユーザーを受け入れる率",
@@ -757,11 +762,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "FAR（偽受諾率）は、生体認証システムにおいて、権限のない不正なユーザーを誤って受け入れてしまう確率を示す重要な性能指標です。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "生体認証システムにおいて、「FAR（False Accept Rate）」が表す指標はどれか。"
     },
     {
       "id": 59,
-      "question": "セキュリティ情報管理における「DLP（Data Loss Prevention）」の主要な機能はどれか。",
       "options": [
         "データの自動バックアップ",
         "機密データの漏えい防止と監視",
@@ -770,11 +775,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "DLP（Data Loss Prevention）は、機密データの特定、監視、保護を行い、意図しないデータ漏えいや不正な外部送信を防止するセキュリティソリューションです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ情報管理における「DLP（Data Loss Prevention）」の主要な機能はどれか。"
     },
     {
       "id": 60,
-      "question": "サイバーレジリエンス（Cyber Resilience）の概念において、「回復力」が重要視される理由はどれか。",
       "options": [
         "攻撃を完全に防ぐため",
         "攻撃を受けても事業継続と迅速な復旧を実現するため",
@@ -783,11 +788,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "サイバーレジリエンスは、攻撃の完全防止ではなく、攻撃を受けても組織が機能を維持し、迅速に回復する能力を重視する考え方です。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "サイバーレジリエンス（Cyber Resilience）の概念において、「回復力」が重要視される理由はどれか。"
     },
     {
       "id": 61,
-      "question": "セキュリティ運用における「Mean Time to Detection（MTTD）」が示すものはどれか。",
       "options": [
         "攻撃から検知までの平均時間",
         "検知から復旧までの平均時間",
@@ -796,11 +801,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "MTTD（平均検知時間）は、セキュリティインシデントが発生してから検知されるまでの平均時間を示し、セキュリティ運用の効率性を測る重要な指標です。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ運用における「Mean Time to Detection（MTTD）」が示すものはどれか。"
     },
     {
       "id": 62,
-      "question": "ソフトウェアサプライチェーン攻撃の代表的な手法として最も適切なものはどれか。",
       "options": [
         "正規のソフトウェアアップデートプロセスを悪用した攻撃",
         "物理的なハードウェアの破壊",
@@ -809,11 +814,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "ソフトウェアサプライチェーン攻撃は、正規のソフトウェア開発・配布プロセスに悪意のあるコードを挿入し、多数のユーザーに配布する手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "ソフトウェアサプライチェーン攻撃の代表的な手法として最も適切なものはどれか。"
     },
     {
       "id": 63,
-      "question": "セキュリティ設定管理における「Configuration Drift」の問題として最も適切なものはどれか。",
       "options": [
         "設定が時間とともに意図しない状態に変化すること",
         "設定の文書化が不十分であること",
@@ -822,11 +827,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "Configuration Drift（設定ドリフト）は、システム設定が運用過程で意図しない状態に変化し、セキュリティリスクが生じる問題を指します。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ設定管理における「Configuration Drift」の問題として最も適切なものはどれか。"
     },
     {
       "id": 64,
-      "question": "AI/MLセキュリティにおいて、「モデル反転攻撃」の目的として最も適切なものはどれか。",
       "options": [
         "機械学習モデルの性能向上",
         "訓練データの復元や機密情報の抽出",
@@ -835,11 +840,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "モデル反転攻撃は、機械学習モデルから訓練に使用された機密データや個人情報を推測・復元することを目的とする攻撃手法です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "AI/MLセキュリティにおいて、「モデル反転攻撃」の目的として最も適切なものはどれか。"
     },
     {
       "id": 65,
-      "question": "セキュリティガバナンスにおいて、「三線防御モデル」の第一線が担う主要な責任はどれか。",
       "options": [
         "内部監査の実施",
         "リスク管理とコンプライアンスの監督",
@@ -848,11 +853,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "三線防御モデルの第一線は、事業部門自身がリスク管理と内部統制を実行・運用する責任を担います。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティガバナンスにおいて、「三線防御モデル」の第一線が担う主要な責任はどれか。"
     },
     {
       "id": 66,
-      "question": "セキュリティテストにおけるFuzzing（ファジング）の主要な目的はどれか。",
       "options": [
         "ユーザビリティの向上",
         "異常入力によるソフトウェアの脆弱性発見",
@@ -861,11 +866,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Fuzzingは、ソフトウェアに予期しない、異常な、または無効な入力データを大量に送信し、クラッシュや脆弱性を発見するテスト手法です。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティテストにおけるFuzzing（ファジング）の主要な目的はどれか。"
     },
     {
       "id": 67,
-      "question": "クラウドセキュリティにおけるCWPP（Cloud Workload Protection Platform）の主要な機能はどれか。",
       "options": [
         "クラウド上のワークロード（仮想マシン、コンテナなど）の包括的保護",
         "データセンターの物理的セキュリティ管理",
@@ -874,11 +879,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "CWPP（Cloud Workload Protection Platform）は、クラウド環境で実行される様々なワークロードを包括的に保護するセキュリティプラットフォームです。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "クラウドセキュリティにおけるCWPP（Cloud Workload Protection Platform）の主要な機能はどれか。"
     },
     {
       "id": 68,
-      "question": "セキュリティ事故対応における「デジタル証拠保全」で最も重要な原則はどれか。",
       "options": [
         "証拠の迅速な分析",
         "証拠の完全性と正確性の維持",
@@ -887,11 +892,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "デジタル証拠保全では、証拠の完全性（改ざんされていない）と正確性（元の状態を保持）を維持することが法的有効性の確保に最も重要です。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ事故対応における「デジタル証拠保全」で最も重要な原則はどれか。"
     },
     {
       "id": 69,
-      "question": "エッジコンピューティング環境におけるセキュリティ課題として最も適切なものはどれか。",
       "options": [
         "クラウド接続の高速化",
         "分散した多数のエッジデバイスの統一的なセキュリティ管理",
@@ -900,11 +905,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "エッジコンピューティングでは、地理的に分散した多数のエッジデバイスに対して統一的なセキュリティポリシーを適用し、管理することが大きな課題です。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "エッジコンピューティング環境におけるセキュリティ課題として最も適切なものはどれか。"
     },
     {
       "id": 70,
-      "question": "セキュリティ投資の効果測定において、「ROI（Return on Investment）」を算出する際の基本的な考え方はどれか。",
       "options": [
         "セキュリティ投資額の総額を計算",
         "回避できたセキュリティ被害額とセキュリティ投資額の比較",
@@ -913,11 +918,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "セキュリティ投資のROIは、セキュリティ対策により回避できた損失・被害額と、そのために投資した費用を比較して効果を測定します。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ投資の効果測定において、「ROI（Return on Investment）」を算出する際の基本的な考え方はどれか。"
     },
     {
       "id": 71,
-      "question": "プライバシー・バイ・デザイン（Privacy by Design）の7つの原則で最も基本的なものはどれか。",
       "options": [
         "事後対応的ではなく予防的",
         "デフォルトでプライバシー保護",
@@ -926,11 +931,11 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "プライバシー・バイ・デザインの第一原則は「Proactive not Reactive（事後対応的ではなく予防的）」で、問題発生前の予防的アプローチを重視します。",
-      "difficulty": "上級"
+      "difficulty": "上級",
+      "text": "プライバシー・バイ・デザイン（Privacy by Design）の7つの原則で最も基本的なものはどれか。"
     },
     {
       "id": 72,
-      "question": "セキュリティ認証フレームワークにおけるSAML 2.0の「アサーション」が含む主要な情報はどれか。",
       "options": [
         "パスワードハッシュ",
         "認証・属性・認可に関する情報",
@@ -939,11 +944,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SAML 2.0のアサーションは、ユーザーの認証状態、属性情報（所属部署、権限など）、認可情報を含むセキュリティトークンです。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ認証フレームワークにおけるSAML 2.0の「アサーション」が含む主要な情報はどれか。"
     },
     {
       "id": 73,
-      "question": "セキュリティ情報共有における「TLP（Traffic Light Protocol）」で、「RED」が示す取り扱い制限はどれか。",
       "options": [
         "一般公開可能",
         "組織内部での共有のみ",
@@ -952,11 +957,11 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "TLP:REDは最も制限が厳しく、情報を受け取った特定の個人のみが知ることができ、他への共有は一切禁止されています。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "セキュリティ情報共有における「TLP（Traffic Light Protocol）」で、「RED」が示す取り扱い制限はどれか。"
     },
     {
       "id": 74,
-      "question": "サイバー攻撃の被害想定において、「RPO（Recovery Point Objective）」が示すものはどれか。",
       "options": [
         "復旧に要する最大許容時間",
         "許容できるデータ損失の最大時間",
@@ -965,11 +970,11 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "RPO（目標復旧地点）は、災害やインシデント発生時に許容できるデータ損失の最大時間を示し、バックアップ頻度の決定に使用されます。",
-      "difficulty": "中級"
+      "difficulty": "中級",
+      "text": "サイバー攻撃の被害想定において、「RPO（Recovery Point Objective）」が示すものはどれか。"
     },
     {
       "id": 75,
-      "question": "情報処理安全確保支援士の継続教育において、最も重視されるべき学習領域はどれか。",
       "options": [
         "プログラミング技術の向上",
         "最新の脅威動向とセキュリティ対策技術",
@@ -978,7 +983,8 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "情報処理安全確保支援士は、急速に進化するサイバー脅威に対応するため、最新の脅威動向と対策技術の継続的な学習が最も重要です。",
-      "difficulty": "基礎"
+      "difficulty": "基礎",
+      "text": "情報処理安全確保支援士の継続教育において、最も重視されるべき学習領域はどれか。"
     }
   ]
 }
