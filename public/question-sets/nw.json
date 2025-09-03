@@ -10,7 +10,7 @@
     "新技術・標準"
   ],
   "estimatedTime": "120分",
-  "difficultyLevel": "上級",
+  "level": "上級",
   "totalQuestions": 75,
   "questions": [
     {
@@ -24,7 +24,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "AS PATH属性は、BGPルートが通過したAS（Autonomous System）の履歴を記録し、ルーティングループの防止と最適経路選択に使用されます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "BGP（Border Gateway Protocol）における「AS PATH」属性の主な目的はどれか。"
     },
     {
@@ -38,7 +38,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "HTTP/3は、TCPの代わりにUDPベースのQUICを使用することで、HTTP/2で発生するTCPレベルのHead-of-Line Blockingを解決します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "HTTP/3（QUIC）がHTTP/2に対して解決する主要な問題はどれか。"
     },
     {
@@ -52,7 +52,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "TLS 1.3では、Perfect Forward Secrecyを強制するため、RSA鍵交換などの非Perfect Forward Secrecy鍵交換方式が廃止されました。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "TLS 1.3で廃止された機能として適切なものはどれか。"
     },
     {
@@ -66,7 +66,7 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "SNMP v3では、認証なしでプライバシー（暗号化）のみを有効にする「noAuthPriv」は論理的に不可能な組み合わせです。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "SNMP v3における認証とプライバシーの組み合わせとして適切でないものはどれか。"
     },
     {
@@ -80,7 +80,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "SD-WANは、インターネット回線、MPLS、LTEなど複数の回線を組み合わせて使用し、専用線のみに依存しないことが利点の一つです。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "SD-WAN（Software-Defined WAN）の主な利点として適切でないものはどれか。"
     },
     {
@@ -94,7 +94,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "VTEP（VXLAN Tunnel End Point）は、VXLANトンネルの端点として、イーサネットフレームのVXLANカプセル化・非カプセル化を行います。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "VXLAN（Virtual Extensible LAN）における「VTEP」の役割として適切なものはどれか。"
     },
     {
@@ -108,7 +108,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SLAACは、ルーターから送信されるRouter Advertisement（RA）情報と自ノードのMAC アドレスを基に、自動的にIPv6アドレスを生成・設定します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "IPv6における「Stateless Address Autoconfiguration（SLAAC）」の特徴として適切なものはどれか。"
     },
     {
@@ -122,7 +122,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "DoHは、DNS クエリをHTTPS で暗号化することで、DNS通信の盗聴や改ざんを防ぎ、ユーザーのプライバシーを保護します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "DNS over HTTPS（DoH）の主な目的として適切なものはどれか。"
     },
     {
@@ -136,7 +136,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "RTTは、ネットワーク遅延を測定する指標であり、アプリケーションのレスポンス性能やユーザー体験に直接影響するため重要です。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "ネットワーク監視における「SLA（Service Level Agreement）」でRTT（Round Trip Time）を測定する主な理由はどれか。"
     },
     {
@@ -150,7 +150,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "6GHz帯は、2.4GHzや5GHz帯と比較して利用機器が少ないため、電波干渉が少なく、より安定した高速通信が可能です。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Wi-Fi 6E（IEEE 802.11ax）の6GHz帯使用における利点として適切なものはどれか。"
     },
     {
@@ -164,7 +164,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Spine-Leafアーキテクチャでは、Leaf間は直接接続せず、必ずSpineスイッチを経由して通信することで、予測可能なパフォーマンスを実現します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Spine-Leaf アーキテクチャの設計原則として適切でないものはどれか。"
     },
     {
@@ -178,7 +178,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "MPLSでは、LDP やRSVP-TE などのシグナリングプロトコルを使用してLSP（Label Switched Path）を確立し、ラベルの配布を行います。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "MPLS（Multi-Protocol Label Switching）におけるLSP（Label Switched Path）の確立方式として適切なものはどれか。"
     },
     {
@@ -192,7 +192,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "PFSは、セッション毎に一時的な鍵を生成し、長期間の秘密鍵が漏洩しても過去の通信内容を解読できないようにする仕組みです。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "IPsec VPN における「Perfect Forward Secrecy（PFS）」を実現する仕組みとして適切なものはどれか。"
     },
     {
@@ -206,7 +206,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "NetConfは、XML ベースのネットワーク設定プロトコルであり、トランザクション機能により設定の整合性を保証します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "ネットワーク自動化におけるNetConf（Network Configuration Protocol）の特徴として適切なものはどれか。"
     },
     {
@@ -220,7 +220,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ネットワークスライシングは、同一の物理インフラ上で、異なる要件（遅延、帯域、信頼性）に最適化された複数の仮想ネットワークを提供します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "5G ネットワークにおける「ネットワークスライシング」の目的として適切なものはどれか。"
     },
     {
@@ -234,7 +234,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "SDNの集中制御プレーンは、単一のコントローラーに制御機能を集約するため、逆に単一障害点となるリスクがあります。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "SDN（Software-Defined Networking）における「集中制御プレーン」の利点として適切でないものはどれか。"
     },
     {
@@ -248,7 +248,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Type 1 LSA（Router LSA）は、各ルーターが自分の直接接続しているリンクの状態と コストを広告するために使用されます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "OSPF（Open Shortest Path First）における「LSA（Link State Advertisement）」のType 1の内容として適切なものはどれか。"
     },
     {
@@ -262,7 +262,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "NACは、ネットワークアクセスの制御とセキュリティポリシーの適用が目的であり、帯域幅の無制限提供は機能ではありません。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Access Control（NAC）システムの機能として適切でないものはどれか。"
     },
     {
@@ -276,7 +276,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Synthetic Monitoringは、人工的なトランザクションやテストトラフィックを定期的に実行し、エンドユーザー体験を能動的に監視します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "ネットワーク性能監視におけるSynthetic Monitoring（合成監視）の特徴として適切なものはどれか。"
     },
     {
@@ -290,7 +290,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "OFDMAは、周波数帯域を細分化して複数デバイスに同時割り当てすることで、特に多数のIoTデバイスがある環境での通信効率を向上させます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Wi-Fi 6（IEEE 802.11ax）における「OFDMA（Orthogonal Frequency Division Multiple Access）」の効果として適切なものはどれか。"
     },
     {
@@ -304,7 +304,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ダークファイバーは、専用の光ファイバーケーブルを借用するため、帯域幅、プロトコル、暗号化を組織が完全に制御できます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Data Center Interconnect（DCI）におけるダークファイバーの利点として適切なものはどれか。"
     },
     {
@@ -318,7 +318,7 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "gRPCでは、Unary、Server streaming、Client streaming、Bidirectional streaming の4種類が定義されており、Multicast streamingは含まれません。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "gRPC通信における「ストリーミング」の種類として含まれないものはどれか。"
     },
     {
@@ -332,7 +332,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "マイクロセグメンテーションは、ネットワークを細かく分割し、最小権限の原則に基づいて必要最小限のアクセスのみを許可します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Zero Trust Network Architecture における「マイクロセグメンテーション」の目的として適切なものはどれか。"
     },
     {
@@ -346,7 +346,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "IBNは、「帯域幅を確保したい」などのビジネス意図を入力として、ネットワーク設定を自動的に生成・適用・監視するシステムです。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Intent-Based Networking（IBN）システムの特徴として適切なものはどれか。"
     },
     {
@@ -360,7 +360,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "LPWANは、長距離・低消費電力・多数接続を特徴としますが、データ転送速度は低く、高速データ転送は特徴ではありません。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Low Power Wide Area Network（LPWAN）技術の特徴として適切でないものはどれか。"
     },
     {
@@ -374,7 +374,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CNIは、Kubernetesなどのコンテナランタイムがコンテナのネットワーク接続を設定・削除するためのプラグインインターフェース仕様です。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Container Network Interface（CNI）の役割として適切なものはどれか。"
     },
     {
@@ -388,7 +388,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "IS-ISは、OSI参照モデルのネットワーク層（レイヤー3）で動作し、IPに依存しないリンクステート型ルーティングプロトコルです。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "IS-IS（Intermediate System to Intermediate System）プロトコルの特徴として適切なものはどれか。"
     },
     {
@@ -402,7 +402,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "DNSSECのChain of Trustは、ルートゾーンから目的のゾーンまで、親ゾーンの電子署名により子ゾーンの正当性を段階的に検証する仕組みです。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "DNS Security Extensions（DNSSEC）における「Chain of Trust」の概念として適切なものはどれか。"
     },
     {
@@ -416,7 +416,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Network Digital Twinは、物理ネットワークの仮想レプリカを作成し、設定変更や障害の影響を事前にシミュレーションして検証します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "ネットワーク運用における「Network Digital Twin」の活用として適切なものはどれか。"
     },
     {
@@ -430,7 +430,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "TSNは、イーサネット上で確定的な低遅延とジッター制御を実現し、産業用途でのリアルタイム通信要件を満たします。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Time-Sensitive Networking（TSN）が解決する産業ネットワークの課題として適切なものはどれか。"
     },
     {
@@ -444,7 +444,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Segment Routingは、パケットヘッダーに経路情報（セグメントリスト）を埋め込むことで、中間ルーターでの状態管理を不要にします。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Segment Routing（SR）の利点として適切なものはどれか。"
     },
     {
@@ -458,7 +458,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "BBRは、パケット損失ではなく、ネットワークの実際の帯域幅とRTTを測定し、その情報に基づいて送信レートを最適化します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "TCP の輻輳制御において「BBR（Bottleneck Bandwidth and RTT）」アルゴリズムの特徴として適切なものはどれか。"
     },
     {
@@ -472,7 +472,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "DGAマルウェアは動的にドメインを生成するため、機械学習を用いてドメイン生成パターンを検出し、未知のC&Cドメインを予測・遮断する必要があります。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "DGA（Domain Generation Algorithm）を使用するマルウェア対策として適切なものはどれか。"
     },
     {
@@ -486,7 +486,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "IaCは設定の自動化と標準化が目的であり、緊急時においても可能な限り自動化されたプロセスを使用することが推奨されます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "ネットワーク自動化における「Infrastructure as Code（IaC）」の適用として適切でないものはどれか。"
     },
     {
@@ -500,7 +500,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "VNFは、従来のハードウェア専用ネットワーク機能をソフトウェアとして仮想化したものであり、物理スイッチは該当しません。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Function Virtualization（NFV）におけるVNF（Virtual Network Function）の例として適切でないものはどれか。"
     },
     {
@@ -514,7 +514,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "PIM-SMは、スパースモードとして、マルチキャストグループへの明示的なJoin要求があったルーターのみにトラフィックを配信します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Multicast ルーティングにおけるPIM-SM（Protocol Independent Multicast - Sparse Mode）の特徴として適切なものはどれか。"
     },
     {
@@ -528,7 +528,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "RPKIは、IPアドレスやAS番号の正当な所有者を証明する証明書インフラストラクチャであり、BGPの経路ハイジャック攻撃を防ぎます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "RPKI（Resource Public Key Infrastructure）の目的として適切なものはどれか。"
     },
     {
@@ -542,7 +542,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Certificate Transparencyは、CA が発行したすべての証明書を公開ログに記録し、不正に発行された証明書の検出を可能にします。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "TLS証明書におけるCertificate Transparency（CT）の仕組みとして適切なものはどれか。"
     },
     {
@@ -556,7 +556,7 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "Streaming Telemetryは、従来のSNMPポーリングと異なり、ネットワーク機器からリアルタイムでデータをプッシュ配信します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Telemetry における「Streaming Telemetry」の利点として適切なものはどれか。"
     },
     {
@@ -570,7 +570,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Private 5Gは、企業固有の遅延要件、セキュリティポリシー、カバレッジニーズに応じてカスタマイズされたネットワークを構築できます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Private 5G ネットワークの企業導入における主な利点はどれか。"
     },
     {
@@ -584,7 +584,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "EVPNは、BGPを制御プレーンとして使用し、MAC アドレス情報をBGP UPDATEメッセージで配布することで、効率的なMAC学習を実現します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "EVPN（Ethernet VPN）における「MAC Learning」の方式として適切なものはどれか。"
     },
     {
@@ -598,7 +598,7 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "QUICのConnection Migrationは、モバイルデバイスのIPアドレス変更時でも、Connection IDを使用してコネクションを維持します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "QUIC プロトコルにおける「Connection Migration」の機能として適切なものはどれか。"
     },
     {
@@ -612,7 +612,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "NDRは、ネットワークトラフィックの分析に特化したシステムであり、ファイルの静的解析は主要な機能ではありません。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Detection and Response（NDR）システムの分析手法として適切でないものはどれか。"
     },
     {
@@ -626,7 +626,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "YANGは、ネットワーク機器の設定データ構造を標準化し、NETCONF、RESTCONF 等のAPIで統一的に管理するためのモデリング言語です。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "YANG（Yet Another Next Generation）データモデルの目的として適切なものはどれか。"
     },
     {
@@ -640,7 +640,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "MLOは、2.4GHz、5GHz、6GHz 帯域を同時に使用することで、スループットの向上と信頼性の確保を実現します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Wi-Fi 7（IEEE 802.11be）の新機能として期待される「Multi-Link Operation（MLO）」の効果はどれか。"
     },
     {
@@ -654,7 +654,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "East-West Trafficはデータセンター内のサーバー間通信、North-South Trafficはクライアントとデータセンター間の通信を指します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Data Center における「East-West Traffic」と「North-South Traffic」の違いとして適切なものはどれか。"
     },
     {
@@ -668,7 +668,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "IPv6のExtension Headerのうち、Hop-by-Hop Options Headerは経路上のすべてのルーターで処理される必要があります。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "IPv6における「Extension Header」の処理において、ルーターが処理すべきヘッダーとして適切なものはどれか。"
     },
     {
@@ -682,7 +682,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "MACsecは、IEEE 802.1AE標準として、レイヤー2（データリンク層）でイーサネットフレームの暗号化と認証を提供します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "MACsec（Media Access Control Security）の暗号化範囲として適切なものはどれか。"
     },
     {
@@ -696,7 +696,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Network Chaos Engineeringでは、影響を制限し段階的に障害を注入することが重要であり、システム全体の同時停止は避けるべきです。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Chaos Engineering の実践において重要な原則として適切でないものはどれか。"
     },
     {
@@ -710,7 +710,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "低軌道衛星コンステレーションは、地上インフラが整備されていない地域でも高速インターネット接続を提供できることが主要な利点です。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Starlink などの低軌道衛星コンステレーション ネットワークの特徴として適切なものはどれか。"
     },
     {
@@ -724,7 +724,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "NSHは、パケットにサービス機能の連鎖情報（Service Path ID、Service Index等）を付加し、定義されたサービスチェーンに従って転送します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Service Function Chaining（SFC）における「NSH（Network Service Header）」の役割として適切なものはどれか。"
     },
     {
@@ -738,7 +738,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "BIERは、パケットヘッダーのビットフィールドで宛先を指定することで、中間ルーターでのマルチキャスト状態管理を不要にします。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "BIER（Bit Index Explicit Replication）の利点として適切なものはどれか。"
     },
     {
@@ -752,7 +752,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ZTNAは、従来のVPNと異なり、アプリケーション単位で個別に認証・認可を行い、最小権限アクセスを実現します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Segmentation における「Zero Trust Network Access（ZTNA）」の実装方式として適切なものはどれか。"
     },
     {
@@ -766,7 +766,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "MTBFは障害間隔の平均時間であり、障害復旧時間の短縮（MTTR改善）ではなく、障害の発生頻度を減らす施策が必要です。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "ネットワーク障害における「MTBF（Mean Time Between Failures）」の改善策として適切でないものはどれか。"
     },
     {
@@ -780,7 +780,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "eSIMは、リモートでプロファイルを変更できるため、物理的なSIM交換なしに通信事業者の変更が可能です。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "eSIM（embedded SIM）技術の利点として適切でないものはどれか。"
     },
     {
@@ -794,7 +794,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SDPは、従来の固定的なネットワーク境界に代わり、アプリケーションとユーザーの関係に基づいて動的にセキュリティ境界を形成します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Software-Defined Perimeter（SDP）の核となる概念として適切なものはどれか。"
     },
     {
@@ -808,7 +808,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "0-RTT機能は接続確立の高速化を実現しますが、過去のセッションデータの再送によるリプレイアタックの可能性があります。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "HTTP/3の0-RTT（Zero Round Trip Time）機能のセキュリティ上の考慮事項として適切なものはどれか。"
     },
     {
@@ -822,7 +822,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SASEは、SD-WANとクラウドセキュリティサービス（CASB、FWaaS、ZTNA等）を統合し、エッジでの包括的なセキュリティを提供します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Secure Access Service Edge（SASE）アーキテクチャの特徴として適切なものはどれか。"
     },
     {
@@ -836,7 +836,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Source of Truthは、設計された正規の情報源であり、各機器の現在設定は実際の状態であってマスターデータではありません。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Automation における「Source of Truth」として適切でないものはどれか。"
     },
     {
@@ -850,7 +850,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Threadは、IPv6ベースの低消費電力メッシュネットワークプロトコルで、802.15.4無線を使用してIoTデバイス間の通信を実現します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Thread（スレッド）プロトコルのIoT ネットワークでの特徴として適切なものはどれか。"
     },
     {
@@ -864,7 +864,7 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "VXLANはレイヤー2オーバーレイによる仮想ネットワーク、Calicoはレイヤー3ルーティングベースのネットワークソリューションです。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Container Network のOverlay ネットワークにおける「VXLAN」と「Calico」の主な違いはどれか。"
     },
     {
@@ -878,7 +878,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Circuit Breakerパターンは、障害や高負荷状態のサービスへの呼び出しを一時的に停止し、システム全体への障害波及を防ぎます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "gRPC における「Circuit Breaker」パターンの実装目的として適切なものはどれか。"
     },
     {
@@ -892,7 +892,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "DNS Sinkholeは、マルウェアのC&Cサーバーなど悪意のあるドメインへのDNS解決を、無害なIPアドレスに誘導してアクセスを阻止します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "DNS Filtering における「DNS Sinkhole」の機能として適切なものはどれか。"
     },
     {
@@ -906,7 +906,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Jitter（遅延変動）は、リアルタイム通信でのパケット到着時間のばらつきを示し、音声・映像通信の品質に直接影響します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Performance Monitoring における「jitter」測定の重要性として適切なものはどれか。"
     },
     {
@@ -920,7 +920,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "テラヘルツ通信は、100GHz-10THz帯域を使用し、超高速データ転送を実現しますが、電波の直進性により短距離通信となります。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "6G ネットワークで期待される「Terahertz Communication」の特徴として適切なものはどれか。"
     },
     {
@@ -934,7 +934,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "MECは、コンピューティング機能をネットワークエッジ（基地局近く）に配置し、物理的な距離短縮により超低遅延を実現します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Multi-Access Edge Computing（MEC）における「Ultra-Low Latency」の実現手法として適切なものはどれか。"
     },
     {
@@ -948,7 +948,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "MQTT v5.0では、Request/Response通信パターンのサポート、User Properties、Enhanced Authentication 等の新機能が追加されました。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "MQTT v5.0 で追加された機能として適切なものはどれか。"
     },
     {
@@ -962,7 +962,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "マイクロセグメンテーションでは、IPやポートだけでなく、アプリケーションレイヤーでの制御により、より細かく精密なセキュリティ制御が可能になります。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Micro-Segmentation の実装において「アプリケーションレイヤー制御」が重要な理由はどれか。"
     },
     {
@@ -976,7 +976,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "AI駆動の予測分析は、ネットワークの性能データやログから障害の予兆を検知し、予防的な対応を可能にします。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "AI Driven Network Operations における「予測分析」の活用として適切なものはどれか。"
     },
     {
@@ -990,7 +990,7 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "Network Coded Modulationは、複数のデータストリームを重ね合わせて送信することで、限られた周波数帯域での伝送効率を向上させます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Coded Modulation の5G/6G における効果として適切なものはどれか。"
     },
     {
@@ -1004,7 +1004,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CDNとEdge Computingの統合により、コンテンツ配信だけでなく、ユーザーに近い場所での計算処理により、大幅なレスポンス性能向上が実現されます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Content Delivery Network（CDN）における「Edge Computing」統合の利点として適切なものはどれか。"
     },
     {
@@ -1018,7 +1018,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Subprotocol Negotiationは、WebSocket接続確立時に、クライアントとサーバー間でアプリケーション層で使用するプロトコルを合意します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "WebSocket Secure（WSS）における「Subprotocol Negotiation」の目的として適切なものはどれか。"
     },
     {
@@ -1032,7 +1032,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Threat Huntingでは、IoC を手がかりに能動的に脅威を調査し、攻撃者の戦術や関連する活動を分析して包括的な対策を実施します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Network Threat Hunting における「Indicators of Compromise（IoC）」の効果的な活用方法として適切なものはどれか。"
     },
     {
@@ -1046,7 +1046,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Day-2 Operationsは、初期デプロイ（Day-1）後の継続的な運用フェーズを指し、監視、メンテナンス、スケーリング、アップデートが含まれます。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Cloud Native Network Function（CNF）の運用における「Day-2 Operations」として適切なものはどれか。"
     },
     {
@@ -1060,7 +1060,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Ambient IoTは、無線電力伝送や環境エネルギー収穫により、バッテリーレスで動作する超低消費電力IoTネットワークを実現します。",
-      "difficulty": "上級",
+      "level": "上級",
       "text": "Ambient IoT（環境IoT）ネットワークの特徴として適切なものはどれか。"
     }
   ]
