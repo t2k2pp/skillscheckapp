@@ -24,7 +24,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "PMBOK第7版では価値創造と適応性を重視し、プロセスの標準化よりも成果と価値に焦点を当てる原則へと進化しています。",
-      "level": "上級",
+      "level": "基礎",
       "text": "PMBOK ガイド第7版におけるプロジェクトマネジメント原則として含まれないものはどれか。"
     },
     {
@@ -52,7 +52,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "スプリントレトロスペクティブは、チームの働き方やプロセスを振り返り、継続的改善のための具体的施策を特定することが主目的です。",
-      "level": "上級",
+      "level": "基礎",
       "text": "アジャイル開発におけるスプリントレトロスペクティブの主要な成果として適切なものはどれか。"
     },
     {
@@ -66,7 +66,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "自己組織化チームは、外部からの詳細な指示ではなく、目標とガイドラインに基づいてチーム自体が判断し行動することが特徴です。",
-      "level": "上級",
+      "level": "基礎",
       "text": "アジャイルチームにおける「自己組織化」の特徴として適切でないものはどれか。"
     },
     {
@@ -80,7 +80,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "TDDの「Red」段階では、まだ実装されていない機能のテストケースを書き、意図的に失敗させることから始めます。",
-      "level": "上級",
+      "level": "中級",
       "text": "Test-Driven Development（TDD）における「Red-Green-Refactor」サイクルの「Red」段階で行うこととして適切なものはどれか。"
     },
     {
@@ -94,7 +94,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "SPI = EV/PV であり、0.8は計画した作業の80%しか完了していないことを意味し、20%のスケジュール遅れを示します。",
-      "level": "上級",
+      "level": "中級",
       "text": "アーンドバリューマネジメント（EVM）において、SPI（Schedule Performance Index）が0.8の場合の解釈として適切なものはどれか。"
     },
     {
@@ -108,7 +108,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "回避（Avoid）は脅威（ネガティブリスク）への対応戦略です。機会には活用、強化、共有、受容の戦略を適用します。",
-      "level": "上級",
+      "level": "基礎",
       "text": "リスクマネジメントにおける「ポジティブリスク」（機会）への対応戦略として適切でないものはどれか。"
     },
     {
@@ -122,7 +122,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "CIではビルドの健全性維持が重要であり、ビルドブレイクが発生した場合は最優先で修正し、チーム全体の開発を妨げないようにします。",
-      "level": "上級",
+      "level": "中級",
       "text": "Continuous Integration において「Build Breaker」が発生した場合の適切な対応はどれか。"
     },
     {
@@ -136,7 +136,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "サーバントリーダーシップでは、リーダーがチームメンバーに奉仕し、彼らの成長と成功を支援することでチーム全体の成果を向上させます。",
-      "level": "上級",
+      "level": "基礎",
       "text": "サーバントリーダーシップにおけるリーダーの役割として最も適切なものはどれか。"
     },
     {
@@ -150,7 +150,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "BDDの「Given-When-Then」形式は、ユーザーストーリーの受け入れ基準を、前提条件、実行、期待結果として構造化して記述します。",
-      "level": "上級",
+      "level": "中級",
       "text": "Behavior-Driven Development（BDD）における「Given-When-Then」の形式で記述される内容として適切なものはどれか。"
     },
     {
@@ -164,7 +164,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ベロシティは各チーム固有の指標であり、チーム内での継続的改善と将来スプリントの計画策定に使用するのが適切です。",
-      "level": "上級",
+      "level": "基礎",
       "text": "スクラムにおける「ベロシティ」の適切な使用方法はどれか。"
     },
     {
@@ -178,7 +178,7 @@
       ],
       "correctAnswerIndex": 0,
       "explanation": "期待金銭価値（EMV）は、リスクのインパクト（金銭的影響）と発生確率を乗算して算出される定量的リスク評価指標です。",
-      "level": "上級",
+      "level": "基礎",
       "text": "プロジェクトリスクの定量的分析手法である「期待金銭価値（EMV）」の計算式として適切なものはどれか。"
     },
     {
@@ -192,7 +192,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Infrastructure as Codeは手動管理を削減し、コードによる自動化されたインフラ管理を実現することが目的です。",
-      "level": "上級",
+      "level": "中級",
       "text": "DevOps における「Infrastructure as Code」の利点として適切でないものはどれか。"
     },
     {
@@ -206,7 +206,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Storming段階では、チームメンバー間で役割や責任について対立や意見の衝突が生じる段階です。",
-      "level": "上級",
+      "level": "基礎",
       "text": "Tuckmanのチーム発達段階モデルにおける「Storming」段階の特徴として適切なものはどれか。"
     },
     {
@@ -220,7 +220,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "静的解析による技術的負債は、コーディング規約違反、循環的複雑度、重複コードなど、保守性に影響する構造的な問題を測定します。",
-      "level": "上級",
+      "level": "中級",
       "text": "静的解析ツールによるコード品質測定において「技術的負債」として計測される内容として適切なものはどれか。"
     },
     {
@@ -234,7 +234,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "プロジェクト憲章は高レベルな文書であり、詳細なWBSは後のスコープ計画プロセスで作成されます。",
-      "level": "上級",
+      "level": "基礎",
       "text": "プロジェクト憲章（Project Charter）に含まれるべき内容として適切でないものはどれか。"
     },
     {
@@ -248,7 +248,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "タイムボックスは、リスクの影響を一定期間に限定し、問題を早期に露呈させることで、迅速な対応と学習を可能にします。",
-      "level": "上級",
+      "level": "基礎",
       "text": "アジャイル開発におけるリスク管理として「タイムボックス」が果たす役割はどれか。"
     },
     {
@@ -276,7 +276,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "コンウェイの法則は、「システムを設計する組織は、その組織のコミュニケーション構造を反映した設計を生み出す」ことを示しています。",
-      "level": "上級",
+      "level": "基礎",
       "text": "コンウェイの法則（Conway's Law）が示唆するシステム設計への影響として適切なものはどれか。"
     },
     {
@@ -290,7 +290,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "ペアプログラミングでは、ナビゲーターが全体的な戦略、設計、品質について考え、ドライバーが実際のコーディングを行います。",
-      "level": "上級",
+      "level": "基礎",
       "text": "ペアプログラミングにおける「ナビゲーター」の役割として適切なものはどれか。"
     },
     {
@@ -304,7 +304,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "PRINCE2の事業ケースは、プロジェクトの事業的正当性を示し、プロジェクト期間中継続的に更新・評価される重要な文書です。",
-      "level": "上級",
+      "level": "基礎",
       "text": "PRINCE2 方法論における「事業ケース」の役割として適切なものはどれか。"
     },
     {
@@ -332,7 +332,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Feature Flagは便利ですが、削除されずに残った古いフラグが蓄積すると、コードベースの複雑性が増し、メンテナンス負荷が高くなります。",
-      "level": "上級",
+      "level": "中級",
       "text": "Feature Flag管理において考慮すべき「技術的負債」として適切なものはどれか。"
     },
     {
@@ -346,7 +346,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Spotifyモデルでは、Squadの理想的なサイズを6-12名とし、「2つのピザで食事できる」サイズを推奨しています。",
-      "level": "上級",
+      "level": "基礎",
       "text": "Spotify Model における「Squad」の理想的なサイズとして推奨されるものはどれか。"
     },
     {
@@ -360,7 +360,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Shift-Left Securityでは、SASTツールを開発・ビルドプロセスに統合し、コーディング段階でセキュリティ脆弱性を早期発見します。",
-      "level": "上級",
+      "level": "中級",
       "text": "Shift-Left Testing において「セキュリティテスト」を早期化する手法として適切なものはどれか。"
     },
     {
@@ -416,7 +416,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "クロスファンクショナルチームでは、メンバーが複数のスキルを持ち、協力してエンドツーエンドの価値提供を実現することが特徴です。",
-      "level": "上級",
+      "level": "基礎",
       "text": "クロスファンクショナルチームの特徴として適切でないものはどれか。"
     },
     {
@@ -458,7 +458,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "技術リスクの評価では、技術の成熟度、チームのスキル、技術的複雑性が重要であり、マーケティング戦略は事業リスクの範疇です。",
-      "level": "上級",
+      "level": "基礎",
       "text": "プロジェクトにおける「技術リスク」の評価において重要な要素として適切でないものはどれか。"
     },
     {
@@ -472,7 +472,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "releaseブランチは、リリース準備作業（バグ修正、ドキュメント更新等）を develop ブランチでの新機能開発から分離して実施するために使用されます。",
-      "level": "上級",
+      "level": "基礎",
       "text": "GitFlow ブランチ戦略における「release ブランチ」の目的として適切なものはどれか。"
     },
     {
@@ -486,7 +486,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "リモートワークでは対面作業は制限されるため、適切なツールと非同期・同期コミュニケーションの組み合わせが重要です。",
-      "level": "上級",
+      "level": "基礎",
       "text": "リモートワークにおけるアジャイルチーム運営で重要な要素として適切でないものはどれか。"
     },
     {
@@ -500,7 +500,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Property-Based Testingは、システムが満たすべき性質を定義し、大量のランダム入力データで検証することで、予期しないバグを発見します。",
-      "level": "上級",
+      "level": "中級",
       "text": "Property-Based Testing の特徴として適切なものはどれか。"
     },
     {
@@ -514,7 +514,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "戦略的整合性は、個々のプロジェクトが組織の戦略目標や価値観とどの程度一致しているかを評価する重要な指標です。",
-      "level": "上級",
+      "level": "中級",
       "text": "プロジェクトポートフォリオ管理における「戦略的整合性」の評価として適切なものはどれか。"
     },
     {
@@ -528,7 +528,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Risk Burndown Chartは、スプリントやイテレーションごとにリスクレベルがどのように軽減されているかを視覚的に追跡する手法です。",
-      "level": "上級",
+      "level": "中級",
       "text": "アジャイル開発における「Risk Burndown Chart」の目的として適切なものはどれか。"
     },
     {
@@ -542,7 +542,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Trunk-Based Developmentは、長期間のfeatureブランチを避け、短期間の作業を直接メインブランチ（trunk）にコミットすることを特徴とします。",
-      "level": "上級",
+      "level": "中級",
       "text": "Trunk-Based Development の特徴として適切でないものはどれか。"
     },
     {
@@ -556,7 +556,7 @@
       ],
       "correctAnswerIndex": 3,
       "explanation": "心理的安全性は建設的な対話を促進しますが、すべての意見を無条件に受け入れることではなく、建設的な議論と学習を重視します。",
-      "level": "上級",
+      "level": "中級",
       "text": "心理的安全性の高いチーム環境の特徴として適切でないものはどれか。"
     },
     {
@@ -584,7 +584,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "OKRのストレッチ目標は野心的に設定され、70-80%の達成率が適切とされており、100%達成は目標設定が低すぎることを示します。",
-      "level": "上級",
+      "level": "中級",
       "text": "OKR（Objectives and Key Results）における「ストレッチ目標」の適切な達成率はどれか。"
     },
     {
@@ -612,7 +612,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "セマンティックバージョニング（X.Y.Z）では、後方互換性を破る変更はメジャーバージョン（X）を増加させて示します。",
-      "level": "上級",
+      "level": "中級",
       "text": "API Version管理戦略における「セマンティックバージョニング」の破壊的変更を示すバージョン番号として適切なものはどれか。"
     },
     {
@@ -738,7 +738,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Fail Fast原則は、問題を早期に発見し迅速に対処することで、後工程での大きな修正コストや影響を回避することを目的とします。",
-      "level": "上級",
+      "level": "中級",
       "text": "「Fail Fast」原則をプロジェクトマネジメントに適用する際の利点として適切なものはどれか。"
     },
     {
@@ -822,7 +822,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Twelve-Factor Appは、スケーラブルで保守可能なクラウドアプリケーションの構築原則であり、モノリシック構造の維持は含まれません。",
-      "level": "上級",
+      "level": "中級",
       "text": "Cloud Native アプリケーション開発における「Twelve-Factor App」の原則として含まれないものはどれか。"
     },
     {
@@ -850,7 +850,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "Test Pyramidでは、Unit Test（高速・多数）、Integration Test（中速・中数）、E2E Test（低速・少数）の構成が推奨されます。",
-      "level": "上級",
+      "level": "中級",
       "text": "Test Pyramid における各レベルのテストの実行速度として適切な関係はどれか。"
     },
     {
@@ -864,7 +864,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Definition of Doneは、チーム全体でユーザーストーリーやインクリメントが「完了」と見なされる共通の基準を明確にします。",
-      "level": "上級",
+      "level": "中級",
       "text": "アジャイルプロジェクトにおける「Definition of Done」の目的として適切なものはどれか。"
     },
     {
@@ -892,7 +892,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Deployment Pipelineでは、問題の早期発見と迅速なフィードバックにより、品質問題や統合問題を素早く特定・修正することが重要です。",
-      "level": "上級",
+      "level": "中級",
       "text": "Continuous Delivery における「Deployment Pipeline」のステージ設計で重要な原則はどれか。"
     },
     {
@@ -990,7 +990,7 @@
       ],
       "correctAnswerIndex": 1,
       "explanation": "Pull Request Templateは、レビューで確認すべき観点を標準化し、一貫した品質のコードレビューを実現します。",
-      "level": "上級",
+      "level": "中級",
       "text": "Code Review における「Pull Request Template」の効果として適切なものはどれか。"
     },
     {
@@ -1046,7 +1046,7 @@
       ],
       "correctAnswerIndex": 2,
       "explanation": "心理的安全性の醸成には、失敗を責めるのではなく学習機会として扱い、建設的なフィードバック環境を作ることが重要です。",
-      "level": "上級",
+      "level": "中級",
       "text": "Psychological Safety を組織で醸成するためのリーダーの行動として適切でないものはどれか。"
     },
     {
